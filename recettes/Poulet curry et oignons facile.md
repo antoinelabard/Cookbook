@@ -1,11 +1,6 @@
 ---
 date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_poulet-curry-et-oignons-facile_13026.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient
@@ -16,10 +11,6 @@ dish:
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Poulet curry et oignons facile

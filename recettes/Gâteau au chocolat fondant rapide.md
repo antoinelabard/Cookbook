@@ -1,11 +1,6 @@
 ---
 date-added: 2022-06-30
 source: https://www.marmiton.org/recettes/recette_gateau-au-chocolat-fondant-rapide_166352.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient

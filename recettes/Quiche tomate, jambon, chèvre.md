@@ -1,11 +1,6 @@
 ---
 date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_quiche-tomate-jambon-chevre_32961.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient
@@ -16,10 +11,6 @@ dish:
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Quiche tomate, jambon, chèvre

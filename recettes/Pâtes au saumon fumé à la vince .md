@@ -1,11 +1,6 @@
 ---
 date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_pates-au-saumon-fume-a-la-vince_37466.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient
@@ -16,10 +11,6 @@ dish:
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Pâtes au saumon fumé à la vince

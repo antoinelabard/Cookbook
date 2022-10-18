@@ -1,11 +1,6 @@
 ---
 date-added: 2022-09-14
 source: https://www.marmiton.org/recettes/recette_quiche-au-saumon-et-aux-epinards_22164.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient
@@ -16,10 +11,6 @@ dish:
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Quiche au saumon et aux épinards

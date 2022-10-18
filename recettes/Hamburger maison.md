@@ -1,11 +1,6 @@
 ---
 date-added: 2021-11-11
 source: https://www.marmiton.org/recettes/recette_hamburger-maison_32672.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient

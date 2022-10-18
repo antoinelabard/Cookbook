@@ -6,24 +6,11 @@ type:
   - meal
   - ingredient
   - inedible
-category:
-  - salad
-  - sandwich
-  - oven
-  - fries
-  - cake
-  - pan
-  - quiche
-  - soup
 dish:
   - starter
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Omelette aux pommes de terre et lardons

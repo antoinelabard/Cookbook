@@ -1,11 +1,6 @@
 ---
 date-added: 2022-01-05
 source: https://www.marmiton.org/recettes/recette_petits-pois-au-chorizo_46854.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient
@@ -16,10 +11,6 @@ dish:
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Petits pois au chorizo

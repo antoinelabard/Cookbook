@@ -1,11 +1,6 @@
 ---
 date-added: 2022-02-05
 source: Nathalie des Francas
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient
@@ -16,10 +11,6 @@ dish:
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Endives en "pochon"

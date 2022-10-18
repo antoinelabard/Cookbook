@@ -1,21 +1,7 @@
 ---
 date-added: 2021-12-30
 source: https://www.marmiton.org/recettes/recette_pommes-de-terres-sautees_36392.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type: ingredient
-category:
-  - salad
-  - sandwich
-  - oven
-  - fries
-  - cake
-  - pan
-  - quiche
-  - soup
 dish:
   - starter
   - main-course

@@ -1,30 +1,12 @@
 ---
 date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_ratatouille_23223.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type: ingredient
-category:
-  - salad
-  - sandwich
-  - oven
-  - fries
-  - cake
-  - pan
-  - quiche
-  - soup
 dish:
   - starter
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Ratatouille

@@ -1,11 +1,6 @@
 ---
 date-added: 2021-12-30
 source: https://www.marmiton.org/recettes/recette_haricots-verts-a-la-bolognaise_41215.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
 type:
   - meal
   - ingredient
@@ -16,10 +11,6 @@ dish:
   - main-course
   - dessert
 meal: lunch
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
 ---
 
 # Haricots verts à la bolognaise
