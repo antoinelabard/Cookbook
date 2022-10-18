@@ -1,3 +1,39 @@
+---  
+date-added: 2021-12-02  
+source: https://www.marmiton.org/recettes/recette_pizza-calzone-au-jambon-et-champignons_56497.aspx  
+season:  
+  - summer  
+  - autumn  
+  - winter  
+  - spring  
+type:  
+  - meal  
+  - ingredient  
+  - inedible  
+category:  
+  - salad  
+  - sandwich  
+  - oven  
+  - fries  
+  - cake  
+  - pan  
+  - quiche  
+  - soup  
+dish:  
+  - starter  
+  - main-course  
+  - dessert  
+meal:  
+  - breakfast  
+  - lunch  
+  - snack  
+  - diner  
+opportunity:  
+  - cheat-meal  
+  - party  
+  - pleasure  
+---
+
 # Pizza Calzone au jambon et champignons
 
 ![](images/Pizza%20Calzone%20au%20jambon%20et%20champignons.jpg)
@@ -8,12 +44,13 @@
 
 ## Ingrédients
 
-- Pâte à pizza : 1
+- Pâte à pizza : 2
 - jambon : 250g
 - Échalote : 1
 - Mozzarella : 200g
 - Olives : 12
 - Pulpe de tomate : 5cl
+- Champignons de Paris : 300g
 
 ## Préparation
 

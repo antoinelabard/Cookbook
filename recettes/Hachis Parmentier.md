@@ -1,3 +1,39 @@
+--- 
+date-added: 2021-12-02 
+source: https://www.marmiton.org/recettes/recette_hachis-parmentier_17639.aspx 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible 
+category: 
+  - salad 
+  - sandwich 
+  - oven 
+  - fries 
+  - cake 
+  - pan 
+  - quiche 
+  - soup 
+dish: 
+  - starter 
+  - main-course 
+  - dessert 
+meal: 
+  - breakfast 
+  - lunch 
+  - snack 
+  - diner 
+opportunity: 
+  - cheat-meal 
+  - party 
+  - pleasure 
+---
+
 # Hachis Parmentier
 
 ![](images/Hachis%20Parmentier.jpg)

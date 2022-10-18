@@ -1,3 +1,39 @@
+--- 
+date-added: 2021-12-02 
+source: https://www.marmiton.org/recettes/recette_quiche-poireaux-chevre-lardons_22275.aspx 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible 
+category: 
+  - salad 
+  - sandwich 
+  - oven 
+  - fries 
+  - cake 
+  - pan 
+  - quiche  
+  - soup  
+dish:  
+  - starter  
+  - main-course  
+  - dessert  
+meal:  
+  - breakfast  
+  - lunch  
+  - snack  
+  - diner  
+opportunity:  
+  - cheat-meal  
+  - party  
+  - pleasure  
+---
+
 # Quiche poireaux, chèvre lardons
 
 ![](images/Quiche%20poireaux,%20chèvre%20lardons.jpg)

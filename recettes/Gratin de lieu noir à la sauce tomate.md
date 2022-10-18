@@ -1,3 +1,39 @@
+---  
+date-added: 2021-12-02  
+source: https://www.marmiton.org/recettes/recette_gratin-de-lieu-noir-a-la-sauce-tomate_71044.aspx  
+season:  
+  - summer  
+  - autumn  
+  - winter  
+  - spring  
+type:  
+  - meal  
+  - ingredient  
+  - inedible  
+category:  
+  - salad  
+  - sandwich  
+  - oven  
+  - fries  
+  - cake  
+  - pan  
+  - quiche  
+  - soup  
+dish:  
+  - starter  
+  - main-course  
+  - dessert  
+meal:  
+  - breakfast  
+  - lunch  
+  - snack  
+  - diner  
+opportunity:  
+  - cheat-meal  
+  - party  
+  - pleasure  
+---
+
 # Gratin de lieu noir à la sauce tomate
 
 ![](images/Gratin%20de%20lieu%20noir%20à%20la%20sauce%20tomate.jpg)

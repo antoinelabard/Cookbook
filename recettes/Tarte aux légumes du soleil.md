@@ -1,3 +1,39 @@
+--- 
+date-added: 2022-07-28 
+source: https://www.750g.com/tarte-aux-legumes-du-soleil-r50529.htm 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible 
+category: 
+  - salad 
+  - sandwich 
+  - oven 
+  - fries 
+  - cake 
+  - pan 
+  - quiche 
+  - soup 
+dish: 
+  - starter 
+  - main-course 
+  - dessert 
+meal: 
+  - breakfast 
+  - lunch 
+  - snack 
+  - diner 
+opportunity: 
+  - cheat-meal 
+  - party 
+  - pleasure 
+---
+
 # Tarte aux légumes du soleil
 
 ![](images/Tarte%20aux%20légumes%20du%20soleil.jpeg)

@@ -1,3 +1,39 @@
+--- 
+date-added: 2021-12-30 
+source: https://www.marmiton.org/recettes/recette_pommes-de-terres-sautees_36392.aspx 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible 
+category: 
+  - salad 
+  - sandwich 
+  - oven 
+  - fries 
+  - cake 
+  - pan 
+  - quiche 
+  - soup 
+dish: 
+  - starter 
+  - main-course 
+  - dessert 
+meal: 
+  - breakfast 
+  - lunch 
+  - snack 
+  - diner 
+opportunity: 
+  - cheat-meal 
+  - party 
+  - pleasure 
+---
+
 # Pommes de terres sautées
 
 ![](images/Pommes%20de%20terres%20sautées.jpg)

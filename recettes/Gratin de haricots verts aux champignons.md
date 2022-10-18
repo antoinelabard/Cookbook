@@ -1,3 +1,39 @@
+---  
+date-added: 2021-12-30  
+source: https://www.marmiton.org/recettes/recette_gratin-de-haricots-verts-aux-champignons_28382.aspx  
+season:  
+  - summer  
+  - autumn  
+  - winter  
+  - spring  
+type:  
+  - meal  
+  - ingredient  
+  - inedible  
+category:  
+  - salad  
+  - sandwich  
+  - oven  
+  - fries  
+  - cake  
+  - pan  
+  - quiche  
+  - soup  
+dish:  
+  - starter  
+  - main-course  
+  - dessert  
+meal:  
+  - breakfast  
+  - lunch  
+  - snack  
+  - diner  
+opportunity:  
+  - cheat-meal  
+  - party  
+  - pleasure  
+---
+
 # Gratin de haricots verts aux champignons
 
 ![](images/Gratin%20de%20haricots%20verts%20aux%20champignons.jpg)

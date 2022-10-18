@@ -1,3 +1,39 @@
+--- 
+date-added: 2022-08-04 
+source: https://www.marmiton.org/recettes/recette_salade-de-pates-mediterraneenne_321582.aspx 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible  
+category:  
+  - salad  
+  - sandwich  
+  - oven  
+  - fries  
+  - cake  
+  - pan  
+  - quiche  
+  - soup  
+dish:  
+  - starter  
+  - main-course  
+  - dessert  
+meal:  
+  - breakfast  
+  - lunch  
+  - snack  
+  - diner  
+opportunity:  
+  - cheat-meal  
+  - party  
+  - pleasure  
+---
+
 # Salade de pâtes méditerranéenne
 
 ![](images/Salade%20de%20pâtes%20méditerranéenne.jpg)

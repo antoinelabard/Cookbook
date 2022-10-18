@@ -1,3 +1,39 @@
+---
+date-added: 2022-01-15 
+source: https://www.marmiton.org/recettes/recette_cordon-bleu-roule_347516.aspx 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible 
+category: 
+  - salad 
+  - sandwich 
+  - oven 
+  - fries 
+  - cake 
+  - pan 
+  - quiche 
+  - soup 
+dish: 
+  - starter 
+  - main-course 
+  - dessert 
+meal: 
+  - breakfast 
+  - lunch 
+  - snack 
+  - diner 
+opportunity: 
+  - cheat-meal 
+  - party 
+  - pleasure 
+---
+
 # Cordon bleu roulé
 
 ![](images/Cordon%20bleu%20roulé.jpg)

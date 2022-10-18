@@ -1,3 +1,39 @@
+---  
+date-added: 2022-08-04  
+source: https://www.marmiton.org/recettes/recette_salade-aux-haricots-rouges-mais-et-thon_49242.aspx  
+season:  
+  - summer  
+  - autumn  
+  - winter  
+  - spring  
+type:  
+  - meal  
+  - ingredient  
+  - inedible  
+category:  
+  - salad  
+  - sandwich  
+  - oven  
+  - fries  
+  - cake  
+  - pan  
+  - quiche  
+  - soup  
+dish:  
+  - starter  
+  - main-course  
+  - dessert  
+meal:  
+  - breakfast  
+  - lunch  
+  - snack  
+  - diner  
+opportunity:  
+  - cheat-meal  
+  - party  
+  - pleasure  
+---
+
 # Salade aux haricots rouges, maïs et thon
 
 ![](images/Salade%20aux%20haricots%20rouges,%20maïs%20et%20thon.jpg)

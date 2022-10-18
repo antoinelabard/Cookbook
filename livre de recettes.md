@@ -1,7 +1,7 @@
 # Livre de recettes
 
 ```dataview
-table season, type where contains(season, "summer")
+table source from "recettes"
 ```
 
 Ce document est un index permettant d'organiser les recettes en catégories. On pourra y trouver à la fois les recettes en question, mais aussi d'autres index plus spécifiques.

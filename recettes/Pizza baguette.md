@@ -1,3 +1,39 @@
+---
+date-added: 2022-02-24
+source: https://www.ptitchef.com/recettes/plat/pizza-baguette-fid-1566290
+season:
+  - summer
+  - autumn
+  - winter
+  - spring
+type:
+  - meal
+  - ingredient
+  - inedible
+category:
+  - salad
+  - sandwich
+  - oven
+  - fries
+  - cake
+  - pan
+  - quiche
+  - soup
+dish:
+  - starter
+  - main-course 
+  - dessert 
+meal: 
+  - breakfast 
+  - lunch 
+  - snack 
+  - diner 
+opportunity: 
+  - cheat-meal 
+  - party 
+  - pleasure 
+---
+
 # Pizza baguette
 
 ![](images/Pizza%20baguette.jpg)
@@ -21,4 +57,4 @@
 
 1. Couper la baguette en 2 dans le sens de la largeur puis en 2 dans le sens de la longueur.
 2. Sur chaque demi-baguette : badigeonner d'huile d'olive, napper de sauce tomate, disposer des morceaux de jambon, des champignons émincés et parsemer de fromage râpé.
-3. Ajouter des olives noires et parsemer origan. Enfourner 15 minutes à 180°C 
+3. Ajouter des olives noires et parsemer origan. Enfourner 15 minutes à 180°C

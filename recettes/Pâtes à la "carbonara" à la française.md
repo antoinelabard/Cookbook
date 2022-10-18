@@ -1,3 +1,39 @@
+---  
+date-added: 2021-11-11  
+source: https://www.marmiton.org/recettes/recette_pates-a-la-carbonara_80453.aspx  
+season:  
+  - summer  
+  - autumn  
+  - winter  
+  - spring  
+type:  
+  - meal  
+  - ingredient  
+  - inedible  
+category:  
+  - salad  
+  - sandwich  
+  - oven  
+  - fries  
+  - cake  
+  - pan  
+  - quiche  
+  - soup  
+dish:  
+  - starter  
+  - main-course  
+  - dessert  
+meal:  
+  - breakfast  
+  - lunch  
+  - snack  
+  - diner  
+opportunity:  
+  - cheat-meal  
+  - party  
+  - pleasure  
+---
+
 # Pâtes à la "carbonara" à la française
 
 ![](images/Pâtes%20à%20la%20%22carbonara%22%20à%20la%20française.jpg)

@@ -1,3 +1,39 @@
+--- 
+date-added: 2021-11-25 
+source: https://www.marmiton.org/recettes/recette_haricots-verts-a-la-carbonara_308397.aspx 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible 
+category: 
+  - salad 
+  - sandwich 
+  - oven 
+  - fries 
+  - cake 
+  - pan 
+  - quiche 
+  - soup 
+dish: 
+  - starter 
+  - main-course 
+  - dessert 
+meal: 
+  - breakfast 
+  - lunch 
+  - snack 
+  - diner 
+opportunity: 
+  - cheat-meal 
+  - party 
+  - pleasure 
+---
+
 # Haricots verts à la carbonara
 
 ![](images/Haricots%20verts%20à%20la%20carbonara.jpg)

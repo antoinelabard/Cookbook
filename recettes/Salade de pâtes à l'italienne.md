@@ -1,3 +1,39 @@
+--- 
+date-added: 2022-07-21 
+source: https://www.marmiton.org/recettes/recette_salade-de-pates-a-l-italienne_22514.aspx 
+season: 
+  - summer 
+  - autumn 
+  - winter 
+  - spring 
+type: 
+  - meal 
+  - ingredient 
+  - inedible 
+category: 
+  - salad 
+  - sandwich 
+  - oven 
+  - fries 
+  - cake 
+  - pan 
+  - quiche 
+  - soup 
+dish: 
+  - starter 
+  - main-course 
+  - dessert 
+meal: 
+  - breakfast 
+  - lunch 
+  - snack 
+  - diner 
+opportunity: 
+  - cheat-meal 
+  - party 
+  - pleasure 
+---
+
 # Salade de pâtes à l'italienne
 
 ![](images/Salade%20de%20pâtes%20à%20l'italienne.jpg)
