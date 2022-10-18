@@ -19,11 +19,7 @@ dish:
   - starter
   - main-course
   - dessert
-meal:
-  - breakfast
-  - lunch
-  - snack
-  - diner
+meal: lunch
 opportunity:
   - cheat-meal
   - party

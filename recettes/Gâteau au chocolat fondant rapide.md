@@ -15,11 +15,7 @@ dish:
   - starter
   - main-course
   - dessert
-meal:
-  - breakfast
-  - lunch
-  - snack
-  - diner
+meal: snack
 opportunity: party
 ---
 
