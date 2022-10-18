@@ -28,10 +28,7 @@ meal:
   - lunch
   - snack
   - diner
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
+opportunity: pleasure
 ---
 
 # Hamburger maison

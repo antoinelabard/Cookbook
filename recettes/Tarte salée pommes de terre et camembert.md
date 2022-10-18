@@ -28,10 +28,7 @@ meal:
   - lunch
   - snack
   - diner
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
+opportunity: cheat-meal
 ---
 
 # Tarte salée pommes de terre et camembert

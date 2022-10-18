@@ -28,10 +28,7 @@ meal:
   - lunch
   - snack
   - diner
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
+opportunity: pleasure
 ---
 
 # Wrap de tortilla à l'avocat, cheddar et oeufs brouillés

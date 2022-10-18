@@ -25,10 +25,7 @@ meal:
   - lunch
   - snack
   - diner
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
+opportunity: cheat-meal
 ---
 
 # Cordon bleu roulé

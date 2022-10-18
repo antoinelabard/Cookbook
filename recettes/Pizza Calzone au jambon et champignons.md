@@ -28,10 +28,7 @@ meal:
   - lunch
   - snack
   - diner
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
+opportunity: cheat-meal
 ---
 
 # Pizza Calzone au jambon et champignons
