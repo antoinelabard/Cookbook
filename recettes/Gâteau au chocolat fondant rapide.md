@@ -6,10 +6,7 @@ type:
   - ingredient
   - inedible
 category: cake
-dish:
-  - starter
-  - main-course
-  - dessert
+dish: dessert
 meal: snack
 opportunity: party
 ---

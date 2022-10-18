@@ -7,10 +7,7 @@ type:
   - ingredient
   - inedible
 category: pasta
-dish:
-  - starter
-  - main-course
-  - dessert
+dish: main-course
 meal: lunch
 ---
 

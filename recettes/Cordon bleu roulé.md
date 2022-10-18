@@ -3,10 +3,6 @@ date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_cordon-bleu-roule_347516.aspx
 type: ingredient
 category: fries
-dish:
-  - starter
-  - main-course
-  - dessert
 meal: lunch
 opportunity: cheat-meal
 ---

@@ -6,10 +6,7 @@ type:
   - ingredient
   - inedible
 category: quiche
-dish:
-  - starter
-  - main-course
-  - dessert
+dish: main-course
 meal: lunch
 ---
 

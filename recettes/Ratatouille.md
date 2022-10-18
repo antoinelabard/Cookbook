@@ -2,10 +2,6 @@
 date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_ratatouille_23223.aspx
 type: ingredient
-dish:
-  - starter
-  - main-course
-  - dessert
 meal: lunch
 ---
 

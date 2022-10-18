@@ -6,10 +6,7 @@ type:
   - ingredient
   - inedible
 category: sandwich
-dish:
-  - starter
-  - main-course
-  - dessert
+dish: main-course
 meal: lunch
 opportunity: pleasure
 ---

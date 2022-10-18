@@ -5,10 +5,6 @@ type:
   - meal
   - ingredient
   - inedible
-dish:
-  - starter
-  - main-course
-  - dessert
 meal: lunch
 ---
 

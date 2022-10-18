@@ -7,10 +7,7 @@ type:
   - ingredient
   - inedible
 category: salad
-dish:
-  - starter
-  - main-course
-  - dessert
+dish: main-course
 meal: lunch
 ---
 

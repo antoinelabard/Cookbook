@@ -2,10 +2,7 @@
 date-added: 2021-12-30
 source: https://www.marmiton.org/recettes/recette_pommes-de-terres-sautees_36392.aspx
 type: ingredient
-dish:
-  - starter
-  - main-course
-  - dessert
+dish: main-course
 meal: lunch
 opportunity: cheat-meal
 ---

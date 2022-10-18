@@ -2,10 +2,6 @@
 date-added: 2022-10-11
 source: https://www.marmiton.org/recettes/recette_pate-brisee-vite-faite_31639.aspx
 type: ingredient
-dish:
-  - starter
-  - main-course
-  - dessert
 ---
 
 # Pâte brisée vite faite
