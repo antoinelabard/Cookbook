@@ -1,37 +1,37 @@
---- 
-date-added: 2021-11-11 
-source: https://www.750g.com/gratin-dauphinois-r1374.htm 
-season: 
-  - summer 
-  - autumn 
-  - winter 
-  - spring 
-type: 
-  - meal 
-  - ingredient 
-  - inedible 
-category: 
-  - salad 
-  - sandwich 
-  - oven 
-  - fries 
-  - cake 
-  - pan 
-  - quiche 
-  - soup 
-dish: 
-  - starter 
-  - main-course 
-  - dessert 
-meal: 
-  - breakfast 
-  - lunch 
-  - snack 
-  - diner 
-opportunity: 
-  - cheat-meal 
-  - party 
-  - pleasure 
+---
+date-added: 2021-11-11
+source: https://www.750g.com/gratin-dauphinois-r1374.htm
+season:
+  - summer
+  - autumn
+  - winter
+  - spring
+type:
+  - meal
+  - ingredient
+  - inedible
+category:
+  - salad
+  - sandwich
+  - oven
+  - fries
+  - cake
+  - pan
+  - quiche
+  - soup
+dish:
+  - starter
+  - main-course
+  - dessert
+meal:
+  - breakfast
+  - lunch
+  - snack
+  - diner
+opportunity:
+  - cheat-meal
+  - party
+  - pleasure
 ---
 
 # Gratin dauphinois

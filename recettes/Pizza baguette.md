@@ -21,17 +21,17 @@ category:
   - soup
 dish:
   - starter
-  - main-course 
-  - dessert 
-meal: 
-  - breakfast 
-  - lunch 
-  - snack 
-  - diner 
-opportunity: 
-  - cheat-meal 
-  - party 
-  - pleasure 
+  - main-course
+  - dessert
+meal:
+  - breakfast
+  - lunch
+  - snack
+  - diner
+opportunity:
+  - cheat-meal
+  - party
+  - pleasure
 ---
 
 # Pizza baguette

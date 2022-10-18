@@ -1,36 +1,36 @@
 ---
 date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_club-sandwich-poulet-bacon_41357.aspx
-season: 
-  - summer 
-  - autumn 
-  - winter 
+season:
+  - summer
+  - autumn
+  - winter
   - spring
-type: 
-  - meal 
-  - ingredient 
+type:
+  - meal
+  - ingredient
   - inedible
-category: 
-  - salad 
-  - sandwich 
-  - oven 
-  - fries 
-  - cake 
-  - pan 
-  - quiche 
+category:
+  - salad
+  - sandwich
+  - oven
+  - fries
+  - cake
+  - pan
+  - quiche
   - soup
-dish: 
-  - starter 
-  - main-course 
+dish:
+  - starter
+  - main-course
   - dessert
-meal: 
-  - breakfast 
-  - lunch 
-  - snack 
+meal:
+  - breakfast
+  - lunch
+  - snack
   - diner
-opportunity: 
-  - cheat-meal 
-  - party 
+opportunity:
+  - cheat-meal
+  - party
   - pleasure
 ---
 

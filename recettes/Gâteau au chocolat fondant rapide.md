@@ -1,37 +1,37 @@
----  
-date-added: 2022-06-30  
-source: https://www.marmiton.org/recettes/recette_gateau-au-chocolat-fondant-rapide_166352.aspx  
-season:  
-  - summer  
-  - autumn  
-  - winter  
-  - spring  
-type:  
-  - meal  
-  - ingredient  
-  - inedible  
-category:  
-  - salad  
-  - sandwich  
-  - oven  
-  - fries  
-  - cake  
-  - pan  
-  - quiche  
-  - soup  
-dish:  
-  - starter  
-  - main-course  
-  - dessert  
-meal:  
-  - breakfast  
-  - lunch  
-  - snack  
-  - diner  
-opportunity:  
-  - cheat-meal  
-  - party  
-  - pleasure  
+---
+date-added: 2022-06-30
+source: https://www.marmiton.org/recettes/recette_gateau-au-chocolat-fondant-rapide_166352.aspx
+season:
+  - summer
+  - autumn
+  - winter
+  - spring
+type:
+  - meal
+  - ingredient
+  - inedible
+category:
+  - salad
+  - sandwich
+  - oven
+  - fries
+  - cake
+  - pan
+  - quiche
+  - soup
+dish:
+  - starter
+  - main-course
+  - dessert
+meal:
+  - breakfast
+  - lunch
+  - snack
+  - diner
+opportunity:
+  - cheat-meal
+  - party
+  - pleasure
 ---
 
 # Gâteau au chocolat fondant rapide

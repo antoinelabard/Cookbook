@@ -1,37 +1,37 @@
---- 
-date-added: 2022-01-05 
-source: https://www.marmiton.org/recettes/recette_petits-pois-au-chorizo_46854.aspx 
-season: 
-  - summer 
-  - autumn 
-  - winter 
-  - spring 
-type: 
-  - meal 
-  - ingredient 
-  - inedible 
-category: 
-  - salad 
-  - sandwich 
-  - oven 
-  - fries 
-  - cake 
-  - pan 
-  - quiche 
-  - soup 
-dish: 
-  - starter 
-  - main-course 
-  - dessert 
-meal: 
-  - breakfast 
-  - lunch 
-  - snack 
-  - diner 
-opportunity: 
-  - cheat-meal 
-  - party 
-  - pleasure 
+---
+date-added: 2022-01-05
+source: https://www.marmiton.org/recettes/recette_petits-pois-au-chorizo_46854.aspx
+season:
+  - summer
+  - autumn
+  - winter
+  - spring
+type:
+  - meal
+  - ingredient
+  - inedible
+category:
+  - salad
+  - sandwich
+  - oven
+  - fries
+  - cake
+  - pan
+  - quiche
+  - soup
+dish:
+  - starter
+  - main-course
+  - dessert
+meal:
+  - breakfast
+  - lunch
+  - snack
+  - diner
+opportunity:
+  - cheat-meal
+  - party
+  - pleasure
 ---
 
 # Petits pois au chorizo
