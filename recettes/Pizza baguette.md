@@ -1,11 +1,7 @@
 ---
 date-added: 2022-02-24
 source: https://www.ptitchef.com/recettes/plat/pizza-baguette-fid-1566290
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: winter
 type:
   - meal
   - ingredient

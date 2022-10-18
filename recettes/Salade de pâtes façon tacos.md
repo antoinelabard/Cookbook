@@ -1,11 +1,7 @@
 ---
 date-added: 2022-07-28
 source: https://www.750g.com/salade-de-pates-facon-tacos-r202633.htm
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: summer
 type:
   - meal
   - ingredient

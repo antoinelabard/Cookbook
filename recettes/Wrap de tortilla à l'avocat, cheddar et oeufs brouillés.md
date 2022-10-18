@@ -1,11 +1,7 @@
 ---
 date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_wrap-de-tortilla-avocat-cheddar-oeufs-brouilles_530056.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: summer
 type:
   - meal
   - ingredient

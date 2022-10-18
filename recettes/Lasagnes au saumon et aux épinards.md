@@ -1,11 +1,7 @@
 ---
 date-added: 2021-12-18
 source: https://www.marmiton.org/recettes/recette_lasagnes-au-saumon-et-aux-epinards_14665.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: winter
 type:
   - meal
   - ingredient

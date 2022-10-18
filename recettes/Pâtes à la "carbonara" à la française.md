@@ -1,11 +1,7 @@
 ---
 date-added: 2021-11-11
 source: https://www.marmiton.org/recettes/recette_pates-a-la-carbonara_80453.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: mid-season
 type:
   - meal
   - ingredient

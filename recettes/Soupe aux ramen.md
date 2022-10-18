@@ -1,11 +1,7 @@
 ---
 date-added: 2021-12-20
 source: https://www.marmiton.org/recettes/recette_soupe-aux-ramen_225544.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: winter
 type:
   - meal
   - ingredient

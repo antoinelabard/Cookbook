@@ -1,11 +1,7 @@
 ---
 date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_hachis-parmentier_17639.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: winter
 type:
   - meal
   - ingredient

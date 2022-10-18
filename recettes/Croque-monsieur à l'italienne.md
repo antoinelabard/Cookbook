@@ -1,11 +1,7 @@
 ---
 date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_croque-monsieur-a-l-italienne_29633.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: winter
 type:
   - meal
   - ingredient

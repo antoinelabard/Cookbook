@@ -1,11 +1,7 @@
 ---
 date-added: 2022-08-04
 source: https://www.marmiton.org/recettes/recette_salade-aux-haricots-rouges-mais-et-thon_49242.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: summer
 type:
   - meal
   - ingredient

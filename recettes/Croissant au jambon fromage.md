@@ -1,11 +1,7 @@
 ---
 date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_croissant-au-jambon-fromage_71950.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: winter
 type:
   - meal
   - ingredient

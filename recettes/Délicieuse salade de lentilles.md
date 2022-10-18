@@ -1,11 +1,7 @@
 ---
 date-added: 2022-01-20
 source: https://www.marmiton.org/recettes/recette_delicieuse-salade-de-lentilles_168181.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: summer
 type:
   - meal
   - ingredient

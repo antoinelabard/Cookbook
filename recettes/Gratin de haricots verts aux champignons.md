@@ -1,11 +1,7 @@
 ---
 date-added: 2021-12-30
 source: https://www.marmiton.org/recettes/recette_gratin-de-haricots-verts-aux-champignons_28382.aspx
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
+season: mid-season
 type:
   - meal
   - ingredient
