@@ -1,0 +1,26 @@
+# Salade aux haricots rouges, maïs et thon
+
+![](images/Salade%20aux%20haricots%20rouges,%20maïs%20et%20thon.jpg)
+
+| Préparation | Repos | Cuisson |
+|:-----------:|:-----:|:-------:|
+|    15min    |   -   |    -    |
+
+## Ingrédients
+
+- Haricots rouges : 600g
+- Tomates : 2
+- Vinaigre balsamique : 2
+- Huile
+- Maïs : 200g
+- Boîtes de thon : 2
+- Laitue
+- Menthe
+
+## Préparation
+
+1. Égoutter le maïs, le thon et les haricots rouges et les mélanger.
+2. Couper les feuilles de menthe, les tomates (au choix en dés, en quartiers...) et les feuilles de salade.
+3. Les ajouter au mélange précédent et mélanger le tout.
+4. Pour la sauce, mélanger le vinaigre balsamique, l'huile, la moutarde et le poivre.
+5. Mettre la salade au réfrigérateur 5 min avant de servir puis la napper de vinaigrette et déguster.
