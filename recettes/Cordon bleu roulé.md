@@ -7,15 +7,7 @@ season:
   - winter
   - spring
 type: ingredient
-category:
-  - salad
-  - sandwich
-  - oven
-  - fries
-  - cake
-  - pan
-  - quiche
-  - soup
+category: fries
 dish:
   - starter
   - main-course

@@ -10,15 +10,7 @@ type:
   - meal
   - ingredient
   - inedible
-category:
-  - salad
-  - sandwich
-  - oven
-  - fries
-  - cake
-  - pan
-  - quiche
-  - soup
+category: cake
 dish:
   - starter
   - main-course

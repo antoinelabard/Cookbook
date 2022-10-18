@@ -6,15 +6,7 @@ type:
   - meal
   - ingredient
   - inedible
-category:
-  - salad
-  - sandwich
-  - oven
-  - fries
-  - cake
-  - pan
-  - quiche
-  - soup
+category: quiche
 dish:
   - starter
   - main-course
