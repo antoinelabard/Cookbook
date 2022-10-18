@@ -6,10 +6,7 @@ season:
   - autumn
   - winter
   - spring
-type:
-  - meal
-  - ingredient
-  - inedible
+type: ingredient
 category:
   - salad
   - sandwich
