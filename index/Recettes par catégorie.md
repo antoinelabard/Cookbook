@@ -24,7 +24,7 @@ LIST WHERE category="oven"
 LIST WHERE category="fries"
 ```
 
-## Gateaux
+## Gâteaux
 
 ```dataview
 LIST WHERE category="cake"
