@@ -29,6 +29,8 @@ opportunity: cheat-meal
 
 ## Préparation
 
+![[Pâte brisée vite faite]]
+
 1. Épluchez et coupez en morceaux les pommes de terre.
 2. Ensuite, mettez les à cuire dans une casserole d'eau bouillante environ 10min (il faut qu'elles soient encore fermes) .
 3. Étalez la pâte brisée et percez-la à l'aide d'une fourchette.

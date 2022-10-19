@@ -26,12 +26,13 @@ meal: lunch
 
 ## Préparation
 
-1. ![[Pâte brisée vite faite]]
-2. Étalez la pâte dans le moule beurré et fariné.
-3. Nettoyez puis émincez les blancs des 3 poireaux.
-4. Faites dorer les lardons dont vous utiliserez la graisse pour faire revenir les poireaux ensuite.
-5. Répartissez lardons et poireaux sur le fond de tarte.
-6. Préchauffez le four à 180°C (Th 6).
-7. Dans un bol battez les œufs, la crème et le lait. Assaisonnez à votre goût puis versez le mélange dans la tarte.
-8. Découper le fromage de chèvre en rondelles que vous déposerez sur la quiche.
-9. Cuisez au four de 25 à 30 minutes.
+![[Pâte brisée vite faite]]
+
+1. Étalez la pâte dans le moule beurré et fariné.
+2. Nettoyez puis émincez les blancs des 3 poireaux.
+3. Faites dorer les lardons dont vous utiliserez la graisse pour faire revenir les poireaux ensuite.
+4. Répartissez lardons et poireaux sur le fond de tarte.
+5. Préchauffez le four à 180°C (Th 6).
+6. Dans un bol battez les œufs, la crème et le lait. Assaisonnez à votre goût puis versez le mélange dans la tarte.
+7. Découper le fromage de chèvre en rondelles que vous déposerez sur la quiche.
+8. Cuisez au four de 25 à 30 minutes.
