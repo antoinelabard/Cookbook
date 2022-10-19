@@ -2,10 +2,7 @@
 date-added: 2022-07-28
 source: https://www.750g.com/tarte-aux-legumes-du-soleil-r50529.htm
 season: summer
-type:
-  - meal
-  - ingredient
-  - inedible
+type: meal
 category: quiche
 dish: main-course
 meal: lunch

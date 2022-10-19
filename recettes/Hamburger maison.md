@@ -1,10 +1,7 @@
 ---
 date-added: 2021-11-11
 source: https://www.marmiton.org/recettes/recette_hamburger-maison_32672.aspx
-type:
-  - meal
-  - ingredient
-  - inedible
+type: meal
 category: sandwich
 dish: main-course
 meal: lunch

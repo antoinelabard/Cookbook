@@ -2,10 +2,7 @@
 date-added: 2021-12-30
 source: https://www.marmiton.org/recettes/recette_gratin-de-haricots-verts-aux-champignons_28382.aspx
 season: mid-season
-type:
-  - meal
-  - ingredient
-  - inedible
+type: meal
 category: oven
 dish: main-course
 meal: lunch

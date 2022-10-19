@@ -2,10 +2,7 @@
 date-added: 2022-07-21
 source: https://www.marmiton.org/recettes/recette_salade-de-pates-au-thon-tomates-et-avocat_225273.aspx
 season: summer
-type:
-  - meal
-  - ingredient
-  - inedible
+type: meal
 category: salad
 dish: main-course
 meal: lunch

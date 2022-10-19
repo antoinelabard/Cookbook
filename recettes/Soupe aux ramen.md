@@ -2,10 +2,7 @@
 date-added: 2021-12-20
 source: https://www.marmiton.org/recettes/recette_soupe-aux-ramen_225544.aspx
 season: winter
-type:
-  - meal
-  - ingredient
-  - inedible
+type: meal
 category: soup
 dish: main-course
 meal: lunch

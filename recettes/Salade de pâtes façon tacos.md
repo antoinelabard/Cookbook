@@ -2,10 +2,7 @@
 date-added: 2022-07-28
 source: https://www.750g.com/salade-de-pates-facon-tacos-r202633.htm
 season: summer
-type:
-  - meal
-  - ingredient
-  - inedible
+type: meal
 category: salad
 dish: main-course
 meal: lunch

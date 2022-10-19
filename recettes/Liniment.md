@@ -1,10 +1,7 @@
 ---
 date-added: 2022-02-11
 source: Maman
-type:
-  - meal
-  - ingredient
-  - inedible
+type: inedible
 meal: lunch
 ---
 
