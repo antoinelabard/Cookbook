@@ -1,4 +1,4 @@
-# Recettes d'ingrédients
+# Ingrédients
 
 ```dataview
 LIST WHERE type="ingredient"
