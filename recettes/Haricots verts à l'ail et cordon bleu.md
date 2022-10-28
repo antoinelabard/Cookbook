@@ -8,7 +8,7 @@ meal: lunch
 opportunity: pleasure
 ---
 
-# Haricots vers à l'ail et cordon bleu
+# Haricots verts à l'ail et cordon bleu
 
 ![]()
 
