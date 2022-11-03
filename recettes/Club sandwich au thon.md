@@ -1,0 +1,37 @@
+---
+date-added: 2022-11-03
+source: https://www.marmiton.org/recettes/recette_club-sandwich-au-thon_169952.aspx
+season: summer
+type: meal
+category: sandwich
+dish: main-course
+meal: lunch
+opportunity: pleasure
+---
+
+# Club sandwich au thon
+
+![](images/Club%20sandwich%20poulet%20-%20bacon.jpg)
+
+| Préparation | Repos | Cuisson |
+|:-----------:|:-----:|:-------:|
+|    15min    |   -   |    -    |
+
+## Ingrédients
+
+- Pain de mie : 16 tranches
+- Câpres : 8cs
+- Wasabi : 4cs
+- Jus de citron
+- Thon : 500g
+- Mayonnaise : 16cs
+- Concombre : 1
+- Salade : 1
+- Oignons nouveaux : 4
+
+## Préparation
+
+1. Faire griller le pain de mie.
+2. Dans un bol, mettre ensemble le thon, l'oignon débité en petits cubes, la mayonnaise, la wasabi, les câpres et le jus de citron. Mélanger à la fourchette. Rectifier l'assaisonnement.
+3. Découper la salade en fines lanières et l'arroser de jus de citron.
+4. Dresser le sandwich en disposant une tranche de pain de mie, la préparation au thon, la salade, le concombre, la préparation au thon et une tranche de pain de mie.
