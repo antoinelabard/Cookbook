@@ -18,7 +18,7 @@ meal: lunch
 
 ## Ingrédients
 
-- Pain de mie : 12 tranches
+- Pain de mie : 16 tranches
 - Tomates : 8
 - Lard fumé : 8 tranches
 - Escalopes de poulet : 2

@@ -19,7 +19,7 @@ opportunity: pleasure
 
 ## Ingrédients
 
-- Pain de mie : 1
+- Pain de mie : 16 tranches
 - Tomate : 2
 - Filet de poulet : 500g
 - bacon : 150g
