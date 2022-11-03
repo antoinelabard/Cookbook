@@ -4,6 +4,7 @@
 
 ```dataview
 LIST WHERE opportunity="cheat-meal"
+AND type="meal"
 ```
 
 ## Repas de fête
