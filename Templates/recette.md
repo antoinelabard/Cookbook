@@ -35,7 +35,7 @@ opportunity:
 
 # Nom de la recette
 
-![]()
+![[]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
