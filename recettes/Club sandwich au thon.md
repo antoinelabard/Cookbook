@@ -11,7 +11,7 @@ opportunity: pleasure
 
 # Club sandwich au thon
 
-![](images/Club%20sandwich%20poulet%20-%20bacon.jpg)
+![[Club sandwich au thon.jpg]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
