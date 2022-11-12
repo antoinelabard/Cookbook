@@ -21,8 +21,8 @@ meal: lunch
 - Céleri : 1 cs
 - Carotte : 1
 - Origan
-- Viande hachée : 300g
-- Coulis de tomate : 30cl
+- Viande hachée : 800g
+- Coulis de tomate : 700g
 - Haricots verts : 800g
 
 ## Préparation

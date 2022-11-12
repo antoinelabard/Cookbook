@@ -18,13 +18,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Pommes de terre : 300g
+- Pommes de terre : 1kg
 - Farine : 1cs
 - Herbes de Provence
-- Parmesan : 30g
+- Parmesan : 50g
 - Beurre : 30g
 - Fromage râpé : 50g
-- Viande hachée : 400g
+- Viande hachée : 800g
 
 ## Préparation
 
