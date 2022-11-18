@@ -2,7 +2,6 @@
 date-added: 2022-02-11
 source: Maman
 type: inedible
-meal: lunch
 ---
 
 # Liniment
