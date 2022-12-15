@@ -17,7 +17,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [[Pâte brisée vite faite]] : 1
+- [[Pâte brisée]] : 1
 - Tomates : 2
 - Persil
 - Gruyère râpé
@@ -27,7 +27,7 @@ meal: lunch
 
 ## Préparation
 
-1. ![[Pâte brisée vite faite]]
+1. ![[Pâte brisée]]
 2. Préchauffer le four à 180°C.
 3. Étaler la pâte brisée dans un moule à tarte.
 4. Disposer le jambon coupé en dés ou en morceaux, y ajouter des morceaux de fromage de chèvre et terminer par les tomates coupées en tranches.

@@ -19,14 +19,14 @@ meal: lunch
 
 - Asperges : 500g
 - Lardons : 200g
-- [Pâte brisée](Pâte%20brisée%20vite%20faite.md) : 1
+- [Pâte brisée](Pâte%20brisée.md) : 1
 - Crème fraîche : 50cl
 - Fromage râpé
 - Oeufs : 4
 
 ## Préparation
 
-![[Pâte brisée vite faite]]
+![[Pâte brisée]]
 
 1. Préchauffer le four à 220°C (thermostat 7-8).
 2. Peler sommairement la base des asperges, les couper en rondelles et les faire fondre à la poêle avec du beurre et les lardons, environ 10 min.

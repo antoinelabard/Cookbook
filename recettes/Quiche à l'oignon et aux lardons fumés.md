@@ -19,13 +19,13 @@ meal: lunch
 
 - Oignons : 1kg
 - Crème fraîche : 20cl
-- [[Pâte brisée vite faite]] : 1
+- [[Pâte brisée]] : 1
 - Oeufs : 2
 - Lardons : 75g
 
 ## Préparation
 
-![[Pâte brisée vite faite]]
+![[Pâte brisée]]
 
 1. Éplucher les oignons et les couper en rondelles.
 2. Les mettre dans le beurre chaud, et faire cuire sans prendre de couleur (pour ce faire, les mettre à froid dans le beurre qui n'est pas encore fondu); ajouter les lardons, saler et poivrer.

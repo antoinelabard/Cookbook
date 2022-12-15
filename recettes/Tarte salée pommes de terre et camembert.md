@@ -21,7 +21,7 @@ opportunity: cheat-meal
 
 - Pommes de terre : 3
 - Oignon : 1
-- [Pâte brisée](Pâte%20brisée%20vite%20faite.md) : 1
+- [Pâte brisée](Pâte%20brisée.md) : 1
 - Crème fraîche : 20cl
 - lardons : 100g
 - gruyère râpé
@@ -29,7 +29,7 @@ opportunity: cheat-meal
 
 ## Préparation
 
-![[Pâte brisée vite faite]]
+![[Pâte brisée]]
 
 1. Épluchez et coupez en morceaux les pommes de terre.
 2. Ensuite, mettez les à cuire dans une casserole d'eau bouillante environ 10min (il faut qu'elles soient encore fermes) .

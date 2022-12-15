@@ -17,7 +17,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [[Pâte brisée vite faite]] : 1
+- [[Pâte brisée]] : 1
 - Poireaux : 3
 - Crème fraîche : 20cl
 - Lait : 10cl
@@ -26,7 +26,7 @@ meal: lunch
 
 ## Préparation
 
-![[Pâte brisée vite faite]]
+![[Pâte brisée]]
 
 1. Étalez la pâte dans le moule beurré et fariné.
 2. Nettoyez puis émincez les blancs des 3 poireaux.

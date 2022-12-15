@@ -4,9 +4,9 @@ source: https://www.marmiton.org/recettes/recette_pate-brisee-vite-faite_31639.a
 type: ingredient
 ---
 
-# Pâte brisée vite faite
+# Pâte brisée
 
-![](images/Pâte%20brisée%20vite%20faite.jpg)
+![[Pâte brisée.jpg]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

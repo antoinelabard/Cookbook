@@ -18,7 +18,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [Pâte brisée](Pâte%20brisée%20vite%20faite.md) : 1
+- [Pâte brisée](Pâte%20brisée.md) : 1
 - Poivrons : 2
 - Courgette : 1
 - Parmesan râpé : 10g
@@ -28,7 +28,7 @@ meal: lunch
 
 ## Préparation
 
-![[Pâte brisée vite faite]]
+![[Pâte brisée]]
 
 1. Préchauffer le four à 180°C. Précuire la pâte dans son moule pendant 15 minutes à 180°C.
 2. Faire cuire simultanément dans une poêle les oignons, les tomates et les poivrons. Dans une autre poêle, faire cuire les aubergines et les courgettes avec un filet d'huile d'olive pendant 15 minutes.
