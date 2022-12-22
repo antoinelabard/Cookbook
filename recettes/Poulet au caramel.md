@@ -19,7 +19,7 @@ opportunity: cheat-meal
 
 - Filet de poulet : 4
 - Sucre : 300g
-- gingmbre
+- gingembre
 
 ## Préparation
 
