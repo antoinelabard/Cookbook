@@ -1,6 +1,6 @@
 ---
 date-added: 2022-12-28
-source: https://jow.fr/recipes/omelette-au-saumon-8fevgewq2335kwob0y90?coversCount=4
+source: https://jow.fr/recipes/omelette-au-saumon-8fevgewq2335kwob0y90
 type: meal
 dish: main-course
 meal: lunch
