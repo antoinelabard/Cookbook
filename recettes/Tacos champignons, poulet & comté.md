@@ -10,7 +10,7 @@ meal: lunch
 
 # Tacos champignons, poulet & comté
 
-![[Tacos champignons, poulet & comté.jpg]]
+![[Tacos champignons, poulet & comté.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

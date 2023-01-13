@@ -1,41 +1,15 @@
 ---
 date-added: 2022-12-22
 source: https://jow.fr/recipes/gratin-de-ravioles-a-la-ratatouille-8juqfvmykslskvjk0rh1
-season:
-  - summer
-  - autumn
-  - winter
-  - spring
-type:
-  - meal
-  - ingredient
-  - inedible
-category:
-  - salad
-  - sandwich
-  - oven
-  - fries
-  - cake
-  - pan
-  - quiche
-  - soup
-dish:
-  - starter
-  - main-course
-  - dessert
-meal:
-  - breakfast
-  - lunch
-  - snack
-opportunity:
-  - cheat-meal
-  - party
-  - pleasure
+type: meal
+category: oven
+dish: main-course
+meal: lunch
 ---
 
 # Gratin de ravioles à la ratatouille
 
-![[Gratin de ravioles à la ratatouille.jpg]]
+![[Gratin de ravioles à la ratatouille.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

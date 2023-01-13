@@ -8,7 +8,7 @@ meal: lunch
 
 # Spaghetti ail & crevette
 
-![[Spaghetti ail & crevette.jpg]]
+![[Spaghetti ail & crevette.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

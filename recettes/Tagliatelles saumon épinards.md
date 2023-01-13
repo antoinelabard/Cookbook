@@ -9,7 +9,7 @@ meal: lunch
 
 # Tagliatelles saumon épinards
 
-![[Tagliatelles saumon épinards.jpg]]
+![[Tagliatelles saumon épinards.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

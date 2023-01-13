@@ -1,6 +1,6 @@
 ---
 date-added: 2023-01-07
-source: https://jow.fr/recipes/one-pot-pasta-artichauts-et-tomates-sechees-8lowbg1v4jn4lds806ny?coversCount=4
+source: https://jow.fr/recipes/one-pot-pasta-artichauts-et-tomates-sechees-8lowbg1v4jn4lds806ny
 type: meal
 dish: main-course
 meal: lunch
@@ -8,7 +8,7 @@ meal: lunch
 
 # One pot pasta artichauts & tomates séchées
 
-![[One pot pasta artichauts & tomates séchées.jpg]]
+![[One pot pasta artichauts & tomates séchées.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

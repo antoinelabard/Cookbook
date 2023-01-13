@@ -8,7 +8,7 @@ meal: lunch
 
 # Rösti de pommes de terre
 
-![[Rösti de pommes de terre.jpg]]
+![[Rösti de pommes de terre.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

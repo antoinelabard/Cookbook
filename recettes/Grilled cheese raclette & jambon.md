@@ -9,7 +9,7 @@ meal: lunch
 
 # Grilled cheese raclette & jambon
 
-![[Grilled cheese raclette & jambon.jpg]]
+![[Grilled cheese raclette & jambon.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
