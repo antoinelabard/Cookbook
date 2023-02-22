@@ -69,7 +69,7 @@ class CookBookRepository:
     ))
 
     RECIPES_TAG = "recipes"
-    COOKED_DATES_TAG = "cooked date"
+    COOKED_DATES_TAG = "cooked dates"
 
     RECIPE_METADATA_TEMPLATE = {COOKED_DATES_TAG: []}
 
@@ -81,15 +81,21 @@ class CookBookRepository:
     @staticmethod
     def set_cookbook_metadata(recipes_metadata):
         with open('recipes_metadata.json', 'w') as f:
-            json.dump(recipes_metadata, f, indent=4)
+            json.dump(recipes_metadata, f, indent=4)  # you can add indent=4 when debugging to format the json file
 
     @staticmethod
     def get_recipes_cooked_dates():
-        pass
+        recipes_cooked_dates = {}
+        for key, value in CookBookRepository.get_cookbook_metadata()[CookBookRepository.RECIPES_TAG].items():
+            recipes_cooked_dates[key] = value[CookBookRepository.COOKED_DATES_TAG]
+        return recipes_cooked_dates
 
     @staticmethod
-    def get_recipe_cooked(self, recipe_name):
-        pass
+    def get_recipe_cooked_dates(recipe_name):
+        cookbook_metadata = CookBookRepository.get_cookbook_metadata()
+        if recipe_name not in cookbook_metadata[CookBookRepository.RECIPES_TAG].keys():
+            return []
+        return cookbook_metadata[CookBookRepository.RECIPES_TAG][recipe_name][CookBookRepository.COOKED_DATES_TAG]
 
     @staticmethod
     def add_recipe_cooked_date(recipe_name):
