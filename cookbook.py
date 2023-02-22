@@ -69,9 +69,9 @@ class Repository:
     ))
 
     RECIPES_TAG = "recipes"
-    COOKED_DATE_TAG = "cooked date"
+    COOKED_DATES_TAG = "cooked date"
 
-    RECIPE_METADATA_TEMPLATE = {COOKED_DATE_TAG: []}
+    RECIPE_METADATA_TEMPLATE = {COOKED_DATES_TAG: []}
 
     @staticmethod
     def get_cookbook_metadata():
@@ -81,7 +81,7 @@ class Repository:
     @staticmethod
     def set_cookbook_metadata(recipes_metadata):
         with open('recipes_metadata.json', 'w') as f:
-            json.dump(recipes_metadata, f)
+            json.dump(recipes_metadata, f, indent=4)
 
     @staticmethod
     def get_recipes_cooked_dates():
@@ -92,16 +92,21 @@ class Repository:
         pass
 
     @staticmethod
-    def add_recipe_cooked(self, recipe_name):
-        pass
+    def add_recipe_cooked_date(recipe_name):
+        Repository.update_recipes_list()
+        cookbook_metadata = Repository.get_cookbook_metadata()
+        if recipe_name not in cookbook_metadata[Repository.RECIPES_TAG].keys():
+            cookbook_metadata[Repository.RECIPES_TAG][recipe_name] = Repository.RECIPE_METADATA_TEMPLATE
+        cookbook_metadata[Repository.RECIPES_TAG][recipe_name][Repository.COOKED_DATES_TAG].append(datetime.now().isoformat())
+        Repository.set_cookbook_metadata(cookbook_metadata)
 
     @staticmethod
     def update_recipes_list():
-        recipes_metadata = Repository.get_cookbook_metadata()
+        cookbook_metadata = Repository.get_cookbook_metadata()
         for recipe in Repository.RECIPES_NAMES_LIST:
-            if recipe not in recipes_metadata[Repository.RECIPES_TAG].keys():
-                recipes_metadata[Repository.RECIPES_TAG][recipe] = Repository.RECIPE_METADATA_TEMPLATE
-        Repository.set_cookbook_metadata(recipes_metadata)
+            if recipe not in cookbook_metadata[Repository.RECIPES_TAG].keys():
+                cookbook_metadata[Repository.RECIPES_TAG][recipe] = Repository.RECIPE_METADATA_TEMPLATE
+        Repository.set_cookbook_metadata(cookbook_metadata)
 
 
 for arg in sys.argv:
