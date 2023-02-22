@@ -3,15 +3,13 @@
 import os
 import sys
 import yaml
-
-RECIPE_DIR = "recettes"
-
-files_list_by_dir = lambda directory: os.popen(f'find {directory} -name "*.md"').readlines()
+import json
+from datetime import datetime
 
 
 def _delete_all_indexes():
-    for file in os.listdir(RECIPE_DIR):
-        os.unlink(os.path.join(RECIPE_DIR, file))
+    for file in os.listdir(Repository.RECIPE_DIR):
+        os.unlink(os.path.join(Repository.RECIPE_DIR, file))
 
 
 def _get_metadata_from_md(path):
@@ -33,12 +31,12 @@ def _get_metadata_from_md(path):
     return yaml.safe_load(metadata)
 
 
-def _get_files_metadata():
+def _get_recipes_metadata():
     """
     :return: the metadata of all the files in a dictionary
     """
     files_metadata = {}
-    for file in files_list_by_dir(RECIPE_DIR):
+    for file in Repository.RECIPES_NAMES_LIST(Repository.RECIPE_DIR):
         file_metadata = _get_metadata_from_md(file.replace('\n', ''))
         if file_metadata != '':
             files_metadata[file.split('/')[-1].replace('.md\n', '')] = file_metadata
@@ -50,7 +48,7 @@ def export_complete_cookbook():
     create a document containing quotes of the recipes contained in the cookbook.
     """
 
-    recipes_list = lambda directory: "{}".format('\n'.join(files_wikilinks(sorted(files_list_by_dir(directory)))))
+    recipes_list = lambda directory: "{}".format('\n'.join(files_wikilinks(sorted(Repository.RECIPES_NAMES_LIST(directory)))))
 
     complete_cookbook = """# Livre de recettes
     
@@ -59,7 +57,38 @@ def export_complete_cookbook():
     files_wikilinks = lambda files_list: map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
 
     with open("livre de recettes.md", 'w') as f:
-        f.write(complete_cookbook.format(recipes_list(RECIPE_DIR)))
+        f.write(complete_cookbook.format(recipes_list(Repository.RECIPE_DIR)))
+
+
+class Repository:
+    RECIPE_DIR = "recettes"
+    RECIPES_NAMES_LIST = lambda directory: os.popen(f'find {directory} -name "*.md"').readlines()
+
+    @staticmethod
+    def get_recipes_metadata():
+        with open('recipes_metadata.json', 'r') as f:
+            return json.load(f)
+
+    @staticmethod
+    def set_recipes_metadata(recipes_metadata):
+        with open('recipes_metadata.json', 'w') as f:
+            json.dump(recipes_metadata, f)
+
+    @staticmethod
+    def get_recipes_cooked_dates():
+        pass
+
+    @staticmethod
+    def get_recipe_cooked(self, recipe_name):
+        pass
+
+    @staticmethod
+    def add_recipe_cooked(self, recipe_name):
+        pass
+
+    @staticmethod
+    def update_recipes_list():
+        pass
 
 
 for arg in sys.argv:
