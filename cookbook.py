@@ -6,10 +6,12 @@ import yaml
 import json
 from datetime import datetime
 
+RECIPE_DIR = "recettes"
+
 
 def _delete_all_indexes():
-    for file in os.listdir(Repository.RECIPE_DIR):
-        os.unlink(os.path.join(Repository.RECIPE_DIR, file))
+    for file in os.listdir(RECIPE_DIR):
+        os.unlink(os.path.join(RECIPE_DIR, file))
 
 
 def _get_metadata_from_md(path):
@@ -36,7 +38,7 @@ def _get_recipes_metadata():
     :return: the metadata of all the files in a dictionary
     """
     files_metadata = {}
-    for file in Repository.RECIPES_NAMES_LIST(Repository.RECIPE_DIR):
+    for file in Repository.RECIPES_NAMES_LIST:
         file_metadata = _get_metadata_from_md(file.replace('\n', ''))
         if file_metadata != '':
             files_metadata[file.split('/')[-1].replace('.md\n', '')] = file_metadata
@@ -48,7 +50,7 @@ def export_complete_cookbook():
     create a document containing quotes of the recipes contained in the cookbook.
     """
 
-    recipes_list = lambda directory: "{}".format('\n'.join(files_wikilinks(sorted(Repository.RECIPES_NAMES_LIST(directory)))))
+    recipes_list = lambda: "{}".format('\n'.join(files_wikilinks(sorted(Repository.RECIPES_NAMES_LIST))))
 
     complete_cookbook = """# Livre de recettes
     
@@ -57,20 +59,27 @@ def export_complete_cookbook():
     files_wikilinks = lambda files_list: map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
 
     with open("livre de recettes.md", 'w') as f:
-        f.write(complete_cookbook.format(recipes_list(Repository.RECIPE_DIR)))
+        f.write(complete_cookbook.format(recipes_list()))
 
 
 class Repository:
-    RECIPE_DIR = "recettes"
-    RECIPES_NAMES_LIST = lambda directory: os.popen(f'find {directory} -name "*.md"').readlines()
+    RECIPES_NAMES_LIST = list(map(
+        lambda x: x.split('/')[-1].replace('\n', '').replace('.md', ''),
+        os.popen(f'find {RECIPE_DIR} -name "*.md"').readlines()
+    ))
+
+    RECIPES_TAG = "recipes"
+    COOKED_DATE_TAG = "cooked date"
+
+    RECIPE_METADATA_TEMPLATE = {COOKED_DATE_TAG: []}
 
     @staticmethod
-    def get_recipes_metadata():
+    def get_cookbook_metadata():
         with open('recipes_metadata.json', 'r') as f:
             return json.load(f)
 
     @staticmethod
-    def set_recipes_metadata(recipes_metadata):
+    def set_cookbook_metadata(recipes_metadata):
         with open('recipes_metadata.json', 'w') as f:
             json.dump(recipes_metadata, f)
 
@@ -88,7 +97,11 @@ class Repository:
 
     @staticmethod
     def update_recipes_list():
-        pass
+        recipes_metadata = Repository.get_cookbook_metadata()
+        for recipe in Repository.RECIPES_NAMES_LIST:
+            if recipe not in recipes_metadata[Repository.RECIPES_TAG].keys():
+                recipes_metadata[Repository.RECIPES_TAG][recipe] = Repository.RECIPE_METADATA_TEMPLATE
+        Repository.set_cookbook_metadata(recipes_metadata)
 
 
 for arg in sys.argv:
