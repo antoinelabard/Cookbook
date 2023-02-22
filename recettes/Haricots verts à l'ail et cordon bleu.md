@@ -10,12 +10,6 @@ opportunity: pleasure
 
 # Haricots verts à l'ail et cordon bleu
 
-![]()
-
-| Préparation | Repos | Cuisson |
-|:-----------:|:-----:|:-------:|
-|             |   -   |         |
-
 ## Ingrédients
 
 - [[Haricots verts à l'ail]]
