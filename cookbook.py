@@ -38,7 +38,7 @@ def _get_recipes_metadata():
     :return: the metadata of all the files in a dictionary
     """
     files_metadata = {}
-    for file in Repository.RECIPES_NAMES_LIST:
+    for file in CookBookRepository.RECIPES_NAMES_LIST:
         file_metadata = _get_metadata_from_md(file.replace('\n', ''))
         if file_metadata != '':
             files_metadata[file.split('/')[-1].replace('.md\n', '')] = file_metadata
@@ -50,7 +50,7 @@ def export_complete_cookbook():
     create a document containing quotes of the recipes contained in the cookbook.
     """
 
-    recipes_list = lambda: "{}".format('\n'.join(files_wikilinks(sorted(Repository.RECIPES_NAMES_LIST))))
+    recipes_list = lambda: "{}".format('\n'.join(files_wikilinks(sorted(CookBookRepository.RECIPES_NAMES_LIST))))
 
     complete_cookbook = """# Livre de recettes
     
@@ -62,7 +62,7 @@ def export_complete_cookbook():
         f.write(complete_cookbook.format(recipes_list()))
 
 
-class Repository:
+class CookBookRepository:
     RECIPES_NAMES_LIST = list(map(
         lambda x: x.split('/')[-1].replace('\n', '').replace('.md', ''),
         os.popen(f'find {RECIPE_DIR} -name "*.md"').readlines()
@@ -93,20 +93,20 @@ class Repository:
 
     @staticmethod
     def add_recipe_cooked_date(recipe_name):
-        Repository.update_recipes_list()
-        cookbook_metadata = Repository.get_cookbook_metadata()
-        if recipe_name not in cookbook_metadata[Repository.RECIPES_TAG].keys():
-            cookbook_metadata[Repository.RECIPES_TAG][recipe_name] = Repository.RECIPE_METADATA_TEMPLATE
-        cookbook_metadata[Repository.RECIPES_TAG][recipe_name][Repository.COOKED_DATES_TAG].append(datetime.now().isoformat())
-        Repository.set_cookbook_metadata(cookbook_metadata)
+        CookBookRepository.update_recipes_list()
+        cookbook_metadata = CookBookRepository.get_cookbook_metadata()
+        if recipe_name not in cookbook_metadata[CookBookRepository.RECIPES_TAG].keys():
+            cookbook_metadata[CookBookRepository.RECIPES_TAG][recipe_name] = CookBookRepository.RECIPE_METADATA_TEMPLATE
+        cookbook_metadata[CookBookRepository.RECIPES_TAG][recipe_name][CookBookRepository.COOKED_DATES_TAG].append(datetime.now().isoformat())
+        CookBookRepository.set_cookbook_metadata(cookbook_metadata)
 
     @staticmethod
     def update_recipes_list():
-        cookbook_metadata = Repository.get_cookbook_metadata()
-        for recipe in Repository.RECIPES_NAMES_LIST:
-            if recipe not in cookbook_metadata[Repository.RECIPES_TAG].keys():
-                cookbook_metadata[Repository.RECIPES_TAG][recipe] = Repository.RECIPE_METADATA_TEMPLATE
-        Repository.set_cookbook_metadata(cookbook_metadata)
+        cookbook_metadata = CookBookRepository.get_cookbook_metadata()
+        for recipe in CookBookRepository.RECIPES_NAMES_LIST:
+            if recipe not in cookbook_metadata[CookBookRepository.RECIPES_TAG].keys():
+                cookbook_metadata[CookBookRepository.RECIPES_TAG][recipe] = CookBookRepository.RECIPE_METADATA_TEMPLATE
+        CookBookRepository.set_cookbook_metadata(cookbook_metadata)
 
 
 for arg in sys.argv:
