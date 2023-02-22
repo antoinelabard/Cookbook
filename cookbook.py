@@ -98,6 +98,13 @@ class CookBookRepository:
         return cookbook_metadata[CookBookRepository.RECIPES_TAG][recipe_name][CookBookRepository.COOKED_DATES_TAG]
 
     @staticmethod
+    def get_recipes_times_cooked():
+        recipes_cooked_dates = {}
+        for key, value in CookBookRepository.get_cookbook_metadata()[CookBookRepository.RECIPES_TAG].items():
+            recipes_cooked_dates[key] = len(value[CookBookRepository.COOKED_DATES_TAG])
+        return recipes_cooked_dates
+
+    @staticmethod
     def add_recipe_cooked_date(recipe_name):
         CookBookRepository.update_recipes_list()
         cookbook_metadata = CookBookRepository.get_cookbook_metadata()
