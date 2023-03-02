@@ -20,7 +20,7 @@ meal: lunch
 - Filets de poulet : 4
 - Sauce soja : 4cs
 - Gingembre
-- Graines e sésame
+- Graines de sésame
 - Riz : 280g
 
 ## Préparation

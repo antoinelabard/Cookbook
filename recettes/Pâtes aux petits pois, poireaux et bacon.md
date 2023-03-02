@@ -21,7 +21,7 @@ meal: lunch
 - Parmesan râpé
 - Spaghetti : 400g
 - Tranches de bacon : 4
-- Petits poids surgelés : 100g
+- Petits pois surgelés : 100g
 - Crème fraîche : 30cl
 
 ## Préparation
