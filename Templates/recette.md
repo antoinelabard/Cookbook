@@ -33,7 +33,7 @@ opportunity:
   - pleasure
 ---
 
-# Nom de la recette
+# {{title}}
 
 ![[]]
 
