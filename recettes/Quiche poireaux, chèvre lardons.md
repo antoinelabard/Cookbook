@@ -23,6 +23,7 @@ meal: lunch
 - Lait : 10cl
 - Lardons : 200g
 - Fromage de chèvre : 1
+- Oeufs : 3
 
 ## Préparation
 

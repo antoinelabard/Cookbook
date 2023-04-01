@@ -28,6 +28,7 @@ opportunity: pleasure
 - Concombre : 1
 - Salade : 1
 - Oignons nouveaux : 4
+- tomates : 2
 
 ## Préparation
 
