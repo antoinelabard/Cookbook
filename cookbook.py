@@ -8,43 +8,6 @@ from datetime import datetime
 
 RECIPE_DIR = "recettes"
 
-
-def _delete_all_indexes():
-    for file in os.listdir(RECIPE_DIR):
-        os.unlink(os.path.join(RECIPE_DIR, file))
-
-
-def _get_metadata_from_md(path):
-    """
-    :param path: the path to the markdown file containing the metadata
-    :return: an empty string if there is no metadata in the file. Otherwise, return a dictionary of the metadata
-    """
-
-    metadata_marker = "---\n"
-    with open(path, 'r') as f:
-        lines = f.readlines()
-    metadata = ""
-    if lines[0] != metadata_marker:
-        return ''
-    for i in lines[1:]:  # skip first line as it is metadata_marker
-        if i == metadata_marker:
-            break
-        metadata += i
-    return yaml.safe_load(metadata)
-
-
-def _get_recipes_metadata():
-    """
-    :return: the metadata of all the files in a dictionary
-    """
-    files_metadata = {}
-    for file in CookBookRepository.RECIPES_NAMES_LIST:
-        file_metadata = _get_metadata_from_md(file.replace('\n', ''))
-        if file_metadata != '':
-            files_metadata[file.split('/')[-1].replace('.md\n', '')] = file_metadata
-    return files_metadata
-
-
 def export_complete_cookbook():
     """
     create a document containing quotes of the recipes contained in the cookbook.
@@ -97,6 +60,42 @@ class CookBookRepository:
         if recipe_name not in cookbook_metadata.keys():
             return []
         return cookbook_metadata[recipe_name][CookBookRepository.COOKED_DATES_TAG]
+
+    @staticmethod
+    def delete_all_indexes():
+        for file in os.listdir(RECIPE_DIR):
+            os.unlink(os.path.join(RECIPE_DIR, file))
+
+    @staticmethod
+    def _get_metadata_from_md(path):
+        """
+        :param path: the path to the markdown file containing the metadata
+        :return: an empty string if there is no metadata in the file. Otherwise, return a dictionary of the metadata
+        """
+
+        metadata_marker = "---\n"
+        with open(path, 'r') as f:
+            lines = f.readlines()
+        metadata = ""
+        if lines[0] != metadata_marker:
+            return ''
+        for i in lines[1:]:  # skip first line as it is metadata_marker
+            if i == metadata_marker:
+                break
+            metadata += i
+        return yaml.safe_load(metadata)
+
+    @staticmethod
+    def get_recipes_metadata():
+        """
+        :return: the metadata of all the files in a dictionary
+        """
+        files_metadata = {}
+        for name in CookBookRepository.RECIPES_NAMES_LIST:
+            file_metadata = CookBookRepository._get_metadata_from_md(f"recettes/{name}.md")
+            if file_metadata != '':
+                files_metadata[name] = file_metadata
+        return files_metadata
 
     @staticmethod
     def get_recipes_times_cooked():
