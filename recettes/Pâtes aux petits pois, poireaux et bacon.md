@@ -5,7 +5,9 @@ type: meal
 category: pasta
 dish: main-course
 meal: lunch
----# Pâtes aux petits pois, poireaux et bacon
+---
+
+# Pâtes aux petits pois, poireaux et bacon
 
 ![](images/Pâtes%20aux%20petits%20pois,%20poireaux%20et%20bacon.jpg)
 
