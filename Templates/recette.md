@@ -35,7 +35,7 @@ opportunity:
 
 # {{title}}
 
-![[]]
+![[{{title}}.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
