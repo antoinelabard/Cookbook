@@ -72,18 +72,17 @@ class CookBookRepository:
         :param path: the path to the markdown file containing the metadata
         :return: an empty string if there is no metadata in the file. Otherwise, return a dictionary of the metadata
         """
-
+        lines = ""
         metadata_marker = "---\n"
         with open(path, 'r') as f:
-            lines = f.readlines()
-        metadata = ""
-        if lines[0] != metadata_marker:
-            return ''
-        for i in lines[1:]:  # skip first line as it is metadata_marker
-            if i == metadata_marker:
-                break
-            metadata += i
-        return yaml.safe_load(metadata)
+            line = f.readline()
+            if line != metadata_marker:  # check if there is metadata in the file
+                return ''
+            while True:
+                line = f.readline()
+                if line == metadata_marker:
+                    return yaml.safe_load(lines)
+                lines += line
 
     @staticmethod
     def get_recipes_metadata():
