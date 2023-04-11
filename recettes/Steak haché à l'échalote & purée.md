@@ -1,6 +1,6 @@
 ---
 date-added: 2023-01-20
-source: https://jow.fr/recipes/steak-hache-a-l-echalote-et-puree-8fmwj1rcarpska5106at?coversCount=4
+source: https://jow.fr/recipes/steak-hache-a-l-echalote-et-puree-8fmwj1rcarpska5106at
 ---
 
 # Steak haché à l'échalote & purée

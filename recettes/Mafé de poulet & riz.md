@@ -1,6 +1,6 @@
 ---
 date-added: 2023-01-20
-source: https://jow.fr/recipes/mafe-de-poulet-et-riz-8lqn6ri6lq3qi7930qzc?coversCount=4
+source: https://jow.fr/recipes/mafe-de-poulet-et-riz-8lqn6ri6lq3qi7930qzc
 
 ---
 

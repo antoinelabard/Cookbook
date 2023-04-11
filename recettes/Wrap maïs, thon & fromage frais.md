@@ -1,6 +1,6 @@
 ---
 date-added: 2023-01-20
-source: https://jow.fr/recipes/wrap-mais-thon-et-fromage-frais-8p3wbjdd5jswaue60esp?coversCount=4
+source: https://jow.fr/recipes/wrap-mais-thon-et-fromage-frais-8p3wbjdd5jswaue60esp
 ---
 
 # Wrap maïs, thon & fromage frais
