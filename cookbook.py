@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import copy
 import os
 import sys
 import yaml
@@ -7,6 +7,7 @@ import json
 from datetime import datetime
 
 RECIPE_DIR = "recettes"
+
 
 def export_complete_cookbook():
     """
@@ -19,8 +20,8 @@ def export_complete_cookbook():
     
     {}""".replace("    ", "")
 
-    files_wikilinks = lambda files_list: map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')),
-                                             files_list)
+    files_wikilinks = lambda files_list: \
+        map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
 
     with open("livre de recettes.md", 'w') as f:
         f.write(complete_cookbook.format(recipes_list()))
@@ -35,17 +36,19 @@ class CookBookRepository:
     RECIPES_TAG = "recipes"
     COOKED_DATES_TAG = "cooked dates"
 
-    RECIPE_METADATA_TEMPLATE = {COOKED_DATES_TAG: []}
+    RECIPE_METADATA_TEMPLATE = {
+        COOKED_DATES_TAG: []
+    }
 
     @staticmethod
     def get_cookbook_metadata():
-        with open('recipes_metadata.json', 'r') as f:
+        with open('cookbook_metadata.json', 'r') as f:
             return json.load(f)
 
     @staticmethod
-    def set_cookbook_metadata(recipes_metadata):
-        with open('recipes_metadata.json', 'w') as f:
-            json.dump(recipes_metadata, f, indent=4)  # you can add indent=4 when debugging to format the json file
+    def set_cookbook_metadata(cookbook_metadata):
+        with open('cookbook_metadata.json', 'w') as f:
+            json.dump(cookbook_metadata, f, indent=4)  # you can add indent=4 when debugging to format the json file
 
     @staticmethod
     def get_recipes_cooked_dates():
@@ -60,11 +63,6 @@ class CookBookRepository:
         if recipe_name not in cookbook_metadata.keys():
             return []
         return cookbook_metadata[recipe_name][CookBookRepository.COOKED_DATES_TAG]
-
-    @staticmethod
-    def delete_all_indexes():
-        for file in os.listdir(RECIPE_DIR):
-            os.unlink(os.path.join(RECIPE_DIR, file))
 
     @staticmethod
     def _get_metadata_from_md(path):
@@ -89,11 +87,12 @@ class CookBookRepository:
         """
         :return: the metadata of all the files in a dictionary
         """
+        CookBookRepository.update_cookbook_metadata()
         files_metadata = {}
-        for name in CookBookRepository.RECIPES_NAMES_LIST:
-            file_metadata = CookBookRepository._get_metadata_from_md(f"recettes/{name}.md")
+        for recipe_name in CookBookRepository.get_cookbook_metadata().keys():
+            file_metadata = CookBookRepository._get_metadata_from_md(f"recettes/{recipe_name}.md")
             if file_metadata != '':
-                files_metadata[name] = file_metadata
+                files_metadata[recipe_name] = file_metadata
         return files_metadata
 
     @staticmethod
@@ -105,7 +104,7 @@ class CookBookRepository:
 
     @staticmethod
     def add_recipe_cooked_date(recipe_name):
-        CookBookRepository.update_recipes_list()
+        CookBookRepository.update_cookbook_metadata()
         cookbook_metadata = CookBookRepository.get_cookbook_metadata()
         if recipe_name not in cookbook_metadata.keys():
             cookbook_metadata[recipe_name] = CookBookRepository.RECIPE_METADATA_TEMPLATE
@@ -114,7 +113,7 @@ class CookBookRepository:
         CookBookRepository.set_cookbook_metadata(cookbook_metadata)
 
     @staticmethod
-    def update_recipes_list():
+    def update_cookbook_metadata():
         cookbook_metadata = CookBookRepository.get_cookbook_metadata()
         for recipe in CookBookRepository.RECIPES_NAMES_LIST:
             if recipe not in cookbook_metadata.keys():
@@ -125,3 +124,5 @@ class CookBookRepository:
 for arg in sys.argv:
     if arg == "export":
         export_complete_cookbook()
+    if arg == "update":
+        CookBookRepository.update_cookbook_metadata()
