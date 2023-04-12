@@ -1,6 +1,8 @@
 ---
 date-added: 2023-02-09
 source: https://jow.fr/recipes/pasta-saumon-citron-89s3i4sdhbjk5s4h140i
+type: meal
+meal: lunch
 ---
 
 # Pasta saumon citron

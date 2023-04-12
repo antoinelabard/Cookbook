@@ -1,6 +1,8 @@
 ---
 date-added: 2023-02-21
 source: Antoine Labard
+type: meal
+meal: breakfast
 ---
 
 # Yaourt grec à l'avoine et aux noix
