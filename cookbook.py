@@ -5,6 +5,8 @@ import sys
 import yaml
 import json
 from datetime import datetime
+import math
+import random
 
 RECIPE_DIR = "recettes"
 
@@ -120,6 +122,94 @@ class CookBookRepository:
                 cookbook_metadata[recipe] = CookBookRepository.RECIPE_METADATA_TEMPLATE
         CookBookRepository.set_cookbook_metadata(cookbook_metadata)
 
+
+class MealGenerator:
+    """
+    MealGenerator
+    """
+    NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
+    NB_LUNCHES_PER_DAY = 2
+    NB_BREAKFASTS_PER_DAY = 2
+
+    week_plan_profile = lambda nb_people=1: {
+        "meals": {
+            "lunch": math.ceil(
+                7 * MealGenerator.NB_LUNCHES_PER_DAY * nb_people / MealGenerator.NB_PORTIONS_PER_RECIPE),
+            "breakfast": math.ceil(
+                2 * MealGenerator.NB_BREAKFASTS_PER_DAY * nb_people / MealGenerator.NB_PORTIONS_PER_RECIPE),
+            "snack": math.ceil(
+                2 * nb_people / MealGenerator.NB_PORTIONS_PER_RECIPE),
+        },
+        "filters": {
+            "type": "meal",
+            "opportunity": None
+        }
+    }
+
+    @staticmethod
+    def generate_meal_plan(profile):
+        recipes_metadata = CookBookRepository.get_recipes_metadata()
+        cookbook_metadata = CookBookRepository.get_cookbook_metadata()
+        recipes_names = list(cookbook_metadata.keys())
+        print(recipes_names)
+        def match_filter(name, flt):
+            if profile["filters"][flt] is None and flt not in recipes_metadata[name]:
+                return True
+            if flt not in recipes_metadata[name]:
+                return False
+            return recipes_metadata[name][flt] == profile["filters"][flt]
+
+        def match_meal(name, meal):
+            if "meal" not in recipes_metadata[name]:
+                return False
+            return recipes_metadata[name]["meal"] == meal
+
+        def pick_recipes_per_meal():
+            meal_plan = {}
+            for meal, quantity in profile["meals"].items():
+                rcp_names = copy.copy(recipes_names)
+                rcp_names = list(filter(lambda name: match_meal(name, meal), rcp_names))
+                # sort by least cooked recipe ascending
+                rcp_names.sort(key=lambda a: len(cookbook_metadata[a]["cooked dates"]))
+                if len(rcp_names) > 2 * quantity:  # two times more meals than what the profile needs
+                    rcp_names = rcp_names[:int(len(rcp_names) / 2 + 1)]  # select the 50% less cooked recipes
+                random.shuffle(rcp_names)
+                # select the desired quantity if there is enough filtered recipes
+                if len(rcp_names) > quantity:
+                    rcp_names = rcp_names[:int(quantity)]
+                meal_plan[meal] = rcp_names
+
+            return meal_plan
+
+        for flt in profile["filters"]:
+            rcp_names = list(filter(lambda name: match_filter(name, flt), recipes_names))
+
+        with open("menu.md", 'w') as f:
+            meal_plan = pick_recipes_per_meal()
+            lunch_str = "\n".join([f"![[{i}]]" for i in meal_plan['lunch']])
+            breakfast_str = "\n".join([f"![[{i}]]" for i in meal_plan['breakfast']])
+            snack_str = "\n".join([f"![[{i}]]" for i in meal_plan['snack']])
+
+            file_str = f"""# Menu
+                
+                ## Lunch
+                
+                {lunch_str}
+                
+                ## Breakfast
+                
+                {breakfast_str}
+                
+                ## Snack
+                
+                {snack_str}
+                """.replace("                ", "")
+
+            print(file_str)
+            f.write(file_str)
+
+
+MealGenerator.generate_meal_plan(MealGenerator.week_plan_profile())
 
 for arg in sys.argv:
     if arg == "export":
