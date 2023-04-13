@@ -122,6 +122,19 @@ class CookBookRepository:
                 cookbook_metadata[recipe] = CookBookRepository.RECIPE_METADATA_TEMPLATE
         CookBookRepository.set_cookbook_metadata(cookbook_metadata)
 
+    @staticmethod
+    def read_menu():
+        with open("menu.md", 'r') as f:
+            recipes_names = f.readlines()
+        recipes_names = list(map(lambda line: line.replace("![[", "").replace("]]\n", ""), recipes_names))
+        recipes_names = list(filter(lambda line: line in CookBookRepository.RECIPES_NAMES_LIST, recipes_names))
+        return recipes_names
+
+    @staticmethod
+    def add_menu_cooked_dates():
+        for recipe in CookBookRepository.read_menu():
+            CookBookRepository.add_recipe_cooked_date(recipe)
+
 
 class MealGenerator:
     """
@@ -166,6 +179,7 @@ class MealGenerator:
 
         def filter_recipes(rcp_names):
             rcp_nm = copy.copy(rcp_names)
+            print(profile)
             for flt in profile["filters"]:
                 rcp_nm = list(filter(lambda name: match_filter(name, flt), recipes_names))
             return rcp_nm
@@ -218,3 +232,7 @@ for arg in sys.argv:
         export_complete_cookbook()
     if arg == "update":
         CookBookRepository.update_cookbook_metadata()
+    if arg == "plan":
+        MealGenerator.generate_meal_plan(MealGenerator.week_plan_profile())
+    if arg == "save":
+        CookBookRepository.add_menu_cooked_dates()
