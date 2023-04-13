@@ -151,7 +151,7 @@ class MealGenerator:
         recipes_metadata = CookBookRepository.get_recipes_metadata()
         cookbook_metadata = CookBookRepository.get_cookbook_metadata()
         recipes_names = list(cookbook_metadata.keys())
-        print(recipes_names)
+
         def match_filter(name, flt):
             if profile["filters"][flt] is None and flt not in recipes_metadata[name]:
                 return True
@@ -164,28 +164,32 @@ class MealGenerator:
                 return False
             return recipes_metadata[name]["meal"] == meal
 
-        def pick_recipes_per_meal():
+        def filter_recipes(rcp_names):
+            rcp_nm = copy.copy(rcp_names)
+            for flt in profile["filters"]:
+                rcp_nm = list(filter(lambda name: match_filter(name, flt), recipes_names))
+            return rcp_nm
+
+        def pick_recipes_per_meal(rcp_names):
             meal_plan = {}
             for meal, quantity in profile["meals"].items():
-                rcp_names = copy.copy(recipes_names)
-                rcp_names = list(filter(lambda name: match_meal(name, meal), rcp_names))
+                rcp_nm = copy.copy(rcp_names)
+                rcp_nm = list(filter(lambda name: match_meal(name, meal), rcp_nm))
                 # sort by least cooked recipe ascending
-                rcp_names.sort(key=lambda a: len(cookbook_metadata[a]["cooked dates"]))
-                if len(rcp_names) > 2 * quantity:  # two times more meals than what the profile needs
-                    rcp_names = rcp_names[:int(len(rcp_names) / 2 + 1)]  # select the 50% less cooked recipes
-                random.shuffle(rcp_names)
+                rcp_nm.sort(key=lambda a: len(cookbook_metadata[a]["cooked dates"]))
+                if len(rcp_nm) > 2 * quantity:  # two times more meals than what the profile needs
+                    rcp_nm = rcp_nm[:int(len(rcp_nm) / 2 + 1)]  # select the 50% less cooked recipes
+                random.shuffle(rcp_nm)
                 # select the desired quantity if there is enough filtered recipes
-                if len(rcp_names) > quantity:
-                    rcp_names = rcp_names[:int(quantity)]
-                meal_plan[meal] = rcp_names
+                if len(rcp_nm) > quantity:
+                    rcp_nm = rcp_nm[:int(quantity)]
+                meal_plan[meal] = rcp_nm
 
             return meal_plan
 
-        for flt in profile["filters"]:
-            rcp_names = list(filter(lambda name: match_filter(name, flt), recipes_names))
+        meal_plan = pick_recipes_per_meal(filter_recipes(recipes_names))
 
         with open("menu.md", 'w') as f:
-            meal_plan = pick_recipes_per_meal()
             lunch_str = "\n".join([f"![[{i}]]" for i in meal_plan['lunch']])
             breakfast_str = "\n".join([f"![[{i}]]" for i in meal_plan['breakfast']])
             snack_str = "\n".join([f"![[{i}]]" for i in meal_plan['snack']])
@@ -208,8 +212,6 @@ class MealGenerator:
             print(file_str)
             f.write(file_str)
 
-
-MealGenerator.generate_meal_plan(MealGenerator.week_plan_profile())
 
 for arg in sys.argv:
     if arg == "export":
