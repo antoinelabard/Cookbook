@@ -8,7 +8,15 @@ from datetime import datetime
 import math
 import random
 
-RECIPE_DIR = "recettes"
+BREAKFAST_TAG = "breakfast"
+COOKED_DATES_TAG = "cooked dates"
+FILTERS_TAG = "filters"
+LUNCH_TAG = "lunch"
+MEALS_TAG = "meals"
+OPPORTUNITY_TAG = "opportunity"
+RECIPES_TAG = "recipes"
+SNACK_TAG = "snack"
+TYPE_TAG = "type"
 
 
 def singleton(class_):
@@ -24,10 +32,10 @@ def singleton(class_):
 
 @singleton
 class CookBookRepository:
-    RECIPES_TAG = "recipes"
-    COOKED_DATES_TAG = "cooked dates"
-    COOKBOOK_PATH = 'cookbook_metadata.json'
-    menu_path = 'menu.md'
+    RECIPE_DIR = "recettes"
+    COOKBOOK_METADATA_PATH = "cookbook_metadata.json"
+    COMPLETE_COOKBOOK_PATH = "livre de recettes.md"
+    MENU_PATH = "menu.md"
     RECIPE_METADATA_TEMPLATE = {
         COOKED_DATES_TAG: []
     }
@@ -37,13 +45,13 @@ class CookBookRepository:
         self.recipes_metadata = self._get_recipes_metadata()
 
     def _get_cookbook_metadata(self):
-        with open(self.COOKBOOK_PATH, 'r') as f:
+        with open(self.COOKBOOK_METADATA_PATH, 'r') as f:
             return json.load(f)
 
     def _set_cookbook_metadata(self, cookbook_metadata):
         self.cookbook_metadata = cookbook_metadata
         self.update_cookbook_metadata()
-        with open(self.COOKBOOK_PATH, 'w') as f:
+        with open(self.COOKBOOK_METADATA_PATH, 'w') as f:
             json.dump(cookbook_metadata, f, indent=4)  # you can add indent=4 when debugging to format the json file
 
     def update_cookbook_metadata(self):
@@ -54,7 +62,7 @@ class CookBookRepository:
     def get_recipes_names(self):
         return list(map(
             lambda x: x.split('/')[-1].replace('\n', '').replace('.md', ''),
-            os.popen(f'find {RECIPE_DIR} -name "*.md"').readlines()
+            os.popen(f'find {self.RECIPE_DIR} -name "*.md"').readlines()
         ))
 
     def get_recipes_cooked_dates(self):
@@ -92,7 +100,7 @@ class CookBookRepository:
         self.update_cookbook_metadata()
         files_metadata = {}
         for recipe_name in self.cookbook_metadata.keys():
-            file_metadata = self._get_metadata_from_md(f"recettes/{recipe_name}.md")
+            file_metadata = self._get_metadata_from_md(f"{self.RECIPE_DIR}/{recipe_name}.md")
             if file_metadata != '':
                 files_metadata[recipe_name] = file_metadata
         return files_metadata
@@ -112,37 +120,85 @@ class CookBookRepository:
         self._set_cookbook_metadata(self.cookbook_metadata)
 
     def read_menu(self):
-        with open("menu.md", 'r') as f:
+        with open(self.MENU_PATH, 'r') as f:
             recipes_names = f.readlines()
         recipes_names = list(map(lambda line: line.replace("![[", "").replace("]]\n", ""), recipes_names))
         recipes_names = list(filter(lambda line: line in self.get_recipes_names(), recipes_names))
         return recipes_names
 
+    def write_menu(self, meal_plan):
+        menu_str = f"""# Menu
+                
+                
+            """
+        meal_str = """## {}
+            
+
+            {}
+            
+            """
+        to_str = lambda l: "\n".join([f"![[{i}]]" for i in l])
+
+        for meal, recipes in meal_plan.items():
+            menu_str += meal_str.format(meal, to_str(recipes))
+        menu_str = menu_str.replace("            ", "")
+        print(menu_str)
+        with open(self.MENU_PATH, 'w') as f:
+            f.write(menu_str)
+
     def add_menu_cooked_dates(self):
         for recipe in self.read_menu():
             self.add_recipe_cooked_date(recipe)
+
+    def export_complete_cookbook(self):
+        """
+        create a document containing quotes of the recipes contained in the cookbook.
+        """
+
+        complete_cookbook_template = """# Livre de recettes
+        
+            {}""".replace("            ", "")
+
+        files_wikilinks = lambda files_list: \
+            map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
+        wikilinks_str = lambda: '\n'.join(files_wikilinks(sorted(repository.get_recipes_names())))
+
+        with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
+            f.write(complete_cookbook_template.format(wikilinks_str()))
 
 
 class MealGenerator:
     """
     MealGenerator
+
+    profile template: {
+        "meals": {
+            "lunch": int,
+            "breakfast": int,
+            "snack": int,
+        }
+        "filters": {
+            "type": str|list(str),
+            "opportunity": str|list(str)|None,
+        }
+    }
     """
     NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
     NB_LUNCHES_PER_DAY = 2
     NB_BREAKFASTS_PER_DAY = 2
 
     week_plan_profile = {
-        "meals": {
-            "lunch": math.ceil(
+        MEALS_TAG: {
+            LUNCH_TAG: math.ceil(
                 7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-            "breakfast": math.ceil(
+            BREAKFAST_TAG: math.ceil(
                 2 * NB_BREAKFASTS_PER_DAY / NB_PORTIONS_PER_RECIPE),
-            "snack": math.ceil(
+            SNACK_TAG: math.ceil(
                 2 / NB_PORTIONS_PER_RECIPE),
         },
-        "filters": {
-            "type": "meal",
-            "opportunity": None
+        FILTERS_TAG: {
+            TYPE_TAG: "meal",
+            OPPORTUNITY_TAG: None
         }
     }
 
@@ -153,27 +209,27 @@ class MealGenerator:
         recipes_names = repository.get_recipes_names()
 
         def match_filter(name, flt):
-            if profile["filters"][flt] is None and flt not in repository.recipes_metadata[name]:
+            if profile[FILTERS_TAG][flt] is None and flt not in repository.recipes_metadata[name]:
                 return True
             if flt not in repository.recipes_metadata[name]:
                 return False
-            return repository.recipes_metadata[name][flt] == profile["filters"][flt]
+            return repository.recipes_metadata[name][flt] in profile[FILTERS_TAG][flt]
 
         def match_meal(name, meal):
-            if "meal" not in repository.recipes_metadata[name]:
+            if MEALS_TAG not in repository.recipes_metadata[name]:
                 return False
-            return repository.recipes_metadata[name]["meal"] == meal
+            return repository.recipes_metadata[name][MEALS_TAG] == meal
 
         def pick_recipes_per_meal():
             meal_plan = {}
-            for meal, quantity in profile["meals"].items():
+            for meal, quantity in profile[MEALS_TAG].items():
                 total_quantity = quantity * nb_people
                 rcp_names = copy.copy(recipes_names)
-                for flt in profile["filters"]:
+                for flt in profile[FILTERS_TAG]:
                     rcp_names = list(filter(lambda name: match_filter(name, flt), rcp_names))
                 rcp_names = list(filter(lambda name: match_meal(name, meal), rcp_names))
                 # sort by least cooked recipe ascending
-                rcp_names.sort(key=lambda name: len(repository.cookbook_metadata[name]["cooked dates"]))
+                rcp_names.sort(key=lambda name: len(repository.cookbook_metadata[name][COOKED_DATES_TAG]))
                 if len(rcp_names) > 2 * total_quantity:  # two times more meals than what the profile needs
                     rcp_names = rcp_names[:math.ceil(len(rcp_names) / 2)]  # select the 50% less cooked recipes
                 random.shuffle(rcp_names)
@@ -185,57 +241,15 @@ class MealGenerator:
             return meal_plan
 
         meal_plan = pick_recipes_per_meal()
-
-        with open("menu.md", 'w') as f:
-            lunch_str = "\n".join([f"![[{i}]]" for i in meal_plan['lunch']])
-            breakfast_str = "\n".join([f"![[{i}]]" for i in meal_plan['breakfast']])
-            snack_str = "\n".join([f"![[{i}]]" for i in meal_plan['snack']])
-
-            file_str = f"""# Menu
-                
-                ## Lunch
-                
-                {lunch_str}
-                
-                ## Breakfast
-                
-                {breakfast_str}
-                
-                ## Snack
-                
-                {snack_str}
-                """.replace("                ", "")
-
-            print(file_str)
-            f.write(file_str)
+        repository.write_menu(meal_plan)
 
 
 repository = CookBookRepository()
 mealGenerator = MealGenerator()
 
-
-def export_complete_cookbook():
-    """
-    create a document containing quotes of the recipes contained in the cookbook.
-    """
-
-    complete_cookbook = """# Livre de recettes
-    
-    {}""".replace("    ", "")
-
-    files_wikilinks = lambda files_list: \
-        map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
-
-    wikilinks_str = lambda: '\n'.join(files_wikilinks(sorted(repository.get_recipes_names())))
-    with open("livre de recettes.md", 'w') as f:
-        f.write(complete_cookbook.format(wikilinks_str()))
-
-
 for arg in sys.argv:
     if arg == "export":
-        export_complete_cookbook()
-    if arg == "update":
-        repository.update_cookbook_metadata()
+        repository.export_complete_cookbook()
     if arg == "plan":
         mealGenerator.generate_meal_plan()
     if arg == "save":
