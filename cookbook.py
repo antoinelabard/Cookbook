@@ -8,6 +8,7 @@ from datetime import datetime
 import math
 import random
 
+APPETIZER_TAG = "appetizer"
 BREAKFAST_TAG = "breakfast"
 COOKED_DATES_TAG = "cooked dates"
 FILTERS_TAG = "filters"

@@ -27,6 +27,7 @@ meal:
   - breakfast
   - lunch
   - snack
+  - appetizer
 opportunity:
   - cheat-meal
   - party
