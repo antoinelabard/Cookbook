@@ -33,6 +33,11 @@ def singleton(class_):
 
 @singleton
 class CookBookRepository:
+    """
+    CookBookRepository: Manage the access to the data stored in the cookbook. Any read or write operation must be
+        handled by this class. It includes operations to read the general cookbook metadata and the metadata of each of
+        the recipes.
+    """
     RECIPE_DIR = "recettes"
     COOKBOOK_METADATA_PATH = "cookbook_metadata.json"
     COMPLETE_COOKBOOK_PATH = "livre de recettes.md"
@@ -56,11 +61,18 @@ class CookBookRepository:
             json.dump(cookbook_metadata, f, indent=4)  # you can add indent=4 when debugging to format the json file
 
     def update_cookbook_metadata(self):
+        """
+        update_cookbook_metadata: Scan the cookbook recipes to detect if there is any that is not listed in the cookbook
+        metadata.
+        """
         for recipe in self.get_recipes_names():
             if recipe not in self.cookbook_metadata.keys():
                 self.cookbook_metadata[recipe] = self.RECIPE_METADATA_TEMPLATE
 
     def get_recipes_names(self):
+        """
+        :return: A list of the names of the recipes.
+        """
         return list(map(
             lambda x: x.split('/')[-1].replace('\n', '').replace('.md', ''),
             os.popen(f'find {self.RECIPE_DIR} -name "*.md"').readlines()
@@ -106,13 +118,10 @@ class CookBookRepository:
                 files_metadata[recipe_name] = file_metadata
         return files_metadata
 
-    def get_recipes_times_cooked(self):
-        recipes_cooked_dates = {}
-        for name, metadata in self._get_cookbook_metadata().items():
-            recipes_cooked_dates[name] = len(metadata[self.COOKED_DATES_TAG])
-        return recipes_cooked_dates
-
     def add_recipe_cooked_date(self, recipe_name):
+        """
+        Add the current date and time to the given recipe cooked date.
+        """
         self.update_cookbook_metadata()
         if recipe_name not in self.cookbook_metadata.keys():
             self.cookbook_metadata[recipe_name] = self.RECIPE_METADATA_TEMPLATE
@@ -121,6 +130,9 @@ class CookBookRepository:
         self._set_cookbook_metadata(self.cookbook_metadata)
 
     def read_menu(self):
+        """
+        Read the menu referred by MENU_PATH and return a list of all the recipes contained in it.
+        """
         with open(self.MENU_PATH, 'r') as f:
             recipes_names = f.readlines()
         recipes_names = list(map(lambda line: line.replace("![[", "").replace("]]\n", ""), recipes_names))
@@ -148,6 +160,9 @@ class CookBookRepository:
             f.write(menu_str)
 
     def add_menu_cooked_dates(self):
+        """
+        Read the current menu and add the current date to all the recipes contained in the file.
+        """
         for recipe in self.read_menu():
             self.add_recipe_cooked_date(recipe)
 
@@ -170,7 +185,10 @@ class CookBookRepository:
 
 class MealGenerator:
     """
-    MealGenerator
+    MealGenerator: Used to generate a new meal plan, given a certain profile established in advance. This class is
+    intended to generate meals plan based on the prior cook history of the cookbook. It uses the cookbook metadata
+    cooked dates to determine the least cooked recipes matching the indicated filters, and pick among the candidates
+    to return the result.
 
     profile template: {
         "meals": {
@@ -222,7 +240,7 @@ class MealGenerator:
             return repository.recipes_metadata[name][MEALS_TAG] == meal
 
         def pick_recipes_per_meal():
-            meal_plan = {}
+            ml_pl = {}
             for meal, quantity in profile[MEALS_TAG].items():
                 total_quantity = quantity * nb_people
                 rcp_names = copy.copy(recipes_names)
@@ -237,9 +255,9 @@ class MealGenerator:
                 # select the desired quantity if there is enough filtered recipes
                 if len(rcp_names) > total_quantity:
                     rcp_names = rcp_names[:int(total_quantity)]
-                meal_plan[meal] = rcp_names
+                ml_pl[meal] = rcp_names
 
-            return meal_plan
+            return ml_pl
 
         meal_plan = pick_recipes_per_meal()
         repository.write_menu(meal_plan)
