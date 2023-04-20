@@ -13,7 +13,7 @@ BREAKFAST_TAG = "breakfast"
 COOKED_DATES_TAG = "cooked dates"
 FILTERS_TAG = "filters"
 LUNCH_TAG = "lunch"
-MEALS_TAG = "meals"
+MEALS_TAG = "meal"
 OPPORTUNITY_TAG = "opportunity"
 RECIPES_TAG = "recipes"
 SNACK_TAG = "snack"
@@ -146,7 +146,6 @@ class CookBookRepository:
             """
         meal_str = """## {}
             
-
             {}
             
             """
@@ -154,7 +153,7 @@ class CookBookRepository:
 
         for meal, recipes in meal_plan.items():
             menu_str += meal_str.format(meal, to_str(recipes))
-        menu_str = menu_str.replace("            ", "")
+        menu_str = menu_str.replace("    ", "")
         print(menu_str)
         with open(self.MENU_PATH, 'w') as f:
             f.write(menu_str)
@@ -173,7 +172,7 @@ class CookBookRepository:
 
         complete_cookbook_template = """# Livre de recettes
         
-            {}""".replace("            ", "")
+            {}""".replace("    ", "")
 
         files_wikilinks = lambda files_list: \
             map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
@@ -232,7 +231,8 @@ class MealGenerator:
                 return True
             if flt not in repository.recipes_metadata[name]:
                 return False
-            return repository.recipes_metadata[name][flt] in profile[FILTERS_TAG][flt]
+            return repository.recipes_metadata[name][flt] in \
+                   "None" if profile[FILTERS_TAG][flt] is None else profile[FILTERS_TAG][flt]
 
         def match_meal(name, meal):
             if MEALS_TAG not in repository.recipes_metadata[name]:
