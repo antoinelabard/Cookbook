@@ -47,18 +47,24 @@ class CookBookRepository:
     }
 
     def __init__(self):
-        self.cookbook_metadata = self._get_cookbook_metadata()
-        self.recipes_metadata = self._get_recipes_metadata()
+        self.cookbook_metadata = self._read_cookbook_metadata()
+        self.recipes_metadata = self._read_recipes_metadata()
 
-    def _get_cookbook_metadata(self):
+    def _read_cookbook_metadata(self):
+        """
+        _read_cookbook_metadata: read the cookbook metadata from the file pointed by COOKBOOK_METADATA_PATH
+        """
         with open(self.COOKBOOK_METADATA_PATH, 'r') as f:
             return json.load(f)
 
-    def _set_cookbook_metadata(self, cookbook_metadata):
-        self.cookbook_metadata = cookbook_metadata
+    def _write_cookbook_metadata(self):
+        """
+        _read_cookbook_metadata: write the cookbook metadata to the file pointed by COOKBOOK_METADATA_PATH
+        :return:
+        """
         self.update_cookbook_metadata()
         with open(self.COOKBOOK_METADATA_PATH, 'w') as f:
-            json.dump(cookbook_metadata, f, indent=4)  # you can add indent=4 when debugging to format the json file
+            json.dump(self.cookbook_metadata, f, indent=4)
 
     def update_cookbook_metadata(self):
         """
@@ -84,12 +90,7 @@ class CookBookRepository:
             recipes_cooked_dates[key] = value[self.COOKED_DATES_TAG]
         return recipes_cooked_dates
 
-    def get_recipe_cooked_dates(self, recipe_name):
-        if recipe_name not in self.cookbook_metadata.keys():
-            return []
-        return self.cookbook_metadata[recipe_name][self.COOKED_DATES_TAG]
-
-    def _get_metadata_from_md(self, path):
+    def _read_metadata_from_md(self, path):
         """
         :param path: the path to the markdown file containing the metadata
         :return: an empty string if there is no metadata in the file. Otherwise, return a dictionary of the metadata
@@ -106,14 +107,14 @@ class CookBookRepository:
                     return yaml.safe_load(lines)
                 lines += line
 
-    def _get_recipes_metadata(self):
+    def _read_recipes_metadata(self):
         """
         :return: the metadata of all the files in a dictionary
         """
         self.update_cookbook_metadata()
         files_metadata = {}
         for recipe_name in self.cookbook_metadata.keys():
-            file_metadata = self._get_metadata_from_md(f"{self.RECIPE_DIR}/{recipe_name}.md")
+            file_metadata = self._read_metadata_from_md(f"{self.RECIPE_DIR}/{recipe_name}.md")
             if file_metadata != '':
                 files_metadata[recipe_name] = file_metadata
         return files_metadata
@@ -125,9 +126,7 @@ class CookBookRepository:
         self.update_cookbook_metadata()
         if recipe_name not in self.cookbook_metadata.keys():
             self.cookbook_metadata[recipe_name] = self.RECIPE_METADATA_TEMPLATE
-        self.cookbook_metadata[recipe_name][self.COOKED_DATES_TAG].append(
-            datetime.now().isoformat())
-        self._set_cookbook_metadata(self.cookbook_metadata)
+        self.cookbook_metadata[recipe_name][self.COOKED_DATES_TAG].append(datetime.now().isoformat())
 
     def read_menu(self):
         """
@@ -232,7 +231,7 @@ class MealGenerator:
             if flt not in repository.recipes_metadata[name]:
                 return False
             return repository.recipes_metadata[name][flt] in \
-                   "None" if profile[FILTERS_TAG][flt] is None else profile[FILTERS_TAG][flt]
+                "None" if profile[FILTERS_TAG][flt] is None else profile[FILTERS_TAG][flt]
 
         def match_meal(name, meal):
             if MEALS_TAG not in repository.recipes_metadata[name]:
