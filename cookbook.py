@@ -203,15 +203,16 @@ class MealGenerator:
     NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
     NB_LUNCHES_PER_DAY = 2
     NB_BREAKFASTS_PER_DAY = 2
+    NB_SNACKS_PER_DAY = 1
 
     week_plan_profile = {
         MEALS_TAG: {
             LUNCH_TAG: math.ceil(
                 7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
             BREAKFAST_TAG: math.ceil(
-                2 * NB_BREAKFASTS_PER_DAY / NB_PORTIONS_PER_RECIPE),
+                3 * NB_BREAKFASTS_PER_DAY / NB_PORTIONS_PER_RECIPE),
             SNACK_TAG: math.ceil(
-                2 / NB_PORTIONS_PER_RECIPE),
+                3 * NB_SNACKS_PER_DAY / NB_PORTIONS_PER_RECIPE),
         },
         FILTERS_TAG: {
             TYPE_TAG: "meal",
@@ -230,8 +231,9 @@ class MealGenerator:
                 return True
             if flt not in repository.recipes_metadata[name]:
                 return False
-            return repository.recipes_metadata[name][flt] in \
-                "None" if profile[FILTERS_TAG][flt] is None else profile[FILTERS_TAG][flt]
+            return repository.recipes_metadata[name][flt] in "None" \
+                if profile[FILTERS_TAG][flt] is None \
+                else profile[FILTERS_TAG][flt]
 
         def match_meal(name, meal):
             if MEALS_TAG not in repository.recipes_metadata[name]:
@@ -243,18 +245,23 @@ class MealGenerator:
             for meal, quantity in profile[MEALS_TAG].items():
                 total_quantity = quantity * nb_people
                 rcp_names = copy.copy(recipes_names)
+
                 for flt in profile[FILTERS_TAG]:
                     rcp_names = list(filter(lambda name: match_filter(name, flt), rcp_names))
                 rcp_names = list(filter(lambda name: match_meal(name, meal), rcp_names))
-                # sort by least cooked recipe ascending
-                rcp_names.sort(key=lambda name: len(repository.cookbook_metadata[name][COOKED_DATES_TAG]))
-                if len(rcp_names) > 2 * total_quantity:  # two times more meals than what the profile needs
-                    rcp_names = rcp_names[:math.ceil(len(rcp_names) / 2)]  # select the 50% less cooked recipes
-                random.shuffle(rcp_names)
-                # select the desired quantity if there is enough filtered recipes
-                if len(rcp_names) > total_quantity:
-                    rcp_names = rcp_names[:int(total_quantity)]
-                ml_pl[meal] = rcp_names
+
+                if not rcp_names:
+                    break
+
+                rcp_nm = copy.copy(rcp_names)
+                meal_plan_per_meal = []
+                while total_quantity > 0:
+                    index = random.randint(0, len(rcp_nm) - 1)
+                    meal_plan_per_meal.append(rcp_nm.pop(index))
+                    total_quantity -= 1
+                    if not rcp_nm:
+                        rcp_nm = copy.copy(rcp_names)
+                ml_pl[meal] = meal_plan_per_meal
 
             return ml_pl
 
