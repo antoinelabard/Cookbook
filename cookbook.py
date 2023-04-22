@@ -39,7 +39,6 @@ class CookBookRepository:
         the recipes.
     """
     RECIPE_DIR = "recettes"
-    COOKBOOK_METADATA_PATH = "cookbook_metadata.json"
     COMPLETE_COOKBOOK_PATH = "livre de recettes.md"
     MENU_PATH = "menu.md"
     RECIPE_METADATA_TEMPLATE = {
@@ -47,33 +46,7 @@ class CookBookRepository:
     }
 
     def __init__(self):
-        self.cookbook_metadata = self._read_cookbook_metadata()
         self.recipes_metadata = self._read_recipes_metadata()
-
-    def _read_cookbook_metadata(self):
-        """
-        _read_cookbook_metadata: read the cookbook metadata from the file pointed by COOKBOOK_METADATA_PATH
-        """
-        with open(self.COOKBOOK_METADATA_PATH, 'r') as f:
-            return json.load(f)
-
-    def _write_cookbook_metadata(self):
-        """
-        _read_cookbook_metadata: write the cookbook metadata to the file pointed by COOKBOOK_METADATA_PATH
-        :return:
-        """
-        self.update_cookbook_metadata()
-        with open(self.COOKBOOK_METADATA_PATH, 'w') as f:
-            json.dump(self.cookbook_metadata, f, indent=4)
-
-    def update_cookbook_metadata(self):
-        """
-        update_cookbook_metadata: Scan the cookbook recipes to detect if there is any that is not listed in the cookbook
-        metadata.
-        """
-        for recipe in self.get_recipes_names():
-            if recipe not in self.cookbook_metadata.keys():
-                self.cookbook_metadata[recipe] = self.RECIPE_METADATA_TEMPLATE
 
     def get_recipes_names(self):
         """
@@ -86,8 +59,8 @@ class CookBookRepository:
 
     def get_recipes_cooked_dates(self):
         recipes_cooked_dates = {}
-        for key, value in self.cookbook_metadata.items():
-            recipes_cooked_dates[key] = value[self.COOKED_DATES_TAG]
+        for recipe_name, metadata in self.cookbook_metadata.items():
+            recipes_cooked_dates[recipe_name] = metadata[self.COOKED_DATES_TAG]
         return recipes_cooked_dates
 
     def _read_metadata_from_md(self, path):
@@ -119,15 +92,6 @@ class CookBookRepository:
                 files_metadata[recipe_name] = file_metadata
         return files_metadata
 
-    def add_recipe_cooked_date(self, recipe_name):
-        """
-        Add the current date and time to the given recipe cooked date.
-        """
-        self.update_cookbook_metadata()
-        if recipe_name not in self.cookbook_metadata.keys():
-            self.cookbook_metadata[recipe_name] = self.RECIPE_METADATA_TEMPLATE
-        self.cookbook_metadata[recipe_name][self.COOKED_DATES_TAG].append(datetime.now().isoformat())
-
     def read_menu(self):
         """
         Read the menu referred by MENU_PATH and return a list of all the recipes contained in it.
@@ -156,13 +120,6 @@ class CookBookRepository:
         print(menu_str)
         with open(self.MENU_PATH, 'w') as f:
             f.write(menu_str)
-
-    def add_menu_cooked_dates(self):
-        """
-        Read the current menu and add the current date to all the recipes contained in the file.
-        """
-        for recipe in self.read_menu():
-            self.add_recipe_cooked_date(recipe)
 
     def export_complete_cookbook(self):
         """
@@ -277,5 +234,5 @@ for arg in sys.argv:
         repository.export_complete_cookbook()
     if arg == "plan":
         mealGenerator.generate_meal_plan()
-    if arg == "save":
-        repository.add_menu_cooked_dates()
+
+repository.add_menu_cooked_dates()
