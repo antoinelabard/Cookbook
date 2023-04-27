@@ -5,7 +5,7 @@ type: meal
 meal: lunch
 ---
 
-# # Salade jambon cru, mozza & pistaches
+# Salade jambon cru, mozza & pistaches
 
 ![[Salade jambon cru, mozza & pistaches.png]]
 
