@@ -84,9 +84,8 @@ class CookBookRepository:
         """
         :return: the metadata of all the files in a dictionary
         """
-        self.update_cookbook_metadata()
         files_metadata = {}
-        for recipe_name in self.cookbook_metadata.keys():
+        for recipe_name in self.get_recipes_names():
             file_metadata = self._read_metadata_from_md(f"{self.RECIPE_DIR}/{recipe_name}.md")
             if file_metadata != '':
                 files_metadata[recipe_name] = file_metadata
