@@ -233,5 +233,3 @@ for arg in sys.argv:
         repository.export_complete_cookbook()
     if arg == "plan":
         mealGenerator.generate_meal_plan()
-
-repository.add_menu_cooked_dates()
