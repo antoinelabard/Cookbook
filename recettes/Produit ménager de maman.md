@@ -1,7 +1,7 @@
 ---
 date-added: 2022-10-15
 source: Maman
-  - inedible
+type: inedible
 ---
 
 # Produit ménager de maman

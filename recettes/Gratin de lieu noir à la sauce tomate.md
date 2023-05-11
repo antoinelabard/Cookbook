@@ -21,7 +21,7 @@ meal: lunch
 - Tomates : 5
 - Oignons : 2
 - Jus de citron
-- Gruyère râpé
+- Gruyère râpé : 50g
 - Muscade
 - Lieu noir : 400g
 

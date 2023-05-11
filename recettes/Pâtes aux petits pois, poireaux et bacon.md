@@ -5,7 +5,9 @@ type: meal
 category: pasta
 dish: main-course
 meal: lunch
----# Pâtes aux petits pois, poireaux et bacon
+---
+
+# Pâtes aux petits pois, poireaux et bacon
 
 ![](images/Pâtes%20aux%20petits%20pois,%20poireaux%20et%20bacon.jpg)
 
@@ -21,7 +23,7 @@ meal: lunch
 - Parmesan râpé
 - Spaghetti : 400g
 - Tranches de bacon : 4
-- Petits poids surgelés : 100g
+- Petits pois surgelés : 100g
 - Crème fraîche : 30cl
 
 ## Préparation

@@ -7,7 +7,6 @@ category: oven
 dish: main-course
 meal: lunch
 opportunity: cheat-meal
-
 ---
 
 # Croissant au jambon fromage

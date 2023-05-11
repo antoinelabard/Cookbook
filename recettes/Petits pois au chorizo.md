@@ -19,7 +19,7 @@ meal: lunch
 
 - Oignon : 1
 - Chorizo : 1
-- Petits poids : 800g
+- Petits pois : 800g
 - Oeuf : 1
 
 ## Préparation

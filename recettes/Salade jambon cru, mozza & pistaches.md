@@ -1,9 +1,11 @@
 ---
 date-added: 2023-01-20
-source: https://jow.fr/recipes/salade-jambon-cru-mozza-et-pistaches-8mste31hmh0i3t0708zv?coversCount=4
+source: https://jow.fr/recipes/salade-jambon-cru-mozza-et-pistaches-8mste31hmh0i3t0708zv
+type: meal
+meal: lunch
 ---
 
-# # Salade jambon cru, mozza & pistaches
+# Salade jambon cru, mozza & pistaches
 
 ![[Salade jambon cru, mozza & pistaches.png]]
 

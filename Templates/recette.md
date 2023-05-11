@@ -27,15 +27,16 @@ meal:
   - breakfast
   - lunch
   - snack
+  - appetizer
 opportunity:
   - cheat-meal
   - party
   - pleasure
 ---
 
-# Nom de la recette
+# {{title}}
 
-![[]]
+![[{{title}}.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

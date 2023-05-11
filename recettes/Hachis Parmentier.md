@@ -25,6 +25,8 @@ meal: lunch
 - Beurre : 30g
 - Fromage râpé : 50g
 - Viande hachée : 800g
+- Oignons : 2
+- Ail : 2 gousses
 
 ## Préparation
 

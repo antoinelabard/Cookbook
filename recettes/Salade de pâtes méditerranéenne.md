@@ -5,7 +5,7 @@ season: summer
 type: meal
 category: salad
 dish: main-course
-meal: lunch
+meal: meal
 ---
 
 # Salade de pâtes méditerranéenne
