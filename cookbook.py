@@ -17,6 +17,11 @@ RECIPES_TAG = "recipes"
 SNACK_TAG = "snack"
 TYPE_TAG = "type"
 
+NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
+NB_LUNCHES_PER_DAY = 2
+NB_BREAKFASTS_PER_DAY = 2
+NB_SNACKS_PER_DAY = 1
+
 
 def singleton(class_):
     instances = {}
@@ -102,7 +107,6 @@ class CookBookRepository:
     def write_menu(self, meal_plan):
         menu_str = f"""# Menu
                 
-                
             """
         meal_str = """## {}
             
@@ -129,7 +133,7 @@ class CookBookRepository:
 
         files_wikilinks = lambda files_list: \
             map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
-        wikilinks_str = lambda: '\n'.join(files_wikilinks(sorted(repository.get_recipes_names())))
+        wikilinks_str = lambda: '\n'.join(files_wikilinks(sorted(self.repository.get_recipes_names())))
 
         with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
             f.write(complete_cookbook_template.format(wikilinks_str()))
@@ -141,67 +145,48 @@ class MealGenerator:
     intended to generate meals plan based on the prior cook history of the cookbook. It uses the cookbook metadata
     cooked dates to determine the least cooked recipes matching the indicated filters, and pick among the candidates
     to return the result.
-
-    profile template: {
-        "meals": {
-            "lunch": int,
-            "breakfast": int,
-            "snack": int,
-        }
-        "filters": {
-            "type": str|list(str),
-            "opportunity": str|list(str)|None,
-        }
-    }
     """
-    NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
-    NB_LUNCHES_PER_DAY = 2
-    NB_BREAKFASTS_PER_DAY = 2
-    NB_SNACKS_PER_DAY = 1
 
-    week_plan_profile = {
-        MEALS_TAG: {
-            LUNCH_TAG: math.ceil(
-                7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-            BREAKFAST_TAG: math.ceil(
-                3 * NB_BREAKFASTS_PER_DAY / NB_PORTIONS_PER_RECIPE),
-            SNACK_TAG: math.ceil(
-                3 * NB_SNACKS_PER_DAY / NB_PORTIONS_PER_RECIPE),
-        },
-        FILTERS_TAG: {
-            TYPE_TAG: "meal",
-            OPPORTUNITY_TAG: None
-        }
-    }
-
-    def __init__(self):
+    def __init__(self, nb_lunch=0, nb_breakfast=0, nb_snack=0, nb_appetizers=0,
+                 recipe_type=MEALS_TAG, opportunity=None):
         self.repository = CookBookRepository()
 
-    def generate_meal_plan(self, nb_people=1, profile=week_plan_profile):
-        recipes_names = repository.get_recipes_names()
+        self.meals = {
+            LUNCH_TAG: nb_lunch,
+            BREAKFAST_TAG: nb_breakfast,
+            SNACK_TAG: nb_snack,
+            APPETIZER_TAG: nb_appetizers
+        }
 
-        def match_filter(name, flt):
-            if profile[FILTERS_TAG][flt] is None and flt not in repository.recipes_metadata[name]:
-                return True
-            if flt not in repository.recipes_metadata[name]:
+        # each filter must be an instance of str, list(str) or None
+        self.filters = {
+            TYPE_TAG: recipe_type,
+            OPPORTUNITY_TAG: opportunity
+        }
+
+    def match_filters(self, recipe_name):
+        for flt in set(self.filters.keys()):
+            if self.filters[flt] is not None and flt not in self.repository.recipes_metadata[recipe_name]:
                 return False
-            return repository.recipes_metadata[name][flt] in "None" \
-                if profile[FILTERS_TAG][flt] is None \
-                else profile[FILTERS_TAG][flt]
+            if flt in self.repository.recipes_metadata[recipe_name]:
+                if self.filters[flt] != self.repository.recipes_metadata[recipe_name][flt]:
+                    return False
+        return True
+
+    def generate_meal_plan(self, nb_people=1):
+        recipes_names = list(filter(lambda name: self.match_filters(name), self.repository.get_recipes_names()))
 
         def match_meal(name, meal):
-            if MEALS_TAG not in repository.recipes_metadata[name]:
+            if MEALS_TAG not in self.repository.recipes_metadata[name]:
                 return False
-            return repository.recipes_metadata[name][MEALS_TAG] == meal
+            return self.repository.recipes_metadata[name][MEALS_TAG] == meal
 
         def pick_recipes_per_meal():
             ml_pl = {}
-            for meal, quantity in profile[MEALS_TAG].items():
+            for meal, quantity in self.meals.items():
                 total_quantity = quantity * nb_people
                 rcp_names = copy.copy(recipes_names)
 
-                for flt in profile[FILTERS_TAG]:
-                    rcp_names = list(filter(lambda name: match_filter(name, flt), rcp_names))
                 rcp_names = list(filter(lambda name: match_meal(name, meal), rcp_names))
 
                 if not rcp_names:
@@ -220,14 +205,23 @@ class MealGenerator:
             return ml_pl
 
         meal_plan = pick_recipes_per_meal()
-        repository.write_menu(meal_plan)
+        self.repository.write_menu(meal_plan)
 
-
-repository = CookBookRepository()
-mealGenerator = MealGenerator()
 
 for arg in sys.argv:
     if arg == "export":
-        repository.export_complete_cookbook()
+        CookBookRepository().export_complete_cookbook()
     if arg == "plan":
-        mealGenerator.generate_meal_plan()
+        MealGenerator(
+            nb_lunch=math.ceil(7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
+            nb_breakfast=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
+            nb_snack=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
+            recipe_type=MEALS_TAG,
+            opportunity=None).generate_meal_plan()
+
+MealGenerator(
+    nb_lunch=math.ceil(7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
+    nb_breakfast=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
+    nb_snack=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
+    recipe_type=MEALS_TAG,
+    opportunity=None).generate_meal_plan()
