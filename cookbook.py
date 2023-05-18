@@ -115,7 +115,7 @@ class CookBookRepository:
             """
         to_str = lambda l: "\n".join([f"![[{i}]]" for i in l])
 
-        for meal, recipes in meal_plan.items():
+        for meal, recipes in meal_plan.__dict__.items():
             menu_str += meal_str.format(meal, to_str(recipes))
         menu_str = menu_str.replace("    ", "")
         print(menu_str)
@@ -137,6 +137,14 @@ class CookBookRepository:
 
         with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
             f.write(complete_cookbook_template.format(wikilinks_str()))
+
+
+class MealPlan:
+    def __init__(self, lunch_list, breakfast_list, snack_list, appetizer_list):
+        self.lunch = lunch_list
+        self.breakfast = breakfast_list
+        self.snack = snack_list
+        self.appetizer = appetizer_list
 
 
 class MealGenerator:
@@ -164,7 +172,7 @@ class MealGenerator:
             OPPORTUNITY_TAG: opportunity
         }
 
-    def match_filters(self, recipe_name):
+    def _match_filters(self, recipe_name):
         for flt in set(self.filters.keys()):
             if self.filters[flt] is not None and flt not in self.repository.recipes_metadata[recipe_name]:
                 return False
@@ -173,39 +181,42 @@ class MealGenerator:
                     return False
         return True
 
+    def _match_meal(self, name, meal):
+        if MEALS_TAG not in self.repository.recipes_metadata[name]:
+            return False
+        return self.repository.recipes_metadata[name][MEALS_TAG] == meal
+
     def generate_meal_plan(self, nb_people=1):
-        recipes_names = list(filter(lambda name: self.match_filters(name), self.repository.get_recipes_names()))
+        recipes_names_filtered = \
+            list(filter(lambda name: self._match_filters(name), self.repository.get_recipes_names()))
+        meal_plan = {}
+        for meal, quantity in self.meals.items():
+            if quantity == 0:
+                meal_plan[meal] = []
+            total_quantity = quantity * nb_people
+            rcp_names = copy.copy(recipes_names_filtered)
 
-        def match_meal(name, meal):
-            if MEALS_TAG not in self.repository.recipes_metadata[name]:
-                return False
-            return self.repository.recipes_metadata[name][MEALS_TAG] == meal
+            rcp_names = list(filter(lambda name: self._match_meal(name, meal), rcp_names))
 
-        def pick_recipes_per_meal():
-            ml_pl = {}
-            for meal, quantity in self.meals.items():
-                total_quantity = quantity * nb_people
-                rcp_names = copy.copy(recipes_names)
+            if not rcp_names:
+                break
 
-                rcp_names = list(filter(lambda name: match_meal(name, meal), rcp_names))
-
-                if not rcp_names:
-                    break
-
-                rcp_nm = copy.copy(rcp_names)
-                meal_plan_per_meal = []
-                while total_quantity > 0:
-                    index = random.randint(0, len(rcp_nm) - 1)
-                    meal_plan_per_meal.append(rcp_nm.pop(index))
-                    total_quantity -= 1
-                    if not rcp_nm:
-                        rcp_nm = copy.copy(rcp_names)
-                ml_pl[meal] = meal_plan_per_meal
-
-            return ml_pl
-
-        meal_plan = pick_recipes_per_meal()
-        self.repository.write_menu(meal_plan)
+            rcp_nm = copy.copy(rcp_names)
+            meal_plan_per_meal = []
+            while total_quantity > 0:
+                index = random.randint(0, len(rcp_nm) - 1)
+                meal_plan_per_meal.append(rcp_nm.pop(index))
+                total_quantity -= 1
+                if not rcp_nm:
+                    rcp_nm = copy.copy(rcp_names)
+            meal_plan[meal] = meal_plan_per_meal
+        self.repository.write_menu(
+            MealPlan(meal_plan[LUNCH_TAG],
+                     meal_plan[BREAKFAST_TAG],
+                     meal_plan[SNACK_TAG],
+                     meal_plan[APPETIZER_TAG]
+                     )
+        )
 
 
 for arg in sys.argv:
@@ -219,9 +230,3 @@ for arg in sys.argv:
             recipe_type=MEALS_TAG,
             opportunity=None).generate_meal_plan()
 
-MealGenerator(
-    nb_lunch=math.ceil(7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-    nb_breakfast=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-    nb_snack=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-    recipe_type=MEALS_TAG,
-    opportunity=None).generate_meal_plan()
