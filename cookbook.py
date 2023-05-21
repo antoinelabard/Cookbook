@@ -44,7 +44,7 @@ class CookBookRepository:
         the recipes.
     """
     RECIPE_DIR = "recettes"
-    COMPLETE_COOKBOOK_PATH = "livre de recettes.md"
+    COMPLETE_COOKBOOK_PATH = "cookbook.md"
     MENU_PATH = "menu.md"
     RECIPE_METADATA_TEMPLATE = {
         COOKED_DATES_TAG: []
@@ -135,7 +135,7 @@ class CookBookRepository:
 
         files_wikilinks = lambda files_list: \
             map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
-        wikilinks_str = lambda: '\n'.join(files_wikilinks(sorted(self.repository.get_recipes_names())))
+        wikilinks_str = lambda: '\n'.join(files_wikilinks(sorted(self.get_recipes_names())))
 
         with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
             f.write(complete_cookbook_template.format(wikilinks_str()))
@@ -222,7 +222,7 @@ class MealGenerator:
         )
 
 
-if __name__ == "__main__":
+def process_arguments():
     args = {
         TYPE_TAG: MEALS_TAG,
         LUNCH_TAG: 0,
@@ -235,6 +235,7 @@ if __name__ == "__main__":
     for arg in sys.argv:
         if "export" in arg:
             CookBookRepository().export_complete_cookbook()
+            return
         if "plan" in arg:
             plan = arg.split('=')[-1]
             if plan == "week":
@@ -255,3 +256,7 @@ if __name__ == "__main__":
         nb_snack=int(args[SNACK_TAG]),
         nb_appetizers=int(args[APPETIZER_TAG]),
     ).generate_meal_plan(int(args[NB_PEOPLE_TAG]))
+
+
+if __name__ == "__main__":
+    process_arguments()
