@@ -13,6 +13,8 @@ FILTERS_TAG = "filters"
 LUNCH_TAG = "lunch"
 MEALS_TAG = "meal"
 OPPORTUNITY_TAG = "opportunity"
+NB_PEOPLE_TAG = "nb_people"
+PLAN_TAG = "plan"
 RECIPES_TAG = "recipes"
 SNACK_TAG = "snack"
 TYPE_TAG = "type"
@@ -155,8 +157,7 @@ class MealGenerator:
     to return the result.
     """
 
-    def __init__(self, nb_lunch=0, nb_breakfast=0, nb_snack=0, nb_appetizers=0,
-                 recipe_type=MEALS_TAG, opportunity=None):
+    def __init__(self, recipe_type, opportunity, nb_lunch, nb_breakfast, nb_snack, nb_appetizers):
         self.repository = CookBookRepository()
 
         self.meals = {
@@ -193,13 +194,14 @@ class MealGenerator:
         for meal, quantity in self.meals.items():
             if quantity == 0:
                 meal_plan[meal] = []
+                pass
             total_quantity = quantity * nb_people
             rcp_names = copy.copy(recipes_names_filtered)
 
             rcp_names = list(filter(lambda name: self._match_meal(name, meal), rcp_names))
 
             if not rcp_names:
-                break
+                pass
 
             rcp_nm = copy.copy(rcp_names)
             meal_plan_per_meal = []
@@ -211,22 +213,45 @@ class MealGenerator:
                     rcp_nm = copy.copy(rcp_names)
             meal_plan[meal] = meal_plan_per_meal
         self.repository.write_menu(
-            MealPlan(meal_plan[LUNCH_TAG],
-                     meal_plan[BREAKFAST_TAG],
-                     meal_plan[SNACK_TAG],
-                     meal_plan[APPETIZER_TAG]
-                     )
+            MealPlan(
+                meal_plan[LUNCH_TAG],
+                meal_plan[BREAKFAST_TAG],
+                meal_plan[SNACK_TAG],
+                meal_plan[APPETIZER_TAG]
+            )
         )
 
 
-for arg in sys.argv:
-    if arg == "export":
-        CookBookRepository().export_complete_cookbook()
-    if arg == "plan":
-        MealGenerator(
-            nb_lunch=math.ceil(7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-            nb_breakfast=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-            nb_snack=math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE),
-            recipe_type=MEALS_TAG,
-            opportunity=None).generate_meal_plan()
-
+if __name__ == "__main__":
+    args = {
+        TYPE_TAG: MEALS_TAG,
+        LUNCH_TAG: 0,
+        BREAKFAST_TAG: 0,
+        SNACK_TAG: 0,
+        APPETIZER_TAG: 0,
+        OPPORTUNITY_TAG: None,
+        NB_PEOPLE_TAG: 1
+    }
+    for arg in sys.argv:
+        if "export" in arg:
+            CookBookRepository().export_complete_cookbook()
+        if "plan" in arg:
+            plan = arg.split('=')[-1]
+            if plan == "week":
+                args[TYPE_TAG] = MEALS_TAG
+                args[OPPORTUNITY_TAG] = None
+                args[LUNCH_TAG] = math.ceil(7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE)
+                args[BREAKFAST_TAG] = math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE)
+                args[SNACK_TAG] = math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE)
+                args[APPETIZER_TAG] = 0
+        if '=' in arg:
+            s = arg.split('=')
+            args[s[0]] = s[-1]
+    MealGenerator(
+        recipe_type=args[TYPE_TAG],
+        opportunity=args[OPPORTUNITY_TAG],
+        nb_lunch=int(args[LUNCH_TAG]),
+        nb_breakfast=int(args[BREAKFAST_TAG]),
+        nb_snack=int(args[SNACK_TAG]),
+        nb_appetizers=int(args[APPETIZER_TAG]),
+    ).generate_meal_plan(int(args[NB_PEOPLE_TAG]))
