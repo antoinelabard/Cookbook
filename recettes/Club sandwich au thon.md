@@ -6,7 +6,6 @@ type: meal
 category: sandwich
 dish: main-course
 meal: lunch
-opportunity: pleasure
 ---
 
 # Club sandwich au thon

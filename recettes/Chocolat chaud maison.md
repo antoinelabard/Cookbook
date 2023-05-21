@@ -16,9 +16,11 @@ opportunity: pleasure
 
 ## Ingrédients
 
-- Crème liquide entière : 15cl
+Pour un mug (25cl) :
+
+- Crème liquide entière : 10cl
 - lait : 15cl
-- chocolat noir : 50g
+- chocolat noir : 25g
 
 ## Préparation
 
