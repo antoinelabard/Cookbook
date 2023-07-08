@@ -32,6 +32,6 @@ meal: lunch
 
 1. Faire cuire les lentilles comme indiqué sur leur emballage (en générale 30 min dans l'eau froide à partir du bouillonnement de l'eau). Laissez les refroidir, pour aller plus vite, vous pouvez les passées sous l'eau froide.
 2. Préparez la vinaigrette.
-3. Faites revenir les allumettes de lardons.
+3. Faites revenir les allumettes de lardons et les oignons émincés.
 4. Coupez les tomates en quartier assez fin (plus agréable en bouche) ainsi que la feta en dés.
 5. Ajoutez les lentilles une fois froide ainsi que les lardons, la feta et les tomates dans votre vinaigrette.
