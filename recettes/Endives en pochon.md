@@ -7,7 +7,7 @@ dish: main-course
 meal: lunch
 ---
 
-# Endives en "pochon"
+# Endives en pochon
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

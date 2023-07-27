@@ -8,7 +8,7 @@ dish: main-course
 meal: lunch
 ---
 
-# Pâtes à la "carbonara" à la française
+# Pâtes à la carbonara à la française
 
 ![](images/Pâtes%20à%20la%20%22carbonara%22%20à%20la%20française.jpg)
 
