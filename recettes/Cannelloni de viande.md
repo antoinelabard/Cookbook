@@ -20,7 +20,7 @@ meal: lunch
 - Oingon : 1
 - Gousse d'ail : 1
 - Viande hachée : 350g
-- Sauce tomate : 
+- Sauce tomate : 400g
 - Oeufs : 2
 - Boîte de canneloni : 1
 - Chair à saucisse : 150g

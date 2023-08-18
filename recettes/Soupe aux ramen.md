@@ -40,6 +40,6 @@ opportunity: party
 9. Attendre 1 à 2 min puis ajouter l’œuf et battre au fouet.
 10. Laisser reposer.
 11. Dans une autre casserole, préparer des ramens : faire bouillir 1,5 l d'eau.
-12. Plonger les ramens dans l'eau bouillante durant 1-2 min afin de les séparer puis ajouter les sachets d'  assaisonnement et laisser cuire durant 2 min.
+12. Plonger les ramens dans l'eau bouillante durant 1-2 min afin de les séparer puis ajouter les sachets d'assaisonnement et laisser cuire durant 2 min.
 13. Dans un grand saladier, verser un fond du bouillon des ramens puis verser la totalité de la soupe.
 14. Égoutter les ramens et les ajouter dans le saladier puis ajouter la viande et son accompagnement.

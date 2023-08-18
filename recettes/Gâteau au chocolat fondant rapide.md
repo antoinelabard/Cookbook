@@ -31,4 +31,4 @@ opportunity: party
 3. Ajoutez le mélange chocolat/beurre. Mélangez bien.
 4. Beurrez à l'aide d'une feuille de papier essuie-tout et farinez votre moule puis y versez la pâte à gâteau.
 5. Faites cuire au four environ 20 minutes.
-6. À la sortie du four le gâteau ne paraît pas assez cuit. C'est normal, laissez-le refroidir puis démoulez- le.
+6. À la sortie du four le gâteau ne paraît pas assez cuit. C'est normal, laissez-le refroidir puis démoulez-le.

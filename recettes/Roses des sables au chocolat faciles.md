@@ -28,5 +28,5 @@ opportunity: pleasure
 2. Ajouter du sucre (selon les goûts !), mettre les corn flakes dans un saladier puis verser le chocolat dessus.
 3. Bien remuer, puis faire des petits tas sur du papier cuisson ou alu et mettre au frigidaire quelques heures ou une nuit.
 
-> [!TIP]
+> [!tip]  
 > On peut ajouter un peu de sucre glace avant de les manger.

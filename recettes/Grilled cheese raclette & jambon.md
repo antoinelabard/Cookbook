@@ -13,7 +13,7 @@ meal: lunch
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    11min    |   -   |  4min   | 
+|    11min    |   -   |  4min   |
 
 ## Ingrédients
 

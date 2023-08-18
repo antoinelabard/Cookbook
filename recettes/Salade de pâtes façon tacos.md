@@ -7,6 +7,7 @@ category: salad
 dish: main-course
 meal: lunch
 ---
+
 # Salade de pâtes façon tacos
 
 ![](images/Salade%20de%20pâtes%20façon%20tacos.jpg)
