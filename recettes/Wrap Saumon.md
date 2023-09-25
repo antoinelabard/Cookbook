@@ -8,9 +8,9 @@ dish: main-course
 meal: lunch
 ---
 
-# Tacos champignons, poulet & comté
+# Wrap Saumon
 
-![[Tacos champignons, poulet & comté.png]]
+![[Wrap Saumon.png]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
