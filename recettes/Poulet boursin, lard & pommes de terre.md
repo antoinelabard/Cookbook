@@ -23,10 +23,10 @@ meal: lunch
 
 ## Préparation
 
-1. Préchauffez le four à 200°C. Lavez les pommes de terre puis découpez-les en morceaux. Réservez.
-2. Dans un plat allant au four, ajoutez les pommes de terre et un bon filet d'huile d'olive. Salez, poivrez et mélangez bien. Enfournez à 200°C pour 35 minutes de cuisson.
+1. Préchauffez le four à 200°C.
+2. Lavez les pommes de terre puis découpez-les en morceaux. Plongez-les dans une casserole d'eau froide et laissez-les cuire pendant 20 minutes.
 3. Pendant ce temps, ouvrez le filet de poulet en deux de façon à obtenir une épaisseur plus fine.
 4. Étalez le fromage sur un côté de l'escalope puis refermez le poulet en deux.
 5. Prenez une tranche de lard et enroulez-la autour de votre poulet de façon à bien le fermer. Répétez l'opération avec une deuxième tranche de lard.
-6. Au bout de 35 minutes, sortez votre plat du four puis ajoutez le poulet farci sur les pommes de terre. Salez, poivrez et ajoutez un filet d'huile d'olive sur le poulet si vous le souhaitez. Enfournez à nouveau à 200°C pour 20 minutes.
+6. Dans un plat allant au four, ajoutez les pommes de terre égouttées et un bon filet d'huile d'olive. Salez, poivrez et mélangez bien. Ajoutez le poulet farci et enfournez à 200°C pour 30 minutes de cuisson.
 7. Sortez votre plat du four et ciselez un peu de ciboulette sur le plat si vous en avez. C'est prêt !
