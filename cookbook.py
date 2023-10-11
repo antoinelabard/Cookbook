@@ -79,6 +79,8 @@ class CookBookRepository:
     RECIPE_METADATA_TEMPLATE = {
         COOKED_DATES_TAG: []
     }
+    # add a pagebreak web inserted in a markdown document
+    PAGEBREAK = '\n\n<div style="page-break-after: always;"></div>\n\n'
 
     def __init__(self):
         self.recipes_metadata = self._read_recipes_metadata()
@@ -145,7 +147,7 @@ class CookBookRepository:
             {}
             
             """
-        to_str = lambda l: "\n".join([f"![[{i}]]" for i in l])
+        to_str = lambda l: self.PAGEBREAK.join([f"![[{i}]]" for i in l])
 
         for meal, recipes in meal_plan.__dict__.items():
             menu_str += meal_str.format(meal, to_str(recipes))
@@ -165,7 +167,7 @@ class CookBookRepository:
 
         files_wikilinks = lambda files_list: \
             map(lambda file: '![[{}]]'.format(file.split('/')[-1].replace('.md\n', '')), files_list)
-        wikilinks_str = lambda: '\n'.join(files_wikilinks(sorted(self.get_recipes_names())))
+        wikilinks_str = lambda: self.PAGEBREAK.join(files_wikilinks(sorted(self.get_recipes_names())))
 
         with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
             f.write(complete_cookbook_template.format(wikilinks_str()))
