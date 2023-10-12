@@ -226,14 +226,14 @@ class MealGenerator:
         for meal, quantity in self.meals.items():
             if quantity == 0:
                 meal_plan[meal] = []
-                pass
+                continue
             total_quantity = quantity * nb_people
             rcp_names = copy.copy(recipes_names_filtered)
 
             rcp_names = list(filter(lambda name: self._match_meal(name, meal), rcp_names))
 
             if not rcp_names:
-                pass
+                continue
 
             rcp_nm = copy.copy(rcp_names)
             meal_plan_per_meal = []
