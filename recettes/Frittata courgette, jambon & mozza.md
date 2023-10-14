@@ -26,7 +26,7 @@ meal: lunch
 
 1. Préchauffez le four à 180°C. Lavez puis coupez les courgettes en fines lamelles.
 2. Cassez les œufs dans un saladier, salez et poivrez, puis battez-les avec une fourchette ou un fouet.
-3. Déposez une feuille de papier cuisson dans le fond d'un moule, beurrez ou huilez-le à l'aide d'un pinceau.
+3. Déposez une feuille de papier cuisson dans le fond d'un moule.
 4. Ajoutez les lamelles de courgettes et le jambon déchiré en morceaux.
 5. Recouvrez le tout avec les œufs battus.
 6. Ajoutez la mozzarella déchirée en morceaux par-dessus. Salez et poivrez puis enfournez pendant 15 à 20 minutes à 180°C.
