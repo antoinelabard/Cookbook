@@ -19,6 +19,7 @@ meal: lunch
 
 - [[Pâte brisée]] : 1
 - Tomates : 2
+- Oeufs : 2
 - Persil
 - Gruyère râpé
 - Jambon : 100g

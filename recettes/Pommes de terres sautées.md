@@ -13,7 +13,7 @@ opportunity: cheat-meal
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    10min    |   -   |  10min  |
+|    10min    |   -   |  15min  |
 
 ## Ingrédients
 
