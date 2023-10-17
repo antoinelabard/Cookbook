@@ -25,5 +25,5 @@ meal: lunch
 
 1. Faites cuire les haricots verts 7 minutes dans une casserole d'eau bouillante. Égouttez en fin de cuisson.
 2. Dans une poêle, faites revenir 2 minutes les amandes pour les colorer et réservez-les.
-3. Dans la même poêle, faites dorer le cabillaud dans un filet d'huile d'olive 2 minutes de chaque côté.
+3. Dans la même poêle, faites dorer le cabillaud dans un filet d'huile de cuisson 2 minutes de chaque côté.
 4. Servez le cabillaud avec les haricots et les amandes. Salez, poivrez et ajoutez des rondelles de citron. C'est prêt !

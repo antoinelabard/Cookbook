@@ -30,7 +30,7 @@ opportunity: pleasure
 
 1. Faites cuire le riz selon les instructions du paquet. Réservez.
 2. Pendant ce temps, coupez l’oignon rouge en petits morceaux.
-3. Dans une poêle, ajoutez un filet d'huile d'olive puis faites revenir l'oignon pendant 2 min.
+3. Dans une poêle, ajoutez un filet d'huile de cuisson puis faites revenir l'oignon pendant 2 min.
 4. Ajoutez ensuite la viande hachée et faites cuire pendant 7 minutes.
 5. Sortez les tortillas de leur emballage. Vous devez avoir à disposition un sachet de mélange aux épices et une sauce à napper.
 6. Une fois la viande cuite, ajoutez les épices du kit et les haricots rouges. Mélangez bien.

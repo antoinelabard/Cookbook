@@ -31,7 +31,7 @@ meal: lunch
 ![[Pâte brisée]]
 
 1. Préchauffer le four à 180°C. Précuire la pâte dans son moule pendant 15 minutes à 180°C.
-2. Faire cuire simultanément dans une poêle les oignons, les tomates et les poivrons. Dans une autre poêle, faire cuire les aubergines et les courgettes avec un filet d'huile d'olive pendant 15 minutes.
+2. Faire cuire simultanément dans une poêle les oignons, les tomates et les poivrons. Dans une autre poêle, faire cuire les aubergines et les courgettes avec un filet d'huile de cuisson pendant 15 minutes.
 3. Mélanger les ingrédients des deux poêles. Rajouter la moutarde fine et douce Amora et mélanger à nouveau.
 4. Verser la préparation sur la pâte brisée précuite.
 5. Recouvrir la préparation de parmesan.

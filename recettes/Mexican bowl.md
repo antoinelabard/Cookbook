@@ -26,7 +26,7 @@ meal: lunch
 ## Préparation
 
 1. Cuire le riz selon les instructions de préparation du paquet.
-2. Dans une poêle à feu moyen, ajoutez un filet d'huile d'olive et le poulet.
+2. Dans une poêle à feu moyen, ajoutez un filet d'huile de cuisson et le poulet.
 3. Ajoutez les épices mexicaines sur le poulet et faites revenir 4 minutes sur chaque face à feu moyen.
 4. En fin de cuisson, ajoutez un fond d'eau (2 cuillères à soupe par personne environ) puis laissez la sauce s'épaissir 2 minutes.
 5. Une fois le riz cuit, égouttez-le et servez-le dans les assiettes.

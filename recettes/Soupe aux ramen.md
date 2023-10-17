@@ -30,7 +30,7 @@ opportunity: party
 ## Préparation
 
 1. Réhydrater les champignons dans un bol d'eau chaude durant 10 minutes.
-2. Dans un wok, faire revenir les dès de poulets dans une cuillère à soupe d'huile d'olive, éponger ensuite l'excès d' huile avec de l'essuie-tout.
+2. Dans un wok, faire revenir les dès de poulets dans une cuillère à soupe d'huile de cuisson, éponger ensuite l'excès d' huile avec de l'essuie-tout.
 3. Ajouter : le vert de l'oignon coupé en petits morceaux ; le gingembre coupé en fines lamelles ; la sauce soja ; le saké ; le sucre.
 4. Couvrir la viande d'eau sans la noyer puis augmenter le feu pour faire bouillir.
 5. Réduire ensuite à feu doux durant 25 à 30 min et rajouter les champignons.

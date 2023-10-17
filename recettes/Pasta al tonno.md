@@ -26,7 +26,7 @@ meal: lunch
 ## Préparation
 
 1. Cuire les pâtes selon les instructions de préparation du paquet.
-2. Pendant ce temps, dans une poêle ajoutez un filet d'huile d'olive.
+2. Pendant ce temps, dans une poêle ajoutez un filet d'huile de cuisson.
 3. Ajoutez l'ail râpé ou émincé finement et les tomates coupées en lamelles.
 4. Faites revenir 1 minute puis ajoutez le thon légèrement émietté.
 5. Ajoutez 2 cuillères à soupe par personne d'eau de cuisson des pâtes dans la poêle.

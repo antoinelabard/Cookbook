@@ -25,7 +25,7 @@ meal: lunch
 
 1. Versez le riz dans un grand volume d'eau bouillante et suivez le temps de cuisson recommandé sur l'emballage.
 2. Coupez les filets de poulet en morceaux.
-3. Faites revenir le poulet dans une poêle 2 minutes avec un filet d'huile d'olive, salez et poivrez.
+3. Faites revenir le poulet dans une poêle 2 minutes avec un filet d'huile de cuisson, salez et poivrez.
 4. Une fois bien dorés, ajoutez le curry en poudre. Faite revenir 2 minutes supplémentaires à feu moyen.
 5. Versez le lait de coco. Couvrez et laissez cuire 5 minutes.
 6. Servez le curry avec le riz. Option : ajoutez de la coriandre fraîche. C'est prêt !

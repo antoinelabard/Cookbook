@@ -29,7 +29,7 @@ opportunity: cheat-meal
 
 ## Préparation
 
-1. Émincer les champignons de Paris et l'échalote, faire revenir le tout dans de l'huile d'olive 10 min.
+1. Émincer les champignons de Paris et l'échalote, faire revenir le tout dans de l'huile de cuisson 10 min.
 2. Une fois revenu, ajouter la pulpe de tomate, saler, poivrer, réserver.
 3. Couper en dés la mozzarella et le jambon, détailler les olives grossièrement.
 4. Préchauffez le four à 210°C (thermostat 7).

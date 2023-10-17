@@ -24,7 +24,7 @@ meal: lunch
 ## Préparation
 
 1. Dans un bol : cassez les oeufs, salez, poivrez et battez-les.
-2. Dans une poêle à feu moyen, ajoutez une noisette de beurre (ou d'huile d'olive) et les œufs battus.
+2. Dans une poêle à feu moyen, ajoutez une noisette de beurre (ou d'huile de cuisson) et les œufs battus.
 3. Laissez cuire à feu moyen 1 à 2 minutes en brisant le fond de l’omelette avec une spatule pour faciliter la cuisson.
 4. Ajoutez le fromage en l'émiettant sur le dessus et le saumon puis refermez l'omelette.
 5. Servir l'omelette avec la salade assaisonnée selon vos goûts, salez, poivrez, c'est prêt !

@@ -28,6 +28,6 @@ meal: lunch
 3. Râpez les pommes de terre et l'oignon.
 4. Pressez les légumes râpés dans un torchon pour retirer l'eau.
 5. Ajoutez les légumes râpés, la farine et les œufs dans un bol. Salez, poivrez et mélangez.
-6. Versez un filet d'huile d'olive dans une poêle à feu vif et ajoutez 2 cuillères à soupe de la préparation. (Vous pouvez faire plusieurs galettes en même temps dans une grande poêle).
+6. Versez un filet d'huile de cuisson dans une poêle à feu vif et ajoutez 2 cuillères à soupe de la préparation. (Vous pouvez faire plusieurs galettes en même temps dans une grande poêle).
 7. Aplatissez les galettes et laissez cuire 5 minutes à feu vif avant de les retourner.
 8. Retournez les galettes et faites-les cuire 5 minutes de l'autre côté. Les galettes doivent être bien dorées.

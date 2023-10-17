@@ -28,7 +28,7 @@ meal: lunch
 1. Ouvrez le kit fajita. Épluchez puis coupez l'oignon en fines lamelles. Réservez.
 2. Coupez le poulet en lamelles.
 3. Coupez les champignons en quartiers.
-4. Faites chauffer une poêle avec un filet d'huile d'olive. Ajoutez les lamelles de poulet et faites-les cuire 4 minutes en remuant régulièrement.
+4. Faites chauffer une poêle avec un filet d'huile de cuisson. Ajoutez les lamelles de poulet et faites-les cuire 4 minutes en remuant régulièrement.
 5. Ajoutez les oignons rouges et les champignons dans la poêle. Mélangez.
 6. Ajoutez le mélange aux épices qui se trouve dans le kit (1/2 c. à café par personne environ). Mélangez et laissez cuire 3 minutes à feu doux.
 7. Pendant ce temps, hachez le persil finement.

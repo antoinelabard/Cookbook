@@ -26,7 +26,7 @@ meal: lunch
 
 1. Faites cuire le riz selon les instructions du paquet (soit environ 10 minutes dans de l'eau bouillante salée). Une fois cuit, égouttez-le et réservez.
 2. Pendant ce temps, épluchez puis émincez les oignons en petits morceaux. Réservez.
-3. Dans une casserole, faites chauffer un filet d'huile d'olive puis faites revenir les oignons pendant 3 minutes à feu moyen.
+3. Dans une casserole, faites chauffer un filet d'huile de cuisson puis faites revenir les oignons pendant 3 minutes à feu moyen.
 4. Coupez le poulet et les tomates en petits morceaux. Réservez.
 5. Ajoutez ensuite la tomate, mélangez et laissez réduire pendant 5 minutes à feu moyen.
 6. Ajoutez ensuite de l'eau (10 cl par personne), le bouillon et le beurre de cacahuète puis remuez bien.

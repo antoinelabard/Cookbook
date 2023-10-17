@@ -25,7 +25,7 @@ meal: lunch
 
 1. Épluchez et émincez l'oignon.
 2. Épluchez les carottes puis coupez-les en rondelles.
-3. Dans une casserole, versez un filet d'huile d'olive. Ajoutez l'oignon puis les rondelles de carottes. Faite revenir 3 minutes à feu moyen.
+3. Dans une casserole, versez un filet d'huile de cuisson. Ajoutez l'oignon puis les rondelles de carottes. Faite revenir 3 minutes à feu moyen.
 4. Versez les lentilles. Faites revenir encore 2 minutes en continuant de mélanger. Poivrez (optionnel : vous pouvez ajouter une feuille de laurier).
 5. Versez 20 cl d'eau par personne. Laissez cuire 15 minutes à feu moyen.
 6. Au bout de 15 min, ajoutez les saucisses (vous pouvez les coupez en deux) et faites cuire encore 15 minutes à couvert. Salez et poivrez, c'est prêt !

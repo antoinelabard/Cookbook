@@ -28,7 +28,7 @@ meal: lunch
 
 ## Préparation
 
-1. Chauffer l'huile d'olive dans une poêle, et faire dorer l'oignon et l'ail 10 min à feu doux, en remuant de temps en temps.
+1. Chauffer l'huile de cuisson dans une poêle, et faire dorer l'oignon et l'ail 10 min à feu doux, en remuant de temps en temps.
 2. Mélanger la viande hachée et la chair à saucisse, à l'aide d'un robot.
 3. Dans un saladier, mélanger la viande, les œufs, le sel et le poivre.
 4. Puis, faire cuire le tout dans la poêle, pendant 10 bonnes min. Égoutter le plus de jus possible.
