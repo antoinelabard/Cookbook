@@ -98,12 +98,13 @@ class CookBookRepository:
         self.recipes_metadata = self._read_recipes_metadata()
 
     def get_recipes_cooked_dates(self):
-        recipes_cooked_dates:Dict[str, Any] = {}
+        recipes_cooked_dates: Dict[str, Any] = {}
         for recipe_name, metadata in self.cookbook_metadata.items():
             recipes_cooked_dates[recipe_name] = metadata[self.COOKED_DATES_TAG]
         return recipes_cooked_dates
 
-    def _read_metadata_from_md(self, path: Path) -> str | Dict[str, str]:
+    @classmethod
+    def _read_metadata_from_md(cls, path: Path) -> str | Dict[str, str]:
         """
         :param path: the path to the markdown file containing the metadata
         :return: an empty string if there is no metadata in the file. Otherwise, return a dictionary of the metadata
@@ -124,7 +125,7 @@ class CookBookRepository:
         """
         :return: the metadata of all the files in a dictionary
         """
-        files_metadata : Dict[str, str | Dict[str, str]] = {}
+        files_metadata: Dict[str, str | Dict[str, str]] = {}
         for recipe_name, recipe_path in self.RECIPE_DICT.items():
             file_metadata = self._read_metadata_from_md(recipe_path)
             if file_metadata != '':
@@ -141,11 +142,11 @@ class CookBookRepository:
         recipes_names = [recipe_name for recipe_name in recipes_names if recipe_name in self.RECIPE_DICT]
         return recipes_names
 
-    def write_menu(self, meal_plan:MealPlan)->None:
-        menu_str :str = f"""# Menu
+    def write_menu(self, meal_plan: MealPlan) -> None:
+        menu_str: str = f"""# Menu
                 
             """
-        meal_str :str = """## {}
+        meal_str: str = """## {}
             
             {}
             
@@ -190,11 +191,11 @@ class MealGenerator:
     to return the result.
     """
 
-    def __init__(self, recipe_type:str, opportunity:None | str, nb_lunch:int, nb_breakfast:int, nb_snack:int,
-                 nb_appetizers:int):
+    def __init__(self, recipe_type: str, opportunity: None | str, nb_lunch: int, nb_breakfast: int, nb_snack: int,
+                 nb_appetizers: int):
         self.repository: CookBookRepository = CookBookRepository()
 
-        self.meals:Dict[str, int] = {
+        self.meals: Dict[str, int] = {
             Tag.LUNCH_TAG: nb_lunch,
             Tag.BREAKFAST_TAG: nb_breakfast,
             Tag.SNACK_TAG: nb_snack,
@@ -202,12 +203,12 @@ class MealGenerator:
         }
 
         # each filter must be an instance of str, list(str) or None
-        self.filters:Dict[str, str | List[str] | None] = {
+        self.filters: Dict[str, str | List[str] | None] = {
             Tag.TYPE_TAG: recipe_type,
             Tag.OPPORTUNITY_TAG: opportunity
         }
 
-    def _match_filters(self, recipe_name:str)->bool:
+    def _match_filters(self, recipe_name: str) -> bool:
         for filter_name in set(self.filters.keys()):
             if filter_name not in self.repository.recipes_metadata[recipe_name]:
                 continue
@@ -220,12 +221,12 @@ class MealGenerator:
 
         return True
 
-    def _match_meal(self, name:str, meal:str) -> bool:
+    def _match_meal(self, name: str, meal: str) -> bool:
         if Tag.MEALS_TAG not in self.repository.recipes_metadata[name]:
             return False
         return self.repository.recipes_metadata[name][Tag.MEALS_TAG] == meal
 
-    def generate_meal_plan(self, nb_people:int=1):
+    def generate_meal_plan(self, nb_people: int = 1):
         recipes_names_filtered: List[str] = [name for name in self.repository.RECIPE_NAMES if self._match_filters(name)]
         meal_plan = {}
         for meal, quantity in self.meals.items():
