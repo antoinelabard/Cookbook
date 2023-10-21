@@ -32,27 +32,30 @@ CONFIGURATION
 import copy
 import os
 import sys
+from enum import Enum
+
 import yaml
 import math
 import random
+class Tag(Enum, str):
+    APPETIZER_TAG = "appetizer"
+    BREAKFAST_TAG = "breakfast"
+    COOKED_DATES_TAG = "cooked dates"
+    FILTERS_TAG = "filters"
+    LUNCH_TAG = "lunch"
+    MEALS_TAG = "meal"
+    OPPORTUNITY_TAG = "opportunity"
+    NB_PEOPLE_TAG = "nb_people"
+    PLAN_TAG = "plan"
+    RECIPES_TAG = "recipes"
+    SNACK_TAG = "snack"
+    TYPE_TAG = "type"
 
-APPETIZER_TAG = "appetizer"
-BREAKFAST_TAG = "breakfast"
-COOKED_DATES_TAG = "cooked dates"
-FILTERS_TAG = "filters"
-LUNCH_TAG = "lunch"
-MEALS_TAG = "meal"
-OPPORTUNITY_TAG = "opportunity"
-NB_PEOPLE_TAG = "nb_people"
-PLAN_TAG = "plan"
-RECIPES_TAG = "recipes"
-SNACK_TAG = "snack"
-TYPE_TAG = "type"
-
-NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
-NB_LUNCHES_PER_DAY = 2
-NB_BREAKFASTS_PER_DAY = 2
-NB_SNACKS_PER_DAY = 1
+class Options(Enum, str):
+    NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
+    NB_LUNCHES_PER_DAY = 2
+    NB_BREAKFASTS_PER_DAY = 2
+    NB_SNACKS_PER_DAY = 1
 
 
 def singleton(class_):
@@ -77,7 +80,7 @@ class CookBookRepository:
     COMPLETE_COOKBOOK_PATH = "cookbook.md"
     MENU_PATH = "menu.md"
     RECIPE_METADATA_TEMPLATE = {
-        COOKED_DATES_TAG: []
+        Tag.COOKED_DATES_TAG: []
     }
     # add a pagebreak web inserted in a markdown document
     PAGEBREAK = '\n\n<div style="page-break-after: always;"></div>\n\n'
@@ -193,16 +196,16 @@ class MealGenerator:
         self.repository = CookBookRepository()
 
         self.meals = {
-            LUNCH_TAG: nb_lunch,
-            BREAKFAST_TAG: nb_breakfast,
-            SNACK_TAG: nb_snack,
-            APPETIZER_TAG: nb_appetizers
+            Tag.LUNCH_TAG: nb_lunch,
+            Tag.BREAKFAST_TAG: nb_breakfast,
+            Tag.SNACK_TAG: nb_snack,
+            Tag.APPETIZER_TAG: nb_appetizers
         }
 
         # each filter must be an instance of str, list(str) or None
         self.filters = {
-            TYPE_TAG: recipe_type,
-            OPPORTUNITY_TAG: opportunity
+            Tag.TYPE_TAG: recipe_type,
+            Tag.OPPORTUNITY_TAG: opportunity
         }
 
     def _match_filters(self, recipe_name):
@@ -215,9 +218,9 @@ class MealGenerator:
         return True
 
     def _match_meal(self, name, meal):
-        if MEALS_TAG not in self.repository.recipes_metadata[name]:
+        if Tag.MEALS_TAG not in self.repository.recipes_metadata[name]:
             return False
-        return self.repository.recipes_metadata[name][MEALS_TAG] == meal
+        return self.repository.recipes_metadata[name][Tag.MEALS_TAG] == meal
 
     def generate_meal_plan(self, nb_people=1):
         recipes_names_filtered = \
@@ -246,23 +249,23 @@ class MealGenerator:
             meal_plan[meal] = meal_plan_per_meal
         self.repository.write_menu(
             MealPlan(
-                meal_plan[LUNCH_TAG],
-                meal_plan[BREAKFAST_TAG],
-                meal_plan[SNACK_TAG],
-                meal_plan[APPETIZER_TAG]
+                meal_plan[Tag.LUNCH_TAG],
+                meal_plan[Tag.BREAKFAST_TAG],
+                meal_plan[Tag.SNACK_TAG],
+                meal_plan[Tag.APPETIZER_TAG]
             )
         )
 
 
 def process_arguments():
     args = {
-        TYPE_TAG: MEALS_TAG,
-        LUNCH_TAG: 0,
-        BREAKFAST_TAG: 0,
-        SNACK_TAG: 0,
-        APPETIZER_TAG: 0,
-        OPPORTUNITY_TAG: None,
-        NB_PEOPLE_TAG: 1
+        Tag.TYPE_TAG: Tag.MEALS_TAG,
+        Tag.LUNCH_TAG: 0,
+        Tag.BREAKFAST_TAG: 0,
+        Tag.SNACK_TAG: 0,
+        Tag.APPETIZER_TAG: 0,
+        Tag.OPPORTUNITY_TAG: None,
+        Tag.NB_PEOPLE_TAG: 1
     }
     for arg in sys.argv:
         if "export" in arg:
@@ -271,23 +274,23 @@ def process_arguments():
         if "plan" in arg:
             plan = arg.split('=')[-1]
             if plan == "week":
-                args[TYPE_TAG] = MEALS_TAG
-                args[OPPORTUNITY_TAG] = None
-                args[LUNCH_TAG] = math.ceil(7 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE)
-                args[BREAKFAST_TAG] = math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE)
-                args[SNACK_TAG] = math.ceil(3 * NB_LUNCHES_PER_DAY / NB_PORTIONS_PER_RECIPE)
-                args[APPETIZER_TAG] = 0
+                args[Tag.TYPE_TAG] = Tag.MEALS_TAG
+                args[Tag.OPPORTUNITY_TAG] = None
+                args[Tag.LUNCH_TAG] = math.ceil(7 * Options.NB_LUNCHES_PER_DAY / Options.NB_PORTIONS_PER_RECIPE)
+                args[Tag.BREAKFAST_TAG] = math.ceil(3 * Options.NB_LUNCHES_PER_DAY / Options.NB_PORTIONS_PER_RECIPE)
+                args[Tag.SNACK_TAG] = math.ceil(3 * Options.NB_LUNCHES_PER_DAY / Options.NB_PORTIONS_PER_RECIPE)
+                args[Tag.APPETIZER_TAG] = 0
         if '=' in arg:
             s = arg.split('=')
             args[s[0]] = s[-1]
     MealGenerator(
-        recipe_type=args[TYPE_TAG],
-        opportunity=args[OPPORTUNITY_TAG],
-        nb_lunch=int(args[LUNCH_TAG]),
-        nb_breakfast=int(args[BREAKFAST_TAG]),
-        nb_snack=int(args[SNACK_TAG]),
-        nb_appetizers=int(args[APPETIZER_TAG]),
-    ).generate_meal_plan(int(args[NB_PEOPLE_TAG]))
+        recipe_type=args[Tag.TYPE_TAG],
+        opportunity=args[Tag.OPPORTUNITY_TAG],
+        nb_lunch=int(args[Tag.LUNCH_TAG]),
+        nb_breakfast=int(args[Tag.BREAKFAST_TAG]),
+        nb_snack=int(args[Tag.SNACK_TAG]),
+        nb_appetizers=int(args[Tag.APPETIZER_TAG]),
+    ).generate_meal_plan(int(args[Tag.NB_PEOPLE_TAG]))
 
 
 if __name__ == "__main__":
