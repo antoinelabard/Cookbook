@@ -52,7 +52,7 @@ class Tag(str, Enum):
     SNACK_TAG = "snack"
     TYPE_TAG = "type"
 
-class Options(str, Enum):
+class Options(int, Enum):
     NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
     NB_LUNCHES_PER_DAY = 2
     NB_BREAKFASTS_PER_DAY = 2
