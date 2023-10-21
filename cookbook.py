@@ -29,7 +29,6 @@ CONFIGURATION
             - appetizer: integer
 """
 from __future__ import annotations
-import copy
 import sys
 from enum import Enum
 from typing import Dict, Any, Tuple, List, Callable
@@ -228,27 +227,30 @@ class MealGenerator:
 
     def generate_meal_plan(self, nb_people: int = 1):
         recipes_names_filtered: List[str] = [name for name in self.repository.RECIPE_NAMES if self._match_filters(name)]
-        meal_plan = {}
+        meal_plan: Dict[str, List[str]] = {}
         for meal, quantity in self.meals.items():
             if quantity == 0:
-                meal_plan[meal] = []
+                meal_plan[meal]: List[str] = []
                 continue
-            total_quantity = quantity * nb_people
-            rcp_names = copy.copy(recipes_names_filtered)
+            total_quantity: int = quantity * nb_people
 
-            rcp_names = [name for name in rcp_names if self._match_meal(name, meal)]
+            rcp_names: List[str] = [name for name in recipes_names_filtered if self._match_meal(name, meal)]
 
-            if not rcp_names:
+            if len(rcp_names) == 0:
                 continue
 
-            rcp_nm = copy.copy(rcp_names)
-            meal_plan_per_meal = []
+            rcp_nm: List[str] = rcp_names.copy()
+
+            meal_plan_per_meal: List[str] = []
+
             while total_quantity > 0:
-                index = random.randint(0, len(rcp_nm) - 1)
+                index: int = random.randint(0, len(rcp_nm) - 1)
                 meal_plan_per_meal.append(rcp_nm.pop(index))
                 total_quantity -= 1
-                if not rcp_nm:
-                    rcp_nm = copy.copy(rcp_names)
+
+                if len(rcp_nm) == 0:
+                    rcp_nm = rcp_names.copy()
+
             meal_plan[meal] = meal_plan_per_meal
         self.repository.write_menu(
             MealPlan(
