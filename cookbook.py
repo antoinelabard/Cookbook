@@ -30,14 +30,15 @@ CONFIGURATION
 """
 
 import copy
-import os
 import sys
 from enum import Enum
 
 import yaml
 import math
 import random
-class Tag(Enum, str):
+from pathlib import Path
+
+class Tag(str, Enum):
     APPETIZER_TAG = "appetizer"
     BREAKFAST_TAG = "breakfast"
     COOKED_DATES_TAG = "cooked dates"
@@ -51,7 +52,7 @@ class Tag(Enum, str):
     SNACK_TAG = "snack"
     TYPE_TAG = "type"
 
-class Options(Enum, str):
+class Options(str, Enum):
     NB_PORTIONS_PER_RECIPE = 4  # I plan to set the number of portions for each recipe
     NB_LUNCHES_PER_DAY = 2
     NB_BREAKFASTS_PER_DAY = 2
@@ -76,9 +77,14 @@ class CookBookRepository:
         handled by this class. It includes operations to read the general cookbook metadata and the metadata of each of
         the recipes.
     """
-    RECIPE_DIR = "recettes"
-    COMPLETE_COOKBOOK_PATH = "cookbook.md"
-    MENU_PATH = "menu.md"
+
+    ROOT_DIR = Path(__file__).parent
+    RECIPE_DIR = ROOT_DIR / "recettes"
+    COMPLETE_COOKBOOK_PATH = ROOT_DIR / "cookbook.md"
+    MENU_PATH = ROOT_DIR / "menu.md"
+    RECIPE_DICT = {path.stem: path for path in RECIPE_DIR.iterdir() if path.is_file()}
+    RECIPE_NAMES = tuple([recipe_name for recipe_name in RECIPE_DICT.keys()])
+
     RECIPE_METADATA_TEMPLATE = {
         Tag.COOKED_DATES_TAG: []
     }
@@ -87,15 +93,6 @@ class CookBookRepository:
 
     def __init__(self):
         self.recipes_metadata = self._read_recipes_metadata()
-
-    def get_recipes_names(self):
-        """
-        :return: A list of the names of the recipes.
-        """
-        return list(map(
-            lambda x: x.split('/')[-1].replace('\n', '').replace('.md', ''),
-            os.popen(f'find {self.RECIPE_DIR} -name "*.md"').readlines()
-        ))
 
     def get_recipes_cooked_dates(self):
         recipes_cooked_dates = {}
@@ -125,8 +122,8 @@ class CookBookRepository:
         :return: the metadata of all the files in a dictionary
         """
         files_metadata = {}
-        for recipe_name in self.get_recipes_names():
-            file_metadata = self._read_metadata_from_md(f"{self.RECIPE_DIR}/{recipe_name}.md")
+        for recipe_name, recipe_path in self.RECIPE_DICT.items():
+            file_metadata = self._read_metadata_from_md(recipe_path)
             if file_metadata != '':
                 files_metadata[recipe_name] = file_metadata
         return files_metadata
@@ -138,7 +135,7 @@ class CookBookRepository:
         with open(self.MENU_PATH, 'r') as f:
             recipes_names = f.readlines()
         recipes_names = list(map(lambda line: line.replace("![[", "").replace("]]\n", ""), recipes_names))
-        recipes_names = list(filter(lambda line: line in self.get_recipes_names(), recipes_names))
+        recipes_names = [recipe_name for recipe_name in recipes_names if recipe_name in self.RECIPE_DICT]
         return recipes_names
 
     def write_menu(self, meal_plan):
@@ -224,7 +221,7 @@ class MealGenerator:
 
     def generate_meal_plan(self, nb_people=1):
         recipes_names_filtered = \
-            list(filter(lambda name: self._match_filters(name), self.repository.get_recipes_names()))
+            list(filter(lambda name: self._match_filters(name), self.repository.RECIPE_NAMES))
         meal_plan = {}
         for meal, quantity in self.meals.items():
             if quantity == 0:
