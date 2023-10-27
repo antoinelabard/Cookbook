@@ -5,7 +5,7 @@ type: meal
 category: sandwich
 dish: main-course
 meal: lunch
-opportunity: pleasure
+opportunity: cheat-meal
 ---
 
 # Kebab
