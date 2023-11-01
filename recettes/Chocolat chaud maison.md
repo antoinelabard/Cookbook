@@ -8,7 +8,7 @@ opportunity: pleasure
 
 # Chocolat chaud maison
 
-![[Chocolat chaud maison.jpg]]
+![[Chocolat chaud maison.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

@@ -10,7 +10,7 @@ meal: lunch
 
 # Salade de pâtes au thon, tomates et avocat
 
-![](images/Salade%20de%20pâtes%20au%20thon,%20tomates%20et%20avocat.jpg)
+![[Salade de pâtes au thon, tomates et avocat.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

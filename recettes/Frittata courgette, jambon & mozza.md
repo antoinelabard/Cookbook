@@ -9,7 +9,7 @@ meal: lunch
 
 # Frittata courgette, jambon & mozza
 
-![[Frittata courgette, jambon & mozza.png]]
+![[Frittata courgette, jambon & mozza.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

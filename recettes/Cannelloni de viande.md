@@ -9,7 +9,7 @@ meal: lunch
 
 # Cannelloni de viande
 
-![[Cannelloni de viande.jpg]]
+![[Cannelloni de viande.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

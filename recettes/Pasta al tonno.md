@@ -9,7 +9,7 @@ meal: lunch
 
 # Pasta al tonno
 
-![[Pasta al tonno.png]]
+![[Pasta al tonno.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

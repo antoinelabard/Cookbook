@@ -11,7 +11,7 @@ opportunity: cheat-meal
 
 # Tarte salée pommes de terre et camembert
 
-![](images/Tarte%20salée%20pommes%20de%20terre%20et%20camembert.jpg)
+![[Tarte salée pommes de terre et camembert.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

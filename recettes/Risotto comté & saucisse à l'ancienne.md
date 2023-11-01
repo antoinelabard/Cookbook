@@ -7,7 +7,7 @@ meal: lunch
 
 # Risotto comté & saucisse à l'ancienne
 
-![[Risotto comté & saucisse à l'ancienne.png]]
+![[Risotto comté & saucisse à l'ancienne.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

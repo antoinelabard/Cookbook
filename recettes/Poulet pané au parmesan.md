@@ -10,7 +10,7 @@ opportunity: pleasure
 
 # Poulet pané au parmesan
 
-![[Poulet pané au parmesan.png]]
+![[Poulet pané au parmesan.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

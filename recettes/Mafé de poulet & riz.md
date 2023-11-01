@@ -7,7 +7,7 @@ meal: lunch
 
 # Mafé de poulet & riz
 
-![[Mafé de poulet & riz.png]]
+![[Mafé de poulet & riz.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

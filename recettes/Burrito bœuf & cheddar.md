@@ -9,7 +9,7 @@ opportunity: pleasure
 
 # Burrito bœuf & cheddar
 
-![[Burrito bœuf & cheddar.png]]
+![[Burrito bœuf & cheddar.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

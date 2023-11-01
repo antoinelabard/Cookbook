@@ -9,7 +9,7 @@ meal: lunch
 
 # Oeuf cocotte épinards & lard
 
-![[Oeuf cocotte épinards & lard.png]]
+![[Oeuf cocotte épinards & lard.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

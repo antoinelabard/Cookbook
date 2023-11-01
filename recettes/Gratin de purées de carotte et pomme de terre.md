@@ -9,7 +9,7 @@ meal: lunch
 
 # Gratin de purées de carotte et pomme de terre
 
-![](images/Gratin%20de%20purées%20de%20carotte%20et%20pomme%20de%20terre.jpg)
+![[Gratin de purées de carotte et pomme de terre.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

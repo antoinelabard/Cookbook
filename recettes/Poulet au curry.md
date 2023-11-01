@@ -7,7 +7,7 @@ meal: lunch
 
 # Poulet au curry
 
-![[Poulet au curry.png]]
+![[Poulet au curry.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

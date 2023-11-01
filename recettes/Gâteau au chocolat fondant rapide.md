@@ -10,7 +10,7 @@ opportunity: party
 
 # Gâteau au chocolat fondant rapide
 
-![](images/Gâteau%20au%20chocolat%20fondant%20rapide.jpg)
+![[Gâteau au chocolat fondant rapide.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

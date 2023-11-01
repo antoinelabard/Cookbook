@@ -7,7 +7,7 @@ meal: lunch
 
 # Ratatouille
 
-![](images/Ratatouille.jpg)
+![[Ratatouille.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

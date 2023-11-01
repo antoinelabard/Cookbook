@@ -10,7 +10,7 @@ meal: lunch
 
 # Club sandwich au thon
 
-![[Club sandwich au thon.jpg]]
+![[Club sandwich au thon.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

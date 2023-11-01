@@ -11,7 +11,7 @@ opportunity: pleasure
 
 # Croque-monsieur à l'italienne
 
-![](images/Croque-monsieur%20à%20l'italienne.jpg)
+![[Croque-monsieur à l'italienne.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

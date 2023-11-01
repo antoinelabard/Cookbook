@@ -9,7 +9,7 @@ meal: lunch
 
 # Spaghetti au chorizo
 
-![](images/Spaghetti%20au%20chorizo.jpg)
+![[Spaghetti au chorizo.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

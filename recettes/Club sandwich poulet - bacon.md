@@ -11,7 +11,7 @@ opportunity: pleasure
 
 # Club sandwich poulet - bacon
 
-![](images/Club%20sandwich%20poulet%20-%20bacon.jpg)
+![[Club sandwich poulet - bacon.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

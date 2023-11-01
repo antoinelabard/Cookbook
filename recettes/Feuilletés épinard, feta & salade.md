@@ -8,7 +8,7 @@ meal: lunch
 
 # Feuilletés épinard, feta & salade
 
-![[Feuilletés épinard, feta & salade.png]]
+![[Feuilletés épinard, feta & salade.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

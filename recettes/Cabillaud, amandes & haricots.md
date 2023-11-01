@@ -8,7 +8,7 @@ meal: lunch
 
 # Cabillaud, amandes & haricots
 
-![[Cabillaud, amandes & haricots.png]]
+![[Cabillaud, amandes & haricots.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

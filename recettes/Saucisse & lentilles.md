@@ -8,7 +8,7 @@ meal: lunch
 
 # Saucisse & lentilles
 
-![[Saucisse & lentilles.png]]
+![[Saucisse & lentilles.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

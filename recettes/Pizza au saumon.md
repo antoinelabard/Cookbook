@@ -10,7 +10,7 @@ opportunity: cheat-meal
 
 # Pizza au saumon
 
-![](images/Pizza%20au%20saumon.jpg)
+![[Pizza au saumon.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

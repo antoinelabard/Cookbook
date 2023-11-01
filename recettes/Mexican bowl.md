@@ -8,7 +8,7 @@ meal: lunch
 
 # Mexican bowl
 
-![[Mexican bowl.png]]
+![[Mexican bowl.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

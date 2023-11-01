@@ -7,7 +7,7 @@ meal: lunch
 
 # Wrap maïs, thon & fromage frais
 
-![[Wrap maïs, thon & fromage frais.png]]
+![[Wrap maïs, thon & fromage frais.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

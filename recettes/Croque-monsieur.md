@@ -8,7 +8,7 @@ meal: lunch
 
 # Croque-monsieur
 
-![[Croque-monsieur.jpg]]
+![[Croque-monsieur.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

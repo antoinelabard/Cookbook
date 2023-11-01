@@ -8,7 +8,7 @@ meal: lunch
 
 # Pâtes aux crevettes à la crème
 
-![](images/Pâtes%20aux%20crevettes%20a%20la%20crème.jpg)
+![[Pâtes aux crevettes a la crème.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

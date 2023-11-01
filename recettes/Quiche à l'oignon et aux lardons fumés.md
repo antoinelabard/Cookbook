@@ -9,7 +9,7 @@ meal: lunch
 
 # Quiche à l'oignon et aux lardons fumés
 
-![[Quiche à l'oignon et aux lardons fumés.jpg]]
+![[Quiche à l'oignon et aux lardons fumés.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

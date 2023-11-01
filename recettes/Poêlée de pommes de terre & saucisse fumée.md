@@ -10,7 +10,7 @@ meal: lunch
 
 # Poêlée de pommes de terre & saucisse fumée
 
-![[Poêlée de pommes de terre & saucisse fumée.png]]
+![[Poêlée de pommes de terre & saucisse fumée.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

@@ -9,7 +9,7 @@ opportunity: pleasure
 
 # Cookies au chocolat
 
-![[Cookies au chocolat.jpg]]
+![[Cookies au chocolat.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

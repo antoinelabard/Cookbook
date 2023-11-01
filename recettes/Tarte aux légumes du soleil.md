@@ -10,7 +10,7 @@ meal: lunch
 
 # Tarte aux légumes du soleil
 
-![](images/Tarte%20aux%20légumes%20du%20soleil.jpeg)
+![[Tarte aux légumes du soleil.jpeg]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

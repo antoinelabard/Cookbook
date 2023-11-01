@@ -8,7 +8,7 @@ meal: lunch
 
 # Poulet à la sauce aux champignons
 
-![[Poulet à la sauce aux champignons.jpg]]
+![[Poulet à la sauce aux champignons.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

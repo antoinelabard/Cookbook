@@ -8,7 +8,7 @@ meal: lunch
 
 # Riz crevettes, coco & maïs
 
-![[Riz crevettes, coco & maïs.png]]
+![[Riz crevettes, coco & maïs.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

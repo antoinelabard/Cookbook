@@ -9,7 +9,7 @@ meal: lunch
 
 # Haricots rouges à la Mexicaine
 
-![](images/Haricots%20rouges%20à%20la%20Mexicaine.jpg)
+![[Haricots rouges à la Mexicaine.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

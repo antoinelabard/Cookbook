@@ -9,7 +9,7 @@ opportunity: party
 
 # Feuilletés apéritifs aux Saucisses de Strasbourg
 
-![[Feuilletés apéritifs aux Saucisses de Strasbourg.jpg]]
+![[Feuilletés apéritifs aux Saucisses de Strasbourg.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

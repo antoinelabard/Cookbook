@@ -9,7 +9,7 @@ meal: lunch
 
 # Quiche au saumon et aux épinards
 
-![](images/Quiche%20au%20saumon%20et%20aux%20épinards.jpg)
+![[Quiche au saumon et aux épinards.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

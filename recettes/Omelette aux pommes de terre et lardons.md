@@ -9,7 +9,7 @@ meal: lunch
 
 # Omelette aux pommes de terre et lardons
 
-![](images/Omelette%20aux%20pommes%20de%20terre%20et%20lardons.jpg)
+![[Omelette aux pommes de terre et lardons.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

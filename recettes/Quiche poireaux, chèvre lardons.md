@@ -9,7 +9,7 @@ meal: lunch
 
 # Quiche poireaux, chèvre lardons
 
-![](images/Quiche%20poireaux,%20chèvre%20lardons.jpg)
+![[Quiche poireaux, chèvre lardons.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

@@ -9,7 +9,7 @@ meal: lunch
 
 # Haricots verts à la carbonara
 
-![](images/Haricots%20verts%20à%20la%20carbonara.jpg)
+![[Haricots verts à la carbonara.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

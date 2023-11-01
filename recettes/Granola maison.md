@@ -7,7 +7,7 @@ meal: breakfast
 
 # Granola maison
 
-![[Granola maison.jpg]]
+![[Granola maison.webp]]
 
 | Préparation | Repos |  Cuisson   |
 |:-----------:|:-----:|:----------:|

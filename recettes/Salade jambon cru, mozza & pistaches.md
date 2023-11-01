@@ -7,7 +7,7 @@ meal: lunch
 
 # Salade jambon cru, mozza & pistaches
 
-![[Salade jambon cru, mozza & pistaches.png]]
+![[Salade jambon cru, mozza & pistaches.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

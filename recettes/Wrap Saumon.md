@@ -10,7 +10,7 @@ meal: lunch
 
 # Wrap Saumon
 
-![[Wrap Saumon.png]]
+![[Wrap Saumon.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

@@ -10,7 +10,7 @@ meal: lunch
 
 # Délicieuse salade de lentilles
 
-![](images/Délicieuse%20salade%20de%20lentilles.jpg)
+![[Délicieuse salade de lentilles.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

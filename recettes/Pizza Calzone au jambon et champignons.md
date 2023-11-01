@@ -11,7 +11,7 @@ opportunity: cheat-meal
 
 # Pizza Calzone au jambon et champignons
 
-![](images/Pizza%20Calzone%20au%20jambon%20et%20champignons.jpg)
+![[Pizza Calzone au jambon et champignons.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

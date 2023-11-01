@@ -9,7 +9,7 @@ opportunity: cheat-meal
 
 # Tenders
 
-![[Tenders.jpg]]
+![[Tenders.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

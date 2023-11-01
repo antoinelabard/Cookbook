@@ -10,7 +10,7 @@ meal: meal
 
 # Salade de pâtes méditerranéenne
 
-![](images/Salade%20de%20pâtes%20méditerranéenne.jpg)
+![[Salade de pâtes méditerranéenne.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

@@ -10,7 +10,7 @@ meal: lunch
 
 # Club sandwich poulet crudités
 
-![[recettes/images/Club sandwich poulet crudités.jpg]]
+![[Club sandwich poulet crudités.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

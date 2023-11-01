@@ -7,7 +7,7 @@ meal: lunch
 
 # Poulet boursin, lard & pommes de terre
 
-![[Poulet boursin, lard & pommes de terre.png]]
+![[Poulet boursin, lard & pommes de terre.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

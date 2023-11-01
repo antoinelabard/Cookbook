@@ -10,7 +10,7 @@ meal: lunch
 
 # Quiche chèvre épinards
 
-![[Quiche chèvre épinards.png]]
+![[Quiche chèvre épinards.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

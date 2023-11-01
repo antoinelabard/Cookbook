@@ -9,7 +9,7 @@ meal: lunch
 
 # Quiche tomate, jambon, chèvre
 
-![](images/Quiche%20tomate,%20jambon,%20chèvre.jpg)
+![[Quiche tomate, jambon, chèvre.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

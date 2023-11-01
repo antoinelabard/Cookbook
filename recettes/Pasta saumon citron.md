@@ -7,7 +7,7 @@ meal: lunch
 
 # Pasta saumon citron
 
-![[Pasta saumon citron.png]]
+![[Pasta saumon citron.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

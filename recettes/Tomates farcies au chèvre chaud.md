@@ -8,7 +8,7 @@ meal: lunch
 
 # Tomates farcies au chèvre chaud
 
-![[Tomates farcies au chèvre chaud.jpg]]
+![[Tomates farcies au chèvre chaud.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

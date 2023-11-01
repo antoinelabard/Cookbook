@@ -10,7 +10,7 @@ opportunity: pleasure
 
 # Hamburger maison
 
-![](images/Hamburger%20maison.jpg)
+![[Hamburger maison.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

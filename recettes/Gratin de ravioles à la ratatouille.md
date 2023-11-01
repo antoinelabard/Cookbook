@@ -9,7 +9,7 @@ meal: lunch
 
 # Gratin de ravioles à la ratatouille
 
-![[Gratin de ravioles à la ratatouille.png]]
+![[Gratin de ravioles à la ratatouille.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

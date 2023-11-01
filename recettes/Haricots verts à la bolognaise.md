@@ -9,7 +9,7 @@ meal: lunch
 
 # Haricots verts à la bolognaise
 
-![](images/Haricots%20verts%20à%20la%20bolognaise.jpg)
+![[Haricots verts à la bolognaise.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

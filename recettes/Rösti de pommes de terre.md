@@ -8,7 +8,7 @@ meal: lunch
 
 # Rösti de pommes de terre
 
-![[Rösti de pommes de terre.png]]
+![[Rösti de pommes de terre.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -19,7 +19,7 @@ meal: lunch
 - Pommes de terre : 1kg
 - Oeufs : 2
 - Farine de blé : 4cs
-- Oignon : 1
+- Oignon : 200g
 
 ## Préparation
 

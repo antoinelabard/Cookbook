@@ -11,7 +11,7 @@ opportunity: pleasure
 
 # Wrap de tortilla à l'avocat, cheddar et oeufs brouillés
 
-![](images/Wrap%20de%20tortilla%20à%20l'avocat,%20cheddar%20et%20oeufs%20brouillés.jpg)
+![[Wrap de tortilla à l'avocat, cheddar et oeufs brouillés.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

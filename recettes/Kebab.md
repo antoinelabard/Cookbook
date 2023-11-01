@@ -10,7 +10,7 @@ opportunity: cheat-meal
 
 # Kebab
 
-![[Kebab.jpg]]
+![[Kebab.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

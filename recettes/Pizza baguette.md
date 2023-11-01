@@ -11,7 +11,7 @@ opportunity: cheat-meal
 
 # Pizza baguette
 
-![](images/Pizza%20baguette.jpg)
+![[Pizza baguette.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

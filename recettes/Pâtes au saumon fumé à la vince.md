@@ -9,7 +9,7 @@ meal: lunch
 
 # Pâtes au saumon fumé à la vince
 
-![](images/Pâtes%20au%20saumon%20fumé%20à%20la%20vince.jpg)
+![[Pâtes au saumon fumé à la vince.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

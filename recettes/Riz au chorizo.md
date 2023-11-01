@@ -9,7 +9,7 @@ meal: lunch
 
 # Riz au chorizo
 
-![](images/Riz%20au%20chorizo.jpg)
+![[Riz au chorizo.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

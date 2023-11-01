@@ -8,7 +8,7 @@ meal: lunch
 
 # One pot pasta artichauts & tomates séchées
 
-![[One pot pasta artichauts & tomates séchées.png]]
+![[One pot pasta artichauts & tomates séchées.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

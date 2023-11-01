@@ -8,7 +8,7 @@ meal: lunch
 
 # Boulettes & semoule express
 
-![[Boulettes & semoule express.png]]
+![[Boulettes & semoule express.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

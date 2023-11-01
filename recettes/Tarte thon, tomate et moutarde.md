@@ -10,7 +10,7 @@ meal: lunch
 
 # Tarte thon, tomate et moutarde
 
-![](images/Tarte%20thon,%20tomate%20et%20moutarde.jpg)
+![[Tarte thon, tomate et moutarde.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

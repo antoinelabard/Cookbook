@@ -9,7 +9,7 @@ meal: lunch
 
 # Quiche aux asperges et lardons
 
-![](images/Quiche%20aux%20asperges%20et%20lardons.jpg)
+![[Quiche aux asperges et lardons.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

@@ -10,7 +10,7 @@ meal: lunch
 
 # Salade aux haricots rouges, maïs et thon
 
-![](images/Salade%20aux%20haricots%20rouges,%20maïs%20et%20thon.jpg)
+![[Salade aux haricots rouges, maïs et thon.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

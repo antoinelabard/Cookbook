@@ -7,7 +7,7 @@ meal: lunch
 
 # Steak haché à l'échalote & purée
 
-![[Steak haché à l'échalote & purée.png]]
+![[Steak haché à l'échalote & purée.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

@@ -11,7 +11,7 @@ opportunity: party
 
 # Soupe aux ramen
 
-![](images/Soupe%20aux%20ramen.jpg)
+![[Soupe aux ramen.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

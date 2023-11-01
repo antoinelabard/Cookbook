@@ -9,7 +9,7 @@ meal: lunch
 
 # Frittata saumon fumé & chèvre frais
 
-![[Frittata saumon fumé & chèvre frais.png]]
+![[Frittata saumon fumé & chèvre frais.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

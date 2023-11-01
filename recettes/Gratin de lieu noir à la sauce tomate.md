@@ -10,7 +10,7 @@ meal: lunch
 
 # Gratin de lieu noir à la sauce tomate
 
-![](images/Gratin%20de%20lieu%20noir%20à%20la%20sauce%20tomate.jpg)
+![[Gratin de lieu noir à la sauce tomate.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

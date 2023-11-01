@@ -10,7 +10,7 @@ meal: lunch
 
 # Salade de pâtes à l'italienne
 
-![](images/Salade%20de%20pâtes%20à%20l'italienne.jpg)
+![[Salade de pâtes à l'italienne.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

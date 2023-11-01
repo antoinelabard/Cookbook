@@ -7,7 +7,7 @@ meal: lunch
 
 # Bavette à l'échalote, pommes de terre & haricots
 
-![[Bavette à l'échalote, pommes de terre & haricots.png]]
+![[Bavette à l'échalote, pommes de terre & haricots.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

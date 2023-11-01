@@ -9,7 +9,7 @@ opportunity: pleasure
 
 # Chèvre chaud au jambon & salade
 
-![[Chèvre chaud au jambon & salade.png]]
+![[Chèvre chaud au jambon & salade.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

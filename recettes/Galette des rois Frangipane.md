@@ -9,7 +9,7 @@ opportunity: cheat-meal
 
 # Galette des rois Frangipane
 
-![[Galette des rois Frangipane.png]]
+![[Galette des rois Frangipane.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

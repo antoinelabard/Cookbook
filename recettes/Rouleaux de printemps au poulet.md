@@ -9,7 +9,7 @@ opportunity: party
 
 # Rouleaux de printemps au poulet
 
-![[Rouleaux de printemps au poulet.jpg]]
+![[Rouleaux de printemps au poulet.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

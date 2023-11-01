@@ -9,7 +9,7 @@ opportunity: party
 
 # Feuilletés au fromage ultra simples
 
-![[Feuilletés au fromage ultra simples.jpg]]
+![[Feuilletés au fromage ultra simples.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

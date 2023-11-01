@@ -9,7 +9,7 @@ opportunity: cheat-meal
 
 # Pommes de terres sautées
 
-![](images/Pommes%20de%20terres%20sautées.jpg)
+![[Pommes de terres sautées.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

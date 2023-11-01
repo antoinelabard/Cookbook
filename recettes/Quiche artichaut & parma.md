@@ -10,7 +10,7 @@ meal: lunch
 
 # Quiche artichaut & parma
 
-![[Quiche artichaut & parma.png]]
+![[Quiche artichaut & parma.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

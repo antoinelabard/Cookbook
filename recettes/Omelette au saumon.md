@@ -8,7 +8,7 @@ meal: lunch
 
 # Omelette au saumon
 
-![[Omelette au saumon.png]]
+![[Omelette au saumon.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

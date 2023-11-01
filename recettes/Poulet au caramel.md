@@ -9,7 +9,7 @@ opportunity: cheat-meal
 
 # Poulet au caramel
 
-![[Poulet au caramel.jpg]]
+![[Poulet au caramel.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

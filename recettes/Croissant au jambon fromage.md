@@ -11,7 +11,7 @@ opportunity: cheat-meal
 
 # Croissant au jambon fromage
 
-![](images/Croissant%20au%20jambon%20fromage.jpg)
+![[Croissant au jambon fromage.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

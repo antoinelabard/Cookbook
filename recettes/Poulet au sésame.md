@@ -8,7 +8,7 @@ meal: lunch
 
 # Poulet au sésame
 
-![[Poulet au sésame.png]]
+![[Poulet au sésame.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

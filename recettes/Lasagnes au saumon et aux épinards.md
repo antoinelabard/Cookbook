@@ -10,7 +10,7 @@ meal: lunch
 
 # Lasagnes au saumon et aux épinards
 
-![](images/Lasagnes%20au%20saumon%20et%20aux%20épinards.jpg)
+![[Lasagnes au saumon et aux épinards.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

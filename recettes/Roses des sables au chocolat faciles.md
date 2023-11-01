@@ -10,7 +10,7 @@ opportunity: pleasure
 
 # Roses des sables au chocolat faciles
 
-![[Roses des sables au chocolat faciles.jpg]]
+![[Roses des sables au chocolat faciles.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

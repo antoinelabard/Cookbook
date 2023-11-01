@@ -10,7 +10,7 @@ meal: lunch
 
 # Hachis Parmentier
 
-![](images/Hachis%20Parmentier.jpg)
+![[Hachis Parmentier.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

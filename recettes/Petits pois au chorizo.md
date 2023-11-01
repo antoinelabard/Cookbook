@@ -9,7 +9,7 @@ meal: lunch
 
 # Petits pois au chorizo
 
-![](images/Petits%20pois%20au%20chorizo.jpg)
+![[Petits pois au chorizo.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

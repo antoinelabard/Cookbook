@@ -10,7 +10,7 @@ meal: lunch
 
 # Gratin de haricots verts aux champignons
 
-![](images/Gratin%20de%20haricots%20verts%20aux%20champignons.jpg)
+![[Gratin de haricots verts aux champignons.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
