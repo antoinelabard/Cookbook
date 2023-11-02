@@ -26,6 +26,7 @@ opportunity: party
 - Huile d'olive
 - Blanc de poulets : 500g
 - Oignons nouveaux : 5
+- Sachets de ramen : 5
 
 ## Préparation
 
