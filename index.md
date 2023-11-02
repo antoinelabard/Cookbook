@@ -2,7 +2,7 @@
 
 ## 👋 Présentation
 
-> <div><img src="photo.webp" alt="profile picture" width="100" height="100" style="margin: 20px; float: right; shape: circle();"><p style="text-align:justify;">Salut ! Moi c'est Antoine.<br>J'ai mis en ligne ce site web pour partager mon livre de recettes. Il s'agit de toutes les recettes que j'essaie et que je sauvegarde pour ne jamais manquer d'idée ! N'hésitez pas à ma faire part de vos retours ou de vos astuces pour les améliorer.</p></div>
+> <div><img src="photo.webp" alt="profile picture" width="100" height="100" style="margin: 20px; float: right; shape: circle();"><p style="text-align:justify;">Salut ! Moi c'est Antoine.<br>J'ai mis en ligne ce site web pour partager mon livre de recettes. Il s'agit de toutes les recettes que j'essaie et que je sauvegarde pour ne jamais manquer d'idée ! N'hésitez pas à me faire part de vos retours ou de vos astuces pour les améliorer.</p></div>
 
 ## 🗂️ Catégories
 
@@ -34,4 +34,3 @@ Vous pouvez retrouver le repository de ce livre sur GitHub : [https://github.com
 Ce livre de recette a été rédigé avec [Obsidian](http://obsidian.md). Le site web est généré avec le plugin [Webpage HTML Export](https://github.com/KosmosisDire/obsidian-webpage-export) et est hébergé sur [GitHub Pages](https://pages.github.com/).
 
 ![](http://canarytokens.com/ijpluamg2u65kgvhs62jaeykj)
-
