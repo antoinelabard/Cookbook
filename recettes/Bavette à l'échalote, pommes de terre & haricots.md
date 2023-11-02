@@ -23,7 +23,7 @@ meal: lunch
 
 ## Préparation
 
-1. Faites chauffer une casserole d'eau bouillante salée. Ajoutez une pincée de sel. Ajoutez les pommes de terre, laissez cuire 10 minutes.
+1. Faites chauffer une casserole d'eau bouillante salée. Ajoutez les pommes de terre, laissez cuire 10 minutes.
 2. Pendant ce temps, émincez les échalotes.
 3. Ajoutez les haricots verts dans la casserole et faites cuire pendant 12 min supplémentaires.
 4. Dans une poêle chaude, ajoutez la moitié du beurre et y faire revenir les échalotes 2 minutes, sur feu moyen.
