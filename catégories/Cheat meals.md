@@ -1,3 +1,5 @@
+# Cheat meals
+
 ```dataview
 LIST
 FROM "recettes"

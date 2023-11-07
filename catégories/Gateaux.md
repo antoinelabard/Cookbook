@@ -1,3 +1,5 @@
+# Gateaux
+
 ```dataview
 LIST
 FROM "recettes"
