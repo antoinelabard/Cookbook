@@ -32,5 +32,3 @@ Vous pouvez retrouver le repository de ce livre sur GitHub : [https://github.com
 ## 🧑‍💻 Technologies
 
 Ce livre de recette a été rédigé avec [Obsidian](http://obsidian.md). Le site web est généré avec le plugin [Webpage HTML Export](https://github.com/KosmosisDire/obsidian-webpage-export) et est hébergé sur [GitHub Pages](https://pages.github.com/).
-
-![](http://canarytokens.com/ijpluamg2u65kgvhs62jaeykj)
