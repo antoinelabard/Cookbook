@@ -4,6 +4,8 @@
 
 > <div><img src="photo.webp" alt="profile picture" width="100" height="100" style="margin: 20px; float: right; shape: circle();"><p style="text-align:justify;">Salut ! Moi c'est Antoine.<br>J'ai mis en ligne ce site web pour partager mon livre de recettes. Il s'agit de toutes les recettes que j'essaie et que je sauvegarde pour ne jamais manquer d'idée ! N'hésitez pas à me faire part de vos retours ou de vos astuces pour les améliorer.</p></div>
 
+[[Menu de la semaine]]
+
 ## 🗂️ Catégories
 
 ```dataview
