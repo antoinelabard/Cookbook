@@ -150,7 +150,7 @@ class CookBookRepository:
             {}
             
             """
-        to_str: Callable[[List[str]], str] = lambda l: self.PAGEBREAK.join([f"![[{i}]]" for i in l])
+        to_str: Callable[[List[str]], str] = lambda l: "\n".join([f"[[{i}]]" for i in l])
 
         for meal, recipes in meal_plan.__dict__.items():
             menu_str += meal_str.format(meal, to_str(recipes))
