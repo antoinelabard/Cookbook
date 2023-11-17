@@ -4,7 +4,7 @@ source: https://www.marmiton.org/recettes/recette_poulet-au-caramel_27690.aspx
 type: ingredient
 dish: main-course
 meal: lunch
-opportunity: cheat-meal
+tags: cheat-meal
 ---
 
 # Poulet au caramel

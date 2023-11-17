@@ -2,9 +2,8 @@
 date-added: 2022-12-08
 source: https://www.750g.com/poulet-maison-facon-kfc-r200348.htm
 type: ingredient
-category: fries
 meal: lunch
-opportunity: cheat-meal
+tags: cheat-meal
 ---
 
 # Tenders

@@ -3,7 +3,6 @@ date-added: 2021-12-11
 source: https://www.marmiton.org/recettes/recette_tarte-thon-tomate-et-moutarde_17226.aspx
 season: mid-season
 type: meal
-category: quiche
 dish: main-course
 meal: lunch
 ---

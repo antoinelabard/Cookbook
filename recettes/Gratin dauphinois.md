@@ -3,7 +3,6 @@ date-added: 2021-11-11
 source: https://www.750g.com/gratin-dauphinois-r1374.htm
 season: mid-season
 type: meal
-category: oven
 dish: main-course
 meal: lunch
 ---

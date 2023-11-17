@@ -5,7 +5,7 @@ season: mid-season
 type: meal
 dish: main-course
 meal: lunch
-opportunity: cheat-meal
+tags: cheat-meal
 ---
 
 # Pizza au saumon

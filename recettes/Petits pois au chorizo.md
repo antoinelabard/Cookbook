@@ -2,7 +2,6 @@
 date-added: 2022-01-05
 source: https://www.marmiton.org/recettes/recette_petits-pois-au-chorizo_46854.aspx
 type: meal
-category: pan
 dish: main-course
 meal: lunch
 ---

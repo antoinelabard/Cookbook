@@ -4,7 +4,7 @@ source: https://www.marmiton.org/recettes/recette_veritables-rouleaux-de-printem
 type: ingredient
 dish: main-course
 meal: lunch
-opportunity: party
+tags: occasion
 ---
 
 # Rouleaux de printemps au poulet

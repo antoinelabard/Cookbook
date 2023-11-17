@@ -2,7 +2,6 @@
 date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_pates-au-saumon-fume-a-la-vince_37466.aspx
 type: meal
-category: pasta
 dish: main-course
 meal: lunch
 ---

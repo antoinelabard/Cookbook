@@ -3,10 +3,9 @@ date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_pizza-calzone-au-jambon-et-champignons_56497.aspx
 season: winter
 type: meal
-category: oven
 dish: main-course
 meal: lunch
-opportunity: cheat-meal
+tags: cheat-meal
 ---
 
 # Pizza Calzone au jambon et champignons

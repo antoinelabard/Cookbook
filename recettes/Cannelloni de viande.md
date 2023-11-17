@@ -2,7 +2,6 @@
 date-added: 2022-12-15
 source: https://www.marmiton.org/recettes/recette_cannelloni-de-viande_45211.aspx
 type: meal
-category: oven
 dish: main-course
 meal: lunch
 ---

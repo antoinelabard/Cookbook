@@ -2,7 +2,6 @@
 date-added: 2022-12-22
 source: https://jow.fr/recipes/grilled-cheese-raclette-et-jambon-8ln9chy9bbese827130t
 type: meal
-category: sandwich
 dish: main-course
 meal: lunch
 ---

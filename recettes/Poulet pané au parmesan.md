@@ -2,10 +2,9 @@
 date-added: 2023-01-07
 source: https://jow.fr/recipes/poulet-croustillant-parmesan-et-brocoli-8j8ybmhk9hogkgqu11qb
 type: ingredient
-category: fries
 dish: main-course
 meal: lunch
-opportunity: pleasure
+tags: cheat-meal
 ---
 
 # Poulet pané au parmesan

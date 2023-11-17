@@ -2,7 +2,6 @@
 date-added: 2022-02-05
 source: Nathalie des Francas
 type: meal
-category: oven
 dish: main-course
 meal: lunch
 ---

@@ -3,7 +3,7 @@ date-added: 2023-04-22
 source: https://www.750g.com/chocolat-chaud-r3533.htm
 type: meal
 meal: snack
-opportunity: pleasure
+tags: occasion
 ---
 
 # Chocolat chaud maison

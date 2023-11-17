@@ -3,10 +3,9 @@ date-added: 2022-02-24
 source: https://www.ptitchef.com/recettes/plat/pizza-baguette-fid-1566290
 season: winter
 type: meal
-category: oven
 dish: main-course
 meal: lunch
-opportunity: cheat-meal
+tags: cheat-meal
 ---
 
 # Pizza baguette

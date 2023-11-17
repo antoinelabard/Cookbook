@@ -4,7 +4,6 @@ source: https://www.marmiton.org/recettes/recette_pommes-de-terres-sautees_36392
 type: ingredient
 dish: main-course
 meal: lunch
-opportunity: cheat-meal
 ---
 
 # Pommes de terres sautées

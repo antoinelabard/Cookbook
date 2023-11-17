@@ -3,7 +3,6 @@ date-added: 2023-01-13
 source: https://jow.fr/recipes/poelee-de-pommes-de-terre-et-saucisse-fumee-8q4ud8q9c0wi9yb01cv8
 season: winter
 type: meal
-category: pan
 dish: main-course
 meal: lunch
 ---

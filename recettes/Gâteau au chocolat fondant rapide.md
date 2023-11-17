@@ -2,10 +2,9 @@
 date-added: 2022-06-30
 source: https://www.marmiton.org/recettes/recette_gateau-au-chocolat-fondant-rapide_166352.aspx
 type: meal
-category: cake
 dish: dessert
 meal: snack
-opportunity: party
+tags: occasion
 ---
 
 # Gâteau au chocolat fondant rapide

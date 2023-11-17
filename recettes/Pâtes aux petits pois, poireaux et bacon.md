@@ -2,7 +2,6 @@
 date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_pate-aux-crevettes-a-la-creme_171330.aspx
 type: meal
-category: pasta
 dish: main-course
 meal: lunch
 ---

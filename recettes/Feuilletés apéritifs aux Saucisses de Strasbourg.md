@@ -4,7 +4,7 @@ source: https://www.750g.com/feuilletes-aperitifs-aux-knackis-r99010.htm
 type: ingredient
 dish: starter
 meal: appetizer
-opportunity: party
+tags: occasion
 ---
 
 # Feuilletés apéritifs aux Saucisses de Strasbourg

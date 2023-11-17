@@ -2,10 +2,8 @@
 date-added: 2022-10-19
 source: https://www.marmiton.org/recettes/recette_roses-des-sables-au-chocolat-faciles_12529.aspx
 type: meal
-category: biscuit
 dish: dessert
 meal: snack
-opportunity: pleasure
 ---
 
 # Roses des sables au chocolat faciles

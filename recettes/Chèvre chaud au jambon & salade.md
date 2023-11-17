@@ -4,7 +4,6 @@ source: https://jow.fr/recipes/chevre-chaud-au-jambon-et-salade-8fxlajp87683hi92
 type: meal
 dish: main-course
 meal: lunch
-opportunity: pleasure
 ---
 
 # Chèvre chaud au jambon & salade
