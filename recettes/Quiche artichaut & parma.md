@@ -23,8 +23,7 @@ meal: lunch
 - Artichauts marinés : 160g
 - Jambon cru : 4 tranches
 - Oeuf : 3
-- Lait : 10cl
-- Crème liquide : 10cl
+- Crème fraîche : 20cl
 
 ## Préparation
 
