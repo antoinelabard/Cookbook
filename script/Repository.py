@@ -1,4 +1,12 @@
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Dict, Any, Tuple, List, Callable
+
 import yaml
+
+import Recipe
+
 
 def singleton(class_):
     instances = {}
@@ -26,23 +34,14 @@ class CookBookRepository:
     RECIPE_DICT: Dict[str, Path] = {path.stem: path for path in RECIPE_DIR.iterdir() if path.is_file()}
     RECIPE_NAMES: Tuple[str] = tuple([recipe_name for recipe_name in RECIPE_DICT.keys()])
 
-    RECIPE_METADATA_TEMPLATE = {
-        Tag.COOKED_DATES: []
-    }
-    # add a pagebreak web inserted in a markdown document
+    # add a page break web inserted in a markdown document
     PAGEBREAK: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
 
     def __init__(self):
         self.recipes_metadata = self._read_recipes_metadata()
 
-    def get_recipes_cooked_dates(self):
-        recipes_cooked_dates: Dict[str, Any] = {}
-        for recipe_name, metadata in self.cookbook_metadata.items():
-            recipes_cooked_dates[recipe_name] = metadata[self.COOKED_DATES]
-        return recipes_cooked_dates
-
     @classmethod
-    def _read_metadata_from_md(cls, path: Path) -> str | Dict[str, str]:
+    def load_recipe_from_file(cls, path: Path) -> Recipe | None:
         """
         :param path: the path to the markdown file containing the metadata
         :return: an empty string if there is no metadata in the file. Otherwise, return a dictionary of the metadata
@@ -56,19 +55,28 @@ class CookBookRepository:
             while True:
                 line = f.readline()
                 if line == metadata_marker:
-                    return yaml.safe_load(lines)
+                    metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
+                    return Recipe(
+                        path.name,
+                        metadata_dict["date-added"],
+                        metadata_dict["source"],
+                        metadata_dict["recipe_type"],
+                        metadata_dict["dish"],
+                        metadata_dict["meal"],
+                        metadata_dict["tags"],
+                    )
                 lines += line
 
-    def _read_recipes_metadata(self) -> Dict[str, str | Dict[str, str]]:
+    def _read_recipes_metadata(self) -> list[Recipe]: # Todo
         """
         :return: the metadata of all the files in a dictionary
         """
-        files_metadata: Dict[str, str | Dict[str, str]] = {}
+        recipes: list[Recipe] = []
         for recipe_name, recipe_path in self.RECIPE_DICT.items():
-            file_metadata = self._read_metadata_from_md(recipe_path)
-            if file_metadata != '':
-                files_metadata[recipe_name] = file_metadata
-        return files_metadata
+            recipe = self.load_recipe_from_file(recipe_path)
+            if recipe != None:
+                recipes.append(recipe)
+        return recipes
 
     def read_menu(self):
         """
