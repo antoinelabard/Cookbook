@@ -44,27 +44,31 @@ class CookBookRepository:
     def load_recipe_from_file(cls, path: Path) -> Recipe | None:
         """
         :param path: the path to the markdown file containing the metadata
-        :return: an empty string if there is no metadata in the file. Otherwise, return a dictionary of the metadata
+        :return: None if there is no metadata in the file. Otherwise, return a Recipe object
         """
         lines: str = ""
         metadata_marker: str = "---\n"
         with open(path, 'r') as f:
             line: str = f.readline()
-            if line != metadata_marker:  # check if there is metadata in the file
-                return ""
+            if line != metadata_marker:  # check if there is a metadata header in the file
+                return
             while True:
                 line = f.readline()
                 if line == metadata_marker:
                     metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
-                    return Recipe(
-                        path.name,
-                        metadata_dict["date-added"],
-                        metadata_dict["source"],
-                        metadata_dict["recipe_type"],
-                        metadata_dict["dish"],
-                        metadata_dict["meal"],
-                        metadata_dict["tags"],
-                    )
+                    for key, value in enumerate(metadata_dict):
+                        # put the value in a list if it's a string
+                        metadata_dict[key] = [].extend(value)
+                        return Recipe(
+                            path.name,
+                            metadata_dict["date-added"],
+                            metadata_dict["source"],
+                            metadata_dict["recipe_type"],
+                            metadata_dict["meal"],
+                            metadata_dict["dish"],
+                            metadata_dict["season"],
+                            metadata_dict["tags"]
+                        )
                 lines += line
 
     def _read_recipes_metadata(self) -> list[Recipe]: # Todo
