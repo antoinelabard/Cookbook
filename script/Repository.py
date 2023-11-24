@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, Any, Tuple, List, Callable
 
 import yaml
 
-import Recipe
+from script import MealPlan
+from script.Recipe import Recipe
 
 
 def singleton(class_):
@@ -31,8 +31,6 @@ class CookBookRepository:
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
     MENU_PATH: Path = ROOT_DIR / "menu.md"
-    RECIPE_DICT: Dict[str, Path] = {path.stem: path for path in RECIPE_DIR.iterdir() if path.is_file()}
-    RECIPE_NAMES: Tuple[str] = tuple([recipe_name for recipe_name in RECIPE_DICT.keys()])
 
     # add a page break web inserted in a markdown document
     PAGEBREAK: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
@@ -58,7 +56,9 @@ class CookBookRepository:
                     metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
                     for key, value in enumerate(metadata_dict):
                         # put the value in a list if it's a string
-                        metadata_dict[key] = [].extend(value)
+                        value_list = []
+                        value_list.extend(value)
+                        metadata_dict[key] = value_list
                         return Recipe(
                             path.name,
                             metadata_dict["date-added"],
@@ -94,22 +94,12 @@ class CookBookRepository:
         return recipes_names
 
     def write_menu(self, meal_plan: MealPlan) -> None:
-        menu_str: str = f"""# Menu
-                
-            """
-        meal_str: str = """## {}
-            
-            {}
-            
-            """
-        to_str: Callable[[List[str]], str] = lambda l: "\n".join([f"[[{i}]]" for i in l])
-
+        meals_links: list[str] = []
         for meal, recipes in meal_plan.__dict__.items():
-            menu_str += meal_str.format(meal, to_str(recipes))
-        menu_str = menu_str.replace("    ", "")
-        print(menu_str)
+            recipes_links = "\n".join([f"- [[{i}]]" for i in recipes])
+            meals_links.append(f"{meal}\n\n{recipes_links}")
         with open(self.MENU_PATH, 'w') as f:
-            f.write(menu_str)
+            f.write("\n\n".join(meals_links))
 
     def export_complete_cookbook(self):
         """
