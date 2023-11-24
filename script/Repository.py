@@ -32,9 +32,6 @@ class CookBookRepository:
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
     MENU_PATH: Path = ROOT_DIR / "menu.md"
 
-    # add a page break web inserted in a markdown document
-    PAGEBREAK: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
-
     def __init__(self):
         self.recipes = self._read_recipes()
 
@@ -75,9 +72,8 @@ class CookBookRepository:
         """
         :return: the list of all the recipes in the cookbook
         """
-        recipes_paths: list[Path] = [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
         recipes: list[Recipe] = []
-        for recipe_path in recipes_paths:
+        for recipe_path in self._get_recipes_paths():
             recipe = self._load_recipe_from_file(recipe_path)
             if recipe is not None:
                 recipes.append(recipe)
@@ -91,16 +87,16 @@ class CookBookRepository:
         with open(self.MENU_PATH, 'w') as f:
             f.write("\n\n".join(meals_links))
 
-    def export_complete_cookbook(self):
+    def export_complete_cookbook(self) -> None:
         """
         create a document containing quotes of the recipes contained in the cookbook.
         """
-
-        complete_cookbook_template = """# Livre de recettes
-        
-            {}""".replace("    ", "")
-
-        files_wikilinks = [f'![[{file}]]' for file in self.RECIPE_NAMES]
+        page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
+        complete_cookbook_template: str = "# Livre de recettes\n\n"
+        files_wikilinks = [f'![[{path.name}]]' for path in self._get_recipes_paths()]
 
         with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
-            f.write(complete_cookbook_template.format(self.PAGEBREAK.join(files_wikilinks)))
+            f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
+
+    def _get_recipes_paths(self) -> list[Path]:
+        return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
