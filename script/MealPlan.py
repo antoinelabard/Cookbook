@@ -1,6 +1,11 @@
-class MealPlan:
-    def __init__(self, lunch_list, breakfast_list, snack_list, appetizer_list):
-        self.lunch = lunch_list
-        self.breakfast = breakfast_list
-        self.snack = snack_list
-        self.appetizer = appetizer_list
+from script import Recipe
+
+
+class MealPlans:
+    def __init__(self,
+                 lunches: list[Recipe],
+                 breakfasts: list[Recipe],
+                 snacks: list[Recipe]):
+        self.lunches: list[Recipe] = lunches
+        self.breakfasts: list[Recipe] = breakfasts
+        self.snacks: list[Recipe] = snacks
