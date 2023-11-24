@@ -83,16 +83,6 @@ class CookBookRepository:
                 recipes.append(recipe)
         return recipes
 
-    def read_menu(self):
-        """
-        Read the menu referred by MENU_PATH and return a list of all the recipes contained in it.
-        """
-        with open(self.MENU_PATH, 'r') as f:
-            lines: List[str] = f.readlines()
-        recipes_names: List[str] = list(map(lambda line: line.replace("![[", "").replace("]]\n", ""), lines))
-        recipes_names = [recipe_name for recipe_name in recipes_names if recipe_name in self.RECIPE_DICT]
-        return recipes_names
-
     def write_menu(self, meal_plan: MealPlan) -> None:
         meals_links: list[str] = []
         for meal, recipes in meal_plan.__dict__.items():
