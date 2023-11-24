@@ -38,10 +38,10 @@ class CookBookRepository:
     PAGEBREAK: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
 
     def __init__(self):
-        self.recipes_metadata = self._read_recipes_metadata()
+        self.recipes = self._read_recipes()
 
     @classmethod
-    def load_recipe_from_file(cls, path: Path) -> Recipe | None:
+    def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
         """
         :param path: the path to the markdown file containing the metadata
         :return: None if there is no metadata in the file. Otherwise, return a Recipe object
@@ -71,14 +71,15 @@ class CookBookRepository:
                         )
                 lines += line
 
-    def _read_recipes_metadata(self) -> list[Recipe]: # Todo
+    def _read_recipes(self) -> list[Recipe]:
         """
-        :return: the metadata of all the files in a dictionary
+        :return: the list of all the recipes in the cookbook
         """
+        recipes_paths: list[Path] = [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
         recipes: list[Recipe] = []
-        for recipe_name, recipe_path in self.RECIPE_DICT.items():
-            recipe = self.load_recipe_from_file(recipe_path)
-            if recipe != None:
+        for recipe_path in recipes_paths:
+            recipe = self._load_recipe_from_file(recipe_path)
+            if recipe is not None:
                 recipes.append(recipe)
         return recipes
 
