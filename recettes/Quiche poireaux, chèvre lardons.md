@@ -19,10 +19,9 @@ meal: lunch
 
 - [[Pâte brisée]] : 1
 - Poireaux : 3
-- Crème fraîche : 20cl
-- Lait : 10cl
+- Crème fraîche : 25cl
 - Lardons : 200g
-- Fromage de chèvre : 1
+- Fromage de chèvre : 200g
 - Oeufs : 3
 
 ## Préparation
@@ -34,6 +33,6 @@ meal: lunch
 3. Faites dorer les lardons dont vous utiliserez la graisse pour faire revenir les poireaux ensuite.
 4. Répartissez lardons et poireaux sur le fond de tarte.
 5. Préchauffez le four à 180°C (Th 6).
-6. Dans un bol battez les œufs, la crème et le lait. Assaisonnez à votre goût puis versez le mélange dans la tarte.
+6. Dans un bol battez les œufs et la crème. Assaisonnez à votre goût puis versez le mélange dans la tarte.
 7. Découper le fromage de chèvre en rondelles que vous déposerez sur la quiche.
 8. Cuisez au four de 25 à 30 minutes.
