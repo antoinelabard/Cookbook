@@ -20,7 +20,7 @@ def singleton(class_):
 
 
 @singleton
-class CookBookRepository:
+class CookbookRepository:
     """
     CookBookRepository: Manage the access to the data stored in the cookbook. Any read or write operation must be
         handled by this class. It includes operations to read the general cookbook metadata and the metadata of each of
