@@ -5,6 +5,7 @@ from pathlib import Path
 import yaml
 
 from script import MealPlan
+from script.MealPlanFilters import MealPlanFilters
 from script.Recipe import Recipe
 
 
@@ -34,6 +35,7 @@ class CookbookRepository:
 
     def __init__(self):
         self.recipes = self._read_recipes()
+        self.profiles = self._get_profiles()
 
     @classmethod
     def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
@@ -100,3 +102,17 @@ class CookbookRepository:
 
     def _get_recipes_paths(self) -> list[Path]:
         return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
+
+    def _get_profiles(self) -> list[MealPlanFilters]:
+        with open("profiles.yaml", "r") as f:
+            data = yaml.safe_load("\n".join(f.readlines()))
+        profiles = {}
+        for profile, profile_filters in data.items():
+            # TODO: improve code quality (nested loops)
+            for profile_filter in profile_filters:
+                meal_plan_filters = MealPlanFilters()
+                for filter_attribute in profile_filter.keys():
+                    if filter_attribute in meal_plan_filters.__dict__:
+                        meal_plan_filters.__setattr__(filter_attribute, profile_filter[filter_attribute])
+                profiles[profile] = meal_plan_filters
+        return profiles
