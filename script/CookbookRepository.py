@@ -28,7 +28,7 @@ class CookbookRepository:
         the recipes.
     """
 
-    ROOT_DIR: Path = Path(__file__).parent
+    ROOT_DIR: Path = Path(__file__).parent.parent
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
     MENU_PATH: Path = ROOT_DIR / "menu.md"
@@ -50,25 +50,22 @@ class CookbookRepository:
             if line != metadata_marker:  # check if there is a metadata header in the file
                 return
             while True:
+                # read the file metadata
                 line = f.readline()
                 if line == metadata_marker:
-                    metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
-                    for key, value in enumerate(metadata_dict):
-                        # put the value in a list if it's a string
-                        value_list = []
-                        value_list.extend(value)
-                        metadata_dict[key] = value_list
-                        return Recipe(
-                            path.name,
-                            metadata_dict["date-added"],
-                            metadata_dict["source"],
-                            metadata_dict["recipe_type"],
-                            metadata_dict["meal"],
-                            metadata_dict["dish"],
-                            metadata_dict["season"],
-                            metadata_dict["tags"]
-                        )
+                    break
                 lines += line
+
+        metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
+        recipe = Recipe(path.name)
+        for key, value in metadata_dict.items():
+            if key in recipe.__dict__:
+                # put the value in a list if it's a string
+                value_as_list = []
+                value_as_list.extend(value)
+                recipe.__setattr__(key, value_as_list)
+
+        return recipe
 
     def _read_recipes(self) -> list[Recipe]:
         """

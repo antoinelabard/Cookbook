@@ -6,14 +6,14 @@ class MealPlanFilters:
     FILTER_NEGATION = "!"
 
     def __init__(self,
-                 quantity: int,
+                 quantity: int | None = None,
                  recipe_type: list[str] | None = None,
                  season: list[str] | None = None,
                  meal: list[str] | None = None,
                  dish: list[str] | None = None,
                  tags: list[str] | None = None,
                  ):
-        self.quantity = quantity
+        self.quantity: int | None = quantity
         self.recipe_type: list[str] = recipe_type or []
         self.season: list[str] = season or []
         self.meal: list[str] = meal or []
