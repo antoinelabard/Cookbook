@@ -1,3 +1,5 @@
+import datetime
+
 from script import Recipe
 
 
@@ -20,9 +22,32 @@ class MealPlanFilters:
         self.dish: list[str] = dish or []
         self.tags: list[str] = tags or []
 
+    def _get_current_season(self) -> str:
+        date = datetime.date.today()
+        spring_beginning = datetime.date(date.year, 3, 20)
+        summer_beginning = datetime.date(date.year, 6, 21)
+        autumn_beginning = datetime.date(date.year, 9, 23)
+        winter_beginning = datetime.date(date.year, 12, 21)
+
+        if spring_beginning <= date < summer_beginning:
+            return "spring"
+        if summer_beginning <= date < autumn_beginning:
+            return "summer"
+        if autumn_beginning <= date < winter_beginning:
+            return "autumn"
+        return "winter"
+
     def matches_filters(self, recipe: Recipe) -> bool:
         recipe_attributes = recipe.__dict__
-        for _, filter_attribute_values in self.__dict__:
+        for key, filter_attribute_values in self.__dict__.items():
+            if key == "quantity":
+                continue
+            if key == "season":
+                if "season" not in recipe_attributes:
+                    # the recipe does not specify a  particular season
+                    return True
+                if self._get_current_season() not in recipe_attributes:
+                    return False
             for filter_attribute_value in filter_attribute_values:
                 must_contain: bool = filter_attribute_value[0] != self.FILTER_NEGATION
                 filter_attribute_value: str = filter_attribute_value.strip(self.FILTER_NEGATION)
@@ -36,4 +61,4 @@ class MealPlanFilters:
                 if must_contain and filter_attribute_value not in recipe_attributes_values:
                     # the recipe doesn't have a tag that it should have
                     return False
-                return True
+            return True
