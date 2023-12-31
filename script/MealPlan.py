@@ -3,9 +3,9 @@ from script import Recipe
 
 class MealPlan:
     def __init__(self,
-                 lunches=None,
-                 breakfasts=None,
-                 snacks=None):
-        self.lunches: list[Recipe] = lunches or []
-        self.breakfasts: list[Recipe] = breakfasts or []
-        self.snacks: list[Recipe] = snacks or []
+                 lunch=None,
+                 breakfast=None,
+                 snack=None):
+        self.lunch: list[Recipe] = lunch or []
+        self.breakfast: list[Recipe] = breakfast or []
+        self.snack: list[Recipe] = snack or []

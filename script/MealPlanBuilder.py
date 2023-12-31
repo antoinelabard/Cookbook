@@ -20,7 +20,7 @@ class MealPlanBuilder:
         self.recipes = self.repository.recipes
 
     def add_recipes(self, filters: MealPlanFilters):
-        filtered_recipes: list[Recipe] = [name for name in self.repository.recipes if filters.match_filters(name)]
+        filtered_recipes: list[Recipe] = [name for name in self.repository.recipes if filters.matches_filters(name)]
         if not filtered_recipes:
             return
 
