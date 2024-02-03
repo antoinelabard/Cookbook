@@ -17,7 +17,7 @@ meal: lunch
 ## Ingrédients
 
 - Crème fraîche : 20cl
-- Gousse d'aile : 1
+- Gousse d'ail : 1
 - Oignon : 1
 - Poireaux : 2
 - Épinards branche : 300g
