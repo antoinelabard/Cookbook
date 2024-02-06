@@ -23,7 +23,7 @@ TABLE without id file.link as "Catégories"
 FROM "catégories"
 ```
 
-##  🤝 Contribution
+## 🤝 Contribution
 
 Vous pouvez retrouver le repository de ce livre sur GitHub : [https://github.com/antoinelabard/Cookbook](https://github.com/antoinelabard/Cookbook). Si vous avez des suggestions d'améliorations des recettes, vous pouvez me contacter ou utiliser GitHub si vous le maîtrisez.
 
