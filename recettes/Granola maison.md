@@ -1,6 +1,8 @@
 ---
 date-added: 2023-05-11
-source: "Le Guide de l'Alimentation Saine de Yuka"
+source:
+  - "Le Guide de l'Alimentation Saine de Yuka"
+  - https://jow.fr/recipes/granola-choco-loco-8807510eeoh3gvkv13e2
 type: meal
 meal: breakfast
 ---
@@ -9,21 +11,24 @@ meal: breakfast
 
 ![[Granola maison.webp]]
 
-| Préparation | Repos |  Cuisson   |
-|:-----------:|:-----:|:----------:|
-|    10min    |   -   | 15 à 20min |
+| Préparation | Repos | Cuisson |
+|:-----------:|:-----:|:-------:|
+|    5min     |   -   |  20min  |
 
 ## Ingrédients
 
-- Flocons d'avoine : 180g
-- Mélange de noix : 200g
-- Compote de pommes : 90g
-- Sirop d'érable : 1cc
-- Gousses de vanille fendues et grattées : 2
+- Flocons d'avoine : 250g
+- Mélange de noix : 150g
+- Sirop d'érable ou miel : 90g
+- Huile d'olive : 40ml
+- Chocolat noir (optionnel) : 100g
 
 ## Préparation
 
-1. Préchauffez le four à 200°C (th. 7).
-2. Dans un saladier, mélangez tous les ingrédients ensemble. Avec une cuillère en bois ou, mieux, à l'aide vos mains, mélangez bien le tout.
-3. Sur une plaque de four recouverte de papier cuisson, tassez le mélange. Faites cuire 15 à 20min en remuant régulièrement (toutes les 5min environ).
-4. Une fois cuit, versez votre granolas dansune boîte en verre. Laissez refroidir avant de fermer hermétiquement pour bien le conserver.
+1. Préchauffez le four à 160°C.
+2. Dans un saladier, ajoutez l'avoine, le mélange de noix, une bonne pincée de gros sel, l'huile et le sirop d'érable/miel. Mélangez avec une maryse.
+3. Disposez une feuille de papier sulfurisé sur votre plaque de cuisson. Versez-y la préparation, répartir puis tasser le tout légèrement à l'aide d'une maryse.
+4. Enfournez à 160°C pendant 10 minutes. Sortez la plaque, remuez, re-tassez, puis ré-enfournez aussitôt pendant 10 minutes supplémentaires.
+5. Pendant ce temps, concassez grossièrement le chocolat.
+6. Astuce : Une fois que le granola est bien doré, éteignez le four et laissez la plaque de granola refroidir 10 minutes à l'intérieur. Cette étape permettra au granola de former des pépites bien croustillantes.
+7. Une fois le granola refroidit, ajoutez le chocolat. À servir avec des yaourt, de lait, de la compote ou nature, c'est prêt !
