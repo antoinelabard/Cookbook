@@ -18,7 +18,7 @@ meal: lunch
 - Tortillas : 4
 - Thon : 200g
 - Maïs : 120g
-- Fromage frais : 4cs
+- Fromage frais : 40g
 - Salade : 4 poignées
 - Oignon : 1
 

@@ -20,7 +20,7 @@ meal: lunch
 - Pâtes : 400g
 - Saumon : 4 tranches
 - Épinards : 4 poignées
-- Crème fraîche : 4cs
+- Crème fraîche : 10cl
 - Citron
 
 ## Préparation

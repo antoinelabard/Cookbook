@@ -20,8 +20,8 @@ opportunity: pleasure
 
 - Escalope de poulet : 4
 - Oeufs : 4
-- Farine e blé : 4cs
-- Chapelure : 8cs
+- Farine de blé : 40g
+- Chapelure : 80g
 - Guile de turnesol : 20cl
 - Parmesan : 80g
 

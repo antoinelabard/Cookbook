@@ -19,8 +19,8 @@ meal: lunch
 ## Ingrédients
 
 - [[Pâte brisée]] : 1
-- Oeuf : 3
-- Crème fraîche : 3cs
+- Oeufs : 3
+- Crème fraîche : 10cl
 - Fromage de chèvre : 200g
 - Épinards : 400g
 

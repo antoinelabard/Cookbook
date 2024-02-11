@@ -18,8 +18,8 @@ meal: lunch
 
 ## Ingrédients
 
-- Huile de tournesol : 3cs
-- Vinaigre balsamique : 3cs
+- Huile de tournesol : 6cl
+- Vinaigre balsamique : 5cl
 - Curry
 - Huile de noisette
 - Échalote ou oignon rouge : 1

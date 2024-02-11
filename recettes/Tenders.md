@@ -23,7 +23,7 @@ opportunity: cheat-meal
 - Farine : 100g
 - Ail en poudre
 - Paprika
-- Lait : 1cs
+- Lait : 2cl
 - Huile de friture
 - Ketchup
 

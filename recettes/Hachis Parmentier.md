@@ -19,7 +19,7 @@ meal: lunch
 ## Ingrédients
 
 - Pommes de terre : 1kg
-- Farine : 1cs
+- Farine : 10g
 - Herbes de Provence
 - Parmesan : 50g
 - Beurre : 30g
