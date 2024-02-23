@@ -14,11 +14,11 @@ meal: lunch
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    25min    |   -   |  20min  |
+|    50min    |   -   |   1h    |
 
 ## Ingrédients
 
-- Pommes de terre : 1kg
+- [[Purée de pommes de terre façon Goblot]] : 1kg
 - Farine : 10g
 - Herbes de Provence
 - Parmesan : 50g
@@ -30,7 +30,8 @@ meal: lunch
 
 ## Préparation
 
-1. Hacher l'oignon et l'ail. Les faire revenir dans le beurre jusqu'à ce qu'ils soient tendres.
-2. Ajouter les tomates coupées en dés, la viande hachée, la farine, du sel, du poivre et les herbes de Provence.
-3. Quand tout est cuit, couper le feu et ajouter le jaune d'œuf et un peu de parmesan. Bien mélanger.
-4. Préchauffer le four à 200°C (thermostat 6-7). Étaler au fond du plat à gratin. Préparer la purée. L'étaler au-dessus de la viande. Saupoudrer de fromage râpé et faire gratiner.
+1. ![[Purée de pommes de terre façon Goblot]]
+2. Hacher l'oignon et l'ail. Les faire revenir dans le beurre jusqu'à ce qu'ils soient tendres.
+3. Ajouter les tomates coupées en dés, la viande hachée, la farine, du sel, du poivre et les herbes de Provence.
+4. Quand tout est cuit, couper le feu et ajouter le jaune d'œuf et un peu de parmesan. Bien mélanger.
+5. Préchauffer le four à 200°C (thermostat 6-7). Étaler au fond du plat à gratin. Étaler la purée au-dessus de la viande. Saupoudrer de fromage râpé et faire gratiner.

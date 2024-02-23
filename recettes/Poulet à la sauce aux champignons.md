@@ -12,7 +12,7 @@ meal: lunch
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    30min    |   -   |  30min  |
+|    45min    |   -   |  45min  |
 
 ## Ingrédients
 
@@ -22,15 +22,16 @@ meal: lunch
 - Vin blanc sec : 20cl
 - Bouillon de volaille : 1
 - Au choix :
-	- Riz ou pâtes : 300g
-	- Purée de pommes de terre : 800g
+	- Riz ou pâtes : 400g
+	- [[Purée de pommes de terre façon Goblot]] : 1kg
 
 ## Préparation
 
-1. Faire cuire le riz selon les instructions du paquet.
-2. Pelez et hachez finement les oignons.
-3. Faites chauffer un filet d'huile dans une poêle.
-4. Quand l’huile est bien chaude, déposez les filets de poulet dans la poêle et faites-les revenir sur tous les côtés pendant 10 à 15 minutes, jusqu’à ce qu’ils soient bien dorés.
-5. Ajoutez ensuite les oignons hachés autour des filets de poulet dans la poêle et laissez cuire, en mélangeant bien, pendant 5 minutes environ, jusqu’à ce qu’ils soient bien translucides.
-6. Égouttez les champignons de Paris et versez-les dans la poêle. Mouillez ensuite avec le vin blanc sec et le bouillon de volaille. Salez et poivrez à votre goût puis remuez bien. Laissez réduire pendant 30 minutes, à feu doux, en mélangeant régulièrement.
-7. À la fin de la cuisson, servez de suite les filets de poulet avec le riz dans les assiettes, puis nappez-les de sauce aux champignons et au vin blanc.
+1. ![[Purée de pommes de terre façon Goblot]]
+2. Faire cuire le riz selon les instructions du paquet.
+3. Pelez et hachez finement les oignons.
+4. Faites chauffer un filet d'huile dans une poêle.
+5. Quand l’huile est bien chaude, déposez les filets de poulet dans la poêle et faites-les revenir sur tous les côtés pendant 10 à 15 minutes, jusqu’à ce qu’ils soient bien dorés.
+6. Ajoutez ensuite les oignons hachés autour des filets de poulet dans la poêle et laissez cuire, en mélangeant bien, pendant 5 minutes environ, jusqu’à ce qu’ils soient bien translucides.
+7. Égouttez les champignons de Paris et versez-les dans la poêle. Mouillez ensuite avec le vin blanc sec et le bouillon de volaille. Salez et poivrez à votre goût puis remuez bien. Laissez réduire pendant 30 minutes, à feu doux, en mélangeant régulièrement.
+8. À la fin de la cuisson, servez de suite les filets de poulet avec le riz dans les assiettes, puis nappez-les de sauce aux champignons et au vin blanc.
