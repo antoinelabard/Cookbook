@@ -21,7 +21,7 @@ opportunity: cheat-meal
 
 - Pommes de terre : 3
 - Oignon : 1
-- [Pâte brisée](Pâte%20brisée.md) : 1
+- [[Pâte brisée]] : 1
 - Crème fraîche : 20cl
 - lardons : 100g
 - gruyère râpé

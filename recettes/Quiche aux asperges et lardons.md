@@ -19,7 +19,7 @@ meal: lunch
 
 - Asperges : 500g
 - Lardons : 200g
-- [Pâte brisée](Pâte%20brisée.md) : 1
+- [[Pâte brisée]] : 1
 - Crème fraîche : 50cl
 - Fromage râpé
 - Oeufs : 4
