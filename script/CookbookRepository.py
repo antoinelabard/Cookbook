@@ -57,13 +57,14 @@ class CookbookRepository:
                 lines += line
 
         metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
-        recipe = Recipe(path.name)
-        for key, value in metadata_dict.items():
-            if key in recipe.__dict__:
-                # put the value in a list if it's a string
-                value_as_list = []
-                value_as_list.extend(value)
-                recipe.__setattr__(key, value_as_list)
+        recipe = Recipe(
+            path.name,
+            metadata_dict["date-added"],
+            metadata_dict["source"],
+            metadata_dict["type"],
+            metadata_dict["meal"],
+            metadata_dict["tags"]
+        )
 
         return recipe
 
