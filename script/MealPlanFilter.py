@@ -4,9 +4,6 @@ from script import Recipe
 
 
 class MealPlanFilter:
-    # used at the beginning of a filter to tell that you must not have it among the meal metadata (ex: !tag)
-    FILTER_NEGATION = "$"
-
     def __init__(self,
                  quantity: int,
                  recipe_type: str,
@@ -51,11 +48,14 @@ class MealPlanFilter:
             return False
 
         # tags
-        if self.tags is not None:
+        if self.tags:
             if recipe.tags is None:
                 return False
             for tag in self.tags:
                 if tag not in recipe.tags:
                     return False
+
+        if not self.tags and recipe.tags:
+            return False
 
         return True

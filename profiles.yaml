@@ -3,9 +3,6 @@ week:
     quantity: 7
     recipe_type: meal
     meal: lunch
-    tags:
-      - $cheat-meal
-      - $occasion
   -
     quantity: 2
     recipe_type: meal
@@ -16,25 +13,15 @@ example:
     recipe_type: meal
     meal: lunch
     is_in_season: true
-    tags:
-      - $cheat-meal
-      - $occasion
   -
     quantity: 7
     recipe_type: meal
     meal: breakfast
-    tags:
-      - $cheat-meal
-      - $occasion
   -
     quantity: 4
     recipe_type: meal
     meal: snack
-    tags:
-      - $cheat-meal
-      - $occasion
   -
     quantity: 1
     recipe_type: meal
     meal: lunch
-    tags: $cheat-meal
