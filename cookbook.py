@@ -38,9 +38,12 @@ from script.MealPlanBuilder import MealPlanBuilder
 if __name__ == "__main__":
     repository = CookbookRepository()
     meal_plan_builder = MealPlanBuilder()
+
     for arg in sys.argv:
         if arg == "export":
             CookbookRepository().export_complete_cookbook()
-        if arg in repository.profiles.keys():
-            meal_plan_builder.add_recipes(repository.profiles[arg])
+        if arg in repository.profiles.keys():  # if arg is a profile name
+            [meal_plan_builder.add_recipes(meal_plan_filter) for meal_plan_filter in repository.profiles[arg]]
 
+    meal_plan = meal_plan_builder.build()
+    repository.write_menu(meal_plan)

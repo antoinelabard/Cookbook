@@ -2,7 +2,7 @@ import random
 
 from script.CookbookRepository import CookbookRepository
 from script.MealPlan import MealPlan
-from script.MealPlanFilters import MealPlanFilters
+from script.MealPlanFilter import MealPlanFilter
 from script.Recipe import Recipe
 
 
@@ -17,16 +17,15 @@ class MealPlanBuilder:
     def __init__(self):
         self.repository: CookbookRepository = CookbookRepository()
         self.meal_plan: MealPlan = MealPlan()
-        self.recipes = self.repository.recipes
 
-    def add_recipes(self, filters: MealPlanFilters):
-        filtered_recipes: list[Recipe] = [name for name in self.repository.recipes if filters.matches_filters(name)]
+    def add_recipes(self, meal_plan_filter: MealPlanFilter):
+        filtered_recipes: list[Recipe] = [recipe for recipe in self.repository.recipes if meal_plan_filter.matches_filters(recipe)]
         if not filtered_recipes:
             return
 
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()
         picked_recipes: list[Recipe] = []
-        quantity = filters.quantity
+        quantity = meal_plan_filter.quantity
         while quantity > 0:
             # select the filtered recipes using a random draw
             index: int = random.randint(0, len(filtered_recipes_copy) - 1)
@@ -36,8 +35,14 @@ class MealPlanBuilder:
             if not filtered_recipes_copy:
                 filtered_recipes_copy = filtered_recipes.copy()
 
-        # add the picked recipes to the meal plan
-        getattr(self.meal_plan, filters.meal).extend(picked_recipes)
+        if meal_plan_filter.meal == "lunch":
+            self.meal_plan.lunch.extend(picked_recipes)
+        elif meal_plan_filter.meal == "breakfast":
+            self.meal_plan.breakfast.extend(picked_recipes)
+        elif meal_plan_filter.meal == "snack":
+            self.meal_plan.snack.extend(picked_recipes)
+        else:
+            self.meal_plan.misc.extend(picked_recipes)
 
     def build(self):
         return self.meal_plan

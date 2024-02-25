@@ -1,21 +1,21 @@
 example:
   -
     quantity: 6
-    type: meal
+    recipe_type: meal
     meal: lunch
     dish: main-course
-    season: true
+    is_in_season: true
   -
     quantity: 7
-    type: meal
+    recipe_type: meal
     meal: breakfast
   -
     quantity: 4
-    type: meal
+    recipe_type: meal
     meal: snack
   -
     quantity: 1
-    type: meal
+    recipe_type: meal
     meal: lunch
     dish: main-course
     tags: cheat-meal

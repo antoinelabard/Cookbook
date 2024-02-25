@@ -5,7 +5,7 @@ from pathlib import Path
 import yaml
 
 from script import MealPlan
-from script.MealPlanFilters import MealPlanFilters
+from script.MealPlanFilter import MealPlanFilter
 from script.Recipe import Recipe
 
 
@@ -32,10 +32,11 @@ class CookbookRepository:
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
     MENU_PATH: Path = ROOT_DIR / "menu.md"
+    PROFILES_PATH = ROOT_DIR / "profiles.yaml"
 
     def __init__(self):
         self.recipes = self._read_recipes()
-        self.profiles = self._get_profiles()
+        self.profiles = self._read_profiles()
 
     @classmethod
     def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
@@ -59,11 +60,12 @@ class CookbookRepository:
         metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
         recipe = Recipe(
             path.name,
-            metadata_dict["date-added"],
-            metadata_dict["source"],
             metadata_dict["type"],
-            metadata_dict["meal"],
-            metadata_dict["tags"]
+            metadata_dict["date-added"] if "meal" in metadata_dict.keys() else None,
+            metadata_dict["source"] if "source" in metadata_dict.keys() else None,
+            metadata_dict["meal"] if "meal" in metadata_dict.keys() else None,
+            metadata_dict["season"] if "season" in metadata_dict.keys() else None,
+            metadata_dict["tags"] if "tags" in metadata_dict.keys() else None
         )
 
         return recipe
@@ -82,8 +84,9 @@ class CookbookRepository:
     def write_menu(self, meal_plan: MealPlan) -> None:
         meals_links: list[str] = []
         for meal, recipes in meal_plan.__dict__.items():
-            recipes_links = "\n".join([f"- [[{i}]]" for i in recipes])
-            meals_links.append(f"{meal}\n\n{recipes_links}")
+            recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
+            if recipes_links:
+                meals_links.append(f"# {meal}\n\n{recipes_links}")
         with open(self.MENU_PATH, 'w') as f:
             f.write("\n\n".join(meals_links))
 
@@ -101,16 +104,26 @@ class CookbookRepository:
     def _get_recipes_paths(self) -> list[Path]:
         return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
 
-    def _get_profiles(self) -> list[MealPlanFilters]:
-        with open("profiles.yaml", "r") as f:
+    def _read_profiles(self) -> dict[str, list[MealPlanFilter]]:
+        with open(self.PROFILES_PATH, "r") as f:
             data = yaml.safe_load("\n".join(f.readlines()))
         profiles = {}
         for profile, profile_filters in data.items():
-            # TODO: improve code quality (nested loops)
+            profiles[profile] = []
             for profile_filter in profile_filters:
-                meal_plan_filters = MealPlanFilters()
-                for filter_attribute in profile_filter.keys():
-                    if filter_attribute in meal_plan_filters.__dict__:
-                        meal_plan_filters.__setattr__(filter_attribute, profile_filter[filter_attribute])
-                profiles[profile] = meal_plan_filters
+                meal = None
+                is_in_season = False
+                tags = None
+                if "meal" in profile_filter.keys(): meal = profile_filter["meal"]
+                if "is_in_season" in profile_filter.keys(): is_in_season = profile_filter["is_in_season"]
+                if "tags" in profile_filter.keys(): tags = profile_filter["tags"]
+                meal_plan_filter = MealPlanFilter(
+                    profile_filter["quantity"],
+                    profile_filter["recipe_type"],
+                    meal,
+                    is_in_season,
+                    tags,
+                )
+                profiles[profile].append(meal_plan_filter)
+
         return profiles

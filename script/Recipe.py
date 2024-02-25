@@ -1,18 +1,29 @@
 class Recipe:
     def __init__(self,
                  name: str,
+                 recipe_type: str,
                  date_added: str | None = None,
-                 source: list[str] | None = None,
-                 recipe_type: list[str] | None = None,
-                 meal: list[str] | None = None,
-                 dish: list[str] | None = None,
-                 season: list[str] | None = None,
+                 source: str | None = None,
+                 meal: str | None = None,
+                 seasons: list[str] | None = None,
                  tags: list[str] | None = None):
         self.name: str = name
-        self.date_added: str | None = date_added
-        self.source: list[str] | None = source
-        self.recipe_type: list[str] | None = recipe_type
-        self.meal: list[str] | None = meal
-        self.dish: list[str] | None = dish
-        self.season: list[str] | None = season
-        self.tags: list[str] | None = tags
+        self.recipe_type: str = recipe_type
+        self.date_added: str | None = date_added if date_added else None
+        self.source: str | None = source
+        self.meal: str | None = meal if meal else None
+
+        if isinstance(seasons, list):
+            self.seasons: list[str] = seasons
+        elif seasons is None:
+            self.seasons: list[str] = []
+        else:
+            self.seasons: list[str] = [seasons]
+
+        if isinstance(tags, list):
+            self.tags: list[str] = tags
+        elif tags is None:
+            self.tags: list[str] = []
+        else:
+            self.tags: list[str] = [tags]
+
