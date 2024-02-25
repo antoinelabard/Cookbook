@@ -5,7 +5,7 @@ from script import Recipe
 
 class MealPlanFilter:
     # used at the beginning of a filter to tell that you must not have it among the meal metadata (ex: !tag)
-    FILTER_NEGATION = "!"
+    FILTER_NEGATION = "$"
 
     def __init__(self,
                  quantity: int,
