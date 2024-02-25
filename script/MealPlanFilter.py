@@ -1,6 +1,7 @@
 import datetime
 
 from script import Recipe
+from script.Constants import Constants
 
 
 class MealPlanFilter:
@@ -25,12 +26,12 @@ class MealPlanFilter:
         winter_beginning = datetime.date(date.year, 12, 21)
 
         if spring_beginning <= date < summer_beginning:
-            return "spring"
+            return Constants.Season.SPRING
         if summer_beginning <= date < autumn_beginning:
-            return "summer"
+            return Constants.Season.SUMMER
         if autumn_beginning <= date < winter_beginning:
-            return "autumn"
-        return "winter"
+            return Constants.Season.AUTUMN
+        return Constants.Season.WINTER
 
     def matches_filters(self, recipe: Recipe) -> bool:
         # recipe type
@@ -42,10 +43,11 @@ class MealPlanFilter:
             return False
 
         # seasons
-        if self.is_in_season and not recipe.seasons:
-            return False
-        if self.is_in_season and self._get_current_season() not in recipe.seasons:
-            return False
+        if self.is_in_season:
+            if not recipe.seasons:
+                return False
+            if self._get_current_season() not in recipe.seasons:
+                return False
 
         # tags
         if self.tags:

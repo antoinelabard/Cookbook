@@ -5,6 +5,7 @@ from pathlib import Path
 import yaml
 
 from script import MealPlan
+from script.Constants import Constants
 from script.MealPlanFilter import MealPlanFilter
 from script.Recipe import Recipe
 
@@ -61,11 +62,11 @@ class CookbookRepository:
         recipe = Recipe(
             path.name,
             metadata_dict["type"],
-            metadata_dict["date-added"] if "meal" in metadata_dict.keys() else None,
-            metadata_dict["source"] if "source" in metadata_dict.keys() else None,
-            metadata_dict["meal"] if "meal" in metadata_dict.keys() else None,
-            metadata_dict["season"] if "season" in metadata_dict.keys() else None,
-            metadata_dict["tags"] if "tags" in metadata_dict.keys() else None
+            metadata_dict[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata_dict.keys() else None,
+            metadata_dict[Constants.SOURCE] if Constants.SOURCE in metadata_dict.keys() else None,
+            metadata_dict[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata_dict.keys() else None,
+            metadata_dict[Constants.SEASON] if Constants.SEASON in metadata_dict.keys() else None,
+            metadata_dict[Constants.TAGS] if Constants.TAGS in metadata_dict.keys() else None
         )
 
         return recipe
@@ -114,12 +115,15 @@ class CookbookRepository:
                 meal = None
                 is_in_season = False
                 tags = None
-                if "meal" in profile_filter.keys(): meal = profile_filter["meal"]
-                if "is_in_season" in profile_filter.keys(): is_in_season = profile_filter["is_in_season"]
-                if "tags" in profile_filter.keys(): tags = profile_filter["tags"]
+                if Constants.Meal.MEAL in profile_filter.keys():
+                    meal = profile_filter[Constants.Meal.MEAL]
+                if Constants.Season.IS_IN_SEASON in profile_filter.keys():
+                    is_in_season = profile_filter[Constants.Season.IS_IN_SEASON]
+                if Constants.TAGS in profile_filter.keys():
+                    tags = profile_filter[Constants.TAGS]
                 meal_plan_filter = MealPlanFilter(
-                    profile_filter["quantity"],
-                    profile_filter["recipe_type"],
+                    profile_filter[Constants.QUANTITY],
+                    profile_filter[Constants.RECIPE_TYPE],
                     meal,
                     is_in_season,
                     tags,

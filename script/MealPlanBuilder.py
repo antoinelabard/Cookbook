@@ -1,5 +1,6 @@
 import random
 
+from script.Constants import Constants
 from script.CookbookRepository import CookbookRepository
 from script.MealPlan import MealPlan
 from script.MealPlanFilter import MealPlanFilter
@@ -35,11 +36,11 @@ class MealPlanBuilder:
             if not filtered_recipes_copy:
                 filtered_recipes_copy = filtered_recipes.copy()
 
-        if meal_plan_filter.meal == "lunch":
+        if meal_plan_filter.meal == Constants.Meal.LUNCH:
             self.meal_plan.lunch.extend(picked_recipes)
-        elif meal_plan_filter.meal == "breakfast":
+        elif meal_plan_filter.meal == Constants.Meal.BREAKFAST:
             self.meal_plan.breakfast.extend(picked_recipes)
-        elif meal_plan_filter.meal == "snack":
+        elif meal_plan_filter.meal == Constants.Meal.SNACK:
             self.meal_plan.snack.extend(picked_recipes)
         else:
             self.meal_plan.misc.extend(picked_recipes)
