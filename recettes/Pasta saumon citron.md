@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - Pâtes : 400g
-- Crème fraîche : 4cs
+- Crème fraîche : 10cl
 - Jus de citron
 - Saumon : 4 tranches
 - Parmesan : 40g

@@ -19,7 +19,7 @@ tags: occasion
 
 - Pâte feuilletée : 1
 - comté râpé : 75g
-- Crème fraîche : 4cs
+- Crème fraîche : 5cl
 - Oeuf : 1
 
 ## Préparation

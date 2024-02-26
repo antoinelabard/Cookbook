@@ -17,7 +17,7 @@ meal: lunch
 ## Ingrédients
 
 - Oignon : 1
-- Céleri : 1 cs
+- Céleri : 10cl
 - Carotte : 1
 - Origan
 - Viande hachée : 800g

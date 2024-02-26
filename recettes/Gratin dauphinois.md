@@ -9,7 +9,7 @@ meal: lunch
 
 # Gratin dauphinois
 
-![[Gratin dauphinois.jpeg]]
+![[Gratin dauphinois.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

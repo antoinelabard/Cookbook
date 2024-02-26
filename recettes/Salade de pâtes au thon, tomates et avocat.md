@@ -18,8 +18,8 @@ meal: lunch
 ## Ingrédients
 
 - Tomates : 2
-- Vinaigre balsamique : 2cs
-- Huile d'olive : 1cs
+- Vinaigre balsamique : 5cl
+- Huile d'olive : 2cl
 - Origan
 - Pâtes coude : 100g
 - Avocat : 1
@@ -28,6 +28,6 @@ meal: lunch
 ## Préparation
 
 1. Cuisez les pâtes le temps indiqué puis laissez refroidir.
-2. Découpez les tomates et l'avocat, ajoutez les, avec le thon, aux pâtes.
+2. Découpez les tomates et l'avocat, ajoutez-les avec le thon, aux pâtes.
 3. Ajoutez l'origan et le poivre.
 4. Pour la vinaigrette : mélangez bien l'huile et le vinaigre balsamique. Versez-la sur la salade avant de servir !

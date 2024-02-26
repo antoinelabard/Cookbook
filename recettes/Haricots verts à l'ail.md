@@ -6,7 +6,7 @@ type: ingredient
 
 # Haricots verts à l'ail
 
-![[Haricots verts à l'ail.jpeg]]]
+![[Haricots verts à l'ail.webp]]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

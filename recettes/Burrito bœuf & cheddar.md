@@ -23,7 +23,7 @@ meal: lunch
 - riz : 160g
 - Oignon rouge : 1
 - Laitue : 4 poignées
-- Crème fraîche : 4cs
+- Crème fraîche : 10cl
 
 ## Préparation
 

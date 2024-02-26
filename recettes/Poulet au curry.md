@@ -17,7 +17,7 @@ meal: lunch
 
 - Escalopes de poulet : 4
 - Curry : 1cc
-- Lait de coco : 8cs
+- Lait de coco : 12cl
 - Riz : 280g
 - Coriandre
 

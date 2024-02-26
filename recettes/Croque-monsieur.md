@@ -21,7 +21,7 @@ meal: lunch
 - Gruyère râpé : 100g
 - jambon : 8 tranches
 - Fromage en tranches : 8 tranches
-- Lait : 4cs
+- Lait : 6cl
 - Sel
 - Poivre
 - Muscade

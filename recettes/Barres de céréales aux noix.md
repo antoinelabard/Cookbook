@@ -18,7 +18,7 @@ meal: snack
 - Flocons d'avoine : 150g
 - Mélange de noix ou de fruits secs au choix : 150g
 - Cannelle en poudre : 1cs
-- Miel : 2cs
+- Miel : 3cl
 
 ## Préparation
 

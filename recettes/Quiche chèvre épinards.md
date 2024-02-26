@@ -1,6 +1,6 @@
 ---
 date-added: 2023-01-13
-source: https://jow.fr/recipes/quiche-chevre-epinards-89nzh3fuhktx84vm06ld?coversCount=6
+source: https://jow.fr/recipes/quiche-chevre-epinards-89nzh3fuhktx84vm06ld
 season: winter
 type: meal
 dish: main-course
@@ -18,8 +18,8 @@ meal: lunch
 ## Ingrédients
 
 - [[Pâte brisée]] : 1
-- Oeuf : 3
-- Crème fraîche : 3cs
+- Oeufs : 3
+- Crème fraîche : 10cl
 - Fromage de chèvre : 200g
 - Épinards : 400g
 

@@ -6,18 +6,16 @@ type: inedible
 
 # Produit ménager de maman
 
-![]()
-
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
 |    2min     |   -   |    -    |
 
-## Ingrédients pour 750ml
+## Ingrédients
 
-- Citron : 1cs
+- Jus de citron : 1cs
 - Bicarbonate : 1cs
 - Vinaigre blanc :1cs
-- Eau
+- Eau : 75cl
 
 ## Préparation
 

@@ -2,7 +2,8 @@
 
 ## 👋 Présentation
 
-> <div><img src="photo.webp" alt="profile picture" width="100" height="100" style="margin: 20px; float: right; shape: circle();"><p style="text-align:justify;">Salut ! Moi c'est Antoine.<br>J'ai mis en ligne ce site web pour partager mon livre de recettes. Il s'agit de toutes les recettes que j'essaie et que je sauvegarde pour ne jamais manquer d'idée ! N'hésitez pas à me faire part de vos retours ou de vos astuces pour les améliorer.</p></div>
+> [!faq] Salut ! Moi c'est Antoine.
+>  <div><img src="photo.webp" alt="profile picture" width="100" height="100" style="margin: 20px; float: right; shape: circle();"><p style="text-align:justify;">J'ai mis en ligne ce site web pour partager mon livre de recettes. Il s'agit de toutes les recettes que j'essaie et que je sauvegarde pour ne jamais manquer d'idée ! N'hésitez pas à me faire part de vos retours ou de vos astuces pour les améliorer.</p></div>
 
 [[Menu de la semaine]]
 
@@ -22,7 +23,7 @@ TABLE without id file.link as "Catégories"
 FROM "catégories"
 ```
 
-##  🤝 Contribution
+## 🤝 Contribution
 
 Vous pouvez retrouver le repository de ce livre sur GitHub : [https://github.com/antoinelabard/Cookbook](https://github.com/antoinelabard/Cookbook). Si vous avez des suggestions d'améliorations des recettes, vous pouvez me contacter ou utiliser GitHub si vous le maîtrisez.
 

@@ -8,6 +8,8 @@ meal: lunch
 
 # Endives en pochon
 
+![[Endives en pochon.webp]]
+
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
 |    20min    |   -   |  50min  |

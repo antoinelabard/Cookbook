@@ -17,7 +17,7 @@ meal: lunch
 
 - Filets de poulets : 4
 - Tomates : 4
-- Beurre de cacahuète : 4cs
+- Beurre de cacahuète : 5cl
 - Oignons : 2
 - Riz : 280g
 - Cube de bouillon de légumes : 1

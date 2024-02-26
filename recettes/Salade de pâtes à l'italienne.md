@@ -21,7 +21,7 @@ meal: lunch
 - Tomates cerises : 6
 - Basilic
 - Jus de citron
-- Huile d'olive : 6cs
+- Huile d'olive : 10cl
 - Pâtes papillons : 250g
 - Mozzarella : 150g
 - Jambon sec : 4 tranches

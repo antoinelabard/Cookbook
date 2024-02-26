@@ -9,7 +9,7 @@ meal: lunch
 
 # Tarte aux légumes du soleil
 
-![[Tarte aux légumes du soleil.jpeg]]
+![[Tarte aux légumes du soleil.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -17,7 +17,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [Pâte brisée](Pâte%20brisée.md) : 1
+- [[Pâte brisée]] : 1
 - Poivrons : 2
 - Courgette : 1
 - Parmesan râpé : 10g
