@@ -2,7 +2,6 @@
 date-added: 2024-01-15
 source: https://www.quitoque.fr/recette/12516/escalopes-de-dinde-a-la-normande
 type: meal
-dish: main-course
 meal: lunch
 ---
 

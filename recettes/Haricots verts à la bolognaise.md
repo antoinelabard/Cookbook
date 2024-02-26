@@ -2,7 +2,6 @@
 date-added: 2021-12-30
 source: https://www.marmiton.org/recettes/recette_haricots-verts-a-la-bolognaise_41215.aspx
 type: meal
-dish: main-course
 meal: lunch
 ---
 

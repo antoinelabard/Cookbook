@@ -2,7 +2,6 @@
 date-added: 2024-01-23
 source: https://jow.fr/recipes/galette-saucisse-89bq1rsjffyq8jk919nv
 type: meal
-dish: main-course
 meal: lunch
 ---
 

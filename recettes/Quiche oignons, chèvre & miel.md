@@ -2,7 +2,6 @@
 date-added: 2023-12-04
 source: https://jow.fr/recipes/quiche-oignons-chevre-et-miel-84b8cuy3atxi5ww90sr3
 type: meal
-dish: main-course
 meal: lunch
 ---
 

@@ -2,7 +2,6 @@
 date-added: 2023-12-08
 source: https://jow.fr/recipes/risotto-de-coquillettes-poireaux-poulet-et-chevre-8sd7hdwmdpea4oqn16nr
 type: meal
-dish: main-course
 meal: lunch
 ---
 

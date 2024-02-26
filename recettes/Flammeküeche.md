@@ -2,7 +2,6 @@
 date-added: 2023-11-22
 source: https://jow.fr/recipes/flammekueeche-7w0xjarj6dds03ou0ngz
 type: meal
-dish: main-course
 meal: lunch
 tags: cheat-meal
 ---

@@ -2,7 +2,6 @@
 date-added: 2023-08-18
 source: https://www.marmiton.org/recettes/recette_croque-monsieur_19208.aspx
 type: meal
-dish: main-course
 meal: lunch
 ---
 

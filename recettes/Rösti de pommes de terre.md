@@ -2,7 +2,6 @@
 date-added: 2022-12-28
 source: https://jow.fr/recipes/roesti-de-pommes-de-terre-8fp8mg4thpggke510yx4
 type: ingredient
-dish: main-course
 meal: lunch
 ---
 

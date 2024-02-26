@@ -2,7 +2,6 @@
 date-added: 2023-12-25
 source: Alexis Goblot
 type: meal
-dish: main-course
 meal: lunch
 ---
 

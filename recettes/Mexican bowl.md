@@ -2,7 +2,6 @@
 date-added: 2023-04-03
 source: https://jow.fr/recipes/mexican-bowl-8dd15nb19kyeg5ie18tm
 type: meal
-dish: main-course
 meal: lunch
 ---
 

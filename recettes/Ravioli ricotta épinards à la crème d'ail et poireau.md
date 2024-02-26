@@ -2,7 +2,6 @@
 date-added: 2024-01-15
 source: 
 type: meal
-dish: main-course
 meal: lunch
 ---
 

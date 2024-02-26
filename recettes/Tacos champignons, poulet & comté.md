@@ -2,7 +2,6 @@
 date-added: 2023-09-25
 source: https://jow.fr/recipes/tacos-champignons-poulet-et-comte-8j2hc06dl2hcks5g0fy2
 type: meal
-dish: main-course
 meal: lunch
 ---
 

@@ -2,7 +2,6 @@
 date-added: 2023-01-07
 source: https://jow.fr/recipes/poulet-croustillant-parmesan-et-brocoli-8j8ybmhk9hogkgqu11qb
 type: ingredient
-dish: main-course
 meal: lunch
 tags: cheat-meal
 ---

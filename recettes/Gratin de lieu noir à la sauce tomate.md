@@ -3,7 +3,6 @@ date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_gratin-de-lieu-noir-a-la-sauce-tomate_71044.aspx
 season: mid-season
 type: meal
-dish: main-course
 meal: lunch
 ---
 

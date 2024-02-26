@@ -2,7 +2,6 @@
 date-added: 2022-10-22
 source: Moi
 type: meal
-dish: main-course
 meal: lunch
 tags: cheat-meal
 ---

@@ -2,7 +2,6 @@
 date-added: 2023-04-03
 source: https://jow.fr/recipes/pasta-al-tonno-8dtcesvb21e910lk0hur
 type: meal
-dish: main-course
 meal: lunch
 ---
 

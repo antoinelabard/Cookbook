@@ -2,7 +2,6 @@
 date-added: 2023-11-27
 source: https://jow.fr/recipes/gratin-de-ravioles-au-saumon-8donlfxyb41z8wra070a
 type: meal
-dish: main-course
 meal: lunch
 tags: vegetarian
 ---

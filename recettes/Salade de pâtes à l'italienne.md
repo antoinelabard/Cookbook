@@ -3,7 +3,6 @@ date-added: 2022-07-21
 source: https://www.marmiton.org/recettes/recette_salade-de-pates-a-l-italienne_22514.aspx
 season: summer
 type: meal
-dish: main-course
 meal: lunch
 ---
 

@@ -3,7 +3,6 @@ date-added: 2022-08-04
 source: https://www.marmiton.org/recettes/recette_salade-de-pates-mediterraneenne_321582.aspx
 season: summer
 type: meal
-dish: main-course
 meal: meal
 ---
 

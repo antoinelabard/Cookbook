@@ -3,7 +3,6 @@ date-added: 2023-11-23
 source: https://www.marmiton.org/recettes/recette_salade-piemontaise-facile_168655.aspx
 season: summer
 type: meal
-dish: main-course
 meal: lunch
 ---
 
