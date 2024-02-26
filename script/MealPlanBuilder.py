@@ -20,6 +20,13 @@ class MealPlanBuilder:
         self.meal_plan: MealPlan = MealPlan()
 
     def add_recipes(self, meal_plan_filter: MealPlanFilter):
+        """
+        Randomnly add to the internal MealPlan some of the recipes marching the provided filters. The selected
+        recipes add up to the one already in the MealPlanFilter instance of the builder
+        :param meal_plan_filter: the
+        current set of filters to select only the recipe martching the requirements. It also provides the quantity of
+        recipes to be picked.
+        """
         filtered_recipes: list[Recipe] = [recipe for recipe in self.repository.recipes if meal_plan_filter.matches_filters(recipe)]
         if not filtered_recipes:
             return

@@ -5,6 +5,11 @@ from script.Constants import Constants
 
 
 class MealPlanFilter:
+    """
+    MealPlanFilter is a set of filters to select the recipes among all the ones present in the cookbook. Several
+    MealPlanFilters can be combined in a profile, to get recipes following different requirement. For example,
+    you may need to select a given quantity of lunches, and then another one of breakfasts.
+    """
     def __init__(self,
                  quantity: int,
                  recipe_type: str,

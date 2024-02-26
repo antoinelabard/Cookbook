@@ -25,8 +25,8 @@ def singleton(class_):
 class CookbookRepository:
     """
     CookBookRepository: Manage the access to the data stored in the cookbook. Any read or write operation must be
-        handled by this class. It includes operations to read the general cookbook metadata and the metadata of each of
-        the recipes.
+    handled by this class. It includes operations to read the general cookbook metadata and the metadata of each of
+    the recipes.
     """
 
     ROOT_DIR: Path = Path(__file__).parent.parent
@@ -82,7 +82,11 @@ class CookbookRepository:
                 recipes.append(recipe)
         return recipes
 
-    def write_menu(self, meal_plan: MealPlan) -> None:
+    def write_meal_plan(self, meal_plan: MealPlan) -> None:
+        """
+        Write down in a file the provided MealPlan.
+        :param meal_plan: the MealPlan to write down
+        """
         meals_links: list[str] = []
         for meal, recipes in meal_plan.__dict__.items():
             recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
@@ -93,7 +97,7 @@ class CookbookRepository:
 
     def export_complete_cookbook(self) -> None:
         """
-        create a document containing quotes of the recipes contained in the cookbook.
+        Create a document containing quotes of the recipes contained in the cookbook.
         """
         page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
         complete_cookbook_template: str = "# Livre de recettes\n\n"
@@ -103,9 +107,17 @@ class CookbookRepository:
             f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
 
     def _get_recipes_paths(self) -> list[Path]:
+        """
+        :return: the list of the absolute paths of all the recipes in the cookbook
+        """
         return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
 
     def _read_profiles(self) -> dict[str, list[MealPlanFilter]]:
+        """
+        Retrieve the profiles from "profiles.yaml" and present the data as an dictionary for which the keys are the
+        profiles names and the values are a list of MealPlanFilters for each profile.
+        :return: the dictionary of profiles
+        """
         with open(self.PROFILES_PATH, "r") as f:
             data = yaml.safe_load("\n".join(f.readlines()))
         profiles = {}
