@@ -18,9 +18,11 @@ meal: lunch
 - Saucisses fumées : 4
 - Galettes bretonnes : 4
 - Fromage râpé : 80g
-- Confit d'oignon : 4cc
+- [[Oignons confits]] : 200g
 
 ## Préparation
+
+![[Oignons confits]]
 
 1. Coupez les saucisses en rondelles et faites-les revenir à feu vif dans une poêle chaude avec une noisette de beurre pendant 3 minutes jusqu'à ce qu'elles soit bien dorées.
 2. Retirez les saucisses de la poêle et mettez-les de côté.

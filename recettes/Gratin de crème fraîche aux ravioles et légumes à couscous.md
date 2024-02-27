@@ -1,6 +1,7 @@
 ---
 date-added: 2024-01-30
 source: Antoine Labard
+type: meal
 tags: fail
 ---
 

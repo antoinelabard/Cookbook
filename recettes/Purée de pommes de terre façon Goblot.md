@@ -2,6 +2,7 @@
 date-added: 2024-02-22
 source: Alexis Goblot
 type: ingredient
+meal: lunch
 ---
 
 # Purée de pommes de terre façon Goblot

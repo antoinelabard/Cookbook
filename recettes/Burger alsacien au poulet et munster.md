@@ -16,7 +16,7 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- [[Oignons confits]]
+- [[Oignons confits]]: 200g
 - Filet de poulet : 4
 - Munster : 125g
 - Pains à burger : 4

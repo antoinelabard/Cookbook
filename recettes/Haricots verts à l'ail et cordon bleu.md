@@ -1,6 +1,6 @@
 ---
 date-added: 2022-10-22
-source: Moi
+source: Antoine Labard
 type: meal
 meal: lunch
 tags: cheat-meal
