@@ -1,7 +1,7 @@
 ---
 date-added: 2022-12-15
 source: https://www.marmiton.org/recettes/recette_tarte-a-l-oignon_28444.aspx
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

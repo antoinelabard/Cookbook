@@ -1,7 +1,7 @@
 ---
 date-added: 2023-12-25
 source: Alexis Goblot
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

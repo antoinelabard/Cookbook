@@ -1,7 +1,7 @@
 ---
 date-added: 2024-02-11
 source: https://jow.fr/recipes/risotto-de-coquillettes-842z38rl8axuf6ld0377
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

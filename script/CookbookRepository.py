@@ -61,7 +61,7 @@ class CookbookRepository:
         metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
         recipe = Recipe(
             path.name,
-            metadata_dict["type"],
+            metadata_dict[Constants.RECIPE_TYPE],
             metadata_dict[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata_dict.keys() else None,
             metadata_dict[Constants.SOURCE] if Constants.SOURCE in metadata_dict.keys() else None,
             metadata_dict[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata_dict.keys() else None,

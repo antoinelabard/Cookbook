@@ -1,7 +1,7 @@
 ---
 date-added: 2023-04-03
 source: https://jow.fr/recipes/cabillaud-amandes-et-haricots-8d5bdbf5kprl0kvx0pxe
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

@@ -2,7 +2,7 @@
 date-added: 2023-11-18
 source: https://jow.fr/recipes/veloute-d-endives-au-lard-8eqq2izhbbwikptt019h
 season: autumn, winter
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

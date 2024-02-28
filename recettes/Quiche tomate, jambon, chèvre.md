@@ -1,7 +1,7 @@
 ---
 date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_quiche-tomate-jambon-chevre_32961.aspx
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

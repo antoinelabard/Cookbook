@@ -1,7 +1,7 @@
 ---
 date-added: 2023-12-04
 source: https://jow.fr/recipes/omelette-aux-champignons-8dhoibrblxg439mb0p0b
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

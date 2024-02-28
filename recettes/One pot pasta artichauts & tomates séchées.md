@@ -1,7 +1,7 @@
 ---
 date-added: 2023-01-07
 source: https://jow.fr/recipes/one-pot-pasta-artichauts-et-tomates-sechees-8lowbg1v4jn4lds806ny
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

@@ -1,7 +1,7 @@
 ---
 date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_quiche-poireaux-chevre-lardons_22275.aspx
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

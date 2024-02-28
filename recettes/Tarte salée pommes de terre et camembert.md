@@ -2,7 +2,7 @@
 date-added: 2021-11-11
 source: https://www.marmiton.org/recettes/recette_tarte-salee-pommes-de-terre-et-camembert_315499.aspx
 season: mid-season
-type: meal
+recipe-type: meal
 meal: lunch
 tags: cheat-meal
 ---

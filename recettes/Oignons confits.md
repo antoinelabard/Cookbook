@@ -1,7 +1,7 @@
 ---
 date-added: 2024-01-15
 source: https://www.quitoque.fr/recette/12493/burger-au-munster
-type: ingredient
+recipe-type: ingredient
 meal: lunch
 ---
 

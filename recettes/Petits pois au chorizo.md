@@ -1,7 +1,7 @@
 ---
 date-added: 2022-01-05
 source: https://www.marmiton.org/recettes/recette_petits-pois-au-chorizo_46854.aspx
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

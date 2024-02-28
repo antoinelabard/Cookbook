@@ -1,7 +1,7 @@
 ---
 date-added: 2023-08-18
 source: https://www.marmiton.org/recettes/recette_tomates-farcies-au-chevre-chaud_23616.aspx
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

@@ -2,7 +2,7 @@
 date-added: 2023-01-13
 source: https://jow.fr/recipes/quiche-artichaut-et-parma-8btrdugd6b1jdzgp10qd
 season: winter
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

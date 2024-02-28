@@ -1,7 +1,7 @@
 ---
 date-added: 2024-01-25
 source: https://www.youtube.com/shorts/UB2pFNxTvv0
-type: meal
+recipe-type: meal
 meal: snack
 ---
 

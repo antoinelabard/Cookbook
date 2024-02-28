@@ -1,7 +1,7 @@
 ---
 date-added: 2022-12-28
 source: https://www.750g.com/feuilletes-aperitifs-aux-knackis-r99010.htm
-type: ingredient
+recipe-type: ingredient
 meal: misc
 tags: occasion
 ---

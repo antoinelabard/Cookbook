@@ -1,7 +1,7 @@
 ---
 date-added: 2022-12-08
 source: https://cuisine.journaldesfemmes.fr/recette/319419-kebab
-type: meal
+recipe-type: meal
 meal: lunch
 tags: cheat-meal
 ---

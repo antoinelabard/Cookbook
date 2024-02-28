@@ -2,7 +2,7 @@
 date-added: 2023-01-13
 source: https://jow.fr/recipes/quiche-chevre-epinards-89nzh3fuhktx84vm06ld
 season: winter
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

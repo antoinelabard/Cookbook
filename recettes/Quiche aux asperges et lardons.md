@@ -1,7 +1,7 @@
 ---
 date-added: 2021-12-11
 source: https://www.marmiton.org/recettes/recette_quiche-aux-asperges-et-lardons_37290.aspx
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

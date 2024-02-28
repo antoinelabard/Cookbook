@@ -1,7 +1,7 @@
 ---
 date-added: 2023-11-01
 source: https://jow.fr/recipes/salade-au-poulet-pane-8nsg9mp1il2ued9k0vok
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

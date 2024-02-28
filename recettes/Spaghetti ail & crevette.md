@@ -1,7 +1,7 @@
 ---
 date-added: 2023-01-07
 source: https://jow.fr/recipes/spaghetti-ail-et-crevette-7yrd68zfi93k041m109b
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

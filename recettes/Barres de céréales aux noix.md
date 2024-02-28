@@ -1,7 +1,7 @@
 ---
 date-added: 2022-11-09
 source: https://conseilsport.decathlon.fr/recette-confectionnez-vous-meme-vos-barres-de-cereales
-type: meal
+recipe-type: meal
 meal: snack
 ---
 

@@ -3,7 +3,7 @@ date-added: 2023-05-11
 source:
   - "Le Guide de l'Alimentation Saine de Yuka"
   - https://jow.fr/recipes/granola-choco-loco-8807510eeoh3gvkv13e2
-type: meal
+recipe-type: meal
 meal: breakfast
 ---
 

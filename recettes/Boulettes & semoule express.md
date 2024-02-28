@@ -1,7 +1,7 @@
 ---
 date-added: 2023-04-03
 source: https://jow.fr/recipes/boulettes-et-semoule-express-8lp1ltbylq3qi7921cd8
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

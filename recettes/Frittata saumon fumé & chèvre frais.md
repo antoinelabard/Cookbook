@@ -1,7 +1,7 @@
 ---
 date-added: 2023-01-20
 source: https://jow.fr/recipes/frittata-saumon-fume-et-chevre-frais-8qex601udpjnjfto0xed
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

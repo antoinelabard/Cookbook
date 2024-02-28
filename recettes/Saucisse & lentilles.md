@@ -1,7 +1,7 @@
 ---
 date-added: 2023-04-03
 source: https://jow.fr/recipes/saucisse-et-lentilles-8f7rhmw05aep170z0ywm
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

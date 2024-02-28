@@ -1,7 +1,7 @@
 ---
 date-added: 2024-01-15
 source: https://jow.fr/recipes/brochettes-dinde-haricots-et-semoule-8il409afg3eokpaf0p5b
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

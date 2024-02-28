@@ -1,7 +1,7 @@
 ---
 date-added: 2023-05-30
 source: https://jow.fr/recipes/bavette-a-l-echalote-pommes-de-terre-et-haricots-8fdndfcrf81clkw10y3f
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

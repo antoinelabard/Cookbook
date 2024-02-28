@@ -1,7 +1,7 @@
 ---
 date-added: 2023-11-01
 source: https://jow.fr/recipes/galette-forestiere-7xmx9j2l2rhc03yd0oqv
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

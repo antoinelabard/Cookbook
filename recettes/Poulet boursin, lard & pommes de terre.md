@@ -1,7 +1,7 @@
 ---
 date-added: 2023-02-09
 source: https://jow.fr/recipes/poulet-boursin-lard-et-pommes-de-terre-8mloh3c9m6rklxmz0whm
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

@@ -1,7 +1,7 @@
 ---
 date-added: 2024-02-22
 source: Alexis Goblot
-type: ingredient
+recipe-type: ingredient
 meal: lunch
 ---
 

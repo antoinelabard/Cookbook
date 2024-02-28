@@ -1,7 +1,7 @@
 ---
 date-added: 2023-02-09
 source: https://jow.fr/recipes/poulet-au-curry-89y06dxjhfua0twu16x5
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

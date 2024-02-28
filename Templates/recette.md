@@ -2,7 +2,7 @@
 date-added: {{date}}
 source: 
 season: summer, autumn, winter, spring
-type: meal, ingredient, inedible
+recipe-type: meal, ingredient, inedible
 meal: breakfast, lunch, snack
 tags: cheat-meal, occasion, vegetarian
 ---
