@@ -100,8 +100,8 @@ class CookbookRepository:
         Create a document containing quotes of the recipes contained in the cookbook.
         """
         page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
-        complete_cookbook_template: str = "# Livre de recettes\n\n"
-        files_wikilinks = [f'![[{path.name}]]' for path in self._get_recipes_paths()]
+        complete_cookbook_template: str = "# Livre de recettes\n\n{}"
+        files_wikilinks = sorted([f'![[{path.name}]]' for path in self._get_recipes_paths()])
 
         with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
             f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
