@@ -1,7 +1,7 @@
 ---
 date-added: 2023-02-09
 source: https://jow.fr/recipes/risotto-comte-et-saucisse-a-l-ancienne-85sjfb0o70qt09up1ca8
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

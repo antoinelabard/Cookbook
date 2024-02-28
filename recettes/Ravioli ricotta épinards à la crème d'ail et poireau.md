@@ -1,8 +1,7 @@
 ---
 date-added: 2024-01-15
-source: 
-type: meal
-dish: main-course
+source: https://www.quitoque.fr/recette/12522/ravioli-aux-girolles-et-sauce-au-gorgonzola
+recipe-type: meal
 meal: lunch
 ---
 

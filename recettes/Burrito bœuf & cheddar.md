@@ -1,10 +1,8 @@
 ---
 date-added: 2023-02-09
 source: https://jow.fr/recipes/burrito-boeuf-et-cheddar-8pud4pnx6gsw8yr515f5
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: pleasure
 ---
 
 # Burrito bœuf & cheddar

@@ -2,11 +2,9 @@
 date-added: 2021-12-20
 source: https://www.marmiton.org/recettes/recette_soupe-aux-ramen_225544.aspx
 season: winter
-type: meal
-category: soup
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: party
+tags: occasion
 ---
 
 # Soupe aux ramen

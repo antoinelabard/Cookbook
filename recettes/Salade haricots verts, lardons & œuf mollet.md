@@ -1,8 +1,7 @@
 ---
 date-added: 2023-11-18
 source: https://jow.fr/recipes/salade-haricots-verts-lardons-et-oeuf-mollet-8pj497li1dxv59fs0ei3
-type: ingredient
-dish: main-course
+recipe-type: ingredient
 meal: lunch
 ---
 

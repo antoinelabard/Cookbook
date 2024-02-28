@@ -1,9 +1,7 @@
 ---
 date-added: 2022-12-22
 source: https://jow.fr/recipes/gratin-de-ravioles-a-la-ratatouille-8juqfvmykslskvjk0rh1
-type: meal
-category: oven
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

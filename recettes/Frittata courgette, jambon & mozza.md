@@ -1,9 +1,7 @@
 ---
 date-added: 2022-12-22
 source: https://jow.fr/recipes/frittata-courgette-jambon-et-mozza-8nuadj51il2ued9m1499
-type: meal
-category: quiche
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

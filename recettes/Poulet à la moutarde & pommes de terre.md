@@ -1,8 +1,7 @@
 ---
 date-added: 2023-11-21
 source: https://jow.fr/recipes/poulet-a-la-moutarde-et-pommes-de-terre-8vxk1y011ink03hh0wdb
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

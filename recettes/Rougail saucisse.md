@@ -1,7 +1,7 @@
 ---
 date-added: 2024-01-19
 source: https://jow.fr/recipes/rougail-saucisse-8jx36xgc2ti8kzzk107c
-type: meal
+recipe-type: meal
 meal: lunch
 ---
 

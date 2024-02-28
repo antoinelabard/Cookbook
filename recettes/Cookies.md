@@ -1,10 +1,9 @@
 ---
 date-added: 2023-04-23
 source: https://www.marmiton.org/recettes/recette_cookies-maison_86989.aspx
-type: meal
-category: cake
+recipe-type: meal
 meal: snack
-opportunity: pleasure
+tags: occasion
 ---
 
 # Cookies au chocolat
@@ -13,7 +12,7 @@ opportunity: pleasure
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    15min    |   -   | 10min        |
+|    15min    |   -   |  10min  |
 
 ## Ingrédients
 

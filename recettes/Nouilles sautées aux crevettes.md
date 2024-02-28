@@ -2,8 +2,7 @@
 date-added: 2023-11-26
 source: https://jow.fr/recipes/nouilles-sautees-aux-crevettes-8dpbknts7e9s9jc40rpw
 season: autumn
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

@@ -2,9 +2,7 @@
 date-added: 2022-10-22
 source: https://www.marmiton.org/recettes/recette_club-sandwich-poulet-crudites_335100.aspx
 season: summer
-type: meal
-category: sandwich
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

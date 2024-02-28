@@ -1,8 +1,7 @@
 ---
 date-added: 2024-01-15
 source: https://www.quitoque.fr/recette/12493/burger-au-munster
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
 tags: cheat-meal
 ---
@@ -17,7 +16,7 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- [[Oignons confits]]
+- [[Oignons confits]]: 200g
 - Filet de poulet : 4
 - Munster : 125g
 - Pains à burger : 4

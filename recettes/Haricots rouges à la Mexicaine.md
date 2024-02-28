@@ -1,9 +1,7 @@
 ---
 date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_haricots-rouges-a-la-mexicaine_18284.aspx
-type: meal
-category: pan
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

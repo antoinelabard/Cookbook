@@ -1,8 +1,7 @@
 ---
 date-added: 2023-04-03
 source: https://jow.fr/recipes/riz-crevettes-coco-et-mais-8jpj1d912gn4kjyj000l
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

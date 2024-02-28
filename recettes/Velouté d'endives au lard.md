@@ -2,9 +2,8 @@
 date-added: 2023-11-18
 source: https://jow.fr/recipes/veloute-d-endives-au-lard-8eqq2izhbbwikptt019h
 season: autumn, winter
-type: meal, ingredient, inedible
-dish: main-course
-meal: lunch, snack
+recipe-type: meal
+meal: lunch
 ---
 
 # Velouté d'endives au lard

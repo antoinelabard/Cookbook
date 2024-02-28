@@ -2,11 +2,8 @@
 date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_croque-monsieur-a-l-italienne_29633.aspx
 season: winter
-type: meal
-category: sandwich
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: pleasure
 ---
 
 # Croque-monsieur à l'italienne

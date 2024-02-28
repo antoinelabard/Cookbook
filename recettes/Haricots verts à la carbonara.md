@@ -1,9 +1,7 @@
 ---
 date-added: 2021-11-25
 source: https://www.marmiton.org/recettes/recette_haricots-verts-a-la-carbonara_308397.aspx
-type: meal
-category: pan
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

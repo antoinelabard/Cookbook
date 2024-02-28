@@ -1,10 +1,9 @@
 ---
 date-added: 2023-08-18
 source: https://www.ptitchef.com/recettes/plat/french-tacos-fid-1572328
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: cheat-meal
+tags: cheat-meal
 ---
 
 # French tacos

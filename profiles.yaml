@@ -1,0 +1,27 @@
+week:
+  -
+    quantity: 7
+    recipe-type: meal
+    meal: lunch
+  -
+    quantity: 2
+    recipe-type: meal
+    meal: breakfast
+example:
+  -
+    quantity: 6
+    recipe-type: meal
+    meal: lunch
+    is_in_season: true
+  -
+    quantity: 7
+    recipe-type: meal
+    meal: breakfast
+  -
+    quantity: 4
+    recipe-type: meal
+    meal: snack
+  -
+    quantity: 1
+    recipe-type: meal
+    meal: lunch

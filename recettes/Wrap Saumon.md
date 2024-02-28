@@ -2,9 +2,7 @@
 date-added: 2023-01-07
 source: https://jow.fr/recipes/wrap-saumon-818imdydbxgg00zb131u
 season: summer
-type: meal
-category: sandwich
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

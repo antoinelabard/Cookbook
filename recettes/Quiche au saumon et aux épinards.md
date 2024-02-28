@@ -1,9 +1,7 @@
 ---
 date-added: 2022-09-14
 source: https://www.marmiton.org/recettes/recette_quiche-au-saumon-et-aux-epinards_22164.aspx
-type: meal
-category: quiche
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

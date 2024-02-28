@@ -2,11 +2,8 @@
 date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_wrap-de-tortilla-avocat-cheddar-oeufs-brouilles_530056.aspx
 season: summer
-type: meal
-category: sandwich
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: pleasure
 ---
 
 # Wrap de tortilla à l'avocat, cheddar et oeufs brouillés

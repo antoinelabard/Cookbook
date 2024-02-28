@@ -1,10 +1,8 @@
 ---
 date-added: 2023-01-13
 source: https://jow.fr/recipes/chevre-chaud-au-jambon-et-salade-8fxlajp87683hi920iab
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: pleasure
 ---
 
 # Chèvre chaud au jambon & salade

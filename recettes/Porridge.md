@@ -1,7 +1,7 @@
 ---
 date-added: 2024-02-21
 source: https://jow.fr/recipes/porridge-a-la-banane-et-cannelle-8fq08osv31foielz0qk8
-type: ingredient
+recipe-type: ingredient
 meal: breakfast
 ---
 

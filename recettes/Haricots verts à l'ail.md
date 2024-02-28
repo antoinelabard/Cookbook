@@ -1,7 +1,8 @@
 ---
 date-added: 2022-10-22
 source: https://www.750g.com/haricots-verts-a-lail-r28870.htm
-type: ingredient
+recipe-type: ingredient
+meal: lunch
 ---
 
 # Haricots verts à l'ail

@@ -1,11 +1,9 @@
 ---
 date-added: 2022-12-08
 source: https://cuisine.journaldesfemmes.fr/recette/319419-kebab
-type: meal
-category: sandwich
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: cheat-meal
+tags: cheat-meal
 ---
 
 # Kebab

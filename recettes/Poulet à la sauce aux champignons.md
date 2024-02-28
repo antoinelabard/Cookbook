@@ -1,8 +1,7 @@
 ---
 date-added: 2023-10-27
 source: https://www.cuisineaz.com/recettes/poulet-a-la-sauce-aux-champignons-11245.aspx
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

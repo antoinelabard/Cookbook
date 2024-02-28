@@ -2,11 +2,8 @@
 date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_club-sandwich-poulet-bacon_41357.aspx
 season: summer
-type: meal
-category: sandwich
-dish: main-course
+recipe-type: meal
 meal: lunch
-opportunity: pleasure
 ---
 
 # Club sandwich poulet - bacon

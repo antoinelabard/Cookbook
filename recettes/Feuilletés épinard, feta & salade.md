@@ -1,8 +1,7 @@
 ---
 date-added: 2023-10-25
 source: https://jow.fr/recipes/feuilletes-epinard-feta-et-salade-8ofb50sdi3skh0ca035e
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

@@ -1,8 +1,7 @@
 ---
 date-added: 2023-12-08
 source: https://jow.fr/recipes/chakchouka-feta-et-pois-chiches-8jgr45ec0ejkkumm0mw2
-type: meal
-dish: main-course
+recipe-type: meal
 meal: lunch
 ---
 

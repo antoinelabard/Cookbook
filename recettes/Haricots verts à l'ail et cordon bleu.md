@@ -1,11 +1,9 @@
 ---
 date-added: 2022-10-22
-source: Moi
-type: meal
-category: fries
-dish: main-course
+source: Antoine Labard
+recipe-type: meal
 meal: lunch
-opportunity: pleasure
+tags: cheat-meal
 ---
 
 # Haricots verts à l'ail et cordon bleu

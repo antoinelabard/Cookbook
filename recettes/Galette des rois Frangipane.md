@@ -1,10 +1,9 @@
 ---
 date-added: 2023-04-03
 source: https://www.marmiton.org/recettes/recette_galette-des-rois_10832.aspx
-type: meal
-dish: main-course
+recipe-type: meal
 meal: snack
-opportunity: cheat-meal
+tags: occasion, cheat-meal
 ---
 
 # Galette des rois Frangipane
