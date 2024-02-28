@@ -13,6 +13,7 @@ class Constants:
         MISC = "misc"
 
     class Season:
+        SEASON = "season"
         IS_IN_SEASON = "is_in_season"
         SPRING = "spring"
         SUMMER = "summer"
