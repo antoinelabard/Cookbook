@@ -2,7 +2,7 @@
 date-added: 2022-12-15
 source: https://www.marmiton.org/recettes/recette_veritables-rouleaux-de-printemps-au-poulet_31415.aspx
 recipe-type: ingredient
-mea: lunch
+meal: lunch
 tags: occasion
 ---
 
