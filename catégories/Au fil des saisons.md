@@ -29,11 +29,3 @@ LIST
 FROM "recettes"
 WHERE season = "winter"
 ```
-
-## Toute saison
-
-```dataview
-LIST
-FROM "recettes"
-WHERE !season
-```
