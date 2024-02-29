@@ -22,7 +22,7 @@ tags: fail
 
 ## Préparation
 
-> [!danger]
+> [!danger]  
 > Cette recette est inspirée du [[Gratin de ravioles à la ratatouille]]. Une confusion entre ratatouille et légumes à couscous lors des courses, ainsi qu'un certain manque d'attention pendant sa réalisation ont mené à la découverte de ce chef-d'œuvre. Ne faites pas ça chez vous à moins que vous soyez adepte de l'art culinaire très avant-gardiste du French Dream !
 
 1. Préchauffez le four à 220°C. Beurrez un plat à gratin.

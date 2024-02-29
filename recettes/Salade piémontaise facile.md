@@ -29,5 +29,5 @@ meal: lunch
 2. Pendant ce temps, coupez les tomates en dés et les cornichons en fines lamelles.
 3. Dans un grand plat, mélanger les oeufs durs coupés en petits morceaux, les pommes de terre, les tomates, les cornichons, le jambon et la mayonnaise.
 
-> [!tip]
+> [!tip]  
 > La piémontaise est meilleure préparée la veille !

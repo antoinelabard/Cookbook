@@ -28,6 +28,7 @@ FROM "catégories"
 Vous pouvez retrouver le repository de ce livre sur GitHub : [https://github.com/antoinelabard/Cookbook](https://github.com/antoinelabard/Cookbook). Si vous avez des suggestions d'améliorations des recettes, vous pouvez me contacter ou utiliser GitHub si vous le maîtrisez.
 
 ❤️ Merci aux contributeurs du projet :
+
 - Alexis Goblot
 - Katy Osmont
 - Nicolas Noirault
