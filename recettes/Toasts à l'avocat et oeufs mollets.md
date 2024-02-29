@@ -15,18 +15,17 @@ meal: breakfast
 
 ## Ingrédients
 
-- Oeufs : 4
+- [[Oeufs mollets]] : 4
 - Tranches de pain de mie : 4
 - Avocat : 1
 - Ciboulette
 
 ## Préparation
 
-1. Faire griller les toasts.
-2. Faire bouillir une casserole d'eau.
-3. Plonger les œufs pendant 6 minutes.
-4. Couper l'avocat en tranche.
-5. Éplucher délicatement les oeufs.
-6. Déposer sur les toasts l'avocat puis les oeufs.
-7. Saupoudrer de ciboulette et de poivre.
-8. Couper les oeufs en deux au dernier moment.
+1. ![[Oeufs mollets]]
+2. Faire griller les toasts.
+3. Couper l'avocat en tranche.
+4. Éplucher délicatement les oeufs.
+5. Déposer sur les toasts l'avocat puis les oeufs.
+6. Saupoudrer de ciboulette et de poivre.
+7. Couper les oeufs en deux au dernier moment.
