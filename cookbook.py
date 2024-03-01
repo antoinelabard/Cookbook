@@ -6,28 +6,28 @@ NAME
 
 SYNOPSIS
     ./cookbook.py [OPTION]...
+    python3 cookbook.py [OPTION]...
 
 DESCRIPTION
-    cookbook.py is intended to generate a random menu matching some filters. Those filters can be given as
-    command line arguments, but they also can be given via profiles defined in the script. This script is used to
-    decrease the mental load, and make sure that no human mind is involved in the random generation of menus,
-    as it is bad at randomness and risks promote some recipes over others. The idea is to randomly pick the recipes
-    matching the provided filters using a draw without discount and bet on the equiprobability of each recipe to be
-    chosen in order to statistically select every recipe over time.
+    cookbook.py is intended to generate a random menu matching some filters. Those filters can be given as command line
+    arguments, but they also can be given via profiles defined in the script. This script is used to decrease the mental
+    load, and make sure that no human mind is involved in the random generation of menus, as it is bad at randomness and
+    risks promote some recipes over others. The idea is to randomly pick the recipes matching the provided filters using
+    a draw without discount and bet on the equiprobability of each recipe to be chosen in order to statistically select
+    every recipe over time.
 
 CONFIGURATION
+    cookbook.py needs Python3.11 or higher to work (https://www.python.org/downloads/).
+
     cookbook.py can take several arguments:
         - export: create a markdown file containing wikilinks for all the recipes of the cookbook. It can be read using
         Obsidian (https://obsidian.md).
-        - [profile]: generate a menu following the filters pointed by "profile" (defined in profiles.yaml)
+        - profile: generate a menu following the filters pointed by "profile" (defined in profiles.yaml).
 
     A profile example is specified in profiles.yaml. It gives most use cases to generate a meal plan. profiles are
-    stored in a file as a hashmap for which the keys are the profiles names, and the value is a list of all the
-    filters of each profile. You can ask to generate several meal plans by chaining their profiles names in the command
-    prompt.
+    stored in a file as a hashmap for which the keys are the profiles names, and the value is a list of all the filters
+    of each profile. You can ask to generate several meal plans by chaining their profiles names in the command prompt.
 """
-
-from __future__ import annotations
 
 import sys
 
