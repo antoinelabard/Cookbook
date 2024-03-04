@@ -7,13 +7,13 @@
 
 > [!important] [[Menu de la semaine]]
 
-## 🗂️ Catégories
+## 🌮 Sélections
 
 ```dataview
 TABLE without id file.link as "Dernières recettes ajoutées", dateformat(date-added, "yyyy-MM-dd") AS "Ajout"
 FROM "recettes" 
 SORT date-added DESC
-LIMIT 5
+LIMIT 10
 ```
 
 <br>
