@@ -20,11 +20,13 @@ tags: cheat-meal
 - Filet de poulet : 4
 - Munster : 125g
 - Pains à burger : 4
-- Frites : 500g
+- [[Frites]] : 500g
 
 ## Préparation
 
 ![[Oignons confits]]
+
+![[Frites]]
 
 1. Préparer les frites.
 2. Coupez le munster en tranches. 

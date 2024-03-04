@@ -16,7 +16,7 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Pommes de terre : 1kg
+- [[Frites]] : 1kg
 - Viandes de votre choix (boeuf haché, nuggets, Saucisses, cordon bleu, etc) : 400g
 - Oignons : 2
 - Crème fraîche : 50cl
@@ -30,7 +30,7 @@ tags: cheat-meal
 
 ## Préparation
 
-1. Préparer les frites : Peler et couper les pommes de terre en frites, les mélanger avec l'huile de cuisson et le sel et les mettre sur une plaque recouverte de papier sulfurisé au four 20 min à 220°C.
+1. ![[Frites]]
 2. Préparer la viande : Faire revenir un oignon haché dans de l'huile de cuisson, lorsqu'il est translucide, ajouter la viande hachée, le sel et le poivre. Remuer de temps en temps jusqu'à fin de cuisson.
 3. Préparer la sauce fromagère : Faire bouillir la crème dans une casserole, ajouter l'emmental, remuer jusqu'à ce qu'il soit fondu. Ajouter le cheddar coupé grossièrement et le poivre. Faire épaissir la sauce. Mixer.
 4. Le montage : Disposer les deux tortillas l'une légèrement sur l'autre. Étaler la sauce barbecue (ou autre dessus en évitant les bords). Mettre la moitié des frites au centre. ![[French tacos - montage 1.webp]]
