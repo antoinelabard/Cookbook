@@ -1,10 +1,23 @@
 ---
 date-added: {{date}}
 source: 
-season: summer, autumn, winter, spring
-recipe-type: meal, ingredient, inedible
-meal: breakfast, lunch, snack
-tags: cheat-meal, occasion, vegetarian
+season:
+  - spring
+  - summer
+  - autumn
+  - winter
+recipe-type:
+  - meal
+  - ingredient
+  - inedible
+meal:
+  - breakfast
+  - lunch
+  - snack
+tags:
+  - cheat-meal
+  - occasion
+  - vegetarian
 ---
 
 # {{title}}
