@@ -20,7 +20,7 @@ meal: lunch
 - Oignon : 1
 - Poireaux : 2
 - Épinards branche : 300g
-- Raviolis : 500g
+- Raviolis à la ricotta et aux épinards : 500g
 
 ## Préparation
 
