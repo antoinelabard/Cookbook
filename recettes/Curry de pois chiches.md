@@ -19,7 +19,7 @@ meal: lunch
 - Riz : 280g
 - Oignon : 1
 - Chair de tomates : 400g
-- Lait de cococ : 10cl
+- Lait de coco : 10cl
 - Gousse d'ail : 1
 - Curry
 - Cumin
