@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - Jambon : 4 tranches
-- Vin blanc : 80cl
+- Vin blanc : 10cl
 - Pâtes (coquillettes) : 360g
 - Comté : 80g
 - Crème fraîche: 10cl
