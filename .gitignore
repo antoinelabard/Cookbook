@@ -3,4 +3,5 @@ menu*.md
 Menu*.md
 .obsidian/
 .idea/
+script/__pycache__/
 
