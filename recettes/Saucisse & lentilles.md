@@ -11,7 +11,7 @@ meal: lunch
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    8min     |   -   |  35min  |
+|    8min     |   -   |  23min  |
 
 ## Ingrédients
 
@@ -22,9 +22,9 @@ meal: lunch
 
 ## Préparation
 
-1. Épluchez et émincez l'oignon.
-2. Épluchez les carottes puis coupez-les en rondelles.
-3. Dans une casserole, versez un filet d'huile de cuisson. Ajoutez l'oignon puis les rondelles de carottes. Faite revenir 3 minutes à feu moyen.
-4. Versez les lentilles. Faites revenir encore 2 minutes en continuant de mélanger. Poivrez (optionnel : vous pouvez ajouter une feuille de laurier).
-5. Versez 20 cl d'eau par personne. Laissez cuire 15 minutes à feu moyen.
-6. Au bout de 15 min, ajoutez les saucisses (vous pouvez les coupez en deux) et faites cuire encore 15 minutes à couvert. Salez et poivrez, c'est prêt !
+1. Égoutez les lentilles et faites-les cuire selon les instructions du paquet.
+2. Épluchez et émincez l'oignon.
+3. Épluchez les carottes puis coupez-les en rondelles.
+4. Dans une casserole, versez un filet d'huile de cuisson. Ajoutez l'oignon puis les rondelles de carottes. Faite revenir 6 minutes à feu moyen.
+5. Versez les lentilles cuites. Faites revenir encore 2 minutes en continuant de mélanger. Poivrez.
+7. Ajoutez les saucisses (vous pouvez les couper en deux) et faites cuire encore 15 minutes à couvert. Salez et poivrez, c'est prêt !

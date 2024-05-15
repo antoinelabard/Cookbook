@@ -16,6 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Oignon : 1
+- [ ] Gousse d'ail : 1
 - [ ] Céleri : 10cl
 - [ ] Carotte : 1
 - [ ] Origan
