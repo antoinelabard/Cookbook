@@ -16,15 +16,15 @@ tags: occasion
 
 ## Ingrédients
 
-- Pain de mie : 8 tranches
-- Beurre : 50g
-- Gruyère râpé : 100g
-- jambon : 8 tranches
-- Fromage en tranches : 8 tranches
-- Lait : 6cl
-- Sel
-- Poivre
-- Muscade
+- [ ] Pain de mie : 8 tranches
+- [ ] Beurre : 50g
+- [ ] Gruyère râpé : 100g
+- [ ] jambon : 8 tranches
+- [ ] Fromage en tranches : 8 tranches
+- [ ] Lait : 6cl
+- [ ] Sel
+- [ ] Poivre
+- [ ] Muscade
 
 ## Préparation
 

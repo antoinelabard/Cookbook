@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Pâtes fraîches : 400g
-- Sauce tomate : 50cl
-- Poivrons : 4
-- Oignons : 2
-- Chorizo : 1
-- Huile de cuisson
+- [ ] Pâtes fraîches : 400g
+- [ ] Sauce tomate : 50cl
+- [ ] Poivrons : 4
+- [ ] Oignons : 2
+- [ ] Chorizo : 1
+- [ ] Huile de cuisson
 
 ## Préparation
 

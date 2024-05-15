@@ -16,13 +16,13 @@ season: summer
 
 ## Ingrédients
 
-- Haricots rouges : 300g
-- Poivron : 1
-- Oignon : 1
-- Thym
-- Huile d'olive
-- Blancs de poulet : 4
-- Tomates pelées : 500g
+- [ ] Haricots rouges : 300g
+- [ ] Poivron : 1
+- [ ] Oignon : 1
+- [ ] Thym
+- [ ] Huile d'olive
+- [ ] Blancs de poulet : 4
+- [ ] Tomates pelées : 500g
 
 ## Préparation
 

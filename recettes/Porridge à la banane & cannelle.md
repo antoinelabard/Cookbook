@@ -15,11 +15,11 @@ meal: breakfast
 
 ## Ingrédients
 
-- [[Porridge]]
-- Sirop d'érable / miel : 5cl
-- Bananes : 2
-- Cannelle en poudre
-- (Optionnel) Noix : 20g
+- [ ] [[Porridge]]
+- [ ] Sirop d'érable / miel : 5cl
+- [ ] Bananes : 2
+- [ ] Cannelle en poudre
+- [ ] (Optionnel) Noix : 20g
 
 ## Préparation
 

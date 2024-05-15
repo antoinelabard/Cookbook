@@ -16,14 +16,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Haricots rouges : 600g
-- Tomates : 2
-- Vinaigre balsamique : 2
-- Huile
-- Maïs : 200g
-- Boîtes de thon : 2
-- Laitue
-- Menthe
+- [ ] Haricots rouges : 600g
+- [ ] Tomates : 2
+- [ ] Vinaigre balsamique : 2
+- [ ] Huile
+- [ ] Maïs : 200g
+- [ ] Boîtes de thon : 2
+- [ ] Laitue
+- [ ] Menthe
 
 ## Préparation
 

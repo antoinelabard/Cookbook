@@ -16,12 +16,12 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- Crème fraîche : 20cl
-- Gousse d'ail : 1
-- Oignon : 1
-- Poireaux : 2
-- Épinards branche : 300g
-- Raviolis à la ricotta et aux épinards : 500g
+- [ ] Crème fraîche : 20cl
+- [ ] Gousse d'ail : 1
+- [ ] Oignon : 1
+- [ ] Poireaux : 2
+- [ ] Épinards branche : 300g
+- [ ] Raviolis à la ricotta et aux épinards : 500g
 
 ## Préparation
 

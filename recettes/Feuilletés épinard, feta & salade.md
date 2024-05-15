@@ -16,12 +16,12 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- Pâte feuilletée : 1
-- Feta : 160g
-- Épinards : 300g
-- Gousse d'ail : 1
-- Salade : 500g
-- Oeufs : 2
+- [ ] Pâte feuilletée : 1
+- [ ] Feta : 160g
+- [ ] Épinards : 300g
+- [ ] Gousse d'ail : 1
+- [ ] Salade : 500g
+- [ ] Oeufs : 2
 
 ## Préparation
 

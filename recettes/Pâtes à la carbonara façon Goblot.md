@@ -15,14 +15,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Pâtes : 500g
-- Crème fraîche : 20cl
-- Lardons : 200g
-- Champignons de Paris : 200g
-- Oignon : 1
-- Oeuf : 1
-- Vin blanc : 10cl
-- Parmesan râpé : 100g
+- [ ] Pâtes : 500g
+- [ ] Crème fraîche : 20cl
+- [ ] Lardons : 200g
+- [ ] Champignons de Paris : 200g
+- [ ] Oignon : 1
+- [ ] Oeuf : 1
+- [ ] Vin blanc : 10cl
+- [ ] Parmesan râpé : 100g
 
 ## Préparation
 

@@ -17,21 +17,21 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Pains pita ou tortillas : 4
-- Escalope de dinde, poulet, veau ou agneau : 1kg
-- Sauce blanche : 250g
-- Jus de citron
-- Tomates : 2
-- Salade : 250g
-- Oignon : 1
-- Ail : 2
-- Persil
-- Vinaigre
-- Paprika
-- Curry
-- Gingembre moulu
-- Herbes de Provence
-- Huile d'olive
+- [ ] Pains pita ou tortillas : 4
+- [ ] Escalope de dinde, poulet, veau ou agneau : 1kg
+- [ ] Sauce blanche : 250g
+- [ ] Jus de citron
+- [ ] Tomates : 2
+- [ ] Salade : 250g
+- [ ] Oignon : 1
+- [ ] Ail : 2
+- [ ] Persil
+- [ ] Vinaigre
+- [ ] Paprika
+- [ ] Curry
+- [ ] Gingembre moulu
+- [ ] Herbes de Provence
+- [ ] Huile d'olive
 
 ## Préparation
 

@@ -15,14 +15,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Filets de poulet : 4
-- oignons : 2
-- Champignons de Paris : 200g
-- Vin blanc sec : 20cl
-- Bouillon de volaille : 1
-- Au choix :
-	- Riz ou pâtes : 400g
-	- [[Purée de pommes de terre façon Goblot]] : 1kg
+- [ ] Filets de poulet : 4
+- [ ] oignons : 2
+- [ ] Champignons de Paris : 200g
+- [ ] Vin blanc sec : 20cl
+- [ ] Bouillon de volaille : 1
+- [ ] Au choix :
+	- [ ] Riz ou pâtes : 400g
+	- [ ] [[Purée de pommes de terre façon Goblot]] : 1kg
 
 ## Préparation
 

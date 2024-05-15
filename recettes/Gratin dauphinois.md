@@ -16,14 +16,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Pommes de terre : 1kg
-- crème liquide : 12cl
-- Gousse d'ail : 1
-- Thym
-- Lait : 1l
-- beurre : 10g
-- Laurier : 1 feuille
-- Noix de muscade
+- [ ] Pommes de terre : 1kg
+- [ ] crème liquide : 12cl
+- [ ] Gousse d'ail : 1
+- [ ] Thym
+- [ ] Lait : 1l
+- [ ] beurre : 10g
+- [ ] Laurier : 1 feuille
+- [ ] Noix de muscade
 
 ## Préparation
 

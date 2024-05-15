@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Oignon : 1
-- Chorizo : 1
-- Petits pois : 800g
-- Oeuf : 1
+- [ ] Oignon : 1
+- [ ] Chorizo : 1
+- [ ] Petits pois : 800g
+- [ ] Oeuf : 1
 
 ## Préparation
 

@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Tomates : 2
-- Pommes de terre : 500g
-- Dés de jambon : 200g
-- Oeufs : 2
-- Mayonnaise
-- Cornichons : 200g
+- [ ] Tomates : 2
+- [ ] Pommes de terre : 500g
+- [ ] Dés de jambon : 200g
+- [ ] Oeufs : 2
+- [ ] Mayonnaise
+- [ ] Cornichons : 200g
 
 ## Préparation
 

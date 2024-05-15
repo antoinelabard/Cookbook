@@ -15,13 +15,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Riz : 280g
-- Échalote : 1
-- Gousse d'ail : 1
-- Comté : 80g
-- Saucisse fumée : 400G
-- Bouillon de volaille : 1
-- Vin blanc : 8cl
+- [ ] Riz : 280g
+- [ ] Échalote : 1
+- [ ] Gousse d'ail : 1
+- [ ] Comté : 80g
+- [ ] Saucisse fumée : 400G
+- [ ] Bouillon de volaille : 1
+- [ ] Vin blanc : 8cl
 
 ## Préparation
 

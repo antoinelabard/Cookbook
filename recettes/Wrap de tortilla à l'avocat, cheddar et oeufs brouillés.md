@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Huile d'olive
-- Tortillas : 8
-- Avocat : 1
-- Cheddar : 50g
-- Oignon : 1
-- Oeufs : 3
+- [ ] Huile d'olive
+- [ ] Tortillas : 8
+- [ ] Avocat : 1
+- [ ] Cheddar : 50g
+- [ ] Oignon : 1
+- [ ] Oeufs : 3
 
 ## Préparation
 

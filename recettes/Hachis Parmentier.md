@@ -17,15 +17,15 @@ tags: occasion
 
 ## Ingrédients
 
-- [[Purée de pommes de terre façon Goblot]] : 1kg
-- Farine : 10g
-- Herbes de Provence
-- Parmesan : 50g
-- Beurre : 30g
-- Fromage râpé : 50g
-- Viande hachée : 800g
-- Oignons : 2
-- Ail : 2 gousses
+- [ ] [[Purée de pommes de terre façon Goblot]] : 1kg
+- [ ] Farine : 10g
+- [ ] Herbes de Provence
+- [ ] Parmesan : 50g
+- [ ] Beurre : 30g
+- [ ] Fromage râpé : 50g
+- [ ] Viande hachée : 800g
+- [ ] Oignons : 2
+- [ ] Ail : 2 gousses
 
 ## Préparation
 

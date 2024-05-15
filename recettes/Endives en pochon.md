@@ -16,15 +16,15 @@ season: winter, spring
 
 ## Ingrédients
 
-- Endives : 8
-- Jus de citron
-- Persil
-- Oignon : 1
-- Gousses d'ail : 6
-- Jambon blanc : 300g
-- sauce tomate : 50cl
-- oeufs : 2
-- gruyère râpé : 45g
+- [ ] Endives : 8
+- [ ] Jus de citron
+- [ ] Persil
+- [ ] Oignon : 1
+- [ ] Gousses d'ail : 6
+- [ ] Jambon blanc : 300g
+- [ ] sauce tomate : 50cl
+- [ ] oeufs : 2
+- [ ] gruyère râpé : 45g
 
 ## Préparation
 

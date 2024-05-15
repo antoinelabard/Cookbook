@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Fromage de chèvre : 200g
-- Miel : 4cc
-- Oignon : 3
-- Oeufs : 3
-- Crème fraîche : 25cl
-- [[Pâte brisée]] : 1
+- [ ] Fromage de chèvre : 200g
+- [ ] Miel : 4cc
+- [ ] Oignon : 3
+- [ ] Oeufs : 3
+- [ ] Crème fraîche : 25cl
+- [ ] [[Pâte brisée]] : 1
 
 ## Préparation
 

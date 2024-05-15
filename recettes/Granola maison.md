@@ -17,11 +17,11 @@ meal: breakfast
 
 ## Ingrédients
 
-- Flocons d'avoine : 250g
-- Mélange de noix : 150g
-- Sirop d'érable ou miel : 90g
-- Huile d'olive : 40ml
-- Chocolat noir (optionnel) : 100g
+- [ ] Flocons d'avoine : 250g
+- [ ] Mélange de noix : 150g
+- [ ] Sirop d'érable ou miel : 90g
+- [ ] Huile d'olive : 40ml
+- [ ] Chocolat noir (optionnel) : 100g
 
 ## Préparation
 

@@ -17,14 +17,14 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Baguette de pain : 1
-- Tranches de jambon blanc : 4
-- Champignons de Paris : 250g
-- Sauce tomate : 20cl
-- Fromage râpé
-- Origan
-- Huile d'olive
-- Olives
+- [ ] Baguette de pain : 1
+- [ ] Tranches de jambon blanc : 4
+- [ ] Champignons de Paris : 250g
+- [ ] Sauce tomate : 20cl
+- [ ] Fromage râpé
+- [ ] Origan
+- [ ] Huile d'olive
+- [ ] Olives
 
 ## Préparation
 

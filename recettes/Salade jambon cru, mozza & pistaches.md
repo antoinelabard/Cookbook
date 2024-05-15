@@ -16,11 +16,11 @@ season: autumn, winter
 
 ## Ingrédients
 
-- Jambon cru : 8 tranches
-- Mozzarella : 240g
-- Pistaches grillées : 80g
-- Salade : 8 poignées
-- Olives vertes : 120g
+- [ ] Jambon cru : 8 tranches
+- [ ] Mozzarella : 240g
+- [ ] Pistaches grillées : 80g
+- [ ] Salade : 8 poignées
+- [ ] Olives vertes : 120g
 
 ## Préparation
 

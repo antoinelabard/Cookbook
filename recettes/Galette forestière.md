@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Galettes bretonnes : 8
-- Jambon : 8 tranches
-- Fromage râpé : 200g
-- Champignons de Paris : 600g
-- Oeufs : 8
-- Échalote : 1
+- [ ] Galettes bretonnes : 8
+- [ ] Jambon : 8 tranches
+- [ ] Fromage râpé : 200g
+- [ ] Champignons de Paris : 600g
+- [ ] Oeufs : 8
+- [ ] Échalote : 1
 
 ## Préparation
 

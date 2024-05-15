@@ -16,16 +16,16 @@ meal: lunch
 
 ## Ingrédients
 
-- Pain de mie : 16 tranches
-- Câpres : 100g
-- Wasabi : 10g
-- Jus de citron
-- Thon : 500g
-- Mayonnaise : 24cl
-- Concombre : 1
-- Salade : 1
-- Oignons nouveaux : 4
-- tomates : 2
+- [ ] Pain de mie : 16 tranches
+- [ ] Câpres : 100g
+- [ ] Wasabi : 10g
+- [ ] Jus de citron
+- [ ] Thon : 500g
+- [ ] Mayonnaise : 24cl
+- [ ] Concombre : 1
+- [ ] Salade : 1
+- [ ] Oignons nouveaux : 4
+- [ ] tomates : 2
 
 ## Préparation
 

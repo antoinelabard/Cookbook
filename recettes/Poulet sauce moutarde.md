@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Escalopes de poulet : 4
-- Crème fraiche : 20cl
-- Riz : 280g
-- Oignons : 2
-- Mélange de champignons : 400g
+- [ ] Escalopes de poulet : 4
+- [ ] Crème fraiche : 20cl
+- [ ] Riz : 280g
+- [ ] Oignons : 2
+- [ ] Mélange de champignons : 400g
 
 ## Préparation
 

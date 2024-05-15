@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Patates douces : 800g
-- Oignon : 1
-- Crotins de chèvre : 2
-- Thym
-- Miel : 2cc
+- [ ] Patates douces : 800g
+- [ ] Oignon : 1
+- [ ] Crotins de chèvre : 2
+- [ ] Thym
+- [ ] Miel : 2cc
 
 ## Préparation
 

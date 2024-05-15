@@ -16,12 +16,12 @@ season: summer
 
 ## Ingrédients
 
-- Pâtes : 500g
-- Tomates : 2
-- Oignon : 1
-- Crème fraîche : 25cl
-- Persil
-- Crevettes décortiquées : 120g
+- [ ] Pâtes : 500g
+- [ ] Tomates : 2
+- [ ] Oignon : 1
+- [ ] Crème fraîche : 25cl
+- [ ] Persil
+- [ ] Crevettes décortiquées : 120g
 
 ## Préparation
 

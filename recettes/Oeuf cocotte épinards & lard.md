@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Oeufs : 4
-- Crème fraîche : 20cl
-- Lard : 8 tranches
-- Parmesan : 60g
-- Épinards : 1kg
+- [ ] Oeufs : 4
+- [ ] Crème fraîche : 20cl
+- [ ] Lard : 8 tranches
+- [ ] Parmesan : 60g
+- [ ] Épinards : 1kg
 
 ## Préparation
 

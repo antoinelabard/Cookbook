@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Filets de poulet : 4
-- Pommes de terre grenailles : 1kg
-- Crème fraîche : 20cl
-- Moutarde : 4cc
+- [ ] Filets de poulet : 4
+- [ ] Pommes de terre grenailles : 1kg
+- [ ] Crème fraîche : 20cl
+- [ ] Moutarde : 4cc
 
 ## Préparation
 

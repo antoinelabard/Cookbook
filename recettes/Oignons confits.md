@@ -15,8 +15,8 @@ meal: lunch
 
 ## Ingrédients
 
-- Oignon : 2
-- Sucre en poudre : 2cc
+- [ ] Oignon : 2
+- [ ] Sucre en poudre : 2cc
 
 ## Préparation
 

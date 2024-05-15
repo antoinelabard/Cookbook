@@ -16,9 +16,9 @@ tags: occasion
 
 ## Ingrédients
 
-- Chocolat noir : 150g
-- Beurre : 100g
-- Corn flakes : 150g
+- [ ] Chocolat noir : 150g
+- [ ] Beurre : 100g
+- [ ] Corn flakes : 150g
 
 ## Préparation
 

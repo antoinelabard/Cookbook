@@ -16,14 +16,14 @@ tags: occasion
 
 ## Ingrédients
 
-- Beurre : 85g
-- Sucre : 85g
-- Vanille ou 1 sachet de sucre vanillé
-- Farine: 150g
-- Chocolat noir : 100g
-- Sel : 1cc
-- Levure chimique : 1cc
-- Oeuf : 1
+- [ ] Beurre : 85g
+- [ ] Sucre : 85g
+- [ ] Vanille ou 1 sachet de sucre vanillé
+- [ ] Farine: 150g
+- [ ] Chocolat noir : 100g
+- [ ] Sel : 1cc
+- [ ] Levure chimique : 1cc
+- [ ] Oeuf : 1
 
 ## Préparation
 

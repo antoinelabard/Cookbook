@@ -16,10 +16,10 @@ season: spring, summer
 
 ## Ingrédients
 
-- Oeufs : 8
-- Mozzarella : 125g
-- Courgette : 1
-- Jambon : 2 tranches
+- [ ] Oeufs : 8
+- [ ] Mozzarella : 125g
+- [ ] Courgette : 1
+- [ ] Jambon : 2 tranches
 
 ## Préparation
 

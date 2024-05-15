@@ -16,13 +16,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Pain de mie : 16 tranches
-- Tomates : 8
-- Lard fumé : 8 tranches
-- Escalopes de poulet : 2
-- Salade
-- Fromage
-- Oeufs durs : 2
+- [ ] Pain de mie : 16 tranches
+- [ ] Tomates : 8
+- [ ] Lard fumé : 8 tranches
+- [ ] Escalopes de poulet : 2
+- [ ] Salade
+- [ ] Fromage
+- [ ] Oeufs durs : 2
 
 ## Préparation
 

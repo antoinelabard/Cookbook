@@ -16,14 +16,14 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Persil
-- Pain de campagne en tranche rassi
-- Comté : 8 tranches
-- Farine
-- Huile de friture
-- Escalopes de dinde : 4
-- Tranches de jambon : 4
-- Oeufs : 2
+- [ ] Persil
+- [ ] Pain de campagne en tranche rassi
+- [ ] Comté : 8 tranches
+- [ ] Farine
+- [ ] Huile de friture
+- [ ] Escalopes de dinde : 4
+- [ ] Tranches de jambon : 4
+- [ ] Oeufs : 2
 
 ## Préparation
 

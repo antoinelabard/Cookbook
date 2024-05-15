@@ -16,11 +16,11 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- [[Pâte brisée]] : 1
-- Oeufs : 3
-- Crème fraîche : 10cl
-- Fromage de chèvre : 200g
-- Épinards : 400g
+- [ ] [[Pâte brisée]] : 1
+- [ ] Oeufs : 3
+- [ ] Crème fraîche : 10cl
+- [ ] Fromage de chèvre : 200g
+- [ ] Épinards : 400g
 
 ## Préparation
 

@@ -16,12 +16,12 @@ season: summer, autumn
 
 ## Ingrédients
 
-- Chorizo : 1
-- Poivrons : 2
-- Oignon : 1
-- Riz : 400g
-- Olives vertes : 200g
-- Bouillon de volaille : 1
+- [ ] Chorizo : 1
+- [ ] Poivrons : 2
+- [ ] Oignon : 1
+- [ ] Riz : 400g
+- [ ] Olives vertes : 200g
+- [ ] Bouillon de volaille : 1
 
 ## Préparation
 

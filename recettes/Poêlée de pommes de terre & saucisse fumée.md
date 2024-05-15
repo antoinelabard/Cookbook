@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Pommes de terre : 8
-- Saucisses fumées : 4
-- Échalotes : 2
-- Oignon : 1
-- Gousse d'ail : 2
-- Thym
+- [ ] Pommes de terre : 8
+- [ ] Saucisses fumées : 4
+- [ ] Échalotes : 2
+- [ ] Oignon : 1
+- [ ] Gousse d'ail : 2
+- [ ] Thym
 
 ## Préparation
 

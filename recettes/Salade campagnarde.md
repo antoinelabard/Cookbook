@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Oeufs : 6
-- Pommes de terre : 600g
-- Salade mâche : 8 poignées
-- Chèvre frai : 80g
-- Bacon : 8 tranches
+- [ ] Oeufs : 6
+- [ ] Pommes de terre : 600g
+- [ ] Salade mâche : 8 poignées
+- [ ] Chèvre frai : 80g
+- [ ] Bacon : 8 tranches
 
 ## Préparation
 

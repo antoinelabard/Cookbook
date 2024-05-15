@@ -16,13 +16,13 @@ season: summer
 
 ## Ingrédients
 
-- Tomates charnues : 8
-- Fromage de chèvre : 1 bûche
-- Champignons de Paris : 80g
-- Lardons : 350g
-- Herbes de Provence
-- Sel
-- Poivre
+- [ ] Tomates charnues : 8
+- [ ] Fromage de chèvre : 1 bûche
+- [ ] Champignons de Paris : 80g
+- [ ] Lardons : 350g
+- [ ] Herbes de Provence
+- [ ] Sel
+- [ ] Poivre
 
 ## Préparation
 

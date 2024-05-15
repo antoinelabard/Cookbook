@@ -16,9 +16,9 @@ tags: occasion
 
 ## Ingrédients
 
-- Oeuf: 1
-- Pâte feuilletée : 1
-- Saucisses de Strasbourg : 2
+- [ ] Oeuf: 1
+- [ ] Pâte feuilletée : 1
+- [ ] Saucisses de Strasbourg : 2
 
 ## Préparation
 

@@ -16,9 +16,9 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Pommes de terre : 1kg
-- Huile de friture : 5l
-- sel
+- [ ] Pommes de terre : 1kg
+- [ ] Huile de friture : 5l
+- [ ] sel
 
 ## Préparation
 

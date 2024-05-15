@@ -16,13 +16,13 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- Pâtes : 320g
-- Poirreaux : 2
-- FIlets de poulet : 4
-- Chèvre frai : 120g
-- Bouillon de légumes : 1
-- Échalotes : 2
-- Vin blanc : 8cl
+- [ ] Pâtes : 320g
+- [ ] Poirreaux : 2
+- [ ] FIlets de poulet : 4
+- [ ] Chèvre frai : 120g
+- [ ] Bouillon de légumes : 1
+- [ ] Échalotes : 2
+- [ ] Vin blanc : 8cl
 
 ## Préparation
 

@@ -16,11 +16,11 @@ season: summer
 
 ## Ingrédients
 
-- Poulet pané : 4
-- Salade : 500g
-- Tomates : 4
-- Parmesan : 100g
-- Vinaigre balsamique
+- [ ] Poulet pané : 4
+- [ ] Salade : 500g
+- [ ] Tomates : 4
+- [ ] Parmesan : 100g
+- [ ] Vinaigre balsamique
 
 ## Préparation
 

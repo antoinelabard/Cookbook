@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Salade : 8 poignées
-- Fromage de chèvre : 200g
-- Herbes de Provence
-- Pain de mie : 8 tranches
-- Jambon : 8 tranches
+- [ ] Salade : 8 poignées
+- [ ] Fromage de chèvre : 200g
+- [ ] Herbes de Provence
+- [ ] Pain de mie : 8 tranches
+- [ ] Jambon : 8 tranches
 
 ## Préparation
 

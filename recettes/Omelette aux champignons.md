@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Oeufs : 8
-- Champignons de Paris : 400g
-- Salade : 200g
-- Comté : 100g
-- Échalote : 1
+- [ ] Oeufs : 8
+- [ ] Champignons de Paris : 400g
+- [ ] Salade : 200g
+- [ ] Comté : 100g
+- [ ] Échalote : 1
 
 ## Préparation
 

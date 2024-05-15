@@ -16,13 +16,13 @@ season: spring, autumn, winter
 
 ## Ingrédients
 
-- Poireaux : 2
-- Jus de citron
-- Parmesan râpé : 60g
-- Spaghetti : 400g
-- Bacon : 200g
-- Petits pois surgelés : 200g
-- Crème fraîche : 30cl
+- [ ] Poireaux : 2
+- [ ] Jus de citron
+- [ ] Parmesan râpé : 60g
+- [ ] Spaghetti : 400g
+- [ ] Bacon : 200g
+- [ ] Petits pois surgelés : 200g
+- [ ] Crème fraîche : 30cl
 
 ## Préparation
 

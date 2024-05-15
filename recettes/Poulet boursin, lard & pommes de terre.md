@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Escalopes de poulet : 4
-- Fromage à l'ail : 160g
-- Lard : 8 tranches
-- Pommes de terre : 1kg
-- Ciboulette
+- [ ] Escalopes de poulet : 4
+- [ ] Fromage à l'ail : 160g
+- [ ] Lard : 8 tranches
+- [ ] Pommes de terre : 1kg
+- [ ] Ciboulette
 
 ## Préparation
 

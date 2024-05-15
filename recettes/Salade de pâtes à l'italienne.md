@@ -16,15 +16,15 @@ meal: lunch
 
 ## Ingrédients
 
-- Melon : 1
-- Tomates cerises : 6
-- Basilic
-- Jus de citron
-- Huile d'olive : 10cl
-- Pâtes papillons : 250g
-- Mozzarella : 150g
-- Jambon sec : 4 tranches
-- Olives : 12
+- [ ] Melon : 1
+- [ ] Tomates cerises : 6
+- [ ] Basilic
+- [ ] Jus de citron
+- [ ] Huile d'olive : 10cl
+- [ ] Pâtes papillons : 250g
+- [ ] Mozzarella : 150g
+- [ ] Jambon sec : 4 tranches
+- [ ] Olives : 12
 
 ## Préparation
 

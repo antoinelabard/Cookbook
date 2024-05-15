@@ -16,12 +16,12 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- [[Pâte brisée]] : 1
-- Poireaux : 3
-- Crème fraîche : 25cl
-- Lardons : 200g
-- Fromage de chèvre : 200g
-- Oeufs : 3
+- [ ] [[Pâte brisée]] : 1
+- [ ] Poireaux : 3
+- [ ] Crème fraîche : 25cl
+- [ ] Lardons : 200g
+- [ ] Fromage de chèvre : 200g
+- [ ] Oeufs : 3
 
 ## Préparation
 

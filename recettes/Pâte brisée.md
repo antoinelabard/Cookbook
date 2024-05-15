@@ -14,11 +14,11 @@ recipe-type: ingredient
 
 ## Ingrédients
 
-- Farine : 300g
-- Beurre : 150g
-- Sel : 1/2cc
-- Sucre (si pâte sucrée) : 15g
-- Lait ou eau : 8cl
+- [ ] Farine : 300g
+- [ ] Beurre : 150g
+- [ ] Sel : 1/2cc
+- [ ] Sucre (si pâte sucrée) : 15g
+- [ ] Lait ou eau : 8cl
 
 ## Preparation
 

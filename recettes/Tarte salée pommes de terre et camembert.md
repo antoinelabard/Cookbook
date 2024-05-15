@@ -16,13 +16,13 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Pommes de terre : 3
-- Oignon : 1
-- [[Pâte brisée]] : 1
-- Crème fraîche : 20cl
-- lardons : 100g
-- gruyère râpé
-- camembert : 1/2
+- [ ] Pommes de terre : 3
+- [ ] Oignon : 1
+- [ ] [[Pâte brisée]] : 1
+- [ ] Crème fraîche : 20cl
+- [ ] lardons : 100g
+- [ ] gruyère râpé
+- [ ] camembert : 1/2
 
 ## Préparation
 

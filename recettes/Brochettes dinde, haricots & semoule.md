@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Escalopes de dinde : 4
-- Haricots verts : 600g
-- Semoule 240g
-- Yaourt grec : 20cl
-- Paprika
+- [ ] Escalopes de dinde : 4
+- [ ] Haricots verts : 600g
+- [ ] Semoule 240g
+- [ ] Yaourt grec : 20cl
+- [ ] Paprika
 
 ## Préparation
 

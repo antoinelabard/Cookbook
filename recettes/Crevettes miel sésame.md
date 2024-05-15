@@ -15,13 +15,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Crevettes : 400g
-- Riz : 280g
-- Ail : 2 gousses
-- Graines de sésame : 4cc
-- Citron
-- Miel : 20g
-- Oignons : 2
+- [ ] Crevettes : 400g
+- [ ] Riz : 280g
+- [ ] Ail : 2 gousses
+- [ ] Graines de sésame : 4cc
+- [ ] Citron
+- [ ] Miel : 20g
+- [ ] Oignons : 2
 
 ## Préparation
 

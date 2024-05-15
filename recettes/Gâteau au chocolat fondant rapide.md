@@ -16,11 +16,11 @@ tags: occasion
 
 ## Ingrédients
 
-- Chocolat noir pâtissier : 200g
-- Beurre : 100g
-- Farine : 50g
-- Sucre : 100g
-- Oeufs : 3
+- [ ] Chocolat noir pâtissier : 200g
+- [ ] Beurre : 100g
+- [ ] Farine : 50g
+- [ ] Sucre : 100g
+- [ ] Oeufs : 3
 
 ## Préparation
 

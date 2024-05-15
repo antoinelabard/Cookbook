@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Semoule : 300g
-- Boulettes de viande : 480g
-- Purée de tomate : 480g
-- Ail : 1 gousse
-- Origan : 4 pincées
+- [ ] Semoule : 300g
+- [ ] Boulettes de viande : 480g
+- [ ] Purée de tomate : 480g
+- [ ] Ail : 1 gousse
+- [ ] Origan : 4 pincées
 
 ## Préparation
 

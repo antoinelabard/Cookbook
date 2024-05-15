@@ -16,11 +16,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Saumon : 8 tranches
-- Tortillas : 4
-- Concombre : 1
-- Fromage frais : 160g
-- épinards : 2 poignées
+- [ ] Saumon : 8 tranches
+- [ ] Tortillas : 4
+- [ ] Concombre : 1
+- [ ] Fromage frais : 160g
+- [ ] épinards : 2 poignées
 
 ## Préparation
 

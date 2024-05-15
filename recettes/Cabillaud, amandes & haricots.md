@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Haricots : 1kg
-- Cabillaud : 4
-- Jus de citron
-- Amandes effilées : 40g
+- [ ] Haricots : 1kg
+- [ ] Cabillaud : 4
+- [ ] Jus de citron
+- [ ] Amandes effilées : 40g
 
 ## Préparation
 

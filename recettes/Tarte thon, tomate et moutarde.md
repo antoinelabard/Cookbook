@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Tomates : 2
-- Crème fraîche : 25cl
-- Lait : 15cl
-- Pâte feuilletée : 1
-- Boîtes de thon : 2
-- Oeufs : 3
+- [ ] Tomates : 2
+- [ ] Crème fraîche : 25cl
+- [ ] Lait : 15cl
+- [ ] Pâte feuilletée : 1
+- [ ] Boîtes de thon : 2
+- [ ] Oeufs : 3
 
 ## Préparation
 

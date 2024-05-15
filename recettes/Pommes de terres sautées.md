@@ -15,9 +15,9 @@ meal: lunch
 
 ## Ingrédients
 
-- Pommes de terre : 6
-- Huile
-- Curry
+- [ ] Pommes de terre : 6
+- [ ] Huile
+- [ ] Curry
 
 ## Préparation
 

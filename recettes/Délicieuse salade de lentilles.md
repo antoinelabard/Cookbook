@@ -16,15 +16,15 @@ meal: lunch
 
 ## Ingrédients
 
-- Huile de tournesol : 6cl
-- Vinaigre balsamique : 5cl
-- Curry
-- Huile de noisette
-- Échalote ou oignon rouge : 1
-- Lardons : 200g
-- Tomates : 2
-- Lentilles : 400g
-- Feta : 200g
+- [ ] Huile de tournesol : 6cl
+- [ ] Vinaigre balsamique : 5cl
+- [ ] Curry
+- [ ] Huile de noisette
+- [ ] Échalote ou oignon rouge : 1
+- [ ] Lardons : 200g
+- [ ] Tomates : 2
+- [ ] Lentilles : 400g
+- [ ] Feta : 200g
 
 ## Préparation
 

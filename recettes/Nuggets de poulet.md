@@ -16,10 +16,10 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Escalopes de poulet : 4
-- Blancs d'oeuf : 4
-- Chapelure
-- Huile
+- [ ] Escalopes de poulet : 4
+- [ ] Blancs d'oeuf : 4
+- [ ] Chapelure
+- [ ] Huile
 
 ## Préparation
 

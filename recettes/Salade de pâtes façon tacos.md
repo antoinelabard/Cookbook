@@ -16,15 +16,15 @@ meal: lunch
 
 ## Ingrédients
 
-- Pâtes : 350g
-- Tomates cerises : 200g
-- Jus de citron
-- Olives : 50g
-- Huile d'olive
-- Mimolette : 80g
-- Maïs : 120g
-- Avocats : 2
-- Coriandre
+- [ ] Pâtes : 350g
+- [ ] Tomates cerises : 200g
+- [ ] Jus de citron
+- [ ] Olives : 50g
+- [ ] Huile d'olive
+- [ ] Mimolette : 80g
+- [ ] Maïs : 120g
+- [ ] Avocats : 2
+- [ ] Coriandre
 
 ## Préparation
 

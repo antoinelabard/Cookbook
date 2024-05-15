@@ -17,12 +17,12 @@ tags: occasion
 
 ## Ingrédients
 
-- Farine : 20g
-- Lait : 20cl
-- Beurre : 20g
-- Gruyère râpé : 100g
-- Croissants : 4
-- Tranches de jambon : 4
+- [ ] Farine : 20g
+- [ ] Lait : 20cl
+- [ ] Beurre : 20g
+- [ ] Gruyère râpé : 100g
+- [ ] Croissants : 4
+- [ ] Tranches de jambon : 4
 
 ## Préparation
 

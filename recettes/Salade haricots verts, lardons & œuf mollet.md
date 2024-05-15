@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Haricots verts : 600g
-- Oeufs : 4
-- Lardons : 300g
-- Moutarde à l'ancienne : 40g
-- Huile d'olive : 6cl
-- Persil
+- [ ] Haricots verts : 600g
+- [ ] Oeufs : 4
+- [ ] Lardons : 300g
+- [ ] Moutarde à l'ancienne : 40g
+- [ ] Huile d'olive : 6cl
+- [ ] Persil
 
 ## Préparation
 

@@ -16,9 +16,9 @@ meal: lunch
 
 ## Ingrédients
 
-- Pommes de terre : 2
-- Lardons : 200g
-- Oeufs : 5
+- [ ] Pommes de terre : 2
+- [ ] Lardons : 200g
+- [ ] Oeufs : 5
 
 ## Préparation
 

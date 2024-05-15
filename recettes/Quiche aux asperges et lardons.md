@@ -16,12 +16,12 @@ season: spring
 
 ## Ingrédients
 
-- Asperges : 500g
-- Lardons : 200g
-- [[Pâte brisée]] : 1
-- Crème fraîche : 20cl
-- Fromage râpé : 50g
-- Oeufs : 4
+- [ ] Asperges : 500g
+- [ ] Lardons : 200g
+- [ ] [[Pâte brisée]] : 1
+- [ ] Crème fraîche : 20cl
+- [ ] Fromage râpé : 50g
+- [ ] Oeufs : 4
 
 ## Préparation
 

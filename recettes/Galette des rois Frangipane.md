@@ -16,13 +16,13 @@ tags: occasion, cheat-meal
 
 ## Ingrédients
 
-- Pâtes feuilletées : 2
-- Sucre : 75g
-- Beurre : 50g
-- Extrait d'amande amère
-- Amandes en poudre : 100g
-- Oeuf : 2
-- Fève : 1
+- [ ] Pâtes feuilletées : 2
+- [ ] Sucre : 75g
+- [ ] Beurre : 50g
+- [ ] Extrait d'amande amère
+- [ ] Amandes en poudre : 100g
+- [ ] Oeuf : 2
+- [ ] Fève : 1
 
 ## Préparation
 

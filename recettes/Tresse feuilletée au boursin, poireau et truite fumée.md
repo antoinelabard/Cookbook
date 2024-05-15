@@ -16,12 +16,12 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- Pâte feuilletée : 1
-- Poireaux : 3
-- Fromage à l'ail : 150g
-- Truite : 4 tranches
-- Oeuf : 1
-- Graines de sésame (optionnel) : 2cc
+- [ ] Pâte feuilletée : 1
+- [ ] Poireaux : 3
+- [ ] Fromage à l'ail : 150g
+- [ ] Truite : 4 tranches
+- [ ] Oeuf : 1
+- [ ] Graines de sésame (optionnel) : 2cc
 
 ## Préparation
 

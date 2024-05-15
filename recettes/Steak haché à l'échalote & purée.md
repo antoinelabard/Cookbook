@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Steak haché de boeuf : 4
-- Pommes de terre : 1kg
-- Échalote : 2
-- Lait : 12cl
-- Beurre : 80g
+- [ ] Steak haché de boeuf : 4
+- [ ] Pommes de terre : 1kg
+- [ ] Échalote : 2
+- [ ] Lait : 12cl
+- [ ] Beurre : 80g
 
 ## Préparation
 

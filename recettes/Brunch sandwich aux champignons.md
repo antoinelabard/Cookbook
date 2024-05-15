@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Pain de mie : 8 tranches
-- Jambon : 8 tranches
-- Oeufs : 8
-- Champignons de Paris : 400g
-- Fromage à l'ail : 160g
+- [ ] Pain de mie : 8 tranches
+- [ ] Jambon : 8 tranches
+- [ ] Oeufs : 8
+- [ ] Champignons de Paris : 400g
+- [ ] Fromage à l'ail : 160g
 
 ## Préparation
 

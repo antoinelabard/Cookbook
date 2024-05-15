@@ -16,13 +16,13 @@ meal: lunch
 
 ## Ingrédients
 
-- [[Pâte brisée]] : 1
-- Poivrons : 2
-- Courgette : 1
-- Parmesan râpé : 10g
-- Tomates : 4
-- Aubergine : 1
-- Huile d'olive
+- [ ] [[Pâte brisée]] : 1
+- [ ] Poivrons : 2
+- [ ] Courgette : 1
+- [ ] Parmesan râpé : 10g
+- [ ] Tomates : 4
+- [ ] Aubergine : 1
+- [ ] Huile d'olive
 
 ## Préparation
 

@@ -15,14 +15,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Carottes : 500g
-- Pommes de terre : 500g
-- Oignons : 2
-- Beurre
-- Crème fraîche : 10cl
-- Gruyère râpé : 50g
-- Muscade
-- Oeufs : 2
+- [ ] Carottes : 500g
+- [ ] Pommes de terre : 500g
+- [ ] Oignons : 2
+- [ ] Beurre
+- [ ] Crème fraîche : 10cl
+- [ ] Gruyère râpé : 50g
+- [ ] Muscade
+- [ ] Oeufs : 2
 
 ## Préparation
 

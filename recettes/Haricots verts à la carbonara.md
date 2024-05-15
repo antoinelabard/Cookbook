@@ -15,13 +15,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Lardons : 200g
-- Gousse d'ail : 1
-- Crème fraîche : 25cl
-- Parmesan râpé : 150g
-- Beurre : 10g
-- Haricots verts : 800g
-- Oeufs : 2
+- [ ] Lardons : 200g
+- [ ] Gousse d'ail : 1
+- [ ] Crème fraîche : 25cl
+- [ ] Parmesan râpé : 150g
+- [ ] Beurre : 10g
+- [ ] Haricots verts : 800g
+- [ ] Oeufs : 2
 
 ## Préparation
 

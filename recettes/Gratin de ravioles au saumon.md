@@ -16,11 +16,11 @@ tags: vegetarian
 
 ## Ingrédients
 
-- Ravioles du Dauphiné : 480g
-- Poireaux : 4
-- Saumon : 200g
-- Crème fraîche : 50cl
-- comté : 80g
+- [ ] Ravioles du Dauphiné : 480g
+- [ ] Poireaux : 4
+- [ ] Saumon : 200g
+- [ ] Crème fraîche : 50cl
+- [ ] comté : 80g
 
 ## Préparation
 

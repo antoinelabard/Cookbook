@@ -16,11 +16,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Endives : 1kg
-- Échalotes : 2
-- Cube de bouillon de volaille : 1
-- Crème fraîche : 20cl
-- Lard : 8 tranches
+- [ ] Endives : 1kg
+- [ ] Échalotes : 2
+- [ ] Cube de bouillon de volaille : 1
+- [ ] Crème fraîche : 20cl
+- [ ] Lard : 8 tranches
 
 ## Préparation
 

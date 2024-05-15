@@ -16,13 +16,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Tomates : 2
-- Vinaigre balsamique : 5cl
-- Huile d'olive : 2cl
-- Origan
-- Pâtes coude : 100g
-- Avocat : 1
-- Boîte de thon : 1
+- [ ] Tomates : 2
+- [ ] Vinaigre balsamique : 5cl
+- [ ] Huile d'olive : 2cl
+- [ ] Origan
+- [ ] Pâtes coude : 100g
+- [ ] Avocat : 1
+- [ ] Boîte de thon : 1
 
 ## Préparation
 

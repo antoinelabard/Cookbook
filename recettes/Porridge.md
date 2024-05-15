@@ -15,8 +15,8 @@ meal: breakfast
 
 ## Ingrédients
 
-- Lait : 480ml
-- Flocons d'avoine : 200g
+- [ ] Lait : 480ml
+- [ ] Flocons d'avoine : 200g
 
 ## Préparation
 

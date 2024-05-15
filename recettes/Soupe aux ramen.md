@@ -16,14 +16,14 @@ tags: occasion
 
 ## Ingrédients
 
-- Gingembre : 3
-- Coriandre : 1 bouquet
-- Saké : 5cl
-- Champignons noirs déshydratés : 13g
-- Huile d'olive
-- Blanc de poulets : 500g
-- Oignons nouveaux : 5
-- Sachets de ramen : 5
+- [ ] Gingembre : 3
+- [ ] Coriandre : 1 bouquet
+- [ ] Saké : 5cl
+- [ ] Champignons noirs déshydratés : 13g
+- [ ] Huile d'olive
+- [ ] Blanc de poulets : 500g
+- [ ] Oignons nouveaux : 5
+- [ ] Sachets de ramen : 5
 
 ## Préparation
 

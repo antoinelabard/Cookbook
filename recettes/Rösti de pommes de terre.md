@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Pommes de terre : 1kg
-- Oeufs : 2
-- Farine de blé : 40g
-- Oignon : 200g
+- [ ] Pommes de terre : 1kg
+- [ ] Oeufs : 2
+- [ ] Farine de blé : 40g
+- [ ] Oignon : 200g
 
 ## Préparation
 

@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Jus de citron
-- Vin blanc sec : 10cl
-- Sauce tomate : 5cl
-- spaghetti : 500g
-- Saumon : 200g
-- Crème fraîche : 50cl
+- [ ] Jus de citron
+- [ ] Vin blanc sec : 10cl
+- [ ] Sauce tomate : 5cl
+- [ ] spaghetti : 500g
+- [ ] Saumon : 200g
+- [ ] Crème fraîche : 50cl
 
 ## Préparation
 

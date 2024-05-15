@@ -15,10 +15,10 @@ tags: fail
 
 ## Ingrédients
 
-- Ravioles : 480g
-- Légumes à couscous : 800g
-- Crème fraîche : 8cl
-- Comté : 100g
+- [ ] Ravioles : 480g
+- [ ] Légumes à couscous : 800g
+- [ ] Crème fraîche : 8cl
+- [ ] Comté : 100g
 
 ## Préparation
 

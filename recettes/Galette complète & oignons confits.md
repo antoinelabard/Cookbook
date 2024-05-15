@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Galettes bretonnes : 4
-- Oeufs : 4
-- Jambon : 4 tranches
-- Fromage râpé : 200g
-- Oignons : 2
-- Vin blanc : 20cl
+- [ ] Galettes bretonnes : 4
+- [ ] Oeufs : 4
+- [ ] Jambon : 4 tranches
+- [ ] Fromage râpé : 200g
+- [ ] Oignons : 2
+- [ ] Vin blanc : 20cl
 
 ## Préparation
 

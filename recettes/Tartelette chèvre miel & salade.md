@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Pâte feuilletée : 1
-- Fromage de chèvre : 200g
-- Lardons : 100g
-- Miel : 6cl
-- Salade : 200g
-- Herbes de Provence
+- [ ] Pâte feuilletée : 1
+- [ ] Fromage de chèvre : 200g
+- [ ] Lardons : 100g
+- [ ] Miel : 6cl
+- [ ] Salade : 200g
+- [ ] Herbes de Provence
 
 ## Préparation
 

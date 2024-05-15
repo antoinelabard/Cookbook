@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- [[Pâte brisée]] : 1
-- Mozzarella : 1
-- Artichauts marinés : 160g
-- Jambon cru : 4 tranches
-- Oeuf : 3
-- Crème fraîche : 20cl
+- [ ] [[Pâte brisée]] : 1
+- [ ] Mozzarella : 1
+- [ ] Artichauts marinés : 160g
+- [ ] Jambon cru : 4 tranches
+- [ ] Oeuf : 3
+- [ ] Crème fraîche : 20cl
 
 ## Préparation
 

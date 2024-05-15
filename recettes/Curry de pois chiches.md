@@ -15,16 +15,16 @@ meal: lunch
 
 ## Ingrédients
 
-- Pois chiches : 400g
-- Riz : 280g
-- Oignon : 1
-- Chair de tomates : 400g
-- Lait de coco : 10cl
-- Gousse d'ail : 1
-- Curry
-- Cumin
-- Gingembre
-- Coriandre
+- [ ] Pois chiches : 400g
+- [ ] Riz : 280g
+- [ ] Oignon : 1
+- [ ] Chair de tomates : 400g
+- [ ] Lait de coco : 10cl
+- [ ] Gousse d'ail : 1
+- [ ] Curry
+- [ ] Cumin
+- [ ] Gingembre
+- [ ] Coriandre
 
 ## Préparation
 

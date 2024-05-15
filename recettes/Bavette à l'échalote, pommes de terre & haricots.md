@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Boeuf (bavette) : 4
-- Échalotes : 2
-- Haricots verts : 400g
-- Beurre : 80g
-- Pommes de terre : 600g
+- [ ] Boeuf (bavette) : 4
+- [ ] Échalotes : 2
+- [ ] Haricots verts : 400g
+- [ ] Beurre : 80g
+- [ ] Pommes de terre : 600g
 
 ## Préparation
 

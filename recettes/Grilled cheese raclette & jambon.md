@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Pain de mie : 16 tranches
-- Fromage frai : 120g
-- Fromage à raclette : 160g
-- Jambon : 8 tranches
-- Muscade
+- [ ] Pain de mie : 16 tranches
+- [ ] Fromage frai : 120g
+- [ ] Fromage à raclette : 160g
+- [ ] Jambon : 8 tranches
+- [ ] Muscade
 
 ## Préparation
 

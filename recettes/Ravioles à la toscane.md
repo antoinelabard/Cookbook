@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Ravioli : 500g
-- Tomates séchées : 200g
-- Crème fraiche : 20cl
-- Épinards : 300g
-- Parmesan râpé : 60g
-- Ail : 1 gousse
+- [ ] Ravioli : 500g
+- [ ] Tomates séchées : 200g
+- [ ] Crème fraiche : 20cl
+- [ ] Épinards : 300g
+- [ ] Parmesan râpé : 60g
+- [ ] Ail : 1 gousse
 
 ## Préparation
 

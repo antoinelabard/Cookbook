@@ -15,13 +15,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Haricots verts : 600g
-- Purée de tomates : 400g
-- Feta : 120g
-- Oignon : 1
-- Oeufs : 8
-- Cumin
-- Coriandre
+- [ ] Haricots verts : 600g
+- [ ] Purée de tomates : 400g
+- [ ] Feta : 120g
+- [ ] Oignon : 1
+- [ ] Oeufs : 8
+- [ ] Cumin
+- [ ] Coriandre
 
 ## Préparation
 

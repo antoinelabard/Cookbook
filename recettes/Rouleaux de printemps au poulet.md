@@ -16,17 +16,17 @@ tags: occasion
 
 ## Ingrédients
 
-- Carottes : 2
-- Galettes de riz : 20
-- Champignons noir : 1 paquet
-- Oignons : 3
-- Crevettes : 60g
-- Germes de soja : 1 bocal
-- Filets de poulet : 3
-- Sauce soja
-- Nuoc nam
-- Laitue
-- Menthe
+- [ ] Carottes : 2
+- [ ] Galettes de riz : 20
+- [ ] Champignons noir : 1 paquet
+- [ ] Oignons : 3
+- [ ] Crevettes : 60g
+- [ ] Germes de soja : 1 bocal
+- [ ] Filets de poulet : 3
+- [ ] Sauce soja
+- [ ] Nuoc nam
+- [ ] Laitue
+- [ ] Menthe
 
 ## Préparation
 

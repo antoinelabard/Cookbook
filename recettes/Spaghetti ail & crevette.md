@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Pâtes : 400g
-- Crevettes : 400g
-- Gousses d'ail : 2
-- Persil
+- [ ] Pâtes : 400g
+- [ ] Crevettes : 400g
+- [ ] Gousses d'ail : 2
+- [ ] Persil
 
 ## Préparation
 

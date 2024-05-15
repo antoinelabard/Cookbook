@@ -16,14 +16,14 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Corn Flakes : 100g
-- Filets de poulet : 4
-- Oeuf : 1
-- Farine : 100g
-- Ail en poudre
-- Paprika
-- Lait : 2cl
-- Huile de friture
+- [ ] Corn Flakes : 100g
+- [ ] Filets de poulet : 4
+- [ ] Oeuf : 1
+- [ ] Farine : 100g
+- [ ] Ail en poudre
+- [ ] Paprika
+- [ ] Lait : 2cl
+- [ ] Huile de friture
 
 ## Préparation
 

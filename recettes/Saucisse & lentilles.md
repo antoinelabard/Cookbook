@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Lentilles : 280g
-- Saucisses fumées : 4
-- Oignon : 1
-- Carottes : 2
+- [ ] Lentilles : 280g
+- [ ] Saucisses fumées : 4
+- [ ] Oignon : 1
+- [ ] Carottes : 2
 
 ## Préparation
 

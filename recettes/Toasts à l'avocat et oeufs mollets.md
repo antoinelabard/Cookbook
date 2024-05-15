@@ -15,10 +15,10 @@ meal: breakfast
 
 ## Ingrédients
 
-- [[Oeufs mollets]] : 4
-- Tranches de pain de mie : 2
-- Avocat : 1
-- Ciboulette
+- [ ] [[Oeufs mollets]] : 4
+- [ ] Tranches de pain de mie : 2
+- [ ] Avocat : 1
+- [ ] Ciboulette
 
 ## Préparation
 

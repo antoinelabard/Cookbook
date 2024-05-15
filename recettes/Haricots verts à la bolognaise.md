@@ -15,13 +15,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Oignon : 1
-- Céleri : 10cl
-- Carotte : 1
-- Origan
-- Viande hachée : 800g
-- Coulis de tomate : 700g
-- Haricots verts : 800g
+- [ ] Oignon : 1
+- [ ] Céleri : 10cl
+- [ ] Carotte : 1
+- [ ] Origan
+- [ ] Viande hachée : 800g
+- [ ] Coulis de tomate : 700g
+- [ ] Haricots verts : 800g
 
 ## Préparation
 

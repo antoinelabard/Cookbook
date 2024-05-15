@@ -16,12 +16,12 @@ season: summer, autumn
 
 ## Ingrédients
 
-- Brocoli : 320g
-- Filets de poulet : 4
-- Sauce soja : 10cl
-- Gingembre
-- Graines de sésame
-- Riz : 280g
+- [ ] Brocoli : 320g
+- [ ] Filets de poulet : 4
+- [ ] Sauce soja : 10cl
+- [ ] Gingembre
+- [ ] Graines de sésame
+- [ ] Riz : 280g
 
 ## Préparation
 

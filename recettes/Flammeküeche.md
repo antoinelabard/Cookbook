@@ -16,11 +16,11 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- pâtes à pizza : 2
-- Fromage blanc : 20cl
-- Crème fraîche : 20cl
-- lardons : 200g
-- Oignons : 2
+- [ ] pâtes à pizza : 2
+- [ ] Fromage blanc : 20cl
+- [ ] Crème fraîche : 20cl
+- [ ] lardons : 200g
+- [ ] Oignons : 2
 
 ## Préparation
 

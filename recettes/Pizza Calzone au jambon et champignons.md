@@ -17,13 +17,13 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Pâte à pizza : 2
-- jambon : 250g
-- Échalote : 1
-- Mozzarella : 200g
-- Olives : 12
-- Pulpe de tomate : 5cl
-- Champignons de Paris : 300g
+- [ ] Pâte à pizza : 2
+- [ ] jambon : 250g
+- [ ] Échalote : 1
+- [ ] Mozzarella : 200g
+- [ ] Olives : 12
+- [ ] Pulpe de tomate : 5cl
+- [ ] Champignons de Paris : 300g
 
 ## Préparation
 

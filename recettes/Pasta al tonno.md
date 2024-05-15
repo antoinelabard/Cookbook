@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Thon : 240g
-- Pâtes : 400g
-- Tomates séchées : 160g
-- Persil
-- Ail : 1 gousse
+- [ ] Thon : 240g
+- [ ] Pâtes : 400g
+- [ ] Tomates séchées : 160g
+- [ ] Persil
+- [ ] Ail : 1 gousse
 
 ## Préparation
 

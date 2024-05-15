@@ -17,13 +17,13 @@ season: summer
 
 ## Ingrédients
 
-- Oignon : 1
-- Tomate : 2
-- Ketchup
-- Pain pour Hamburger : 8
-- Viande hachée : 800g
-- Cheddar : 300g
-- Salade : 1
+- [ ] Oignon : 1
+- [ ] Tomate : 2
+- [ ] Ketchup
+- [ ] Pain pour Hamburger : 8
+- [ ] Viande hachée : 800g
+- [ ] Cheddar : 300g
+- [ ] Salade : 1
 
 ## Préparation
 

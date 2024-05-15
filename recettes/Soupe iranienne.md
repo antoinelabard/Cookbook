@@ -16,14 +16,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Carottes : 2
-- Concentré de tomate : 70g
-- Oignon : 1
-- Blé à cuire : 200g
-- Bouillon de légumes : 1
-- Jus de citron
-- Curcuma
-- (Optionnel) Lait de coco : 10cl
+- [ ] Carottes : 2
+- [ ] Concentré de tomate : 70g
+- [ ] Oignon : 1
+- [ ] Blé à cuire : 200g
+- [ ] Bouillon de légumes : 1
+- [ ] Jus de citron
+- [ ] Curcuma
+- [ ] (Optionnel) Lait de coco : 10cl
 
 ## Préparation
 

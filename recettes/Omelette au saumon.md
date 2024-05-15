@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Oeufs : 8
-- Fromage frais : 120g
-- Salade
-- Saumon : 4 tranches
+- [ ] Oeufs : 8
+- [ ] Fromage frais : 120g
+- [ ] Salade
+- [ ] Saumon : 4 tranches
 
 ## Préparation
 

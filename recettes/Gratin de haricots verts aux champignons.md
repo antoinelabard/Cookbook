@@ -16,16 +16,16 @@ meal: lunch
 
 ## Ingrédients
 
-- Champignons : 250g
-- Gruyère râpé : 80g
-- Jus de citron
-- Eau : 25cl
-- Crème fraîche : 100g
-- Beurre : 40g
-- Farine : 20g
-- Haricots verts : 600g
-- Oeuf : 1
-- Muscade
+- [ ] Champignons : 250g
+- [ ] Gruyère râpé : 80g
+- [ ] Jus de citron
+- [ ] Eau : 25cl
+- [ ] Crème fraîche : 100g
+- [ ] Beurre : 40g
+- [ ] Farine : 20g
+- [ ] Haricots verts : 600g
+- [ ] Oeuf : 1
+- [ ] Muscade
 
 ## Préparation
 

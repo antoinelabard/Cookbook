@@ -15,14 +15,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Kit burrito 4 portions : 1
-- Boeuf haché : 400g
-- Cheddar : 80g
-- haricots rouges : 240g
-- riz : 160g
-- Oignon rouge : 1
-- Laitue : 4 poignées
-- Crème fraîche : 10cl
+- [ ] Kit burrito 4 portions : 1
+- [ ] Boeuf haché : 400g
+- [ ] Cheddar : 80g
+- [ ] haricots rouges : 240g
+- [ ] riz : 160g
+- [ ] Oignon rouge : 1
+- [ ] Laitue : 4 poignées
+- [ ] Crème fraîche : 10cl
 
 ## Préparation
 

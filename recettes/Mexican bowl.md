@@ -16,12 +16,12 @@ season: summer
 
 ## Ingrédients
 
-- Escalopes de poulet : 4
-- Mélange d'épices mexicaines
-- Avocat : 1
-- Maïs : 240g
-- Haricots rouges : 240g
-- Riz : 280g
+- [ ] Escalopes de poulet : 4
+- [ ] Mélange d'épices mexicaines
+- [ ] Avocat : 1
+- [ ] Maïs : 240g
+- [ ] Haricots rouges : 240g
+- [ ] Riz : 280g
 
 ## Préparation
 

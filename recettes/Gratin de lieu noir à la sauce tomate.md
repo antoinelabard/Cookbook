@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Tomates : 5
-- Oignons : 2
-- Jus de citron
-- Gruyère râpé : 50g
-- Muscade
-- Lieu noir : 400g
+- [ ] Tomates : 5
+- [ ] Oignons : 2
+- [ ] Jus de citron
+- [ ] Gruyère râpé : 50g
+- [ ] Muscade
+- [ ] Lieu noir : 400g
 
 ## Préparation
 

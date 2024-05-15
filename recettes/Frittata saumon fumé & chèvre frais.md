@@ -16,12 +16,12 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- Oeufs : 8
-- Chèvre frais : 200g
-- Saumon : 2 tranches
-- Épinards : 2 poignées
-- Échalote : 1
-- Aneth
+- [ ] Oeufs : 8
+- [ ] Chèvre frais : 200g
+- [ ] Saumon : 2 tranches
+- [ ] Épinards : 2 poignées
+- [ ] Échalote : 1
+- [ ] Aneth
 
 ## Préparation
 

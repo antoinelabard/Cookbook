@@ -16,10 +16,10 @@ tags: occasion
 
 ## Ingrédients
 
-- Pâte feuilletée : 1
-- comté râpé : 75g
-- Crème fraîche : 5cl
-- Oeuf : 1
+- [ ] Pâte feuilletée : 1
+- [ ] comté râpé : 75g
+- [ ] Crème fraîche : 5cl
+- [ ] Oeuf : 1
 
 ## Préparation
 

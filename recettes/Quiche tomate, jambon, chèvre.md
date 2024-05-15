@@ -16,14 +16,14 @@ season: summer
 
 ## Ingrédients
 
-- [[Pâte brisée]] : 1
-- Tomates : 2
-- Oeufs : 2
-- Persil
-- Gruyère râpé
-- Jambon : 100g
-- Fromage de chèvre : 1
-- Crème liquide : 50cl
+- [ ] [[Pâte brisée]] : 1
+- [ ] Tomates : 2
+- [ ] Oeufs : 2
+- [ ] Persil
+- [ ] Gruyère râpé
+- [ ] Jambon : 100g
+- [ ] Fromage de chèvre : 1
+- [ ] Crème liquide : 50cl
 
 ## Préparation
 

@@ -15,11 +15,11 @@ meal: snack
 
 ## Ingrédients
 
-- Fromage blanc : 140g
-- Noix de coco râpée : 200g
-- Noix en poudre au choix : 40g
-- Miel : 100g
-- Chocolat noir : 200g
+- [ ] Fromage blanc : 140g
+- [ ] Noix de coco râpée : 200g
+- [ ] Noix en poudre au choix : 40g
+- [ ] Miel : 100g
+- [ ] Chocolat noir : 200g
 
 ## Préparation
 

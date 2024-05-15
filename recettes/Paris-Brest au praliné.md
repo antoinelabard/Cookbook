@@ -16,20 +16,20 @@ tags: occasion
 
 ## Ingrédients
 
-- Farine : 150g
-- Oeufs : 6
-- Beurre demi-sel : 80g
-- lait : 25cl
-- Pralin
-- Sucre : 125g
-- Pâte de praliné : 100g
-- Beurre : 100g
+- [ ] Farine : 150g
+- [ ] Oeufs : 6
+- [ ] Beurre demi-sel : 80g
+- [ ] lait : 25cl
+- [ ] Pralin
+- [ ] Sucre : 125g
+- [ ] Pâte de praliné : 100g
+- [ ] Beurre : 100g
 
 ## Matériel
 
-- Fouet
-- Papier de cuisson
-- Poche à douille
+- [ ] Fouet
+- [ ] Papier de cuisson
+- [ ] Poche à douille
 
 ## Préparation
 

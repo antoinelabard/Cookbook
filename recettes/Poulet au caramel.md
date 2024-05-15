@@ -16,9 +16,9 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Filet de poulet : 4
-- Sucre : 300g
-- gingembre
+- [ ] Filet de poulet : 4
+- [ ] Sucre : 300g
+- [ ] gingembre
 
 ## Préparation
 

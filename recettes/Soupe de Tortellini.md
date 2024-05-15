@@ -16,14 +16,14 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- Chair de tomates : 320g
-- Chair à saucisses : 200g
-- Crème fraiche : 10cl
-- Épinards : 200g
-- Oignon : 1
-- Bouillon de volailles : 1
-- Pâtes tortellini ricotta-épinards : 440g
-- Parmesan râpé : 40g
+- [ ] Chair de tomates : 320g
+- [ ] Chair à saucisses : 200g
+- [ ] Crème fraiche : 10cl
+- [ ] Épinards : 200g
+- [ ] Oignon : 1
+- [ ] Bouillon de volailles : 1
+- [ ] Pâtes tortellini ricotta-épinards : 440g
+- [ ] Parmesan râpé : 40g
 
 ## Préparation
 

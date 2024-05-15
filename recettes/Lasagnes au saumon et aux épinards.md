@@ -16,11 +16,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Boîte de lasagnes précuites : 1
-- Parmesan
-- Saumon : 300g
-- Feuilles d'épinards : 500g
-- Crème liquide : 50cl
+- [ ] Boîte de lasagnes précuites : 1
+- [ ] Parmesan
+- [ ] Saumon : 300g
+- [ ] Feuilles d'épinards : 500g
+- [ ] Crème liquide : 50cl
 
 ## Préparation
 

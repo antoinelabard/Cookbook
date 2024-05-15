@@ -15,13 +15,13 @@ meal: lunch
 
 ## Ingrédients
 
-- Saucisses fumées : 4
-- Oignon : 1
-- Gousse d'ail : 2
-- Riz : 280g
-- Gingembre : 20g
-- Purée de tomate : 400g
-- Curcuma : 4 pincées
+- [ ] Saucisses fumées : 4
+- [ ] Oignon : 1
+- [ ] Gousse d'ail : 2
+- [ ] Riz : 280g
+- [ ] Gingembre : 20g
+- [ ] Purée de tomate : 400g
+- [ ] Curcuma : 4 pincées
 
 ## Préparation
 

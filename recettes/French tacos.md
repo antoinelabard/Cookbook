@@ -16,17 +16,17 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- [[Frites]] : 1kg
-- Viandes de votre choix (boeuf haché, nuggets, Saucisses, cordon bleu, etc) : 400g
-- Oignons : 2
-- Crème fraîche : 50cl
-- Emmental : 100g
-- Cheddar : 200g
-- Tortillas de blé : 8
-- Huile d'olive
-- Sauce barbecue
-- Sel
-- Poivre
+- [ ] [[Frites]] : 1kg
+- [ ] Viandes de votre choix (boeuf haché, nuggets, Saucisses, cordon bleu, etc) : 400g
+- [ ] Oignons : 2
+- [ ] Crème fraîche : 50cl
+- [ ] Emmental : 100g
+- [ ] Cheddar : 200g
+- [ ] Tortillas de blé : 8
+- [ ] Huile d'olive
+- [ ] Sauce barbecue
+- [ ] Sel
+- [ ] Poivre
 
 ## Préparation
 

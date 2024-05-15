@@ -17,10 +17,10 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Pommes de terre : 1kg
-- Oignon : 1
-- Lardons : 200g
-- Reblochon : 1
+- [ ] Pommes de terre : 1kg
+- [ ] Oignon : 1
+- [ ] Lardons : 200g
+- [ ] Reblochon : 1
 
 ## Préparation
 

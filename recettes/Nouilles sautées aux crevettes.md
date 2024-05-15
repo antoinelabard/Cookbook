@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Nouilles chinoises : 280g
-- Haricots verts : 280g
-- Crevettes : 320g
-- Carottes : 2
-- Sauce soja : 12cl
-- Gousse d'ail : 1
+- [ ] Nouilles chinoises : 280g
+- [ ] Haricots verts : 280g
+- [ ] Crevettes : 320g
+- [ ] Carottes : 2
+- [ ] Sauce soja : 12cl
+- [ ] Gousse d'ail : 1
 
 ## Préparation
 

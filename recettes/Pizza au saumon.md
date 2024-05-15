@@ -16,13 +16,13 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- Origan
-- Huile d'olive
-- Jus de citron
-- Pâte à pizza : 1
-- Saumon : 200g
-- Crème fraîche : 25cl
-- Mozzarella : 2
+- [ ] Origan
+- [ ] Huile d'olive
+- [ ] Jus de citron
+- [ ] Pâte à pizza : 1
+- [ ] Saumon : 200g
+- [ ] Crème fraîche : 25cl
+- [ ] Mozzarella : 2
 
 ## Préparation
 

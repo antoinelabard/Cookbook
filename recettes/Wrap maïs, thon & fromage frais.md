@@ -16,12 +16,12 @@ season: summer
 
 ## Ingrédients
 
-- Tortillas : 4
-- Thon : 200g
-- Maïs : 120g
-- Fromage frais : 40g
-- Salade : 4 poignées
-- Oignon : 1
+- [ ] Tortillas : 4
+- [ ] Thon : 200g
+- [ ] Maïs : 120g
+- [ ] Fromage frais : 40g
+- [ ] Salade : 4 poignées
+- [ ] Oignon : 1
 
 ## Préparation
 

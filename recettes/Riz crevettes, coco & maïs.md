@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Riz : 280g
-- Maïs : 200g
-- Crevettes : 200g
-- Lait de coco : 28cl
-- Coriandre
+- [ ] Riz : 280g
+- [ ] Maïs : 200g
+- [ ] Crevettes : 200g
+- [ ] Lait de coco : 28cl
+- [ ] Coriandre
 
 ## Préparation
 

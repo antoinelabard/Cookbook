@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Pâtes : 400g
-- Échalote : 1
-- Tomates séchées : 200g
-- Artichauts : 320g
-- Parmesan : 80g
-- Persil
+- [ ] Pâtes : 400g
+- [ ] Échalote : 1
+- [ ] Tomates séchées : 200g
+- [ ] Artichauts : 320g
+- [ ] Parmesan : 80g
+- [ ] Persil
 
 ## Préparation
 

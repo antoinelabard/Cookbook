@@ -15,14 +15,14 @@ meal: lunch
 
 ## Ingrédients
 
-- Pommes de terre : 800g
-- Carottes : 400g
-- Oignon : 1
-- Concentré de tomate : 4cc
-- Lait de coco : 200ml
-- Pois chiches : 200g
-- Curry
-- Citron
+- [ ] Pommes de terre : 800g
+- [ ] Carottes : 400g
+- [ ] Oignon : 1
+- [ ] Concentré de tomate : 4cc
+- [ ] Lait de coco : 200ml
+- [ ] Pois chiches : 200g
+- [ ] Curry
+- [ ] Citron
 
 ## Préparation
 

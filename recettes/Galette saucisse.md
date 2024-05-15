@@ -15,10 +15,10 @@ meal: lunch
 
 ## Ingrédients
 
-- Saucisses fumées : 4
-- Galettes bretonnes : 4
-- Fromage râpé : 80g
-- [[Oignons confits]] : 200g
+- [ ] Saucisses fumées : 4
+- [ ] Galettes bretonnes : 4
+- [ ] Fromage râpé : 80g
+- [ ] [[Oignons confits]] : 200g
 
 ## Préparation
 

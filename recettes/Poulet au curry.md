@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Escalopes de poulet : 4
-- Curry : 1cc
-- Lait de coco : 12cl
-- Riz : 280g
-- Coriandre
+- [ ] Escalopes de poulet : 4
+- [ ] Curry : 1cc
+- [ ] Lait de coco : 12cl
+- [ ] Riz : 280g
+- [ ] Coriandre
 
 ## Préparation
 
