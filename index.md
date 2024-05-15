@@ -1,4 +1,4 @@
-# Livre de recettes
+e# Livre de recettes
 
 ## 👋 Présentation
 
@@ -6,8 +6,6 @@
 >  <div><img src="photo.webp" alt="profile picture" width="100" height="100" style="margin: 20px; float: right; shape: circle();"><p style="text-align:justify;">J'ai mis en ligne ce site web pour partager mon livre de recettes. Il s'agit de toutes les recettes que j'essaie et que je sauvegarde pour ne jamais manquer d'idée !<br><br>Plus de 140 recettes sont disponibles ! N'hésitez pas à me faire part de vos retours ou de vos astuces pour les améliorer.</p></div>
 
 > [!important] [[Menu de la semaine]]
-
-> [!important] [[Reims 2024]]
 
 ## 🌮 Sélections
 
