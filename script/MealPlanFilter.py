@@ -49,9 +49,8 @@ class MealPlanFilter:
 
         # seasons
         if self.is_in_season:
-            if not recipe.seasons:
-                return False
-            if self._get_current_season() not in recipe.seasons:
+            if recipe.seasons and self._get_current_season() not in recipe.seasons:
+                # The season tag is present in the recipe, but the season doesn't match the current one
                 return False
 
         # tags

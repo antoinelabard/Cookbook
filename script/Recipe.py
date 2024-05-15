@@ -20,13 +20,8 @@ class Recipe:
             self.seasons: list[str] = seasons
         elif seasons is None:
             self.seasons: list[str] = []
-        else:
-            self.seasons: list[str] = [seasons]
 
         if isinstance(tags, list):
             self.tags: list[str] = tags
         elif tags is None:
             self.tags: list[str] = []
-        else:
-            self.tags: list[str] = [tags]
-

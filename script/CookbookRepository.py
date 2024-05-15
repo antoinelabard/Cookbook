@@ -65,8 +65,8 @@ class CookbookRepository:
             metadata_dict[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata_dict.keys() else None,
             metadata_dict[Constants.SOURCE] if Constants.SOURCE in metadata_dict.keys() else None,
             metadata_dict[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata_dict.keys() else None,
-            metadata_dict[Constants.Season.SEASON] if Constants.Season.SEASON in metadata_dict.keys() else None,
-            metadata_dict[Constants.TAGS] if Constants.TAGS in metadata_dict.keys() else None
+            metadata_dict[Constants.Season.SEASON].split(", ") if Constants.Season.SEASON in metadata_dict.keys() else None,
+            metadata_dict[Constants.TAGS].split(", ") if Constants.TAGS in metadata_dict.keys() else None
         )
 
         return recipe
