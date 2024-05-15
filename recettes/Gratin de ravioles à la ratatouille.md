@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - Ravioles : 480g
-- Ratatouille : 800g
+- [[Ratatouille]] : 800g
 - Crème fraîche : 8cl
 - Comté râpé : 100g
 

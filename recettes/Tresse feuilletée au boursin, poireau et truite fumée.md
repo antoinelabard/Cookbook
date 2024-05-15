@@ -3,6 +3,7 @@ date-added: 2024-01-15
 source: https://jow.fr/recipes/tresse-feuilletee-au-boursin-poireau-et-truite-fumee-8w581y5mgpb402su12n7
 recipe-type: meal
 meal: lunch
+season: spring, summer, autumn
 ---
 
 # Tresse feuilletée au boursin, poireau et truite fumée

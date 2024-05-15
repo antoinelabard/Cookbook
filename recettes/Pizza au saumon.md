@@ -1,7 +1,6 @@
 ---
 date-added: 2021-12-11
 source: https://www.marmiton.org/recettes/recette_pizza-au-saumon_22391.aspx
-season: mid-season
 recipe-type: meal
 meal: lunch
 tags: cheat-meal

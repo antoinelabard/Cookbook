@@ -3,7 +3,8 @@
 ```dataview
 LIST
 FROM "recettes"
-WHERE tags = "cheat-meal"
+WHERE recipe-type = "meal"
+AND tags = "cheat-meal"
 ```
 
 ## Pour les occasions
@@ -11,5 +12,6 @@ WHERE tags = "cheat-meal"
 ```dataview
 LIST
 FROM "recettes"
-WHERE tags = "occasion"
+WHERE recipe-type = "meal"
+AND tags = "occasion"
 ```

@@ -1,6 +1,6 @@
 ---
 date-added: 2022-11-18
-source: https://www.fitnessmith.fr/recette-fitness-les-toasts-sportifs/
+source: https://www.fitnessmith.fr/recette-fitness-les-toasts-sportifs
 recipe-type: meal
 meal: breakfast
 ---

@@ -3,6 +3,7 @@ date-added: 2022-09-14
 source: https://www.marmiton.org/recettes/recette_quiche-au-saumon-et-aux-epinards_22164.aspx
 recipe-type: meal
 meal: lunch
+season: spring, summer, autumn
 ---
 
 # Quiche au saumon et aux épinards

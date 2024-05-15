@@ -3,6 +3,7 @@ date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_ratatouille_23223.aspx
 recipe-type: ingredient
 meal: lunch
+season: spring, summer, autumn
 ---
 
 # Ratatouille

@@ -24,7 +24,6 @@ tags: cheat-meal
 - Paprika
 - Lait : 2cl
 - Huile de friture
-- Ketchup
 
 ## Préparation
 

@@ -7,6 +7,8 @@
 
 > [!important] [[Menu de la semaine]]
 
+> [!important] [[Reims 2024]]
+
 ## 🌮 Sélections
 
 ```dataview

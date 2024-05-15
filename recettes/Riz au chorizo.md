@@ -3,6 +3,7 @@ date-added: 2021-12-02
 source: https://www.marmiton.org/recettes/recette_riz-au-chorizo_14042.aspx
 recipe-type: meal
 meal: lunch
+season: summer, autumn
 ---
 
 # Riz au chorizo

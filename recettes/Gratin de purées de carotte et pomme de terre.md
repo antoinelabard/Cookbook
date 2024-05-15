@@ -1,7 +1,6 @@
 ---
 date-added: 2021-12-30
 source: https://www.marmiton.org/recettes/recette_gratin-de-purees-de-carotte-et-pomme-de-terre_27529.aspx
-season: winter
 recipe-type: meal
 meal: lunch
 ---

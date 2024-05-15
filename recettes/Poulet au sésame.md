@@ -3,6 +3,7 @@ date-added: 2023-01-13
 source: https://jow.fr/recipes/poulet-au-sesame-8db8a3gikyyrjt5g19to
 recipe-type: meal
 meal: lunch
+season: summer, autumn
 ---
 
 # Poulet au sésame

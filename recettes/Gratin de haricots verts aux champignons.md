@@ -23,9 +23,9 @@ meal: lunch
 - Crème fraîche : 100g
 - Beurre : 40g
 - Farine : 20g
-- Muscade :
 - Haricots verts : 600g
 - Oeuf : 1
+- Muscade
 
 ## Préparation
 

@@ -20,7 +20,7 @@ meal: lunch
 - Oignon : 3
 - Oeufs : 3
 - Crème fraîche : 25cl
-- [[Pâte brisée]]
+- [[Pâte brisée]] : 1
 
 ## Préparation
 

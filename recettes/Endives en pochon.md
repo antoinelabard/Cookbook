@@ -3,6 +3,7 @@ date-added: 2022-02-05
 source: Nathalie des Francas
 recipe-type: meal
 meal: lunch
+season: winter, spring
 ---
 
 # Endives en pochon
