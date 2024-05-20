@@ -24,7 +24,7 @@ meal: lunch
 ## Préparation
 
 1. Lavez les pommes de terre et coupez-les en 2 ou en 4.
-2. Dans un poêle avec un filet d'huile d'olive, ajoutez les pommes de terre, salez, poivrez et saisissez-les 5 minutes, à feu vif.
+2. Dans un poêle avec un filet d'huile de cuisson, ajoutez les pommes de terre, salez, poivrez et saisissez-les 5 minutes, à feu vif.
 3. Couvrez et laissez cuire à feu doux 10 minutes.
 4. Pendant ce temps, faites cuire les œufs dans une casserole d'eau bouillante pendant 10 min.
 5. Placez-les dans un bol d'eau froide pour stopper la cuisson, écalez-les et coupez-les en morceaux.

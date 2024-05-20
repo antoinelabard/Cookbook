@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Pâtes : 500g
 - [ ] Crème fraîche : 20cl
-- [ ] Lardons : 200g
+- [ ] Lardons fumés : 200g
 - [ ] Champignons de Paris : 200g
 - [ ] Oignon : 1
 - [ ] Oeuf : 1
