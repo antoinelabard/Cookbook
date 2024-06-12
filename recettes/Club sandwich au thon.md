@@ -25,7 +25,7 @@ meal: lunch
 - [ ] Concombre : 1
 - [ ] Salade : 1
 - [ ] Oignons nouveaux : 4
-- [ ] tomates : 2
+- [ ] Tomates : 2
 
 ## Préparation
 
