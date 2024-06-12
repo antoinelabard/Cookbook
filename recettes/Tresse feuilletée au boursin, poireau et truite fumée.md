@@ -26,7 +26,7 @@ season: spring, summer, autumn
 ## Préparation
 
 1. Préchauffez le four à 180°C. Coupez les extrémités des poireaux pour ne garder que le blanc, puis émincez-le finement. Placez-le dans une passoire et rincez abondamment pour retirer les impuretés.
-2. Faites chauffer un filet d'huile d'olive dans une poêle. Ajoutez les poireaux. Salez, poivrez et faites-les revenir sur feu vif pendant 2 minutes, en remuant.
+2. Faites chauffer un filet d'huile de cuisson dans une poêle. Ajoutez les poireaux. Salez, poivrez et faites-les revenir sur feu vif pendant 2 minutes, en remuant.
 3. Baissez à feu moyen, puis ajoutez le fromage ail & fines herbes. Mélangez, puis laissez mijoter 10 minutes, en mélangeant occasionnellement.
 4. Hors du feu, coupez la truite en morceaux puis ajoutez-la à la préparation. Mélangez.
 5. Déroulez la pâte feuilletée. Étalez la préparation pour former une bande au milieu de la pâte.
