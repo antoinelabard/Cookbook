@@ -15,14 +15,14 @@ meal: breakfast
 
 ## Ingrédients
 
-- [ ] [[Oeufs mollets]] : 4
+- [ ] [[Oeufs cuits]] mollets : 4
 - [ ] Tranches de pain de mie : 2
 - [ ] Avocat : 1
 - [ ] Ciboulette
 
 ## Préparation
 
-1. ![[Oeufs mollets]]
+1. ![[Oeufs cuits]]
 2. Faire griller les toasts.
 3. Couper l'avocat en tranche.
 4. Éplucher délicatement les oeufs.
