@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Haricots verts : 600g
-- [ ] Oeufs : 4
+- [ ] [[Oeufs cuits]] mollets : 4
 - [ ] Lardons : 300g
 - [ ] Moutarde à l'ancienne : 40g
 - [ ] Huile d'olive : 6cl
@@ -24,7 +24,7 @@ meal: lunch
 
 ## Préparation
 
-1. Dans une casserole d'eau bouillante, faites cuire les œufs pendant 6 minutes.
+1. ![[Oeufs cuits]]
 2. En parallèle, faites cuire les haricots verts dans une casserole d'eau bouillante pendant environ 3 minutes puis égouttez-les.
 3. Dans une poêle, faites revenir les lardons pendant 3 minutes à feu vif.
 4. Une fois que vos œufs sont cuits, passez-les dans l'eau froide puis enlevez la coquille délicatement. Coupez-les en deux.

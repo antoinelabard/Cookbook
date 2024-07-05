@@ -20,6 +20,7 @@ meal: lunch
 - [ ] Riz : 280g
 - [ ] Oignons : 2
 - [ ] Mélange de champignons : 400g
+- [ ] Moutarde à l'ancienne : 1cc
 
 ## Préparation
 
