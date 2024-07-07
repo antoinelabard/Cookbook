@@ -17,9 +17,7 @@ tags: occasion
 
 ## Ingrédients
 
-- [ ] Farine : 20g
-- [ ] Lait : 20cl
-- [ ] Beurre : 20g
+- [ ] [[Béchamel]] : 80g
 - [ ] Gruyère râpé : 100g
 - [ ] Croissants : 4
 - [ ] Tranches de jambon : 4
@@ -27,7 +25,7 @@ tags: occasion
 ## Préparation
 
 1. Commencer par ouvrir vos croissants en deux à l'aide d'un couteau sans les séparer complètement.
-2. Faire fondre le beurre dans une casserole, y ajouter de la farine et petit à petit en remuant au fouet y ajouter du lait (les quantités sont à votre goût). Laisser épaissir à feu doux en remuant sans cesse. Ajouter du sel, du poivre et de la noix de muscade.
-3. Dès que votre béchamel est prête faites y fondre du fromage puis l'étaler à l'intérieur des croissants. Ajouter une tranche de jambon roulée, puis encore de la béchamel et du fromage râpé.
+2. ![[Béchamel]]
+3. Dès que votre béchamel est prête, faites y< fondre du fromage puis l'étaler à l'intérieur des croissants. Ajouter une tranche de jambon roulée, puis encore de la béchamel et du fromage râpé.
 4. Recommencer ceci pour les 3 autres.
 5. Mettre au four à 180°C (thermostat 6) pendant 20 min tout en surveillant.
