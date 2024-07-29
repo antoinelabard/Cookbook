@@ -20,7 +20,7 @@ meal: lunch
 - [ ] Vinaigre balsamique : 5cl
 - [ ] Huile d'olive : 2cl
 - [ ] Origan
-- [ ] Pâtes coude : 100g
+- [ ] Pâtes coude : 200g
 - [ ] Avocat : 1
 - [ ] Boîte de thon : 1
 
