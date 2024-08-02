@@ -16,15 +16,6 @@ WHERE meal = "snack"
 AND !tags
 ```
 
-## Autres
-
-```dataview
-LIST
-FROM "recettes"
-WHERE meal = "misc"
-AND !tags
-```
-
 ## Déjeuners
 
 ```dataview

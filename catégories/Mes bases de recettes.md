@@ -1,7 +1,5 @@
-## Cheat-meals
-
 ```dataview
-TABLE meal
+LIST
 FROM "recettes"
 WHERE recipe-type = "ingredient"
 SORT meal
