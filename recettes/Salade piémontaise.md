@@ -6,9 +6,9 @@ recipe-type: meal
 meal: lunch
 ---
 
-# Salade piémontaise facile
+# Salade piémontaise
 
-![[Salade piémontaise facile.webp]]
+![[Salade piémontaise.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -19,13 +19,13 @@ meal: lunch
 - [ ] Tomates : 2
 - [ ] Pommes de terre : 500g
 - [ ] Dés de jambon : 200g
-- [ ] Oeufs : 2
-- [ ] Mayonnaise
+- [ ] [[Oeufs cuits]] durs : 2
+- [ ] Mayonnaise : 20cl
 - [ ] Cornichons : 200g
 
 ## Préparation
 
-1. Faire cuire les oeufs durs et les pommes de terre coupées en dés.
+1. ![[Oeufs cuits]]
 2. Pendant ce temps, coupez les tomates en dés et les cornichons en fines lamelles.
 3. Dans un grand plat, mélanger les oeufs durs coupés en petits morceaux, les pommes de terre, les tomates, les cornichons, le jambon et la mayonnaise.
 

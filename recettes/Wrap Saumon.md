@@ -16,14 +16,14 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Saumon : 8 tranches
+- [ ] Saumon : 4 tranches
 - [ ] Tortillas : 4
 - [ ] Concombre : 1
 - [ ] Fromage frais : 160g
-- [ ] épinards : 2 poignées
+- [ ] épinards : 200g
 
 ## Préparation
 
 1. Découpez le concombre en fines tranches.
-2. Étalez le fromage frais sur les tortilla à l'aide d'un couteau, ajoutez le saumon, les pousses d'épinard, les tranches de concombre et un trait de jus de citron.
+2. Étalez le fromage frais sur les tortillas à l'aide d'un couteau, ajoutez le saumon, les pousses d'épinard, les tranches de concombre et un trait de jus de citron.
 3. Roulez le tout. Coupez votre wrap en deux, dégustez !
