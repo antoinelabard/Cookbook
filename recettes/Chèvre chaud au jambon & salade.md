@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Salade : 8 poignées
+- [ ] Salade : 200g
 - [ ] Fromage de chèvre : 200g
 - [ ] Herbes de Provence
 - [ ] Pain de mie : 8 tranches

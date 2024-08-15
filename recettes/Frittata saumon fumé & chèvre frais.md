@@ -19,7 +19,7 @@ season: spring, summer, autumn
 - [ ] Oeufs : 8
 - [ ] Chèvre frais : 200g
 - [ ] Saumon : 2 tranches
-- [ ] Épinards : 2 poignées
+- [ ] Épinards : 400g
 - [ ] Échalote : 1
 - [ ] Aneth
 

@@ -20,7 +20,7 @@ season: summer
 - [ ] Thon : 200g
 - [ ] Maïs : 120g
 - [ ] Fromage frais : 40g
-- [ ] Salade : 4 poignées
+- [ ] Salade : 200g
 - [ ] Oignon : 1
 
 ## Préparation

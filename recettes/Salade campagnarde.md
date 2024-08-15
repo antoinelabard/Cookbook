@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] [[Oeufs cuits]] durs : 6
 - [ ] [[Pommes de terres sautées]] : 600g
-- [ ] Salade mâche : 8 poignées
+- [ ] Salade : 200g
 - [ ] Chèvre frais : 80g
 - [ ] Bacon : 8 tranches
 

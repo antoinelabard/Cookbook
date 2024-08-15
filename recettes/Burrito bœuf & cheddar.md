@@ -21,7 +21,7 @@ meal: lunch
 - [ ] haricots rouges : 240g
 - [ ] riz : 160g
 - [ ] Oignon rouge : 1
-- [ ] Laitue : 4 poignées
+- [ ] Laitue : 200g
 - [ ] Crème fraîche : 10cl
 
 ## Préparation

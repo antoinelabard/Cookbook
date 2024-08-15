@@ -24,6 +24,6 @@ meal: lunch
 
 1. Éplucher 2 pommes de terre et les couper en dés. Les faire cuire 10 mn à la vapeur ainsi coupées (pour gagner du temps !).
 2. Mettre 1 à 2 cuillères à soupe d'huile "neutre" (tournesol par exemple) dans un poêle et y rajouter les pommes de terre.
-3. Faire dorer 10 mn environ et juste un peu avant la fin de la cuisson, y rajouter une poignée de lardons.
+3. Faire dorer 10 mn environ et juste un peu avant la fin de la cuisson, y rajouter les lardons.
 4. Incorporer les œufs battus assaisonnés de poivre et de sel (pas trop, les lardons sont déjà suffisamment salés) à la préparation dans la poêle en remuant 30 secondes.
 5. Laisser cuire à votre convenance, selon si vous l'aimez baveuse ou pas).
