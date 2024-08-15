@@ -21,7 +21,7 @@ meal: lunch
 - [ ] Filet de poulet : 700g
 - [ ] bacon : 150g
 - [ ] Avocat : 1
-- [ ] Oeuf dur : 3
+- [ ] [[Oeufs cuits]] durs : 3
 - [ ] Salade : 200g
 
 ## Préparation

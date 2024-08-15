@@ -22,11 +22,11 @@ meal: lunch
 - [ ] Escalopes de poulet : 2
 - [ ] Salade
 - [ ] Fromage
-- [ ] Oeufs durs : 2
+- [ ] [[Oeufs cuits]] durs : 2
 
 ## Préparation
 
-1. Faire dorer dans une poêle l’escalope de poulet dans un peu de beurre. Saler, poivrer. Une fois cuite, laisser-la refroidir et couper-la en petites tranches.
+1. Faire dorer dans une poêle l’escalope de poulet dans un peu de beurre. Saler, poivrer. Une fois cuite, la laisser refroidir et la couper en petites tranches.
 2. Cuire dans la poêle les tranches de lard, puis réserver. Couper les tomates en rondelles ainsi que l’oeuf dur.
 3. Faire toaster au grille pain les 6 tranches de pain de mie, les tranches doivent être juste dorées. Une fois les toasts refroidis, les aligner sur une planche à découper.
 4. A partir de ce point, doubler toutes les actions pour faire simultanément les 2 sandwichs.
