@@ -16,7 +16,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Pain de mie : 16 tranches (6 en salade)
+- [ ] Pain de mie : 8 tranches
 - [ ] Tomate : 2
 - [ ] Filet de poulet : 700g
 - [ ] bacon : 150g
