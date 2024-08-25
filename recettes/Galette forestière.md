@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Galettes bretonnes : 8
+- [ ] Galettes bretonnes : 4
 - [ ] Jambon : 8 tranches
 - [ ] Fromage râpé : 200g
 - [ ] Champignons de Paris : 600g
