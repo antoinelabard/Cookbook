@@ -20,7 +20,7 @@ season: spring, summer, autumn
 - [ ] Feta : 160g
 - [ ] Épinards : 300g
 - [ ] Gousse d'ail : 1
-- [ ] Salade : 500g
+- [ ] Salade : 200g
 - [ ] Oeufs : 2
 
 ## Préparation
