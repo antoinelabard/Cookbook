@@ -12,7 +12,7 @@ meal: lunch
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    10min    |   -   |   50    |
+|    10min    |   -   |  50min  |
 
 ## Ingrédients
 
@@ -22,6 +22,7 @@ meal: lunch
 - [ ] Jambon cru : 4 tranches
 - [ ] Oeuf : 3
 - [ ] Crème fraîche : 20cl
+- [ ] Lait: 10cl
 
 ## Préparation
 

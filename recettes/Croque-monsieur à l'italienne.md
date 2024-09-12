@@ -17,17 +17,17 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Tranches de pain de mie : 16
-- [ ] Tomate : 1
-- [ ] Parmesan
+- [ ] Tomate : 2
+- [ ] Parmesan : 60g
 - [ ] Basilic
 - [ ] Huile d'olive
 - [ ] Tranches de jambon blanc ou jambon sec : 8
-- [ ] Mozzarella : 1
+- [ ] Mozzarella : 250g
 
 ## Préparation
 
 1. Prenez 2 tranches de pain de mie. À l'aide d'un pinceau, badigeonnez-les d'un peu d'huile d'olive.
-2. Sur une des tranches, posez 2 rondelles de tomate (épépinez), 2 rondelles de mozzarella, 1/2 tranche de jambon, 2 feuilles de basilic et enfin un peu de gruyère ou de parmesan.
-3. Recouvrez avec l'autre tranche de pain de mie. Parsemez le dessus avec un peu de gruyère râpé ou de parmesan.
+2. Sur une des tranches, posez 2 rondelles de tomate (épépinez), 2 rondelles de mozzarella, 1/2 tranche de jambon, 2 feuilles de basilic et enfin un peu de parmesan.
+3. Recouvrez avec l'autre tranche de pain de mie. Parsemez le dessus avec un peu de parmesan.
 4. Refaites la même chose pour le reste du pain de mie.
 5. Enfournez 15 min à four chaud (210°C/th 7), jusqu'à ce que ce soit bien doré.
