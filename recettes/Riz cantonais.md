@@ -15,11 +15,11 @@ meal: lunch
 
 ## Ingrédients
 
-- Riz: 280g
-- Petits pois : 120g
-- Jambon : 8 tranches
-- Oeufs : 4
-- Sauce soja (optionnel) 
+- [ ] Riz: 280g
+- [ ] Petits pois : 120g
+- [ ] Jambon : 8 tranches
+- [ ] Oeufs : 4
+- [ ] Sauce soja (optionnel) 
 
 ## Préparation
 
