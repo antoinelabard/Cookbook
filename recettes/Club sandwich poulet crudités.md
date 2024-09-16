@@ -20,8 +20,8 @@ meal: lunch
 - [ ] Tomates : 8
 - [ ] Lard fumé : 8 tranches
 - [ ] Escalopes de poulet : 2
-- [ ] Salade
-- [ ] Fromage
+- [ ] Salade : 200g
+- [ ] Fromage en tranches : 200g
 - [ ] [[Oeufs cuits]] durs : 2
 
 ## Préparation
