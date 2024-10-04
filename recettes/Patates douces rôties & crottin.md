@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Patates douces : 800g
+- [ ] Patates douces : 1.2kg
 - [ ] Oignon : 1
 - [ ] Crotins de chèvre : 2
 - [ ] Thym
@@ -27,4 +27,4 @@ meal: lunch
 2. Ajoutez les patates douces et les oignons dans un plat allant au four. Assaisonnez d'un filet d'huile d'olive, de sel, poivre et de thym. Mélangez le tout, puis enfournez pendant 20 à 25 minutes à 200°C.
 3. Sortez le plat du four. Mélangez les légumes, puis créez un peu d'espace pour ajouter les crottins de chèvre.
 4. Badigeonnez d'un filet d'huile d'olive et du miel. Parsemez les crottins de chèvre de thym, puis re-assaisonnez selon vos goûts. Enfournez à nouveau 20 minutes à 200°C, jusqu'à ce que le chèvre soit coulant et légèrement doré.
-5. Sortez le plat du four et dégustez. C'est prêt !
+5. Sortez le plat du four et dégustez. Vus pouvez mélanger le plat pour mieux répartir le chèvre dans les parts. C'est prêt !

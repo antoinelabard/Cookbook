@@ -18,7 +18,7 @@ meal: lunch
 - [ ] Oignons : 1kg
 - [ ] Crème fraîche : 20cl
 - [ ] [[Pâte brisée]] : 1
-- [ ] Oeufs : 2
+- [ ] Oeufs : 3
 - [ ] Lardons : 100g
 
 ## Préparation
