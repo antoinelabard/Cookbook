@@ -24,9 +24,8 @@ meal: lunch
 ## Préparation
 
 1. Préchauffez le four à 200°C. Faites cuire les épinards dans une poêle.
-2. Dans un bol, mélangez le parmesan et la crème. Salez et poivrez.
-3. Beurrez un plat ou un ramequin individuel allant au four, ajoutez la crème de parmesan.
+3. Dans un plat allant au four, mélangez la crème de parmesan. Salez et poivrez.
 4. Ajoutez les épinards cuits et mélangez.
-5. Ajoutez le lard.
-6. Faites des puits à l'aide d'une cuillère et cassez les œufs délicatement. Salez et poivrez (optionnel : ajoutez une pincée de piment).
+5. Faites des puits à l'aide d'une cuillère et cassez les œufs délicatement.
+6. Ajoutez le lard par-dessus.
 7. Enfournez pendant 15 minutes. Dégustez avec une salade ou une tranche de pain. C'est prêt !
