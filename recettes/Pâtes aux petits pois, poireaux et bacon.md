@@ -22,13 +22,13 @@ season: spring, autumn, winter
 - [ ] Spaghetti : 400g
 - [ ] Bacon : 200g
 - [ ] Petits pois surgelés : 200g
-- [ ] Crème fraîche : 30cl
+- [ ] Crème fraîche : 20cl
 
 ## Préparation
 
 1. Laver les poireaux, couper les parties blanches en rondelles et couper le bacon en petits morceaux.
 2. Faire cuire les pâtes et les petits poids dans de l'eau bouillante.
-3. Dans une poêle, Mettre les poireaux et le bacon. Ne pas cesser de remuer pendant 8 min, pour que les poireaux ne prennent pas au fond (si c'est le cas mettre 2 cuillerées à soupe d'eau de cuisson des pâtes).
+3. Dans une poêle, Mettre les poireaux et le bacon avec un fond d'eau. Laisser cuire à couvert en remuant de temps en temps.
 5. Ajouter dans la poêle la crème fraîche, les gouttes de jus de citron et remuer (pendant 5 min).
-6. Égoutter les pâtes et les petits pois, les ajouter à la sauce au poireaux et au bacon ; remuer pendant 2 min.
-7. Ajouter du parmesan râpé.
+6. Égoutter les pâtes et les petits pois, les ajouter à la sauce aux poireaux et au bacon et mélanger.
+7. Ajouter le parmesan râpé et servir.
