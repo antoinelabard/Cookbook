@@ -1,4 +1,4 @@
-e# Livre de recettes
+# Livre de recettes
 
 ## 👋 Présentation
 
