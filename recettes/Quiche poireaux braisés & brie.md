@@ -16,14 +16,14 @@ meal: lunch
 
 ## Ingrédients
 
-- [[Pâte brisée]] : 1
-- Poireaux : 3
-- Oeufs : 3
-- Lait : 200ml
-- Crème liquide : 100ml
-- Brie fondant : 60g
-- Sucre en poudre : 2cc
-- Vinaigre balsamique : 1cc
+- [ ] [[Pâte brisée]] : 1
+- [ ] Poireaux : 3
+- [ ] Oeufs : 3
+- [ ] Lait : 200ml
+- [ ] Crème liquide : 100ml
+- [ ] Brie fondant : 60g
+- [ ] Sucre en poudre : 2cc
+- [ ] Vinaigre balsamique : 1cc
 
 ## Préparation
 

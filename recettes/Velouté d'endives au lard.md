@@ -26,10 +26,10 @@ meal: lunch
 
 1. Coupez les endives en lamelles (optionnel : réservez les premières feuilles pour la décoration).
 2. Épluchez puis hachez les échalotes.
-3. Faites fondre une noisette de beurre. Ajoutez les échalotes et faites revenir 1 minute.
+3. Dans une grande cocotte, faites fondre une noisette de beurre. Ajoutez les échalotes et faites revenir 1 minute.
 4. Ajoutez les endives et mélangez. Faites-les revenir 3 minutes à feu moyen en couvrant.
-5. Ajoutez 600ml d'eau par personne et mélangez. Ajoutez le bouillon, mélangez et couvrez. Laissez cuire 15 min à feu moyen.
+5. Versez 2.5l et mélangez. Ajoutez le bouillon, mélangez et couvrez. Laissez cuire 15 min à feu moyen.
 6. Pendant ce temps, faites griller le lard dans une poêle chaude. Réservez sur un papier absorbant.
 7. Une fois que les endives sont cuites, ajoutez la crème fraîche et mélangez. Salez et poivrez.
 8. Mixez jusqu'à l'obtention d'un velouté lisse.
-9. Servez dans des assiettes creuses et parsemez avec les petites feuilles. Ajoutez le lard et poivrez. C'est prêt !
+9. Servez dans des assiettes creuses, parsemez avec les petites feuilles et ajoutez le lard. C'est prêt !
