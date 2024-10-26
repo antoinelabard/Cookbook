@@ -33,6 +33,7 @@ class CookbookRepository:
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
     MENU_PATH: Path = ROOT_DIR / "menu.md"
+    INGREDIENTS_PATH: str = ROOT_DIR / "ingredients.md"
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
 
     def __init__(self):
@@ -78,7 +79,10 @@ class CookbookRepository:
 
         metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
         ingredients = lines[ingredients_range[0]:ingredients_range[1]]
+        ingredients = list(map(lambda ingredient: ingredient.replace("- [ ] ", ""),ingredients))
+        ingredients = list(map(lambda ingredient: ingredient.replace("\n", ""),ingredients))
         instructions = lines[instructions_range[0]:instructions_range[1]]
+        instructions = list(map(lambda instruction: instruction.replace("\n", ""), instructions))
         recipe = Recipe(
             path.name.replace(".md", ""),
             metadata[Constants.RECIPE_TYPE],
@@ -166,7 +170,7 @@ class CookbookRepository:
 
         return profiles
 
-    def _read_recipes_names_from_menu(self):
+    def _read_recipes_from_menu(self) -> list[Recipe]:
         """
         Read the recipes names listed in the menu file pointed by MENU_PATH
         :return: a list of recipes names
@@ -175,7 +179,17 @@ class CookbookRepository:
         with open(self.MENU_PATH, 'r') as f:
             lines = f.readlines()
 
-        # check if each name is related to an existing recipe
-        recipes_paths = list(map(lambda recipe: recipe.name, self.recipes))
+        # filter the recipes cited in the names list
         names = list(map(lambda name: name.split("[[")[1].split("]]")[0] if "[[" in name else "", lines))
-        return list(filter(lambda name: name in recipes_paths, names))
+        return list(filter(lambda recipe: recipe.name in names, self.recipes))
+
+    def write_ingredients(self, recipes: list[str]):
+        """
+        Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
+        :param recipes: the recipes for which the ingredients need to be written down.
+        """
+
+        ingredients: list[str] = ["- [ ] " + ingredient for sublist in list(map(lambda recipe: recipe.ingredients, recipes)) for ingredient in sublist]
+
+        with open(self.INGREDIENTS_PATH, 'w') as f:
+            f.write("\n".join(ingredients))
