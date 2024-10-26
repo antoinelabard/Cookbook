@@ -43,30 +43,52 @@ class CookbookRepository:
     def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
         """
         :param path: the path to the markdown file containing the metadata
-        :return: None if there is no metadata in the file. Otherwise, return a Recipe object
+        :return: A recipe object
         """
-        lines: str = ""
-        metadata_marker: str = "---\n"
         with open(path, 'r') as f:
-            line: str = f.readline()
-            if line != metadata_marker:  # check if there is a metadata header in the file
-                return
-            while True:
-                # read the file metadata
-                line = f.readline()
-                if line == metadata_marker:
-                    break
-                lines += line
+            lines = f.readlines()
 
-        metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
+        metadata_delimiter: str = "---\n"
+        ingredients_delimiter: str = "## Ingrédients"
+        instructions_delimiter: str = "## Préparation"
+
+        # the following tests check if it contains the standard section delimiters, so is formatted as a recipe
+        joined_lines: str = "".join(lines)
+        if metadata_delimiter not in joined_lines:
+            return
+        if ingredients_delimiter not in joined_lines:
+            return
+        if instructions_delimiter not in joined_lines:
+            return
+
+        # split the file in 3 sections
+        # the indexes lines indexes are tuned to remove unwanted lines and only keep the metadata, ingredients list and instructions
+        metadata_range: list[int] = [1]  # the metadata is at the beginning of the file
+        ingredients_range: list[int] = []
+        instructions_range: list[int] = []
+        for i in range(1, len(lines)):
+            if metadata_delimiter in lines[i]:
+                metadata_range.append(i)
+            if ingredients_delimiter in lines[i]:
+                ingredients_range.append(i + 2)
+            if instructions_delimiter in lines[i]:
+                ingredients_range.append(i - 1)
+                instructions_range.append(i + 2)
+        instructions_range.append(len(lines))
+
+        metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
+        ingredients = lines[ingredients_range[0]:ingredients_range[1]]
+        instructions = lines[instructions_range[0]:instructions_range[1]]
         recipe = Recipe(
             path.name.replace(".md", ""),
-            metadata_dict[Constants.RECIPE_TYPE],
-            metadata_dict[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata_dict.keys() else None,
-            metadata_dict[Constants.SOURCE] if Constants.SOURCE in metadata_dict.keys() else None,
-            metadata_dict[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata_dict.keys() else None,
-            metadata_dict[Constants.Season.SEASON].split(", ") if Constants.Season.SEASON in metadata_dict.keys() else None,
-            metadata_dict[Constants.TAGS].split(", ") if Constants.TAGS in metadata_dict.keys() else None
+            metadata[Constants.RECIPE_TYPE],
+            ingredients,
+            instructions,
+            metadata[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata.keys() else None,
+            metadata[Constants.SOURCE] if Constants.SOURCE in metadata.keys() else None,
+            metadata[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata.keys() else None,
+            metadata[Constants.Season.SEASON].split(", ") if Constants.Season.SEASON in metadata.keys() else None,
+            metadata[Constants.TAGS].split(", ") if Constants.TAGS in metadata.keys() else None
         )
 
         return recipe

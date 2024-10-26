@@ -2,9 +2,12 @@ class Recipe:
     """
     Recipe represents a cookbook recipe. It is a convenient way to access the metadata of a given recipe.
     """
+
     def __init__(self,
                  name: str,
                  recipe_type: str,
+                 ingredients: list[str],
+                 instructions: list[str],
                  date_added: str | None = None,
                  source: str | None = None,
                  meal: str | None = None,
@@ -25,3 +28,6 @@ class Recipe:
             self.tags: list[str] = tags
         elif tags is None:
             self.tags: list[str] = []
+
+        self.ingredients: list[str] = ingredients
+        self.instructions: list[str] = instructions
