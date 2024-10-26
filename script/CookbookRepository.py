@@ -165,3 +165,17 @@ class CookbookRepository:
                 profiles[profile].append(meal_plan_filter)
 
         return profiles
+
+    def _read_recipes_names_from_menu(self):
+        """
+        Read the recipes names listed in the menu file pointed by MENU_PATH
+        :return: a list of recipes names
+        """
+
+        with open(self.MENU_PATH, 'r') as f:
+            lines = f.readlines()
+
+        # check if each name is related to an existing recipe
+        recipes_paths = list(map(lambda recipe: recipe.name, self.recipes))
+        names = list(map(lambda name: name.split("[[")[1].split("]]")[0] if "[[" in name else "", lines))
+        return list(filter(lambda name: name in recipes_paths, names))
