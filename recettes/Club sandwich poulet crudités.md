@@ -30,7 +30,7 @@ meal: lunch
 2. Cuire dans la poêle les tranches de lard, puis réserver. Couper les tomates en rondelles ainsi que l’oeuf dur.
 3. Faire toaster au grille pain les 6 tranches de pain de mie, les tranches doivent être juste dorées. Une fois les toasts refroidis, les aligner sur une planche à découper.
 4. A partir de ce point, doubler toutes les actions pour faire simultanément les 2 sandwichs.
-5. Recouvrir 2 tranches de pain de mie de mayonnaise (sur une seule face). Sur la première des 2 tranches, répartir les morceaux de blanc de poulet préalablement coupés en petites tranches. Poser par dessus 2 rondelles de tomates.
+5. Recouvrir 2 tranches de pain de mie de mayonnaise (sur une seule face). Sur la première des 2 tranches, répartir les morceaux de blancs de poulet préalablement coupés en petites tranches. Poser par dessus 2 rondelles de tomates.
 6. Recouvrir de la seconde tranche de pain préalablement recouverte de mayonnaise. Poser sur celle-ci 2 ou 3 feuilles de salade ainsi que 4 rondelles d’oeuf dur et 2 tranches de lard.
 7. Poser la tranche de fromage et recouvrir de la dernière tranche de pain. Presser le sandwich sans l’écraser.
 8. Planter 4 piques en bois pour tout tenir, en évitant les diagonales du pain.

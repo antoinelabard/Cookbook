@@ -16,7 +16,7 @@ season: spring, summer, autumn
 
 ## Ingrédients
 
-- [ ] Crème fraiche : 25cl
+- [ ] Crème   fraîche : 25cl
 - [ ] Parmesan râpé : 30g
 - [ ] Basilic
 - [ ] Aneth

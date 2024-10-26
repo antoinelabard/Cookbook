@@ -30,7 +30,7 @@ season: spring
 1. Préchauffer le four à 220°C (thermostat 7-8).
 2. Peler sommairement la base des asperges, les couper en rondelles et les faire fondre à la poêle avec du beurre et les lardons, environ 10 min.
 3. Égoutter le tout et déposer sur le fond de pâte.
-4. Mélanger les oeufs et la crème fraiche.
+4. Mélanger les oeufs et la crème   fraîche.
 5. Napper la tarte, ajouter le râpé dessus.
 6. Enfourner 35min.
 7. Servir tiède avec une salade par exemple.

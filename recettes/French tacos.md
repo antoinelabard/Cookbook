@@ -25,8 +25,6 @@ tags: cheat-meal
 - [ ] Tortillas de blé : 8
 - [ ] Huile d'olive
 - [ ] Sauce barbecue
-- [ ] Sel
-- [ ] Poivre
 
 ## Préparation
 

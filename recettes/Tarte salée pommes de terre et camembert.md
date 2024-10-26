@@ -21,8 +21,8 @@ tags: cheat-meal
 - [ ] [[Pâte brisée]] : 1
 - [ ] Crème fraîche : 20cl
 - [ ] lardons : 100g
-- [ ] gruyère râpé
-- [ ] camembert : 1/2
+- [ ] Gruyère râpé
+- [ ] Camembert : 1/2
 
 ## Préparation
 

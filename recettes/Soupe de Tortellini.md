@@ -18,7 +18,7 @@ season: spring, summer, autumn
 
 - [ ] Chair de tomates : 320g
 - [ ] Chair à saucisses : 200g
-- [ ] Crème fraiche : 10cl
+- [ ] Crème   fraîche : 10cl
 - [ ] Épinards : 200g
 - [ ] Oignon : 1
 - [ ] Bouillon de volailles : 1

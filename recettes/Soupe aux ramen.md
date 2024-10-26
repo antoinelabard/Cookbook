@@ -21,7 +21,7 @@ tags: occasion
 - [ ] Saké : 5cl
 - [ ] Champignons noirs déshydratés : 13g
 - [ ] Huile d'olive
-- [ ] Blanc de poulets : 500g
+- [ ] Blancs de poulets : 4
 - [ ] Oignons nouveaux : 5
 - [ ] Sachets de ramen : 5
 
