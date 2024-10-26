@@ -35,6 +35,7 @@ class CookbookRepository:
     MENU_PATH: Path = ROOT_DIR / "menu.md"
     INGREDIENTS_PATH: str = ROOT_DIR / "ingredients.md"
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
+    INGREDIENTS_AISLES_PATH = ROOT_DIR / "ingredients.yaml"
 
     def __init__(self):
         self.recipes = self._read_recipes()
@@ -193,3 +194,13 @@ class CookbookRepository:
 
         with open(self.INGREDIENTS_PATH, 'w') as f:
             f.write("\n".join(ingredients))
+
+    def _read_ingredients_aisles(self) -> dict[list[str]]:
+        """
+        read from the file INGREDIENTS_AISLES_PATH the associations between ingredients and aisles
+        :return: a dict for which the keys are the aisles and the values are a list of ingredients
+        """
+        
+        with open(self.INGREDIENTS_AISLES_PATH, 'r') as f:
+            lines = f.readlines()
+        return yaml.safe_load("".join(lines))
