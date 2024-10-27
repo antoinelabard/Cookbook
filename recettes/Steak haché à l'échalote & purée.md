@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ]  [[Purée de pommes de terre façon Goblot]]
+- [ ] [[Purée de pommes de terre façon Goblot]]
 - [ ] Steak haché de boeuf : 4
 - [ ] Échalote : 2
 - [ ] Beurre : 20g
