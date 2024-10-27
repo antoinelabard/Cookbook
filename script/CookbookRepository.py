@@ -80,8 +80,8 @@ class CookbookRepository:
 
         metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
         ingredients = lines[ingredients_range[0]:ingredients_range[1]]
-        ingredients = list(map(lambda ingredient: ingredient.replace("- [ ] ", ""),ingredients))
-        ingredients = list(map(lambda ingredient: ingredient.replace("\n", ""),ingredients))
+        ingredients = list(map(lambda ingredient: ingredient.replace("- [ ] ", ""), ingredients))
+        ingredients = list(map(lambda ingredient: ingredient.replace("\n", ""), ingredients))
         instructions = lines[instructions_range[0]:instructions_range[1]]
         instructions = list(map(lambda instruction: instruction.replace("\n", ""), instructions))
         recipe = Recipe(
@@ -184,13 +184,30 @@ class CookbookRepository:
         names = list(map(lambda name: name.split("[[")[1].split("]]")[0] if "[[" in name else "", lines))
         return list(filter(lambda recipe: recipe.name in names, self.recipes))
 
-    def write_ingredients(self, recipes: list[str]):
+    def write_ingredients(self):
         """
         Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
-        :param recipes: the recipes for which the ingredients need to be written down.
+        The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
         """
 
-        ingredients: list[str] = ["- [ ] " + ingredient for sublist in list(map(lambda recipe: recipe.ingredients, recipes)) for ingredient in sublist]
+        ingredients: list[str] = [ingredient.lower() for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
+        ingredients_aisles_reference = self._read_ingredients_aisles()
+
+        ingredients_aisles = {aisle: [] for aisle in ingredients_aisles_reference.keys()}
+        for aisle in ingredients_aisles_reference.keys():
+            for ingredient_reference in ingredients_aisles_reference[aisle]:
+                i = 0
+                while i < len(ingredients):
+                    if ingredient_reference.lower() in ingredients[i]:
+                        ingredients_aisles[aisle].append(ingredients.pop(i))
+                    i += 1
+        ingredients_aisles["Unclassified"] = ingredients
+
+        ingredients = []
+        for aisle in ingredients_aisles.keys():
+            if not ingredients_aisles[aisle]:
+                continue
+            ingredients.append(f"- [ ] {aisle} :\n" + "\n".join([f"  - [ ] {ingredient}" for ingredient in ingredients_aisles[aisle]]))
 
         with open(self.INGREDIENTS_PATH, 'w') as f:
             f.write("\n".join(ingredients))
@@ -200,7 +217,7 @@ class CookbookRepository:
         read from the file INGREDIENTS_AISLES_PATH the associations between ingredients and aisles
         :return: a dict for which the keys are the aisles and the values are a list of ingredients
         """
-        
+
         with open(self.INGREDIENTS_AISLES_PATH, 'r') as f:
             lines = f.readlines()
         return yaml.safe_load("".join(lines))
