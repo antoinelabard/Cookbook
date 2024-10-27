@@ -20,7 +20,7 @@ tags: cheat-meal
 - [ ] Oeufs : 4
 - [ ] Farine de blé : 40g
 - [ ] Chapelure : 80g
-- [ ] Guile de turnesol : 20cl
+- [ ] Huile de tournesol : 20cl
 - [ ] Parmesan : 80g
 
 ## Préparation

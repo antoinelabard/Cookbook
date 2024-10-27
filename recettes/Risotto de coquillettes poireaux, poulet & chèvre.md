@@ -17,7 +17,7 @@ season: spring, summer, autumn
 ## Ingrédients
 
 - [ ] Pâtes : 320g
-- [ ] Poirreaux : 2
+- [ ] Poireaux : 2
 - [ ] FIlets de poulet : 4
 - [ ] Chèvre frai : 120g
 - [ ] Bouillon de légumes : 1

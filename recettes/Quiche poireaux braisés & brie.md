@@ -20,7 +20,7 @@ meal: lunch
 - [ ] Poireaux : 3
 - [ ] Oeufs : 3
 - [ ] Lait : 200ml
-- [ ] Crème liquide : 100ml
+- [ ] Crème fraîche : 100ml
 - [ ] Brie fondant : 60g
 - [ ] Sucre en poudre : 2cc
 - [ ] Vinaigre balsamique : 1cc

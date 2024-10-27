@@ -16,7 +16,7 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- [ ] Corn Flakes : 100g
+- [ ] Corn flakes : 100g
 - [ ] Filets de poulet : 4
 - [ ] Oeuf : 1
 - [ ] Farine : 100g

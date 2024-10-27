@@ -22,7 +22,6 @@ season: summer
 - [ ] Lardons : 350g
 - [ ] Herbes de Provence
 - [ ] Sel
-- [ ] Poivre
 
 ## Préparation
 

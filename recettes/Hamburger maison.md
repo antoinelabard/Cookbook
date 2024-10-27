@@ -20,7 +20,7 @@ season: summer
 - [ ] Oignon : 1
 - [ ] Tomate : 2
 - [ ] Ketchup
-- [ ] Pain pour Hamburger : 8
+- [ ] Pains à burgers : 8
 - [ ] Viande hachée : 800g
 - [ ] Cheddar : 300g
 - [ ] Salade : 1

@@ -32,6 +32,7 @@ tags: cheat-meal
 - [ ] Gingembre moulu
 - [ ] Herbes de Provence
 - [ ] Huile d'olive
+- [ ] Ail en poudre
 
 ## Préparation
 

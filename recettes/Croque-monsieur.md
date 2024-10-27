@@ -22,8 +22,6 @@ tags: occasion
 - [ ] jambon : 8 tranches
 - [ ] Fromage en tranches : 8 tranches
 - [ ] Lait : 6cl
-- [ ] Sel
-- [ ] Poivre
 - [ ] Muscade
 
 ## Préparation

@@ -17,7 +17,7 @@ season: summer
 ## Ingrédients
 
 - [ ] Oeufs : 8
-- [ ] Poids chiches : 400g
+- [ ] Pois chiches : 400g
 - [ ] Sauce tomate : 600g
 - [ ] Feta : 160g
 - [ ] Oignon : 1

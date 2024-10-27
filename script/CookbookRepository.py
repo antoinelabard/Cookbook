@@ -33,7 +33,9 @@ class CookbookRepository:
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
     MENU_PATH: Path = ROOT_DIR / "menu.md"
+    INGREDIENTS_PATH: str = ROOT_DIR / "ingredients.md"
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
+    INGREDIENTS_AISLES_PATH = ROOT_DIR / "ingredients.yaml"
 
     def __init__(self):
         self.recipes = self._read_recipes()
@@ -43,30 +45,55 @@ class CookbookRepository:
     def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
         """
         :param path: the path to the markdown file containing the metadata
-        :return: None if there is no metadata in the file. Otherwise, return a Recipe object
+        :return: A recipe object
         """
-        lines: str = ""
-        metadata_marker: str = "---\n"
         with open(path, 'r') as f:
-            line: str = f.readline()
-            if line != metadata_marker:  # check if there is a metadata header in the file
-                return
-            while True:
-                # read the file metadata
-                line = f.readline()
-                if line == metadata_marker:
-                    break
-                lines += line
+            lines = f.readlines()
 
-        metadata_dict: dict[str, str | list[str]] = yaml.safe_load(lines)
+        metadata_delimiter: str = "---\n"
+        ingredients_delimiter: str = "## Ingrédients"
+        instructions_delimiter: str = "## Préparation"
+
+        # the following tests check if it contains the standard section delimiters, so is formatted as a recipe
+        joined_lines: str = "".join(lines)
+        if metadata_delimiter not in joined_lines:
+            return
+        if ingredients_delimiter not in joined_lines:
+            return
+        if instructions_delimiter not in joined_lines:
+            return
+
+        # split the file in 3 sections
+        # the indexes lines indexes are tuned to remove unwanted lines and only keep the metadata, ingredients list and instructions
+        metadata_range: list[int] = [1]  # the metadata is at the beginning of the file
+        ingredients_range: list[int] = []
+        instructions_range: list[int] = []
+        for i in range(1, len(lines)):
+            if metadata_delimiter in lines[i]:
+                metadata_range.append(i)
+            if ingredients_delimiter in lines[i]:
+                ingredients_range.append(i + 2)
+            if instructions_delimiter in lines[i]:
+                ingredients_range.append(i - 1)
+                instructions_range.append(i + 2)
+        instructions_range.append(len(lines))
+
+        metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
+        ingredients = lines[ingredients_range[0]:ingredients_range[1]]
+        ingredients = list(map(lambda ingredient: ingredient.replace("- [ ] ", ""), ingredients))
+        ingredients = list(map(lambda ingredient: ingredient.replace("\n", ""), ingredients))
+        instructions = lines[instructions_range[0]:instructions_range[1]]
+        instructions = list(map(lambda instruction: instruction.replace("\n", ""), instructions))
         recipe = Recipe(
             path.name.replace(".md", ""),
-            metadata_dict[Constants.RECIPE_TYPE],
-            metadata_dict[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata_dict.keys() else None,
-            metadata_dict[Constants.SOURCE] if Constants.SOURCE in metadata_dict.keys() else None,
-            metadata_dict[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata_dict.keys() else None,
-            metadata_dict[Constants.Season.SEASON].split(", ") if Constants.Season.SEASON in metadata_dict.keys() else None,
-            metadata_dict[Constants.TAGS].split(", ") if Constants.TAGS in metadata_dict.keys() else None
+            metadata[Constants.RECIPE_TYPE],
+            ingredients,
+            instructions,
+            metadata[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata.keys() else None,
+            metadata[Constants.SOURCE] if Constants.SOURCE in metadata.keys() else None,
+            metadata[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata.keys() else None,
+            metadata[Constants.Season.SEASON].split(", ") if Constants.Season.SEASON in metadata.keys() else None,
+            metadata[Constants.TAGS].split(", ") if Constants.TAGS in metadata.keys() else None
         )
 
         return recipe
@@ -143,3 +170,52 @@ class CookbookRepository:
                 profiles[profile].append(meal_plan_filter)
 
         return profiles
+
+    def _read_recipes_from_menu(self) -> list[Recipe]:
+        """
+        Read the recipes names listed in the menu file pointed by MENU_PATH
+        :return: a list of recipes names
+        """
+        with open(self.MENU_PATH, 'r') as f:
+            lines = f.readlines()
+
+        # filter the recipes cited in the names list
+        names = list(map(lambda name: name.split("[[")[1].split("]]")[0] if "[[" in name else "", lines))
+        return list(filter(lambda recipe: recipe.name in names, self.recipes))
+
+    def write_ingredients(self):
+        """
+        Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
+        The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
+        """
+        ingredients: list[str] = [ingredient.lower() for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
+        ingredients_aisles_reference = self._read_ingredients_aisles()
+
+        ingredients_aisles = {aisle: [] for aisle in ingredients_aisles_reference.keys()}
+        for aisle in ingredients_aisles_reference.keys():
+            for ingredient_reference in ingredients_aisles_reference[aisle]:
+                i = 0
+                while i < len(ingredients):
+                    if ingredient_reference.lower() in ingredients[i]:
+                        ingredients_aisles[aisle].append(ingredients.pop(i))
+                    else:
+                        i += 1
+        ingredients_aisles["Unclassified"] = ingredients
+
+        ingredients = []
+        for aisle in ingredients_aisles.keys():
+            if not ingredients_aisles[aisle]:
+                continue
+            ingredients.append(f"- [ ] {aisle} :\n" + "\n".join([f"  - [ ] {ingredient}" for ingredient in ingredients_aisles[aisle]]))
+
+        with open(self.INGREDIENTS_PATH, 'w') as f:
+            f.write("\n".join(ingredients))
+
+    def _read_ingredients_aisles(self) -> dict[list[str]]:
+        """
+        read from the file INGREDIENTS_AISLES_PATH the associations between ingredients and aisles
+        :return: a dict for which the keys are the aisles and the values are a list of ingredients
+        """
+        with open(self.INGREDIENTS_AISLES_PATH, 'r') as f:
+            lines = f.readlines()
+        return yaml.safe_load("".join(lines))
