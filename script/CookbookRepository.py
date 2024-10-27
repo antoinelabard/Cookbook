@@ -176,7 +176,6 @@ class CookbookRepository:
         Read the recipes names listed in the menu file pointed by MENU_PATH
         :return: a list of recipes names
         """
-
         with open(self.MENU_PATH, 'r') as f:
             lines = f.readlines()
 
@@ -189,7 +188,6 @@ class CookbookRepository:
         Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
         The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
         """
-
         ingredients: list[str] = [ingredient.lower() for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
         ingredients_aisles_reference = self._read_ingredients_aisles()
 
@@ -218,7 +216,6 @@ class CookbookRepository:
         read from the file INGREDIENTS_AISLES_PATH the associations between ingredients and aisles
         :return: a dict for which the keys are the aisles and the values are a list of ingredients
         """
-
         with open(self.INGREDIENTS_AISLES_PATH, 'r') as f:
             lines = f.readlines()
         return yaml.safe_load("".join(lines))

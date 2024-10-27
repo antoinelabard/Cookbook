@@ -2,7 +2,6 @@ class Recipe:
     """
     Recipe represents a cookbook recipe. It is a convenient way to access the metadata of a given recipe.
     """
-
     def __init__(self,
                  name: str,
                  recipe_type: str,
