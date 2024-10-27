@@ -28,5 +28,5 @@ season: summer
 1. Faites revenir l'oignon haché dans une casserole ou une poêle.
 2. Pendant ce temps faites cuire les pâtes, une fois celle-ci cuites, égouttez-les et rincez-les.
 3. Quand les oignons sont bien dorés, ajoutez-y les crevettes, faites revenir 5 min puis ajoutez les tomates coupées en dés.
-4. Laissez mijoter le tout 5 min puis ajoutez la crème   fraîche puis salez et poivrez.
+4. Laissez mijoter le tout 5 min puis ajoutez la crème fraîche puis salez et poivrez.
 5. Ajoutez la garniture aux pâtes et laissez mijoter 5 min (si le plat est trop sec vous pouvez ajouter de la crème ou du lait).

@@ -200,7 +200,8 @@ class CookbookRepository:
                 while i < len(ingredients):
                     if ingredient_reference.lower() in ingredients[i]:
                         ingredients_aisles[aisle].append(ingredients.pop(i))
-                    i += 1
+                    else:
+                        i += 1
         ingredients_aisles["Unclassified"] = ingredients
 
         ingredients = []
