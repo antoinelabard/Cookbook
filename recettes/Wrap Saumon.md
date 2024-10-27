@@ -20,7 +20,7 @@ meal: lunch
 - [ ] Tortillas : 4
 - [ ] Concombre : 1
 - [ ] Fromage frais : 160g
-- [ ] épinards : 200g
+- [ ] Épinards : 200g
 
 ## Préparation
 
