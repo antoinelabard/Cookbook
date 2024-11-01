@@ -38,16 +38,22 @@ if __name__ == "__main__":
     repository = CookbookRepository()
     meal_plan_builder = MealPlanBuilder()
 
-    meal_plan_created = False
+    new_export = False
+    new_meal_plan = False
+    new_ingredients_list = False
     for arg in sys.argv:
         if arg == "export":
-            repository.export_complete_cookbook()
+            new_export = True
         if arg in ["i", "ingredients"]:
-            repository.write_ingredients()
+            new_ingredients_list = True
         if arg in repository.profiles.keys():  # if arg is a profile name
-            meal_plan_created = True
+            new_meal_plan = True
             [meal_plan_builder.add_recipes(meal_plan_filter) for meal_plan_filter in repository.profiles[arg]]
 
-    if meal_plan_created:
+    if new_meal_plan:
         meal_plan = meal_plan_builder.build()
         repository.write_meal_plan(meal_plan)
+    if new_ingredients_list:
+        repository.write_ingredients()
+    if new_export:
+        repository.export_complete_cookbook()
