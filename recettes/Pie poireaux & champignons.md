@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Poireaux : 3
-- Champignons de Paris : 300g
-- Pâte feuilletée : 1
-- Beurre : 50g
-- Lait : 500ml
-- Fromage râpé : 100g
+- [ ] Poireaux : 3
+- [ ] Champignons de Paris : 300g
+- [ ] Pâte feuilletée : 1
+- [ ] Beurre : 50g
+- [ ] Lait : 500ml
+- [ ] Fromage râpé : 100g
 
 ## Préparation
 
