@@ -260,6 +260,7 @@ class CookbookRepository:
         for aisle in ingredients_aisles.keys():
             if not ingredients_aisles[aisle]:
                 continue
+            ingredients_aisles[aisle].sort()
             ingredients.append(f"- [ ] {aisle} :\n" + "\n".join([f"  - [ ] {ingredient}" for ingredient in ingredients_aisles[aisle]]))
 
         with open(self.INGREDIENTS_PATH, 'w') as f:
