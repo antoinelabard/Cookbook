@@ -61,7 +61,7 @@ class CookbookRepository:
     def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
         """
         :param path: the path to the markdown file containing the metadata
-        :return: A recipe object
+        :return: a recipe object if one of this name actually exists, else None
         """
         with open(path, 'r') as f:
             lines = f.readlines()
@@ -95,11 +95,15 @@ class CookbookRepository:
         instructions_range.append(len(lines))
 
         metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
+
         ingredients = lines[ingredients_range[0]:ingredients_range[1]]
-        ingredients = list(map(lambda ingredient: ingredient.replace("- [ ] ", ""), ingredients))
-        ingredients = list(map(lambda ingredient: ingredient.replace("\n", ""), ingredients))
+        ingredients = [ingredient.strip() for ingredient in ingredients]
+        ingredients = [ingredient.replace("- [ ] ", "") for ingredient in ingredients]
+        ingredients = [ingredient.replace("\n", "") for ingredient in ingredients]
+
         instructions = lines[instructions_range[0]:instructions_range[1]]
-        instructions = list(map(lambda instruction: instruction.replace("\n", ""), instructions))
+        instructions = [instruction.replace("\n", "") for instruction in instructions]
+
         recipe = Recipe(
             path.name.replace(".md", ""),
             metadata[Constants.RECIPE_TYPE],
