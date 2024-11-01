@@ -37,6 +37,9 @@ class CookbookRepository:
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
     INGREDIENTS_AISLES_PATH = ROOT_DIR / "ingredients.yaml"
 
+    LINK_DELIMITER_OPEN = "[["
+    LINK_DELIMITER_CLOSED = "]]"
+
     def __init__(self):
         self.recipes = self._read_recipes()
         self.profiles = self._read_profiles()
@@ -157,7 +160,7 @@ class CookbookRepository:
             lines = f.readlines()
 
         # filter the recipes cited in the names list
-        names = list(map(lambda name: name.split("[[")[1].split("]]")[0] if "[[" in name else "", lines))
+        names = list(map(lambda name: name.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0] if self.LINK_DELIMITER_OPEN in name else "", lines))
         return list(filter(lambda recipe: recipe.name in names, self.recipes))
 
     def _read_ingredients_aisles(self) -> dict[list[str]]:
@@ -199,9 +202,23 @@ class CookbookRepository:
         The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
         """
         ingredients: list[str] = [ingredient for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
+
+        index = 0
+        for ingredient in ingredients:
+            if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
+                igr = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
+
+                sub_recipe = list(filter(lambda recipe: recipe.name in igr, self.recipes))
+                if sub_recipe is not []:
+                    ingredients[index] = f"(==listé récursivement==) {ingredients[index]}"
+                    sub_ingredients = [f"{sub_ingredient} (fait partie de €€{igr}$$)" for sub_ingredient in sub_recipe[0].ingredients]
+                    [ingredients.append(sub_ingredient) for sub_ingredient in sub_ingredients]
+            index += 1
+
+        ingredients = [i.replace("€€", self.LINK_DELIMITER_OPEN).replace("$$", self.LINK_DELIMITER_CLOSED) for i in ingredients]
+
         # used to make lowercase string comparisons without altering the case when writing down the ingredients
         ingredients_lowercase = [ingredient.lower() for ingredient in ingredients]
-
         ingredients_aisles = {aisle: [] for aisle in self.ingredients_aisles.keys()}
         for aisle in self.ingredients_aisles.keys():
             for ingredient_reference in self.ingredients_aisles[aisle]:
