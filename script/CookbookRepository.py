@@ -214,24 +214,28 @@ class CookbookRepository:
             recipe_ingredients = [f"{igr} {self.ORIGINAL_RECIPE_MARKER} €€{recipe.name}$$" for igr in recipe.ingredients]
             ingredients = ingredients + recipe_ingredients
 
+        # look for inner recipes in the ingredients list. The list of ingredient will grow with the new inner ones. They are added at the end so that the iteration scans all of them recursively
+        # also concatenate the recipe's call stack as breadcrumbs
         index = 0
         for ingredient in ingredients:
             if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
                 recipe_name = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
 
-                sub_recipe = list(filter(lambda rcp: rcp.name in recipe_name, self.recipes))
-                if sub_recipe is not []:
-                    recipes_hierarchy_names = ingredients[index].split(f" {self.ORIGINAL_RECIPE_MARKER} ")
-                    recipes_hierarchy_names[0] = recipes_hierarchy_names[0].replace("[[", "€€").replace("]]", "$$")
-                    breadcrumbs = self.ORIGINAL_RECIPE_MARKER.join(recipes_hierarchy_names)
+                inner_recipe = list(filter(lambda rcp: rcp.name in recipe_name, self.recipes))
+                inner_recipe = inner_recipe[0] if inner_recipe else None
+                if inner_recipe is not None:
+                    breadcrumbs = ingredients[index].split(f" {self.ORIGINAL_RECIPE_MARKER} ")
+                    breadcrumbs[0] = breadcrumbs[0].replace("[[", "€€").replace("]]", "$$")
+                    breadcrumbs = self.ORIGINAL_RECIPE_MARKER.join(breadcrumbs)
 
                     ingredients[index] = breadcrumbs
                     sub_ingredients = [f"{sub_ingredient} {self.ORIGINAL_RECIPE_MARKER} {breadcrumbs}"
-                                       for sub_ingredient in sub_recipe[0].ingredients]
+                                       for sub_ingredient in inner_recipe.ingredients]
                     [ingredients.append(sub_ingredient) for sub_ingredient in sub_ingredients]
             index += 1
 
-        ingredients = [i.replace("€€", self.LINK_DELIMITER_OPEN).replace("$$", self.LINK_DELIMITER_CLOSED) for i in ingredients]
+        # replace the pseudo links delimiters by real ones
+        ingredients = [i.replace(self.PSEUDO_LINK_DELIMITER_OPEN, self.LINK_DELIMITER_OPEN).replace(self.PSEUDO_LINK_DELIMITER_CLOSED, self.LINK_DELIMITER_CLOSED) for i in ingredients]
 
         # used to make lowercase string comparisons without altering the case when writing down the ingredients
         ingredients_lowercase = [ingredient.lower() for ingredient in ingredients]
@@ -247,6 +251,7 @@ class CookbookRepository:
                         i += 1
         ingredients_aisles["Unclassified"] = ingredients
 
+        # prepare the final string, with all the ingredients classified by their aisle
         ingredients = []
         for aisle in ingredients_aisles.keys():
             if not ingredients_aisles[aisle]:
