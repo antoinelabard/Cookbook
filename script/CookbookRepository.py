@@ -198,15 +198,18 @@ class CookbookRepository:
         Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
         The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
         """
-        ingredients: list[str] = [ingredient.lower() for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
+        ingredients: list[str] = [ingredient for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
+        # used to make lowercase string comparisons without altering the case when writing down the ingredients
+        ingredients_lowercase = [ingredient.lower() for ingredient in ingredients]
 
         ingredients_aisles = {aisle: [] for aisle in self.ingredients_aisles.keys()}
         for aisle in self.ingredients_aisles.keys():
             for ingredient_reference in self.ingredients_aisles[aisle]:
                 i = 0
                 while i < len(ingredients):
-                    if ingredient_reference.lower() in ingredients[i]:
+                    if ingredient_reference.lower() in ingredients_lowercase[i]:
                         ingredients_aisles[aisle].append(ingredients.pop(i))
+                        ingredients_lowercase.pop(i)
                     else:
                         i += 1
         ingredients_aisles["Unclassified"] = ingredients
