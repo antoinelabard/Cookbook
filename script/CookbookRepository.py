@@ -40,6 +40,13 @@ class CookbookRepository:
     def __init__(self):
         self.recipes = self._read_recipes()
         self.profiles = self._read_profiles()
+        self.ingredients_aisles = self._read_ingredients_aisles()
+
+    def _get_recipes_paths(self) -> list[Path]:
+        """
+        :return: the list of the absolute paths of all the recipes in the cookbook
+        """
+        return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
 
     @classmethod
     def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
@@ -109,36 +116,6 @@ class CookbookRepository:
                 recipes.append(recipe)
         return recipes
 
-    def write_meal_plan(self, meal_plan: MealPlan) -> None:
-        """
-        Write down in a file the provided MealPlan.
-        :param meal_plan: the MealPlan to write down
-        """
-        meals_links: list[str] = []
-        for meal, recipes in meal_plan.__dict__.items():
-            recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
-            if recipes_links:
-                meals_links.append(f"# {meal}\n\n{recipes_links}")
-        with open(self.MENU_PATH, 'w') as f:
-            f.write("\n\n".join(meals_links))
-
-    def export_complete_cookbook(self) -> None:
-        """
-        Create a document containing quotes of the recipes contained in the cookbook.
-        """
-        page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
-        complete_cookbook_template: str = "# Livre de recettes\n\n{}"
-        files_wikilinks = sorted([f'![[{path.name}]]' for path in self._get_recipes_paths()])
-
-        with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
-            f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
-
-    def _get_recipes_paths(self) -> list[Path]:
-        """
-        :return: the list of the absolute paths of all the recipes in the cookbook
-        """
-        return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
-
     def _read_profiles(self) -> dict[str, list[MealPlanFilter]]:
         """
         Retrieve the profiles from "profiles.yaml" and present the data as an dictionary for which the keys are the
@@ -183,17 +160,49 @@ class CookbookRepository:
         names = list(map(lambda name: name.split("[[")[1].split("]]")[0] if "[[" in name else "", lines))
         return list(filter(lambda recipe: recipe.name in names, self.recipes))
 
+    def _read_ingredients_aisles(self) -> dict[list[str]]:
+        """
+        read from the file INGREDIENTS_AISLES_PATH the associations between ingredients and aisles
+        :return: a dict for which the keys are the aisles and the values are a list of ingredients
+        """
+        with open(self.INGREDIENTS_AISLES_PATH, 'r') as f:
+            lines = f.readlines()
+        return yaml.safe_load("".join(lines))
+
+    def write_meal_plan(self, meal_plan: MealPlan) -> None:
+        """
+        Write down in a file the provided MealPlan.
+        :param meal_plan: the MealPlan to write down
+        """
+        meals_links: list[str] = []
+        for meal, recipes in meal_plan.__dict__.items():
+            recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
+            if recipes_links:
+                meals_links.append(f"# {meal}\n\n{recipes_links}")
+        with open(self.MENU_PATH, 'w') as f:
+            f.write("\n\n".join(meals_links))
+
+    def export_complete_cookbook(self) -> None:
+        """
+        Create a document containing quotes of the recipes contained in the cookbook.
+        """
+        page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
+        complete_cookbook_template: str = "# Livre de recettes\n\n{}"
+        files_wikilinks = sorted([f'![[{path.name}]]' for path in self._get_recipes_paths()])
+
+        with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
+            f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
+
     def write_ingredients(self):
         """
         Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
         The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
         """
         ingredients: list[str] = [ingredient.lower() for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
-        ingredients_aisles_reference = self._read_ingredients_aisles()
 
-        ingredients_aisles = {aisle: [] for aisle in ingredients_aisles_reference.keys()}
-        for aisle in ingredients_aisles_reference.keys():
-            for ingredient_reference in ingredients_aisles_reference[aisle]:
+        ingredients_aisles = {aisle: [] for aisle in self.ingredients_aisles.keys()}
+        for aisle in self.ingredients_aisles.keys():
+            for ingredient_reference in self.ingredients_aisles[aisle]:
                 i = 0
                 while i < len(ingredients):
                     if ingredient_reference.lower() in ingredients[i]:
@@ -210,12 +219,3 @@ class CookbookRepository:
 
         with open(self.INGREDIENTS_PATH, 'w') as f:
             f.write("\n".join(ingredients))
-
-    def _read_ingredients_aisles(self) -> dict[list[str]]:
-        """
-        read from the file INGREDIENTS_AISLES_PATH the associations between ingredients and aisles
-        :return: a dict for which the keys are the aisles and the values are a list of ingredients
-        """
-        with open(self.INGREDIENTS_AISLES_PATH, 'r') as f:
-            lines = f.readlines()
-        return yaml.safe_load("".join(lines))
