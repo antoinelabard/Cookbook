@@ -39,6 +39,12 @@ class CookbookRepository:
 
     LINK_DELIMITER_OPEN = "[["
     LINK_DELIMITER_CLOSED = "]]"
+    # used to avoid infinite loops
+    PSEUDO_LINK_DELIMITER_OPEN = "€€"
+    PSEUDO_LINK_DELIMITER_CLOSED = "$$"
+
+
+    ORIGINAL_RECIPE_MARKER = " ---> "
 
     def __init__(self):
         self.recipes = self._read_recipes()
@@ -201,17 +207,27 @@ class CookbookRepository:
         Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
         The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
         """
-        ingredients: list[str] = [ingredient for sublist in list(map(lambda recipe: recipe.ingredients, self._read_recipes_from_menu())) for ingredient in sublist]
+
+        # retrieve in a single list all the ingredients from all the recipes in the menu. Add the recipe name as a suffix for each
+        ingredients: list[str] = []
+        for recipe in self._read_recipes_from_menu():
+            recipe_ingredients = [f"{igr} {self.ORIGINAL_RECIPE_MARKER} €€{recipe.name}$$" for igr in recipe.ingredients]
+            ingredients = ingredients + recipe_ingredients
 
         index = 0
         for ingredient in ingredients:
             if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
-                igr = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
+                recipe_name = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
 
-                sub_recipe = list(filter(lambda recipe: recipe.name in igr, self.recipes))
+                sub_recipe = list(filter(lambda rcp: rcp.name in recipe_name, self.recipes))
                 if sub_recipe is not []:
-                    ingredients[index] = f"(==listé récursivement==) {ingredients[index]}"
-                    sub_ingredients = [f"{sub_ingredient} (fait partie de €€{igr}$$)" for sub_ingredient in sub_recipe[0].ingredients]
+                    recipes_hierarchy_names = ingredients[index].split(f" {self.ORIGINAL_RECIPE_MARKER} ")
+                    recipes_hierarchy_names[0] = recipes_hierarchy_names[0].replace("[[", "€€").replace("]]", "$$")
+                    breadcrumbs = self.ORIGINAL_RECIPE_MARKER.join(recipes_hierarchy_names)
+
+                    ingredients[index] = breadcrumbs
+                    sub_ingredients = [f"{sub_ingredient} {self.ORIGINAL_RECIPE_MARKER} {breadcrumbs}"
+                                       for sub_ingredient in sub_recipe[0].ingredients]
                     [ingredients.append(sub_ingredient) for sub_ingredient in sub_ingredients]
             index += 1
 
