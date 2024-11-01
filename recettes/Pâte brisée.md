@@ -20,7 +20,7 @@ recipe-type: ingredient
 - [ ] Sucre (si pâte sucrée) : 15g
 - [ ] Lait ou eau : 8cl
 
-## Preparation
+## Préparation
 
 1. Mélanger la farine et le sel dans un plat (et le sucre si sucre il y a).
 2. Ajouter le beurre puis l'incorporer à la farine en pétrissant rapidement et légèrement du bout des doigts. On doit obtenir une sorte de semoule grossière en 2 ou 3 min.
