@@ -14,10 +14,10 @@ recipe-type: ingredient
 
 ## Ingrédients
 
-- Beurre : 50g
-- Farine : 50g
-- Lait : 60cl
-- Muscade
+- [ ] Beurre : 50g
+- [ ] Farine : 50g
+- [ ] Lait : 60cl
+- [ ] Muscade
 
 ## Préparation
 
