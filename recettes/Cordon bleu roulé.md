@@ -22,7 +22,7 @@ tags: cheat-meal
 - [ ] Farine
 - [ ] Huile de friture
 - [ ] Escalopes de dinde : 4
-- [ ] Tranches de jambon : 4
+- [ ] Jambon : 4 tranches
 - [ ] Oeufs : 2
 
 ## Préparation
