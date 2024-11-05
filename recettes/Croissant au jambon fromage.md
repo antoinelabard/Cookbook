@@ -17,7 +17,7 @@ tags: occasion
 
 ## Ingrédients
 
-- [ ] [[Béchamel]] : 80g
+- [ ] [[Béchamel]] : 100g
 - [ ] Gruyère râpé : 100g
 - [ ] Croissants : 4
 - [ ] Jambon : 4 tranches
