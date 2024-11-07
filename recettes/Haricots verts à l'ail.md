@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Haricots vers : 500g
+- [ ] Haricots verts : 500g
 - [ ] Gousse d'ail : 2
 - [ ] Beurre : 50g
 
