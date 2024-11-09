@@ -1,13 +1,8 @@
 week:
   -
-    quantity: 7
+    quantity: 14
     recipe-type: meal
     meal: lunch
-    is_in_season: true
-  -
-    quantity: 2
-    recipe-type: meal
-    meal: breakfast
     is_in_season: true
 example:
   -
