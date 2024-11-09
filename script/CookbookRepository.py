@@ -43,7 +43,7 @@ class CookbookRepository:
     PSEUDO_LINK_DELIMITER_OPEN = "€€"
     PSEUDO_LINK_DELIMITER_CLOSED = "$$"
 
-    BREADCRUMBS_SEPARATOR = " ---> "
+    SOURCE_RECIPE_SEPARATOR = " ---> "
 
     def __init__(self):
         self.recipes = self._read_recipes()
@@ -214,7 +214,7 @@ class CookbookRepository:
         # retrieve in a single list all the ingredients from all the recipes in the menu. Add the recipe name as a suffix for each
         menu_ingredients: list[str] = []
         for recipe in self._read_recipes_from_menu():
-            recipe_ingredients: list[str] = [f"{igr}<sup>{self.BREADCRUMBS_SEPARATOR} €€{recipe.name}$$</sup>" for igr in recipe.ingredients]
+            recipe_ingredients: list[str] = [f"{igr}<sup>{self.SOURCE_RECIPE_SEPARATOR} €€{recipe.name}$$</sup>" for igr in recipe.ingredients]
             menu_ingredients = menu_ingredients + recipe_ingredients
 
         # look for inner recipes in the ingredients list. The list of ingredient will grow with the new inner ones. They are added at the end so that the iteration scans all of them recursively
@@ -222,19 +222,19 @@ class CookbookRepository:
         index: int = 0
         for ingredient in menu_ingredients:
             if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
-                recipe_name: str = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
+                potential_recipe_name: str = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
 
-                inner_recipe: list[Recipe] = list(filter(lambda rcp: rcp.name in recipe_name, self.recipes))
+                inner_recipe: list[Recipe] = list(filter(lambda rcp: rcp.name in potential_recipe_name, self.recipes))
                 inner_recipe: Recipe = inner_recipe[0] if inner_recipe else None
                 if inner_recipe is not None:
-                    breadcrumbs: list[str] = menu_ingredients[index].split(f" {self.BREADCRUMBS_SEPARATOR} ")
-                    breadcrumbs[0] = breadcrumbs[0].replace("[[", "€€").replace("]]", "$$")
-                    breadcrumbs: str = self.BREADCRUMBS_SEPARATOR.join(breadcrumbs)
+                    source_recipe: str = (menu_ingredients[index]
+                                          .split(f"<sup>{self.SOURCE_RECIPE_SEPARATOR}")[0]
+                                          .replace("[[", "€€")
+                                          .replace("]]", "$$"))
 
-                    menu_ingredients[index] = breadcrumbs
-                    sub_ingredients: list[str] = [f"{sub_ingredient}<sup>{self.BREADCRUMBS_SEPARATOR}{breadcrumbs}</sup>"
+                    inner_recipe_ingredients: list[str] = [f"{sub_ingredient}<sup>{self.SOURCE_RECIPE_SEPARATOR}=={source_recipe}==</sup>"
                                                   for sub_ingredient in inner_recipe.ingredients]
-                    [menu_ingredients.append(sub_ingredient) for sub_ingredient in sub_ingredients]
+                    [menu_ingredients.append(sub_ingredient) for sub_ingredient in inner_recipe_ingredients]
             index += 1
 
         # replace the pseudo wikilinks delimiters by real ones
@@ -242,7 +242,7 @@ class CookbookRepository:
                                        for menu_ingredient in menu_ingredients]
 
         # used to make lowercase string comparisons without altering the case when writing down the ingredients. Also remove the breadcrumbs temporarily
-        menu_ingredients_lowercase: list[str] = [ingredient.lower().split(self.BREADCRUMBS_SEPARATOR)[0][0:-5] for ingredient in menu_ingredients]
+        menu_ingredients_lowercase: list[str] = [ingredient.lower().split(self.SOURCE_RECIPE_SEPARATOR)[0][0:-5] for ingredient in menu_ingredients]
         ingredients_aisles: dict[str, list[str]] = {aisle: [] for aisle in self.ingredients_aisles.keys()}
         i: int = 0
         while i < len(menu_ingredients):
