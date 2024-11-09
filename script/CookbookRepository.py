@@ -212,62 +212,64 @@ class CookbookRepository:
         """
 
         # retrieve in a single list all the ingredients from all the recipes in the menu. Add the recipe name as a suffix for each
-        ingredients: list[str] = []
+        menu_ingredients: list[str] = []
         for recipe in self._read_recipes_from_menu():
-            recipe_ingredients = [f"{igr}<sup>{self.BREADCRUMBS_SEPARATOR} €€{recipe.name}$$</sup>" for igr in recipe.ingredients]
-            ingredients = ingredients + recipe_ingredients
+            recipe_ingredients: list[str] = [f"{igr}<sup>{self.BREADCRUMBS_SEPARATOR} €€{recipe.name}$$</sup>" for igr in recipe.ingredients]
+            menu_ingredients = menu_ingredients + recipe_ingredients
 
         # look for inner recipes in the ingredients list. The list of ingredient will grow with the new inner ones. They are added at the end so that the iteration scans all of them recursively
         # also concatenate the recipe's call stack as breadcrumbs
-        index = 0
-        for ingredient_lowercase in ingredients:
-            if self.LINK_DELIMITER_OPEN in ingredient_lowercase and self.LINK_DELIMITER_CLOSED in ingredient_lowercase:
-                recipe_name = ingredient_lowercase.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
+        index: int = 0
+        for ingredient in menu_ingredients:
+            if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
+                recipe_name: str = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
 
-                inner_recipe = list(filter(lambda rcp: rcp.name in recipe_name, self.recipes))
-                inner_recipe = inner_recipe[0] if inner_recipe else None
+                inner_recipe: list[Recipe] = list(filter(lambda rcp: rcp.name in recipe_name, self.recipes))
+                inner_recipe: Recipe = inner_recipe[0] if inner_recipe else None
                 if inner_recipe is not None:
-                    breadcrumbs = ingredients[index].split(f" {self.BREADCRUMBS_SEPARATOR} ")
+                    breadcrumbs: list[str] = menu_ingredients[index].split(f" {self.BREADCRUMBS_SEPARATOR} ")
                     breadcrumbs[0] = breadcrumbs[0].replace("[[", "€€").replace("]]", "$$")
-                    breadcrumbs = self.BREADCRUMBS_SEPARATOR.join(breadcrumbs)
+                    breadcrumbs: str = self.BREADCRUMBS_SEPARATOR.join(breadcrumbs)
 
-                    ingredients[index] = breadcrumbs
-                    sub_ingredients = [f"{sub_ingredient}<sup>{self.BREADCRUMBS_SEPARATOR}{breadcrumbs}</sup>"
-                                       for sub_ingredient in inner_recipe.ingredients]
-                    [ingredients.append(sub_ingredient) for sub_ingredient in sub_ingredients]
+                    menu_ingredients[index] = breadcrumbs
+                    sub_ingredients: list[str] = [f"{sub_ingredient}<sup>{self.BREADCRUMBS_SEPARATOR}{breadcrumbs}</sup>"
+                                                  for sub_ingredient in inner_recipe.ingredients]
+                    [menu_ingredients.append(sub_ingredient) for sub_ingredient in sub_ingredients]
             index += 1
 
-        # replace the pseudo links delimiters by real ones
-        ingredients = [i.replace(self.PSEUDO_LINK_DELIMITER_OPEN, self.LINK_DELIMITER_OPEN).replace(self.PSEUDO_LINK_DELIMITER_CLOSED, self.LINK_DELIMITER_CLOSED) for i in ingredients]
+        # replace the pseudo wikilinks delimiters by real ones
+        menu_ingredients: list[str] = [menu_ingredient.replace(self.PSEUDO_LINK_DELIMITER_OPEN, self.LINK_DELIMITER_OPEN).replace(self.PSEUDO_LINK_DELIMITER_CLOSED, self.LINK_DELIMITER_CLOSED)
+                                       for menu_ingredient in menu_ingredients]
 
         # used to make lowercase string comparisons without altering the case when writing down the ingredients. Also remove the breadcrumbs temporarily
-        ingredients_lowercase = [ingredient.lower().split(self.BREADCRUMBS_SEPARATOR)[0][0:-5] for ingredient in ingredients]
-        ingredients_aisles = {aisle: [] for aisle in self.ingredients_aisles.keys()}
-        i = 0
-        while i < len(ingredients):
-            ingredient_lowercase = ingredients_lowercase[i]
-            aisles_candidates = {}  # sometimes, multiple reference ingredients match the tested recipe ingredient. This dictionary is used to enumerate those candidates and pick the winner among them
+        menu_ingredients_lowercase: list[str] = [ingredient.lower().split(self.BREADCRUMBS_SEPARATOR)[0][0:-5] for ingredient in menu_ingredients]
+        ingredients_aisles: dict[str, list[str]] = {aisle: [] for aisle in self.ingredients_aisles.keys()}
+        i: int = 0
+        while i < len(menu_ingredients):
+            ingredient_lowercase: str = menu_ingredients_lowercase[i]
+            aisles_candidates: dict[
+                str, str] = {}  # sometimes, multiple reference ingredients match the tested recipe ingredient. This dictionary is used to enumerate those candidates and pick the winner among them
             for aisle in self.ingredients_aisles.keys():
-                ingredients_refs_by_aisle = sorted(self.ingredients_aisles[aisle], key=lambda a: -len(a))
-                for ingredient_reference in ingredients_refs_by_aisle:
-                    ingredient_reference = ingredient_reference.lower()
-                    if ingredient_reference in ingredient_lowercase:
-                        aisles_candidates[ingredient_reference] = aisle
+                ref_ingredients_by_aisle: list[str] = sorted(self.ingredients_aisles[aisle], key=lambda a: -len(a))
+                for reference_ingredient in ref_ingredients_by_aisle:
+                    reference_ingredient: str = reference_ingredient.lower()
+                    if reference_ingredient in ingredient_lowercase:
+                        aisles_candidates[reference_ingredient] = aisle
             if not aisles_candidates:
                 i += 1
                 continue
-            winner_aisle = aisles_candidates[max(aisles_candidates.keys(), key=len)]  # the winner is the reference ingredient with the longer name (it's better to match "chorizo" than "riz")
-            ingredients_aisles[winner_aisle].append(ingredients.pop(i))
-            ingredients_lowercase.pop(i)
-        ingredients_aisles["Unclassified"] = ingredients
+            aisle_winner: str = aisles_candidates[max(aisles_candidates.keys(), key=len)]  # the winner is the reference ingredient with the longer name (it's better to match "chorizo" than "riz")
+            ingredients_aisles[aisle_winner].append(menu_ingredients.pop(i))
+            menu_ingredients_lowercase.pop(i)
+        ingredients_aisles["Unclassified"] = menu_ingredients
 
         # prepare the final string, with all the ingredients classified by their aisle
-        ingredients = []
+        menu_ingredients: list[str] = []
         for aisle in ingredients_aisles.keys():
             if not ingredients_aisles[aisle]:
                 continue
             ingredients_aisles[aisle].sort()
-            ingredients.append(f"- [ ] {aisle} :\n" + "\n".join([f"  - [ ] {ingredient}" for ingredient in ingredients_aisles[aisle]]))
+            menu_ingredients.append(f"- [ ] {aisle} :\n" + "\n".join([f"  - [ ] {ingredient}" for ingredient in ingredients_aisles[aisle]]))
 
         with open(self.INGREDIENTS_PATH, 'w') as f:
-            f.write("\n".join(ingredients))
+            f.write("\n".join(menu_ingredients))
