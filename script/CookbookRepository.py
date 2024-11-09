@@ -43,7 +43,6 @@ class CookbookRepository:
     PSEUDO_LINK_DELIMITER_OPEN = "€€"
     PSEUDO_LINK_DELIMITER_CLOSED = "$$"
 
-
     BREADCRUMBS_SEPARATOR = " ---> "
 
     def __init__(self):
@@ -221,9 +220,9 @@ class CookbookRepository:
         # look for inner recipes in the ingredients list. The list of ingredient will grow with the new inner ones. They are added at the end so that the iteration scans all of them recursively
         # also concatenate the recipe's call stack as breadcrumbs
         index = 0
-        for ingredient in ingredients:
-            if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
-                recipe_name = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
+        for ingredient_lowercase in ingredients:
+            if self.LINK_DELIMITER_OPEN in ingredient_lowercase and self.LINK_DELIMITER_CLOSED in ingredient_lowercase:
+                recipe_name = ingredient_lowercase.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
 
                 inner_recipe = list(filter(lambda rcp: rcp.name in recipe_name, self.recipes))
                 inner_recipe = inner_recipe[0] if inner_recipe else None
@@ -244,15 +243,22 @@ class CookbookRepository:
         # used to make lowercase string comparisons without altering the case when writing down the ingredients. Also remove the breadcrumbs temporarily
         ingredients_lowercase = [ingredient.lower().split(self.BREADCRUMBS_SEPARATOR)[0][0:-5] for ingredient in ingredients]
         ingredients_aisles = {aisle: [] for aisle in self.ingredients_aisles.keys()}
-        for aisle in self.ingredients_aisles.keys():
-            for ingredient_reference in self.ingredients_aisles[aisle]:
-                i = 0
-                while i < len(ingredients):
-                    if ingredient_reference.lower() in ingredients_lowercase[i]:
-                        ingredients_aisles[aisle].append(ingredients.pop(i))
-                        ingredients_lowercase.pop(i)
-                    else:
-                        i += 1
+        i = 0
+        while i < len(ingredients):
+            ingredient_lowercase = ingredients_lowercase[i]
+            aisles_candidates = {}  # sometimes, multiple reference ingredients match the tested recipe ingredient. This dictionary is used to enumerate those candidates and pick the winner among them
+            for aisle in self.ingredients_aisles.keys():
+                ingredients_refs_by_aisle = sorted(self.ingredients_aisles[aisle], key=lambda a: -len(a))
+                for ingredient_reference in ingredients_refs_by_aisle:
+                    ingredient_reference = ingredient_reference.lower()
+                    if ingredient_reference in ingredient_lowercase:
+                        aisles_candidates[ingredient_reference] = aisle
+            if not aisles_candidates:
+                i += 1
+                continue
+            winner_aisle = aisles_candidates[max(aisles_candidates.keys(), key=len)]  # the winner is the reference ingredient with the longer name (it's better to match "chorizo" than "riz")
+            ingredients_aisles[winner_aisle].append(ingredients.pop(i))
+            ingredients_lowercase.pop(i)
         ingredients_aisles["Unclassified"] = ingredients
 
         # prepare the final string, with all the ingredients classified by their aisle
