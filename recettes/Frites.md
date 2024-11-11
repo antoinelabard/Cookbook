@@ -28,9 +28,10 @@ tags: cheat-meal
 	3. Les passer très rapidement sous l’eau (sans trop pour ne pas retirer tout l’amidon).
 3. Cuisson :
 	1. Plonger les frites dans la friteuse pendant 5 min à 150°C.
-	2. Sortir les frites et secouer le panier pour bien égoutter l'huile. Les laisser reposer pendant au moins 10 min. Avant de remettre les frites, rallumer la friteuse à 180°C.
-	3. Plonger les frites une deuxième fois pendant 2 à 3 min.
-	4. Une fois le 2e bain réalisé, bien secouer le panier puis égoutter dans un saladier tapissé de papier absorbant. Saler tout de suite.
+	2. Sortir les frites et secouer le panier pour bien égoutter l'huile.
+	3. Avant de remettre les frites, rallumer la friteuse à 180°C. Les laisser reposer pendant au moins 10 min.
+	4. Plonger les frites une deuxième fois pendant 2 à 3 min.
+	5. Une fois le 2e bain réalisé, bien secouer le panier puis égoutter dans un saladier tapissé de papier absorbant. Saler tout de suite.
 
 > [!tip]
 > Le secret de la cuisson des frites réside dans le fait de réaliser **2 cuissons successives** à des températures différentes :
