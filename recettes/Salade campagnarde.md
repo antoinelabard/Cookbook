@@ -23,10 +23,8 @@ meal: lunch
 
 ## Préparation
 
-1. ![[Oeufs cuits]]
-2. ![[Pommes de terres sautées]]
-3. Pendant ce temps, faites cuire les œufs dans une casserole d'eau bouillante pendant 10 min.
-4. Placez-les dans un bol d'eau froide pour stopper la cuisson, écalez-les et coupez-les en morceaux.
-5. Après 10 minutes. Coupez la cuisson des pommes de terre.
-6. Dans la poêle, faites cuire le bacon 2 minutes sur chaque face.
-7. Dressez la salade : dans une assiette ajoutez la mâche, les pommes de terres, les œufs, le bacon et le chèvre. (Optionnel : ajoutez des herbes fraîches). C'est prêt !
+1. Pendant ce temps, faites cuire les œufs dans une casserole d'eau bouillante pendant 10 min.
+2. Placez-les dans un bol d'eau froide pour stopper la cuisson, écalez-les et coupez-les en morceaux.
+3. Après 10 minutes. Coupez la cuisson des pommes de terre.
+4. Dans la poêle, faites cuire le bacon 2 minutes sur chaque face.
+5. Dressez la salade : dans une assiette ajoutez la mâche, les pommes de terres, les œufs, le bacon et le chèvre. (Optionnel : ajoutez des herbes fraîches). C'est prêt !

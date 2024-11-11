@@ -25,7 +25,6 @@ tags: occasion
 ## Préparation
 
 1. Commencer par ouvrir vos croissants en deux à l'aide d'un couteau sans les séparer complètement.
-2. ![[Béchamel]]
-3. Dès que votre béchamel est prête, faites y< fondre du fromage puis l'étaler à l'intérieur des croissants. Ajouter une tranche de jambon roulée, puis encore de la béchamel et du fromage râpé.
-4. Recommencer ceci pour les 3 autres.
-5. Mettre au four à 180°C (thermostat 6) pendant 20 min tout en surveillant.
+2. Dès que votre béchamel est prête, faites y fondre du fromage puis l'étaler à l'intérieur des croissants. Ajouter une tranche de jambon roulée, puis encore de la béchamel et du fromage râpé.
+3. Recommencer ceci pour les 3 autres.
+4. Mettre au four à 180°C (thermostat 6) pendant 20 min tout en surveillant.

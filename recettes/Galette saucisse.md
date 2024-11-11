@@ -22,8 +22,7 @@ meal: lunch
 
 ## Préparation
 
-1. ![[Oignons confits]]
-2. Coupez les saucisses en rondelles et faites-les revenir à feu vif dans une poêle chaude avec une noisette de beurre pendant 3 minutes jusqu'à ce qu'elles soit bien dorées.
-3. Retirez les saucisses de la poêle et mettez-les de côté.
-4. Ajoutez une 1 galette dans la poêle, étalez le confit d'oignon, saupoudrez de fromage râpé et ajoutez quelques rondelles de saucisse sur le dessus.
-5. Laissez cuire à feu moyen 3 minutes, jusqu'à ce que le fromage soit bien fondu, puis refermez votre galette, servez, c'est prêt !
+1. Coupez les saucisses en rondelles et faites-les revenir à feu vif dans une poêle chaude avec une noisette de beurre pendant 3 minutes jusqu'à ce qu'elles soit bien dorées.
+2. Retirez les saucisses de la poêle et mettez-les de côté.
+3. Ajoutez une 1 galette dans la poêle, étalez le confit d'oignon, saupoudrez de fromage râpé et ajoutez quelques rondelles de saucisse sur le dessus.
+4. Laissez cuire à feu moyen 3 minutes, jusqu'à ce que le fromage soit bien fondu, puis refermez votre galette, servez, c'est prêt !

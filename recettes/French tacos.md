@@ -28,11 +28,10 @@ tags: cheat-meal
 
 ## Préparation
 
-1. ![[Frites]]
-2. Préparer la viande : Faire revenir un oignon haché dans de l'huile de cuisson, lorsqu'il est translucide, ajouter la viande hachée, le sel et le poivre. Remuer de temps en temps jusqu'à fin de cuisson.
-3. Préparer la sauce fromagère : Faire bouillir la crème dans une casserole, ajouter l'emmental, remuer jusqu'à ce qu'il soit fondu. Ajouter le cheddar coupé grossièrement et le poivre. Faire épaissir la sauce. Mixer.
-4. Le montage : Disposer les deux tortillas l'une légèrement sur l'autre. Étaler la sauce barbecue (ou autre dessus en évitant les bords). Mettre la moitié des frites au centre. ![[French tacos - montage 1.webp]]
-5. Ajouter la moitié de la sauce fromagère par dessus puis ajouter la moitié de la viande hachée. Bien centrer les aliments (en formant un rectangle) pour rendre le pliage plus facile. ![[French tacos - montage 2.webp]]
-6. Plier les bords l'un après l'autre en commençant par le bord du haut, puis celui vers vous, puis ceux des côtés en essayant de toujours bien tasser les aliments à l'intérieur. ![[French tacos - montage 3.webp]]
-7. Retourner le tacos et le faire cuire dans une machine à panini pendant 3 minutes (ou dans une poêle 3 minutes de chaque côté en commençant par le côté du pliage pour le sceller).
-8. C'est prêt!
+1. Préparer la viande : Faire revenir un oignon haché dans de l'huile de cuisson, lorsqu'il est translucide, ajouter la viande hachée, le sel et le poivre. Remuer de temps en temps jusqu'à fin de cuisson.
+2. Préparer la sauce fromagère : Faire bouillir la crème dans une casserole, ajouter l'emmental, remuer jusqu'à ce qu'il soit fondu. Ajouter le cheddar coupé grossièrement et le poivre. Faire épaissir la sauce. Mixer.
+3. Le montage : Disposer les deux tortillas l'une légèrement sur l'autre. Étaler la sauce barbecue (ou autre dessus en évitant les bords). Mettre la moitié des frites au centre. ![[French tacos - montage 1.webp]]
+4. Ajouter la moitié de la sauce fromagère par dessus puis ajouter la moitié de la viande hachée. Bien centrer les aliments (en formant un rectangle) pour rendre le pliage plus facile. ![[French tacos - montage 2.webp]]
+5. Plier les bords l'un après l'autre en commençant par le bord du haut, puis celui vers vous, puis ceux des côtés en essayant de toujours bien tasser les aliments à l'intérieur. ![[French tacos - montage 3.webp]]
+6. Retourner le tacos et le faire cuire dans une machine à panini pendant 3 minutes (ou dans une poêle 3 minutes de chaque côté en commençant par le côté du pliage pour le sceller).
+7. C'est prêt!

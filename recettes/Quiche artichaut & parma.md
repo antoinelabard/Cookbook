@@ -26,8 +26,6 @@ meal: lunch
 
 ## Préparation
 
-![[Pâte brisée]]
-
 1. Préchauffez le four à 180°C. Placez la pâte dans votre moule à tarte et piquez-la à l'aide d'une fourchette. Une fois le four chaud, faites pré-cuire votre pâte pendant 5 minutes.
 2. Dans un récipient, ajoutez : les oeufs, le lait, la crème, sel, poivre et fouettez le tout énergiquement.
 3. Une fois la pâte pré-cuite, sortez-la du four.

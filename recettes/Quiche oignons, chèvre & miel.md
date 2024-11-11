@@ -24,8 +24,6 @@ meal: lunch
 
 ## Préparation
 
-![[Pâte brisée]]
-
 1. Préchauffez le four à 200°C. Épluchez puis coupez les oignons en demi-rondelles.
 2. Faites-les revenir dans une poêle à feu moyen avec un filet d'huile pendant 10 minutes en remuant régulièrement.
 3. Pendant que les oignons cuisent, étalez la pâte dans un plat à tarte et la faire précuire au four environ 5 minutes.
