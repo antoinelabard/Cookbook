@@ -34,4 +34,4 @@ tags: cheat-meal
 4. Ajouter la moitié de la sauce fromagère par dessus puis ajouter la moitié de la viande hachée. Bien centrer les aliments (en formant un rectangle) pour rendre le pliage plus facile. ![[French tacos - montage 2.webp]]
 5. Plier les bords l'un après l'autre en commençant par le bord du haut, puis celui vers vous, puis ceux des côtés en essayant de toujours bien tasser les aliments à l'intérieur. ![[French tacos - montage 3.webp]]
 6. Retourner le tacos et le faire cuire dans une machine à panini pendant 3 minutes (ou dans une poêle 3 minutes de chaque côté en commençant par le côté du pliage pour le sceller).
-7. C'est prêt!
+7. C'est prêt !
