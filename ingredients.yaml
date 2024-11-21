@@ -1,8 +1,7 @@
 Conserves:
   - Artichauts
   - Asperges
-  - Boîte de thon
-  - Boîtes de thon
+  - Thon
   - Câpres
   - Chair de tomates
   - Concentré de tomate
@@ -11,7 +10,6 @@ Conserves:
   - Gazpacho
   - Germes de soja
   - Haricots
-  - Haricots rouges
   - Légumes à couscous
   - Maïs
   - Olives
@@ -44,10 +42,8 @@ Produits secs:
   - Oeuf
   - Pain de mie
   - Pains à burgers
-  - Pâtes
+  - Pâte
   - Riz
-  - Riz ou pâtes
-  - Sauce
   - Sauce tomate
   - Semoule
   - Spaghetti
@@ -93,10 +89,11 @@ Produits du monde:
   - Lait de coco
   - Nouilles chinoises
   - Nuoc nam
+  - Pita
   - Ramen
   - Saké
   - Sauce soja
-  - Tortillas
+  - Tortilla
 Produits frais:
   - Bacon
   - Galettes bretonnes
