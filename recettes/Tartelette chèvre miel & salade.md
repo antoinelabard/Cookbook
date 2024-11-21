@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Pâte feuilletée : 1
 - [ ] Fromage de chèvre : 200g
-- [ ] Lardons : 100g
+- [ ] Lardons : 200g
 - [ ] Miel : 6cl
 - [ ] Salade : 200g
 - [ ] Herbes de Provence

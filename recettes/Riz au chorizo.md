@@ -12,20 +12,21 @@ season: summer, autumn
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    15min    |   -   |  15min  |
+|    15min    |   -   |  25min  |
 
 ## Ingrédients
 
 - [ ] Chorizo : 1
 - [ ] Poivrons : 2
 - [ ] Oignon : 1
-- [ ] Riz : 400g
+- [ ] Riz : 280g
 - [ ] Olives vertes : 200g
 - [ ] Bouillon de volaille : 1
 
 ## Préparation
 
-1. Enlevez la peau du chorizo et le couper en rondelles. Le faire frire et mettre de côté.
-2. Faire dorer l'oignon, ensuite ajouter les poivrons, les faire bien revenir,
-3. ajouter le cube et l'eau, puis à ébullition versez le riz.
-4. Saler légèrement et poivrer. 5 mn avant la fin de la cuisson, ajouter les olives et le chorizo avec un peu d'huile de cuisson.
+1. Enlevez la peau du chorizo et le couper en cubes. Émincez l'oignon et couper en cubes les poivrons.
+2. Dans une poêle, faites revenir l'oignon et les poivrons.
+3. Ajoutez 60cl d'eau. Portez à ébullition et ajoutez le cube de bouillon.
+4. Versez le riz et laisser cuire à couvert (environ 15min).
+5. Saler légèrement et poivrer. Ajouter les olives et le chorizo avec un peu d'huile de cuisson et laisser cuire encore 5 min. Le riz devrait avoir absorbé l'eau. Rajoutez-en un peu s'il n'est pas assez cuit.
