@@ -214,7 +214,7 @@ class CookbookRepository:
         # retrieve in a single list all the ingredients from all the recipes in the menu. Add the recipe name as a suffix for each
         menu_ingredients: list[str] = []
         for recipe in self._read_recipes_from_menu():
-            recipe_ingredients: list[str] = [f"{igr}<sup>{self.SOURCE_RECIPE_SEPARATOR} €€{recipe.name}$$</sup>" for igr in recipe.ingredients]
+            recipe_ingredients: list[str] = [f"{igr}<sup>{self.SOURCE_RECIPE_SEPARATOR}€€{recipe.name}$$</sup>" for igr in recipe.ingredients]
             menu_ingredients = menu_ingredients + recipe_ingredients
 
         # look for inner recipes in the ingredients list. The list of ingredient will grow with the new inner ones. They are added at the end so that the iteration scans all of them recursively
