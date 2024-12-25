@@ -26,7 +26,7 @@ tags: fail
 ## Préparation
 
 1. Dans une poêle ajouter le beurre, déposer la galette, ajouter une bonne cuillère de ~~sucre~~ sel en poudre.
-2.  Laisser pendant presque 10 minutes à feu doux, ~~caraméliser gentiment~~.
+2. Laisser pendant presque 10 minutes à feu doux, ~~caraméliser gentiment~~.
 3. Couvrir avec un couvercle pour aider le ~~sucre~~ sel à fondre.
 4. Une fois que la galette a bien ~~caramélisé~~ séché (élasticité nulle), couper le feu et laisser refroidir un peu.
 5. Étaler le fromage blanc et ajouter les myrtilles.

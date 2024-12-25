@@ -19,7 +19,7 @@ meal: lunch
 - [ ] Petits pois : 120g
 - [ ] Jambon : 8 tranches
 - [ ] Oeufs : 4
-- [ ] Sauce soja (optionnel) 
+- [ ] Sauce soja (optionnel)
 
 ## Préparation
 

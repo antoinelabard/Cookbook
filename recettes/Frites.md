@@ -37,5 +37,5 @@ tags: cheat-meal
 > Le secret de la cuisson des frites réside dans le fait de réaliser **2 cuissons successives** à des températures différentes :
 > 1. 5 minutes à 140-150° pour les précuire ;
 > 2. 2-3 minutes à 180° pour les dorer.
-> 
+>
 > L’autre secret : bien séparer les 2 bains de friture en laissant le temps aux frites de « sécher » entre les 2 bains (10 minutes suffisent mais pour vous faciliter la vie, sachez que vous pouvez le faire jusqu’à 2 h à l’avance).

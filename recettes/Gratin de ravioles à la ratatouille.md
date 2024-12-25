@@ -21,7 +21,9 @@ meal: lunch
 - [ ] Comté râpé : 100g
 
 ## Préparation
+
 todo: faire cuire les ravioles à l'eau avant
+
 1. Préchauffez le four à 220°C. Beurrez un plat à gratin.
 2. Disposez une première cuillère à soupe de ratatouille et un filet de crème fraîche dans le fond du plat. Ajoutez les ravioles "en plaque".
 3. Répétez l'opération de manière à obtenir des couches successives.

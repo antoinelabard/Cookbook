@@ -32,7 +32,7 @@ meal: lunch
 3. Ajoutez le sucre, mélangez et laissez cuire 5 minutes à feu vif.
 4. Placez la pâte dans votre moule à tarte et piquez-la à l'aide d'une fourchette. Une fois le four chaud, faites pré-cuire votre pâte pendant 5 minutes.
 5. Ajoutez le balsamique dans la poêle avec les poireaux. Mélangez et laissez cuire 5 minutes supplémentaires.
-6. Dans un récipient, ajoutez : les oeufs, le lait, la crème, le sel,  le poivre et fouettez le tout énergiquement.
+6. Dans un récipient, ajoutez : les oeufs, le lait, la crème, le sel, le poivre et fouettez le tout énergiquement.
 7. Sortez la pâte du four, répartissez les poireaux dans le fond.
 8. Puis versez l'appareil à quiche par-dessus et ajoutez le brie en tranches.
 9. Enfournez votre quiche pendant 30 minutes à 200°C. C'est prêt !
