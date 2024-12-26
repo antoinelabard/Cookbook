@@ -149,6 +149,7 @@ class CookbookRepository:
                     is_in_season = profile_filter[Constants.Season.IS_IN_SEASON]
                 if Constants.TAGS in profile_filter.keys():
                     tags = profile_filter[Constants.TAGS]
+                    if type(tags) is str: tags = [tags]
                 meal_plan_filter = MealPlanFilter(
                     profile_filter[Constants.QUANTITY],
                     profile_filter[Constants.RECIPE_TYPE],

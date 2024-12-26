@@ -13,7 +13,16 @@
 TABLE without id file.link as "Dernières recettes ajoutées", dateformat(date-added, "yyyy-MM-dd") AS "Ajout"
 FROM "recettes" 
 SORT date-added DESC
-LIMIT 10
+LIMIT 5
+```
+
+<br>
+
+```dataview
+TABLE without id file.link as "Modifications récentes", dateformat(file.mtime, "yyyy-MM-dd") AS "Modification"
+FROM "recettes" 
+SORT file.mtime DESC
+LIMIT 5
 ```
 
 <br>

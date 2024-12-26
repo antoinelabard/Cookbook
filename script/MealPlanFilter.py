@@ -10,6 +10,7 @@ class MealPlanFilter:
     MealPlanFilters can be combined in a profile, to get recipes following different requirement. For example,
     you may need to select a given quantity of lunches, and then another one of breakfasts.
     """
+
     def __init__(self,
                  quantity: int,
                  recipe_type: str,
@@ -54,14 +55,7 @@ class MealPlanFilter:
                 return False
 
         # tags
-        if self.tags:
-            if recipe.tags is None:
-                return False
-            for tag in self.tags:
-                if tag not in recipe.tags:
-                    return False
-
-        if not self.tags and recipe.tags:
+        if set(self.tags) != set(recipe.tags):  # verifies identity independently of order in the collections
             return False
 
         return True

@@ -8,6 +8,11 @@ SYNOPSIS
     ./cookbook.py [OPTION]...
     python3 cookbook.py [OPTION]...
 
+    cookbook.py can take several arguments:
+        - export: create a markdown file containing wikilinks for all the recipes of the cookbook. It can be read using
+        Obsidian (https://obsidian.md).
+        - profile: generate a menu following the filters pointed by "profile" (defined in profiles.yaml).
+
 DESCRIPTION
     cookbook.py is intended to generate a random menu matching some filters. Those filters can be given as command line
     arguments, but they also can be given via profiles defined in the script. This script is used to decrease the mental
@@ -19,14 +24,15 @@ DESCRIPTION
 CONFIGURATION
     cookbook.py needs Python3.11 or higher to work (https://www.python.org/downloads/).
 
-    cookbook.py can take several arguments:
-        - export: create a markdown file containing wikilinks for all the recipes of the cookbook. It can be read using
-        Obsidian (https://obsidian.md).
-        - profile: generate a menu following the filters pointed by "profile" (defined in profiles.yaml).
+    A profile example is specified in profiles.yaml. It gives most use cases to generate a meal plan.
 
-    A profile example is specified in profiles.yaml. It gives most use cases to generate a meal plan. profiles are
-    stored in a file as a hashmap for which the keys are the profiles names, and the value is a list of all the filters
-    of each profile. You can ask to generate several meal plans by chaining their profiles names in the command prompt.
+    Profiles are stored in a file as a map for which the keys are the profiles names, and the value is a list of all the
+    filters of each profile. You can ask to generate several meal plans by chaining their profiles names in the command
+    prompt.
+
+    quantity, recipe-type, meal are mandatory, is_in_season and tags are optional. Concerning tags, for a recipe to be
+    selected, it must have all the tags specified, no more or less. if tags is not specified, only recipes with no tag
+    will be selected.
 """
 
 import sys
