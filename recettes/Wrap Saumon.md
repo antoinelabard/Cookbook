@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/wrap-saumon-818imdydbxgg00zb131u
 season: spring, summer
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Wrap Saumon

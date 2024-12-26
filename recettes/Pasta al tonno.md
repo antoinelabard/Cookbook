@@ -3,6 +3,7 @@ date-added: 2023-04-03
 source: https://jow.fr/recipes/pasta-al-tonno-8dtcesvb21e910lk0hur
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Pasta al tonno

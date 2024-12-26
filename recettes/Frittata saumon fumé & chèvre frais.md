@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/frittata-saumon-fume-et-chevre-frais-8qex601udpjn
 recipe-type: meal
 meal: lunch
 season: spring, summer, autumn
+tags: veto-M
 ---
 
 # Frittata saumon fumé & chèvre frais

@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Patates douces : 1.2kg
 - [ ] Oignon : 1
-- [ ] Crotins de chèvre : 2
+- [ ] Crottins de chèvre : 4
 - [ ] Thym
 - [ ] Miel : 2cc
 

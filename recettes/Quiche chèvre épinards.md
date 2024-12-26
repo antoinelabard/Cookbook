@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/quiche-chevre-epinards-89nzh3fuhktx84vm06ld
 recipe-type: meal
 meal: lunch
 season: spring, summer, autumn
+tags: veto-M
 ---
 
 # Quiche chèvre épinards

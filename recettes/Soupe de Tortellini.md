@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/soupe-de-tortellini-83x4fct25i9ck5bo0rfo
 recipe-type: meal
 meal: lunch
 season: spring, summer, autumn
+tags: veto-M
 ---
 
 # Soupe de Tortellini

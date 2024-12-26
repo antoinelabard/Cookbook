@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/feuilletes-epinard-feta-et-salade-8ofb50sdi3skh0c
 recipe-type: meal
 meal: lunch
 season: spring, summer, autumn
+tags: veto-M
 ---
 
 # Feuilletés épinard, feta & salade

@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/veloute-d-endives-au-lard-8eqq2izhbbwikptt019h
 season: autumn, winter
 recipe-type: meal
 meal: lunch
+tags: veto-G
 ---
 
 # Velouté d'endives au lard

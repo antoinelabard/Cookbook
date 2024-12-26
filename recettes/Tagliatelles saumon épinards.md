@@ -3,6 +3,7 @@ date-added: 2022-12-22
 source: https://jow.fr/recipes/tagliatelles-saumon-epinards-8mgeez8om7kh9dob02ba
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Tagliatelles saumon épinards

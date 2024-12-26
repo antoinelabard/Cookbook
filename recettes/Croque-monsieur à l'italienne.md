@@ -4,6 +4,7 @@ source: https://www.marmiton.org/recettes/recette_croque-monsieur-a-l-italienne_
 season: summer
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Croque-monsieur à l'italienne

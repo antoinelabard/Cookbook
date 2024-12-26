@@ -16,7 +16,7 @@ season: summer
 
 ## Ingrédients
 
-- [ ] Tomates charnues : 8
+- [ ] Tomates charnues ou gros champignons à farcir : 8
 - [ ] Fromage de chèvre : 1 bûche
 - [ ] Champignons de Paris : 80g
 - [ ] Lardons : 350g

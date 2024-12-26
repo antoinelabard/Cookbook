@@ -4,6 +4,7 @@
 LIST
 FROM "recettes"
 WHERE meal = "breakfast"
+AND recipe-type = "meal"
 AND !tags
 ```
 
@@ -13,6 +14,7 @@ AND !tags
 LIST
 FROM "recettes"
 WHERE meal = "snack"
+AND recipe-type = "meal"
 AND !tags
 ```
 
@@ -22,5 +24,6 @@ AND !tags
 LIST
 FROM "recettes"
 WHERE meal = "lunch"
+AND recipe-type = "meal"
 AND !tags
 ```

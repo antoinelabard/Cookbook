@@ -3,6 +3,7 @@ date-added: 2023-04-03
 source: https://jow.fr/recipes/oeuf-cocotte-epinards-et-lard-8g6daeb7he8gk81h0p2i
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Oeuf cocotte épinards & lard

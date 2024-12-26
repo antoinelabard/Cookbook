@@ -3,6 +3,7 @@ date-added: 2024-03-03
 source: 
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # One pot curry de pommes de terre

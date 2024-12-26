@@ -3,7 +3,8 @@
 ```dataview
 LIST
 FROM "recettes"
-WHERE (season = "spring") OR contains(season, "spring")
+WHERE ((season = "spring") OR contains(season, "spring"))
+AND recipe-type = "meal"
 ```
 
 ## Été
@@ -11,7 +12,8 @@ WHERE (season = "spring") OR contains(season, "spring")
 ```dataview
 LIST
 FROM "recettes"
-WHERE (season = "summer") OR contains(season, "summer")
+WHERE ((season = "summer") OR contains(season, "summer"))
+AND recipe-type = "meal"
 ```
 
 ## Automne
@@ -19,7 +21,8 @@ WHERE (season = "summer") OR contains(season, "summer")
 ```dataview
 LIST
 FROM "recettes"
-WHERE (season = "autumn") OR contains(season, "autumn")
+WHERE ((season = "autumn") OR contains(season, "autumn"))
+AND recipe-type = "meal"
 ```
 
 ## Hiver
@@ -27,5 +30,6 @@ WHERE (season = "autumn") OR contains(season, "autumn")
 ```dataview
 LIST
 FROM "recettes"
-WHERE (season = "winter") OR contains(season, "winter")
+WHERE ((season = "winter") OR contains(season, "winter"))
+AND recipe-type = "meal"
 ```
