@@ -16,7 +16,7 @@ tags: cheat-meal
 
 ## Ingrédients
 
-- [ ] Camembert : 1
+- [ ] Camembert : 2
 - [ ] Potatoes : 600g
 - [ ] Gousses d'ail : 2
 - [ ] Romarin

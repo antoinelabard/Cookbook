@@ -19,9 +19,8 @@ meal: lunch
 - [ ] Poireaux : 3
 - [ ] Champignons de Paris : 300g
 - [ ] Pâte feuilletée : 1
-- [ ] Beurre : 50g
-- [ ] Lait : 500ml
 - [ ] Fromage râpé : 100g
+- [ ] [[Béchamel]] : 5
 
 ## Préparation
 
@@ -29,8 +28,7 @@ meal: lunch
 2. Dans une poêle bien chaude, ajoutez une noisette de beurre et le poireau égoutté. Faites revenir à feu vif pendant 2 minutes en remuant. Salez et poivrez.
 3. Baissez le feu et laissez mijoter à couvert pendant 8 minutes.
 4. Pendant ce temps, préchauffez le four à 180°C. Lavez et coupez les champignons en lamelles.
-5. Dans une casserole, faites fondre le beurre, ajoutez la farine et remuez énergiquement avec un fouet.
-6. Versez le lait petit à petit dans la casserole en mélangeant jusqu'à obtenir un mélange lisse et homogène.
+5. Préparer la béchamel.
 7. Salez, poivrez et ajoutez le fromage râpé. Mélangez jusqu'à ce que le fromage soit bien fondu.
 8. Versez le poireau dans la béchamel. Ajoutez aussi les champignons et mélangez.
 9. Versez les légumes et la béchamel dans un plat allant au four préalablement beurré.
