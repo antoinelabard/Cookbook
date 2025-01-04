@@ -29,8 +29,8 @@ meal: lunch
 
 1. Émincez les oignons finement.
 2. Lavez, épluchez, puis émincez les carottes en brunoise (petits cubes).
-3. Dans une casserole, ajoutez un filet d'huile d'olive, faire dorer les oignons 1 minute.
+3. Dans une casserole, ajoutez un filet d'huile, faire dorer les oignons 1 minute.
 4. Ajoutez ensuite : le jus de citron, le curcuma et les carottes. Mélangez.
 5. Puis le blé, 1,2l d'eau, le bouillon de légumes et le concentré de tomates, sel, poivre.
 6. Mélangez, laissez mijoter à couvert à feu doux pendant 30 minutes.
-8. Optionnel : ajoutez une pointe de lait de coco ou de crème et quelques feuilles de persil si vous en avez chez vous.
+8. Optionnel : ajoutez le lait de coco quelques feuilles de persil si vous en avez.
