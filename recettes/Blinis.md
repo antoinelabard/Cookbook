@@ -16,11 +16,11 @@ tags: occasion
 
 ## Ingrédients
 
-- Levure de boulanger : 10g
-- Farine : 150g
-- Oeufs : 2
-- Lait à température ambiante : 20cl
-- Beurre
+- [ ] Levure de boulanger : 10g
+- [ ] Farine : 150g
+- [ ] Oeufs : 2
+- [ ] Lait à température ambiante : 20cl
+- [ ] Beurre
 
 ## Préparation
 

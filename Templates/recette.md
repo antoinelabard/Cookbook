@@ -30,7 +30,7 @@ tags:
 
 ## Ingrédients
 
-- 
+- [ ] 
 
 ## Préparation
 

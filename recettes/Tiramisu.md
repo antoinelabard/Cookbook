@@ -16,13 +16,13 @@ tags: occasion
 
 ## Ingrédients
 
-- Cacao amer : 10g
-- Sucre roux : 100g
-- Oeufs : 3
-- Sucre vanillé : 1 sachet
-- Mascarpone : 250g
-- biscuits à la cuillère
-- Café sans sucre : 50cl
+- [ ] Cacao amer : 10g
+- [ ] Sucre roux : 100g
+- [ ] Oeufs : 3
+- [ ] Sucre vanillé : 1 sachet
+- [ ] Mascarpone : 250g
+- [ ] biscuits à la cuillère
+- [ ] Café sans sucre : 50cl
 
 ## Préparation
 
