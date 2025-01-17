@@ -17,7 +17,7 @@ tags: occasion
 ## Ingrédients
 
 - [ ] Pâte feuilletée : 1
-- [ ] comté râpé : 75g
+- [ ] Comté râpé : 75g
 - [ ] Crème fraîche : 5cl
 - [ ] Oeuf : 1
 
@@ -27,6 +27,6 @@ tags: occasion
 2. Dérouler la pâte et la couper en 4 triangles égaux.
 3. Déposer un peu de farce au fromage sur chaque moitié de triangle en laissant 1cm sur les bords.
 4. Humidifier les bords avec de l'eau et plier les triangles en deux pour les refermer.
-5. Souder les bords en vous aidant d'une fourchette, pour que la garniture ne s'échappe pas à la cuisson.
+5. Souder les bords en vous aidant d'une fourchette, pour que la garniture ne s'échappe pas à la cuisson.
 6. Déposer les triangles sur une plaque de cuisson tapissée de papier cuisson.
-7. Badigeonner les feuilletés avec le jaune d'œuf puis enfourner pendant 15 minutes. Ils doivent être bien dorés.
+7. Badigeonner les feuilletés avec le jaune d'œuf puis enfourner pendant 15 minutes. Ils doivent être bien dorés.

@@ -30,7 +30,7 @@ tags: cheat-meal
 1. Coupez les blancs de poulet en gros dés, mettez-les dans un saladier.
 2. Ajoutez l'ail séché et le paprika.
 3. Malaxez pour bien enrober les dés de poulet.
-4. Mélangez la farine avec un peu de sel et de poivre puis mettez-la dans une assiette. Écrasez un peu les corn-flakes puis déposez-les dans une assiette. Dans une assiette, fouettez l'oeuf avec le lait. Roulez les dés de poulet dans la farine.
+4. Mélangez la farine avec un peu de sel et de poivre puis mettez-la dans une assiette. Écrasez un peu les corn-flakes puis déposez-les dans une assiette. Dans une assiette, fouettez l'oeuf avec le lait. Roulez les dés de poulet dans la farine.
 5. Puis roulez-les dans l'oeuf battu.
 6. Puis enrobez-les des corn-flakes.
 7. Faites chauffer l'huile de friture dans une grande poêle et ajoutez les dés de poulet.

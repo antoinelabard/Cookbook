@@ -16,12 +16,12 @@ tags: occasion
 
 ## Ingrédients
 
-- Beurre : 200g
-- Chocolat : 250g
-- Levure chimique : 11g
-- Farine : 100g
-- Sucre en poudre : 140g
-- Oeufs : 4
+- [ ] Beurre : 200g
+- [ ] Chocolat : 250g
+- [ ] Levure chimique : 11g
+- [ ] Farine : 100g
+- [ ] Sucre en poudre : 140g
+- [ ] Oeufs : 4
 
 ## Préparation
 

@@ -21,4 +21,4 @@ meal: lunch
 ## Préparation
 
 1. Émincer les oignons.
-2. Dans une sauteuse, faire chauffer un filet d'huile de cuisson à feu moyen à vif. Faire revenir l'oignon avec le sucre 10 à 15 min jusqu'à ce qu'il soit caramélisé. Saler, poivrer. Remuer de temps en temps.
+2. Dans une sauteuse, faire chauffer un filet d'huile de cuisson à feu moyen à vif. Faire revenir l'oignon avec le sucre 10 à 15 min jusqu'à ce qu'il soit caramélisé. Saler, poivrer. Remuer de temps en temps.
