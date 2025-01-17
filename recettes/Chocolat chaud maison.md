@@ -26,4 +26,4 @@ Pour un mug (25cl) :
 
 1. Casser le chocolat en morceau, le mettre dans une casserole y ajouter le lait et les 10 cl de crème liquide.
 2. Mélanger. Le tout doit chauffer 3 minutes.
-3. Battre à l'aide d'un batteur électrique le reste de la crème liquide (ce qui donnera de la chantilly).
+3. Battre à l'aide d'un batteur électrique le reste de la crème liquide (ce qui donnera de la chantilly).

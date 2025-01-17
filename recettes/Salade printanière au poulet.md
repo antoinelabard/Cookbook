@@ -37,5 +37,5 @@ meal: lunch
 10. Dans un saladier, ajoutez les graines, les petits pois, les tranches de radis et la feta émiettée. Ajoutez le vinaigre, un filet d'huile d'olive, sel, poivre et mélangez le tout.
 11. Ajoutez le poulet, mélangez. Servez, c'est prêt !
 
-> [!tip]
+> [!tip]  
 > Pour avoir une peau bien dorée, roulez le filet de poulet dans la farine avant de le cuire.

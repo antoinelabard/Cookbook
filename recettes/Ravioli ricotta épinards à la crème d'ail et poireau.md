@@ -26,9 +26,9 @@ tags: veto-M
 
 ## Préparation
 
-1. Coupez et retirez la base abîmée du poireau. Incisez-le en deux dans la longueur et rincez-le soigneusement. Émincez-le. Émincez l'oignon. 
-2. Dans une sauteuse, faites chauffer un filet d'huile à feu moyen à vif.  Faites revenir l'oignon et le poireau 10 min.
-3. Au bout des 10 min, ajoutez les épinards, un fond d'eau et poursuivez la cuisson 5 min. Salez, poivrez.
+1. Coupez et retirez la base abîmée du poireau. Incisez-le en deux dans la longueur et rincez-le soigneusement. Émincez-le. Émincez l'oignon.
+2. Dans une sauteuse, faites chauffer un filet d'huile à feu moyen à vif. Faites revenir l'oignon et le poireau 10 min.
+3. Au bout des 10 min, ajoutez les épinards, un fond d'eau et poursuivez la cuisson 5 min. Salez, poivrez.
 4. Portez à ébullition une casserole d'eau salée. Faites cuire les ravioli selon les indications du paquet.
-5. Pressez ou hachez l'ail. Une fois les légumes cuits, ajoutez la crème, l'ail et les ravioli dans la sauteuse. Mélangez bien. Faites revenir le tout 1 à 2 min. Goûtez et rectifiez l'assaisonnement si nécessaire.
+5. Pressez ou hachez l'ail. Une fois les légumes cuits, ajoutez la crème, l'ail et les ravioli dans la sauteuse. Mélangez bien. Faites revenir le tout 1 à 2 min. Goûtez et rectifiez l'assaisonnement si nécessaire.
 6. Servez sans attendre vos ravioli ricotta épinards à la crème d'ail, épinards et poireau !

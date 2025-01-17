@@ -33,7 +33,7 @@ tags: cheat-meal
 	4. Plonger les frites une deuxième fois pendant 2 à 3 min.
 	5. Une fois le 2e bain réalisé, bien secouer le panier puis égoutter dans un saladier tapissé de papier absorbant. Saler tout de suite.
 
-> [!tip]
+> [!tip]  
 > Le secret de la cuisson des frites réside dans le fait de réaliser **2 cuissons successives** à des températures différentes :
 > 1. 5 minutes à 140-150° pour les précuire ;
 > 2. 2-3 minutes à 180° pour les dorer.

@@ -22,5 +22,5 @@ meal: lunch
 ## Préparation
 
 1. Faire fondre une noix de beurre dans la poêle et y faire revenir quelques gousses d'ail émincées selon votre goût.
-2. Couper un peu les haricots si besoin avant la cuisson afin qu'ils ne soient pas trop longs.
+2. Couper un peu les haricots si besoin avant la cuisson afin qu'ils ne soient pas trop longs.
 3. Mettre les haricots verts dans la poêle et faire chauffer le tout en remuant régulièrement.
