@@ -19,7 +19,7 @@ meal: lunch
 - [ ] Échalote : 1
 - [ ] Gousse d'ail : 1
 - [ ] Comté : 80g
-- [ ] Saucisse fumée : 400G
+- [ ] Saucisses fumées : 4
 - [ ] Bouillon de volaille : 1
 - [ ] Vin blanc : 8cl
 
