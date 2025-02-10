@@ -23,14 +23,17 @@ class MealPlanBuilder:
         """
         Randomly add to the internal MealPlan some of the recipes matching the provided filters. The selected
         recipes add up to the one already in the MealPlanFilter instance of the builder
-        :param meal_plan_filter: the
-        current set of filters to select only the recipe matching the requirements. It also provides the quantity of
-        recipes to be picked.
+        :param meal_plan_filter: the current set of filters to select only the recipe matching the requirements. It also
+        provides the quantity of recipes to be picked.
         """
-        filtered_recipes: list[Recipe] = [recipe for recipe in self.repository.recipes if meal_plan_filter.matches_filters(recipe)]
+        filtered_recipes: list[Recipe] = [recipe for recipe in self.repository.recipes
+                                          if meal_plan_filter.matches_filters(recipe)]
         if not filtered_recipes:
             return
 
+        print(
+            f"Picking {len(meal_plan_filter.quantity if meal_plan_filter.quantity is None else [])} "
+            + f"among {len(filtered_recipes)}.")
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()
         picked_recipes: list[Recipe] = []
         quantity = meal_plan_filter.quantity

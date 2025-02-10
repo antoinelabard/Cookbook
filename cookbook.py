@@ -52,9 +52,11 @@ if __name__ == "__main__":
             new_export = True
         if arg in ["i", "ingredients"]:
             new_ingredients_list = True
+            print("Ingredients list generated.")
         if arg in repository.profiles.keys():  # if arg is a profile name
             new_meal_plan = True
             [meal_plan_builder.add_recipes(meal_plan_filter) for meal_plan_filter in repository.profiles[arg]]
+            print("Meal plan generated.")
 
     if new_meal_plan:
         meal_plan = meal_plan_builder.build()
