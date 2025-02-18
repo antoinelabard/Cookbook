@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/soupe-iranienne-83cr2ceb05gjhxfg0g28
 season: winter
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Soupe iranienne
