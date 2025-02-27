@@ -17,7 +17,6 @@ meal: lunch
 
 - [ ] Oignon : 1
 - [ ] Gousse d'ail : 1
-- [ ] Céleri : 10cl
 - [ ] Carotte : 1
 - [ ] Origan
 - [ ] Viande hachée : 800g
@@ -28,6 +27,6 @@ meal: lunch
 
 1. Faire précuire les haricots s'ils sont frais ou surgelés, à la vapeur ou dans de l'eau chaude.
 2. Pendant ce temps, faire revenir l'oignon émincés puis la viande dans une sauteuse.
-3. Ajouter la carotte coupée en petits dés, l'ail, le sel, le poivre, le céleri et la tomate.
+3. Ajouter la carotte coupée en petits dés, l'ail, le sel, le poivre, et la tomate.
 4. Couvrir avec de l'eau et faire mijoter.
 5. Ajouter les haricots verts précuits 5 min avant la fin de la cuisson... et déguster chaud.
