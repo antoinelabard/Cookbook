@@ -39,6 +39,7 @@ Vous pouvez retrouver le repository de ce livre sur GitHub : **[https://github.c
 ❤️ Merci aux contributeurs du projet :
 
 - Alexis Goblot
+- Maïwenn Gallois-Petit
 - Katy Osmont
 - Nicolas Noirault
 
