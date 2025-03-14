@@ -23,9 +23,9 @@ tags: veto-M, veto-G
 - [ ] Oignon : 1
 - [ ] Gousses d'ail : 6
 - [ ] Jambon blanc : 300g
-- [ ] sauce tomate : 50cl
-- [ ] oeufs : 2
-- [ ] gruyère râpé : 45g
+- [ ] Sauce tomate : 50cl
+- [ ] Oeufs : 2
+- [ ] Gruyère râpé : 100g
 
 ## Préparation
 
