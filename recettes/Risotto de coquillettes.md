@@ -27,8 +27,8 @@ meal: lunch
 
 1. Épluchez et émincez l'échalote.
 2. Faites-les rissoler 2 minutes dans une casserole avec une noisette de beurre.
-3. Ajoutez les coquillettes et laissez-les dorer 2 minutes. Versez le vin blanc et mélangez jusqu'à absorption.
-4. Faites bouillir 1l d'eau et faites-y dissoudre le bouillon.
+3. Ajoutez les coquillettes et le bouillon émietté, et laissez-les dorer 2 minutes. Versez le vin blanc et mélangez jusqu'à absorption.
+4. Faites bouillir 1l d'eau.
 5. Ajoutez une louche de bouillon et mélangez jusqu'à absorption, recommencez l'opération pendant 10 minutes. Goûtez les coquillettes. Continuez la cuisson quelques minutes si elles sont trop fermes.
 6. Une fois les coquillettes cuites, salez, poivrez, ajoutez la crème, le comté râpé et mélangez.
 7. Roulez les tranches de jambons et coupez-les afin d’obtenir des lamelles.
