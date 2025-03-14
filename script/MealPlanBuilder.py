@@ -32,7 +32,7 @@ class MealPlanBuilder:
             return
 
         print(
-            f"Picking {len(meal_plan_filter.quantity if meal_plan_filter.quantity is None else [])} "
+            f"Picking {meal_plan_filter.quantity if meal_plan_filter.quantity is not None else 0} recipes "
             + f"among {len(filtered_recipes)}.")
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()
         picked_recipes: list[Recipe] = []
