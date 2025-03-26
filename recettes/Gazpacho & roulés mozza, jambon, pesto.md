@@ -16,11 +16,11 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ]Gazpacho : 1l
-- [ ]Pain de mie : 8 tranches
-- [ ]Sauce pesto : 8cc
-- [ ]Mozzarella : 120g
-- [ ]Jambon blanc : 4 tranches
+- [ ] Gazpacho : 1l
+- [ ] Pain de mie : 8 tranches
+- [ ] Sauce pesto : 8cc
+- [ ] Mozzarella : 120g
+- [ ] Jambon blanc : 4 tranches
 
 ## Préparation
 
