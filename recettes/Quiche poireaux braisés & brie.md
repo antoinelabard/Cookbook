@@ -4,6 +4,7 @@ source: https://jow.fr/recipes/quiche-poireaux-braises-et-brie-8e4z41w4lapt196f0
 season: autumn, winter
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Quiche poireaux braisés & brie

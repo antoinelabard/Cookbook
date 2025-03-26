@@ -3,6 +3,7 @@ date-added: 2022-12-15
 source: https://www.marmiton.org/recettes/recette_tarte-a-l-oignon_28444.aspx
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Quiche à l'oignon et aux lardons fumés

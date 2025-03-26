@@ -3,6 +3,7 @@ date-added: 2023-12-04
 source: https://jow.fr/recipes/quiche-oignons-chevre-et-miel-84b8cuy3atxi5ww90sr3
 recipe-type: meal
 meal: lunch
+tags: veto-M
 ---
 
 # Quiche oignons, chèvre & miel

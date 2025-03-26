@@ -1,7 +1,6 @@
 ---
 date-added: 2021-11-25
 source: https://www.marmiton.org/recettes/recette_omelette-aux-pommes-de-terre-et-lardons_19387.aspx
-season: mid-season
 recipe-type: meal
 meal: lunch
 ---
