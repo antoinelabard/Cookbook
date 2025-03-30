@@ -15,12 +15,12 @@ meal: lunch
 
 ## Ingrédients
 
-- Carottes : 600g
-- Semoule : 160g
-- Pois chiches (cuits) : 200g
-- Chipolatas : 8
-- Chair de tomate : 160g
-- Épices orientales
+- [ ] Carottes : 600g
+- [ ] Semoule : 160g
+- [ ] Pois chiches (cuits) : 200g
+- [ ] Chipolatas : 8
+- [ ] Chair de tomate : 160g
+- [ ] Épices orientales
 
 ## Préparation
 
