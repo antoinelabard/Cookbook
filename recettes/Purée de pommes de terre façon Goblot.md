@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Pommes de terre : 1kg
-- [ ] Crème fraîche : 10cl
+- [ ] Crème fraîche : 20cl
 - [ ] Lait
 - [ ] Oeuf : 1
 - [ ] Muscade
