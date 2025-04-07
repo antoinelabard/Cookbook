@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Oeufs : 12
 - [ ] Champignons de Paris : 400g
-- [ ] Salade : 200g
+- [ ] Salade (optionnel) : 200g
 - [ ] Comté : 100g
 - [ ] Échalote : 1
 
