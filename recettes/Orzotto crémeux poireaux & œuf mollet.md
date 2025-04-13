@@ -7,7 +7,7 @@ meal: lunch
 
 # Orzotto crémeux poireaux & œuf mollet
 
-![[Orzotto crémeux poireaux & œuf mollet .webp]]
+![[Orzotto crémeux poireaux & œuf mollet.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|

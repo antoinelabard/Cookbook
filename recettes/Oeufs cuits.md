@@ -14,7 +14,7 @@ recipe-type: ingredient
 
 ## Ingrédients
 
-- [ ] Oeufs : 4
+- [ ] Oeuf : 1
 
 ## Préparation
 
