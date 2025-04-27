@@ -2,5 +2,5 @@
 LIST
 FROM "recettes"
 WHERE recipe-type = "ingredient"
-SORT meal
+SORT file.name ASC
 ```

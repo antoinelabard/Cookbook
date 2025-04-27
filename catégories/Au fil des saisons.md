@@ -7,6 +7,7 @@ WHERE ((season = "spring") OR contains(season, "spring"))
 AND recipe-type = "meal"
 AND meal = "lunch"
 AND !tags
+SORT file.name ASC
 ```
 
 ## Été
@@ -18,6 +19,7 @@ WHERE ((season = "summer") OR contains(season, "summer"))
 AND recipe-type = "meal"
 AND meal = "lunch"
 AND !tags
+SORT file.name ASC
 ```
 
 ## Automne
@@ -29,6 +31,7 @@ WHERE ((season = "autumn") OR contains(season, "autumn"))
 AND recipe-type = "meal"
 AND meal = "lunch"
 AND !tags
+SORT file.name ASC
 ```
 
 ## Hiver
@@ -40,6 +43,7 @@ WHERE ((season = "winter") OR contains(season, "winter"))
 AND recipe-type = "meal"
 AND meal = "lunch"
 AND !tags
+SORT file.name ASC
 ```
 
 ## Toute l'année
@@ -51,4 +55,5 @@ WHERE !season
 AND recipe-type = "meal"
 AND meal = "lunch"
 AND !tags
+SORT file.name ASC
 ```

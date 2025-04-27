@@ -5,6 +5,7 @@ LIST
 FROM "recettes"
 WHERE recipe-type = "meal"
 AND tags = "cheat-meal"
+SORT file.name ASC
 ```
 
 ## Pour les occasions
@@ -14,4 +15,5 @@ LIST
 FROM "recettes"
 WHERE recipe-type = "meal"
 AND tags = "occasion"
+SORT file.name ASC
 ```
