@@ -20,9 +20,8 @@ meal: lunch
 - [ ] Champignons de Paris : 200g
 - [ ] Vin blanc sec : 20cl
 - [ ] Bouillon de volaille : 1
-- [ ] Au choix :
-	- [ ] Choix 1 - Riz ou pâtes : 400g
-	- [ ] Choix 2 -[[Purée de pommes de terre façon Goblot]] : 1kg
+- [ ] Choix 1 - Riz ou pâtes : 400g
+- [ ] Choix 2 - [[Purée de pommes de terre façon Goblot]] : 1kg
 
 ## Préparation
 

@@ -30,7 +30,7 @@ season: spring, summer, autumn
 2. Pendant ce temps, épluchez puis émincez finement les échalotes.
 3. Coupez les extrémités des poireaux pour ne garder que le blanc, puis émincez-le finement. Placez-le dans une passoire et rincez abondamment pour retirer les impuretés.
 4. Faire cuire les pâtes selon les instructions du paquet.
-5. Dans une casserole ou une cocotte, ajoutez un filet d'huile d'olive puis faites revenir l'échalote pendant 2 minutes sur feu moyen.
+5. Dans une casserole ou une cocotte, ajoutez un filet d'huile, puis faites revenir l'échalote pendant 2 minutes sur feu moyen.
 6. Ajoutez les poireaux émincés et le bouillon de légumes. Dès que le bouillon a été absorbé. Ajoutez le vin blanc et mélangez jusqu'à absorption.
 7. Ajoutez le poulet grillé et les pâtes, mélangez bien et laissez cuire encore 2 minutes.
 8. Hors du feu, ajoutez le chèvre frais, poivrez et mélangez bien jusqu'à ce qu'il fonde. Salez, poivrez et mélangez.

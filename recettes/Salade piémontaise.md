@@ -22,6 +22,7 @@ meal: lunch
 - [ ] [[Oeufs cuits]] durs : 2
 - [ ] Mayonnaise : 20cl
 - [ ] Cornichons : 200g
+- [ ] Chips : 300g
 
 ## Préparation
 
