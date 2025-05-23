@@ -23,7 +23,6 @@ meal: breakfast
 
 ## Préparation
 
-1. ![[Porridge]]
-2. Épluchez puis coupez la banane en rondelles.
-3. Mélangez le porridge puis ajoutez la cannelle.
-4. Versez le porridge dans un bol, ajoutez les bananes, saupoudrez de cannelle, ajoutez les noix (optionnel) et arrosez de sirop d'érable. C'est prêt !
+1. Épluchez puis coupez la banane en rondelles.
+2. Mélangez le porridge puis ajoutez la cannelle.
+3. Versez le porridge dans un bol, ajoutez les bananes, saupoudrez de cannelle, ajoutez les noix (optionnel) et arrosez de sirop d'érable. C'est prêt !

@@ -22,10 +22,9 @@ meal: breakfast
 
 ## Préparation
 
-1. ![[Oeufs cuits]]
-2. Faire griller les toasts.
-3. Couper l'avocat en tranche.
-4. Éplucher délicatement les oeufs.
-5. Déposer sur les toasts l'avocat puis les oeufs.
-6. Saupoudrer de ciboulette et de poivre.
-7. Couper les oeufs en deux au dernier moment.
+1. Faire griller les toasts.
+2. Couper l'avocat en tranche.
+3. Éplucher délicatement les oeufs.
+4. Déposer sur les toasts l'avocat puis les oeufs.
+5. Saupoudrer de ciboulette et de poivre.
+6. Couper les oeufs en deux au dernier moment.
