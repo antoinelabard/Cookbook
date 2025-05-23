@@ -18,8 +18,8 @@ meal: lunch
 - [ ] Haricots verts : 600g
 - [ ] [[Oeufs cuits]] mollets : 4
 - [ ] Lardons : 300g
-- [ ] Moutarde à l'ancienne : 40g
-- [ ] Huile d'olive : 6cl
+- [ ] Moutarde à l'ancienne : 20g
+- [ ] Huile d'olive : 3cl
 - [ ] Persil
 
 ## Préparation
