@@ -3,7 +3,6 @@ date-added: 2024-03-14
 source: https://jow.fr/recipes/curry-de-pois-chiches-88jijog4dkfkezug18m4
 recipe-type: meal
 meal: lunch
-tags: veto-M
 ---
 
 # Curry de pois chiches

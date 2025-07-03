@@ -4,7 +4,6 @@ source: https://www.marmiton.org/recettes/recette_quiche-poireaux-chevre-lardons
 recipe-type: meal
 meal: lunch
 season: spring, summer, autumn
-tags: veto-M
 ---
 
 # Quiche poireaux, chèvre lardons

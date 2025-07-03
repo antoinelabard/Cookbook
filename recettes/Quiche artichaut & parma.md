@@ -4,7 +4,6 @@ source: https://jow.fr/recipes/quiche-artichaut-et-parma-8btrdugd6b1jdzgp10qd
 season: summer, autumn
 recipe-type: meal
 meal: lunch
-tags: veto-M
 ---
 
 # Quiche artichaut & parma

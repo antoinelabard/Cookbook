@@ -24,7 +24,7 @@ DESCRIPTION
 CONFIGURATION
     cookbook.py needs Python3.11 or higher to work (https://www.python.org/downloads/).
 
-    A profile example is specified in profiles.yaml. It gives most use cases to generate a meal plan.
+    A profile example is specified in profiles.yaml. It gives most of the use cases to generate a meal plan.
 
     Profiles are stored in a file as a map for which the keys are the profiles names, and the value is a list of all the
     filters of each profile. You can ask to generate several meal plans by chaining their profiles names in the command

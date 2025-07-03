@@ -3,7 +3,6 @@ date-added: 2024-03-04
 source: https://jow.fr/recipes/ravioles-a-la-toscane-8ekx43augkyoka5t0v68
 recipe-type: meal
 meal: lunch
-tags: veto-M
 ---
 
 # Ravioles à la toscane

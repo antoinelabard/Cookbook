@@ -4,7 +4,6 @@ source: https://www.marmiton.org/recettes/recette_lasagnes-au-saumon-et-aux-epin
 season: winter
 recipe-type: meal
 meal: lunch
-tags: veto-M
 ---
 
 # Lasagnes au saumon et aux épinards

@@ -3,7 +3,6 @@ date-added: 2024-03-04
 source: https://jow.fr/recipes/chakchouka-haricots-verts-et-feta-8vrjh5mhc2ow02tu0lov
 recipe-type: meal
 meal: lunch
-tags: veto-M
 ---
 
 # Chakchouka haricots verts & feta

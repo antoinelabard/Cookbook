@@ -4,7 +4,6 @@ source: Nathalie des Francas
 recipe-type: meal
 meal: lunch
 season: winter, spring
-tags: veto-M, veto-G
 ---
 
 # Endives en pochon

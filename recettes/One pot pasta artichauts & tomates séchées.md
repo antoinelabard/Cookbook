@@ -3,7 +3,6 @@ date-added: 2023-01-07
 source: https://jow.fr/recipes/one-pot-pasta-artichauts-et-tomates-sechees-8lowbg1v4jn4lds806ny
 recipe-type: meal
 meal: lunch
-tags: veto-M
 ---
 
 # One pot pasta artichauts & tomates séchées

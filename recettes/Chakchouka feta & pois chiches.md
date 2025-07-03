@@ -4,7 +4,6 @@ source: https://jow.fr/recipes/chakchouka-feta-et-pois-chiches-8jgr45ec0ejkkumm0
 recipe-type: meal
 meal: lunch
 season: summer
-tags: veto-M
 ---
 
 # Chakchouka feta & pois chiches

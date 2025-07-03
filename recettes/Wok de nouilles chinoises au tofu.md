@@ -3,7 +3,6 @@ date-added: 2025-01-17
 source: https://www.marmiton.org/recettes/recette_wok-de-nouilles-chinoises-au-tofu_165354.aspx
 recipe-type: meal
 meal: lunch
-tags: veto-G
 ---
 
 # Wok de nouilles chinoises au tofu

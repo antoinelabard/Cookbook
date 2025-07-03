@@ -4,7 +4,6 @@ source: https://jow.fr/recipes/mafe-de-poulet-et-riz-8lqn6ri6lq3qi7930qzc
 recipe-type: meal
 meal: lunch
 season: summer
-tags: veto-M
 ---
 
 # Mafé de poulet & riz

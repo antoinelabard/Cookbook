@@ -4,7 +4,6 @@ source: https://www.quitoque.fr/recette/12522/ravioli-aux-girolles-et-sauce-au-g
 recipe-type: meal
 meal: lunch
 season: spring, summer, autumn
-tags: veto-M
 ---
 
 # Ravioli ricotta épinards à la crème d'ail et poireau

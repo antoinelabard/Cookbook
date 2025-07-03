@@ -4,7 +4,6 @@ source: https://www.marmiton.org/recettes/recette_tarte-thon-tomate-et-moutarde_
 season: summer
 recipe-type: meal
 meal: lunch
-tags: veto-M
 ---
 
 # Tarte thon, tomate et moutarde

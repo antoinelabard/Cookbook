@@ -4,7 +4,6 @@ source: https://www.marmiton.org/recettes/recette_quiche-aux-asperges-et-lardons
 recipe-type: meal
 meal: lunch
 season: spring
-tags: veto-M
 ---
 
 # Quiche aux asperges et lardons

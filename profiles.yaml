@@ -1,6 +1,6 @@
 week:
   -
-    quantity: 14
+    quantity: 7
     recipe-type: meal
     meal: lunch
     is_in_season: true
@@ -22,3 +22,4 @@ example:
     quantity: 1
     recipe-type: meal
     meal: lunch
+    tags: occasion

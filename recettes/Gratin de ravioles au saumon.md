@@ -3,7 +3,7 @@ date-added: 2023-11-27
 source: https://jow.fr/recipes/gratin-de-ravioles-au-saumon-8donlfxyb41z8wra070a
 recipe-type: meal
 meal: lunch
-tags: vegetarian, veto-G
+tags: vegetarian
 ---
 
 # Gratin de ravioles au saumon
