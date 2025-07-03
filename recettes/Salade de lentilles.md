@@ -6,9 +6,9 @@ recipe-type: meal
 meal: lunch
 ---
 
-# Délicieuse salade de lentilles
+# Salade de lentilles
 
-![[Délicieuse salade de lentilles.webp]]
+![[Salade de lentilles.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
