@@ -1,5 +1,5 @@
 ---
-date-added: {{date}}
+date-added: <% tp.date.now("YYYY-MM-DD") %>
 source: 
 season:
   - spring
@@ -20,9 +20,9 @@ tags:
   - vegetarian
 ---
 
-# {{title}}
+# <% tp.file.title %>
 
-![[{{title}}.webp]]
+![[<% tp.file.title %>.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
