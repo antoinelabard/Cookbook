@@ -4,7 +4,7 @@ source: https://www.ptitchef.com/recettes/plat/pizza-baguette-fid-1566290
 season: winter
 recipe-type: meal
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Pizza baguette

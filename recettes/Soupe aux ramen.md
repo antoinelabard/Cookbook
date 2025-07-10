@@ -3,7 +3,7 @@ date-added: 2021-12-20
 source: https://www.marmiton.org/recettes/recette_soupe-aux-ramen_225544.aspx
 recipe-type: meal
 meal: lunch
-tags: occasion
+tags: [occasion]
 ---
 
 # Soupe aux ramen

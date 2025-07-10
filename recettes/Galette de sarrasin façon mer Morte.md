@@ -3,7 +3,7 @@ date-added: 2024-07-30
 source: https://www.750g.com/galette-de-sarrasin-caramelisee-r47231.htm
 recipe-type: meal
 meal: snack
-tags: fail
+tags: [fail]
 ---
 
 # Galette de sarrasin façon mer Morte

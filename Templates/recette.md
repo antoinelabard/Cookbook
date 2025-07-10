@@ -14,10 +14,7 @@ meal:
   - breakfast
   - lunch
   - snack
-tags:
-  - cheat-meal
-  - occasion
-  - vegetarian
+tags: [cheat-meal, occasion]
 ---
 
 # <% tp.file.title %>

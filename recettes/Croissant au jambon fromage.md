@@ -4,7 +4,7 @@ source: https://www.marmiton.org/recettes/recette_croissant-au-jambon-fromage_71
 season: winter
 recipe-type: meal
 meal: lunch
-tags: occasion
+tags: [occasion]
 ---
 
 # Croissant au jambon fromage

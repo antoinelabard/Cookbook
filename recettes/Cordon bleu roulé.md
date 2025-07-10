@@ -3,7 +3,7 @@ date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_cordon-bleu-roule_347516.aspx
 recipe-type: ingredient
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Cordon bleu roulé

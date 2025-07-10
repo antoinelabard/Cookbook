@@ -3,7 +3,7 @@ date-added: 2024-05-20
 source: Alexis Goblot
 recipe-type: meal
 meal: lunch
-tags: occasion
+tags: [occasion]
 ---
 
 # Sauté de porc façon Goblot

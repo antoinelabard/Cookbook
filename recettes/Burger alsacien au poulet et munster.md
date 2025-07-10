@@ -3,7 +3,7 @@ date-added: 2024-01-15
 source: https://www.quitoque.fr/recette/12493/burger-au-munster
 recipe-type: meal
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Burger alsacien au poulet et munster

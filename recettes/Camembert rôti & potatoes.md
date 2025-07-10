@@ -3,7 +3,7 @@ date-added: 2024-03-14
 source: https://jow.fr/recipes/camembert-roti-et-potatoes-8vwx64tikjpc03gv03xx
 recipe-type: meal
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Camembert rôti & potatoes

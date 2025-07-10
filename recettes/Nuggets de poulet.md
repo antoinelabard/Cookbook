@@ -3,7 +3,7 @@ date-added: 2024-04-08
 source: https://www.marmiton.org/recettes/recette_ze-nuggets-de-poulet_172370.aspx
 recipe-type: ingredient
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Nuggets de poulet

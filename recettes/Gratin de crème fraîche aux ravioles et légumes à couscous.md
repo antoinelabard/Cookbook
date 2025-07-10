@@ -2,7 +2,7 @@
 date-added: 2024-01-30
 source: Antoine Labard
 recipe-type: meal
-tags: fail
+tags: [fail]
 ---
 
 # Gratin de crème fraîche aux ravioles et légumes à couscous

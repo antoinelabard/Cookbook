@@ -3,7 +3,7 @@ date-added: 2024-12-15
 source: https://www.marmiton.org/recettes/recette_sauce-roquefort_24242.aspx
 recipe-type: ingredient
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Sauce au roquefort

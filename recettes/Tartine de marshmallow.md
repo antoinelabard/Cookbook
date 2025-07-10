@@ -3,7 +3,7 @@ date-added: 2025-03-08
 source: Antoine Labard
 recipe-type: meal
 meal: breakfast
-tags: fail
+tags: [fail]
 ---
 
 # Tartine de marshmallow

@@ -4,7 +4,7 @@ source: https://cuisine.journaldesfemmes.fr/recette/319419-kebab
 recipe-type: meal
 meal: lunch
 season: summer
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Kebab

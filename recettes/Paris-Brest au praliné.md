@@ -3,7 +3,7 @@ date-added: 2024-01-23
 source: https://www.750g.com/paris-brest-au-praline-r65647.htm
 recipe-type: meal
 meal: snack
-tags: occasion
+tags: [occasion]
 ---
 
 # Paris-Brest au praliné

@@ -3,7 +3,7 @@ date-added: 2024-03-03
 source: https://www.marmiton.org/recettes/recette_frites-maison-croustillantes-a-souhait_372493.aspx
 recipe-type: ingredient
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Frites

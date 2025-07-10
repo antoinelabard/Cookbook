@@ -3,7 +3,7 @@ date-added: 2022-10-22
 source: Antoine Labard
 recipe-type: meal
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Haricots verts à l'ail et cordon bleu

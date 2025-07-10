@@ -4,7 +4,7 @@ source: https://www.marmiton.org/recettes/recette_hachis-parmentier_17639.aspx
 season: winter
 recipe-type: meal
 meal: lunch
-tags: occasion
+tags: [occasion]
 ---
 
 # Hachis Parmentier

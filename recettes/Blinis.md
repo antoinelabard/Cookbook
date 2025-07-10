@@ -3,7 +3,7 @@ date-added: 2024-12-25
 source: https://www.marmiton.org/recettes/recette_blinis_23421.aspx
 recipe-type: ingredient
 meal: lunch
-tags: occasion
+tags: [occasion]
 ---
 
 # Blinis

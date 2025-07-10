@@ -3,7 +3,7 @@ date-added: 2022-12-15
 source: https://www.marmiton.org/recettes/recette_poulet-au-caramel_27690.aspx
 recipe-type: ingredient
 meal: lunch
-tags: cheat-meal
+tags: [cheat-meal]
 ---
 
 # Poulet au caramel

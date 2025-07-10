@@ -3,7 +3,7 @@ date-added: 2025-03-08
 source: https://www.marmiton.org/recettes/recette_lasagnes-a-la-bolognaise_18215.aspx
 recipe-type: meal
 meal: lunch
-tags: occasion
+tags: [occasion]
 ---
 
 # Lasagnes à la bolognaise

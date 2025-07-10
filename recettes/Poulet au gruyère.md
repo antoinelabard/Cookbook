@@ -3,7 +3,7 @@ date-added: 2024-12-25
 source: La Cuisine des Bon Petits Plats de Jeanne Chatelier
 recipe-type: meal
 meal: lunch
-tags: occasion
+tags: [occasion]
 ---
 
 # Poulet au gruyère
