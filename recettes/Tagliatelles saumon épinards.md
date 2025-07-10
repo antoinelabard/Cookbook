@@ -24,7 +24,7 @@ meal: lunch
 ## Préparation
 
 1. Coupez le saumon fumé grossièrement.
-2. Dans une casserole d'eau bouillante salée, faites cuire les pâtes selon les instructions de préparation soit environ 6 minutes.
-3. À la fin de la cuisson des pâtes, réservez l'équivalent d'une petite louche d'eau de cuisson par personne avant d'égoutter les pâtes.
-4. Dans une poêle à feu moyen, ajoutez la crème, 1 petite louche d'eau de cuisson par personne, le jus de citron et les épinards. Laissez cuire 2 minutes.
+2. Dans une casserole d'eau bouillante salée, faites cuire les pâtes selon les instructions de préparation, soit environ 6 minutes.
+3. À la fin de la cuisson des pâtes, réservez 20 cl d'eau de cuisson avant d'égoutter les pâtes.
+4. Dans une poêle à feu moyen, ajoutez la crème, l'eau de cuisson, le jus de citron et les épinards. Laissez cuire 2 minutes.
 5. Salez, poivrez et ajoutez les pâtes dans la poêle. Ajoutez le saumon et mélangez. Zestez le citron au-dessus de la poêle pour plus d'acidité.

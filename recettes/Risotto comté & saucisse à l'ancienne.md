@@ -29,7 +29,7 @@ meal: lunch
 2. Épluchez, puis émincez l'échalote.
 3. Coupez les saucisses en tranches.
 4. Dans une poêle ou une casserole, ajoutez un filet d'huile de cuisson, la saucisse, l'échalote, l'ail et laisser revenir 3 minutes.
-5. Faire bouillir 25cl d'eau par personne et y dissoudre le bouillon de volaille.
+5. Faire bouillir 1 l et y dissoudre le bouillon de volaille.
 6. Ajoutez ensuite le riz et le vin blanc dans la casserole et laissez rissoler jusqu'à évaporation du vin.
 7. Salez (avec parcimonie, la saucisse est déjà très salée), poivrez, ajoutez le bouillon petit à petit, 1 tasse par 1 tasse en le laissant s'évaporer puis recommencer l'opération jusqu'à épuisement du bouillon.
 8. Le riz doit cuire entre 15 à 18 minutes. Vérifiez la cuisson du riz et coupez le feu.

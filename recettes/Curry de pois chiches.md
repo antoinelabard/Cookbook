@@ -31,5 +31,5 @@ meal: lunch
 1. Dans une casserole d'eau chaude, faites cuire le riz selon les instructions du paquet. Égouttez-le en fin de cuisson.
 2. Émincez les oignons rouges.
 3. Dans une casserole, versez un filet d'huile d'olive et ajoutez les oignons émincés. Râpez l'ail et ajoutez les épices (curry, cumin, gingembre) puis faites revenir le tout 4 minutes.
-4. Ajoutez la chair de tomate, le lait de coco, 50 ml d'eau par personne et les pois chiches égouttés. Salez, poivrez et mélangez. Couvrez et laissez cuire pendant 10 minutes à feu doux.
+4. Ajoutez la chair de tomate, le lait de coco, 200 ml d'eau et les pois chiches égouttés. Salez, poivrez et mélangez. Couvrez et laissez cuire pendant 10 minutes à feu doux.
 5. Servez le riz avec le curry. (Optionnel : ajoutez de la coriandre fraîche). C'est prêt !

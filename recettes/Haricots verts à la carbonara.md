@@ -29,7 +29,7 @@ meal: lunch
 2. En parallèle, cuire dans une casserole d’eau salée les haricots verts 10 minutes à partir du moment où ça boue.
 3. Égoutter et les verser dans la poêle avec les lardons.
 4. Bien mélanger.
-5. Dans un saladier : battre les jaunes d’œuf, la crème fraîche et 2 cuillères à soupe de parmesan.
+5. Dans un saladier : battre les jaunes d’œuf, la crème fraîche et 20 g de parmesan.
 6. Saler et poivrer.
 7. Verser le tout sur les haricots verts et bien mélanger.
 8. Saupoudrer du reste de parmesan et servir immédiatement.

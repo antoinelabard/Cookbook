@@ -24,6 +24,6 @@ meal: lunch
 ## Préparation
 
 1. Dans une poêle chaude, versez un filet d'huile de cuisson. Une fois l'huile chaude, ajoutez le riz et faites-le revenir 2 minutes à feu vif.
-2. Baissez le feu et ajoutez 80 cl d'eau par personne ainsi que le lait de coco. Salez, poivrez, mélangez et couvrez la poêle. Laissez cuire à feu doux pendant 20 minutes.
+2. Baissez le feu et ajoutez 25 cl d'eau ainsi que le lait de coco. Salez, poivrez, mélangez et couvrez la poêle. Laissez cuire à feu doux pendant 20 minutes.
 3. Après 20 minutes de cuisson, goûtez le riz, il doit être légèrement "al dente". Ajoutez ensuite le maïs et les crevettes. Mélangez et servez bien chaud.
 4. Salez, poivrez et ajoutez de la coriandre si vous en avez. C'est prêt !
