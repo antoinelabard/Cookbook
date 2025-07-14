@@ -1,7 +1,7 @@
 ---
 date-added: 2024-09-03
 source: https://jow.fr/recipes/pie-poireaux-et-champignons-8kls2fe21z1sl3be1duh?coversCount=4&from=menu
-season: autumn, winter
+season: [autumn, winter]
 recipe-type: meal
 meal: lunch
 ---

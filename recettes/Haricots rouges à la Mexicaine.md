@@ -3,7 +3,7 @@ date-added: 2022-01-15
 source: https://www.marmiton.org/recettes/recette_haricots-rouges-a-la-mexicaine_18284.aspx
 recipe-type: meal
 meal: lunch
-season: summer
+season: [summer]
 ---
 
 # Haricots rouges à la Mexicaine

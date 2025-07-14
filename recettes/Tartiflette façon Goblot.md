@@ -1,7 +1,7 @@
 ---
 date-added: 2024-01-25
 source: Alexis Goblot
-season: winter
+season: [winter]
 recipe-type: meal
 meal: lunch
 tags: [cheat-meal]

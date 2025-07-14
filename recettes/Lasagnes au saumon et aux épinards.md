@@ -1,7 +1,7 @@
 ---
 date-added: 2021-12-18
 source: https://www.marmiton.org/recettes/recette_lasagnes-au-saumon-et-aux-epinards_14665.aspx
-season: winter
+season: [winter]
 recipe-type: meal
 meal: lunch
 ---

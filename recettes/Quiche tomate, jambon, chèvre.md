@@ -3,7 +3,7 @@ date-added: 2021-11-18
 source: https://www.marmiton.org/recettes/recette_quiche-tomate-jambon-chevre_32961.aspx
 recipe-type: meal
 meal: lunch
-season: summer
+season: [summer]
 ---
 
 # Quiche tomate, jambon, chèvre

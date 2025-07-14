@@ -1,7 +1,7 @@
 ---
 date-added: 2024-09-03
 source: https://jow.fr/recipes/salade-printaniere-au-poulet-8gkee824lf0wdfoa17g4
-season: spring
+season: [spring]
 recipe-type: meal
 meal: lunch
 ---

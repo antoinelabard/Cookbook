@@ -3,7 +3,7 @@ date-added: 2023-01-20
 source: https://jow.fr/recipes/wrap-mais-thon-et-fromage-frais-8p3wbjdd5jswaue60esp
 recipe-type: meal
 meal: lunch
-season: summer
+season: [summer]
 ---
 
 # Wrap maïs, thon & fromage frais

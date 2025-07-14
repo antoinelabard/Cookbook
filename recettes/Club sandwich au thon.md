@@ -1,7 +1,7 @@
 ---
 date-added: 2022-11-03
 source: https://www.marmiton.org/recettes/recette_club-sandwich-au-thon_169952.aspx
-season: spring, summer
+season: [spring, summer]
 recipe-type: meal
 meal: lunch
 ---

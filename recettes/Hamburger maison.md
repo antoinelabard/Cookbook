@@ -4,7 +4,7 @@ source: https://www.marmiton.org/recettes/recette_hamburger-maison_32672.aspx
 recipe-type: meal
 meal: lunch
 tags: [occasion]
-season: summer
+season: [summer]
 ---
 
 # Hamburger maison

@@ -1,7 +1,7 @@
 ---
 date-added: 2024-09-03
 source: https://jow.fr/recipes/gazpacho-et-roules-mozza-jambon-pesto-8ydx5q0vccww03t907ju
-season: spring
+season: [spring]
 recipe-type: meal
 meal: lunch
 ---

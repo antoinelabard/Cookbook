@@ -1,7 +1,7 @@
 ---
 date-added: 2022-02-24
 source: https://www.ptitchef.com/recettes/plat/pizza-baguette-fid-1566290
-season: winter
+season: [winter]
 recipe-type: meal
 meal: lunch
 tags: [cheat-meal]

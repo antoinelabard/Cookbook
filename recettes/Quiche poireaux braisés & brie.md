@@ -1,7 +1,7 @@
 ---
 date-added: 2024-09-03
 source: https://jow.fr/recipes/quiche-poireaux-braises-et-brie-8e4z41w4lapt196f02mi?coversCount=6&from=menu
-season: autumn, winter
+season: [autumn, winter]
 recipe-type: meal
 meal: lunch
 ---

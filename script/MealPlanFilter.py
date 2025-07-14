@@ -55,7 +55,7 @@ class MealPlanFilter:
                 return False
 
         # tags
-        if set(self.tags) != set(recipe.tags):  # verifies identity independently of order in the collections
+        if set(self.tags) != set(recipe.tags):  # verifies identity independently of the order in the collections
             return False
 
         return True

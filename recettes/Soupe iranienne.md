@@ -1,7 +1,7 @@
 ---
 date-added: 2024-02-21
 source: https://jow.fr/recipes/soupe-iranienne-83cr2ceb05gjhxfg0g28
-season: winter
+season: [winter]
 recipe-type: meal
 meal: lunch
 ---

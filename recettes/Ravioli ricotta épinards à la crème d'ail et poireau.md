@@ -3,7 +3,7 @@ date-added: 2024-01-15
 source: https://www.quitoque.fr/recette/12522/ravioli-aux-girolles-et-sauce-au-gorgonzola
 recipe-type: meal
 meal: lunch
-season: spring, summer, autumn
+season: [spring, summer, autumn]
 ---
 
 # Ravioli ricotta épinards à la crème d'ail et poireau

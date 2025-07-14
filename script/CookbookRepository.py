@@ -72,14 +72,15 @@ class CookbookRepository:
         # the following tests check if it contains the standard section delimiters, so is formatted as a recipe
         joined_lines: str = "".join(lines)
         if metadata_delimiter not in joined_lines:
-            return
+            return None
         if ingredients_delimiter not in joined_lines:
-            return
+            return None
         if instructions_delimiter not in joined_lines:
-            return
+            return None
 
         # split the file in 3 sections
-        # the indexes lines indexes are tuned to remove unwanted lines and only keep the metadata, ingredients list and instructions
+        # the ranges are meant to remove unwanted lines and dissociate the metadata, the ingredients list and the
+        #   instructions
         metadata_range: list[int] = [1]  # the metadata is at the beginning of the file
         ingredients_range: list[int] = []
         instructions_range: list[int] = []
@@ -113,6 +114,8 @@ class CookbookRepository:
             metadata[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata.keys() else None,
             metadata[Constants.Season.SEASON].split(", ") if Constants.Season.SEASON in metadata.keys() else None,
             metadata[Constants.TAGS].split(", ") if Constants.TAGS in metadata.keys() else None
+            metadata[Constants.Season.SEASON] if Constants.Season.SEASON in metadata.keys() else None,
+            metadata[Constants.TAGS] if Constants.TAGS in metadata.keys() else None
         )
 
         return recipe

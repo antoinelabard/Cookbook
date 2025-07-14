@@ -1,7 +1,7 @@
 ---
 date-added: 2024-04-29
 source: https://jow.fr/recipes/wok-legumes-sautes-poulet-et-sauce-cacahuete-8ucq30s6h54y7d4e0kyc
-season: summer
+season: [summer]
 recipe-type: meal
 meal: lunch
 ---
