@@ -19,3 +19,10 @@ class Constants:
         SUMMER = "summer"
         AUTUMN = "autumn"
         WINTER = "winter"
+
+    class Macros:
+        MACROS = "macros"
+        ENERGY = "energy"
+        PROTEINS = "proteins"
+        LIPIDS = "lipids"
+        CARBS = "carbs"
