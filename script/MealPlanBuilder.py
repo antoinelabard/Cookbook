@@ -1,7 +1,6 @@
 import random
 
 from script.Constants import Constants
-from script.CookbookRepository import CookbookRepository
 from script.MealPlan import MealPlan
 from script.MealPlanFilter import MealPlanFilter
 from script.Recipe import Recipe
@@ -15,18 +14,18 @@ class MealPlanBuilder:
     to return the result.
     """
 
-    def __init__(self):
-        self.repository: CookbookRepository = CookbookRepository()
+    def __init__(self, recipes: list[Recipe]):
+        self.recipes: list[Recipe] = recipes
         self.meal_plan: MealPlan = MealPlan()
 
-    def add_recipes(self, meal_plan_filter: MealPlanFilter):
+    def pick_recipes_with_filter(self, meal_plan_filter: MealPlanFilter):
         """
         Randomly add to the internal MealPlan some of the recipes matching the provided filters. The selected
         recipes add up to the one already in the MealPlanFilter instance of the builder
         :param meal_plan_filter: the current set of filters to select only the recipe matching the requirements. It also
         provides the quantity of recipes to be picked.
         """
-        filtered_recipes: list[Recipe] = [recipe for recipe in self.repository.recipes
+        filtered_recipes: list[Recipe] = [recipe for recipe in self.recipes
                                           if meal_plan_filter.matches_filters(recipe)]
         if not filtered_recipes:
             return
@@ -54,6 +53,25 @@ class MealPlanBuilder:
             self.meal_plan.snack.extend(picked_recipes)
         else:
             self.meal_plan.misc.extend(picked_recipes)
+
+    def add_recipe(self, meal: str, recipe: Recipe):
+        match meal:
+            case Constants.Meal.BREAKFAST:
+                self.meal_plan.breakfast.append(recipe)
+            case Constants.Meal.LUNCH:
+                self.meal_plan.lunch.append(recipe)
+            case Constants.Meal.SNACK:
+                self.meal_plan.snack.append(recipe)
+
+
+    def add_recipes(self, meal: str, recipes: list[Recipe]):
+        match meal:
+            case Constants.Meal.BREAKFAST:
+                self.meal_plan.breakfast.extend(recipes)
+            case Constants.Meal.LUNCH:
+                self.meal_plan.lunch.extend(recipes)
+            case Constants.Meal.SNACK:
+                self.meal_plan.snack.extend(recipes)
 
     def build(self):
         return self.meal_plan

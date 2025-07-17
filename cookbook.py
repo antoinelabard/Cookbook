@@ -42,7 +42,7 @@ from script.MealPlanBuilder import MealPlanBuilder
 
 if __name__ == "__main__":
     repository = CookbookRepository()
-    meal_plan_builder = MealPlanBuilder()
+    meal_plan_builder = MealPlanBuilder(repository.recipes)
 
     new_export = False
     new_meal_plan = False
@@ -55,7 +55,7 @@ if __name__ == "__main__":
             print("Ingredients list generated.")
         if arg in repository.profiles.keys():  # if arg is a profile name
             new_meal_plan = True
-            [meal_plan_builder.add_recipes(meal_plan_filter) for meal_plan_filter in repository.profiles[arg]]
+            [meal_plan_builder.pick_recipes_with_filter(meal_plan_filter) for meal_plan_filter in repository.profiles[arg]]
             print("Meal plan generated.")
 
     if new_meal_plan:

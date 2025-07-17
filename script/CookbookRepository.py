@@ -4,8 +4,9 @@ from pathlib import Path
 
 import yaml
 
-from script import MealPlan
+from script import MealPlan, Utils
 from script.Constants import Constants
+from script.MealPlanBuilder import MealPlanBuilder
 from script.MealPlanFilter import MealPlanFilter
 from script.Recipe import Recipe
 
@@ -46,9 +47,10 @@ class CookbookRepository:
     SOURCE_RECIPE_SEPARATOR = " ---> "
 
     def __init__(self):
-        self.recipes = self._read_recipes()
-        self.profiles = self._read_profiles()
-        self.ingredients_aisles = self._read_ingredients_aisles()
+        self.recipes: list[Recipe] = self._read_recipes()
+        self.recipes_names: list[str] = list(map(lambda recipe: recipe.name, self.recipes))
+        self.profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()
+        self.ingredients_aisles: dict[list[str]] = self._read_ingredients_aisles()
 
     def _get_recipes_paths(self) -> list[Path]:
         """
@@ -163,17 +165,37 @@ class CookbookRepository:
 
         return profiles
 
-    def _read_recipes_from_menu(self) -> list[Recipe]:
+    def _read_meal_plan(self) -> MealPlan:
         """
         Read the recipes names listed in the menu file pointed by MENU_PATH
-        :return: a list of recipes names
+        :return: a dict of lists of recipes for each meal
         """
         with open(self.MENU_PATH, 'r') as f:
             lines = f.readlines()
 
-        # filter the recipes cited in the names list
-        names = list(map(lambda name: name.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0] if self.LINK_DELIMITER_OPEN in name else "", lines))
-        return list(filter(lambda recipe: recipe.name in names, self.recipes))
+        meal_plan_builder = MealPlanBuilder(self.recipes)
+
+        current_meal_selector = Constants.Meal.LUNCH
+
+        for line in lines:
+            if f"# {Constants.Meal.BREAKFAST}" in line:
+                current_meal_selector = Constants.Meal.BREAKFAST
+                continue
+            elif f"# {Constants.Meal.LUNCH}" in line:
+                current_meal_selector = Constants.Meal.LUNCH
+                continue
+            elif f"# {Constants.Meal.SNACK}" in line:
+                current_meal_selector = Constants.Meal.SNACK
+                continue
+
+            recipe_candidate = line.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0] \
+                if self.LINK_DELIMITER_OPEN in line else ""
+            if recipe_candidate in self.recipes_names:
+                meal_plan_builder.add_recipe(
+                    current_meal_selector,
+                    Utils.filter_recipe_by_name(recipe_candidate, self.recipes))
+
+        return meal_plan_builder.build()
 
     def _read_ingredients_aisles(self) -> dict[list[str]]:
         """
@@ -216,8 +238,9 @@ class CookbookRepository:
 
         # retrieve in a single list all the ingredients from all the recipes in the menu. Add the recipe name as a suffix for each
         menu_ingredients: list[str] = []
-        for recipe in self._read_recipes_from_menu():
-            recipe_ingredients: list[str] = [f"{igr}<sup>{self.SOURCE_RECIPE_SEPARATOR}€€{recipe.name}$$</sup>" for igr in recipe.ingredients]
+        for recipe in self._read_meal_plan().as_list():
+            recipe_ingredients: list[str] = [f"{igr}<sup>{self.SOURCE_RECIPE_SEPARATOR}€€{recipe.name}$$</sup>" for igr
+                                             in recipe.ingredients]
             menu_ingredients = menu_ingredients + recipe_ingredients
 
         # look for inner recipes in the ingredients list. The list of ingredient will grow with the new inner ones. They are added at the end so that the iteration scans all of them recursively
@@ -225,9 +248,10 @@ class CookbookRepository:
         index: int = 0
         for ingredient in menu_ingredients:
             if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
-                potential_recipe_name: str = ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
+                recipe_name_candidate: str = \
+                ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
 
-                inner_recipe: list[Recipe] = list(filter(lambda rcp: rcp.name in potential_recipe_name, self.recipes))
+                inner_recipe: list[Recipe] = list(filter(lambda rcp: rcp.name in recipe_name_candidate, self.recipes))
                 inner_recipe: Recipe = inner_recipe[0] if inner_recipe else None
                 if inner_recipe is not None:
                     source_recipe: str = (menu_ingredients[index]
@@ -235,17 +259,21 @@ class CookbookRepository:
                                           .replace("[[", "€€")
                                           .replace("]]", "$$"))
 
-                    inner_recipe_ingredients: list[str] = [f"{sub_ingredient}<sup>{self.SOURCE_RECIPE_SEPARATOR}=={source_recipe}==</sup>"
-                                                  for sub_ingredient in inner_recipe.ingredients]
+                    inner_recipe_ingredients: list[str] = [
+                        f"{sub_ingredient}<sup>{self.SOURCE_RECIPE_SEPARATOR}=={source_recipe}==</sup>"
+                        for sub_ingredient in inner_recipe.ingredients]
                     [menu_ingredients.append(sub_ingredient) for sub_ingredient in inner_recipe_ingredients]
             index += 1
 
         # replace the pseudo wikilinks delimiters by real ones
-        menu_ingredients: list[str] = [menu_ingredient.replace(self.PSEUDO_LINK_DELIMITER_OPEN, self.LINK_DELIMITER_OPEN).replace(self.PSEUDO_LINK_DELIMITER_CLOSED, self.LINK_DELIMITER_CLOSED)
-                                       for menu_ingredient in menu_ingredients]
+        menu_ingredients: list[str] = [
+            menu_ingredient.replace(self.PSEUDO_LINK_DELIMITER_OPEN, self.LINK_DELIMITER_OPEN).replace(
+                self.PSEUDO_LINK_DELIMITER_CLOSED, self.LINK_DELIMITER_CLOSED)
+            for menu_ingredient in menu_ingredients]
 
         # used to make lowercase string comparisons without altering the case when writing down the ingredients. Also remove the breadcrumbs temporarily
-        menu_ingredients_lowercase: list[str] = [ingredient.lower().split(self.SOURCE_RECIPE_SEPARATOR)[0][0:-5] for ingredient in menu_ingredients]
+        menu_ingredients_lowercase: list[str] = [ingredient.lower().split(self.SOURCE_RECIPE_SEPARATOR)[0][0:-5] for
+                                                 ingredient in menu_ingredients]
         ingredients_aisles: dict[str, list[str]] = {aisle: [] for aisle in self.ingredients_aisles.keys()}
         i: int = 0
         while i < len(menu_ingredients):
@@ -261,7 +289,8 @@ class CookbookRepository:
             if not aisles_candidates:
                 i += 1
                 continue
-            aisle_winner: str = aisles_candidates[max(aisles_candidates.keys(), key=len)]  # the winner is the reference ingredient with the longer name (it's better to match "chorizo" than "riz")
+            aisle_winner: str = aisles_candidates[max(aisles_candidates.keys(),
+                                                      key=len)]  # the winner is the reference ingredient with the longer name (it's better to match "chorizo" than "riz")
             ingredients_aisles[aisle_winner].append(menu_ingredients.pop(i))
             menu_ingredients_lowercase.pop(i)
         ingredients_aisles["Unclassified"] = menu_ingredients
@@ -272,7 +301,8 @@ class CookbookRepository:
             if not ingredients_aisles[aisle]:
                 continue
             ingredients_aisles[aisle].sort()
-            menu_ingredients.append(f"- [ ] {aisle} :\n" + "\n".join([f"    - [ ] {ingredient}" for ingredient in ingredients_aisles[aisle]]))
+            menu_ingredients.append(f"- [ ] {aisle} :\n" + "\n".join(
+                [f"    - [ ] {ingredient}" for ingredient in ingredients_aisles[aisle]]))
 
         with open(self.INGREDIENTS_PATH, 'w') as f:
             f.write("\n".join(menu_ingredients))
