@@ -26,3 +26,4 @@ class Constants:
         PROTEINS = "proteins"
         LIPIDS = "lipids"
         CARBS = "carbs"
+        PORTIONS = "portions"

@@ -1,3 +1,7 @@
+from script.Constants import Constants
+from script.Macros import Macros
+
+
 class Recipe:
     """
     Recipe represents a cookbook recipe. It is a convenient way to access the metadata of a given recipe.
@@ -13,7 +17,7 @@ class Recipe:
                  meal: str | None = None,
                  seasons: list[str] | None = None,
                  macros: dict[str, float] | None = None,
-                 tags: list[str] | None = None, ):
+                 tags: list[str] | None = None):
         self.name: str = name
         self.recipe_type: str = recipe_type
         self.date_added: str | None = date_added if date_added else None
@@ -26,9 +30,15 @@ class Recipe:
             self.seasons: list[str] = []
 
         if isinstance(macros, dict):
-            self.macros: dict[str, float] = macros
+            self.macros = Macros(
+                macros[Constants.Macros.ENERGY],
+                macros[Constants.Macros.PROTEINS],
+                macros[Constants.Macros.LIPIDS],
+                macros[Constants.Macros.CARBS],
+                macros[Constants.Macros.PORTIONS],
+            )
         elif macros is None:
-            self.macros: dict[str, float] = {}
+            self.macros = None
 
         if isinstance(tags, list):
             self.tags: list[str] = tags

@@ -211,13 +211,20 @@ class CookbookRepository:
         Write down in a file the provided MealPlan.
         :param meal_plan: the MealPlan to write down
         """
-        meals_links: list[str] = []
+        output_content: list[str] = []
         for meal, recipes in meal_plan.__dict__.items():
             recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
-            if recipes_links:
-                meals_links.append(f"# {meal}\n\n{recipes_links}")
+            if not recipes_links:
+                continue
+            output_content.append(f"# {meal}\n\n{recipes_links}")
+            avg_macros = meal_plan.compute_avg_macros_per_meal(meal)
+            output_content.append("Macros moyenne par portion")
+            output_content.append("| Énergie | Protéines | Lipides | Glucides |")
+            output_content.append("|:-------:|:---------:|:-------:|:--------:|")
+            output_content.append(
+                f"| {avg_macros[meal].energy} | {avg_macros[meal].proteins} | {avg_macros[meal].lipids} | {avg_macros[meal].carbs} |")
         with open(self.MENU_PATH, 'w') as f:
-            f.write("\n\n".join(meals_links))
+            f.write("\n\n".join(output_content))
 
     def export_complete_cookbook(self) -> None:
         """
@@ -249,7 +256,7 @@ class CookbookRepository:
         for ingredient in menu_ingredients:
             if self.LINK_DELIMITER_OPEN in ingredient and self.LINK_DELIMITER_CLOSED in ingredient:
                 recipe_name_candidate: str = \
-                ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
+                    ingredient.split(self.LINK_DELIMITER_OPEN)[1].split(self.LINK_DELIMITER_CLOSED)[0]
 
                 inner_recipe: list[Recipe] = list(filter(lambda rcp: rcp.name in recipe_name_candidate, self.recipes))
                 inner_recipe: Recipe = inner_recipe[0] if inner_recipe else None
