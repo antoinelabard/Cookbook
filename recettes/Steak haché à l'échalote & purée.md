@@ -3,6 +3,12 @@ date-added: 2023-01-20
 source: https://jow.fr/recipes/steak-hache-a-l-echalote-et-puree-8fmwj1rcarpska5106at
 recipe-type: meal
 meal: lunch
+macros:
+  energy: 1164
+  proteins: 96.6
+  lipids: 80.9
+  carbs: 13.8
+  portions: 4
 ---
 
 # Steak haché à l'échalote & purée

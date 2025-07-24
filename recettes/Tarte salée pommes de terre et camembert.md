@@ -4,6 +4,12 @@ source: https://www.marmiton.org/recettes/recette_tarte-salee-pommes-de-terre-et
 recipe-type: meal
 meal: lunch
 tags: [cheat-meal]
+macros:
+  energy: 1930
+  proteins: 71.7
+  lipids: 135.9
+  carbs: 100.0
+  portions: 4
 ---
 
 # Tarte salée pommes de terre et camembert

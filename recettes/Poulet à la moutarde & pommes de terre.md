@@ -3,6 +3,12 @@ date-added: 2023-11-21
 source: https://jow.fr/recipes/poulet-a-la-moutarde-et-pommes-de-terre-8vxk1y011ink03hh0wdb
 recipe-type: meal
 meal: lunch
+macros:
+  energy: 1944
+  proteins: 136.6
+  lipids: 71.2
+  carbs: 177.8
+  portions: 4
 ---
 
 # Poulet à la moutarde & pommes de terre

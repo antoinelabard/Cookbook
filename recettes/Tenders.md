@@ -4,6 +4,12 @@ source: https://www.750g.com/poulet-maison-facon-kfc-r200348.htm
 recipe-type: ingredient
 meal: lunch
 tags: [cheat-meal]
+macros:
+  energy: 1240
+  proteins: 85
+  lipids: 60
+  carbs: 100
+  portions: 4
 ---
 
 # Tenders

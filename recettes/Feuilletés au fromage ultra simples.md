@@ -4,6 +4,12 @@ source: https://www.750g.com/feuilletes-au-fromage-ultra-simples-r36675.htm
 recipe-type: meal
 meal: misc
 tags: [occasion]
+macros:
+  energy: 1343.5
+  proteins: 43.8
+  lipids: 81.0
+  carbs: 98.7
+  portions: 4
 ---
 
 # Feuilletés au fromage ultra simples

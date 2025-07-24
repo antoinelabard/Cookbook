@@ -3,6 +3,12 @@ date-added: 2024-02-21
 source: https://jow.fr/recipes/porridge-a-la-banane-et-cannelle-8fq08osv31foielz0qk8
 recipe-type: ingredient
 meal: breakfast
+macros:
+  energy: 977
+  proteins: 41.8
+  lipids: 21.9
+  carbs: 141.8
+  portions: 4
 ---
 
 # Porridge
