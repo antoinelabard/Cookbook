@@ -27,7 +27,7 @@ tags: [fail]
 
 1. Préchauffez le four à 220°C. Beurrez un plat à gratin.
 2. Égouttez les légumes à couscous.
-3. Dans un plat allant au four, Disposez successivement des couches de Légumes et de ravioles.
+3. Disposez successivement des couches de Légumes et de ravioles.
 4. Coupez le comté en morceaux (pourquoi le râper ?) et disposez-le sur le plat.
 5. Enfournez pendant 15 minutes à 220°C.
 6. Sortez le plat immédiatement après l'avoir enfourné pour ajouter la crème fraîche que vous avez oubliée. Ne prenez pas la peine de remélanger le plat en l'incorporant, l'étaler sur le dessus permettra de plus de catalyser ce désastre.

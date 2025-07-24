@@ -2,7 +2,6 @@ Parfois, certains échecs sont tellement cuisants qu'ils méritent de passer à 
 
 ```dataview
 LIST
-FROM "recettes"
-WHERE contains(tags, "fail")
+FROM #fail
 SORT file.name ASC
 ```
