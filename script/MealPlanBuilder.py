@@ -1,9 +1,9 @@
 import random
 
-from script.Constants import Constants
-from script.MealPlan import MealPlan
+from script.utils.Constants import Constants
+from script.entities.MealPlan import MealPlan
 from script.MealPlanFilter import MealPlanFilter
-from script.Recipe import Recipe
+from script.entities.Recipe import Recipe
 
 
 class MealPlanBuilder:

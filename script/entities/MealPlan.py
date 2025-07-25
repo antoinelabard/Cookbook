@@ -1,6 +1,6 @@
-from script import Recipe
-from script.Constants import Constants
-from script.Macros import Macros
+from script.entities import Recipe
+from script.utils.Constants import Constants
+from script.entities.Macros import Macros
 
 
 class MealPlan:

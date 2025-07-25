@@ -1,6 +1,6 @@
 from enum import Enum
 
-from script.Macros import Macros
+from script.entities.Macros import Macros
 
 
 class Ingredient:

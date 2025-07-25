@@ -4,11 +4,12 @@ from pathlib import Path
 
 import yaml
 
-from script import MealPlan, Utils
-from script.Constants import Constants
+from script.entities import MealPlan
+from script.utils import Utils
+from script.utils.Constants import Constants
 from script.MealPlanBuilder import MealPlanBuilder
 from script.MealPlanFilter import MealPlanFilter
-from script.Recipe import Recipe
+from script.entities.Recipe import Recipe
 
 
 def singleton(class_):

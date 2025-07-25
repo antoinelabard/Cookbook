@@ -37,7 +37,7 @@ CONFIGURATION
 
 import sys
 
-from script.CookbookRepository import CookbookRepository
+from script.data.CookbookRepository import CookbookRepository
 from script.MealPlanBuilder import MealPlanBuilder
 
 if __name__ == "__main__":

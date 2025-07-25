@@ -1,5 +1,5 @@
-from script.Constants import Constants
-from script.Macros import Macros
+from script.utils.Constants import Constants
+from script.entities.Macros import Macros
 
 
 class Recipe:
