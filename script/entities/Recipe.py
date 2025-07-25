@@ -17,6 +17,7 @@ class Recipe:
                  meal: str | None = None,
                  seasons: list[str] | None = None,
                  macros: dict[str, float] | None = None,
+                 portions: int = 4,
                  tags: list[str] | None = None):
         self.name: str = name
         self.recipe_type: str = recipe_type
@@ -35,10 +36,11 @@ class Recipe:
                 macros[Constants.Macros.PROTEINS],
                 macros[Constants.Macros.LIPIDS],
                 macros[Constants.Macros.CARBS],
-                macros[Constants.Macros.PORTIONS],
             )
         elif macros is None:
             self.macros = None
+
+        self.portions: float = portions
 
         if isinstance(tags, list):
             self.tags: list[str] = tags
