@@ -5,6 +5,8 @@ from pathlib import Path
 import yaml
 
 from script.entities import MealPlan
+from script.entities.Ingredient import Ingredient
+from script.entities.Macros import Macros
 from script.utils import Utils
 from script.utils.Constants import Constants
 from script.MealPlanBuilder import MealPlanBuilder
@@ -38,6 +40,7 @@ class CookbookRepository:
     INGREDIENTS_PATH: str = ROOT_DIR / "ingredients.md"
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
     INGREDIENTS_AISLES_PATH = ROOT_DIR / "ingredients.yaml"
+    BASE_INGREDIENTS_PATH = ROOT_DIR / "macros.yaml"
 
     LINK_DELIMITER_OPEN = "[["
     LINK_DELIMITER_CLOSED = "]]"
@@ -48,6 +51,7 @@ class CookbookRepository:
     SOURCE_RECIPE_SEPARATOR = " ---> "
 
     def __init__(self):
+        self.base_ingredients = self._read_base_ingredients()
         self.recipes: list[Recipe] = self._read_recipes()
         self.recipes_names: list[str] = list(map(lambda recipe: recipe.name, self.recipes))
         self.profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()
@@ -59,8 +63,24 @@ class CookbookRepository:
         """
         return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
 
-    @classmethod
-    def _load_recipe_from_file(cls, path: Path) -> Recipe | None:
+    def _read_base_ingredients(self) -> list[Ingredient]:
+        with open(self.BASE_INGREDIENTS_PATH, 'r') as f:
+            lines = f.readlines()
+
+        ingredients: list[Ingredient] = []
+        for ingredient_str, attributes in yaml.safe_load("".join(lines)).items():
+            macros = Macros(
+                energy=attributes[Constants.Macros.ENERGY],
+                proteins=attributes[Constants.Macros.PROTEINS],
+                lipids=attributes[Constants.Macros.LIPIDS],
+                carbs=attributes[Constants.Macros.CARBS],
+            )
+            ingredients.append(Ingredient(ingredient_str, macros=macros))
+
+        return ingredients
+
+
+    def _load_recipe_from_file(self, path: Path) -> Recipe | None:
         """
         :param path: the path to the markdown file containing the metadata
         :return: a recipe object if one of this name actually exists, else None
