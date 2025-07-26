@@ -31,7 +31,7 @@ class CookbookRepository:
     the recipes.
     """
 
-    ROOT_DIR: Path = Path(__file__).parent.parent
+    ROOT_DIR: Path = Path(__file__).parent.parent.parent
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
     MENU_PATH: Path = ROOT_DIR / "menu.md"
