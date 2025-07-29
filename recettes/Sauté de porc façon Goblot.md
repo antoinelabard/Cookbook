@@ -16,12 +16,12 @@ tags: [occasion]
 
 ## Ingrédients
 
-- [ ]Oignon : 1
-- [ ]Morceaux de porc : 500g
-- [ ]Concentré de tomates : 70g
-- [ ]Crème fraîche : 10cl
-- [ ]Riz ou semoule : 300g
-- [ ]Piment d'Espelette (ou de Cayenne)
+- [ ] Oignon : 1
+- [ ] Morceaux de porc : 500g
+- [ ] Concentré de tomates : 70g
+- [ ] Crème fraîche : 10cl
+- [ ] Riz ou semoule : 300g
+- [ ] Piment d'Espelette (ou de Cayenne)
 
 ## Préparation
 

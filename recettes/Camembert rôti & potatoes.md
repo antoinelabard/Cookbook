@@ -24,7 +24,7 @@ macros:
 
 - [ ] Camembert : 2
 - [ ] Potatoes : 600g
-- [ ] Gousses d'ail : 2
+- [ ] Ail : 2 gousses
 - [ ] Romarin
 - [ ] Salade : 200g
 

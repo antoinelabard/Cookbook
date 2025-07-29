@@ -26,7 +26,7 @@ macros:
 - [ ] Saucisses fumées : 4
 - [ ] Échalotes : 2
 - [ ] Oignon : 1
-- [ ] Gousse d'ail : 2
+- [ ] Ail : 2 gousses
 - [ ] Thym
 
 ## Préparation

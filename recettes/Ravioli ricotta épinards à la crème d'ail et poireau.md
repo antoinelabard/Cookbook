@@ -17,7 +17,7 @@ season: [spring, summer, autumn]
 ## Ingrédients
 
 - [ ] Crème fraîche : 20cl
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Oignon : 1
 - [ ] Poireaux : 2
 - [ ] Épinards branche : 300g

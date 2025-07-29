@@ -18,7 +18,7 @@ meal: lunch
 - [ ] Oeufs : 8
 - [ ] Fromage frais : 120g
 - [ ] Salade
-- [ ] Saumon : 4 tranches
+- [ ] Saumon : 120g
 
 ## Préparation
 

@@ -10,7 +10,7 @@ class Ingredient:
                  name: str,
                  quantity: float = 0,
                  quantity_unit: QuantityUnit = QuantityUnit.G,
-                 piece_to_g_ratio: float = 1,
+                 piece_to_g_ratio: float = -1,
                  macros: Macros = Macros(1, 1, 1, 1)
                  ):
         self.logger = logging.getLogger(__name__)
@@ -22,7 +22,7 @@ class Ingredient:
         self.macros: Macros = macros
 
     def compute_macros_from_quantity(self):
-        if self.quantity_unit in QuantityUnit.PIECE.value:
+        if self.quantity_unit in QuantityUnit.PIECE.value or self.quantity_unit == QuantityUnit.VOID:
             self.macros = self.macros * self.quantity * self.piece_to_g_ratio / Macros.REFERENCE_QUANTITY
             return
         match self.quantity_unit:
@@ -34,6 +34,8 @@ class Ingredient:
                 self.macros = self.macros * self.quantity * QuantityUnit.ML_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
             case QuantityUnit.CL:
                 self.macros = self.macros * self.quantity * QuantityUnit.CL_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
+            case QuantityUnit.L:
+                self.macros = self.macros * self.quantity * QuantityUnit.L_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
             case QuantityUnit.CC:
                 self.macros = self.macros * self.quantity * QuantityUnit.CC_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
             case QuantityUnit.CS:

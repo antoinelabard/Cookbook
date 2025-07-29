@@ -17,9 +17,11 @@ tags: [cheat-meal]
 ## Ingrédients
 
 - [ ] Pommes de terre : 1kg
-- [ ] Huile de friture : 5l
+- [ ] Huile de friture : 300g
 
 ## Préparation
+> [!info] Huile de friture
+> Prévoir 5l pour la cuisson, la quantité d'huile de friture indiquée dans les ingrédients est une estimation de ce qui sera absorbée par les aliments pendant la cuisson.
 
 1. Préchauffer la friteuse à 150°C.
 2. Préparation :

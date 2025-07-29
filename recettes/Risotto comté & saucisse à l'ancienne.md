@@ -23,7 +23,7 @@ macros:
 
 - [ ] Riz : 280g
 - [ ] Échalote : 1
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Comté : 80g
 - [ ] Saucisses fumées : 4
 - [ ] Bouillon de volaille : 1

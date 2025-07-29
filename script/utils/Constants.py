@@ -27,3 +27,4 @@ class Constants:
         LIPIDS = "lipids"
         CARBS = "carbs"
         PORTIONS = "portions"
+        PIECE_TO_G_RATIO = "piece_to_g_ratio"

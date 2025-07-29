@@ -17,7 +17,7 @@ tags: [cheat-meal]
 ## Ingrédients
 
 - [ ] Chapelure : 500g
-- [ ] Comté : 8 tranches
+- [ ] Comté : 120g
 - [ ] Farine : 100g
 - [ ] Huile de cuisson : 10cl
 - [ ] Escalopes de dinde : 4
@@ -28,12 +28,13 @@ tags: [cheat-meal]
 ## Préparation
 
 1. Déposer les escalopes de dinde sur du film alimentaire et les aplatir avec un rouleau à pâtisserie.
-2. Déposer les tranches de jambon sur les escalopes, puis les tranches de comté.
-3. Saler et poivrer avant de rouler les escalopes à l'aide du film alimentaire.
-4. Rouler les escalopes en les serrant bien dans le film alimentaire et réserver 2h au congélateur.
-5. Hacher finement le persil. Dans 3 assiettes différences, préparer les oeufs battus, la farine et la chapelure mélangée au persil.
-6. Sortir les escalopes roulées, préchauffer le four à 180°C et mettre l'huile à chauffer dans une poêle.
-7. Passer successivement les escalopes dans la **farine**, dans l'**œuf battu**, puis dans la **chapelure**.
-8. Recommencer l'opération en passant à nouveau l'escalope roulée dans l'**oeuf** et la **chapelure**. Ne pas les repasser dans la farine pour éviter les grumeaux.
-9. Cuire 10 minutes dans la poêle, en retournant les escalopes régulièrement pour que tous les côtés soient cuits.
-10. Déposer sur du papier absorbant puis placer les cordons bleus sur une plaque recouverte de papier cuisson et enfourner 10 minutes à 180°C.
+2. Couper le comté en fines tranches
+3. Déposer les tranches de jambon sur les escalopes, puis les tranches de comté.
+4. Saler et poivrer avant de rouler les escalopes à l'aide du film alimentaire.
+5. Rouler les escalopes en les serrant bien dans le film alimentaire et réserver 2h au congélateur.
+6. Hacher finement le persil. Dans 3 assiettes différences, préparer les oeufs battus, la farine et la chapelure mélangée au persil.
+7. Sortir les escalopes roulées, préchauffer le four à 180°C et mettre l'huile à chauffer dans une poêle.
+8. Passer successivement les escalopes dans la **farine**, dans l'**œuf battu**, puis dans la **chapelure**.
+9. Recommencer l'opération en passant à nouveau l'escalope roulée dans l'**oeuf** et la **chapelure**. Ne pas les repasser dans la farine pour éviter les grumeaux.
+10. Cuire 10 minutes dans la poêle, en retournant les escalopes régulièrement pour que tous les côtés soient cuits.
+11. Déposer sur du papier absorbant puis placer les cordons bleus sur une plaque recouverte de papier cuisson et enfourner 10 minutes à 180°C.

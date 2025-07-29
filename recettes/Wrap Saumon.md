@@ -16,7 +16,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Saumon : 4 tranches
+- [ ] Saumon : 120g
 - [ ] Tortillas : 4
 - [ ] Concombre : 1
 - [ ] Fromage frais : 160g

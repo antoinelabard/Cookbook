@@ -19,7 +19,7 @@ meal: lunch
 - [ ] Escalopes de poulet : 4
 - [ ] Carottes : 4
 - [ ] Courgettes : 2
-- [ ] Gousses d'ail : 2
+- [ ] Ail : 2 gousses
 - [ ] Beurre de cacahuète : 4cs
 - [ ] Sauce soja : 4cs
 - [ ] Riz : 280g

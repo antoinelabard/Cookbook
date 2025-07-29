@@ -80,11 +80,15 @@ class CookbookRepository:
                 lipids=attributes[Constants.Macros.LIPIDS],
                 carbs=attributes[Constants.Macros.CARBS],
             )
-            ingredients.append(Ingredient(ingredient_str, macros=macros))
+            ingredients.append(Ingredient(
+                ingredient_str,
+                macros=macros,
+                piece_to_g_ratio=attributes[Constants.Macros.PIECE_TO_G_RATIO] if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys() else -1
+            ))
 
         return ingredients
 
-    def _load_ingredients_from_recipe(self, ingredients_str: str) -> list[Ingredient]:
+    def _load_ingredients_from_recipe(self, ingredients_str: str, recipe) -> list[Ingredient]:
         ingredients_str = [ingredient.strip() for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("- [ ] ", "") for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("\n", "") for ingredient in ingredients_str]
@@ -108,14 +112,17 @@ class CookbookRepository:
             kept_ingredient.quantity = ingredient_quantity
 
             def is_contained(tested_unit: str) -> bool:
-                for item1 in [e.value for e in QuantityUnit.PIECE.value]:
-                    if item1 in tested_unit:
+                teest = [piece.value for piece in QuantityUnit.PIECE.value]
+                for piece in [piece.value for piece in QuantityUnit.PIECE.value]:
+                    if piece in tested_unit:
                         return True
                 return False
-            if is_contained(ingredient_quantity_unit):
+            if is_contained(ingredient_quantity_unit) or ingredient_quantity_unit == QuantityUnit.VOID:
                 kept_ingredient.quantity_unit = QuantityUnit.PIECE.value.PIECE
-                if kept_ingredient.piece_to_g_ratio == 1:
-                    self.logger.warning(f"Suspicious piece_to_g_ratio of {kept_ingredient.piece_to_g_ratio} found for ingredient {kept_ingredient.name}, which may need  a custom one written in {self.BASE_INGREDIENTS_PATH}")
+                if kept_ingredient.piece_to_g_ratio == -1:
+                    self.logger.warning(f"----Suspicious piece_to_g_ratio of {kept_ingredient.piece_to_g_ratio} found for "
+                                        f"ingredient ----{kept_ingredient.name}---- in recipe {recipe}, which may need a "
+                                        f"custom one written in {self.BASE_INGREDIENTS_PATH}")
             else:
                 try:
                         kept_ingredient.quantity_unit = QuantityUnit(ingredient_quantity_unit)
@@ -168,7 +175,7 @@ class CookbookRepository:
 
         metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
 
-        ingredients = self._load_ingredients_from_recipe(lines[ingredients_range[0]:ingredients_range[1]])
+        ingredients = self._load_ingredients_from_recipe(lines[ingredients_range[0]:ingredients_range[1]], path.name)
 
         instructions = lines[instructions_range[0]:instructions_range[1]]
         instructions = [instruction.replace("\n", "") for instruction in instructions]
@@ -284,11 +291,10 @@ class CookbookRepository:
                 continue
             output_content.append(f"# {meal}\n\n{recipes_links}")
             avg_macros = meal_plan.compute_avg_macros_per_meal(meal)
-            output_content.append("Macros moyenne par portion")
-            output_content.append("| Énergie | Protéines | Lipides | Glucides |")
-            output_content.append("|:-------:|:---------:|:-------:|:--------:|")
             output_content.append(
-                f"| {avg_macros.energy} | {avg_macros.proteins} | {avg_macros.lipids} | {avg_macros.carbs} |")
+                "| Énergie | Protéines | Lipides | Glucides |\n"
+                + "|:-------:|:---------:|:-------:|:--------:|\n"
+                + f"| {avg_macros.energy} | {avg_macros.proteins} | {avg_macros.lipids} | {avg_macros.carbs} |")
         with open(self.MENU_PATH, 'w') as f:
             f.write("\n\n".join(output_content))
 

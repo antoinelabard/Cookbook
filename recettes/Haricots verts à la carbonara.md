@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Lardons : 200g
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Crème fraîche : 25cl
 - [ ] Parmesan râpé : 150g
 - [ ] Beurre : 10g

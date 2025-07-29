@@ -124,11 +124,12 @@ Blé à cuire:
   carbs: 68.0
   lipids: 2.5
   aisle: Produits secs
-Boîte de lasagnes précuites:
+Boîte de lasagnes:
   energy: 352
   proteins: 12.0
   carbs: 71.0
   lipids: 2.0
+  piece_to_g_ratio: 500
   aisle: Produits secs
 Bouillon de légumes:
   energy: 10
@@ -243,6 +244,7 @@ Pain de mie:
   proteins: 8.4
   carbs: 48.3
   lipids: 3.3
+  piece_to_g_ratio: 40
   aisle: Produits secs
 Pains à burgers:
   energy: 270
@@ -291,120 +293,140 @@ Ail en poudre:
   proteins: 16.6
   carbs: 72.7
   lipids: 0.7
+  piece_to_g_ratio: 1
   aisle: Épices
 Aneth:
   energy: 43
   proteins: 3.5
   carbs: 7.0
   lipids: 1.1
+  piece_to_g_ratio: 1
   aisle: Épices
 Basilic:
   energy: 23
   proteins: 3.2
   carbs: 2.7
   lipids: 0.6
+  piece_to_g_ratio: 1
   aisle: Épices
 Cannelle en poudre:
   energy: 247
   proteins: 4.0
   carbs: 80.6
   lipids: 1.2
+  piece_to_g_ratio: 1
   aisle: Épices
 Coriandre:
   energy: 23
   proteins: 2.1
   carbs: 3.7
   lipids: 0.5
+  piece_to_g_ratio: 1
   aisle: Épices
 Cumin:
   energy: 375
   proteins: 17.8
   carbs: 44.2
   lipids: 22.3
+  piece_to_g_ratio: 1
   aisle: Épices
 Curcuma:
   energy: 312
   proteins: 9.7
   carbs: 67.1
   lipids: 3.3
+  piece_to_g_ratio: 1
   aisle: Épices
 Curry:
   energy: 325
   proteins: 14.3
   carbs: 58.2
   lipids: 13.0
+  piece_to_g_ratio: 1
   aisle: Épices
 Épices orientales:
   energy: 320
   proteins: 12.0
   carbs: 55.0
   lipids: 10.0
+  piece_to_g_ratio: 1
   aisle: Épices
 Gingembre:
   energy: 335
   proteins: 8.4
   carbs: 71.6
   lipids: 4.2
+  piece_to_g_ratio: 1
   aisle: Épices
 Graines de sésame:
   energy: 573
   proteins: 17.7
   carbs: 23.4
   lipids: 49.7
+  piece_to_g_ratio: 1
   aisle: Épices
 Herbes de Provence:
   energy: 261
   proteins: 9.5
   carbs: 49.1
   lipids: 6.0
+  piece_to_g_ratio: 1
   aisle: Épices
 Mélange d'épices mexicaines:
   energy: 325
   proteins: 10.0
   carbs: 60.0
   lipids: 8.0
+  piece_to_g_ratio: 1
   aisle: Épices
 Muscade:
   energy: 525
   proteins: 5.8
   carbs: 49.3
   lipids: 36.3
+  piece_to_g_ratio: 1
   aisle: Épices
 Origan:
   energy: 265
   proteins: 11.0
   carbs: 68.9
   lipids: 4.3
+  piece_to_g_ratio: 1
   aisle: Épices
 Paprika:
   energy: 282
   proteins: 14.1
   carbs: 54.7
   lipids: 12.9
+  piece_to_g_ratio: 1
   aisle: Épices
 Persil:
   energy: 36
   proteins: 3.0
   carbs: 6.3
   lipids: 0.8
+  piece_to_g_ratio: 1
   aisle: Épices
 Piment:
   energy: 350
   proteins: 12.0
   carbs: 55.0
   lipids: 17.3
+  piece_to_g_ratio: 1
   aisle: Épices
 Sel:
   energy: 0
   proteins: 0.0
   carbs: 0.0
   lipids: 0.0
+  piece_to_g_ratio: 1
   aisle: Épices
 Thym:
   energy: 276
   proteins: 9.1
   carbs: 63.9
   lipids: 7.4
+  piece_to_g_ratio: 1
   aisle: Épices
 Amandes effilées:
   energy: 627
@@ -579,12 +601,14 @@ Jambon:
   proteins: 20.5
   carbs: 1.0
   lipids: 4.0
+  piece_to_g_ratio: 42.5
   aisle: Produits frais
 Lard:
   energy: 661
   proteins: 8.0
   carbs: 0.0
   lipids: 70.0
+  piece_to_g_ratio: 15
   aisle: Produits frais
 Pâte à pizza:
   energy: 259
@@ -603,6 +627,7 @@ Pâte feuilletée:
   proteins: 6.5
   carbs: 39.0
   lipids: 26.0
+  piece_to_g_ratio: 230
   aisle: Produits frais
 Pâtes brisées:
   energy: 408
@@ -693,6 +718,7 @@ Fromage:
   proteins: 22.0
   carbs: 1.5
   lipids: 27.0
+  piece_to_g_ratio: 20
   aisle: Produits laitiers
 Fromage blanc:
   energy: 79
@@ -753,6 +779,7 @@ Ail:
   proteins: 6.4
   carbs: 27.6
   lipids: 0.5
+  piece_to_g_ratio: 8
   aisle: Fruits et légumes
 Aubergines:
   energy: 25
@@ -801,6 +828,7 @@ Ciboulette:
   proteins: 3.3
   carbs: 4.4
   lipids: 0.7
+  piece_to_g_ratio: 1
   aisle: Fruits et légumes
 Citron:
   energy: 29
@@ -885,6 +913,7 @@ Oignon:
   proteins: 1.1
   carbs: 7.6
   lipids: 0.1
+  piece_to_g_ratio: 150
   aisle: Fruits et légumes
 Patates douces:
   energy: 86

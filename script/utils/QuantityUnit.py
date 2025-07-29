@@ -20,11 +20,14 @@ class QuantityUnit(Enum):
         BAG = "sachet"
         PACK = "paquet"
         BOUQUET = "bouquet"
-        VOID = ""
+
     PIECE = Piece
 
+    VOID = ""
+
     KG_TO_G_RATIO = 1000  # 1kg == 1000g
-    CL_TO_G_RATIO = 10
     ML_TO_G_RATIO = 1
+    CL_TO_G_RATIO = 10
+    L_TO_G_RATIO = 1000
     CC_TO_G_RATIO = 5
     CS_TO_G_RATIO = 15

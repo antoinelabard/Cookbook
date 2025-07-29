@@ -22,7 +22,7 @@ macros:
 ## Ingrédients
 
 - [ ] Oignon : 1
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Viande hachée : 350g
 - [ ] Sauce tomate : 400g
 - [ ] Oeufs : 2
