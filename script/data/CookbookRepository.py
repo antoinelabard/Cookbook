@@ -55,6 +55,7 @@ class CookbookRepository:
 
     def __init__(self):
         self.logger = logging.getLogger(__name__)
+        self.logger.addHandler(logging.StreamHandler())
         self.base_ingredients = self._read_base_ingredients()
         self.recipes: list[Recipe] = self._read_recipes()
         self.recipes_names: list[str] = list(map(lambda recipe: recipe.name, self.recipes))
