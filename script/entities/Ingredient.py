@@ -1,21 +1,37 @@
-from enum import Enum
+import logging
 
 from script.entities.Macros import Macros
+from script.utils.QuantityUnit import QuantityUnit
 
 
 class Ingredient:
-    class Unit(Enum):
-        G = "g"
-        CL = "cl"
-        NONE = ""
+
+    CL_TO_G_RATIO = 10
+    ML_TO_G_RATIO = 1
 
     def __init__(self,
                  name: str,
-                 quantity: float | None = None,
-                 quantity_unit: Unit = Unit.NONE,
-                 macros: Macros = Macros()
+                 quantity: float = 0,
+                 quantity_unit: QuantityUnit = QuantityUnit.G,
+                 piece_to_g_ratio = 1,
+                 macros: Macros = Macros(1, 1, 1, 1)
                  ):
+        self.logger = logging.getLogger(__name__)
         self.name: str = name
-        self.quantity: float | None = quantity
-        self.quantity_unit: Ingredient.Unit = quantity_unit
+        self.quantity: float = quantity
+        self.quantity_unit: QuantityUnit = quantity_unit
+        self.piece_to_g_ratio = piece_to_g_ratio
         self.macros: Macros = macros
+
+    def compute_macros_from_quantity(self):
+        match self.quantity_unit:
+            case QuantityUnit.G:
+                self.macros = self.macros * self.quantity / Macros.REFERENCE_QUANTITY
+            case QuantityUnit.CL:
+                self.macros = self.macros * self.quantity * self.CL_TO_G_RATIO / Macros.REFERENCE_QUANTITY
+            case QuantityUnit.ML:
+                self.macros = self.macros * self.quantity * self.ML_TO_G_RATIO / Macros.REFERENCE_QUANTITY
+            case QuantityUnit.PIECE:
+                self.macros = self.macros * self.quantity * self.piece_to_g_ratio / Macros.REFERENCE_QUANTITY
+            case _:
+                self.logger.warning(f"unit {self.quantity_unit} not recognised for ingredient {self.name}")

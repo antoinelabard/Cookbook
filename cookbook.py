@@ -36,11 +36,13 @@ CONFIGURATION
 """
 
 import sys
+import logging
 
 from script.data.CookbookRepository import CookbookRepository
 from script.MealPlanBuilder import MealPlanBuilder
 
 if __name__ == "__main__":
+    logging.basicConfig(filename='cookbook.log', level=logging.INFO)
     repository = CookbookRepository()
     meal_plan_builder = MealPlanBuilder(repository.recipes)
 

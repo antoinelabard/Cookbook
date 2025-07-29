@@ -1,5 +1,7 @@
 class Macros:
 
+    REFERENCE_QUANTITY = 100 # in g, a macros indicates the nutrients for 100g
+
     def __init__(self,
                  energy: float = 0,
                  proteins: float = 0,
@@ -17,3 +19,19 @@ class Macros:
             self.lipids + other.lipids,
             self.carbs + other.carbs,
         )
+
+    def __mul__(self, other):
+        return Macros(
+            self.energy * other,
+            self.proteins * other,
+            self.lipids * other,
+            self.carbs * other,
+        )
+
+    def __truediv__(self, other):
+        return Macros(
+            self.energy / other,
+            self.proteins / other,
+            self.lipids / other,
+            self.carbs / other,
+            )

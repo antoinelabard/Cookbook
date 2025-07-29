@@ -1,4 +1,4 @@
-from script.utils.Constants import Constants
+from script.entities.Ingredient import Ingredient
 from script.entities.Macros import Macros
 
 
@@ -10,13 +10,12 @@ class Recipe:
     def __init__(self,
                  name: str,
                  recipe_type: str,
-                 ingredients: list[str],
+                 ingredients: list[Ingredient],
                  instructions: list[str],
                  date_added: str | None = None,
                  source: str | None = None,
                  meal: str | None = None,
                  seasons: list[str] | None = None,
-                 macros: dict[str, float] | None = None,
                  portions: int = 4,
                  tags: list[str] | None = None):
         self.name: str = name
@@ -30,16 +29,6 @@ class Recipe:
         elif seasons is None:
             self.seasons: list[str] = []
 
-        if isinstance(macros, dict):
-            self.macros = Macros(
-                macros[Constants.Macros.ENERGY],
-                macros[Constants.Macros.PROTEINS],
-                macros[Constants.Macros.LIPIDS],
-                macros[Constants.Macros.CARBS],
-            )
-        elif macros is None:
-            self.macros = None
-
         self.portions: float = portions
 
         if isinstance(tags, list):
@@ -47,5 +36,14 @@ class Recipe:
         elif tags is None:
             self.tags: list[str] = []
 
-        self.ingredients: list[str] = ingredients
+        self.ingredients: list[Ingredient] = ingredients
         self.instructions: list[str] = instructions
+
+        self.macros: Macros = self.compute_recipe_macros()
+
+    def compute_recipe_macros(self):
+        macros = Macros()
+        for i in self.ingredients:
+            macros += i.macros
+
+        return macros / self.portions

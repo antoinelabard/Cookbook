@@ -21,15 +21,16 @@ class MealPlan:
     def as_list(self) -> list[Recipe]:
         return self.breakfast + self.lunch + self.snack
 
-    def _compute_avg_macros_per_meal_aux(self, recipes) -> Macros:
-        total_nb_portions = sum(map(lambda recipe: recipe.macros.portions, recipes))
+    def _compute_avg_macros_per_meal_aux(self, recipes: list[Recipe]) -> Macros:
+        total_nb_portions = sum(map(lambda recipe: recipe.portions, recipes))
+
+        suum = sum(map(lambda recipe: recipe.macros.energy * recipe.portions, recipes)) / total_nb_portions,
 
         return Macros(
-            sum(map(lambda recipe: recipe.macros.energy * recipe.macros.portions, recipes)) / total_nb_portions,
-            sum(map(lambda recipe: recipe.macros.proteins * recipe.macros.portions, recipes)) / total_nb_portions,
-            sum(map(lambda recipe: recipe.macros.lipids * recipe.macros.portions, recipes)) / total_nb_portions,
-            sum(map(lambda recipe: recipe.macros.carbs * recipe.portions, recipes)) / total_nb_portions,
-            1  # macros averaged per portions, so it is by convention 1
+            round(sum(map(lambda recipe: recipe.macros.energy * recipe.portions, recipes)) / total_nb_portions),
+            round(sum(map(lambda recipe: recipe.macros.proteins * recipe.portions, recipes)) / total_nb_portions),
+            round(sum(map(lambda recipe: recipe.macros.lipids * recipe.portions, recipes)) / total_nb_portions),
+            round(sum(map(lambda recipe: recipe.macros.carbs * recipe.portions, recipes)) / total_nb_portions),
         )
 
     def compute_avg_macros_per_meal(self, meal) -> Macros:
@@ -45,4 +46,4 @@ class MealPlan:
                 return self._compute_avg_macros_per_meal_aux(self.lunch)
             case Constants.Meal.SNACK:
                 return self._compute_avg_macros_per_meal_aux(self.snack)
-        return Macros(0, 0, 0, 0, 0)
+        return Macros(0, 0, 0, 0)

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import logging
+import re
 from pathlib import Path
 
 import yaml
@@ -12,6 +14,7 @@ from script.utils.Constants import Constants
 from script.MealPlanBuilder import MealPlanBuilder
 from script.MealPlanFilter import MealPlanFilter
 from script.entities.Recipe import Recipe
+from script.utils.QuantityUnit import QuantityUnit
 
 
 def singleton(class_):
@@ -51,6 +54,7 @@ class CookbookRepository:
     SOURCE_RECIPE_SEPARATOR = " ---> "
 
     def __init__(self):
+        self.logger = logging.getLogger(__name__)
         self.base_ingredients = self._read_base_ingredients()
         self.recipes: list[Recipe] = self._read_recipes()
         self.recipes_names: list[str] = list(map(lambda recipe: recipe.name, self.recipes))
@@ -76,6 +80,39 @@ class CookbookRepository:
                 carbs=attributes[Constants.Macros.CARBS],
             )
             ingredients.append(Ingredient(ingredient_str, macros=macros))
+
+        return ingredients
+
+    def _load_ingredients_from_recipe(self, ingredients_str: str) -> list[Ingredient]:
+        ingredients_str = [ingredient.strip() for ingredient in ingredients_str]
+        ingredients_str = [ingredient.replace("- [ ] ", "") for ingredient in ingredients_str]
+        ingredients_str = [ingredient.replace("\n", "") for ingredient in ingredients_str]
+
+        # converts the ingredients names to real Ingredients objects with their macros and quantities
+        ingredients: list[Ingredient] = []
+        for ingredient_str in ingredients_str:
+            i = ingredient_str.split(" : ")
+            ingredient_name = i[0] # get the left part of the "ingredient : quantity" line
+            ingredient_quantity = 0
+            ingredient_quantity_unit = ""
+            if len(i) == 2:
+                ingredient_quantity = int(re.findall(r'\d+', i[1])[0])
+                ingredient_quantity_unit = re.findall(r'\D+', i[1])
+                ingredient_quantity_unit = ingredient_quantity_unit[0] if len(ingredient_quantity_unit) > 0 else QuantityUnit.PIECE.value
+            ingredients_candidates = list(filter(lambda ingredient: ingredient.name in ingredient_name, self.base_ingredients))
+            if not ingredients_candidates:
+                self.logger.warning(f"no base ingredient candidate for for ingredient name {ingredient_str}")
+                continue
+            kept_ingredient = sorted(ingredients_candidates, key=lambda igr: len(igr.name))[-1]  # keep the match with the most characters
+            kept_ingredient.quantity = ingredient_quantity
+            try:
+                kept_ingredient.quantity_unit = QuantityUnit(ingredient_quantity_unit)
+            except ValueError:
+                self.logger.warning(f"unit {ingredient_quantity_unit} not recognised for ingredient {ingredient_str}")
+
+            kept_ingredient.compute_macros_from_quantity()
+
+            ingredients.append(kept_ingredient)
 
         return ingredients
 
@@ -119,25 +156,21 @@ class CookbookRepository:
 
         metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
 
-        ingredients = lines[ingredients_range[0]:ingredients_range[1]]
-        ingredients = [ingredient.strip() for ingredient in ingredients]
-        ingredients = [ingredient.replace("- [ ] ", "") for ingredient in ingredients]
-        ingredients = [ingredient.replace("\n", "") for ingredient in ingredients]
+        ingredients = self._load_ingredients_from_recipe(lines[ingredients_range[0]:ingredients_range[1]])
 
         instructions = lines[instructions_range[0]:instructions_range[1]]
         instructions = [instruction.replace("\n", "") for instruction in instructions]
 
         recipe = Recipe(
-            path.name.replace(".md", ""),
-            metadata[Constants.RECIPE_TYPE],
-            ingredients,
-            instructions,
-            metadata[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata.keys() else None,
-            metadata[Constants.SOURCE] if Constants.SOURCE in metadata.keys() else None,
-            metadata[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata.keys() else None,
-            metadata[Constants.Season.SEASON] if Constants.Season.SEASON in metadata.keys() else None,
-            metadata[Constants.Macros.MACROS] if Constants.Macros.MACROS in metadata.keys() else None,
-            metadata[Constants.TAGS] if Constants.TAGS in metadata.keys() else None
+            name=path.name.replace(".md", ""),
+            recipe_type=metadata[Constants.RECIPE_TYPE],
+            ingredients=ingredients,
+            instructions=instructions,
+            date_added=metadata[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata.keys() else None,
+            source=metadata[Constants.SOURCE] if Constants.SOURCE in metadata.keys() else None,
+            meal=metadata[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata.keys() else None,
+            seasons=metadata[Constants.Season.SEASON] if Constants.Season.SEASON in metadata.keys() else None,
+            tags=metadata[Constants.TAGS] if Constants.TAGS in metadata.keys() else None
         )
 
         return recipe
@@ -243,7 +276,7 @@ class CookbookRepository:
             output_content.append("| Énergie | Protéines | Lipides | Glucides |")
             output_content.append("|:-------:|:---------:|:-------:|:--------:|")
             output_content.append(
-                f"| {avg_macros[meal].energy} | {avg_macros[meal].proteins} | {avg_macros[meal].lipids} | {avg_macros[meal].carbs} |")
+                f"| {avg_macros.energy} | {avg_macros.proteins} | {avg_macros.lipids} | {avg_macros.carbs} |")
         with open(self.MENU_PATH, 'w') as f:
             f.write("\n\n".join(output_content))
 
@@ -306,8 +339,7 @@ class CookbookRepository:
         i: int = 0
         while i < len(menu_ingredients):
             ingredient_lowercase: str = menu_ingredients_lowercase[i]
-            aisles_candidates: dict[
-                str, str] = {}  # sometimes, multiple reference ingredients match the tested recipe ingredient. This dictionary is used to enumerate those candidates and pick the winner among them
+            aisles_candidates: dict[str, str] = {}  # sometimes, multiple reference ingredients match the tested recipe ingredient. This dictionary is used to enumerate those candidates and pick the winner among them
             for aisle in self.ingredients_aisles.keys():
                 ref_ingredients_by_aisle: list[str] = sorted(self.ingredients_aisles[aisle], key=lambda a: -len(a))
                 for reference_ingredient in ref_ingredients_by_aisle:
@@ -317,8 +349,7 @@ class CookbookRepository:
             if not aisles_candidates:
                 i += 1
                 continue
-            aisle_winner: str = aisles_candidates[max(aisles_candidates.keys(),
-                                                      key=len)]  # the winner is the reference ingredient with the longer name (it's better to match "chorizo" than "riz")
+            aisle_winner: str = aisles_candidates[max(aisles_candidates.keys(), key=len)]  # the winner is the reference ingredient with the longer name (it's better to match "chorizo" than "riz")
             ingredients_aisles[aisle_winner].append(menu_ingredients.pop(i))
             menu_ingredients_lowercase.pop(i)
         ingredients_aisles["Unclassified"] = menu_ingredients
