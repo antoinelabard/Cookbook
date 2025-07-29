@@ -19,8 +19,8 @@ tags: [occasion]
 Pour un mug (25cl) :
 
 - [ ] Crème liquide entière : 10cl
-- [ ] lait : 15cl
-- [ ] chocolat noir : 25g
+- [ ] Lait : 15cl
+- [ ] Chocolat noir : 25g
 
 ## Préparation
 
