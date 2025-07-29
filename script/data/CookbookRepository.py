@@ -99,17 +99,28 @@ class CookbookRepository:
             if len(i) == 2:
                 ingredient_quantity = int(re.findall(r'\d+', i[1])[0])
                 ingredient_quantity_unit = re.findall(r'\D+', i[1])
-                ingredient_quantity_unit = ingredient_quantity_unit[0] if len(ingredient_quantity_unit) > 0 else QuantityUnit.PIECE.value
+                ingredient_quantity_unit = ingredient_quantity_unit[0] if len(ingredient_quantity_unit) > 0 else ''
             ingredients_candidates = list(filter(lambda ingredient: ingredient.name in ingredient_name, self.base_ingredients))
             if not ingredients_candidates:
                 self.logger.warning(f"no base ingredient candidate for for ingredient name {ingredient_str}")
                 continue
             kept_ingredient = sorted(ingredients_candidates, key=lambda igr: len(igr.name))[-1]  # keep the match with the most characters
             kept_ingredient.quantity = ingredient_quantity
-            try:
-                kept_ingredient.quantity_unit = QuantityUnit(ingredient_quantity_unit)
-            except ValueError:
-                self.logger.warning(f"unit {ingredient_quantity_unit} not recognised for ingredient {ingredient_str}")
+
+            def is_contained(tested_unit: str) -> bool:
+                for item1 in [e.value for e in QuantityUnit.PIECE.value]:
+                    if item1 in tested_unit:
+                        return True
+                return False
+            if is_contained(ingredient_quantity_unit):
+                kept_ingredient.quantity_unit = QuantityUnit.PIECE.value.PIECE
+                if kept_ingredient.piece_to_g_ratio == 1:
+                    self.logger.warning(f"Suspicious piece_to_g_ratio of {kept_ingredient.piece_to_g_ratio} found for ingredient {kept_ingredient.name}, which may need  a custom one written in {self.BASE_INGREDIENTS_PATH}")
+            else:
+                try:
+                        kept_ingredient.quantity_unit = QuantityUnit(ingredient_quantity_unit)
+                except ValueError:
+                    self.logger.warning(f"unit {ingredient_quantity_unit} not recognised for ingredient {ingredient_str}")
 
             kept_ingredient.compute_macros_from_quantity()
 
