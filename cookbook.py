@@ -38,8 +38,8 @@ CONFIGURATION
 import sys
 import logging
 
-from script.data.CookbookRepository import CookbookRepository
-from script.MealPlanBuilder import MealPlanBuilder
+from src.data.CookbookRepository import CookbookRepository
+from src.MealPlanBuilder import MealPlanBuilder
 
 if __name__ == "__main__":
     logging.basicConfig(filename='cookbook.log', level=logging.INFO)

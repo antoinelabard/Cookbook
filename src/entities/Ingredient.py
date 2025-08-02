@@ -1,7 +1,7 @@
 import logging
 
-from script.entities.Macros import Macros
-from script.utils.QuantityUnit import QuantityUnit
+from src.entities.Macros import Macros
+from src.utils.QuantityUnit import QuantityUnit
 
 
 class Ingredient:

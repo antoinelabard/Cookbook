@@ -1,7 +1,7 @@
 import datetime
 
-from script.entities import Recipe
-from script.utils.Constants import Constants
+from src.entities import Recipe
+from src.utils.Constants import Constants
 
 
 class MealPlanFilter:

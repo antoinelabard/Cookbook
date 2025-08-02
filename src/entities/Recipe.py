@@ -1,5 +1,5 @@
-from script.entities.Ingredient import Ingredient
-from script.entities.Macros import Macros
+from src.entities.Ingredient import Ingredient
+from src.entities.Macros import Macros
 
 
 class Recipe:

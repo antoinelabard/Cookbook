@@ -1,4 +1,4 @@
-from script.entities.Recipe import Recipe
+from src.entities.Recipe import Recipe
 
 
 def filter_recipe_by_name(recipe_name: str, recipes: list[Recipe]) -> Recipe:

@@ -7,15 +7,15 @@ from pathlib import Path
 
 import yaml
 
-from script.entities import MealPlan
-from script.entities.Ingredient import Ingredient
-from script.entities.Macros import Macros
-from script.utils import Utils
-from script.utils.Constants import Constants
-from script.MealPlanBuilder import MealPlanBuilder
-from script.MealPlanFilter import MealPlanFilter
-from script.entities.Recipe import Recipe
-from script.utils.QuantityUnit import QuantityUnit
+from src.entities import MealPlan
+from src.entities.Ingredient import Ingredient
+from src.entities.Macros import Macros
+from src.utils import Utils
+from src.utils.Constants import Constants
+from src.MealPlanBuilder import MealPlanBuilder
+from src.MealPlanFilter import MealPlanFilter
+from src.entities.Recipe import Recipe
+from src.utils.QuantityUnit import QuantityUnit
 
 
 def singleton(class_):
