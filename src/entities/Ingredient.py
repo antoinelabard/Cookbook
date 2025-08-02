@@ -1,3 +1,4 @@
+import copy
 import logging
 
 from src.entities.Macros import Macros
@@ -20,6 +21,18 @@ class Ingredient:
         self.quantity_unit: QuantityUnit = quantity_unit
         self.piece_to_g_ratio: float = piece_to_g_ratio
         self.macros: Macros = macros
+
+    @staticmethod
+    def from_name(recipe_ingredient_name: str, base_ingredients: list["Ingredient"]):
+        ingredients_candidates = []
+        for base_ingredient in base_ingredients:
+            if base_ingredient.name.lower() in recipe_ingredient_name.lower():
+                ingredients_candidates.append(base_ingredient)
+        if not ingredients_candidates:
+            return None
+
+        return copy.deepcopy(sorted(ingredients_candidates, key=lambda igr: len(igr.name))[-1])  # keep the match with the most characters
+
 
     def compute_macros_from_quantity(self):
         if self.quantity_unit in QuantityUnit.PIECE.value or self.quantity_unit == QuantityUnit.VOID:

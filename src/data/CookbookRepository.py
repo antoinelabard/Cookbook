@@ -1,8 +1,6 @@
 from __future__ import annotations
 
-import copy
 import logging
-import re
 from pathlib import Path
 
 import yaml
@@ -10,7 +8,7 @@ import yaml
 from src.entities import MealPlan
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
-from src.utils import Utils
+from src.utils.Utils import Utils
 from src.utils.Constants import Constants
 from src.MealPlanBuilder import MealPlanBuilder
 from src.MealPlanFilter import MealPlanFilter
@@ -85,60 +83,50 @@ class CookbookRepository:
             ingredients.append(Ingredient(
                 ingredient_str,
                 macros=macros,
-                piece_to_g_ratio=attributes[Constants.Macros.PIECE_TO_G_RATIO] if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys() else -1
+                piece_to_g_ratio=attributes[Constants.Macros.PIECE_TO_G_RATIO] if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys() else QuantityUnit.INVALID_PIECE_TO_G_RATIO
             ))
 
         return ingredients
 
-    def _load_ingredients_from_recipe(self, ingredients_str: str, recipe) -> list[Ingredient]:
+
+    def _get_ingredient_object_from_recipe_line(self, recipe_ingredient_str: str, recipe_name: str) -> Ingredient | None:
+        recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit = Utils.extract_name_and_quantity_from_ingredient_line(recipe_ingredient_str)
+        kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self.base_ingredients)
+        if kept_ingredient is None:
+            self.logger.warning(f"no base ingredient candidate for for ingredient name {recipe_ingredient_name} in recipe {recipe_name}")
+            return None
+
+        kept_ingredient.name = recipe_ingredient_name
+        kept_ingredient.quantity = recipe_ingredient_quantity
+        kept_ingredient.quantity_unit = QuantityUnit.from_str(recipe_ingredient_quantity_unit)
+        kept_ingredient.compute_macros_from_quantity()
+
+        # various logging if something went wrong or seem suspicious
+        if not kept_ingredient.quantity_unit:
+            self.logger.warning(
+                f"unit {recipe_ingredient_quantity_unit} not recognised in recipe {recipe_name}")
+            return None
+        if QuantityUnit.is_piece_unit_missing_ratio(kept_ingredient.quantity_unit, kept_ingredient.piece_to_g_ratio):
+            self.logger.warning(
+                f"Suspicious piece_to_g_ratio of {kept_ingredient.piece_to_g_ratio} found for ingredient "
+                f"{kept_ingredient.name} in recipe {recipe_name}, which may need a custom one written in "
+                f"{self.BASE_INGREDIENTS_PATH}")
+        if kept_ingredient.macros.energy == 0:
+            self.logger.warning(
+                f"the ingredient {kept_ingredient.name} has one or many of its macros set to 0 in recipe {recipe_name}")
+
+        return kept_ingredient
+
+
+    def _load_ingredients_from_recipe(self, ingredients_str: str, recipe_name: str) -> list[Ingredient]:
         ingredients_str = [ingredient.strip() for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("- [ ] ", "") for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("\n", "") for ingredient in ingredients_str]
 
-        # converts the ingredients names to real Ingredients objects with their macros and quantities
         ingredients: list[Ingredient] = []
         for recipe_ingredient_str in ingredients_str:
-            self.cou = self.cou + 1
-            i = recipe_ingredient_str.split(" : ")
-            recipe_ingredient_name = i[0] # get the left part of the "ingredient : quantity" line
-            recipe_ingredient_quantity = QuantityUnit.DEFAULT_QUANTITY.value
-            recipe_ingredient_quantity_unit = ""
-            if len(i) == 2:
-                recipe_ingredient_quantity = int(re.findall(r'\d+', i[1])[0])
-                recipe_ingredient_quantity_unit = re.findall(r'\D+', i[1])
-                recipe_ingredient_quantity_unit = recipe_ingredient_quantity_unit[0] if len(recipe_ingredient_quantity_unit) > 0 else ''
-            ingredients_candidates = []
-            for base_ingredient in self.base_ingredients:
-                if base_ingredient.name.lower() in recipe_ingredient_name.lower():
-                    ingredients_candidates.append(base_ingredient)
-            if not ingredients_candidates:
-                self.logger.warning(f"no base ingredient candidate for for ingredient name {recipe_ingredient_str}")
-                continue
-            kept_ingredient = copy.deepcopy(sorted(ingredients_candidates, key=lambda igr: len(igr.name))[-1])  # keep the match with the most characters
-            kept_ingredient.name = recipe_ingredient_name
-            kept_ingredient.quantity = recipe_ingredient_quantity
-
-            def is_contained(tested_unit: str) -> bool:
-                for piece in [piece.value for piece in QuantityUnit.PIECE.value]:
-                    if piece in tested_unit:
-                        return True
-                return False
-            if is_contained(recipe_ingredient_quantity_unit) or recipe_ingredient_quantity_unit == QuantityUnit.VOID:
-                kept_ingredient.quantity_unit = QuantityUnit.PIECE.value.PIECE
-                if kept_ingredient.piece_to_g_ratio == -1:
-                    self.logger.warning(f"Suspicious piece_to_g_ratio of {kept_ingredient.piece_to_g_ratio} found for "
-                                        f"ingredient {kept_ingredient.name} in recipe {recipe}, which may need a "
-                                        f"custom one written in {self.BASE_INGREDIENTS_PATH}")
-            else:
-                try:
-                        kept_ingredient.quantity_unit = QuantityUnit(recipe_ingredient_quantity_unit)
-                except ValueError:
-                    self.logger.warning(f"unit {recipe_ingredient_quantity_unit} not recognised for ingredient {recipe_ingredient_str}")
-
-            kept_ingredient.compute_macros_from_quantity()
-            if kept_ingredient.macros.energy == 0:
-                self.logger.warning(f"the ingredient {kept_ingredient.name} has one or many of its macros set to 0 in recipe {recipe}")
-            ingredients.append(kept_ingredient)
+            kept_ingredient = self._get_ingredient_object_from_recipe_line(recipe_ingredient_str, recipe_name)
+            if kept_ingredient: ingredients.append(kept_ingredient)
 
         return ingredients
 
