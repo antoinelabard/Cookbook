@@ -18,7 +18,7 @@ meal: lunch
 
 - [ ] Melon : 1
 - [ ] Tomates cerises : 6
-- [ ] Basilic
+- [ ] Basilic : 6 feuilles
 - [ ] Jus de citron
 - [ ] Huile d'olive : 10cl
 - [ ] Pâtes papillons : 250g
@@ -28,9 +28,9 @@ meal: lunch
 
 ## Préparation
 
-1. Faire cuire les pâtes 8 à 10 min.
-2. Couper le melon en deux et détailler la chair en billes à l'aide d'une cuillère parisienne.
-3. Couper les tomates cerise en deux, la mozzarella en dés et le jambon en lanières.
-4. Dans un saladier, mélanger le jus du citron et l'huile d'olive. Saler et poivrer. Ajouter 6 feuilles de basilic ciselées.
-5. Égoutter les pâtes. Les passer rapidement sous l'eau froide puis les verser dans le saladier. Mélanger. Ajouter les billes de melon, les tomates cerises, la mozzarella, le jambon et les olives.
-6. Parsemer du reste de basilic.
+1. Faire cuire les pâtes selon les instructions de paquet.
+2. Couper le melon en deux et détailler la chair en billes à l'aide d'une cuillère.
+3. Couper les tomates cerise en deux, déchirer la mozzarella petits morceaux et le jambon en carrés.
+4. Dans un saladier, mélanger le jus du citron et l'huile d'olive. Saler et poivrer. Ajouter les feuilles de basilic ciselées.
+5. Égoutter les pâtes. Les passer rapidement sous l'eau froide puis les verser dans le saladier. Mélanger.
+6. Ajouter les billes de melon, les tomates cerises, la mozzarella, le jambon et les olives. Parsemer du reste de basilic.

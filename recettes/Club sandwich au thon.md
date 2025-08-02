@@ -22,13 +22,12 @@ meal: lunch
 - [ ] Thon : 500g
 - [ ] Mayonnaise : 24cl
 - [ ] Concombre : 1
-- [ ] Salade : 1
 - [ ] Oignons nouveaux : 4
 - [ ] Tomates : 2
 
 ## Préparation
 
-1. Faire griller le pain de mie.
-2. Dans un bol, mettre ensemble le thon, l'oignon débité en petits cubes, la mayonnaise, la wasabi, les câpres et le jus de citron. Mélanger à la fourchette. Rectifier l'assaisonnement.
-3. Découper la salade en fines lanières et l'arroser de jus de citron.
-4. Dresser le sandwich en disposant une tranche de pain de mie, la préparation au thon, la salade, le concombre, la préparation au thon et une tranche de pain de mie.
+1. Faire griller le pain de mie. Débiter les oignons en petits cubes et coupez les tomates ainsi que le concombre en tranches.
+2. Dans un bol, mettre ensemble le thon, les oignons, la mayonnaise, les câpres et le jus de citron. Mélanger à la fourchette.
+3. Arroser de jus de citron.
+4. Dresser le sandwich en disposant une tranche de pain de mie, le concombre, la préparation au thon, la tomate et une tranche de pain de mie.

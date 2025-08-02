@@ -2,9 +2,8 @@
 
 ```dataview
 LIST
-FROM "recettes"
+FROM #cheat-meal
 WHERE recipe-type = "meal"
-AND tags = "cheat-meal"
 SORT file.name ASC
 ```
 
@@ -12,8 +11,7 @@ SORT file.name ASC
 
 ```dataview
 LIST
-FROM "recettes"
+FROM #occasion
 WHERE recipe-type = "meal"
-AND tags = "occasion"
 SORT file.name ASC
 ```

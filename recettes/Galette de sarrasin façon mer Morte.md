@@ -16,12 +16,12 @@ tags: [fail]
 
 ## Ingrédients
 
-- [ ]Beurre : 10g
-- [ ]Sel : 1cc
-- [ ]Galette de sarrasin : 1
-- [ ]~~sucre~~ sel : 50g
-- [ ]Fromage blanc : 200g
-- [ ]Myrtilles : 100g
+- [ ] Beurre : 10g
+- [ ] Sel : 1cc
+- [ ] Galette de sarrasin : 1
+- [ ] ~~sucre~~ sel : 50g
+- [ ] Fromage blanc : 200g
+- [ ] Myrtilles : 100g
 
 ## Préparation
 
