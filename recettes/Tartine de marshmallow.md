@@ -17,7 +17,7 @@ tags: [fail]
 ## Ingrédients
 
 - [ ] Marshmallow à tartiner
-- [ ] Pain
+- [ ] Pains à burger
 
 ## Préparation
 
