@@ -202,6 +202,7 @@ Kit fajitas pour 4:
   proteins: 5.0
   carbs: 33.0
   lipids: 5.5
+  piece_to_g_ratio: 500
   aisle: Produits secs
 Lasagnes:
   energy: 139
@@ -415,7 +416,7 @@ Piment:
   piece_to_g_ratio: 1
   aisle: Épices
 Sel:
-  energy: 0
+  energy: 1 # set by convention to suppress a warning
   proteins: 0.0
   carbs: 0.0
   lipids: 0.0
@@ -615,6 +616,12 @@ Lard:
   carbs: 0.0
   lipids: 70.0
   piece_to_g_ratio: 15
+  aisle: Produits frais
+Lardons:
+  energy: 270
+  proteins: 16.6
+  lipids: 22.1
+  carbs: 1
   aisle: Produits frais
 Pâte à pizza:
   energy: 259
@@ -1097,7 +1104,7 @@ Potatoes:
   lipids: 0.09
   aisle: Surgelés
 Fève: # Not edible but putting it here suppress an unknown ingredient warning
-  energy: 0
+  energy: 1
   carbs: 0
   proteins: 0
   lipids: 0

@@ -55,6 +55,7 @@ class CookbookRepository:
     SOURCE_RECIPE_SEPARATOR = " ---> "
 
     def __init__(self):
+        self.cou = 0
         self.logger = logging.getLogger(__name__)
         self.logger.addHandler(logging.StreamHandler())
         self.base_ingredients = self._read_base_ingredients()
@@ -97,9 +98,10 @@ class CookbookRepository:
         # converts the ingredients names to real Ingredients objects with their macros and quantities
         ingredients: list[Ingredient] = []
         for recipe_ingredient_str in ingredients_str:
+            self.cou = self.cou + 1
             i = recipe_ingredient_str.split(" : ")
             recipe_ingredient_name = i[0] # get the left part of the "ingredient : quantity" line
-            recipe_ingredient_quantity = 0
+            recipe_ingredient_quantity = QuantityUnit.DEFAULT_QUANTITY.value
             recipe_ingredient_quantity_unit = ""
             if len(i) == 2:
                 recipe_ingredient_quantity = int(re.findall(r'\d+', i[1])[0])
@@ -134,7 +136,8 @@ class CookbookRepository:
                     self.logger.warning(f"unit {recipe_ingredient_quantity_unit} not recognised for ingredient {recipe_ingredient_str}")
 
             kept_ingredient.compute_macros_from_quantity()
-
+            if kept_ingredient.macros.energy == 0:
+                self.logger.warning(f"the ingredient {kept_ingredient.name} has one or many of its macros set to 0 in recipe {recipe}")
             ingredients.append(kept_ingredient)
 
         return ingredients

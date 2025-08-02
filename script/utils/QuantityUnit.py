@@ -2,6 +2,7 @@ from enum import Enum
 
 
 class QuantityUnit(Enum):
+    KCAL = "kcal"
     G = "g"  # grams
     KG = "kg"  # grams
     ML = "ml"  # milliliters
@@ -32,3 +33,5 @@ class QuantityUnit(Enum):
     L_TO_G_RATIO = 1000
     CC_TO_G_RATIO = 5
     CS_TO_G_RATIO = 15
+
+    DEFAULT_QUANTITY = 10 # in grams
