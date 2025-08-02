@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Patates douces : 1.2kg
+- [ ] Patates douces : 1200g
 - [ ] Oignon : 1
 - [ ] Crottins de chèvre : 4
 - [ ] Thym

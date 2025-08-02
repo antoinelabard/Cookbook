@@ -428,6 +428,12 @@ Thym:
   lipids: 7.4
   piece_to_g_ratio: 1
   aisle: Épices
+Amandes entières:
+  energy: 627
+  proteins: 21.2
+  carbs: 6.1
+  lipids: 54.0
+  aisle: Épicerie sucrée
 Amandes effilées:
   energy: 627
   proteins: 21.2
@@ -435,9 +441,9 @@ Amandes effilées:
   lipids: 54.0
   aisle: Épicerie sucrée
 Amandes en poudre:
-  energy: 624
-  proteins: 21.1
-  carbs: 5.4
+  energy: 627
+  proteins: 21.2
+  carbs: 6.1
   lipids: 54.0
   aisle: Épicerie sucrée
 Beurre de cacahuète:
@@ -683,12 +689,6 @@ Cheddar:
   carbs: 1.3
   lipids: 33.0
   aisle: Produits laitiers
-Chèvre:
-  energy: 282
-  proteins: 20.0
-  carbs: 0.5
-  lipids: 22.0
-  aisle: Produits laitiers
 Comté:
   energy: 399
   proteins: 27.0
@@ -872,12 +872,6 @@ Endives:
   carbs: 1.8
   lipids: 0.3
   aisle: Fruits et légumes
-Feuille de laurier:
-  energy: 313
-  proteins: 7.6
-  carbs: 74.0
-  lipids: 8.4
-  aisle: Fruits et légumes
 Laitue:
   energy: 15
   proteins: 1.4
@@ -889,6 +883,7 @@ Laurier:
   proteins: 7.6
   carbs: 74.0
   lipids: 8.4
+  piece_to_g_ratio: 1
   aisle: Fruits et légumes
 Melon:
   energy: 34
@@ -1095,3 +1090,117 @@ Viande:
   carbs: 0.0
   lipids: 8.0
   aisle: Viandes et poissons
+Potatoes:
+  energy: 77
+  carbs: 17
+  proteins: 2.1
+  lipids: 0.09
+  aisle: Surgelés
+Fève: # Not edible but putting it here suppress an unknown ingredient warning
+  energy: 0
+  carbs: 0
+  proteins: 0
+  lipids: 0
+Sauce blanche:
+  energy: 250
+  proteins: 3
+  lipids: 24
+  carbs: 5
+  aisle: Conserves
+Tofu:
+  energy: 76
+  proteins: 8
+  lipids: 4
+  carbs: 1
+  aisle: Bio
+Pains à burger:
+  energy: 270
+  proteins: 9
+  lipids: 3
+  carbs: 50
+  aisle: Produits secs
+Levure de boulanger:
+  energy: 105
+  proteins: 8
+  lipids: 2
+  carbs: 13
+  aisle: Épicerie sucrée
+Roquefort:
+  energy: 370
+  proteins: 21
+  lipids: 31
+  carbs: 2
+  aisle: Produits laitiers
+Sauce barbecue:
+  energy: 110
+  proteins: 1
+  lipids: 0
+  carbs: 26
+  aisle: Conserves
+Cacao:
+  energy: 228
+  proteins: 20
+  lipids: 14
+  carbs: 11
+  aisle: Épicerie sucrée
+Mascarpone:
+  energy: 410
+  proteins: 4
+  lipids: 42
+  carbs: 2
+  aisle: Produits laitiers
+Biscuits à la cuillère:
+  energy: 380
+  proteins: 7
+  lipids: 4
+  carbs: 80
+  aisle: Épicerie sucrée
+Sauce pesto:
+  energy: 430
+  proteins: 5
+  lipids: 43
+  carbs: 7
+  aisle: Conserves
+Nouilles:
+  energy: 138
+  proteins: 4
+  lipids: 1
+  carbs: 28
+  aisle: Produits du monde
+Poitrine fumée:
+  energy: 303
+  proteins: 15.6
+  lipids: 26.1
+  carbs: 0.8
+  aisle: Produits frais
+Fromage de chèvre:
+  energy: 165
+  proteins: 10.6
+  lipids: 12.4
+  carbs: 2.8
+  aisle: Produits laitiers
+Chèvre frai:
+  energy: 153
+  proteins: 8.7
+  lipids: 12
+  carbs: 2.5
+  aisle: Produits laitiers
+Marshmallow à tartiner:
+  energy: 333
+  proteins: 0
+  lipids: 0
+  carbs: 83.3
+  aisle: Produits du monde
+Crottins de chèvre:
+  energy: 320
+  proteins: 22.4
+  lipids: 28
+  carbs: 0
+  aisle: Produits laitiers
+Sucre vanillé:
+  energy: 385
+  proteins: 0
+  lipids: 0
+  carbs: 99
+  piece_to_g_ratio: 8
+  aisle: Épicerie sucrée

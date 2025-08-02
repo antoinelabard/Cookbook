@@ -28,7 +28,7 @@ macros:
 - [ ] Crème fraîche : 20cl
 - [ ] lardons : 100g
 - [ ] Gruyère râpé
-- [ ] Camembert : 1/2
+- [ ] Camembert : 1
 
 ## Préparation
 

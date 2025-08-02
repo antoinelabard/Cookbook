@@ -20,6 +20,7 @@ class QuantityUnit(Enum):
         BAG = "sachet"
         PACK = "paquet"
         BOUQUET = "bouquet"
+        LEAF = "feuille"
 
     PIECE = Piece
 

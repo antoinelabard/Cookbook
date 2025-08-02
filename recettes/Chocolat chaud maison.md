@@ -14,9 +14,7 @@ tags: [occasion]
 |:-----------:|:-----:|:-------:|
 |    5min     |   -   |    -    |
 
-## Ingrédients
-
-Pour un mug (25cl) :
+## Ingrédients pour un mug (25cl) :
 
 - [ ] Crème liquide entière : 10cl
 - [ ] lait : 15cl
