@@ -3,6 +3,8 @@ from typing import Self
 
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
+from src.utils.Constants import Constants
+from src.utils.Utils import Utils
 
 
 class Recipe:
@@ -50,3 +52,25 @@ class Recipe:
             macros += i.macros
 
         return macros / self.portions
+
+    def get_ingredients_list_by_aisle(self)-> dict[str, list[str]]:
+        ingredients_by_aisle = {}
+        for ingredient in self.ingredients:
+            if isinstance(ingredient, Recipe):
+                recipe_list = ingredient.get_ingredients_list_by_aisle()
+                for key in recipe_list.keys():
+                    recipe_list[key] = [
+                        f"{sub_ingredient}<sup>{Constants.SOURCE_RECIPE_ARROW}==[[{self.name}]]==</sup>"
+                        for sub_ingredient in recipe_list[key]]
+                ingredients_by_aisle = Utils.merge_dicts(ingredients_by_aisle, recipe_list)
+                continue
+
+            if ingredient.aisle not in ingredients_by_aisle.keys():
+                ingredients_by_aisle[ingredient.aisle] = []
+            ingredients_by_aisle[ingredient.aisle].append(ingredient.ingredient_line_to_str(self.name))
+
+        return ingredients_by_aisle
+
+    @staticmethod
+    def filter_recipe_by_name(recipe_name: str, recipes: list[Self]) -> Self:
+        return list(filter(lambda recipe: recipe.name == recipe_name, recipes))[0]

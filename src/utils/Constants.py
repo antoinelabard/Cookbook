@@ -1,9 +1,12 @@
 class Constants:
+    AISLE = "aisle"
     RECIPE_TYPE = "recipe-type"
     TAGS = "tags"
     QUANTITY = "quantity"
     SOURCE = "source"
     DATE_ADDED = "date-added"
+
+    SOURCE_RECIPE_ARROW = " ---> "
 
     class Meal:
         MEAL = "meal"

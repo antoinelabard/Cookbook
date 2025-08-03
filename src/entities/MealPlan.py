@@ -3,6 +3,7 @@ from typing import Optional
 from src.entities import Recipe
 from src.utils.Constants import Constants
 from src.entities.Macros import Macros
+from src.utils.Utils import Utils
 
 
 class MealPlan:
@@ -23,10 +24,9 @@ class MealPlan:
     def as_list(self) -> list[Recipe]:
         return self.breakfast + self.lunch + self.snack
 
-    def _compute_avg_macros_per_meal_aux(self, recipes: list[Recipe]) -> Macros:
+    @staticmethod
+    def _compute_avg_macros_per_meal_aux(recipes: list[Recipe]) -> Macros:
         total_nb_portions = sum(map(lambda recipe: recipe.portions, recipes))
-
-        suum = sum(map(lambda recipe: recipe.macros.energy * recipe.portions, recipes)) / total_nb_portions,
 
         return Macros(
             round(sum(map(lambda recipe: recipe.macros.energy * recipe.portions, recipes)) / total_nb_portions),
@@ -49,3 +49,11 @@ class MealPlan:
             case Constants.Meal.SNACK:
                 return self._compute_avg_macros_per_meal_aux(self.snack)
         return Macros(0, 0, 0, 0)
+
+    def get_ingredients_list_by_aisle(self) -> dict[str, list[str]]:
+        ingredients_list: dict[str: str] = {}
+
+        for recipe in self.breakfast + self.lunch + self.snack:
+            ingredients_list = Utils.merge_dicts(ingredients_list, recipe.get_ingredients_list_by_aisle())
+
+        return ingredients_list

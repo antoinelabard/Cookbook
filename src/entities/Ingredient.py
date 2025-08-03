@@ -2,6 +2,7 @@ import copy
 import logging
 
 from src.entities.Macros import Macros
+from src.utils.Constants import Constants
 from src.utils.QuantityUnit import QuantityUnit
 
 
@@ -12,15 +13,20 @@ class Ingredient:
                  quantity: float = 0,
                  quantity_unit: QuantityUnit = QuantityUnit.G,
                  piece_to_g_ratio: float = -1,
-                 macros: Macros = Macros(1, 1, 1, 1)
+                 macros: Macros = Macros(1, 1, 1, 1),
+                 ingredient_line: str = "",
+                 aisle: str = "Unclassified"
                  ):
         self.logger = logging.getLogger(__name__)
         self.logger.addHandler(logging.StreamHandler())
+
         self.name: str = name
         self.quantity: float = quantity
         self.quantity_unit: QuantityUnit = quantity_unit
         self.piece_to_g_ratio: float = piece_to_g_ratio
         self.macros: Macros = macros
+        self.ingredient_line: str = ingredient_line
+        self.aisle = aisle
 
     @staticmethod
     def from_name(recipe_ingredient_name: str, base_ingredients: list["Ingredient"]):
@@ -55,3 +61,7 @@ class Ingredient:
                 self.macros = self.macros * self.quantity * QuantityUnit.CS_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
             case _:
                 self.logger.warning(f"unit {self.quantity_unit} not recognised for ingredient {self.name}")
+
+    def ingredient_line_to_str(self, recipe_name: str)->str:
+        return (f"{self.ingredient_line}<sup>{Constants.SOURCE_RECIPE_ARROW}"
+                f"[[{recipe_name}]]</sup>")
