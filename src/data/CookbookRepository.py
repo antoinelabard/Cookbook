@@ -119,13 +119,20 @@ class CookbookRepository:
         return kept_ingredient
 
 
-    def _load_ingredients_from_recipe(self, ingredients_str: str, recipe_name: str) -> list[Ingredient]:
+    def _load_ingredients_from_recipe(self, ingredients_str: str, recipe_name: str) -> list[Ingredient | Recipe]:
         ingredients_str = [ingredient.strip() for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("- [ ] ", "") for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("\n", "") for ingredient in ingredients_str]
 
         ingredients: list[Ingredient] = []
         for recipe_ingredient_str in ingredients_str:
+            # the given ingredient is, in fact, a recipe
+            if self.LINK_DELIMITER_OPEN in recipe_ingredient_str and self.LINK_DELIMITER_CLOSED in recipe_ingredient_str:
+                ingredient_recipe_name = (recipe_ingredient_str
+                    .split(self.LINK_DELIMITER_OPEN)[-1]
+                    .split(self.LINK_DELIMITER_CLOSED)[0])
+                ingredients.append(Recipe(ingredient_recipe_name, "", [], []))
+                continue
             kept_ingredient = self._get_ingredient_object_from_recipe_line(recipe_ingredient_str, recipe_name)
             if kept_ingredient: ingredients.append(kept_ingredient)
 
@@ -197,8 +204,21 @@ class CookbookRepository:
         recipes: list[Recipe] = []
         for recipe_path in self._get_recipes_paths():
             recipe = self._load_recipe_from_file(recipe_path)
-            if recipe is not None:
-                recipes.append(recipe)
+            if recipe: recipes.append(recipe)
+
+        # affect real recipes as ingredients when one recipe is used in another
+        for rcp in range(len(recipes)):
+            recipe_ingredients = recipes[rcp].ingredients
+            for igr in range(len(recipe_ingredients)):
+                if isinstance(recipe_ingredients[igr], Recipe):
+                    true_recipe = next(filter(lambda r: r.name == recipe_ingredients[igr].name, recipes), None)
+                    if not true_recipe:
+                        self.logger.warning(
+                            f"No true recipe matching the ingredient name {recipe_ingredients[igr].name} "
+                            f"in recipe {recipe.name}")
+                        continue
+                    recipe_ingredients[igr] = true_recipe
+
         return recipes
 
     def _read_profiles(self) -> dict[str, list[MealPlanFilter]]:

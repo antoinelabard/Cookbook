@@ -1,4 +1,5 @@
 from typing import Optional
+from typing import Self
 
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
@@ -12,7 +13,7 @@ class Recipe:
     def __init__(self,
                  name: str,
                  recipe_type: str,
-                 ingredients: list[Ingredient],
+                 ingredients: list[Ingredient | Self],
                  instructions: list[str],
                  date_added: Optional[str] = None,
                  source: Optional[str] = None,
@@ -38,7 +39,7 @@ class Recipe:
         elif tags is None:
             self.tags: list[str] = []
 
-        self.ingredients: list[Ingredient] = ingredients
+        self.ingredients: list[Ingredient | Self] = ingredients
         self.instructions: list[str] = instructions
 
         self.macros: Macros = self.compute_recipe_macros()
