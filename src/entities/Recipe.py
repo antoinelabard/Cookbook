@@ -1,3 +1,5 @@
+from typing import Optional
+
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
 
@@ -12,17 +14,17 @@ class Recipe:
                  recipe_type: str,
                  ingredients: list[Ingredient],
                  instructions: list[str],
-                 date_added: str | None = None,
-                 source: str | None = None,
-                 meal: str | None = None,
-                 seasons: list[str] | None = None,
+                 date_added: Optional[str] = None,
+                 source: Optional[str] = None,
+                 meal: Optional[str] = None,
+                 seasons: Optional[list[str]] = None,
                  portions: int = 4,
-                 tags: list[str] | None = None):
+                 tags: Optional[list[str]] = None):
         self.name: str = name
         self.recipe_type: str = recipe_type
-        self.date_added: str | None = date_added if date_added else None
-        self.source: str | None = source
-        self.meal: str | None = meal if meal else None
+        self.date_added: Optional[str] = date_added if date_added else None
+        self.source: Optional[str] = source
+        self.meal: Optional[str] = meal if meal else None
 
         if isinstance(seasons, list):
             self.seasons: list[str] = seasons

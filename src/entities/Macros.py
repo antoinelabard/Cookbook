@@ -35,3 +35,9 @@ class Macros:
             self.lipids / other,
             self.carbs / other,
             )
+
+    def to_markdown_table(self):
+        return (
+                "| Énergie | Protéines | Lipides | Glucides |\n"
+                + "|:-------:|:---------:|:-------:|:--------:|\n"
+                + f"| {self.energy} | {self.proteins} | {self.lipids} | {self.carbs} |")

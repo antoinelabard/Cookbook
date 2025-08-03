@@ -37,7 +37,7 @@ class QuantityUnit(Enum):
     CS_TO_G_RATIO = 15
 
     DEFAULT_QUANTITY = 10 # in grams
-    INVALID_PIECE_TO_G_RATIO = -1
+    INVALID_PIECE_TO_G_RATIO = .314 # arbitrary value which marginally falsify the calculation, count as almost zero and is odd enough avoid being picked by a legitimate recipe
 
     @classmethod
     def is_piece_unit(cls, tested_unit: str) -> bool:

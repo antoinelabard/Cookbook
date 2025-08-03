@@ -1,4 +1,5 @@
 import datetime
+from typing import Optional
 
 from src.entities import Recipe
 from src.utils.Constants import Constants
@@ -14,13 +15,13 @@ class MealPlanFilter:
     def __init__(self,
                  quantity: int,
                  recipe_type: str,
-                 meal: str | None = None,
+                 meal: Optional[str] = None,
                  season: bool = False,
-                 tags: list[str] | None = None,
+                 tags: Optional[list[str]] = None,
                  ):
-        self.quantity: int | None = quantity
+        self.quantity: Optional[int] = quantity
         self.recipe_type: str = recipe_type
-        self.meal: str | None = meal if meal else None
+        self.meal: Optional[str] = meal if meal else None
         self.is_in_season: bool = season
         self.tags: list[str] = tags or []
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import logging
 from pathlib import Path
+from typing import Optional
 
 import yaml
 
@@ -83,13 +84,13 @@ class CookbookRepository:
             ingredients.append(Ingredient(
                 ingredient_str,
                 macros=macros,
-                piece_to_g_ratio=attributes[Constants.Macros.PIECE_TO_G_RATIO] if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys() else QuantityUnit.INVALID_PIECE_TO_G_RATIO
+                piece_to_g_ratio=attributes[Constants.Macros.PIECE_TO_G_RATIO] if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys() else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value
             ))
 
         return ingredients
 
 
-    def _get_ingredient_object_from_recipe_line(self, recipe_ingredient_str: str, recipe_name: str) -> Ingredient | None:
+    def _get_ingredient_object_from_recipe_line(self, recipe_ingredient_str: str, recipe_name: str) -> Optional[Ingredient]:
         recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit = Utils.extract_name_and_quantity_from_ingredient_line(recipe_ingredient_str)
         kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self.base_ingredients)
         if kept_ingredient is None:
@@ -131,7 +132,7 @@ class CookbookRepository:
         return ingredients
 
 
-    def _load_recipe_from_file(self, path: Path) -> Recipe | None:
+    def _load_recipe_from_file(self, path: Path) -> Optional[Recipe]:
         """
         :param path: the path to the markdown file containing the metadata
         :return: a recipe object if one of this name actually exists, else None

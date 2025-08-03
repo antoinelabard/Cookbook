@@ -1,3 +1,5 @@
+from typing import Optional
+
 from src.entities import Recipe
 from src.utils.Constants import Constants
 from src.entities.Macros import Macros
@@ -9,10 +11,10 @@ class MealPlan:
     """
 
     def __init__(self,
-                 lunch: list[Recipe] | None = None,
-                 breakfast: list[Recipe] | None = None,
-                 snack: list[Recipe] | None = None,
-                 misc: list[Recipe] | None = None):
+                 lunch: Optional[list[Recipe]] = None,
+                 breakfast: Optional[list[Recipe]] = None,
+                 snack: Optional[list[Recipe]] = None,
+                 misc: Optional[list[Recipe]] = None):
         self.lunch: list[Recipe] = lunch or []
         self.breakfast: list[Recipe] = breakfast or []
         self.snack: list[Recipe] = snack or []
