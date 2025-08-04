@@ -57,6 +57,7 @@ class CookbookRepository:
         Write down in a file the provided MealPlan.
         :param meal_plan: the MealPlan to write down
         """
+
         output_content: list[str] = []
         for meal, recipes in meal_plan.__dict__.items():
             recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
@@ -72,6 +73,7 @@ class CookbookRepository:
         """
         Create a document containing quotes of the recipes contained in the cookbook.
         """
+
         page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
         complete_cookbook_template: str = "# Livre de recettes\n\n{}"
         files_wikilinks = sorted([f'![[{path.name}]]' for path in self._get_recipes_paths()])
@@ -82,7 +84,7 @@ class CookbookRepository:
     def write_ingredients(self):
         """
         Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
-        The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
+        The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH.
         """
 
         ingredients_by_aisle = self._read_meal_plan().get_ingredients_list_by_aisle()
@@ -103,6 +105,10 @@ class CookbookRepository:
         return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
 
     def _read_base_ingredients(self) -> list[Ingredient]:
+        """
+        :return: the list of all the base ingredients stored in ingredients.yaml
+        """
+
         with open(self.BASE_INGREDIENTS_PATH, 'r') as f:
             lines = f.readlines()
 
@@ -127,6 +133,11 @@ class CookbookRepository:
         return ingredients
 
     def _load_ingredient_object_from_recipe_line(self, ingredient_line: str, recipe_name: str) -> Optional[Ingredient]:
+        """
+        Take an ingredient line from a Markdown recipe (ie 'ingredient' : quantity unit) and load an Ingredient
+        object by matching its name with the base ingredients.
+        """
+
         recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit\
             = Utils.extract_name_and_quantity_from_ingredient_line(ingredient_line)
         kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self.base_ingredients)
@@ -159,6 +170,10 @@ class CookbookRepository:
         return kept_ingredient
 
     def _load_ingredients_from_recipe(self, ingredients_str: list[str], recipe_name: str) -> list[Ingredient | Recipe]:
+        """
+        :returns a list of Ingredients objects based on the ingredients in a Markdown recipe
+        """
+
         ingredients_str = [ingredient.strip() for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("- [ ] ", "") for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("\n", "") for ingredient in ingredients_str]
@@ -179,9 +194,10 @@ class CookbookRepository:
 
     def _read_recipe_from_file(self, path: Path) -> Optional[Recipe]:
         """
-        :param path: the path to the markdown file containing the metadata
+        :param path: the path to the Markdown file containing the recipe
         :return: a recipe object if one of this name actually exists, else None
         """
+
         with open(path, 'r') as f:
             lines = f.readlines()
 
@@ -239,6 +255,7 @@ class CookbookRepository:
         """
         :return: the list of all the recipes in the cookbook
         """
+
         recipes: list[Recipe] = []
         for recipe_path in self._get_recipes_paths():
             recipe = self._read_recipe_from_file(recipe_path)
@@ -261,6 +278,10 @@ class CookbookRepository:
 
     @staticmethod
     def _load_filter_from_profile(profile_filter: dict) -> MealPlanFilter:
+        """
+        :return: a MealPlanFilter with the data of the dict loaded from profiles.yaml
+        """
+
         meal = None
         is_in_season = False
         tags = None
@@ -283,8 +304,8 @@ class CookbookRepository:
         """
         Retrieve the profiles from "profiles.yaml" and present the data as a dictionary for which the keys are the
         profiles names and the values are a list of MealPlanFilters for each profile.
-        :return: the dictionary of profiles
         """
+
         with open(self.PROFILES_PATH, "r") as f:
             data = yaml.safe_load("\n".join(f.readlines()))
 
@@ -298,9 +319,9 @@ class CookbookRepository:
 
     def _read_meal_plan(self) -> MealPlan:
         """
-        Read the recipes names listed in the menu file pointed by MENU_PATH
-        :return: a dict of lists of recipes for each meal
+        Read the recipes names listed in the menu file pointed by MENU_PATH.
         """
+
         with open(self.MENU_PATH, 'r') as f:
             lines = f.readlines()
 
