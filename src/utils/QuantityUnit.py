@@ -23,8 +23,6 @@ class QuantityUnit(Enum):
         BOUQUET = "bouquet"
         LEAF = "feuille"
 
-
-
     PIECE = Piece
 
     VOID = ""
@@ -36,11 +34,18 @@ class QuantityUnit(Enum):
     CC_TO_G_RATIO = 5
     CS_TO_G_RATIO = 15
 
-    DEFAULT_QUANTITY = 10 # in grams
-    INVALID_PIECE_TO_G_RATIO = .314 # arbitrary value which marginally falsify the calculation, count as almost zero and is odd enough avoid being picked by a legitimate recipe
+    DEFAULT_QUANTITY = 10  # in grams
+
+    # arbitrary value which marginally falsify the calculation, count as almost zero and is odd enough avoid being
+    # picked by a legitimate recipe
+    INVALID_PIECE_TO_G_RATIO = .314
 
     @classmethod
     def is_piece_unit(cls, tested_unit: str) -> bool:
+        """
+        Determine if the given string match a value of the Piece enum
+        """
+
         if tested_unit == QuantityUnit.VOID.value:
             return True
         for piece_unit in [piece.value for piece in QuantityUnit.PIECE.value]:
@@ -50,10 +55,21 @@ class QuantityUnit(Enum):
 
     @staticmethod
     def is_piece_unit_missing_ratio(tested_unit: "QuantityUnit", piece_to_g_ratio: float):
-        return tested_unit in QuantityUnit.PIECE.value and piece_to_g_ratio == QuantityUnit.INVALID_PIECE_TO_G_RATIO.value
+        """
+        A quantity of unit Piece may need a piece to grams ratio, different for each ingredient. This ratio can't be
+        guessed and is then stored as a base ingredient attribute in ingredients.yaml and is retrieve dynamically for
+        proper calculations. This information is not needed for conventional units (not piece one, ie grams,
+        centiliters, etc.), so this field is optional in the yaml.
 
-    @classmethod
-    def from_str(cls, unit_str: str):
+        This method is useful for revealing mistakes in the data loaded in the ingredients.
+        """
+
+        return \
+            (tested_unit in QuantityUnit.PIECE.value
+             and piece_to_g_ratio == QuantityUnit.INVALID_PIECE_TO_G_RATIO.value)
+
+    @staticmethod
+    def from_str(unit_str: str):
         if QuantityUnit.is_piece_unit(unit_str):
             return QuantityUnit.PIECE.value.PIECE
         else:
