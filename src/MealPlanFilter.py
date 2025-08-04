@@ -25,7 +25,8 @@ class MealPlanFilter:
         self.is_in_season: bool = season
         self.tags: list[str] = tags or []
 
-    def _get_current_season(self) -> str:
+    @staticmethod
+    def _get_current_season() -> str:
         date = datetime.date.today()
         spring_beginning = datetime.date(date.year, 3, 20)
         summer_beginning = datetime.date(date.year, 6, 21)

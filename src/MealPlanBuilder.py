@@ -25,6 +25,7 @@ class MealPlanBuilder:
         :param meal_plan_filter: the current set of filters to select only the recipe matching the requirements. It also
         provides the quantity of recipes to be picked.
         """
+
         filtered_recipes: list[Recipe] = [recipe for recipe in self.recipes
                                           if meal_plan_filter.matches_filters(recipe)]
         if not filtered_recipes:
