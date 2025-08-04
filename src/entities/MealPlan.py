@@ -1,14 +1,14 @@
 from typing import Optional
 
 from src.entities import Recipe
-from src.utils.Constants import Constants
 from src.entities.Macros import Macros
+from src.utils.Constants import Constants
 from src.utils.Utils import Utils
 
 
 class MealPlan:
     """
-    MealPlan is a data class responsible for storing all the meals of a meal plan.
+    MealPlan is a data class responsible for storing all picked recipes, grouped by meal.
     """
 
     def __init__(self,
@@ -37,8 +37,7 @@ class MealPlan:
 
     def compute_avg_macros_per_meal(self, meal) -> Macros:
         """
-        return the weighted average macros per portion, filtered by meal (breakfast, lunch, snack)
-        :return: a dict of meals and macros.
+        :return: the weighted average macros per portion, grouped by meal (breakfast, lunch, snack)
         """
 
         match meal:
@@ -51,6 +50,9 @@ class MealPlan:
         return Macros(0, 0, 0, 0)
 
     def get_ingredients_list_by_aisle(self) -> dict[str, list[str]]:
+        """
+        :return: a convenient Markdown list to go to the groceries
+        """
         ingredients_list: dict[str: str] = {}
 
         for recipe in self.breakfast + self.lunch + self.snack:

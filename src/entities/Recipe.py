@@ -47,13 +47,22 @@ class Recipe:
         self.macros: Macros = self.compute_recipe_macros()
 
     def compute_recipe_macros(self):
+        """
+        :returns: to the self.macros attribute a Macro object containing the sum of all the macros of the ingredients in
+        the recipe
+        """
+
         macros = Macros()
         for i in self.ingredients:
             macros += i.macros
 
         return macros / self.portions
 
-    def get_ingredients_list_by_aisle(self)-> dict[str, list[str]]:
+    def get_ingredients_list_by_aisle(self) -> dict[str, list[str]]:
+        """
+        :return: the ingredients as groceries list lines, grouped by aisle
+        """
+
         ingredients_by_aisle = {}
         for ingredient in self.ingredients:
             if isinstance(ingredient, Recipe):
@@ -72,5 +81,9 @@ class Recipe:
         return ingredients_by_aisle
 
     @staticmethod
-    def filter_recipe_by_name(recipe_name: str, recipes: list[Self]) -> Self:
-        return list(filter(lambda recipe: recipe.name == recipe_name, recipes))[0]
+    def filter_recipe_by_name(recipe_name: str, recipes: list["Recipe"]) -> Optional["Recipe"]:
+        """
+        :return: the matching recipe object, given a name
+        """
+
+        return next(filter(lambda recipe: recipe.name == recipe_name, recipes), None)

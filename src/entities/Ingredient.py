@@ -30,6 +30,12 @@ class Ingredient:
 
     @staticmethod
     def from_name(recipe_ingredient_name: str, base_ingredients: list["Ingredient"]):
+        """
+        :param recipe_ingredient_name: without the quantity or the unit
+        :param base_ingredients
+        :return: an Ingredient object with the data of the best matching base ingredient in the provided list
+        """
+
         ingredients_candidates = []
         for base_ingredient in base_ingredients:
             if base_ingredient.name.lower() in recipe_ingredient_name.lower():
@@ -37,10 +43,15 @@ class Ingredient:
         if not ingredients_candidates:
             return None
 
-        return copy.deepcopy(sorted(ingredients_candidates, key=lambda igr: len(igr.name))[-1])  # keep the match with the most characters
-
+        # keep the match with the most characters
+        return copy.deepcopy(sorted(ingredients_candidates, key=lambda igr: len(igr.name))[-1])
 
     def compute_macros_from_quantity(self):
+        """
+        Affect to the self.macros attribute a Macro object containing the macros of the ingredient, given the macros of
+        the associated base ingredient and the quantity of the ingredient.
+        """
+
         if self.quantity_unit in QuantityUnit.PIECE.value or self.quantity_unit == QuantityUnit.VOID:
             self.macros = self.macros * self.quantity * self.piece_to_g_ratio / Macros.REFERENCE_QUANTITY
             return
@@ -62,6 +73,10 @@ class Ingredient:
             case _:
                 self.logger.warning(f"unit {self.quantity_unit} not recognised for ingredient {self.name}")
 
-    def ingredient_line_to_str(self, recipe_name: str)->str:
+    def ingredient_line_to_str(self, recipe_name: str) -> str:
+        """
+        :return: an ingredient line in the format 'ingredient ---> [[recipe_name]]
+        """
+
         return (f"{self.ingredient_line}<sup>{Constants.SOURCE_RECIPE_ARROW}"
                 f"[[{recipe_name}]]</sup>")

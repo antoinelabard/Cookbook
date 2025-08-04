@@ -1,6 +1,5 @@
 class Macros:
-
-    REFERENCE_QUANTITY = 100 # in g, a macros indicates the nutrients for 100g
+    REFERENCE_QUANTITY = 100  # in g, a macros indicates the nutrients for 100g
 
     def __init__(self,
                  energy: float = 0,
@@ -34,7 +33,7 @@ class Macros:
             self.proteins / other,
             self.lipids / other,
             self.carbs / other,
-            )
+        )
 
     def to_markdown_table(self):
         return (
