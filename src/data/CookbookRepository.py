@@ -6,15 +6,15 @@ from typing import Optional
 
 import yaml
 
+from src.MealPlanBuilder import MealPlanBuilder
+from src.MealPlanFilter import MealPlanFilter
 from src.entities import MealPlan
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
-from src.utils.Utils import Utils
-from src.utils.Constants import Constants
-from src.MealPlanBuilder import MealPlanBuilder
-from src.MealPlanFilter import MealPlanFilter
 from src.entities.Recipe import Recipe
+from src.utils.Constants import Constants
 from src.utils.QuantityUnit import QuantityUnit
+from src.utils.Utils import Utils
 
 
 def singleton(class_):
@@ -43,6 +43,7 @@ class CookbookRepository:
     INGREDIENTS_PATH: str = ROOT_DIR / "ingredients.md"
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
     BASE_INGREDIENTS_PATH = ROOT_DIR / "ingredients.yaml"
+    MACROS_PATH = ROOT_DIR / "macros.md"
 
     def __init__(self):
         self.logger = logging.getLogger(__name__)
@@ -98,6 +99,21 @@ class CookbookRepository:
         with open(self.INGREDIENTS_PATH, 'w') as f:
             f.write("\n".join(output))
 
+    def write_recipes_macros(self):
+        """
+        Write in the file macros.yaml the macros of all the recipes, as a Markdown table
+        """
+
+        output = [
+            "| Recette | Énergie | Protéines | Lipides | Glucides |",
+            "|:--------|:-------:|:---------:|:-------:|:--------:|"]
+
+        for recipe in sorted(self.recipes, key=lambda rcp: rcp.name):
+            output.append(recipe.get_macros_as_markdown_table_line())
+
+        with open(self.MACROS_PATH, 'w') as f:
+            f.write("\n".join(output))
+
     def _get_recipes_paths(self) -> list[Path]:
         """
         :return: the list of the absolute paths of all the recipes in the cookbook
@@ -125,8 +141,8 @@ class CookbookRepository:
                 macros=macros,
                 piece_to_g_ratio=attributes[
                     Constants.Macros.PIECE_TO_G_RATIO]
-                    if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys()
-                    else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
+                if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys()
+                else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
                 aisle=attributes[Constants.AISLE] if Constants.AISLE in attributes else None
             ))
 
@@ -138,7 +154,7 @@ class CookbookRepository:
         object by matching its name with the base ingredients.
         """
 
-        recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit\
+        recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit \
             = Utils.extract_name_and_quantity_from_ingredient_line(ingredient_line)
         kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self.base_ingredients)
         if kept_ingredient is None:

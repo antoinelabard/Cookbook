@@ -35,11 +35,11 @@ CONFIGURATION
     will be selected.
 """
 
-import sys
 import logging
+import sys
 
-from src.data.CookbookRepository import CookbookRepository
 from src.MealPlanBuilder import MealPlanBuilder
+from src.data.CookbookRepository import CookbookRepository
 
 if __name__ == "__main__":
     logging.basicConfig(filename='cookbook.log', level=logging.INFO)
@@ -52,12 +52,19 @@ if __name__ == "__main__":
     for arg in sys.argv:
         if arg == "export":
             new_export = True
+
         if arg in ["i", "ingredients"]:
             new_ingredients_list = True
             print("Ingredients list generated.")
+
+        if arg == "macros":
+            repository.write_recipes_macros()
+            print("Updated the macros of all the recipes.")
+
         if arg in repository.profiles.keys():  # if arg is a profile name
             new_meal_plan = True
-            [meal_plan_builder.pick_recipes_with_filter(meal_plan_filter) for meal_plan_filter in repository.profiles[arg]]
+            for meal_plan_filter in repository.profiles[arg]:
+                meal_plan_builder.pick_recipes_with_filter(meal_plan_filter)
             print("Meal plan generated.")
 
     if new_meal_plan:

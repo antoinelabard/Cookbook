@@ -87,3 +87,13 @@ class Recipe:
         """
 
         return next(filter(lambda recipe: recipe.name == recipe_name, recipes), None)
+
+    def get_macros_as_markdown_table_line(self):
+        """
+        | Recette | Énergie | Protéines | Lipides | Glucides |
+        |:--------|:-------:|:---------:|:-------:|:--------:|
+        | recipes | energy  | proteins  | lipids  |  carbs   | <--- returns this
+        """
+
+        return (f"| [[{self.name}]] | {round(self.macros.energy)} "
+                f"| {round(self.macros.proteins)} | {round(self.macros.lipids)} | {round(self.macros.carbs)} |")
