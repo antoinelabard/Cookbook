@@ -66,4 +66,4 @@ if __name__ == "__main__":
     if new_ingredients_list:
         repository.write_ingredients()
     if new_export:
-        repository.export_complete_cookbook()
+        repository.write_complete_cookbook()

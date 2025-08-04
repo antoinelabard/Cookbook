@@ -52,6 +52,50 @@ class CookbookRepository:
         self.recipes_names: list[str] = list(map(lambda recipe: recipe.name, self.recipes))
         self.profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()
 
+    def write_meal_plan(self, meal_plan: MealPlan) -> None:
+        """
+        Write down in a file the provided MealPlan.
+        :param meal_plan: the MealPlan to write down
+        """
+        output_content: list[str] = []
+        for meal, recipes in meal_plan.__dict__.items():
+            recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
+            if not recipes_links:
+                continue
+            output_content.append(f"# {meal}\n\n{recipes_links}")
+            avg_macros = meal_plan.compute_avg_macros_per_meal(meal)
+            output_content.append(avg_macros.to_markdown_table())
+        with open(self.MENU_PATH, 'w') as f:
+            f.write("\n\n".join(output_content))
+
+    def write_complete_cookbook(self) -> None:
+        """
+        Create a document containing quotes of the recipes contained in the cookbook.
+        """
+        page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
+        complete_cookbook_template: str = "# Livre de recettes\n\n{}"
+        files_wikilinks = sorted([f'![[{path.name}]]' for path in self._get_recipes_paths()])
+
+        with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
+            f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
+
+    def write_ingredients(self):
+        """
+        Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
+        The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
+        """
+
+        ingredients_by_aisle = self._read_meal_plan().get_ingredients_list_by_aisle()
+        output = []
+
+        for aisle, ingredients in ingredients_by_aisle.items():
+            output.append(f"- [ ] {aisle}")
+            for ingredient in sorted(ingredients):
+                output.append(f"  - [ ] {ingredient}")
+
+        with open(self.INGREDIENTS_PATH, 'w') as f:
+            f.write("\n".join(output))
+
     def _get_recipes_paths(self) -> list[Path]:
         """
         :return: the list of the absolute paths of all the recipes in the cookbook
@@ -73,18 +117,23 @@ class CookbookRepository:
             ingredients.append(Ingredient(
                 ingredient_str,
                 macros=macros,
-                piece_to_g_ratio=attributes[Constants.Macros.PIECE_TO_G_RATIO] if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys() else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
+                piece_to_g_ratio=attributes[
+                    Constants.Macros.PIECE_TO_G_RATIO]
+                    if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys()
+                    else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
                 aisle=attributes[Constants.AISLE] if Constants.AISLE in attributes else None
             ))
 
         return ingredients
 
-
-    def _get_ingredient_object_from_recipe_line(self, ingredient_line: str, recipe_name: str) -> Optional[Ingredient]:
-        recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit = Utils.extract_name_and_quantity_from_ingredient_line(ingredient_line)
+    def _load_ingredient_object_from_recipe_line(self, ingredient_line: str, recipe_name: str) -> Optional[Ingredient]:
+        recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit\
+            = Utils.extract_name_and_quantity_from_ingredient_line(ingredient_line)
         kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self.base_ingredients)
         if kept_ingredient is None:
-            self.logger.warning(f"no base ingredient candidate for for ingredient name {recipe_ingredient_name} in recipe {recipe_name}")
+            self.logger.warning(
+                f"no base ingredient candidate for for ingredient name {recipe_ingredient_name} "
+                f"in recipe {recipe_name}")
             return None
 
         kept_ingredient.name = recipe_ingredient_name
@@ -109,28 +158,26 @@ class CookbookRepository:
 
         return kept_ingredient
 
-
     def _load_ingredients_from_recipe(self, ingredients_str: list[str], recipe_name: str) -> list[Ingredient | Recipe]:
         ingredients_str = [ingredient.strip() for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("- [ ] ", "") for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("\n", "") for ingredient in ingredients_str]
 
-        ingredients: list[Ingredient] = []
+        ingredients: list[Ingredient | Recipe] = []
         for recipe_ingredient_str in ingredients_str:
             # the given ingredient is, in fact, a recipe
             if "[[" in recipe_ingredient_str and "]]" in recipe_ingredient_str:
                 ingredient_recipe_name = (recipe_ingredient_str
-                    .split("[[")[-1]
-                    .split("]]")[0])
+                .split("[[")[-1]
+                .split("]]")[0])
                 ingredients.append(Recipe(ingredient_recipe_name, "", [], []))
                 continue
-            kept_ingredient = self._get_ingredient_object_from_recipe_line(recipe_ingredient_str, recipe_name)
+            kept_ingredient = self._load_ingredient_object_from_recipe_line(recipe_ingredient_str, recipe_name)
             if kept_ingredient: ingredients.append(kept_ingredient)
 
         return ingredients
 
-
-    def _load_recipe_from_file(self, path: Path) -> Optional[Recipe]:
+    def _read_recipe_from_file(self, path: Path) -> Optional[Recipe]:
         """
         :param path: the path to the markdown file containing the metadata
         :return: a recipe object if one of this name actually exists, else None
@@ -194,7 +241,7 @@ class CookbookRepository:
         """
         recipes: list[Recipe] = []
         for recipe_path in self._get_recipes_paths():
-            recipe = self._load_recipe_from_file(recipe_path)
+            recipe = self._read_recipe_from_file(recipe_path)
             if recipe: recipes.append(recipe)
 
         # affect real recipes as ingredients when one recipe is used in another
@@ -202,17 +249,18 @@ class CookbookRepository:
             recipe_ingredients = recipes[rcp].ingredients
             for igr in range(len(recipe_ingredients)):
                 if isinstance(recipe_ingredients[igr], Recipe):
-                    true_recipe = next(filter(lambda r: r.name == recipe_ingredients[igr].name, recipes), None)
+                    true_recipe = next(filter(lambda r, i=igr: r.name == recipe_ingredients[i].name, recipes), None)
                     if not true_recipe:
                         self.logger.warning(
                             f"No true recipe matching the ingredient name {recipe_ingredients[igr].name} "
-                            f"in recipe {recipe.name}")
+                            f"in recipe {recipes[rcp].name}")
                         continue
                     recipe_ingredients[igr] = true_recipe
 
         return recipes
 
-    def _get_filter_from_profile(self, profile_filter: dict) -> MealPlanFilter:
+    @staticmethod
+    def _load_filter_from_profile(profile_filter: dict) -> MealPlanFilter:
         meal = None
         is_in_season = False
         tags = None
@@ -233,7 +281,7 @@ class CookbookRepository:
 
     def _read_profiles(self) -> dict[str, list[MealPlanFilter]]:
         """
-        Retrieve the profiles from "profiles.yaml" and present the data as an dictionary for which the keys are the
+        Retrieve the profiles from "profiles.yaml" and present the data as a dictionary for which the keys are the
         profiles names and the values are a list of MealPlanFilters for each profile.
         :return: the dictionary of profiles
         """
@@ -244,7 +292,7 @@ class CookbookRepository:
         for profile, profile_filters in data.items():
             profiles[profile] = []
             for profile_filter in profile_filters:
-                profiles[profile].append(self._get_filter_from_profile(profile_filter))
+                profiles[profile].append(self._load_filter_from_profile(profile_filter))
 
         return profiles
 
@@ -272,56 +320,12 @@ class CookbookRepository:
                 continue
 
             recipe_candidate = (line
-                .split("[[")[1]
-                .split("]]")[0]
-                if "[[" in line and "]]" in line else "")
+                                .split("[[")[1]
+                                .split("]]")[0]
+                                if "[[" in line and "]]" in line else "")
             if recipe_candidate in self.recipes_names:
                 meal_plan_builder.add_recipe(
                     current_meal_selector,
                     Recipe.filter_recipe_by_name(recipe_candidate, self.recipes))
 
         return meal_plan_builder.build()
-
-    def write_meal_plan(self, meal_plan: MealPlan) -> None:
-        """
-        Write down in a file the provided MealPlan.
-        :param meal_plan: the MealPlan to write down
-        """
-        output_content: list[str] = []
-        for meal, recipes in meal_plan.__dict__.items():
-            recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
-            if not recipes_links:
-                continue
-            output_content.append(f"# {meal}\n\n{recipes_links}")
-            avg_macros = meal_plan.compute_avg_macros_per_meal(meal)
-            output_content.append(avg_macros.to_markdown_table())
-        with open(self.MENU_PATH, 'w') as f:
-            f.write("\n\n".join(output_content))
-
-    def export_complete_cookbook(self) -> None:
-        """
-        Create a document containing quotes of the recipes contained in the cookbook.
-        """
-        page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
-        complete_cookbook_template: str = "# Livre de recettes\n\n{}"
-        files_wikilinks = sorted([f'![[{path.name}]]' for path in self._get_recipes_paths()])
-
-        with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
-            f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
-
-    def write_ingredients(self):
-        """
-        Write the ingredients of the given Recipe list in the file pointed by INGREDIENTS_PATH.
-        The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH
-        """
-
-        ingredients_by_aisle = self._read_meal_plan().get_ingredients_list_by_aisle()
-        output = []
-
-        for aisle, ingredients in ingredients_by_aisle.items():
-            output.append(f"- [ ] {aisle}")
-            for ingredient in sorted(ingredients):
-                output.append(f"  - [ ] {ingredient}")
-
-        with open(self.INGREDIENTS_PATH, 'w') as f:
-            f.write("\n".join(output))
