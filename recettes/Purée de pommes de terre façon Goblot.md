@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Pommes de terre : 1kg
 - [ ] Crème fraîche : 20cl
-- [ ] Lait
+- [ ] Lait : 10cl
 - [ ] Oeuf : 1
 - [ ] Muscade
 

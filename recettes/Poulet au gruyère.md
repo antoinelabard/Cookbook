@@ -17,7 +17,7 @@ tags: [occasion]
 ## Ingrédients
 
 - [ ] [[Pommes de terres sautées]] : 800g
-- [ ] Blancs de poulet : 400g
+- [ ] Blancs de poulet : 4
 - [ ] Cuisses de poulet : 400g
 - [ ] Poitrine fumée : 150g
 - [ ] Gruyère râpé : 150g

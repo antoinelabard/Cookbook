@@ -21,10 +21,10 @@ tags: [cheat-meal]
 - [ ] Tranches de jambon blanc : 4
 - [ ] Champignons de Paris : 250g
 - [ ] Sauce tomate : 20cl
-- [ ] Fromage râpé
+- [ ] Fromage râpé : 100g
 - [ ] Origan
 - [ ] Huile d'olive
-- [ ] Olives
+- [ ] Olives dénoyautées : 150g
 
 ## Préparation
 

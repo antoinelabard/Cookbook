@@ -24,7 +24,7 @@ meal: lunch
 - [ ] Pâtes papillons : 250g
 - [ ] Mozzarella : 150g
 - [ ] Jambon sec : 4 tranches
-- [ ] Olives : 12
+- [ ] Olives : 150g
 
 ## Préparation
 

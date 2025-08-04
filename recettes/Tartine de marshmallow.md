@@ -16,8 +16,8 @@ tags: [fail]
 
 ## Ingrédients
 
-- [ ] Marshmallow à tartiner
-- [ ] Pains à burger
+- [ ] Marshmallow à tartiner : 200g
+- [ ] Pains à burger : 4
 
 ## Préparation
 

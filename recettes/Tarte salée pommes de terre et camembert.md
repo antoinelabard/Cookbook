@@ -27,7 +27,7 @@ macros:
 - [ ] [[Pâte brisée]] : 1
 - [ ] Crème fraîche : 20cl
 - [ ] lardons : 100g
-- [ ] Gruyère râpé
+- [ ] Gruyère râpé : 100g
 - [ ] Camembert : 1
 
 ## Préparation

@@ -159,7 +159,7 @@ class CookbookRepository:
         kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self.base_ingredients)
         if kept_ingredient is None:
             self.logger.warning(
-                f"no base ingredient candidate for for ingredient name {recipe_ingredient_name} "
+                f"no base ingredient candidate for for ingredient name ================{recipe_ingredient_name} "
                 f"in recipe {recipe_name}")
             return None
 

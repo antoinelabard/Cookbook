@@ -21,7 +21,7 @@ tags: [occasion]
 - [ ] Purée de tomate : 800g
 - [ ] Carotte : 1
 - [ ] Oignon jaune : 3
-- [ ] Boîte de lasagnes : 1 paquet
+- [ ] Lasagnes : 1 paquet
 - [ ] Ail : 2 gousse
 - [ ] Viande de boeuf hachée : 600g
 - [ ] Parmesan râpé : 125g

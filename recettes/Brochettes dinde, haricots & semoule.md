@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Escalopes de dinde : 4
 - [ ] Haricots verts : 600g
-- [ ] Semoule 240g
+- [ ] Semoule : 240g
 - [ ] Yaourt grec : 20cl
 - [ ] Paprika
 

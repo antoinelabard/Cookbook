@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Kit burrito 4 portions : 1
+- [ ] Kit burrito pour 4 : 1
 - [ ] Boeuf haché : 400g
 - [ ] Cheddar : 80g
 - [ ] haricots rouges : 240g

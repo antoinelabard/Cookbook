@@ -18,14 +18,17 @@ tags: [cheat-meal]
 
 - [ ] Escalopes de poulet : 4
 - [ ] Blancs d'oeuf : 4
-- [ ] Chapelure
-- [ ] Huile
+- [ ] Chapelure : 250g
+- [ ] Huile : 20cl
 
 ## Préparation
+
+> [!info] Huile
+> Prévoir 30cl pour la cuisson, la quantité d'huile indiquée dans les ingrédients est une estimation de ce qui sera absorbée par les aliments pendant la cuisson pour le calcul des macros.
 
 1. Mixez 4 escalopes de poulet avec 4 blancs d'oeuf, puis salez et poivrez.
 2. Avec une cuillère à soupe, formez des petites boulettes avec ce mélange.
 3. Roulez les boulettes dans la chapelure afin de les recouvrir.
-4. Dans une poêle, faire chauffer de l'huile et mettre les nuggets à cuire.
+4. Dans une poêle, faire chauffer l'huile et mettre les nuggets à cuire.
 5. Retournez les nuggets au bout de 4 à 5 min (quand ils sont bien dorés).
 6. Vous pouvez servir !

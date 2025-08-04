@@ -18,7 +18,7 @@ meal: lunch
 - [ ] Kit fajitas pour 4 : 1
 - [ ] Champignons de Paris : 320g
 - [ ] Comté : 200g
-- [ ] Blanc de poulet : 4
+- [ ] Blancs de poulet : 4
 - [ ] Oignon rouge : 1
 - [ ] Persil
 
