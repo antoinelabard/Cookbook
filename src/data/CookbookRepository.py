@@ -110,7 +110,7 @@ class CookbookRepository:
         return kept_ingredient
 
 
-    def _load_ingredients_from_recipe(self, ingredients_str: str, recipe_name: str) -> list[Ingredient | Recipe]:
+    def _load_ingredients_from_recipe(self, ingredients_str: list[str], recipe_name: str) -> list[Ingredient | Recipe]:
         ingredients_str = [ingredient.strip() for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("- [ ] ", "") for ingredient in ingredients_str]
         ingredients_str = [ingredient.replace("\n", "") for ingredient in ingredients_str]
@@ -212,6 +212,25 @@ class CookbookRepository:
 
         return recipes
 
+    def _get_filter_from_profile(self, profile_filter: dict) -> MealPlanFilter:
+        meal = None
+        is_in_season = False
+        tags = None
+        if Constants.Meal.MEAL in profile_filter.keys():
+            meal = profile_filter[Constants.Meal.MEAL]
+        if Constants.Season.IS_IN_SEASON in profile_filter.keys():
+            is_in_season = profile_filter[Constants.Season.IS_IN_SEASON]
+        if Constants.TAGS in profile_filter.keys():
+            tags = profile_filter[Constants.TAGS]
+            if type(tags) is str: tags = [tags]
+        return MealPlanFilter(
+            profile_filter[Constants.QUANTITY],
+            profile_filter[Constants.RECIPE_TYPE],
+            meal,
+            is_in_season,
+            tags,
+        )
+
     def _read_profiles(self) -> dict[str, list[MealPlanFilter]]:
         """
         Retrieve the profiles from "profiles.yaml" and present the data as an dictionary for which the keys are the
@@ -220,28 +239,12 @@ class CookbookRepository:
         """
         with open(self.PROFILES_PATH, "r") as f:
             data = yaml.safe_load("\n".join(f.readlines()))
+
         profiles = {}
         for profile, profile_filters in data.items():
             profiles[profile] = []
             for profile_filter in profile_filters:
-                meal = None
-                is_in_season = False
-                tags = None
-                if Constants.Meal.MEAL in profile_filter.keys():
-                    meal = profile_filter[Constants.Meal.MEAL]
-                if Constants.Season.IS_IN_SEASON in profile_filter.keys():
-                    is_in_season = profile_filter[Constants.Season.IS_IN_SEASON]
-                if Constants.TAGS in profile_filter.keys():
-                    tags = profile_filter[Constants.TAGS]
-                    if type(tags) is str: tags = [tags]
-                meal_plan_filter = MealPlanFilter(
-                    profile_filter[Constants.QUANTITY],
-                    profile_filter[Constants.RECIPE_TYPE],
-                    meal,
-                    is_in_season,
-                    tags,
-                )
-                profiles[profile].append(meal_plan_filter)
+                profiles[profile].append(self._get_filter_from_profile(profile_filter))
 
         return profiles
 
