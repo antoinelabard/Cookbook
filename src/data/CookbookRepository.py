@@ -39,10 +39,10 @@ class CookbookRepository:
     ROOT_DIR: Path = Path(__file__).parent.parent.parent
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
-    MENU_PATH: Path = ROOT_DIR / "menu.md"
+    MENU_PATH: Path = ROOT_DIR / "meal plan.md"
     INGREDIENTS_PATH: str = ROOT_DIR / "ingredients.md"
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
-    BASE_INGREDIENTS_PATH = ROOT_DIR / "macros.yaml"
+    BASE_INGREDIENTS_PATH = ROOT_DIR / "ingredients.yaml"
 
     def __init__(self):
         self.logger = logging.getLogger(__name__)

@@ -11,7 +11,7 @@ class QuantityUnit(Enum):
     CC = "cc"  # teaspoon
     CS = "cs"  # soup spoon
 
-    # the following are all interpreted as "piece" units and their ration is stored in macros.yaml
+    # the following are all interpreted as "piece" units and their ration is stored in ingredients.yaml
     class Piece(Enum):
         PIECE = "piece"
         SLICE = "tranche"
