@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Saucisses fumées : 4
 - [ ] Oignon : 1
-- [ ] Gousse d'ail : 2
+- [ ] Ail : 2 gousses
 - [ ] Riz : 280g
 - [ ] Gingembre : 20g
 - [ ] Purée de tomate : 400g

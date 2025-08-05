@@ -14,6 +14,12 @@ tags: [occasion]
 |:-----------:|:-----:|:-------:|
 |    40min    |   -   |  40min  |
 
+## Matériel
+
+- [ ] Fouet
+- [ ] Papier de cuisson
+- [ ] Poche à douille
+
 ## Ingrédients
 
 - [ ] Farine : 150g
@@ -24,12 +30,6 @@ tags: [occasion]
 - [ ] Sucre : 125g
 - [ ] Pâte de praliné : 100g
 - [ ] Beurre : 100g
-
-## Matériel
-
-- [ ] Fouet
-- [ ] Papier de cuisson
-- [ ] Poche à douille
 
 ## Préparation
 

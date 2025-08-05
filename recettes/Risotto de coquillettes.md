@@ -19,7 +19,7 @@ meal: lunch
 - [ ] Vin blanc : 10cl
 - [ ] Pâtes (coquillettes) : 360g
 - [ ] Comté : 80g
-- [ ] Crème fraîche: 10cl
+- [ ] Crème fraîche : 10cl
 - [ ] Bouillon de volaille : 1
 - [ ] Échalote : 1
 

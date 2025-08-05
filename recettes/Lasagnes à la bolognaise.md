@@ -23,7 +23,6 @@ tags: [occasion]
 - [ ] Oignon jaune : 3
 - [ ] Lasagnes : 1 paquet
 - [ ] Ail : 2 gousse
-- [ ] Céleri : 1 branche
 - [ ] Viande de boeuf hachée : 600g
 - [ ] Parmesan râpé : 125g
 - [ ] Vin rouge : 20cl

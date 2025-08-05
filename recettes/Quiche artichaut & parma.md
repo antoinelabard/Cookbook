@@ -22,7 +22,7 @@ meal: lunch
 - [ ] Jambon cru : 4 tranches
 - [ ] Oeuf : 3
 - [ ] Crème fraîche : 20cl
-- [ ] Lait: 10cl
+- [ ] Lait : 10cl
 
 ## Préparation
 

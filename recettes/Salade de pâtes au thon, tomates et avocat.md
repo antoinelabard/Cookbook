@@ -22,7 +22,7 @@ meal: lunch
 - [ ] Origan
 - [ ] Pâtes coude : 200g
 - [ ] Avocat : 1
-- [ ] Boîte de thon : 1
+- [ ] Thon : 250g
 
 ## Préparation
 

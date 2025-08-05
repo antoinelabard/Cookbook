@@ -16,7 +16,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Boîte de lasagnes précuites : 1
+- [ ] Boîte de lasagnes : 1
 - [ ] Parmesan : 100g
 - [ ] Saumon : 300g
 - [ ] Feuilles d'épinards : 1kg

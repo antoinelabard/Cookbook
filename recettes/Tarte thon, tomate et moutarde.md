@@ -20,7 +20,7 @@ meal: lunch
 - [ ] Crème fraîche : 25cl
 - [ ] Lait : 15cl
 - [ ] Pâte feuilletée : 1
-- [ ] Boîtes de thon : 2
+- [ ] Thon : 500g
 - [ ] Oeufs : 3
 
 ## Préparation

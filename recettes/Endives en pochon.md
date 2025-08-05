@@ -20,7 +20,7 @@ season: [winter, spring]
 - [ ] Jus de citron
 - [ ] Persil
 - [ ] Oignon : 1
-- [ ] Gousses d'ail : 6
+- [ ] Ail : 6 gousses
 - [ ] Jambon blanc : 300g
 - [ ] Sauce tomate : 50cl
 - [ ] Oeufs : 2

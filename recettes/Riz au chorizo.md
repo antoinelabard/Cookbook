@@ -4,6 +4,12 @@ source: https://www.marmiton.org/recettes/recette_riz-au-chorizo_14042.aspx
 recipe-type: meal
 meal: lunch
 season: [summer, autumn]
+macros:
+  energy: 2280
+  proteins: 65.4
+  lipids: 111.0
+  carbs: 236.2
+  portions: 4
 ---
 
 # Riz au chorizo

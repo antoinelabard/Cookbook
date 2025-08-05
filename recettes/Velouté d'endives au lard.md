@@ -4,6 +4,13 @@ source: https://jow.fr/recipes/veloute-d-endives-au-lard-8eqq2izhbbwikptt019h
 season: [autumn, winter]
 recipe-type: meal
 meal: lunch
+macros:
+  energy: 1348.5
+  proteins: 40.5
+  lipids: 107.4
+  carbs: 47.6
+  portions: 4
+
 ---
 
 # Velouté d'endives au lard

@@ -3,6 +3,12 @@ date-added: 2022-12-28
 source: https://jow.fr/recipes/roesti-de-pommes-de-terre-8fp8mg4thpggke510yx4
 recipe-type: ingredient
 meal: lunch
+macros:
+  energy: 1202
+  proteins: 39.9
+  lipids: 15.9
+  carbs: 213.9
+  portions: 4
 ---
 
 # Rösti de pommes de terre

@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Boeuf (bavette) : 4
+- [ ] Bavette de boeuf : 4
 - [ ] Échalotes : 2
 - [ ] Haricots verts : 400g
 - [ ] Beurre : 80g

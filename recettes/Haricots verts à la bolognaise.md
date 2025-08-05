@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Oignon : 1
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Carotte : 1
 - [ ] Origan
 - [ ] Viande hachée : 800g

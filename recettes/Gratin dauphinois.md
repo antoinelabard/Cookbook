@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Pommes de terre : 1kg
 - [ ] crème liquide : 12cl
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Thym
 - [ ] Lait : 1l
 - [ ] beurre : 10g

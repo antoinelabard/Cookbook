@@ -3,6 +3,12 @@ date-added: 2023-02-09
 source: https://jow.fr/recipes/risotto-comte-et-saucisse-a-l-ancienne-85sjfb0o70qt09up1ca8
 recipe-type: meal
 meal: lunch
+macros:
+  energy: 2266
+  proteins: 79.2
+  lipids: 109.8
+  carbs: 215.7
+  portions: 4
 ---
 
 # Risotto comté & saucisse à l'ancienne
@@ -17,7 +23,7 @@ meal: lunch
 
 - [ ] Riz : 280g
 - [ ] Échalote : 1
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Comté : 80g
 - [ ] Saucisses fumées : 4
 - [ ] Bouillon de volaille : 1

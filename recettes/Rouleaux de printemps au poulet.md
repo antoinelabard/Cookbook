@@ -18,10 +18,10 @@ tags: [occasion]
 
 - [ ] Carottes : 2
 - [ ] Galettes de riz : 20
-- [ ] Champignons noir : 1 paquet
+- [ ] Champignons noir : 50g
 - [ ] Oignons : 3
 - [ ] Crevettes : 60g
-- [ ] Germes de soja : 1 bocal
+- [ ] Germes de soja : 180g
 - [ ] Filets de poulet : 3
 - [ ] Sauce soja
 - [ ] Nuoc nam

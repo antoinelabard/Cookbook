@@ -17,12 +17,12 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Tomates : 4
-- [ ] Parmesan
-- [ ] Vinaigre balsamique
+- [ ] Parmesan : 40g
+- [ ] Vinaigre balsamique : 5cl
 - [ ] Pâtes courtes : 200g
 - [ ] Mozzarella : 200g
 - [ ] Avocat : 1
-- [ ] Huile de noix
+- [ ] Huile de noix : 5cl
 
 ## Préparation
 

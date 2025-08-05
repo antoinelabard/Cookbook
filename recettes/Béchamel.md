@@ -2,6 +2,12 @@
 date-added: 2024-07-07
 source: https://www.marmiton.org/recettes/recette_bechamel_23880.aspx
 recipe-type: ingredient
+macros:
+  energy: 155
+  proteins: 4.7
+  lipids: 9.8
+  carbs: 11.8
+  portions: 4
 ---
 
 # Béchamel

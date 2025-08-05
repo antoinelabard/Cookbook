@@ -21,7 +21,7 @@ season: [spring, summer, autumn]
 - [ ] Poivrons : 350g
 - [ ] Oignon : 350g
 - [ ] Tomates : 500g
-- [ ] Gousses d'ails : 3
+- [ ] Ails : 3 gousses
 - [ ] Thym
 - [ ] Feuille de laurier : 1
 

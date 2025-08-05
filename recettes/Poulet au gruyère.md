@@ -16,18 +16,18 @@ tags: [occasion]
 
 ## Ingrédients
 
-- [[Pommes de terres sautées]] : 800g
-- Blancs de poulet : 400g
-- Cuisses de poulet : 400g
-- Poitrine fumée : 150g
-- Gruyère râpé : 150g
-- Oignons : 2
-- Ail : 1 gousse
-- Vin blanc sec : 2 verres
-- Beurre : 1 noix
-- Huile : 3cs
-- Crème fraîche : 1cs
-- Laurier : 1 feuille
+- [ ] [[Pommes de terres sautées]] : 800g
+- [ ] Blancs de poulet : 4
+- [ ] Cuisses de poulet : 400g
+- [ ] Poitrine fumée : 150g
+- [ ] Gruyère râpé : 150g
+- [ ] Oignons : 2
+- [ ] Ail : 1 gousse
+- [ ] Vin blanc sec : 25cl
+- [ ] Beurre : 10g
+- [ ] Huile : 3cs
+- [ ] Crème fraîche : 1cs
+- [ ] Laurier : 1 feuille
 
 ## Préparation
 

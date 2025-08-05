@@ -19,11 +19,10 @@ meal: lunch
 - [ ] [[Pommes de terres sautées]] : 600g
 - [ ] Salade : 200g
 - [ ] Chèvre frais : 80g
-- [ ] Bacon : 8 tranches
+- [ ] Bacon : 150g
 
 ## Préparation
 
-1. Faites cuire les œufs dans une casserole d'eau bouillante pendant 10 min.
-2. Placez-les dans un bol d'eau froide pour stopper la cuisson, écalez-les et coupez-les en morceaux.
-3. Dans la poêle, faites cuire le bacon 2 minutes sur chaque face.
-4. Dressez la salade : dans une assiette, ajoutez la mâche, les pommes de terres, les œufs, le bacon et le chèvre. (Optionnel : ajoutez des herbes fraîches). C'est prêt !
+1. Placez-les dans un bol d'eau froide pour stopper la cuisson, écalez-les et coupez-les en morceaux.
+2. Coupez les tranches de bacon en carrés. Dans une poêle, faites cuire le bacon 2 minutes sur chaque face.
+3. Dressez la salade : dans une assiette, ajoutez la mâche, les pommes de terres, les œufs, le bacon et le chèvre. (Optionnel : ajoutez des herbes fraîches). C'est prêt !

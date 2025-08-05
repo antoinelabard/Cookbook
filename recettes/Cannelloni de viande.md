@@ -3,6 +3,12 @@ date-added: 2022-12-15
 source: https://www.marmiton.org/recettes/recette_cannelloni-de-viande_45211.aspx
 recipe-type: meal
 meal: lunch
+macros:
+  energy: 2591
+  proteins: 160.6
+  lipids: 134.3
+  carbs: 178.6
+  portions: 4
 ---
 
 # Cannelloni de viande
@@ -16,7 +22,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Oignon : 1
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Viande hachée : 350g
 - [ ] Sauce tomate : 400g
 - [ ] Oeufs : 2

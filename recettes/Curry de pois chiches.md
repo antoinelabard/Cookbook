@@ -20,7 +20,7 @@ meal: lunch
 - [ ] Oignon : 1
 - [ ] Chair de tomates : 400g
 - [ ] Lait de coco : 10cl
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Curry
 - [ ] Cumin
 - [ ] Gingembre

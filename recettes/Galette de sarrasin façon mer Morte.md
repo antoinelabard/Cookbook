@@ -18,7 +18,7 @@ tags: [fail]
 
 - [ ] Beurre : 10g
 - [ ] Sel : 1cc
-- [ ] Galette de sarrasin : 1
+- [ ] Galettes bretonnes : 1
 - [ ] ~~sucre~~ sel : 50g
 - [ ] Fromage blanc : 200g
 - [ ] Myrtilles : 100g

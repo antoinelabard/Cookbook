@@ -21,7 +21,7 @@ meal: lunch
 - [ ] Vinaigre balsamique : 2
 - [ ] Huile
 - [ ] Maïs : 200g
-- [ ] Boîtes de thon : 2
+- [ ] Thon : 500g
 - [ ] Laitue
 - [ ] Menthe
 

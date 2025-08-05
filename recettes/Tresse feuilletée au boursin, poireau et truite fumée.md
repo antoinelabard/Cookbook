@@ -19,7 +19,7 @@ season: [spring, summer, autumn]
 - [ ] Pâte feuilletée : 1
 - [ ] Poireaux : 3
 - [ ] Fromage à l'ail : 150g
-- [ ] Truite : 4 tranches
+- [ ] Truite : 120g
 - [ ] Oeuf : 1
 - [ ] Graines de sésame (optionnel) : 2cc
 

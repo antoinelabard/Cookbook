@@ -19,7 +19,7 @@ season: [spring, summer, autumn]
 - [ ] Pâte feuilletée : 1
 - [ ] Feta : 160g
 - [ ] Épinards : 300g
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Salade : 200g
 - [ ] Oeufs : 2
 

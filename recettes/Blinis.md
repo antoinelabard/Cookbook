@@ -20,7 +20,7 @@ tags: [occasion]
 - [ ] Farine : 150g
 - [ ] Oeufs : 2
 - [ ] Lait à température ambiante : 20cl
-- [ ] Beurre
+- [ ] Beurre : 20g
 
 ## Préparation
 

@@ -16,14 +16,14 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Oignons verts : 1 botte
-- [ ] Tofu : 2 blocs
+- [ ] Tofu : 400g
 - [ ] Nouilles chinoises aux oeufs : 200g
 - [ ] Poivrons verts : 2
 - [ ] Échalotes : 4
 - [ ] Ail : 8 gousses
 - [ ] Miel : 2cs
-- [ ] Amandes entières : 2 poignées
-- [ ] Sauce soja : 2cl
+- [ ] Amandes entières : 40g
+- [ ] Sauce soja : 20cl
 - [ ] Huile d'olive : 6cl
 - [ ] Coriandre
 

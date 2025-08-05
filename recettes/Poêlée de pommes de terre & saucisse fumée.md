@@ -4,6 +4,12 @@ source: https://jow.fr/recipes/poelee-de-pommes-de-terre-et-saucisse-fumee-8q4ud
 season: [winter]
 recipe-type: meal
 meal: lunch
+macros:
+  energy: 1622
+  proteins: 67.1
+  lipids: 66.2
+  carbs: 192.7
+  portions: 4
 ---
 
 # Poêlée de pommes de terre & saucisse fumée
@@ -20,7 +26,7 @@ meal: lunch
 - [ ] Saucisses fumées : 4
 - [ ] Échalotes : 2
 - [ ] Oignon : 1
-- [ ] Gousse d'ail : 2
+- [ ] Ail : 2 gousses
 - [ ] Thym
 
 ## Préparation

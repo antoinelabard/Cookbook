@@ -16,12 +16,12 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] pain de mie : 16 tranches
+- [ ] Pain de mie : 16 tranches
 - [ ] Tomates : 2
 - [ ] Parmesan : 60g
 - [ ] Basilic
-- [ ] Huile d'olive
-- [ ] Tranches de jambon blanc ou jambon sec : 8
+- [ ] Huile d'olive : 5cl
+- [ ] Jambon blanc ou jambon sec : 8 tranches
 - [ ] Mozzarella : 250g
 
 ## Préparation

@@ -4,6 +4,12 @@ source: https://jow.fr/recipes/camembert-roti-et-potatoes-8vwx64tikjpc03gv03xx
 recipe-type: meal
 meal: lunch
 tags: [cheat-meal]
+macros:
+  energy: 1930
+  proteins: 112.7
+  lipids: 114.2
+  carbs: 114.2
+  portions: 4
 ---
 
 # Camembert rôti & potatoes
@@ -18,7 +24,7 @@ tags: [cheat-meal]
 
 - [ ] Camembert : 2
 - [ ] Potatoes : 600g
-- [ ] Gousses d'ail : 2
+- [ ] Ail : 2 gousses
 - [ ] Romarin
 - [ ] Salade : 200g
 

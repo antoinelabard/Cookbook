@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Pâtes : 400g
 - [ ] Crevettes : 400g
-- [ ] Gousses d'ail : 2
+- [ ] Ail : 2 gousses
 - [ ] Persil
 
 ## Préparation

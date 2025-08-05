@@ -21,7 +21,7 @@ tags: [occasion]
 - [ ] Oeufs : 3
 - [ ] Sucre vanillé : 1 sachet
 - [ ] Mascarpone : 250g
-- [ ] biscuits à la cuillère
+- [ ] Biscuits à la cuillère : 250g
 - [ ] Café sans sucre : 50cl
 
 ## Préparation

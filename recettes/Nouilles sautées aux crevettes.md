@@ -21,7 +21,7 @@ meal: lunch
 - [ ] Crevettes : 200g
 - [ ] Carottes : 2
 - [ ] Sauce soja : 12cl
-- [ ] Gousse d'ail : 1
+- [ ] Ail : 1 gousse
 - [ ] Gingembre
 
 ## Préparation

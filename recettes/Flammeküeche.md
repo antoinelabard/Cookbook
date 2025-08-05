@@ -4,6 +4,12 @@ source: https://jow.fr/recipes/flammekueeche-7w0xjarj6dds03ou0ngz
 recipe-type: meal
 meal: lunch
 tags: [cheat-meal]
+macros:
+  energy: 2635
+  proteins: 91
+  lipids: 130
+  carbs: 258
+  portions: 4
 ---
 
 # Flammeküeche
