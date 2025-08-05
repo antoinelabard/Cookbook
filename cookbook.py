@@ -48,7 +48,7 @@ if __name__ == "__main__":
         level=logging.INFO)
     logger = Utils.get_logger()
     repository = CookbookRepository()
-    meal_plan_builder = MealPlanBuilder(repository.recipes)
+    meal_plan_builder = MealPlanBuilder(repository.get_recipes())
 
     new_export = False
     new_meal_plan = False
@@ -65,9 +65,9 @@ if __name__ == "__main__":
             repository.write_recipes_macros()
             logger.info("Updated the macros of all the recipes.")
 
-        if arg in repository.profiles.keys():  # if arg is a profile name
+        if arg in repository.get_profiles().keys():  # if arg is a profile name
             new_meal_plan = True
-            for meal_plan_filter in repository.profiles[arg]:
+            for meal_plan_filter in repository.get_profiles()[arg]:
                 meal_plan_builder.pick_recipes_with_filter(meal_plan_filter)
             logger.info("Meal plan generated.")
 

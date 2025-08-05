@@ -46,29 +46,27 @@ class CookbookRepository:
     MACROS_PATH = ROOT_DIR / "macros.md"
 
     def __init__(self):
-        self.logger = Utils.get_logger()
-        self.logger.addHandler(logging.StreamHandler())
-        self.base_ingredients = self._read_base_ingredients()
-        self.recipes: list[Recipe] = self._read_recipes()
-        self.recipes_names: list[str] = list(map(lambda recipe: recipe.name, self.recipes))
-        self.profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()
+        self._logger = Utils.get_logger()
+        self._logger.addHandler(logging.StreamHandler())
+        self._base_ingredients = self._read_base_ingredients()
+        self._recipes: list[Recipe] = self._read_recipes()
+        self._recipes_names: list[str] = list(map(lambda recipe: recipe.get_name(), self._recipes))
+        self._profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()
+
+    def get_recipes(self) -> list[Recipe]:
+        return self._recipes
+
+    def get_profiles(self) -> dict[str, list[MealPlanFilter]]:
+        return self._profiles
 
     def write_meal_plan(self, meal_plan: MealPlan) -> None:
         """
-        Write down in a file the provided MealPlan.
+        Write down in meal_plan.md the provided MealPlan.
         :param meal_plan: the MealPlan to write down
         """
 
-        output_content: list[str] = []
-        for meal, recipes in meal_plan.__dict__.items():
-            recipes_links = "\n".join([f"- [ ] [[{recipe.name}]]" for recipe in recipes])
-            if not recipes_links:
-                continue
-            output_content.append(f"# {meal}\n\n{recipes_links}")
-            avg_macros = meal_plan.compute_avg_macros_per_meal(meal)
-            output_content.append(avg_macros.to_markdown_table())
         with open(self.MENU_PATH, 'w') as f:
-            f.write("\n\n".join(output_content))
+            f.write(meal_plan.to_str())
 
     def write_complete_cookbook(self) -> None:
         """
@@ -108,7 +106,7 @@ class CookbookRepository:
             "| Recette | Énergie | Protéines | Lipides | Glucides |",
             "|:--------|:-------:|:---------:|:-------:|:--------:|"]
 
-        for recipe in sorted(self.recipes, key=lambda rcp: rcp.name):
+        for recipe in sorted(self._recipes, key=lambda rcp: rcp.get_name()):
             output.append(recipe.get_macros_as_markdown_table_line())
 
         with open(self.MACROS_PATH, 'w') as f:
@@ -156,32 +154,34 @@ class CookbookRepository:
 
         recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit \
             = Utils.extract_name_and_quantity_from_ingredient_line(ingredient_line)
-        kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self.base_ingredients)
+        kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self._base_ingredients)
         if kept_ingredient is None:
-            self.logger.warning(
-                f"no base ingredient candidate for for ingredient name ================{recipe_ingredient_name} "
+            self._logger.warning(
+                f"no base ingredient candidate for for ingredient name {recipe_ingredient_name} "
                 f"in recipe {recipe_name}")
             return None
 
-        kept_ingredient.name = recipe_ingredient_name
-        kept_ingredient.quantity = recipe_ingredient_quantity
-        kept_ingredient.quantity_unit = QuantityUnit.from_str(recipe_ingredient_quantity_unit)
+        kept_ingredient.set_name(recipe_ingredient_name)
+        kept_ingredient.set_quantity(recipe_ingredient_quantity)
+        kept_ingredient.set_quantity_unit(QuantityUnit.from_str(recipe_ingredient_quantity_unit))
         kept_ingredient.compute_macros_from_quantity()
-        kept_ingredient.ingredient_line = ingredient_line
+        kept_ingredient.set_ingredient_line(ingredient_line)
 
         # various logging if something went wrong or seem suspicious
-        if not kept_ingredient.quantity_unit:
-            self.logger.warning(
+        if not kept_ingredient.get_quantity_unit():
+            self._logger.warning(
                 f"unit {recipe_ingredient_quantity_unit} not recognised in recipe {recipe_name}")
             return None
-        if QuantityUnit.is_piece_unit_missing_ratio(kept_ingredient.quantity_unit, kept_ingredient.piece_to_g_ratio):
-            self.logger.warning(
-                f"Suspicious piece_to_g_ratio of {kept_ingredient.piece_to_g_ratio} found for ingredient "
-                f"{kept_ingredient.name} in recipe {recipe_name}, which may need a custom one written in "
+        if QuantityUnit.is_piece_unit_missing_ratio(
+                kept_ingredient.get_quantity_unit(),
+                kept_ingredient.get_piece_to_g_ratio()):
+            self._logger.warning(
+                f"Suspicious piece_to_g_ratio of {kept_ingredient.get_piece_to_g_ratio()} found for ingredient "
+                f"{kept_ingredient.get_name()} in recipe {recipe_name}, which may need a custom one written in "
                 f"{self.BASE_INGREDIENTS_PATH}")
-        if kept_ingredient.macros.energy == 0:
-            self.logger.warning(
-                f"the ingredient {kept_ingredient.name} has one or many of its macros set to 0 in recipe {recipe_name}")
+        if kept_ingredient.get_macros().get_energy() == 0:
+            self._logger.warning(
+                f"the ingredient {kept_ingredient.get_name()} has one or many of its macros set to 0 in recipe {recipe_name}")
 
         return kept_ingredient
 
@@ -279,14 +279,17 @@ class CookbookRepository:
 
         # affect real recipes as ingredients when one recipe is used in another
         for rcp in range(len(recipes)):
-            recipe_ingredients = recipes[rcp].ingredients
+            recipe_ingredients = recipes[rcp].get_ingredients()
             for igr in range(len(recipe_ingredients)):
                 if isinstance(recipe_ingredients[igr], Recipe):
-                    true_recipe = next(filter(lambda r, i=igr: r.name == recipe_ingredients[i].name, recipes), None)
+                    true_recipe = next(filter(lambda r, i=igr:
+                                              r.get_name() == recipe_ingredients[i].get_name(),
+                                              recipes),
+                                       None)
                     if not true_recipe:
-                        self.logger.warning(
-                            f"No true recipe matching the ingredient name {recipe_ingredients[igr].name} "
-                            f"in recipe {recipes[rcp].name}")
+                        self._logger.warning(
+                            f"No true recipe matching the ingredient name {recipe_ingredients[igr].get_name()} "
+                            f"in recipe {recipes[rcp].get_name()}")
                         continue
                     recipe_ingredients[igr] = true_recipe
 
@@ -341,7 +344,7 @@ class CookbookRepository:
         with open(self.MENU_PATH, 'r') as f:
             lines = f.readlines()
 
-        meal_plan_builder = MealPlanBuilder(self.recipes)
+        meal_plan_builder = MealPlanBuilder(self._recipes)
 
         current_meal_selector = Constants.Meal.LUNCH
 
@@ -360,9 +363,9 @@ class CookbookRepository:
                                 .split("[[")[1]
                                 .split("]]")[0]
                                 if "[[" in line and "]]" in line else "")
-            if recipe_candidate in self.recipes_names:
+            if recipe_candidate in self._recipes_names:
                 meal_plan_builder.add_recipe(
                     current_meal_selector,
-                    Recipe.filter_recipe_by_name(recipe_candidate, self.recipes))
+                    Recipe.filter_recipe_by_name(recipe_candidate, self._recipes))
 
         return meal_plan_builder.build()

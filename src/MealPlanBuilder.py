@@ -1,10 +1,9 @@
-import logging
 import random
 
-from src.utils.Constants import Constants
-from src.entities.MealPlan import MealPlan
 from src.MealPlanFilter import MealPlanFilter
+from src.entities.MealPlan import MealPlan
 from src.entities.Recipe import Recipe
+from src.utils.Constants import Constants
 from src.utils.Utils import Utils
 
 
@@ -17,9 +16,9 @@ class MealPlanBuilder:
     """
 
     def __init__(self, recipes: list[Recipe]):
-        self.logger = Utils.get_logger()
-        self.recipes: list[Recipe] = recipes
-        self.meal_plan: MealPlan = MealPlan()
+        self._logger = Utils.get_logger()
+        self._recipes: list[Recipe] = recipes
+        self._meal_plan: MealPlan = MealPlan()
 
     def pick_recipes_with_filter(self, meal_plan_filter: MealPlanFilter):
         """
@@ -29,17 +28,17 @@ class MealPlanBuilder:
         provides the quantity of recipes to be picked.
         """
 
-        filtered_recipes: list[Recipe] = [recipe for recipe in self.recipes
+        filtered_recipes: list[Recipe] = [recipe for recipe in self._recipes
                                           if meal_plan_filter.matches_filters(recipe)]
         if not filtered_recipes:
             return
 
-        self.logger.info(
-            f"Picking {meal_plan_filter.quantity if meal_plan_filter.quantity is not None else 0} recipes "
+        self._logger.info(
+            f"Picking {meal_plan_filter.get_quantity() if meal_plan_filter.get_quantity() is not None else 0} recipes "
             + f"among {len(filtered_recipes)}.")
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()
         picked_recipes: list[Recipe] = []
-        quantity = meal_plan_filter.quantity
+        quantity = meal_plan_filter.get_quantity()
         while quantity > 0:
             # select the filtered recipes using a random draw
             index: int = random.randint(0, len(filtered_recipes_copy) - 1)
@@ -49,33 +48,32 @@ class MealPlanBuilder:
             if not filtered_recipes_copy:
                 filtered_recipes_copy = filtered_recipes.copy()
 
-        if meal_plan_filter.meal == Constants.Meal.LUNCH:
-            self.meal_plan.lunch.extend(picked_recipes)
-        elif meal_plan_filter.meal == Constants.Meal.BREAKFAST:
-            self.meal_plan.breakfast.extend(picked_recipes)
-        elif meal_plan_filter.meal == Constants.Meal.SNACK:
-            self.meal_plan.snack.extend(picked_recipes)
+        if meal_plan_filter.get_meal() == Constants.Meal.LUNCH:
+            self._meal_plan.get_lunch().extend(picked_recipes)
+        elif meal_plan_filter.get_meal() == Constants.Meal.BREAKFAST:
+            self._meal_plan.get_breakfast().extend(picked_recipes)
+        elif meal_plan_filter.get_meal() == Constants.Meal.SNACK:
+            self._meal_plan.get_snack().extend(picked_recipes)
         else:
-            self.meal_plan.misc.extend(picked_recipes)
+            self._meal_plan.get_misc().extend(picked_recipes)
 
     def add_recipe(self, meal: str, recipe: Recipe):
         match meal:
             case Constants.Meal.BREAKFAST:
-                self.meal_plan.breakfast.append(recipe)
+                self._meal_plan.get_breakfast().append(recipe)
             case Constants.Meal.LUNCH:
-                self.meal_plan.lunch.append(recipe)
+                self._meal_plan.get_lunch().append(recipe)
             case Constants.Meal.SNACK:
-                self.meal_plan.snack.append(recipe)
-
+                self._meal_plan.get_snack().append(recipe)
 
     def add_recipes(self, meal: str, recipes: list[Recipe]):
         match meal:
             case Constants.Meal.BREAKFAST:
-                self.meal_plan.breakfast.extend(recipes)
+                self._meal_plan.get_breakfast().extend(recipes)
             case Constants.Meal.LUNCH:
-                self.meal_plan.lunch.extend(recipes)
+                self._meal_plan.get_lunch().extend(recipes)
             case Constants.Meal.SNACK:
-                self.meal_plan.snack.extend(recipes)
+                self._meal_plan.get_snack().extend(recipes)
 
     def build(self):
-        return self.meal_plan
+        return self._meal_plan
