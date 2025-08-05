@@ -46,7 +46,7 @@ class CookbookRepository:
     MACROS_PATH = ROOT_DIR / "macros.md"
 
     def __init__(self):
-        self.logger = logging.getLogger(__name__)
+        self.logger = Utils.get_logger()
         self.logger.addHandler(logging.StreamHandler())
         self.base_ingredients = self._read_base_ingredients()
         self.recipes: list[Recipe] = self._read_recipes()

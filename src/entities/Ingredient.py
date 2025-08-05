@@ -18,8 +18,6 @@ class Ingredient:
                  aisle: str = "Unclassified"
                  ):
         self.logger = logging.getLogger(__name__)
-        self.logger.addHandler(logging.StreamHandler())
-
         self.name: str = name
         self.quantity: float = quantity
         self.quantity_unit: QuantityUnit = quantity_unit

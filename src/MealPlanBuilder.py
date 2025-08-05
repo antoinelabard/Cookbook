@@ -1,9 +1,11 @@
+import logging
 import random
 
 from src.utils.Constants import Constants
 from src.entities.MealPlan import MealPlan
 from src.MealPlanFilter import MealPlanFilter
 from src.entities.Recipe import Recipe
+from src.utils.Utils import Utils
 
 
 class MealPlanBuilder:
@@ -15,6 +17,7 @@ class MealPlanBuilder:
     """
 
     def __init__(self, recipes: list[Recipe]):
+        self.logger = Utils.get_logger()
         self.recipes: list[Recipe] = recipes
         self.meal_plan: MealPlan = MealPlan()
 
@@ -31,7 +34,7 @@ class MealPlanBuilder:
         if not filtered_recipes:
             return
 
-        print(
+        self.logger.info(
             f"Picking {meal_plan_filter.quantity if meal_plan_filter.quantity is not None else 0} recipes "
             + f"among {len(filtered_recipes)}.")
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()

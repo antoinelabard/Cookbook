@@ -34,15 +34,19 @@ CONFIGURATION
     selected, it must have all the tags specified, no more or less. if tags is not specified, only recipes with no tag
     will be selected.
 """
-
+import datetime
 import logging
 import sys
 
 from src.MealPlanBuilder import MealPlanBuilder
 from src.data.CookbookRepository import CookbookRepository
+from src.utils.Utils import Utils
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='cookbook.log', level=logging.INFO)
+    logging.basicConfig(
+        filename=f'../../../Logs/cookbook/{datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}.log',
+        level=logging.INFO)
+    logger = Utils.get_logger()
     repository = CookbookRepository()
     meal_plan_builder = MealPlanBuilder(repository.recipes)
 
@@ -55,17 +59,17 @@ if __name__ == "__main__":
 
         if arg in ["i", "ingredients"]:
             new_ingredients_list = True
-            print("Ingredients list generated.")
+            logger.info("Ingredients list generated.")
 
         if arg == "macros":
             repository.write_recipes_macros()
-            print("Updated the macros of all the recipes.")
+            logger.info("Updated the macros of all the recipes.")
 
         if arg in repository.profiles.keys():  # if arg is a profile name
             new_meal_plan = True
             for meal_plan_filter in repository.profiles[arg]:
                 meal_plan_builder.pick_recipes_with_filter(meal_plan_filter)
-            print("Meal plan generated.")
+            logger.info("Meal plan generated.")
 
     if new_meal_plan:
         meal_plan = meal_plan_builder.build()
