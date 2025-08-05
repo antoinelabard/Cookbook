@@ -11,7 +11,9 @@ SYNOPSIS
     cookbook.py can take several arguments:
         - export: create a markdown file containing wikilinks for all the recipes of the cookbook. It can be read using
         Obsidian (https://obsidian.md).
-        - profile: generate a menu following the filters pointed by "profile" (defined in profiles.yaml).
+        - "profile": generate a menu following the filters pointed by "profile" (defined in profiles.yaml).
+        - ingredient / i: generate the groceries list of the meal plan written in meal plan.md
+        - macros: compute and write in macros.md the macros of every recipe in the cookbook
 
 DESCRIPTION
     cookbook.py is intended to generate a random menu matching some filters. Those filters can be given as command line
