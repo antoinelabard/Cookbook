@@ -54,4 +54,4 @@ class Macros:
         return (
                 "| Énergie | Protéines | Lipides | Glucides |\n"
                 + "|:-------:|:---------:|:-------:|:--------:|\n"
-                + f"| {self._energy} | {self._proteins} | {self._lipids} | {self._carbs} |")
+                + f"| {round(self._energy)} | {round(self._proteins)} | {round(self._lipids)} | {round(self._carbs)} |")

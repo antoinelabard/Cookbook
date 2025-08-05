@@ -46,10 +46,18 @@ class MealPlan:
         total_nb_portions = sum(map(lambda recipe: recipe.get_portions(), recipes))
 
         return Macros(
-            round(sum(map(lambda recipe: recipe.get_macros().get_energy() * recipe.get_portions(), recipes)) / total_nb_portions),
-            round(sum(map(lambda recipe: recipe.get_macros().get_proteins() * recipe.get_portions(), recipes)) / total_nb_portions),
-            round(sum(map(lambda recipe: recipe.get_macros().get_lipids() * recipe.get_portions(), recipes)) / total_nb_portions),
-            round(sum(map(lambda recipe: recipe.get_macros().get_carbs() * recipe.get_portions(), recipes)) / total_nb_portions),
+            sum(map(lambda recipe:
+                recipe.get_macros().get_energy() * recipe.get_portions(),
+                recipes)) / total_nb_portions,
+            sum(map(lambda recipe:
+                recipe.get_macros().get_proteins() * recipe.get_portions(),
+                recipes)) / total_nb_portions,
+            sum(map(lambda recipe:
+                recipe.get_macros().get_lipids() * recipe.get_portions(),
+                recipes)) / total_nb_portions,
+            sum(map(lambda recipe:
+                recipe.get_macros().get_carbs() * recipe.get_portions(),
+                recipes)) / total_nb_portions,
         )
 
     def compute_avg_macros_per_meal(self, meal) -> Macros:
