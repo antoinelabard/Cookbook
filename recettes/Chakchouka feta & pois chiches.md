@@ -4,13 +4,6 @@ source: https://jow.fr/recipes/chakchouka-feta-et-pois-chiches-8jgr45ec0ejkkumm0
 recipe-type: meal
 meal: lunch
 season: [summer]
-macros:
-  energy: 1984
-  proteins: 123.7
-  lipids: 98.9
-  carbs: 158.2
-  portions: 4
-
 ---
 
 # Chakchouka feta & pois chiches

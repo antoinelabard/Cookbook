@@ -4,13 +4,6 @@ source: https://www.marmiton.org/recettes/recette_pate-aux-crevettes-a-la-creme_
 recipe-type: meal
 meal: lunch
 season: [spring, autumn, winter]
-macros:
-  energy: 2336
-  proteins: 92.8
-  lipids: 137.7
-  carbs: 182.6
-  portions: 4
-
 ---
 
 # Pâtes aux petits pois, poireaux et bacon

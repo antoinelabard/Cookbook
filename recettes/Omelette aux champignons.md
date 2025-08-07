@@ -3,12 +3,6 @@ date-added: 2023-12-04
 source: https://jow.fr/recipes/omelette-aux-champignons-8dhoibrblxg439mb0p0b
 recipe-type: meal
 meal: lunch
-macros:
-  energy: 1637
-  proteins: 132.4
-  lipids: 115.4
-  carbs: 31.0
-  portions: 4
 ---
 
 # Omelette aux champignons

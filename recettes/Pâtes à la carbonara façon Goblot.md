@@ -3,12 +3,6 @@ date-added: 2023-12-25
 source: Alexis Goblot
 recipe-type: meal
 meal: lunch
-macros:
-  energy: 2752
-  proteins: 127.4
-  lipids: 173.5
-  carbs: 155.9
-  portions: 4
 ---
 
 # Pâtes à la carbonara façon Goblot
