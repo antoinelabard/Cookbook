@@ -3,12 +3,6 @@ date-added: 2022-11-09
 source: https://conseilsport.decathlon.fr/recette-confectionnez-vous-meme-vos-barres-de-cereales
 recipe-type: meal
 meal: snack
-macros:
-  portions : 8
-  energy: 215.1
-  proteins: 6.3
-  lipids: 11.8
-  carbs: 23.7
 ---
 
 # Barres de céréales aux noix
