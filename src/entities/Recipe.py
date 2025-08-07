@@ -4,6 +4,7 @@ from typing import Self
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
 from src.utils.Constants import Constants
+from src.utils.QuantityUnit import QuantityUnit
 from src.utils.Utils import Utils
 
 
@@ -21,30 +22,31 @@ class Recipe:
                  source: Optional[str] = None,
                  meal: Optional[str] = None,
                  seasons: Optional[list[str]] = None,
-                 portions: int = 4,
+                 portions: int = QuantityUnit.DEFAULT_NB_PORTIONS.value,
+                 quantity: int = 1,
                  tags: Optional[list[str]] = None):
         self._name: str = name
         self._recipe_type: str = recipe_type
         self._date_added: Optional[str] = date_added if date_added else None
         self._source: Optional[str] = source
         self._meal: Optional[str] = meal if meal else None
+        self._macros = Macros()
 
         if isinstance(seasons, list):
-            self.seasons: list[str] = seasons
+            self._seasons: list[str] = seasons
         elif seasons is None:
-            self.seasons: list[str] = []
+            self._seasons: list[str] = []
 
-        self.portions: int = portions
+        self._portions: int = portions
 
         if isinstance(tags, list):
-            self.tags: list[str] = tags
+            self._tags: list[str] = tags
         elif tags is None:
-            self.tags: list[str] = []
+            self._tags: list[str] = []
 
-        self.ingredients: list[Ingredient | Self] = ingredients
-        self.instructions: list[str] = instructions
-
-        self.macros: Macros = self.compute_recipe_macros()
+        self._ingredients: list[Ingredient | Self] = ingredients
+        self._instructions: list[str] = instructions
+        self._quantity = quantity
 
     def get_name(self) -> str:
         return self._name
@@ -56,31 +58,40 @@ class Recipe:
         return self._meal
 
     def get_seasons(self) -> list[str]:
-        return self.seasons
+        return self._seasons
 
     def get_portions(self) -> int:
-        return self.portions
+        return self._portions
 
     def get_tags(self) -> list[str]:
-        return self.tags
+        return self._tags
 
     def get_ingredients(self) -> list[Ingredient]:
-        return self.ingredients
+        return self._ingredients
 
     def get_macros(self) -> Macros:
-        return self.macros
+        return self._macros
 
-    def compute_recipe_macros(self):
+    def set_macros(self, macros: Macros):
+        self._macros = macros
+
+    def get_quantity(self) -> int:
+        return self._quantity
+
+    def set_quantity(self, quantity: int):
+        self._quantity = quantity
+
+    def compute_macros(self, quantity: int = 1):
         """
-        :returns: to the self.macros attribute a Macro object containing the sum of all the macros of the ingredients in
-        the recipe
+        Assign to self.macros a Macro object containing the sum of all the macros of the ingredients in
+        the recipe. This total can be multiplied by quantity if the recipe is used as an ingredient in another.
         """
 
         macros = Macros()
-        for i in self.ingredients:
+        for i in self._ingredients:
             macros += i.get_macros()
 
-        return macros / self.portions
+        self._macros = macros * quantity
 
     def get_ingredients_list_by_aisle(self) -> dict[str, list[str]]:
         """
@@ -88,7 +99,7 @@ class Recipe:
         """
 
         ingredients_by_aisle = {}
-        for ingredient in self.ingredients:
+        for ingredient in self._ingredients:
             if isinstance(ingredient, Recipe):
                 recipe_list = ingredient.get_ingredients_list_by_aisle()
                 for key in recipe_list.keys():
@@ -114,10 +125,14 @@ class Recipe:
 
     def get_macros_as_markdown_table_line(self):
         """
+        Return a Markdown table line containing the total macros of the recipe per portion
         | Recette | Énergie | Protéines | Lipides | Glucides |
         |:--------|:-------:|:---------:|:-------:|:--------:|
         | recipes | energy  | proteins  | lipids  |  carbs   | <--- returns this
         """
+        energy = round(self._macros.get_energy() / self._portions)
+        proteins = round(self._macros.get_proteins() / self._portions)
+        lipids = round(self._macros.get_lipids() / self._portions)
+        carbs = round(self._macros.get_carbs() / self._portions)
 
-        return (f"| [[{self._name}]] | {round(self.macros.get_energy())} | {round(self.macros.get_proteins())} "
-                f"| {round(self.macros.get_lipids())} | {round(self.macros.get_carbs())} |")
+        return f"| [[{self._name}]] | {energy} | {proteins} | {lipids} | {carbs} |"

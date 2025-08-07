@@ -35,6 +35,7 @@ class QuantityUnit(Enum):
     CS_TO_G_RATIO = 15
 
     DEFAULT_QUANTITY = 10  # in grams
+    DEFAULT_NB_PORTIONS = 4
 
     # arbitrary value which marginally falsify the calculation, count as almost zero and is odd enough avoid being
     # picked by a legitimate recipe

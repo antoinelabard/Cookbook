@@ -15,7 +15,7 @@ class Ingredient:
                  piece_to_g_ratio: float = -1,
                  macros: Macros = Macros(1, 1, 1, 1),
                  ingredient_line: str = "",
-                 aisle: str = "Unclassified"
+                 aisle: str = Constants.UNCLASSIFIED_AISLE,
                  ):
         self._logger = logging.getLogger(__name__)
         self._name: str = name

@@ -5,6 +5,7 @@ class Constants:
     QUANTITY = "quantity"
     SOURCE = "source"
     DATE_ADDED = "date-added"
+    UNCLASSIFIED_AISLE = "Non classé"
 
     SOURCE_RECIPE_ARROW = " ---> "
 

@@ -49,6 +49,7 @@ class CookbookRepository:
         self._logger = Utils.get_logger()
         self._logger.addHandler(logging.StreamHandler())
         self._base_ingredients = self._read_base_ingredients()
+        self._recipes_paths: list[Path] = [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
         self._recipes: list[Recipe] = self._read_recipes()
         self._recipes_names: list[str] = list(map(lambda recipe: recipe.get_name(), self._recipes))
         self._profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()
@@ -75,7 +76,7 @@ class CookbookRepository:
 
         page_break: str = '\n\n<div style="page-break-after: always;"></div>\n\n'
         complete_cookbook_template: str = "# Livre de recettes\n\n{}"
-        files_wikilinks = sorted([f'![[{path.name}]]' for path in self._get_recipes_paths()])
+        files_wikilinks = sorted([f'![[{path.name}]]' for path in self._recipes_paths])
 
         with open(self.COMPLETE_COOKBOOK_PATH, 'w') as f:
             f.write(complete_cookbook_template.format(page_break.join(files_wikilinks)))
@@ -112,12 +113,6 @@ class CookbookRepository:
         with open(self.MACROS_PATH, 'w') as f:
             f.write("\n".join(output))
 
-    def _get_recipes_paths(self) -> list[Path]:
-        """
-        :return: the list of the absolute paths of all the recipes in the cookbook
-        """
-        return [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
-
     def _read_base_ingredients(self) -> list[Ingredient]:
         """
         :return: the list of all the base ingredients stored in ingredients.yaml
@@ -146,7 +141,8 @@ class CookbookRepository:
 
         return ingredients
 
-    def _load_ingredient_object_from_recipe_line(self, ingredient_line: str, recipe_name: str) -> Optional[Ingredient]:
+    def _load_ingredient_object_from_recipe_line(self, ingredient_line: str, recipe_name: str) \
+            -> Optional[Ingredient | Recipe]:
         """
         Take an ingredient line from a Markdown recipe (ie 'ingredient' : quantity unit) and load an Ingredient
         object by matching its name with the base ingredients.
@@ -154,6 +150,7 @@ class CookbookRepository:
 
         recipe_ingredient_name, recipe_ingredient_quantity, recipe_ingredient_quantity_unit \
             = Utils.extract_name_and_quantity_from_ingredient_line(ingredient_line)
+
         kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self._base_ingredients)
         if kept_ingredient is None:
             self._logger.warning(
@@ -198,24 +195,26 @@ class CookbookRepository:
         for recipe_ingredient_str in ingredients_str:
             # the given ingredient is, in fact, a recipe
             if "[[" in recipe_ingredient_str and "]]" in recipe_ingredient_str:
+                _, recipe_ingredient_quantity, _ = \
+                    Utils.extract_name_and_quantity_from_ingredient_line(recipe_ingredient_str)
+
                 ingredient_recipe_name = (recipe_ingredient_str
                 .split("[[")[-1]
                 .split("]]")[0])
-                ingredients.append(Recipe(ingredient_recipe_name, "", [], []))
+
+                kept_recipe = self._read_recipe_from_file(
+                    next(filter(lambda path, name=ingredient_recipe_name: name in path.name, self._recipes_paths)))
+                if recipe_ingredient_quantity:
+                    kept_recipe.compute_macros(recipe_ingredient_quantity)
+                ingredients.append(kept_recipe)
                 continue
             kept_ingredient = self._load_ingredient_object_from_recipe_line(recipe_ingredient_str, recipe_name)
             if kept_ingredient: ingredients.append(kept_ingredient)
 
         return ingredients
 
-    def _read_recipe_from_file(self, path: Path) -> Optional[Recipe]:
-        """
-        :param path: the path to the Markdown file containing the recipe
-        :return: a recipe object if one of this name actually exists, else None
-        """
-
-        with open(path, 'r') as f:
-            lines = f.readlines()
+    @staticmethod
+    def _get_sections_from_recipe(lines: list[str]) -> Optional[tuple[list[int], list[int], list[int]]]:
 
         metadata_delimiter: str = "---\n"
         ingredients_delimiter: str = "## Ingrédients"
@@ -246,6 +245,19 @@ class CookbookRepository:
                 instructions_range.append(i + 2)
         instructions_range.append(len(lines))
 
+        return metadata_range, ingredients_range, instructions_range
+
+    def _read_recipe_from_file(self, path: Path) -> Optional[Recipe]:
+        """
+        :param path: the path to the Markdown file containing the recipe
+        :return: a recipe object if one of this name actually exists, else None
+        """
+
+        with open(path, 'r') as f:
+            lines = f.readlines()
+
+        metadata_range, ingredients_range, instructions_range = self._get_sections_from_recipe(lines)
+
         metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
 
         ingredients = self._load_ingredients_from_recipe(lines[ingredients_range[0]:ingredients_range[1]], path.name)
@@ -262,8 +274,11 @@ class CookbookRepository:
             source=metadata[Constants.SOURCE] if Constants.SOURCE in metadata.keys() else None,
             meal=metadata[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata.keys() else None,
             seasons=metadata[Constants.Season.SEASON] if Constants.Season.SEASON in metadata.keys() else None,
-            tags=metadata[Constants.TAGS] if Constants.TAGS in metadata.keys() else None
+            tags=metadata[Constants.TAGS] if Constants.TAGS in metadata.keys() else None,
+            portions=metadata[
+                Constants.Macros.PORTIONS] if Constants.Macros.PORTIONS in metadata.keys() else QuantityUnit.DEFAULT_NB_PORTIONS.value
         )
+        recipe.compute_macros()
 
         return recipe
 
@@ -273,25 +288,9 @@ class CookbookRepository:
         """
 
         recipes: list[Recipe] = []
-        for recipe_path in self._get_recipes_paths():
+        for recipe_path in self._recipes_paths:
             recipe = self._read_recipe_from_file(recipe_path)
             if recipe: recipes.append(recipe)
-
-        # affect real recipes as ingredients when one recipe is used in another
-        for rcp in range(len(recipes)):
-            recipe_ingredients = recipes[rcp].get_ingredients()
-            for igr in range(len(recipe_ingredients)):
-                if isinstance(recipe_ingredients[igr], Recipe):
-                    true_recipe = next(filter(lambda r, i=igr:
-                                              r.get_name() == recipe_ingredients[i].get_name(),
-                                              recipes),
-                                       None)
-                    if not true_recipe:
-                        self._logger.warning(
-                            f"No true recipe matching the ingredient name {recipe_ingredients[igr].get_name()} "
-                            f"in recipe {recipes[rcp].get_name()}")
-                        continue
-                    recipe_ingredients[igr] = true_recipe
 
         return recipes
 
