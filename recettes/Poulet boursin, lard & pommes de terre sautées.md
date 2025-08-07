@@ -18,7 +18,7 @@ meal: lunch
 - [ ] Escalopes de poulet : 4
 - [ ] Fromage à l'ail : 160g
 - [ ] Lard : 8 tranches
-- [ ] [[Pommes de terres sautées]] : 1kg
+- [ ] [[Pommes de terres sautées]] : 5
 - [ ] Ciboulette
 
 ## Préparation

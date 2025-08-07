@@ -19,7 +19,7 @@ meal: lunch
 - [ ] Échalotes : 2
 - [ ] Haricots verts : 400g
 - [ ] Beurre : 80g
-- [ ] [[Pommes de terres sautées]] : 600g
+- [ ] [[Pommes de terres sautées]] : 4
 
 ## Préparation
 

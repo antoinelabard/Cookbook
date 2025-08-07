@@ -3,6 +3,7 @@ date-added: 2022-11-18
 source: https://www.fitnessmith.fr/recette-fitness-les-toasts-sportifs
 recipe-type: meal
 meal: breakfast
+portions: 1
 ---
 
 # Toasts à l'avocat et oeufs mollets

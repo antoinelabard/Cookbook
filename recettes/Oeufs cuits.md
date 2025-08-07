@@ -2,6 +2,7 @@
 date-added: 2024-02-29
 source: Antoine Labard
 recipe-type: ingredient
+portions: 1
 ---
 
 # Oeufs cuits

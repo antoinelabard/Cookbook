@@ -5,6 +5,7 @@ source:
   - https://jow.fr/recipes/granola-choco-loco-8807510eeoh3gvkv13e2
 recipe-type: meal
 meal: breakfast
+portions: 12
 ---
 
 # Granola maison

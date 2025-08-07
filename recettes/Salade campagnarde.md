@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] [[Oeufs cuits]] durs : 6
-- [ ] [[Pommes de terres sautées]] : 600g
+- [ ] [[Pommes de terres sautées]] : 3
 - [ ] Salade : 200g
 - [ ] Chèvre frais : 80g
 - [ ] Bacon : 150g

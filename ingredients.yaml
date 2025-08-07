@@ -916,7 +916,7 @@ Courgette:
   proteins: 2.5
   carbs: 16.8
   lipids: 0.1
-  piece_to_g_ratio: 40
+  piece_to_g_ratio: 20
   aisle: Fruits et légumes
 Endives:
   energy: 17
