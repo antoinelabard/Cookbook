@@ -23,8 +23,6 @@ meal: lunch
 
 ## Préparation
 
-![[Pâte brisée]]
-
 1. Éplucher les oignons et les couper en rondelles.
 2. Les mettre dans le beurre chaud, et faire cuire sans prendre de couleur (pour ce faire, les mettre à froid dans le beurre qui n'est pas encore fondu); ajouter les lardons, saler et poivrer.
 3. Foncer un plat à tarte avec la pâte.

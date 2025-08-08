@@ -25,8 +25,6 @@ season: [spring, summer, autumn]
 
 ## Préparation
 
-![[Pâte brisée]]
-
 1. Étalez la pâte dans le moule beurré et fariné.
 2. Nettoyez puis émincez les blancs des 3 poireaux.
 3. Faites dorer les lardons dont vous utiliserez la graisse pour faire revenir les poireaux ensuite.
