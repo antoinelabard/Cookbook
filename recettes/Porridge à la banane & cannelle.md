@@ -15,7 +15,7 @@ meal: breakfast
 
 ## Ingrédients
 
-- [ ] [[Porridge]]
+- [ ] [[Porridge]] : 1
 - [ ] Sirop d'érable / miel : 5cl
 - [ ] Bananes : 2
 - [ ] Cannelle en poudre

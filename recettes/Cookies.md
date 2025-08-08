@@ -4,6 +4,7 @@ source: https://www.marmiton.org/recettes/recette_cookies-maison_86989.aspx
 recipe-type: meal
 meal: snack
 tags: [occasion]
+portions: 10
 ---
 
 # Cookies au chocolat

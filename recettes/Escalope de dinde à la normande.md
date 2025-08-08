@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] [[Purée de pommes de terre façon Goblot]] : 500g
+- [ ] [[Purée de pommes de terre façon Goblot]] : 5
 - [ ] Champignons de Paris : 400g
 - [ ] Crème fraîche : 20cl
 - [ ] Escalopes de dinde : 4

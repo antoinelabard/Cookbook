@@ -16,12 +16,12 @@ season: [spring, summer, autumn]
 
 ## Ingrédients
 
-- [ ] Aubergines : 350g
-- [ ] Courgettes : 350g
-- [ ] Poivrons : 350g
-- [ ] Oignon : 350g
-- [ ] Tomates : 500g
-- [ ] Ails : 3 gousses
+- [ ] Aubergines : 1
+- [ ] Courgettes : 1
+- [ ] Poivrons : 2
+- [ ] Oignon : 2
+- [ ] Tomates : 2
+- [ ] Ails : 2 gousses
 - [ ] Thym
 - [ ] Feuille de laurier : 1
 

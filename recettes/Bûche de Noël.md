@@ -4,6 +4,7 @@ source: https://www.marmiton.org/recettes/recette_buche-de-noel-facile_18219.asp
 recipe-type: meal
 meal: snack
 tags: [occasion]
+portions: 8
 ---
 
 # Bûche de Noël

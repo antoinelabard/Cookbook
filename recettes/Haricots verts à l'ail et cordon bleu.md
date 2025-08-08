@@ -10,8 +10,8 @@ tags: [cheat-meal]
 
 ## Ingrédients
 
-- [ ] [[Haricots verts à l'ail]]
-- [ ] [[Cordon bleu roulé]] : 4
+- [ ] [[Haricots verts à l'ail]] : 2
+- [ ] [[Cordon bleu roulé]] : 1
 
 ## Préparation
 

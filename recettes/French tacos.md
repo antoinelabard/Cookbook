@@ -16,7 +16,7 @@ tags: [cheat-meal]
 
 ## Ingrédients
 
-- [ ] [[Frites]] : 1kg
+- [ ] [[Frites]] : 10
 - [ ] Viandes de votre choix (boeuf haché, nuggets, Saucisses, cordon bleu, etc) : 400g
 - [ ] Oignons : 2
 - [ ] Crème fraîche : 50cl

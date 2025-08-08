@@ -15,9 +15,9 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Haricots verts : 500g
-- [ ] Ail : 2 gousses
-- [ ] Beurre : 50g
+- [ ] Haricots verts : 100g
+- [ ] Ail : 1 gousse
+- [ ] Beurre : 25g
 
 ## Préparation
 

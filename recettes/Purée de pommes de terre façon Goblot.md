@@ -3,6 +3,7 @@ date-added: 2024-02-22
 source: Alexis Goblot
 recipe-type: ingredient
 meal: lunch
+portions: 1
 ---
 
 # Purée de pommes de terre façon Goblot
@@ -15,11 +16,11 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Pommes de terre : 1kg
-- [ ] Crème fraîche : 20cl
-- [ ] Lait : 10cl
-- [ ] Oeuf : 1
-- [ ] Muscade
+- [ ] Pommes de terre : 100g
+- [ ] Crème fraîche : 2cl
+- [ ] Lait : 1cl
+- [ ] Oeuf (60g) : 6g
+- [ ] Muscade : 1g
 
 ## Préparation
 
