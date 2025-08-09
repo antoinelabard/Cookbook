@@ -215,6 +215,13 @@ class CookbookRepository:
 
     @staticmethod
     def _get_sections_from_recipe(lines: list[str]) -> Optional[tuple[list[int], list[int], list[int]]]:
+        """
+        Every recipe contains at least three sections: the metadata, the ingredients list and the instructions. We need
+        to distinguish them in order to properly read the relevant information inside.
+
+        :param lines: a list containing each line of a recipe Markdown file
+        :return: the indexes delimiting the different sections if the recipe is properly formatted, None otherwise
+        """
 
         metadata_delimiter: str = "---\n"
         ingredients_delimiter: str = "## Ingrédients"
