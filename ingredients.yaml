@@ -1,16 +1,16 @@
-Artichauts:
+Artichaut:
   energy: 45
   proteins: 3.2
   carbs: 4.9
   lipids: 0.2
   aisle: Conserves
-Asperges:
+Asperge:
   energy: 21
   proteins: 2.2
   carbs: 2.1
   lipids: 0.2
   aisle: Conserves
-Câpres:
+Câpre:
   energy: 26
   proteins: 2.4
   carbs: 1.7
@@ -28,7 +28,7 @@ Concentré de tomate:
   carbs: 17.1
   lipids: 0.3
   aisle: Conserves
-Cornichons:
+Cornichon:
   energy: 12
   proteins: 0.5
   carbs: 2.2
@@ -70,7 +70,7 @@ Maïs:
   carbs: 18.1
   lipids: 2.2
   aisle: Conserves
-Olives:
+Olive:
   energy: 136
   proteins: 1.1
   carbs: 3.0
@@ -82,7 +82,7 @@ Petits pois:
   carbs: 9.9
   lipids: 0.4
   aisle: Conserves
-Pois chiches:
+Pois chiche:
   energy: 133
   proteins: 7.9
   carbs: 17.6
@@ -211,7 +211,7 @@ Lasagnes:
   lipids: 4.6
   piece_to_g_ratio: 500
   aisle: Produits secs
-Lentilles:
+Lentille:
   energy: 116
   proteins: 9.0
   carbs: 18.0
@@ -631,7 +631,7 @@ Lard:
   lipids: 70.0
   piece_to_g_ratio: 15
   aisle: Produits frais
-Lardons:
+Lardon:
   energy: 270
   proteins: 16.6
   lipids: 22.1
@@ -841,7 +841,7 @@ Avocat:
   lipids: 15.0
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
-Bananes:
+Banane:
   energy: 89
   proteins: 1.1
   carbs: 20.0
@@ -918,14 +918,14 @@ Courgette:
   lipids: 0.1
   piece_to_g_ratio: 20
   aisle: Fruits et légumes
-Endives:
+Endive:
   energy: 17
   proteins: 1.1
   carbs: 2.5
   lipids: 0.2
   piece_to_g_ratio: 150
   aisle: Fruits et légumes
-Épinards:
+Épinard:
   energy: 27
   proteins: 2.9
   carbs: 1.8
@@ -959,7 +959,7 @@ Menthe:
   lipids: 0.7
   piece_to_g_ratio: 2
   aisle: Fruits et légumes
-Myrtilles:
+Myrtille:
   energy: 57
   proteins: 0.7
   carbs: 14.5
@@ -1089,7 +1089,7 @@ Cabillaud:
   lipids: 0.3
   piece_to_g_ratio: 180
   aisle: Viandes et poissons
-Chipolatas:
+Chipolata:
   energy: 308
   proteins: 15.0
   carbs: 1.2
@@ -1103,7 +1103,7 @@ Chorizo:
   lipids: 38.0
   piece_to_g_ratio: 130
   aisle: Viandes et poissons
-Crevettes:
+Crevette:
   energy: 90
   proteins: 19.5
   carbs: 0.7
@@ -1325,3 +1325,45 @@ Sucre vanillé:
   carbs: 99
   piece_to_g_ratio: 8
   aisle: Épicerie sucrée
+Huel Black Edition:
+  energy: 440
+  proteins: 44
+  lipids: 20
+  carbs: 17
+  piece_to_g_ratio: 90
+  aisle: Compléments alimentaires
+Protéines en poudre:
+  energy: 394
+  proteins: 78
+  lipids: 5
+  carbs: 6.6
+  piece_to_g_ratio: 30
+  aisle: Compléments alimentaires
+Créatine:
+  energy: 0
+  proteins: 0
+  lipids: 0
+  carbs: 0
+  piece_to_g_ratio: 3
+  aisle: Compléments alimentaires
+Collagène:
+  energy: 356
+  proteins: 82
+  lipids: 0
+  carbs: 5.8
+  piece_to_g_ratio: 15
+  aisle: Compléments alimentaires
+Mélange Huel Black Edition, Protéines en poudre, Créatine et Collagène:
+  energy: 572
+  proteins: 76
+  lipids: 20
+  carbs: 36
+  piece_to_g_ratio: 138
+  aisle: Compléments alimentaires
+Lait au chocolat:
+  energy: 191
+  proteins: 9
+  lipids: 4.3
+  carbs: 28.8
+  piece_to_g_ratio: 250
+  aisle: Compléments alimentaires
