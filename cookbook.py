@@ -65,7 +65,8 @@ if __name__ == "__main__":
 
         if arg == "macros":
             repository.write_recipes_macros()
-            logger.info("Updated the macros of all the recipes.")
+            repository.write_to_waistline_json()
+            logger.info("Updated and exported the macros of every recipe.")
 
         if arg in repository.get_profiles().keys():  # if arg is a profile name
             new_meal_plan = True

@@ -12,7 +12,7 @@ class Ingredient:
                  name: str,
                  quantity: float = 0,
                  quantity_unit: QuantityUnit = QuantityUnit.G,
-                 piece_to_g_ratio: float = -1,
+                 piece_to_g_ratio: float = QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
                  macros: Macros = Macros(1, 1, 1, 1),
                  ingredient_line: str = "",
                  aisle: str = Constants.UNCLASSIFIED_AISLE,
@@ -105,3 +105,36 @@ class Ingredient:
 
         return (f"{self._ingredient_line}<sup>{Constants.SOURCE_RECIPE_ARROW}"
                 f"[[{recipe_name}]]</sup>")
+
+    def to_dict(self) -> dict:
+        """
+        :returns: a dictionary export compatible with the Waistline application format. Every ingredient of ingredients.yaml is
+        categorised by its aisle in the application.
+        """
+
+        if self._piece_to_g_ratio == QuantityUnit.INVALID_PIECE_TO_G_RATIO.value:
+            energy = self._macros.get_energy() / Macros.REFERENCE_QUANTITY
+            proteins = self._macros.get_proteins() / Macros.REFERENCE_QUANTITY
+            lipids = self._macros.get_lipids() / Macros.REFERENCE_QUANTITY
+            carbs = self._macros.get_carbs() / Macros.REFERENCE_QUANTITY
+            unit = QuantityUnit.PIECE.value.PIECE.value
+        else:
+            energy = self._macros.get_energy() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
+            proteins = self._macros.get_proteins() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
+            lipids = self._macros.get_lipids() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
+            carbs = self._macros.get_carbs() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
+            unit = QuantityUnit.G.value
+
+        return {
+            "brand": self._aisle,
+            "name": self._name,
+            "nutrition": {
+                "calories": energy,
+                "carbohydrates": proteins,
+                "fat": lipids,
+                "proteins": carbs,
+            },
+            "portion": 1,  # macros are always for one piece, or for Macros.REFERENCE_QUANTITYg
+            "uniqueId": self._name,
+            "unit": unit
+        }

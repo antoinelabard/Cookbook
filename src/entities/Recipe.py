@@ -136,3 +136,23 @@ class Recipe:
         carbs = round(self._macros.get_carbs() / self._portions)
 
         return f"| [[{self._name}]] | {energy} | {proteins} | {lipids} | {carbs} |"
+
+    def to_dict(self) -> dict:
+        """
+        :returns: a dictionary export compatible with the Waistline application format. Every recipe is categorised by
+        its meal in the application.
+        """
+
+        return {
+            "brand": self._meal,
+            "name": self._name,
+            "nutrition": {
+                "calories": round(self._macros.get_energy() / self._portions),
+                "carbohydrates": round(self._macros.get_carbs() / self._portions),
+                "fat": round(self._macros.get_lipids() / self._portions),
+                "proteins": round(self._macros.get_proteins() / self._portions),
+            },
+            "portion": 1,  # macros are always for one portion of the recipe
+            "uniqueId": self._name,
+            "unit": "unit"
+        }

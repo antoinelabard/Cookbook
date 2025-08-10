@@ -18,7 +18,7 @@ portions: 1
 
 - [ ] [[Oeufs cuits]] mollets : 4
 - [ ] Tranches de pain de mie : 2
-- [ ] Avocat : 1
+- [ ] Avocat (1/2) : 100g
 - [ ] Ciboulette
 
 ## Préparation

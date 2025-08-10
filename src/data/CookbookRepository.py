@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 import logging
 from pathlib import Path
 from typing import Optional
@@ -112,6 +113,27 @@ class CookbookRepository:
 
         with open(self.MACROS_PATH, 'w') as f:
             f.write("\n".join(output))
+
+    def write_to_waistline_json(self):
+        """
+        Generate a JSON export compatible with the Waistline application for Android. For more information about the
+        structure of the JSON, please refer to this pull request on the GitHub page of the project :
+        https://github.com/davidhealey/waistline/pull/528
+        """
+
+        output = {
+            "version": 1,
+            "foodList": []
+        }
+
+        for recipe in self._recipes:
+            output["foodList"].append(recipe.to_dict())
+
+        for ingredient in self._base_ingredients:
+            output["foodList"].append(ingredient.to_dict())
+
+        with open("waistline_export.json", 'w') as f:
+            f.write(json.dumps(output, indent=4))
 
     def _read_base_ingredients(self) -> list[Ingredient]:
         """
