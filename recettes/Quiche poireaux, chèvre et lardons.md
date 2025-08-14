@@ -6,7 +6,7 @@ meal: lunch
 season: [spring, summer, autumn]
 ---
 
-# Quiche poireaux, chèvre lardons
+# Quiche poireaux, chèvre et lardons
 
 ![[Quiche poireaux, chèvre lardons.webp]]
 

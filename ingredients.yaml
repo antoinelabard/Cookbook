@@ -259,16 +259,16 @@ Pains à burger:
   piece_to_g_ratio: 80
   aisle: Produits secs
 Pâtes:
-  energy: 350
-  proteins: 12.0
-  carbs: 71.0
-  lipids: 2.0
+  energy: 151
+  proteins: 4.85
+  carbs: 29.7
+  lipids: .8
   aisle: Produits secs
 Riz:
-  energy: 359
-  proteins: 7.1
-  carbs: 79.0
-  lipids: 0.6
+  energy: 135
+  proteins: 2.5
+  carbs: 28.7
+  lipids: .9
   aisle: Produits secs
 Sauce tomate:
   energy: 33

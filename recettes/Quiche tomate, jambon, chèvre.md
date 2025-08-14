@@ -21,9 +21,9 @@ season: [summer]
 - [ ] Oeufs : 2
 - [ ] Persil
 - [ ] Gruyère râpé : 100g
-- [ ] Jambon : 100g
+- [ ] Jambon : 4 tranches
 - [ ] Fromage de chèvre : 1
-- [ ] Crème liquide : 50cl
+- [ ] Crème fraiche : 50cl
 
 ## Préparation
 
