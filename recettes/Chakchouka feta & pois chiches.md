@@ -21,6 +21,7 @@ season: [summer]
 - [ ] Sauce tomate : 600g
 - [ ] Feta : 160g
 - [ ] Oignon : 1
+- [ ] Pain : 4 tranches
 
 ## Préparation
 
