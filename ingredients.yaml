@@ -2,653 +2,653 @@ Artichaut:
   energy: 45
   proteins: 3.2
   carbs: 4.9
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Asperge:
   energy: 21
   proteins: 2.2
   carbs: 2.1
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Câpre:
   energy: 26
   proteins: 2.4
   carbs: 1.7
-  lipids: 0.7
+  fat: 0.7
   aisle: Conserves
 Chair de tomate:
   energy: 26
   proteins: 1.0
   carbs: 4.5
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Concentré de tomate:
   energy: 96
   proteins: 4.7
   carbs: 17.1
-  lipids: 0.3
+  fat: 0.3
   aisle: Conserves
 Cornichon:
   energy: 12
   proteins: 0.5
   carbs: 2.2
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Coulis de tomate:
   energy: 27
   proteins: 1.3
   carbs: 4.2
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Gazpacho:
   energy: 32
   proteins: 0.9
   carbs: 5.3
-  lipids: 1.2
+  fat: 1.2
   aisle: Conserves
 Germes de soja:
   energy: 48
   proteins: 4.2
   carbs: 4.1
-  lipids: 0.6
+  fat: 0.6
   aisle: Conserves
 Haricot:
   energy: 94
   proteins: 6.6
   carbs: 13.8
-  lipids: 0.5
+  fat: 0.5
   aisle: Conserves
 Légumes à couscous:
   energy: 24
   proteins: 1.1
   carbs: 3.8
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Maïs:
   energy: 107
   proteins: 2.9
   carbs: 18.1
-  lipids: 2.2
+  fat: 2.2
   aisle: Conserves
 Olive:
   energy: 136
   proteins: 1.1
   carbs: 3.0
-  lipids: 13.5
+  fat: 13.5
   aisle: Conserves
 Petits pois:
   energy: 69
   proteins: 5.6
   carbs: 9.9
-  lipids: 0.4
+  fat: 0.4
   aisle: Conserves
 Pois chiche:
   energy: 133
   proteins: 7.9
   carbs: 17.6
-  lipids: 2.8
+  fat: 2.8
   aisle: Conserves
 Pulpe de tomate:
   energy: 26
   proteins: 1.1
   carbs: 4.2
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Purée de tomate:
   energy: 32
   proteins: 1.6
   carbs: 4.5
-  lipids: 0.3
+  fat: 0.3
   aisle: Conserves
 Thon:
   energy: 115
   proteins: 25.5
   carbs: 0
-  lipids: 1.0
+  fat: 1.0
   aisle: Conserves
 Tomates pelées:
   energy: 28
   proteins: 1.2
   carbs: 5.2
-  lipids: 0.2
+  fat: 0.2
   aisle: Conserves
 Tomates séchées:
   energy: 213
   proteins: 14.1
   carbs: 27.2
-  lipids: 2.7
+  fat: 2.7
   aisle: Conserves
 Blé à cuire:
   energy: 342
   proteins: 13.0
   carbs: 68.0
-  lipids: 2.5
+  fat: 2.5
   aisle: Produits secs
 Bouillon de légumes:
   energy: 10
   proteins: 0.5
   carbs: 1.4
-  lipids: 0.4
+  fat: 0.4
   piece_to_g_ratio: 9
   aisle: Produits secs
 Bouillon de volaille:
   energy: 12
   proteins: 0.6
   carbs: 1.5
-  lipids: 0.5
+  fat: 0.5
   piece_to_g_ratio: 9
   aisle: Produits secs
 Cannelloni:
   energy: 355
   proteins: 12.0
   carbs: 72.0
-  lipids: 2.0
+  fat: 2.0
   piece_to_g_ratio: 250
   aisle: Produits secs
 Chapelure:
   energy: 374
   proteins: 13.0
   carbs: 71.0
-  lipids: 5.0
+  fat: 5.0
   aisle: Produits secs
 Chocolat:
   energy: 535
   proteins: 7.6
   carbs: 56.0
-  lipids: 32.0
+  fat: 32.0
   aisle: Produits secs
 Farine:
   energy: 349
   proteins: 10.0
   carbs: 72.0
-  lipids: 1.2
+  fat: 1.2
   aisle: Produits secs
 Flocons d'avoine:
   energy: 367
   proteins: 13.5
   carbs: 57.0
-  lipids: 7.2
+  fat: 7.2
   aisle: Produits secs
 Huile:
   energy: 900
   proteins: 0.0
   carbs: 0.0
-  lipids: 100.0
+  fat: 100.0
   piece_to_g_ratio: 1
   aisle: Produits secs
 Jus de citron:
   energy: 19
   proteins: 0.6
   carbs: 3.2
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 1
   aisle: Produits secs
 Ketchup:
   energy: 104
   proteins: 1.3
   carbs: 23.2
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 1
   aisle: Produits secs
 Kit burrito pour 4:
   energy: 200
   proteins: 4.5
   carbs: 34.0
-  lipids: 4.2
+  fat: 4.2
   piece_to_g_ratio: 500
   aisle: Produits secs
 Kit fajitas pour 4:
   energy: 210
   proteins: 5.0
   carbs: 33.0
-  lipids: 5.5
+  fat: 5.5
   piece_to_g_ratio: 500
   aisle: Produits secs
 Lasagnes:
   energy: 139
   proteins: 7.2
   carbs: 16.5
-  lipids: 4.6
+  fat: 4.6
   piece_to_g_ratio: 500
   aisle: Produits secs
 Lentille:
   energy: 116
   proteins: 9.0
   carbs: 18.0
-  lipids: 0.4
+  fat: 0.4
   aisle: Produits secs
 Mayonnaise:
   energy: 720
   proteins: 1.1
   carbs: 1.6
-  lipids: 78.0
+  fat: 78.0
   piece_to_g_ratio: 1
   aisle: Produits secs
 Mélange de céréales:
   energy: 350
   proteins: 9.0
   carbs: 69.0
-  lipids: 3.0
+  fat: 3.0
   aisle: Produits secs
 Moutarde:
   energy: 151
   proteins: 7.2
   carbs: 5.6
-  lipids: 9.5
+  fat: 9.5
   piece_to_g_ratio: 1
   aisle: Produits secs
 Oeuf:
   energy: 143
   proteins: 12.6
   carbs: 0.7
-  lipids: 9.9
+  fat: 9.9
   piece_to_g_ratio: 60
   aisle: Produits secs
 Pain de mie:
   energy: 265
   proteins: 8.4
   carbs: 48.3
-  lipids: 3.3
+  fat: 3.3
   piece_to_g_ratio: 40
   aisle: Produits secs
 Pains à burger:
   energy: 270
   proteins: 9.0
   carbs: 49.0
-  lipids: 4.0
+  fat: 4.0
   piece_to_g_ratio: 80
   aisle: Produits secs
 Pâtes:
   energy: 151
   proteins: 4.85
   carbs: 29.7
-  lipids: .8
+  fat: .8
   aisle: Produits secs
 Riz:
   energy: 135
   proteins: 2.5
   carbs: 28.7
-  lipids: .9
+  fat: .9
   aisle: Produits secs
 Sauce tomate:
   energy: 33
   proteins: 1.4
   carbs: 5.3
-  lipids: 0.4
+  fat: 0.4
   aisle: Produits secs
 Semoule:
   energy: 360
   proteins: 11.0
   carbs: 73.0
-  lipids: 1.3
+  fat: 1.3
   aisle: Produits secs
 Spaghetti:
   energy: 350
   proteins: 12.0
   carbs: 71.5
-  lipids: 1.5
+  fat: 1.5
   aisle: Produits secs
 Vinaigre:
   energy: 19
   proteins: 0.0
   carbs: 0.5
-  lipids: 0.0
+  fat: 0.0
   piece_to_g_ratio: 1
   aisle: Produits secs
 Ail en poudre:
   energy: 331
   proteins: 16.6
   carbs: 72.7
-  lipids: 0.7
+  fat: 0.7
   piece_to_g_ratio: 1
   aisle: Épices
 Aneth:
   energy: 43
   proteins: 3.5
   carbs: 7.0
-  lipids: 1.1
+  fat: 1.1
   piece_to_g_ratio: 1
   aisle: Épices
 Basilic:
   energy: 23
   proteins: 3.2
   carbs: 2.7
-  lipids: 0.6
+  fat: 0.6
   piece_to_g_ratio: 1
   aisle: Épices
 Cannelle en poudre:
   energy: 247
   proteins: 4.0
   carbs: 80.6
-  lipids: 1.2
+  fat: 1.2
   piece_to_g_ratio: 1
   aisle: Épices
 Coriandre:
   energy: 23
   proteins: 2.1
   carbs: 3.7
-  lipids: 0.5
+  fat: 0.5
   piece_to_g_ratio: 1
   aisle: Épices
 Cumin:
   energy: 375
   proteins: 17.8
   carbs: 44.2
-  lipids: 22.3
+  fat: 22.3
   piece_to_g_ratio: 1
   aisle: Épices
 Curcuma:
   energy: 312
   proteins: 9.7
   carbs: 67.1
-  lipids: 3.3
+  fat: 3.3
   piece_to_g_ratio: 1
   aisle: Épices
 Curry:
   energy: 325
   proteins: 14.3
   carbs: 58.2
-  lipids: 13.0
+  fat: 13.0
   piece_to_g_ratio: 1
   aisle: Épices
 Épices orientales:
   energy: 320
   proteins: 12.0
   carbs: 55.0
-  lipids: 10.0
+  fat: 10.0
   piece_to_g_ratio: 1
   aisle: Épices
 Gingembre:
   energy: 335
   proteins: 8.4
   carbs: 71.6
-  lipids: 4.2
+  fat: 4.2
   piece_to_g_ratio: 1
   aisle: Épices
 Graines de sésame:
   energy: 573
   proteins: 17.7
   carbs: 23.4
-  lipids: 49.7
+  fat: 49.7
   piece_to_g_ratio: 1
   aisle: Épices
 Herbes de Provence:
   energy: 261
   proteins: 9.5
   carbs: 49.1
-  lipids: 6.0
+  fat: 6.0
   piece_to_g_ratio: 1
   aisle: Épices
 Mélange d'épices mexicaines:
   energy: 325
   proteins: 10.0
   carbs: 60.0
-  lipids: 8.0
+  fat: 8.0
   piece_to_g_ratio: 1
   aisle: Épices
 Muscade:
   energy: 525
   proteins: 5.8
   carbs: 49.3
-  lipids: 36.3
+  fat: 36.3
   piece_to_g_ratio: 1
   aisle: Épices
 Origan:
   energy: 265
   proteins: 11.0
   carbs: 68.9
-  lipids: 4.3
+  fat: 4.3
   piece_to_g_ratio: 1
   aisle: Épices
 Paprika:
   energy: 282
   proteins: 14.1
   carbs: 54.7
-  lipids: 12.9
+  fat: 12.9
   piece_to_g_ratio: 1
   aisle: Épices
 Persil:
   energy: 36
   proteins: 3.0
   carbs: 6.3
-  lipids: 0.8
+  fat: 0.8
   piece_to_g_ratio: 1
   aisle: Épices
 Piment:
   energy: 350
   proteins: 12.0
   carbs: 55.0
-  lipids: 17.3
+  fat: 17.3
   piece_to_g_ratio: 1
   aisle: Épices
 Sel:
   energy: 1 # set by convention to suppress a warning
   proteins: 0.0
   carbs: 0.0
-  lipids: 0.0
+  fat: 0.0
   piece_to_g_ratio: 1
   aisle: Épices
 Thym:
   energy: 276
   proteins: 9.1
   carbs: 63.9
-  lipids: 7.4
+  fat: 7.4
   piece_to_g_ratio: 1
   aisle: Épices
 Amandes entières:
   energy: 627
   proteins: 21.2
   carbs: 6.1
-  lipids: 54.0
+  fat: 54.0
   aisle: Épicerie sucrée
 Amandes effilées:
   energy: 627
   proteins: 21.2
   carbs: 6.1
-  lipids: 54.0
+  fat: 54.0
   aisle: Épicerie sucrée
 Amandes en poudre:
   energy: 627
   proteins: 21.2
   carbs: 6.1
-  lipids: 54.0
+  fat: 54.0
   aisle: Épicerie sucrée
 Beurre de cacahuète:
   energy: 616
   proteins: 27.0
   carbs: 13.0
-  lipids: 49.0
+  fat: 49.0
   aisle: Épicerie sucrée
 Corn flakes:
   energy: 378
   proteins: 7.0
   carbs: 84.0
-  lipids: 1.0
+  fat: 1.0
   aisle: Épicerie sucrée
 Extrait d'amande amère:
   energy: 284
   proteins: 0.0
   carbs: 11.0
-  lipids: 0.0
+  fat: 0.0
   piece_to_g_ratio: 1
   aisle: Épicerie sucrée
 Galettes de riz:
   energy: 380
   proteins: 8.1
   carbs: 81.0
-  lipids: 2.7
+  fat: 2.7
   piece_to_g_ratio: 9
   aisle: Épicerie sucrée
 Levure chimique:
   energy: 80
   proteins: 0.0
   carbs: 34.0
-  lipids: 0.0
+  fat: 0.0
   piece_to_g_ratio: 8
   aisle: Épicerie sucrée
 Miel:
   energy: 320
   proteins: 0.4
   carbs: 79.0
-  lipids: 0.0
+  fat: 0.0
   aisle: Épicerie sucrée
 Noix:
   energy: 686
   proteins: 14.3
   carbs: 5.2
-  lipids: 64.0
+  fat: 64.0
   aisle: Épicerie sucrée
 Noix de coco râpée:
   energy: 660
   proteins: 6.2
   carbs: 6.4
-  lipids: 64.0
+  fat: 64.0
   aisle: Épicerie sucrée
 Pains pita ou tortillas:
   energy: 265
   proteins: 8.8
   carbs: 53.0
-  lipids: 1.2
+  fat: 1.2
   piece_to_g_ratio: 70
   aisle: Épicerie sucrée
 Pralin:
   energy: 509
   proteins: 9.3
   carbs: 51.0
-  lipids: 31.1
+  fat: 31.1
   piece_to_g_ratio: 1
   aisle: Épicerie sucrée
 Sirop d'érable:
   energy: 260
   proteins: 0.0
   carbs: 67.0
-  lipids: 0.0
+  fat: 0.0
   aisle: Épicerie sucrée
 Sucre:
   energy: 400
   proteins: 0.0
   carbs: 100.0
-  lipids: 0.0
+  fat: 0.0
   aisle: Épicerie sucrée
 Vanille:
   energy: 288
   proteins: 0.1
   carbs: 13.4
-  lipids: 0.1
+  fat: 0.1
   piece_to_g_ratio: 1
   aisle: Épicerie sucrée
 Lait de coco:
   energy: 188
   proteins: 2.0
   carbs: 2.6
-  lipids: 19.0
+  fat: 19.0
   aisle: Produits du monde
 Nouilles chinoises:
   energy: 351
   proteins: 10.4
   carbs: 74.4
-  lipids: 1.0
+  fat: 1.0
   aisle: Produits du monde
 Nuoc nam:
   energy: 52
   proteins: 6.0
   carbs: 4.5
-  lipids: 0.0
+  fat: 0.0
   piece_to_g_ratio: 1
   aisle: Produits du monde
 Pâte miso:
   energy: 201
   proteins: 12.0
   carbs: 26.0
-  lipids: 6.0
+  fat: 6.0
   aisle: Produits du monde
 Pita:
   energy: 275
   proteins: 9.1
   carbs: 54.0
-  lipids: 1.0
+  fat: 1.0
   piece_to_g_ratio: 70
   aisle: Produits du monde
 Ramen:
   energy: 440
   proteins: 9.0
   carbs: 62.0
-  lipids: 17.0
+  fat: 17.0
   piece_to_g_ratio: 100
   aisle: Produits du monde
 Saké:
   energy: 103
   proteins: 0.5
   carbs: 3.6
-  lipids: 0.0
+  fat: 0.0
   aisle: Produits du monde
 Sauce à l'huître:
   energy: 70
   proteins: 2.0
   carbs: 11.0
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 1
   aisle: Produits du monde
 Sauce soja:
   energy: 60
   proteins: 6.4
   carbs: 4.9
-  lipids: 0.0
+  fat: 0.0
   piece_to_g_ratio: 1
   aisle: Produits du monde
 Tortilla:
   energy: 304
   proteins: 7.6
   carbs: 53.0
-  lipids: 6.8
+  fat: 6.8
   piece_to_g_ratio: 70
   aisle: Produits du monde
 Bacon:
   energy: 307
   proteins: 25.0
   carbs: 1.4
-  lipids: 23.0
+  fat: 23.0
   piece_to_g_ratio: 20
   aisle: Produits frais
 Galettes bretonnes:
   energy: 477
   proteins: 6.4
   carbs: 61.7
-  lipids: 22.3
+  fat: 22.3
   piece_to_g_ratio: 15
   aisle: Produits frais
 Jambon:
   energy: 122
   proteins: 20.5
   carbs: 1.0
-  lipids: 4.0
+  fat: 4.0
   piece_to_g_ratio: 42.5
   aisle: Produits frais
 Lard:
   energy: 661
   proteins: 8.0
   carbs: 0.0
-  lipids: 70.0
+  fat: 70.0
   piece_to_g_ratio: 15
   aisle: Produits frais
 Lardon:
   energy: 270
   proteins: 16.6
-  lipids: 22.1
+  fat: 22.1
   carbs: 1
   aisle: Produits frais
 Pâte à pizza:
   energy: 259
   proteins: 7.0
   carbs: 50.0
-  lipids: 3.6
+  fat: 3.6
   piece_to_g_ratio: 230
   aisle: Produits frais
 Pâtes à pizza:
   energy: 259
   proteins: 7.0
   carbs: 50.0
-  lipids: 3.6
+  fat: 3.6
   piece_to_g_ratio: 230
   aisle: Produits frais
 
@@ -656,714 +656,714 @@ Pâte brisée:
   energy: 408
   proteins: 7.1
   carbs: 44.1
-  lipids: 22.5
+  fat: 22.5
   piece_to_g_ratio: 230
   aisle: Produits frais
 Pâte feuilletée:
   energy: 410
   proteins: 6.5
   carbs: 39.0
-  lipids: 26.0
+  fat: 26.0
   piece_to_g_ratio: 230
   aisle: Produits frais
 Pâtes feuilletées:
   energy: 410
   proteins: 6.5
   carbs: 39.0
-  lipids: 26.0
+  fat: 26.0
   piece_to_g_ratio: 230
   aisle: Produits frais
 Pâtes brisées:
   energy: 408
   proteins: 7.1
   carbs: 44.1
-  lipids: 22.5
+  fat: 22.5
   piece_to_g_ratio: 230
   aisle: Produits frais
 Ravioles:
   energy: 282
   proteins: 8.7
   carbs: 41.0
-  lipids: 8.2
+  fat: 8.2
   aisle: Produits frais
 Ravioli:
   energy: 181
   proteins: 5.6
   carbs: 28.1
-  lipids: 4.2
+  fat: 4.2
   aisle: Produits frais
 Saucisses fumées:
   energy: 315
   proteins: 13.5
   carbs: 1.5
-  lipids: 28.0
+  fat: 28.0
   piece_to_g_ratio: 90
   aisle: Produits frais
 Beurre:
   energy: 745
   proteins: 0.7
   carbs: 0.6
-  lipids: 82.0
+  fat: 82.0
   aisle: Produits laitiers
 Beurre demi-sel:
   energy: 742
   proteins: 0.7
   carbs: 0.7
-  lipids: 81.0
+  fat: 81.0
   aisle: Produits laitiers
 Brie:
   energy: 320
   proteins: 20.5
   carbs: 0.5
-  lipids: 27.0
+  fat: 27.0
   piece_to_g_ratio: 30
   aisle: Produits laitiers
 Camembert:
   energy: 299
   proteins: 19.0
   carbs: 0.5
-  lipids: 24.0
+  fat: 24.0
   piece_to_g_ratio: 250
   aisle: Produits laitiers
 Cheddar:
   energy: 402
   proteins: 25.0
   carbs: 1.3
-  lipids: 33.0
+  fat: 33.0
   piece_to_g_ratio: 20
   aisle: Produits laitiers
 Comté:
   energy: 399
   proteins: 27.0
   carbs: 0.7
-  lipids: 32.0
+  fat: 32.0
   aisle: Produits laitiers
 Crème:
   energy: 295
   proteins: 2.3
   carbs: 3.0
-  lipids: 30.0
+  fat: 30.0
   aisle: Produits laitiers
 Emmental:
   energy: 380
   proteins: 27.0
   carbs: 0.5
-  lipids: 29.0
+  fat: 29.0
   aisle: Produits laitiers
 Feta:
   energy: 264
   proteins: 14.2
   carbs: 0.9
-  lipids: 22.0
+  fat: 22.0
   aisle: Produits laitiers
 Fromage:
   energy: 340
   proteins: 22.0
   carbs: 1.5
-  lipids: 27.0
+  fat: 27.0
   piece_to_g_ratio: 20
   aisle: Produits laitiers
 Fromage blanc:
   energy: 79
   proteins: 7.6
   carbs: 4.7
-  lipids: 3.2
+  fat: 3.2
   aisle: Produits laitiers
 Gruyère:
   energy: 393
   proteins: 29.0
   carbs: 0.4
-  lipids: 30.0
+  fat: 30.0
   aisle: Produits laitiers
 Lait:
   energy: 47
   proteins: 3.2
   carbs: 4.8
-  lipids: 1.0
+  fat: 1.0
   aisle: Produits laitiers
 Mimolette:
   energy: 342
   proteins: 24.0
   carbs: 0.5
-  lipids: 26.0
+  fat: 26.0
   aisle: Produits laitiers
 Mozzarella:
   energy: 255
   proteins: 18.0
   carbs: 2.0
-  lipids: 19.0
+  fat: 19.0
   piece_to_g_ratio: 125
   aisle: Produits laitiers
 Munster:
   energy: 321
   proteins: 20.0
   carbs: 0.7
-  lipids: 27.0
+  fat: 27.0
   aisle: Produits laitiers
 Parmesan:
   energy: 391
   proteins: 36.0
   carbs: 0.5
-  lipids: 28.0
+  fat: 28.0
   aisle: Produits laitiers
 Reblochon:
   energy: 327
   proteins: 19.6
   carbs: 0.5
-  lipids: 27.0
+  fat: 27.0
   piece_to_g_ratio: 450
   aisle: Produits laitiers
 Yaourt:
   energy: 60
   proteins: 4.2
   carbs: 4.7
-  lipids: 2.0
+  fat: 2.0
   piece_to_g_ratio: 125
   aisle: Produits laitiers
 Ail:
   energy: 140
   proteins: 6.4
   carbs: 27.6
-  lipids: 0.5
+  fat: 0.5
   piece_to_g_ratio: 8
   aisle: Fruits et légumes
 Aubergine:
   energy: 25
   proteins: 1.0
   carbs: 4.0
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 300
   aisle: Fruits et légumes
 Avocat:
   energy: 160
   proteins: 1.9
   carbs: 8.5
-  lipids: 15.0
+  fat: 15.0
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
 Banane:
   energy: 89
   proteins: 1.1
   carbs: 20.0
-  lipids: 0.3
+  fat: 0.3
   piece_to_g_ratio: 120
   aisle: Fruits et légumes
 Brocoli:
   energy: 34
   proteins: 3.1
   carbs: 2.6
-  lipids: 0.4
+  fat: 0.4
   piece_to_g_ratio: 350
   aisle: Fruits et légumes
 Carotte:
   energy: 36
   proteins: 0.8
   carbs: 6.9
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 100
   aisle: Fruits et légumes
 Céleri:
   energy: 18
   proteins: 0.9
   carbs: 2.3
-  lipids: 0.1
+  fat: 0.1
   piece_to_g_ratio: 300
   aisle: Fruits et légumes
 Champignon:
   energy: 22
   proteins: 3.1
   carbs: 0.4
-  lipids: 0.3
+  fat: 0.3
   piece_to_g_ratio: 25
   aisle: Fruits et légumes
 Ciboulette:
   energy: 30
   proteins: 3.3
   carbs: 4.4
-  lipids: 0.7
+  fat: 0.7
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
 Citron:
   energy: 29
   proteins: 1.1
   carbs: 2.9
-  lipids: 0.3
+  fat: 0.3
   piece_to_g_ratio: 120
   aisle: Fruits et légumes
 Chou chinois:
   energy: 13
   proteins: 1.0
   carbs: 1.2
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 900
   aisle: Fruits et légumes
 Concombre:
   energy: 13
   proteins: 0.6
   carbs: 1.6
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 300
   aisle: Fruits et légumes
 Courgette:
   energy: 16
   proteins: 1.2
   carbs: 2.2
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
 Échalote:
   energy: 72
   proteins: 2.5
   carbs: 16.8
-  lipids: 0.1
+  fat: 0.1
   piece_to_g_ratio: 20
   aisle: Fruits et légumes
 Endive:
   energy: 17
   proteins: 1.1
   carbs: 2.5
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 150
   aisle: Fruits et légumes
 Épinard:
   energy: 27
   proteins: 2.9
   carbs: 1.8
-  lipids: 0.3
+  fat: 0.3
   aisle: Fruits et légumes
 Laitue:
   energy: 15
   proteins: 1.4
   carbs: 2.0
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 350
   aisle: Fruits et légumes
 Laurier:
   energy: 313
   proteins: 7.6
   carbs: 74.0
-  lipids: 8.4
+  fat: 8.4
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
 Melon:
   energy: 34
   proteins: 0.8
   carbs: 7.6
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 900
   aisle: Fruits et légumes
 Menthe:
   energy: 44
   proteins: 3.7
   carbs: 8.4
-  lipids: 0.7
+  fat: 0.7
   piece_to_g_ratio: 2
   aisle: Fruits et légumes
 Myrtille:
   energy: 57
   proteins: 0.7
   carbs: 14.5
-  lipids: 0.3
+  fat: 0.3
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
 Oignon:
   energy: 38
   proteins: 1.1
   carbs: 7.6
-  lipids: 0.1
+  fat: 0.1
   piece_to_g_ratio: 150
   aisle: Fruits et légumes
 Patates douces:
   energy: 86
   proteins: 1.6
   carbs: 20.1
-  lipids: 0.1
+  fat: 0.1
   piece_to_g_ratio: 250
   aisle: Fruits et légumes
 Poireaux:
   energy: 29
   proteins: 1.6
   carbs: 4.2
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
 Poivron:
   energy: 29
   proteins: 1.0
   carbs: 4.7
-  lipids: 0.3
+  fat: 0.3
   piece_to_g_ratio: 170
   aisle: Fruits et légumes
 Pommes de terre:
   energy: 77
   proteins: 1.8
   carbs: 17.0
-  lipids: 0.1
+  fat: 0.1
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
 Radis:
   energy: 16
   proteins: 0.7
   carbs: 2.5
-  lipids: 0.1
+  fat: 0.1
   piece_to_g_ratio: 15
   aisle: Fruits et légumes
 Romarin:
   energy: 331
   proteins: 4.9
   carbs: 64.1
-  lipids: 15.2
+  fat: 15.2
   piece_to_g_ratio: 2
   aisle: Fruits et légumes
 Salade:
   energy: 17
   proteins: 1.2
   carbs: 2.5
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 180
   aisle: Fruits et légumes
 Sésame:
   energy: 573
   proteins: 17.7
   carbs: 23.4
-  lipids: 49.7
+  fat: 49.7
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
 Tomate:
   energy: 18
   proteins: 0.9
   carbs: 2.6
-  lipids: 0.2
+  fat: 0.2
   piece_to_g_ratio: 120
   aisle: Fruits et légumes
 Baguette de pain:
   energy: 270
   proteins: 8.5
   carbs: 56.0
-  lipids: 1.0
+  fat: 1.0
   piece_to_g_ratio: 250
   aisle: Boulangerie
 Croissant:
   energy: 406
   proteins: 8.0
   carbs: 45.0
-  lipids: 21.0
+  fat: 21.0
   piece_to_g_ratio: 55
   aisle: Boulangerie
 Pain de campagne en tranche rassi:
   energy: 250
   proteins: 8.0
   carbs: 50.0
-  lipids: 1.2
+  fat: 1.2
   piece_to_g_ratio: 250
   aisle: Boulangerie
 Chips:
   energy: 540
   proteins: 6.0
   carbs: 49.0
-  lipids: 35.0
+  fat: 35.0
   aisle: Apéritifs et alcools
 Pistaches grillées:
   energy: 593
   proteins: 21.0
   carbs: 16.6
-  lipids: 46.0
+  fat: 46.0
   aisle: Apéritifs et alcools
 Vin:
   energy: 70
   proteins: 0.1
   carbs: 1.5
-  lipids: 0.0
+  fat: 0.0
   aisle: Apéritifs et alcools
 Bavette de boeuf:
   energy: 191
   proteins: 26.0
   carbs: 0.0
-  lipids: 10.0
+  fat: 10.0
   piece_to_g_ratio: 170
   aisle: Viandes et poissons
 Cabillaud:
   energy: 70
   proteins: 16.0
   carbs: 0.0
-  lipids: 0.3
+  fat: 0.3
   piece_to_g_ratio: 180
   aisle: Viandes et poissons
 Chipolata:
   energy: 308
   proteins: 15.0
   carbs: 1.2
-  lipids: 27.0
+  fat: 27.0
   piece_to_g_ratio: 60
   aisle: Viandes et poissons
 Chorizo:
   energy: 455
   proteins: 24.0
   carbs: 3.5
-  lipids: 38.0
+  fat: 38.0
   piece_to_g_ratio: 130
   aisle: Viandes et poissons
 Crevette:
   energy: 90
   proteins: 19.5
   carbs: 0.7
-  lipids: 1.0
+  fat: 1.0
   aisle: Viandes et poissons
 Dinde:
   energy: 137
   proteins: 29.0
   carbs: 0.0
-  lipids: 2.0
+  fat: 2.0
   aisle: Viandes et poissons
 Escalope:
   energy: 104
   proteins: 23.0
   carbs: 0.0
-  lipids: 1.0
+  fat: 1.0
   piece_to_g_ratio: 180
   aisle: Viandes et poissons
 Lieu noir:
   energy: 73
   proteins: 15.0
   carbs: 0.0
-  lipids: 0.5
+  fat: 0.5
   aisle: Viandes et poissons
 Porc:
   energy: 215
   proteins: 22.0
   carbs: 0.0
-  lipids: 14.0
+  fat: 14.0
   aisle: Viandes et poissons
 Poulet pané:
   energy: 225
   proteins: 13.0
   carbs: 16.0
-  lipids: 11.0
+  fat: 11.0
   piece_to_g_ratio: 110
   aisle: Viandes et poissons
 Filets de poulet:
   energy: 121
   proteins: 23.0
   carbs: 0.0
-  lipids: 2.0
+  fat: 2.0
   piece_to_g_ratio: 180
   aisle: Viandes et poissons
 Filet de poulet:
   energy: 121
   proteins: 23.0
   carbs: 0.0
-  lipids: 2.0
+  fat: 2.0
   piece_to_g_ratio: 180
   aisle: Viandes et poissons
 Blancs de poulet:
   energy: 121
   proteins: 23.0
   carbs: 0.0
-  lipids: 2.0
+  fat: 2.0
   piece_to_g_ratio: 180
   aisle: Viandes et poissons
 cuisses de poulet:
   energy: 190
   proteins: 19.0
   carbs: 0.0
-  lipids: 12.0
+  fat: 12.0
   piece_to_g_ratio: 250
 Saucisse:
   energy: 313
   proteins: 14.0
   carbs: 1.5
-  lipids: 28.0
+  fat: 28.0
   aisle: Viandes et poissons
 Saucisses de Strasbourg:
   energy: 313
   proteins: 14.0
   carbs: 1.5
-  lipids: 28.0
+  fat: 28.0
   piece_to_g_ratio: 70
   aisle: Viandes et poissons
 Saumon:
   energy: 208
   proteins: 20.0
   carbs: 0.0
-  lipids: 13.0
+  fat: 13.0
   piece_to_g_ratio: 40
   aisle: Viandes et poissons
 Steak:
   energy: 190
   proteins: 26.0
   carbs: 0.0
-  lipids: 10.0
+  fat: 10.0
   piece_to_g_ratio: 100
   aisle: Viandes et poissons
 Truite:
   energy: 141
   proteins: 20.0
   carbs: 0.0
-  lipids: 6.0
+  fat: 6.0
   piece_to_g_ratio: 40
   aisle: Viandes et poissons
 Viande:
   energy: 160
   proteins: 22.0
   carbs: 0.0
-  lipids: 8.0
+  fat: 8.0
   aisle: Viandes et poissons
 Potatoes:
   energy: 77
   carbs: 17
   proteins: 2.1
-  lipids: 0.09
+  fat: 0.09
   aisle: Surgelés
 Fève: # Not edible but putting it here suppress an unknown ingredient warning
   energy: 1
   carbs: 0
   proteins: 0
   piece_to_g_ratio: 1
-  lipids: 0
+  fat: 0
 Sauce blanche:
   energy: 250
   proteins: 3
-  lipids: 24
+  fat: 24
   carbs: 5
   aisle: Conserves
 Tofu:
   energy: 76
   proteins: 8
-  lipids: 4
+  fat: 4
   carbs: 1
   piece_to_g_ratio: 200
   aisle: Bio
 Levure de boulanger:
   energy: 105
   proteins: 8
-  lipids: 2
+  fat: 2
   carbs: 13
   piece_to_g_ratio: 8
   aisle: Épicerie sucrée
 Roquefort:
   energy: 370
   proteins: 21
-  lipids: 31
+  fat: 31
   carbs: 2
   piece_to_g_ratio: 200
   aisle: Produits laitiers
 Sauce barbecue:
   energy: 110
   proteins: 1
-  lipids: 0
+  fat: 0
   carbs: 26
   piece_to_g_ratio: 1
   aisle: Conserves
 Cacao:
   energy: 228
   proteins: 20
-  lipids: 14
+  fat: 14
   carbs: 11
   aisle: Épicerie sucrée
 Mascarpone:
   energy: 410
   proteins: 4
-  lipids: 42
+  fat: 42
   carbs: 2
   aisle: Produits laitiers
 Biscuits à la cuillère:
   energy: 380
   proteins: 7
-  lipids: 4
+  fat: 4
   carbs: 80
   aisle: Épicerie sucrée
 Sauce pesto:
   energy: 430
   proteins: 5
-  lipids: 43
+  fat: 43
   carbs: 7
   aisle: Conserves
 Nouilles:
   energy: 138
   proteins: 4
-  lipids: 1
+  fat: 1
   carbs: 28
   aisle: Produits du monde
 Poitrine fumée:
   energy: 303
   proteins: 15.6
-  lipids: 26.1
+  fat: 26.1
   carbs: 0.8
   piece_to_g_ratio: 15
   aisle: Produits frais
 Fromage de chèvre:
   energy: 165
   proteins: 10.6
-  lipids: 12.4
+  fat: 12.4
   carbs: 2.8
   piece_to_g_ratio: 100
   aisle: Produits laitiers
 Chèvre frai:
   energy: 153
   proteins: 8.7
-  lipids: 12
+  fat: 12
   carbs: 2.5
   piece_to_g_ratio: 120
   aisle: Produits laitiers
 Marshmallow à tartiner:
   energy: 333
   proteins: 0
-  lipids: 0
+  fat: 0
   carbs: 83.3
   aisle: Produits du monde
 Crottins de chèvre:
   energy: 320
   proteins: 22.4
-  lipids: 28
+  fat: 28
   carbs: 0
   piece_to_g_ratio: 60
   aisle: Produits laitiers
 Sucre vanillé:
   energy: 385
   proteins: 0
-  lipids: 0
+  fat: 0
   carbs: 99
   piece_to_g_ratio: 8
   aisle: Épicerie sucrée
 Huel Black Edition:
   energy: 440
   proteins: 44
-  lipids: 20
+  fat: 20
   carbs: 17
   piece_to_g_ratio: 90
   aisle: Compléments alimentaires
 Protéines en poudre:
   energy: 394
   proteins: 78
-  lipids: 5
+  fat: 5
   carbs: 6.6
   piece_to_g_ratio: 30
   aisle: Compléments alimentaires
 Créatine:
   energy: 0
   proteins: 0
-  lipids: 0
+  fat: 0
   carbs: 0
   piece_to_g_ratio: 3
   aisle: Compléments alimentaires
 Collagène:
   energy: 356
   proteins: 82
-  lipids: 0
+  fat: 0
   carbs: 5.8
   piece_to_g_ratio: 15
   aisle: Compléments alimentaires
 Mélange Huel Black Edition, Protéines en poudre, Créatine et Collagène:
   energy: 572
   proteins: 76
-  lipids: 20
+  fat: 20
   carbs: 36
   piece_to_g_ratio: 138
   aisle: Compléments alimentaires
 Lait au chocolat:
   energy: 191
   proteins: 9
-  lipids: 4.3
+  fat: 4.3
   carbs: 28.8
   piece_to_g_ratio: 250
   aisle: Compléments alimentaires

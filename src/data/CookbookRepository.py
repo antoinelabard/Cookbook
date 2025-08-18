@@ -147,7 +147,7 @@ class CookbookRepository:
             macros = Macros(
                 energy=attributes[Macros.ENERGY],
                 proteins=attributes[Macros.PROTEINS],
-                lipids=attributes[Macros.LIPIDS],
+                fat=attributes[Macros.FAT],
                 carbs=attributes[Macros.CARBS],
             )
             ingredients.append(Ingredient(

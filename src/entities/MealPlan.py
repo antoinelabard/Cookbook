@@ -47,7 +47,7 @@ class MealPlan:
         return Macros(
             sum([recipe.get_macros().get_energy() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
             sum([recipe.get_macros().get_proteins() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
-            sum([recipe.get_macros().get_lipids() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_fat() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
             sum([recipe.get_macros().get_carbs() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
         )
 

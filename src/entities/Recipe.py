@@ -147,14 +147,14 @@ class Recipe:
         Return a Markdown table line containing the total macros of the recipe per portion
         | Recette | Énergie | Protéines | Lipides | Glucides |
         |:--------|:-------:|:---------:|:-------:|:--------:|
-        | recipes | energy  | proteins  | lipids  |  carbs   | <--- returns this
+        | recipes | energy  | proteins  | fat  |  carbs   | <--- returns this
         """
         energy = round(self._macros.get_energy() / self._portions)
         proteins = round(self._macros.get_proteins() / self._portions)
-        lipids = round(self._macros.get_lipids() / self._portions)
+        fat = round(self._macros.get_fat() / self._portions)
         carbs = round(self._macros.get_carbs() / self._portions)
 
-        return f"| [[{self._name}]] | {energy} | {proteins} | {lipids} | {carbs} |"
+        return f"| [[{self._name}]] | {energy} | {proteins} | {fat} | {carbs} |"
 
     def to_dict(self) -> dict:
         """
@@ -168,7 +168,7 @@ class Recipe:
             "nutrition": {
                 "calories": round(self._macros.get_energy() / self._portions),
                 "carbohydrates": round(self._macros.get_carbs() / self._portions),
-                "fat": round(self._macros.get_lipids() / self._portions),
+                "fat": round(self._macros.get_fat() / self._portions),
                 "proteins": round(self._macros.get_proteins() / self._portions),
             },
             "portion": 1,  # macros are always for one portion of the recipe

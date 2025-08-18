@@ -118,13 +118,13 @@ class Ingredient:
         if self._piece_to_g_ratio == QuantityUnit.INVALID_PIECE_TO_G_RATIO.value:
             energy = self._macros.get_energy() / Macros.REFERENCE_QUANTITY
             proteins = self._macros.get_proteins() / Macros.REFERENCE_QUANTITY
-            lipids = self._macros.get_lipids() / Macros.REFERENCE_QUANTITY
+            fat = self._macros.get_fat() / Macros.REFERENCE_QUANTITY
             carbs = self._macros.get_carbs() / Macros.REFERENCE_QUANTITY
             unit = QuantityUnit.PIECE.value.PIECE.value
         else:
             energy = self._macros.get_energy() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
             proteins = self._macros.get_proteins() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
-            lipids = self._macros.get_lipids() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
+            fat = self._macros.get_fat() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
             carbs = self._macros.get_carbs() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
             unit = QuantityUnit.G.value
 
@@ -134,7 +134,7 @@ class Ingredient:
             "nutrition": {
                 "calories": energy,
                 "carbohydrates": proteins,
-                "fat": lipids,
+                "fat": fat,
                 "proteins": carbs,
             },
             "portion": 1,  # macros are always for one piece, or for Macros.REFERENCE_QUANTITYg
