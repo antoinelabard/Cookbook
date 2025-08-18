@@ -13,7 +13,6 @@ from src.entities import MealPlan
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
 from src.entities.Recipe import Recipe
-from src.utils.Constants import Constants
 from src.utils.QuantityUnit import QuantityUnit
 from src.utils.Utils import Utils
 
@@ -146,19 +145,19 @@ class CookbookRepository:
         ingredients: list[Ingredient] = []
         for ingredient_str, attributes in yaml.safe_load("".join(lines)).items():
             macros = Macros(
-                energy=attributes[Constants.Macros.ENERGY],
-                proteins=attributes[Constants.Macros.PROTEINS],
-                lipids=attributes[Constants.Macros.LIPIDS],
-                carbs=attributes[Constants.Macros.CARBS],
+                energy=attributes[Macros.ENERGY],
+                proteins=attributes[Macros.PROTEINS],
+                lipids=attributes[Macros.LIPIDS],
+                carbs=attributes[Macros.CARBS],
             )
             ingredients.append(Ingredient(
                 ingredient_str,
                 macros=macros,
                 piece_to_g_ratio=attributes[
-                    Constants.Macros.PIECE_TO_G_RATIO]
-                if Constants.Macros.PIECE_TO_G_RATIO in attributes.keys()
+                    Macros.PIECE_TO_G_RATIO]
+                if Macros.PIECE_TO_G_RATIO in attributes.keys()
                 else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
-                aisle=attributes[Constants.AISLE] if Constants.AISLE in attributes else None
+                aisle=attributes[Ingredient.AISLE] if Ingredient.AISLE in attributes else None
             ))
 
         return ingredients
@@ -296,16 +295,16 @@ class CookbookRepository:
 
         recipe = Recipe(
             name=path.name.replace(".md", ""),
-            recipe_type=metadata[Constants.RECIPE_TYPE],
+            recipe_type=metadata[Recipe.RECIPE_TYPE],
             ingredients=ingredients,
             instructions=instructions,
-            date_added=metadata[Constants.DATE_ADDED] if Constants.DATE_ADDED in metadata.keys() else None,
-            source=metadata[Constants.SOURCE] if Constants.SOURCE in metadata.keys() else None,
-            meal=metadata[Constants.Meal.MEAL] if Constants.Meal.MEAL in metadata.keys() else None,
-            seasons=metadata[Constants.Season.SEASON] if Constants.Season.SEASON in metadata.keys() else None,
-            tags=metadata[Constants.TAGS] if Constants.TAGS in metadata.keys() else None,
+            date_added=metadata[Recipe.DATE_ADDED] if Recipe.DATE_ADDED in metadata.keys() else None,
+            source=metadata[Recipe.SOURCE] if Recipe.SOURCE in metadata.keys() else None,
+            meal=metadata[Recipe.Meal.MEAL] if Recipe.Meal.MEAL in metadata.keys() else None,
+            seasons=metadata[Recipe.Season.SEASON] if Recipe.Season.SEASON in metadata.keys() else None,
+            tags=metadata[Recipe.TAGS] if Recipe.TAGS in metadata.keys() else None,
             portions=metadata[
-                Constants.Macros.PORTIONS] if Constants.Macros.PORTIONS in metadata.keys() else QuantityUnit.DEFAULT_NB_PORTIONS.value
+                Macros.PORTIONS] if Macros.PORTIONS in metadata.keys() else QuantityUnit.DEFAULT_NB_PORTIONS.value
         )
         recipe.compute_macros()
 
@@ -332,16 +331,16 @@ class CookbookRepository:
         meal = None
         is_in_season = False
         tags = None
-        if Constants.Meal.MEAL in profile_filter.keys():
-            meal = profile_filter[Constants.Meal.MEAL]
-        if Constants.Season.IS_IN_SEASON in profile_filter.keys():
-            is_in_season = profile_filter[Constants.Season.IS_IN_SEASON]
-        if Constants.TAGS in profile_filter.keys():
-            tags = profile_filter[Constants.TAGS]
+        if Recipe.Meal.MEAL in profile_filter.keys():
+            meal = profile_filter[Recipe.Meal.MEAL]
+        if Recipe.Season.IS_IN_SEASON in profile_filter.keys():
+            is_in_season = profile_filter[Recipe.Season.IS_IN_SEASON]
+        if Recipe.TAGS in profile_filter.keys():
+            tags = profile_filter[Recipe.TAGS]
             if type(tags) is str: tags = [tags]
         return MealPlanFilter(
-            profile_filter[Constants.QUANTITY],
-            profile_filter[Constants.RECIPE_TYPE],
+            profile_filter[Ingredient.QUANTITY],
+            profile_filter[Recipe.RECIPE_TYPE],
             meal,
             is_in_season,
             tags,
@@ -374,17 +373,17 @@ class CookbookRepository:
 
         meal_plan_builder = MealPlanBuilder(self._recipes)
 
-        current_meal_selector = Constants.Meal.LUNCH
+        current_meal_selector = Recipe.Meal.LUNCH
 
         for line in lines:
-            if f"# {Constants.Meal.BREAKFAST}" in line:
-                current_meal_selector = Constants.Meal.BREAKFAST
+            if f"# {Recipe.Meal.BREAKFAST}" in line:
+                current_meal_selector = Recipe.Meal.BREAKFAST
                 continue
-            elif f"# {Constants.Meal.LUNCH}" in line:
-                current_meal_selector = Constants.Meal.LUNCH
+            elif f"# {Recipe.Meal.LUNCH}" in line:
+                current_meal_selector = Recipe.Meal.LUNCH
                 continue
-            elif f"# {Constants.Meal.SNACK}" in line:
-                current_meal_selector = Constants.Meal.SNACK
+            elif f"# {Recipe.Meal.SNACK}" in line:
+                current_meal_selector = Recipe.Meal.SNACK
                 continue
 
             recipe_candidate = (line

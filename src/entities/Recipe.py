@@ -3,7 +3,6 @@ from typing import Self
 
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
-from src.utils.Constants import Constants
 from src.utils.QuantityUnit import QuantityUnit
 from src.utils.Utils import Utils
 
@@ -12,6 +11,26 @@ class Recipe:
     """
     Recipe represents a cookbook recipe. It is a convenient way to access the metadata of a given recipe.
     """
+
+    RECIPE_TYPE = "recipe-type"
+    TAGS = "tags"
+    SOURCE = "source"
+    DATE_ADDED = "date-added"
+
+    class Meal:
+        MEAL = "meal"
+        BREAKFAST = "breakfast"
+        LUNCH = "lunch"
+        SNACK = "snack"
+        MISC = "misc"
+
+    class Season:
+        SEASON = "season"
+        IS_IN_SEASON = "is_in_season"
+        SPRING = "spring"
+        SUMMER = "summer"
+        AUTUMN = "autumn"
+        WINTER = "winter"
 
     def __init__(self,
                  name: str,
@@ -104,7 +123,7 @@ class Recipe:
                 recipe_list = ingredient.get_ingredients_list_by_aisle()
                 for key in recipe_list.keys():
                     recipe_list[key] = [
-                        f"{sub_ingredient}<sup>{Constants.SOURCE_RECIPE_ARROW}==[[{self._name}]]==</sup>"
+                        f"{sub_ingredient}<sup>{Ingredient.SOURCE_RECIPE_ARROW}==[[{self._name}]]==</sup>"
                         for sub_ingredient in recipe_list[key]]
                 ingredients_by_aisle = Utils.merge_dicts(ingredients_by_aisle, recipe_list)
                 continue

@@ -1,9 +1,7 @@
 import datetime
 from typing import Optional
 
-from src.entities import Recipe
-from src.utils.Constants import Constants
-
+from src.entities.Recipe import Recipe
 
 class MealPlanFilter:
     """
@@ -40,12 +38,12 @@ class MealPlanFilter:
         winter_beginning = datetime.date(date.year, 12, 21)
 
         if spring_beginning <= date < summer_beginning:
-            return Constants.Season.SPRING
+            return Recipe.Season.SPRING
         if summer_beginning <= date < autumn_beginning:
-            return Constants.Season.SUMMER
+            return Recipe.Season.SUMMER
         if autumn_beginning <= date < winter_beginning:
-            return Constants.Season.AUTUMN
-        return Constants.Season.WINTER
+            return Recipe.Season.AUTUMN
+        return Recipe.Season.WINTER
 
     def matches_filters(self, recipe: Recipe) -> bool:
         # recipe type

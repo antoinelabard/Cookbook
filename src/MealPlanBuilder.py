@@ -3,7 +3,6 @@ import random
 from src.MealPlanFilter import MealPlanFilter
 from src.entities.MealPlan import MealPlan
 from src.entities.Recipe import Recipe
-from src.utils.Constants import Constants
 from src.utils.Utils import Utils
 
 
@@ -48,31 +47,31 @@ class MealPlanBuilder:
             if not filtered_recipes_copy:
                 filtered_recipes_copy = filtered_recipes.copy()
 
-        if meal_plan_filter.get_meal() == Constants.Meal.LUNCH:
+        if meal_plan_filter.get_meal() == Recipe.Meal.LUNCH:
             self._meal_plan.get_lunch().extend(picked_recipes)
-        elif meal_plan_filter.get_meal() == Constants.Meal.BREAKFAST:
+        elif meal_plan_filter.get_meal() == Recipe.Meal.BREAKFAST:
             self._meal_plan.get_breakfast().extend(picked_recipes)
-        elif meal_plan_filter.get_meal() == Constants.Meal.SNACK:
+        elif meal_plan_filter.get_meal() == Recipe.Meal.SNACK:
             self._meal_plan.get_snack().extend(picked_recipes)
         else:
             self._meal_plan.get_misc().extend(picked_recipes)
 
     def add_recipe(self, meal: str, recipe: Recipe):
         match meal:
-            case Constants.Meal.BREAKFAST:
+            case Recipe.Meal.BREAKFAST:
                 self._meal_plan.get_breakfast().append(recipe)
-            case Constants.Meal.LUNCH:
+            case Recipe.Meal.LUNCH:
                 self._meal_plan.get_lunch().append(recipe)
-            case Constants.Meal.SNACK:
+            case Recipe.Meal.SNACK:
                 self._meal_plan.get_snack().append(recipe)
 
     def add_recipes(self, meal: str, recipes: list[Recipe]):
         match meal:
-            case Constants.Meal.BREAKFAST:
+            case Recipe.Meal.BREAKFAST:
                 self._meal_plan.get_breakfast().extend(recipes)
-            case Constants.Meal.LUNCH:
+            case Recipe.Meal.LUNCH:
                 self._meal_plan.get_lunch().extend(recipes)
-            case Constants.Meal.SNACK:
+            case Recipe.Meal.SNACK:
                 self._meal_plan.get_snack().extend(recipes)
 
     def build(self):

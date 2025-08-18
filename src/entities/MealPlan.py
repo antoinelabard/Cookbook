@@ -1,8 +1,7 @@
 from typing import Optional
 
-from src.entities import Recipe
+from src.entities.Recipe import Recipe
 from src.entities.Macros import Macros
-from src.utils.Constants import Constants
 from src.utils.Utils import Utils
 
 
@@ -43,21 +42,13 @@ class MealPlan:
 
     @staticmethod
     def _compute_avg_macros_per_meal_aux(recipes: list[Recipe]) -> Macros:
-        total_nb_portions = sum(map(lambda recipe: recipe.get_portions(), recipes))
+        total_nb_portions = sum([recipe.get_portions() for recipe in recipes])
 
         return Macros(
-            sum(map(lambda recipe:
-                recipe.get_macros().get_energy() * recipe.get_portions(),
-                recipes)) / total_nb_portions,
-            sum(map(lambda recipe:
-                recipe.get_macros().get_proteins() * recipe.get_portions(),
-                recipes)) / total_nb_portions,
-            sum(map(lambda recipe:
-                recipe.get_macros().get_lipids() * recipe.get_portions(),
-                recipes)) / total_nb_portions,
-            sum(map(lambda recipe:
-                recipe.get_macros().get_carbs() * recipe.get_portions(),
-                recipes)) / total_nb_portions,
+            sum([recipe.get_macros().get_energy() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_proteins() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_lipids() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_carbs() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
         )
 
     def compute_avg_macros_per_meal(self, meal) -> Macros:
@@ -65,11 +56,11 @@ class MealPlan:
         :return: the weighted average macros per portion, grouped by meal (breakfast, lunch, snack)
         """
 
-        if meal == Constants.Meal.BREAKFAST and self._breakfast:
+        if meal == Recipe.Meal.BREAKFAST and self._breakfast:
             return self._compute_avg_macros_per_meal_aux(self._breakfast)
-        if meal == Constants.Meal.LUNCH and self._lunch:
+        if meal == Recipe.Meal.LUNCH and self._lunch:
             return self._compute_avg_macros_per_meal_aux(self._lunch)
-        if meal == Constants.Meal.SNACK and self._snack:
+        if meal == Recipe.Meal.SNACK and self._snack:
             return self._compute_avg_macros_per_meal_aux(self._snack)
         return Macros(0, 0, 0, 0)
 
@@ -77,7 +68,7 @@ class MealPlan:
         """
         :return: a convenient Markdown list to go to the groceries
         """
-        ingredients_list: dict[str: str] = {}
+        ingredients_list: dict[str, list[str]] = {}
 
         for recipe in self._breakfast + self._lunch + self._snack:
             ingredients_list = Utils.merge_dicts(ingredients_list, recipe.get_ingredients_list_by_aisle())
@@ -86,9 +77,9 @@ class MealPlan:
 
     def to_str(self) -> str:
         output: list[str] = []
-        output.extend(self._to_str_aux(Constants.Meal.LUNCH, self._lunch))
-        output.extend(self._to_str_aux(Constants.Meal.BREAKFAST, self._breakfast))
-        output.extend(self._to_str_aux(Constants.Meal.SNACK, self._snack))
+        output.extend(self._to_str_aux(Recipe.Meal.LUNCH, self._lunch))
+        output.extend(self._to_str_aux(Recipe.Meal.BREAKFAST, self._breakfast))
+        output.extend(self._to_str_aux(Recipe.Meal.SNACK, self._snack))
 
         return "\n\n".join(output)
 

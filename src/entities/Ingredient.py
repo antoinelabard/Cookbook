@@ -2,11 +2,14 @@ import copy
 import logging
 
 from src.entities.Macros import Macros
-from src.utils.Constants import Constants
 from src.utils.QuantityUnit import QuantityUnit
 
 
 class Ingredient:
+    AISLE = "aisle"
+    QUANTITY = "quantity"
+    UNCLASSIFIED_AISLE = "Non classé"
+    SOURCE_RECIPE_ARROW = " ---> "
 
     def __init__(self,
                  name: str,
@@ -15,7 +18,7 @@ class Ingredient:
                  piece_to_g_ratio: float = QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
                  macros: Macros = Macros(1, 1, 1, 1),
                  ingredient_line: str = "",
-                 aisle: str = Constants.UNCLASSIFIED_AISLE,
+                 aisle: str = UNCLASSIFIED_AISLE,
                  ):
         self._logger = logging.getLogger(__name__)
         self._name: str = name

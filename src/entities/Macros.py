@@ -2,6 +2,13 @@ from typing import Self
 
 
 class Macros:
+    MACROS = "macros"
+    ENERGY = "energy"
+    PROTEINS = "proteins"
+    LIPIDS = "lipids"
+    CARBS = "carbs"
+    PORTIONS = "portions"
+    PIECE_TO_G_RATIO = "piece_to_g_ratio"
     REFERENCE_QUANTITY = 100  # in g, a macros indicates the nutrients for 100g
 
     def __init__(self,
