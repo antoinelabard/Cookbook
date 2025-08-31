@@ -106,7 +106,7 @@ class Ingredient:
         :return: an ingredient line in the format 'ingredient ---> [[recipe_name]]
         """
 
-        return (f"{self._ingredient_line}<sup>{Constants.SOURCE_RECIPE_ARROW}"
+        return (f"{self._ingredient_line}<sup>{Ingredient.SOURCE_RECIPE_ARROW}"
                 f"[[{recipe_name}]]</sup>")
 
     def to_dict(self) -> dict:
@@ -141,3 +141,19 @@ class Ingredient:
             "uniqueId": self._name,
             "unit": unit
         }
+    
+    def get_macros_as_markdown_table_line(self, portions: int) -> str:
+        """
+        Returns a Markdown table line containing the total macros of the recipe per portion
+        
+        | Ingrédient | Énergie | Protéines | Lipides | Glucides |
+        |:-----------|:-------:|:---------:|:-------:|:--------:|
+        |    name    | energy  | proteins  |   fat   |  carbs   | <--- returns this
+        """
+
+        energy = round(self._macros.get_energy() / portions)
+        proteins = round(self._macros.get_proteins() / portions)
+        fat = round(self._macros.get_fat() / portions)
+        carbs = round(self._macros.get_carbs() / portions)
+    
+        return f"| {self._name} | {energy} | {proteins} | {fat} | {carbs} |"

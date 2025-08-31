@@ -65,6 +65,7 @@ if __name__ == "__main__":
 
         if arg == "macros":
             repository.write_recipes_macros()
+            repository.write_detailed_recipes_macros()
             repository.write_to_waistline_json()
             logger.info("Updated and exported the macros of every recipe.")
 

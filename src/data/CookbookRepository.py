@@ -44,6 +44,7 @@ class CookbookRepository:
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
     BASE_INGREDIENTS_PATH = ROOT_DIR / "ingredients.yaml"
     MACROS_PATH = ROOT_DIR / "macros.md"
+    DETAILED_MACROS_PATH = ROOT_DIR / "detailed-macros.md"
 
     def __init__(self):
         self._logger = Utils.get_logger()
@@ -51,7 +52,7 @@ class CookbookRepository:
         self._base_ingredients = self._read_base_ingredients()
         self._recipes_paths: list[Path] = [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
         self._recipes: list[Recipe] = self._read_recipes()
-        self._recipes_names: list[str] = list(map(lambda recipe: recipe.get_name(), self._recipes))
+        self._recipes_names: list[str] = [recipe.get_name() for recipe in self._recipes]
         self._profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()
 
     def get_recipes(self) -> list[Recipe]:
@@ -100,7 +101,7 @@ class CookbookRepository:
 
     def write_recipes_macros(self):
         """
-        Write in the file macros.yaml the macros of all the recipes, as a Markdown table
+        Write in the file macros.md the macros of all the recipes, as a Markdown table
         """
 
         output = [
@@ -111,6 +112,20 @@ class CookbookRepository:
             output.append(recipe.get_macros_as_markdown_table_line())
 
         with open(self.MACROS_PATH, 'w') as f:
+            f.write("\n".join(output))
+
+    def write_detailed_recipes_macros(self):
+        """
+        Write in the file detailed-macros.md the macros of all the recipes, as a Markdown table, with the details of all
+        the ingredients macros.
+        """
+
+        output = []
+
+        for recipe in sorted(self._recipes, key=lambda rcp: rcp.get_name()):
+            output.append(recipe.get_detailed_macros_as_markdown_table())
+
+        with open(self.DETAILED_MACROS_PATH, 'w') as f:
             f.write("\n".join(output))
 
     def write_to_waistline_json(self):

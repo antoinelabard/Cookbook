@@ -147,14 +147,48 @@ class Recipe:
         Return a Markdown table line containing the total macros of the recipe per portion
         | Recette | Énergie | Protéines | Lipides | Glucides |
         |:--------|:-------:|:---------:|:-------:|:--------:|
-        | recipes | energy  | proteins  | fat  |  carbs   | <--- returns this
+        |  name   | energy  | proteins  |   fat   |  carbs   | <--- returns this
         """
+
         energy = round(self._macros.get_energy() / self._portions)
         proteins = round(self._macros.get_proteins() / self._portions)
         fat = round(self._macros.get_fat() / self._portions)
         carbs = round(self._macros.get_carbs() / self._portions)
 
         return f"| [[{self._name}]] | {energy} | {proteins} | {fat} | {carbs} |"
+
+    def get_detailed_macros_as_markdown_table(self) -> str:
+        """
+        Returns a Markdown table containing the detailed macros per ingredient of the recipe per portion.
+
+        Recette :
+
+        | Ingrédient | Énergie | Protéines | Lipides | Glucides |
+        |:-----------|:-------:|:---------:|:-------:|:--------:|
+        |    name    | energy  | proteins  |   fat   |  carbs   | <--- returns this
+        """
+
+        output = [
+            f"{self._name} :",
+            "",
+            "| Ingrédient | Énergie | Protéines | Lipides | Glucides |",
+            "|:-----------|:-------:|:---------:|:-------:|:--------:|"]
+
+        for ingredient in sorted(self._ingredients, key=lambda igr: igr.get_name()):
+            if isinstance(ingredient, Recipe):
+                output.append(ingredient.get_macros_as_markdown_table_line())
+                continue
+            output.append(ingredient.get_macros_as_markdown_table_line(self._portions))
+
+        output.append(
+            "| **Total (par portion)** | "
+            f"**{round(self._macros.get_energy() / self._portions)}** | "
+            f"**{round(self._macros.get_proteins() / self._portions)}** | "
+            f"**{round(self._macros.get_fat() / self._portions)}** | "
+            f"**{round(self._macros.get_carbs() / self._portions)}** |"
+        )
+
+        return "\n".join(output)
 
     def to_dict(self) -> dict:
         """
