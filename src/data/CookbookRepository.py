@@ -132,7 +132,7 @@ class CookbookRepository:
             output["foodList"].append(ingredient.to_dict())
 
         with open("waistline_export.json", 'w') as f:
-            f.write(json.dumps(output, indent=4))
+            f.write(json.dumps(output))
 
     def _read_base_ingredients(self) -> list[Ingredient]:
         """
