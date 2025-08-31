@@ -262,13 +262,13 @@ Pâtes:
   energy: 350
   proteins: 12.0
   carbs: 71.0
-  lipids: 2.0
+  fat: 2.0
   aisle: Produits secs
 Riz:
   energy: 359
   proteins: 7.1
   carbs: 79.0
-  lipids: 0.6
+  fat: 0.6
   aisle: Produits secs
 Sauce tomate:
   energy: 33

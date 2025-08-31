@@ -4,6 +4,7 @@ source: https://www.marmiton.org/recettes/recette_frites-maison-croustillantes-a
 recipe-type: ingredient
 meal: lunch
 tags: [cheat-meal]
+portions: 1
 ---
 
 # Frites
