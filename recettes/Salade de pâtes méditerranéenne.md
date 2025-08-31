@@ -29,8 +29,8 @@ meal: lunch
 1. Faites cuire les pâtes al dente.
 2. Pendant ce temps, lavez les tomates, coupez-les en quartiers, enlevez les pépins puis découpez-les en petits morceaux.
 3. Coupez l'avocat en lamelles.
-4. Égouttez la mozzarella et les anchois.
-5. Dans un saladier, déposez la garniture (tomates, anchois, avocat, mozzarella, avocat).
+4. Égouttez la mozzarella et coupez-la en morceaux.
+5. Dans un saladier, déposez la garniture (tomates, avocat, mozzarella).
 6. Égouttez les pâtes et passez-les rapidement sous l'eau froide pour stopper la cuisson.
 7. Laissez-les bien refroidir puis joutez-les dans le saladier.
 8. Assaisonnez d'une cuillère à soupe de vinaigre balsamique, de deux cuillères d'huile de noix et sel et poivre.
