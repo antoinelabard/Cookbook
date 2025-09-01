@@ -161,7 +161,7 @@ class Recipe:
         """
         Returns a Markdown table containing the detailed macros per ingredient of the recipe per portion.
 
-        Recette :
+        [[Recette]] :
 
         | Ingrédient | Énergie | Protéines | Lipides | Glucides |
         |:-----------|:-------:|:---------:|:-------:|:--------:|
@@ -169,7 +169,7 @@ class Recipe:
         """
 
         output = [
-            f"{self._name} :",
+            f"[[{self._name}]] :",
             "",
             "| Ingrédient | Énergie | Protéines | Lipides | Glucides |",
             "|:-----------|:-------:|:---------:|:-------:|:--------:|"]
