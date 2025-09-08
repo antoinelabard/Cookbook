@@ -4,6 +4,7 @@ source: https://www.marmiton.org/recettes/recette_gateau-au-chocolat-fondant-rap
 recipe-type: meal
 meal: snack
 tags: [occasion]
+portions: 8
 ---
 
 # Gâteau au chocolat fondant rapide

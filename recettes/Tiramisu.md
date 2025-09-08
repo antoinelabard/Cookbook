@@ -4,6 +4,7 @@ source: https://www.marmiton.org/recettes/recette_tiramisu-recette-originale_120
 recipe-type: meal
 meal: snack
 tags: [occasion]
+portions: 8
 ---
 
 # Tiramisu
