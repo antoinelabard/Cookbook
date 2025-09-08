@@ -39,6 +39,7 @@ CONFIGURATION
 import datetime
 import logging
 import sys
+import os
 
 from src.MealPlanBuilder import MealPlanBuilder
 from src.data.CookbookRepository import CookbookRepository
@@ -46,7 +47,7 @@ from src.utils.Utils import Utils
 
 if __name__ == "__main__":
     logging.basicConfig(
-        filename=f'../../../Logs/cookbook/{datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}.log',
+        filename=f'{os.path.expanduser("~")}/Logs/cookbook/{datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}.log',
         level=logging.INFO)
     logger = Utils.get_logger()
     repository = CookbookRepository()
