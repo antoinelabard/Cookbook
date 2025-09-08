@@ -16,6 +16,7 @@ class Recipe:
     TAGS = "tags"
     SOURCE = "source"
     DATE_ADDED = "date-added"
+    SUB_RECIPE_AISLE = "sous recettes"
 
     class Meal:
         MEAL = "meal"
@@ -126,6 +127,9 @@ class Recipe:
                         f"{sub_ingredient}<sup>{Ingredient.SOURCE_RECIPE_ARROW}==[[{self._name}]]==</sup>"
                         for sub_ingredient in recipe_list[key]]
                 ingredients_by_aisle = Utils.merge_dicts(ingredients_by_aisle, recipe_list)
+                if Recipe.SUB_RECIPE_AISLE not in ingredients_by_aisle.keys():
+                    ingredients_by_aisle[Recipe.SUB_RECIPE_AISLE] = []
+                ingredients_by_aisle[Recipe.SUB_RECIPE_AISLE].append(f"[[{ingredient.get_name()}]]")
                 continue
 
             if ingredient.get_aisle() not in ingredients_by_aisle.keys():
