@@ -7,9 +7,9 @@ tags: [occasion]
 portions: 10
 ---
 
-# Cookies au chocolat
+# Cookies
 
-![[Cookies au chocolat.webp]]
+![[Cookies.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
