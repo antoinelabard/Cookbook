@@ -9,6 +9,9 @@ portions: 10
 
 # Cookies
 
+> [!todo]
+> Tester cette variante de recette générée avec Claude.ai
+
 ![[Cookies.webp]]
 
 | Préparation | Repos | Cuisson |
@@ -17,20 +20,34 @@ portions: 10
 
 ## Ingrédients
 
-- [ ] Beurre : 85g
-- [ ] Sucre : 85g
+- [ ] Beurre : 100g (au lieu de 85g)
+- [ ] Sucre blanc : 50g (au lieu de 85g)
+- [ ] Cassonade : 50g (nouveau)
 - [ ] Vanille ou 1 sachet de sucre vanillé
-- [ ] Farine : 150g
+- [ ] Farine : 130g (au lieu de 150g)
 - [ ] Chocolat noir : 100g
 - [ ] Sel : 1cc
-- [ ] Levure chimique : 1cc
+- [ ] Levure chimique : 1/2cc (au lieu de 1cc)
 - [ ] Oeuf : 1
 
 ## Préparation
 
-1. Détailler le chocolat en pépites.
-2. Préchauffer le four à 180°C (thermostat 6). Dans un saladier, mettre 75 g de beurre, le sucre, l'oeuf entier, la vanille et mélanger le tout avec une cuillère en bois.
-3. Ajouter petit à petit la farine mélangée à la levure, le sel et le chocolat.
-4. Avec une feuille de papier essuie-tout, beurrer une plaque allant au four et former les cookies sur la plaque.
-5. Pour former les cookies, utiliser 2 cuillères à soupe et faire des petits tas espacés les uns des autres; ils grandiront à la cuisson.
-6. Enfourner pour 10 minutes de cuisson.
+1. Sortir le beurre à l'avance pour qu'il soit à température ambiante mais pas fondu.
+2. Détailler le chocolat en pépites.
+3. Dans un saladier, crémer le beurre avec les deux sucres (blanc + cassonade) jusqu'à obtenir un mélange lisse et légèrement blanchi.
+4. Ajouter l'oeuf entier et la vanille, bien mélanger.
+5. Incorporer délicatement la farine mélangée à la levure et au sel, sans trop travailler la pâte.
+6. Ajouter les pépites de chocolat.
+7. IMPORTANT : Emballer la pâte dans du film plastique et laisser reposer au réfrigérateur 30 minutes minimum.
+8. Préchauffer le four à 160°C (thermostat 5-6) - température légèrement plus basse.
+9. Beurrer une plaque et former des boules de pâte un peu plus grosses, en les espaçant bien (ils vont s'étaler).
+10. Enfourner pour 12 minutes. Les cookies doivent être dorés sur les bords mais encore mous au centre.
+11. Laisser refroidir sur la plaque 5 minutes avant de les transférer.
+
+> [!tip]
+> - Plus de matière grasse (beurre) pour le fondant
+> - Cassonade pour l'humidité et la densité
+> - Moins de levure pour éviter qu'ils gonflent trop
+> - Repos au frigo pour que le beurre se raffermisse et contrôle l'étalement
+> - Cuisson plus douce et plus longue pour un cœur fondant
+> - Refroidissement sur plaque pour qu'ils finissent de cuire doucement
