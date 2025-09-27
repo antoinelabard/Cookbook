@@ -41,27 +41,27 @@ class MealPlan:
         return self._breakfast + self._lunch + self._snack
 
     @staticmethod
-    def _compute_avg_macros_per_meal_aux(recipes: list[Recipe]) -> Macros:
+    def _compute_avg_macros_per_portion_aux(recipes: list[Recipe]) -> Macros:
         total_nb_portions = sum([recipe.get_portions() for recipe in recipes])
 
         return Macros(
-            sum([recipe.get_macros().get_energy() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
-            sum([recipe.get_macros().get_proteins() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
-            sum([recipe.get_macros().get_fat() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
-            sum([recipe.get_macros().get_carbs() * recipe.get_portions() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_energy() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_proteins() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_fat() for recipe in recipes]) / total_nb_portions,
+            sum([recipe.get_macros().get_carbs() for recipe in recipes]) / total_nb_portions,
         )
 
-    def compute_avg_macros_per_meal(self, meal) -> Macros:
+    def compute_avg_macros_per_portion(self, meal) -> Macros:
         """
-        :return: the weighted average macros per portion, grouped by meal (breakfast, lunch, snack)
+        :return: the weighted average macros per portion, filtered by meal (breakfast, lunch, snack)
         """
 
         if meal == Recipe.Meal.BREAKFAST and self._breakfast:
-            return self._compute_avg_macros_per_meal_aux(self._breakfast)
+            return self._compute_avg_macros_per_portion_aux(self._breakfast)
         if meal == Recipe.Meal.LUNCH and self._lunch:
-            return self._compute_avg_macros_per_meal_aux(self._lunch)
+            return self._compute_avg_macros_per_portion_aux(self._lunch)
         if meal == Recipe.Meal.SNACK and self._snack:
-            return self._compute_avg_macros_per_meal_aux(self._snack)
+            return self._compute_avg_macros_per_portion_aux(self._snack)
         return Macros(0, 0, 0, 0)
 
     def get_ingredients_list_by_aisle(self) -> dict[str, list[str]]:
@@ -89,7 +89,7 @@ class MealPlan:
         if not recipes_links:
             return recipes_links
         output.append(f"# {meal}\n\n{recipes_links}")
-        avg_macros = self.compute_avg_macros_per_meal(meal)
+        avg_macros = self.compute_avg_macros_per_portion(meal)
         output.append(avg_macros.to_markdown_table())
 
         return output
