@@ -542,6 +542,12 @@ Sucre:
   carbs: 100.0
   fat: 0.0
   aisle: Épicerie sucrée
+Cassonade:
+  energy: 400
+  proteins: 0.0
+  carbs: 100.0
+  fat: 0.0
+  aisle: Épicerie sucrée
 Vanille:
   energy: 288
   proteins: 0.1
