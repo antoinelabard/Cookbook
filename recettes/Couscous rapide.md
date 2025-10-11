@@ -29,5 +29,5 @@ meal: lunch
 3. Ajoutez 1l d'eau, salez, poivrez, couvrez et laissez cuire 30 minutes.
 4. Ajoutez la semoule, salez, poivrez la semoule et mélangez. Couvrez le plat de semoule et laissez gonfler 3 minutes.
 5. Ajoutez la chair de tomate et les pois chiches avec les légumes. Mélangez et laissez cuire 5 minutes.
-6. Pendant ce temps, piquez les merguez et faites les cuire à feu vif 4 minutes en les retournant à mi-cuisson.
-7. Servez la semoule avec le couscous et les merguez. C'est prêt !
+6. Pendant ce temps, piquez les chipolatas et faites les cuire à feu vif 4 minutes en les retournant à mi-cuisson.
+7. Servez la semoule avec le couscous et les chipolatas. C'est prêt !

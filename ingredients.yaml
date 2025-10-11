@@ -1384,4 +1384,10 @@ Lait au chocolat:
   fat: 4.3
   carbs: 28.8
   piece_to_g_ratio: 250
-  aisle: Compléments alimentaires
+  aisle: Épicerie sucrée
+Ravioli (Champignons):
+  energy: 229
+  proteins: 8
+  fat: 8.9
+  carbs: 27
+  aisle: Produits frais

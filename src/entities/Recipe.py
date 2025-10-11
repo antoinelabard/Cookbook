@@ -16,7 +16,7 @@ class Recipe:
     TAGS = "tags"
     SOURCE = "source"
     DATE_ADDED = "date-added"
-    SUB_RECIPE_AISLE = "sous recettes"
+    SUB_RECIPE_AISLE = "Sous recettes"
 
     class Meal:
         MEAL = "meal"
