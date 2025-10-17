@@ -23,8 +23,8 @@ tags: [cheat-meal]
 - [ ] Emmental : 100g
 - [ ] Cheddar : 200g
 - [ ] Tortillas de blé : 8
-- [ ] Huile d'olive
-- [ ] Sauce barbecue
+- [ ] Huile : 5cl
+- [ ] Sauce barbecue : 5cl
 
 ## Préparation
 

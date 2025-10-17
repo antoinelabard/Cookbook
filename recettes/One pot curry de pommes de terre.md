@@ -26,7 +26,7 @@ meal: lunch
 
 ## Préparation
 
-1. Épluchez puis émincez finement l’oignon. Dans une poêle ou une cocotte, ajoutez un filet d’huile d’olive puis faites revenir l’oignon pendant 2-3 minutes avec le curry en poudre.
+1. Épluchez puis émincez finement l’oignon. Dans une poêle ou une cocotte, ajoutez un filet d’huile puis faites revenir l’oignon pendant 2-3 minutes avec le curry en poudre.
 2. Pendant ce temps, lavez les pommes de terre, épluchez-les puis coupez-les en morceaux. Épluchez puis coupez les carottes en rondelles.
 3. Ajoutez dans le poêle le concentré de tomate, les carottes et les pommes de terre puis mélangez bien.
 4. Ajoutez le lait de coco et 80cl d’eau, puis laissez cuire à couvert à feu moyen pendant environ 15 à 20 minutes.

@@ -31,7 +31,7 @@ tags: [cheat-meal]
 - [ ] Curry
 - [ ] Gingembre moulu
 - [ ] Herbes de Provence
-- [ ] Huile d'olive
+- [ ] Huile d'olive : 2cl
 - [ ] Ail en poudre
 
 ## Préparation

@@ -26,7 +26,7 @@ meal: lunch
 ## Préparation
 
 1. Épluchez puis coupez l'oignon en lamelles.
-2. Dans une poêle, faites chauffer un filet d'huile d'olive. Ajoutez les oignons et faites-les revenir 4 minutes.
+2. Dans une poêle, faites chauffer un filet d'huile. Ajoutez les oignons et faites-les revenir 4 minutes.
 3. Ajoutez ensuite la purée de tomate, les haricots vers et le cumin dans la poêle. Salez, poivrez et mélangez, puis laissez mijoter pendant 3 minutes à couvert.
 4. Creusez des puits dans la préparation et cassez-y délicatement les œufs. Salez et poivrez les œufs, puis laissez les cuire 2 à 3 minutes à couvert, sur feu moyen.
 5. En fin de cuisson, ajoutez la feta émiettée et la coriandre fraîche, si vous en avez. C'est prêt !

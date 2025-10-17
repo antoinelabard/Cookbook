@@ -26,7 +26,7 @@ meal: lunch
 ## Préparation
 
 1. Dans une casserole d’eau bouillante salée, faites cuire le riz selon les instructions du paquet. Égouttez-le en fin de cuisson. Réservez.
-2. Épluchez et émincez finement l'oignon rouge. Ajoutez un filet d'huile d'olive dans une poêle et faites-y suer l'oignon.
+2. Épluchez et émincez finement l'oignon rouge. Ajoutez un filet d'huile dans une poêle et faites-y suer l'oignon.
 3. Épluchez et émincez l'ail. Si besoin, décortiquez les crevettes.
 4. Ajoutez les crevettes dans la poêle, salez, poivrez et faites-les revenir 2 minutes.
 5. Ajoutez l'ail, les graines de sésame, le jus de citron vert et le miel. Laissez réduire pendant 3 minutes, jusqu'à ce que la sauce commence à caraméliser.*

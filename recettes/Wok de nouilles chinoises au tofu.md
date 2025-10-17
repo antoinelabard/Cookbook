@@ -26,6 +26,7 @@ meal: lunch
 - [ ] Sauce soja : 20cl
 - [ ] Huile d'olive : 6cl
 - [ ] Coriandre
+- [ ] Huile : 5cl
 
 ## Préparation
 
@@ -37,7 +38,7 @@ meal: lunch
 	5. Laisser reposer pendant 2 heures.
 2. La Marinade des légumes :
 	1. Laver et couper en fines lamelles les poivrons, l’oignon et les échalotes.
-	2. Les mettre à mariner dans l’huile d’olive et 3cl à soupe de soja, et un peu de poivre.
+	2. Les mettre à mariner dans l’huile et 3cl à soupe de soja, et un peu de poivre.
 3. La cuisson :
 	1. Dans un wok, faire sauter les poivrons, oignon, jusqu’à ce qu’ils soient juste dorés. Les retirer du wok et les réserver.
 	2. Dans une grande casserole, porter à ébullition un grand volume d’eau, puis y jeter la moitié des nouilles chinoises. Faire cuire pendant 2 minutes, puis les égoutter.

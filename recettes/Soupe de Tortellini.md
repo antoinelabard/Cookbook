@@ -18,7 +18,7 @@ season: [spring, summer, autumn]
 
 - [ ] Chair de tomates : 320g
 - [ ] Chair à saucisses : 200g
-- [ ] crème fraîche : 10cl
+- [ ] Crème fraîche : 10cl
 - [ ] Épinards : 200g
 - [ ] Oignon : 1
 - [ ] Bouillon de volailles : 1
@@ -29,7 +29,7 @@ season: [spring, summer, autumn]
 
 1. Émincez l'oignon finement.
 2. Si vous avez des saucisses entières et non de la chair à saucisse, videz simplement les saucisses à l'aide de vos doigts.
-3. Dans une casserole, faire revenir les oignons dans une filet d'huile d'olive pendant 1 minute.
+3. Dans une casserole, faire revenir l'oignon dans un filet d'huile pendant 1 minute.
 4. Ajoutez ensuite la chair à saucisse et faire revenir à feu vif pendant 1 à 2 minutes jusqu'à ce qu'elle soit légèrement dorée.
 5. Ajoutez ensuite la chair de tomate, 1l d'eau et le bouillon de volaille. Portez à ébullition et ajoutez les tortellinis.
 6. Salez, poivrez, mélangez et faire cuire à feu doux, à couvert pendant 4 minutes.

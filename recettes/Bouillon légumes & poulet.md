@@ -27,7 +27,7 @@ meal: lunch
 1. Lavez et épluchez les carottes. Coupez-les en deux puis émincez-les.
 2. Épluchez et coupez l'oignon en fines lamelles.
 3. Lavez puis coupez les poireaux en deux puis en fines lamelles. Réservez.
-4. Dans une casserole, faites chauffer un filet d'huile d'olive. Ajoutez les oignons, les carottes et les poireaux. Ajoutez le thym, salez et poivrez.
+4. Dans une casserole, faites chauffer un filet d'huile. Ajoutez les oignons, les carottes et les poireaux. Ajoutez le thym, salez et poivrez.
 5. Ajoutez le bouillon de volaille et le poulet. Versez 1l d'eau. Couvrez et laissez cuire 10 minutes sur feu moyen.
 6. Au bout des 10 minutes, sortez le blanc de poulet du bouillon et déposez-le sur une assiette.
 7. Effilochez le poulet à l'aide de deux fourchettes.
