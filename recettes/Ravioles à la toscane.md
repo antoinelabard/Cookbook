@@ -17,7 +17,7 @@ meal: lunch
 
 - [ ] Ravioli : 500g
 - [ ] Tomates séchées : 200g
-- [ ] crème fraîche : 20cl
+- [ ] Crème fraîche : 20cl
 - [ ] Épinards : 300g
 - [ ] Parmesan râpé : 60g
 - [ ] Ail : 1 gousse
@@ -26,7 +26,7 @@ meal: lunch
 
 1. Égouttez puis émincez les tomates, réservez.
 2. Cuire les raviolis en suivant les indications du paquet.
-3. Pendant ce temps, dans une poêle, faites revenir l'ail finement émincé ou râpé avec un filet d'huile d'olive pendant 1 minute à feu moyen.
+3. Pendant ce temps, dans une poêle, faites revenir l'ail finement émincé ou râpé avec un filet d'huile pendant 1 minute à feu moyen.
 4. Ajoutez les tomates séchées puis mélangez.
 5. Ajoutez la crème, les épinards et 5 cl d'eau. Mélangez et laissez mijoter 2 minutes en remuant.
 6. Une fois les raviolis cuits, égouttez-les, puis ajoutez-les dans la poêle.
