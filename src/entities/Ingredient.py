@@ -1,5 +1,6 @@
 import copy
 import logging
+from typing import Self
 
 from src.entities.Macros import Macros
 from src.utils.QuantityUnit import QuantityUnit
@@ -57,7 +58,7 @@ class Ingredient:
         return self._aisle
 
     @staticmethod
-    def from_name(recipe_ingredient_name: str, base_ingredients: list["Ingredient"]):
+    def from_name(recipe_ingredient_name: str, base_ingredients: list["Ingredient"]) -> "Ingredient":
         """
         :param recipe_ingredient_name: without the quantity or the unit
         :param base_ingredients
@@ -69,7 +70,9 @@ class Ingredient:
             if base_ingredient._name.lower() in recipe_ingredient_name.lower():
                 ingredients_candidates.append(base_ingredient)
         if not ingredients_candidates:
-            return None
+            return Ingredient(
+                recipe_ingredient_name
+            )
 
         # keep the match with the most characters
         return copy.deepcopy(sorted(ingredients_candidates, key=lambda igr: len(igr._name))[-1])

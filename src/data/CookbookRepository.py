@@ -4,6 +4,7 @@ import json
 import logging
 from pathlib import Path
 from typing import Optional
+from typing import Union
 
 import yaml
 
@@ -178,7 +179,7 @@ class CookbookRepository:
         return ingredients
 
     def _load_ingredient_object_from_recipe_line(self, ingredient_line: str, recipe_name: str) \
-            -> Optional[Ingredient | Recipe]:
+            -> Union[Ingredient | Recipe]:
         """
         Take an ingredient line from a Markdown recipe (ie 'ingredient' : quantity unit) and load an Ingredient
         object by matching its name with the base ingredients.
@@ -192,7 +193,6 @@ class CookbookRepository:
             self._logger.warning(
                 f"no base ingredient candidate for for ingredient name {recipe_ingredient_name} "
                 f"in recipe {recipe_name}")
-            return None
 
         kept_ingredient.set_name(recipe_ingredient_name)
         kept_ingredient.set_quantity(recipe_ingredient_quantity)
@@ -204,7 +204,7 @@ class CookbookRepository:
         if not kept_ingredient.get_quantity_unit():
             self._logger.warning(
                 f"unit {recipe_ingredient_quantity_unit} not recognised in recipe {recipe_name}")
-            return None
+            return kept_ingredient
         if QuantityUnit.is_piece_unit_missing_ratio(
                 kept_ingredient.get_quantity_unit(),
                 kept_ingredient.get_piece_to_g_ratio()):
@@ -245,7 +245,7 @@ class CookbookRepository:
                 ingredients.append(kept_recipe)
                 continue
             kept_ingredient = self._load_ingredient_object_from_recipe_line(recipe_ingredient_str, recipe_name)
-            if kept_ingredient: ingredients.append(kept_ingredient)
+            ingredients.append(kept_ingredient)
 
         return ingredients
 
