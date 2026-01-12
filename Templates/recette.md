@@ -1,5 +1,5 @@
 ---
-date-added: <% tp.date.now("YYYY-MM-DD") %>
+date-added: '<% tp.date.now("YYYY-MM-DD") %>'
 source: 
 season:
   - spring
@@ -26,8 +26,4 @@ tags: [cheat-meal, occasion]
 
 ## Ingrédients
 
-- [ ] 
-
 ## Préparation
-
-1. 

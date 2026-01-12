@@ -314,6 +314,13 @@ Ail en poudre:
   fat: 0.7
   piece_to_g_ratio: 1
   aisle: Épices
+Garam masala:
+  energy: 293
+  proteins: 13.6
+  carbs: 25.5
+  fat: 15.2
+  piece_to_g_ratio: 100
+  aisle: Épices
 Aneth:
   energy: 43
   proteins: 3.5
@@ -845,6 +852,13 @@ Ail:
   fat: 0.5
   piece_to_g_ratio: 8
   aisle: Fruits et légumes
+Potimarron:
+  energy: 40
+  proteins: 1
+  carbs: 10.5
+  fat: 0.1
+  piece_to_g_ratio: 1000
+  aisle: Fruits et légumes
 Aubergine:
   energy: 25
   proteins: 1.0
@@ -998,7 +1012,7 @@ Patates douces:
   fat: 0.1
   piece_to_g_ratio: 250
   aisle: Fruits et légumes
-Poireaux:
+Poireau:
   energy: 29
   proteins: 1.6
   carbs: 4.2
@@ -1180,7 +1194,19 @@ Blancs de poulet:
   fat: 2.0
   piece_to_g_ratio: 180
   aisle: Viandes et poissons
-cuisses de poulet:
+Cuisses de poulet:
+  energy: 190
+  proteins: 19.0
+  carbs: 0.0
+  fat: 12.0
+  piece_to_g_ratio: 250
+Hauts de cuisse de poulet:
+  energy: 190
+  proteins: 19.0
+  carbs: 0.0
+  fat: 12.0
+  piece_to_g_ratio: 250
+Pilons de poulet:
   energy: 190
   proteins: 19.0
   carbs: 0.0
@@ -1264,6 +1290,12 @@ Roquefort:
   fat: 31
   carbs: 2
   piece_to_g_ratio: 200
+  aisle: Produits laitiers
+Fourme d'Ambert:
+  energy: 329
+  proteins: 21
+  fat: 27
+  carbs: 0.5
   aisle: Produits laitiers
 Sauce barbecue:
   energy: 110
