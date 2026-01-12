@@ -23,7 +23,7 @@ tags: [cheat-meal]
 
 ## Préparation
 
-> [!info] Huile
+> [!info] Huile  
 > Prévoir 30cl pour la cuisson, la quantité d'huile indiquée dans les ingrédients est une estimation de ce qui sera absorbée par les aliments pendant la cuisson pour le calcul des macros.
 
 1. Mixez 4 escalopes de poulet avec 4 blancs d'oeuf, puis salez et poivrez.

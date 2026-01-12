@@ -16,8 +16,8 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Pâtes (orzo) : 400g
-- [ ] Poireaux : 3 
-- [ ] [[Oeufs cuits]] mollets : 4 
+- [ ] Poireaux : 3
+- [ ] [[Oeufs cuits]] mollets : 4
 - [ ] Échalotes : 2
 - [ ] Crème fraîche : 20cl
 - [ ] Parmesan râpé : 80g

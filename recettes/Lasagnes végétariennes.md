@@ -14,7 +14,7 @@ portions : 8
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    45min    |   -   |  35min  | 
+|    45min    |   -   |  35min  |
 
 ## Ingrédients
 

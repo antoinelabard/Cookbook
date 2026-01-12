@@ -9,7 +9,6 @@ season:
 recipe-type:
   - meal
   - ingredient
-  - inedible
 meal:
   - breakfast
   - lunch
