@@ -110,7 +110,7 @@ class CookbookRepository:
             "|:--------|:-------:|:---------:|:-------:|:--------:|"]
 
         for recipe in sorted(self._recipes, key=lambda rcp: rcp.get_name()):
-            output.append(recipe.get_macros_as_markdown_table_line())
+            output.append(recipe.get_macros_as_markdown_table_line(recipe.get_portions()))
 
         with open(self.MACROS_PATH, 'w') as f:
             f.write("\n".join(output))

@@ -140,7 +140,7 @@ class Ingredient:
                 "fat": fat,
                 "proteins": carbs,
             },
-            "portion": 1,  # macros are always for one piece, or for Macros.REFERENCE_QUANTITYg
+            "portion": 1,  # macros are always for one piece, or for Macros.REFERENCE_QUANTITY
             "uniqueId": self._name,
             "unit": unit
         }
