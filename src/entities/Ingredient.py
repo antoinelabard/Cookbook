@@ -1,6 +1,5 @@
 import copy
 import logging
-from typing import Self
 
 from src.entities.Macros import Macros
 from src.utils.QuantityUnit import QuantityUnit
@@ -86,23 +85,24 @@ class Ingredient:
         if self._quantity_unit in QuantityUnit.PIECE.value or self._quantity_unit == QuantityUnit.VOID:
             self._macros = self._macros * self._quantity * self._piece_to_g_ratio / Macros.REFERENCE_QUANTITY
             return
+        unit_to_g_ratio = 1  # default value when the quantity is in grams
         match self._quantity_unit:
-            case QuantityUnit.G:
-                self._macros = self._macros * self._quantity / Macros.REFERENCE_QUANTITY
             case QuantityUnit.KG:
-                self._macros = self._macros * self._quantity * QuantityUnit.KG_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
+                unit_to_g_ratio =  QuantityUnit.KG_TO_G_RATIO.value
             case QuantityUnit.ML:
-                self._macros = self._macros * self._quantity * QuantityUnit.ML_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
+                unit_to_g_ratio =  QuantityUnit.ML_TO_G_RATIO.value
             case QuantityUnit.CL:
-                self._macros = self._macros * self._quantity * QuantityUnit.CL_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
+                unit_to_g_ratio =  QuantityUnit.CL_TO_G_RATIO.value
             case QuantityUnit.L:
-                self._macros = self._macros * self._quantity * QuantityUnit.L_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
+                unit_to_g_ratio =  QuantityUnit.L_TO_G_RATIO.value
             case QuantityUnit.CC:
-                self._macros = self._macros * self._quantity * QuantityUnit.CC_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
+                unit_to_g_ratio =  QuantityUnit.CC_TO_G_RATIO.value
             case QuantityUnit.CS:
-                self._macros = self._macros * self._quantity * QuantityUnit.CS_TO_G_RATIO.value / Macros.REFERENCE_QUANTITY
+                unit_to_g_ratio =  QuantityUnit.CS_TO_G_RATIO.value
             case _:
                 self._logger.warning(f"unit {self._quantity_unit} not recognised for ingredient {self._name}")
+
+        self._macros = self._macros * self._quantity * unit_to_g_ratio / Macros.REFERENCE_QUANTITY
 
     def ingredient_line_to_str(self, recipe_name: str) -> str:
         """
@@ -114,7 +114,7 @@ class Ingredient:
 
     def to_dict(self) -> dict:
         """
-        :returns: a dictionary export compatible with the Waistline application format. Every ingredient of ingredients.yaml is
+        :return: a dictionary export compatible with the Waistline application format. Every ingredient of ingredients.yaml is
         categorised by its aisle in the application.
         """
 
@@ -149,14 +149,15 @@ class Ingredient:
         """
         Returns a Markdown table line containing the total macros of the recipe per portion
         
-        | Ingrédient | Énergie | Protéines | Lipides | Glucides |
-        |:-----------|:-------:|:---------:|:-------:|:--------:|
-        |    name    | energy  | proteins  |   fat   |  carbs   | <--- returns this
+        | Ingrédient | Quantité | Énergie | Protéines | Lipides | Glucides |
+        |:-----------|:--------:|:-------:|:---------:|:-------:|:--------:|
+        |    name    | quantity | energy  | proteins  |   fat   |  carbs   | <--- returns this
         """
 
+        quantity = f"{round(self._quantity / portions)}{self._quantity_unit.value}"
         energy = round(self._macros.get_energy() / portions)
-        proteins = round(self._macros.get_proteins() / portions)
-        fat = round(self._macros.get_fat() / portions)
-        carbs = round(self._macros.get_carbs() / portions)
+        proteins = round(self._macros.get_proteins() / portions, 1)
+        fat = round(self._macros.get_fat() / portions, 1)
+        carbs = round(self._macros.get_carbs() / portions, 1)
     
-        return f"| {self._name} | {energy} | {proteins} | {fat} | {carbs} |"
+        return f"| {self._name} | {quantity} | {energy} | {proteins} | {fat} | {carbs} |"
