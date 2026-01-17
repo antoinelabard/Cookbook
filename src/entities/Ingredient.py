@@ -115,21 +115,20 @@ class Ingredient:
     def to_dict(self) -> dict:
         """
         :return: a dictionary export compatible with the Waistline application format. Every ingredient of ingredients.yaml is
-        categorised by its aisle in the application.
+        categorized by its aisle in the application.
         """
 
         if self._piece_to_g_ratio == QuantityUnit.INVALID_PIECE_TO_G_RATIO.value:
-            energy = self._macros.get_energy() / Macros.REFERENCE_QUANTITY
-            proteins = self._macros.get_proteins() / Macros.REFERENCE_QUANTITY
-            fat = self._macros.get_fat() / Macros.REFERENCE_QUANTITY
-            carbs = self._macros.get_carbs() / Macros.REFERENCE_QUANTITY
-            unit = QuantityUnit.PIECE.value.PIECE.value
-        else:
-            energy = self._macros.get_energy() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
-            proteins = self._macros.get_proteins() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
-            fat = self._macros.get_fat() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
-            carbs = self._macros.get_carbs() / Macros.REFERENCE_QUANTITY * self._piece_to_g_ratio
+            piece_to_g_ratio = 1
             unit = QuantityUnit.G.value
+        else:
+            piece_to_g_ratio = self._piece_to_g_ratio
+            unit = QuantityUnit.PIECE.value.PIECE.value
+
+        energy = self._macros.get_energy() / Macros.REFERENCE_QUANTITY * piece_to_g_ratio
+        proteins = self._macros.get_proteins() / Macros.REFERENCE_QUANTITY * piece_to_g_ratio
+        fat = self._macros.get_fat() / Macros.REFERENCE_QUANTITY * piece_to_g_ratio
+        carbs = self._macros.get_carbs() / Macros.REFERENCE_QUANTITY * piece_to_g_ratio
 
         return {
             "brand": self._aisle,

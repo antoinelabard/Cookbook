@@ -228,5 +228,5 @@ class Recipe:
             },
             "portion": 1,  # macros are always for one portion of the recipe
             "uniqueId": self._name,
-            "unit": "unit"
+            "unit": "portion"
         }
