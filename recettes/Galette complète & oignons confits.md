@@ -15,7 +15,7 @@ meal: lunch
 
 ## Ingrédients
 
-- [ ] Galettes bretonnes : 4
+- [ ] Galettes de sarrasin : 4
 - [ ] Oeufs : 4
 - [ ] Jambon : 4 tranches
 - [ ] Fromage râpé : 200g

@@ -146,9 +146,9 @@ class Recipe:
 
         return next(filter(lambda recipe: recipe.get_name() == recipe_name, recipes), None)
 
-    def get_macros_as_markdown_table_line(self, portions):
+    def get_macros_as_markdown_table_line(self):
         """
-        Return a Markdown table line containing the total macros of the recipe per portion
+        Return a Markdown table line containing the total macros of the recipe per portion.
         | Recette | Énergie | Protéines | Lipides | Glucides |
         |:--------|:-------:|:---------:|:-------:|:--------:|
         |  name   | energy  | proteins  |   fat   |  carbs   | <--- returns this

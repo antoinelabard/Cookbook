@@ -16,7 +16,7 @@ meal: lunch
 ## Ingrédients
 
 - [ ] Saucisses fumées : 4
-- [ ] Galettes bretonnes : 4
+- [ ] Galettes de sarrasin : 4
 - [ ] Fromage râpé : 80g
 - [ ] [[Oignons confits]] : 1
 

@@ -17,7 +17,6 @@ meal: lunch
 
 - [ ] Pommes de terre : 200g
 - [ ] Huile : 1cl
-- [ ] Curry
 
 ## Préparation
 

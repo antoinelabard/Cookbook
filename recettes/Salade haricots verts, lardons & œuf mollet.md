@@ -24,7 +24,7 @@ meal: lunch
 
 ## Préparation
 
-1. En parallèle, faites cuire les haricots verts dans une casserole d'eau bouillante pendant environ 3 minutes puis égouttez-les.
+1. Faites cuire les haricots verts dans une casserole d'eau bouillante pendant environ 3 minutes puis égouttez-les.
 2. Dans une poêle, faites revenir les lardons pendant 3 minutes à feu vif.
 3. Une fois que vos œufs sont cuits, passez-les dans l'eau froide puis enlevez la coquille délicatement. Coupez-les en deux.
 4. Préparez votre vinaigrette en mélangeant la moutarde à l'ancienne avec l'huile d'olive. Salez et poivrez.

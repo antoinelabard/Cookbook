@@ -16,11 +16,11 @@ portions: 1
 
 ## Ingrédients
 
-- [ ] Pommes de terre : 100g
-- [ ] Crème fraîche : 2cl
-- [ ] Lait : 1cl
-- [ ] Oeuf (60g) : 6g
-- [ ] Muscade : 1g
+- [ ] Pommes de terre : 200g
+- [ ] Crème fraîche : 4cl
+- [ ] Lait : 2cl
+- [ ] Oeuf (60g) : 12g
+- [ ] Muscade : 2g
 
 ## Préparation
 
