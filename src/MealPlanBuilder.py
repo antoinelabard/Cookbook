@@ -14,8 +14,9 @@ class MealPlanBuilder:
     to return the result.
     """
 
+    _logger = Utils.get_logger(__name__)
+
     def __init__(self, recipes: list[Recipe]):
-        self._logger = Utils.get_logger()
         self._recipes: list[Recipe] = recipes
         self._meal_plan: MealPlan = MealPlan()
 
@@ -32,7 +33,7 @@ class MealPlanBuilder:
         if not filtered_recipes:
             return
 
-        self._logger.info(
+        MealPlanBuilder._logger.info(
             f"Picking {meal_plan_filter.get_quantity() if meal_plan_filter.get_quantity() is not None else 0} recipes "
             + f"among {len(filtered_recipes)}.")
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()

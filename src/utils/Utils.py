@@ -37,8 +37,8 @@ class Utils:
         return merged_dict
 
     @staticmethod
-    def get_logger():
-        logger = logging.getLogger(__name__)
+    def get_logger(module_name):
+        logger = logging.getLogger(module_name)
         logger.setLevel(logging.DEBUG)
         handler = logging.StreamHandler(sys.stdout)
         handler.setLevel(logging.DEBUG)

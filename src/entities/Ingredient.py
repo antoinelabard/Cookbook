@@ -1,8 +1,8 @@
 import copy
-import logging
 
 from src.entities.Macros import Macros
 from src.utils.QuantityUnit import QuantityUnit
+from src.utils.Utils import Utils
 
 
 class Ingredient:
@@ -10,6 +10,8 @@ class Ingredient:
     QUANTITY = "quantity"
     UNCLASSIFIED_AISLE = "Non classé"
     SOURCE_RECIPE_ARROW = " ---> "
+
+    _logger = Utils.get_logger(__name__)
 
     def __init__(self,
                  name: str,
@@ -20,7 +22,6 @@ class Ingredient:
                  ingredient_line: str = "",
                  aisle: str = UNCLASSIFIED_AISLE,
                  ):
-        self._logger = logging.getLogger(__name__)
         self._name: str = name
         self._quantity: float = quantity
         self._quantity_unit: QuantityUnit = quantity_unit
@@ -56,8 +57,8 @@ class Ingredient:
     def get_aisle(self) -> str:
         return self._aisle
 
-    @staticmethod
-    def from_name(recipe_ingredient_name: str, base_ingredients: list["Ingredient"]) -> "Ingredient":
+    @classmethod
+    def from_name(cls, recipe_ingredient_name: str, base_ingredients: list["Ingredient"]) -> "Ingredient":
         """
         :param recipe_ingredient_name: without the quantity or the unit
         :param base_ingredients
@@ -69,6 +70,7 @@ class Ingredient:
             if base_ingredient._name.lower() in recipe_ingredient_name.lower():
                 ingredients_candidates.append(base_ingredient)
         if not ingredients_candidates:
+            cls._logger.warning(f"ingredient name {recipe_ingredient_name} not recognised among the base ingredients")
             return Ingredient(
                 recipe_ingredient_name
             )
@@ -87,6 +89,8 @@ class Ingredient:
             return
         unit_to_g_ratio = 1  # default value when the quantity is in grams
         match self._quantity_unit:
+            case QuantityUnit.G:
+                unit_to_g_ratio = 1
             case QuantityUnit.KG:
                 unit_to_g_ratio =  QuantityUnit.KG_TO_G_RATIO.value
             case QuantityUnit.ML:
@@ -100,7 +104,7 @@ class Ingredient:
             case QuantityUnit.CS:
                 unit_to_g_ratio =  QuantityUnit.CS_TO_G_RATIO.value
             case _:
-                self._logger.warning(f"unit {self._quantity_unit} not recognised for ingredient {self._name}")
+                Ingredient._logger.warning(f"unit {self._quantity_unit} not recognised for ingredient {self._name}")
 
         self._macros = self._macros * self._quantity * unit_to_g_ratio / Macros.REFERENCE_QUANTITY
 
