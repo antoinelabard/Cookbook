@@ -3,7 +3,9 @@ date-added: 2022-10-19
 source: https://www.marmiton.org/recettes/recette_roses-des-sables-au-chocolat-faciles_12529.aspx
 recipe-type: meal
 meal: snack
-tags: [occasion]
+portions: 20
+tags:
+  - cake
 ---
 
 # Roses des sables au chocolat faciles

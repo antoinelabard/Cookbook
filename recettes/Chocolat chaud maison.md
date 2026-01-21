@@ -3,7 +3,9 @@ date-added: 2023-04-22
 source: https://www.750g.com/chocolat-chaud-r3533.htm
 recipe-type: meal
 meal: snack
-tags: [occasion]
+portions: 1
+tags:
+  - cake
 ---
 
 # Chocolat chaud maison

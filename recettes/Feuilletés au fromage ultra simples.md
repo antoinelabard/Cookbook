@@ -3,7 +3,9 @@ date-added: 2022-12-29
 source: https://www.750g.com/feuilletes-au-fromage-ultra-simples-r36675.htm
 recipe-type: meal
 meal: misc
-tags: [occasion]
+portions: 8
+tags:
+  - appetizer
 ---
 
 # Feuilletés au fromage ultra simples

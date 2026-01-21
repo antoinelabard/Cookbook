@@ -1,8 +1,8 @@
-## Cheat-meals
+## Appéritifs
 
 ```dataview
 LIST
-FROM #cheat-meal
+FROM #appetizer
 WHERE recipe-type = "meal"
 SORT file.name ASC
 ```
@@ -12,6 +12,24 @@ SORT file.name ASC
 ```dataview
 LIST
 FROM #occasion
+WHERE recipe-type = "meal"
+SORT file.name ASC
+```
+
+## Le coin des gourmands
+
+```dataview
+LIST
+FROM #cake
+WHERE recipe-type = "meal"
+SORT file.name ASC
+```
+
+## Cheat-meals
+
+```dataview
+LIST
+FROM #cheat-meal
 WHERE recipe-type = "meal"
 SORT file.name ASC
 ```

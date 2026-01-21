@@ -13,7 +13,7 @@ meal:
   - breakfast
   - lunch
   - snack
-tags: [cheat-meal, occasion]
+tags: [cheat-meal, occasion, appetizer, cake]
 ---
 
 # <% tp.file.title %>

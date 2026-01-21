@@ -3,7 +3,8 @@ date-added: 2024-12-28
 source: https://www.marmiton.org/recettes/recette_tiramisu-recette-originale_12023.aspx
 recipe-type: meal
 meal: snack
-tags: [occasion]
+tags:
+  - cake
 portions: 8
 ---
 

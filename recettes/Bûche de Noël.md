@@ -3,7 +3,8 @@ date-added: 2024-12-25
 source: https://www.marmiton.org/recettes/recette_buche-de-noel-facile_18219.aspx
 recipe-type: meal
 meal: snack
-tags: [occasion]
+tags:
+  - cake
 portions: 8
 ---
 
