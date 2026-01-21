@@ -47,9 +47,9 @@ class CookbookRepository:
     MACROS_PATH = ROOT_DIR / "macros.md"
     DETAILED_MACROS_PATH = ROOT_DIR / "detailed-macros.md"
 
+    _logger = Utils.get_logger(__name__)
+
     def __init__(self):
-        self._logger = Utils.get_logger()
-        self._logger.addHandler(logging.StreamHandler())
         self._base_ingredients = self._read_base_ingredients()
         self._recipes_paths: list[Path] = [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
         self._recipes: list[Recipe] = self._read_recipes()
@@ -190,7 +190,7 @@ class CookbookRepository:
 
         kept_ingredient = Ingredient.from_name(recipe_ingredient_name, self._base_ingredients)
         if kept_ingredient is None:
-            self._logger.warning(
+            CookbookRepository._logger.warning(
                 f"no base ingredient candidate for for ingredient name {recipe_ingredient_name} "
                 f"in recipe {recipe_name}")
 
@@ -202,18 +202,18 @@ class CookbookRepository:
 
         # various logging if something went wrong or seem suspicious
         if not kept_ingredient.get_quantity_unit():
-            self._logger.warning(
+            CookbookRepository._logger.warning(
                 f"unit {recipe_ingredient_quantity_unit} not recognised in recipe {recipe_name}")
             return kept_ingredient
         if QuantityUnit.is_piece_unit_missing_ratio(
                 kept_ingredient.get_quantity_unit(),
                 kept_ingredient.get_piece_to_g_ratio()):
-            self._logger.warning(
+            CookbookRepository._logger.warning(
                 f"Suspicious piece_to_g_ratio of {kept_ingredient.get_piece_to_g_ratio()} found for ingredient "
                 f"{kept_ingredient.get_name()} in recipe {recipe_name}, which may need a custom one written in "
                 f"{self.BASE_INGREDIENTS_PATH}")
         if kept_ingredient.get_macros().get_energy() == 0:
-            self._logger.warning(
+            CookbookRepository._logger.warning(
                 f"the ingredient {kept_ingredient.get_name()} has one or many of its macros set to 0 in recipe {recipe_name}")
 
         return kept_ingredient

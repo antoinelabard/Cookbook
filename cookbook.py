@@ -49,7 +49,7 @@ if __name__ == "__main__":
     logging.basicConfig(
         filename=f'{os.path.expanduser("~")}/Logs/cookbook/{datetime.datetime.now().strftime("%Y-%m-%d_%H:%M:%S")}.log',
         level=logging.INFO)
-    logger = Utils.get_logger()
+    logger = Utils.get_logger(__name__)
     repository = CookbookRepository()
     meal_plan_builder = MealPlanBuilder(repository.get_recipes())
 

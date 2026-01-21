@@ -21,7 +21,7 @@ tags:
 
 - [ ] Tortillas : 2
 - [ ] Jambon sec : 4 tranches
-- [ ] [[Guacamole]] : 50g
+- [ ] Guacamole (recette à ajouter) : 50g
 
 ## Préparation
 

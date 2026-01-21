@@ -635,6 +635,12 @@ Bacon:
   fat: 23.0
   piece_to_g_ratio: 20
   aisle: Produits frais
+Guacamole:
+  energy: 157
+  proteins: 2
+  carbs: 8.5
+  fat: 13
+  aisle: Produits frais
 Galettes de sarrasin:
   energy: 477
   proteins: 6.4
