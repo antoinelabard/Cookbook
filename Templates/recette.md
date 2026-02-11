@@ -13,6 +13,7 @@ meal:
   - breakfast
   - lunch
   - snack
+portions: 4
 tags: [cheat-meal, occasion, appetizer, cake]
 ---
 
