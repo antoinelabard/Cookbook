@@ -682,7 +682,6 @@ Pâtes à pizza:
   fat: 3.6
   piece_to_g_ratio: 230
   aisle: Produits frais
-
 Pâte brisée:
   energy: 408
   proteins: 7.1
@@ -1073,6 +1072,272 @@ Tomate:
   carbs: 2.6
   fat: 0.2
   piece_to_g_ratio: 120
+  aisle: Fruits et légumes
+Pomme:
+  energy: 52
+  proteins: 0.3
+  carbs: 13.8
+  fat: 0.2
+  piece_to_g_ratio: 180
+  aisle: Fruits et légumes
+Poire:
+  energy: 57
+  proteins: 0.4
+  carbs: 11.4
+  fat: 0.1
+  piece_to_g_ratio: 160
+  aisle: Fruits et légumes
+Orange:
+  energy: 42
+  proteins: 0.9
+  carbs: 8.3
+  fat: 0.2
+  piece_to_g_ratio: 200
+  aisle: Fruits et légumes
+Pamplemousse:
+  energy: 33
+  proteins: 0.6
+  carbs: 6.2
+  fat: 0.1
+  piece_to_g_ratio: 400
+  aisle: Fruits et légumes
+Clémentine:
+  energy: 46
+  proteins: 0.8
+  carbs: 9.2
+  fat: 0.2
+  piece_to_g_ratio: 70
+  aisle: Fruits et légumes
+Mandarine:
+  energy: 46
+  proteins: 0.8
+  carbs: 9.2
+  fat: 0.2
+  piece_to_g_ratio: 70
+  aisle: Fruits et légumes
+Citron vert:
+  energy: 29
+  proteins: 1.1
+  carbs: 2.9
+  fat: 0.3
+  piece_to_g_ratio: 80
+  aisle: Fruits et légumes
+Pêche:
+  energy: 38
+  proteins: 0.9
+  carbs: 7.5
+  fat: 0.1
+  piece_to_g_ratio: 150
+  aisle: Fruits et légumes
+Nectarine:
+  energy: 50
+  proteins: 1.1
+  carbs: 9.5
+  fat: 0.3
+  piece_to_g_ratio: 150
+  aisle: Fruits et légumes
+Abricot:
+  energy: 44
+  proteins: 1.0
+  carbs: 8.5
+  fat: 0.1
+  piece_to_g_ratio: 45
+  aisle: Fruits et légumes
+Prune:
+  energy: 46
+  proteins: 0.7
+  carbs: 9.6
+  fat: 0.3
+  piece_to_g_ratio: 55
+  aisle: Fruits et légumes
+Cerise:
+  energy: 54
+  proteins: 1.1
+  carbs: 11.0
+  fat: 0.3
+  piece_to_g_ratio: 8
+  aisle: Fruits et légumes
+Mirabelle:
+  energy: 56
+  proteins: 0.8
+  carbs: 11.6
+  fat: 0.2
+  piece_to_g_ratio: 10
+  aisle: Fruits et légumes
+Fraise:
+  energy: 39
+  proteins: 0.6
+  carbs: 6.0
+  fat: 0.2
+  piece_to_g_ratio: 20
+  aisle: Fruits et légumes
+Framboise:
+  energy: 48
+  proteins: 1.2
+  carbs: 7.4
+  fat: 0.6
+  piece_to_g_ratio: 4
+  aisle: Fruits et légumes
+Mûre:
+  energy: 46
+  proteins: 1.4
+  carbs: 6.5
+  fat: 0.5
+  piece_to_g_ratio: 5
+  aisle: Fruits et légumes
+Cassis:
+  energy: 70
+  proteins: 1.4
+  carbs: 12.0
+  fat: 0.4
+  piece_to_g_ratio: 1
+  aisle: Fruits et légumes
+Groseille:
+  energy: 67
+  proteins: 1.4
+  carbs: 11.5
+  fat: 0.2
+  piece_to_g_ratio: 1
+  aisle: Fruits et légumes
+Pastèque:
+  energy: 35
+  proteins: 0.6
+  carbs: 7.5
+  fat: 0.2
+  piece_to_g_ratio: 3000
+  aisle: Fruits et légumes
+Melon charentais:
+  energy: 60
+  proteins: 0.7
+  carbs: 12.5
+  fat: 0.2
+  piece_to_g_ratio: 900
+  aisle: Fruits et légumes
+Raisin blanc:
+  energy: 71
+  proteins: 0.6
+  carbs: 16.1
+  fat: 0.4
+  piece_to_g_ratio: 5
+  aisle: Fruits et légumes
+Raisin noir:
+  energy: 71
+  proteins: 0.6
+  carbs: 16.1
+  fat: 0.4
+  piece_to_g_ratio: 5
+  aisle: Fruits et légumes
+Kiwi:
+  energy: 61
+  proteins: 1.1
+  carbs: 11.7
+  fat: 0.6
+  piece_to_g_ratio: 90
+  aisle: Fruits et légumes
+Mangue:
+  energy: 71
+  proteins: 0.6
+  carbs: 15.8
+  fat: 0.3
+  piece_to_g_ratio: 350
+  aisle: Fruits et légumes
+Ananas:
+  energy: 52
+  proteins: 0.5
+  carbs: 11.1
+  fat: 0.1
+  piece_to_g_ratio: 1200
+  aisle: Fruits et légumes
+Litchi:
+  energy: 78
+  proteins: 0.8
+  carbs: 17.0
+  fat: 0.4
+  piece_to_g_ratio: 15
+  aisle: Fruits et légumes
+Fruit de la passion:
+  energy: 102
+  proteins: 2.4
+  carbs: 17.7
+  fat: 0.8
+  piece_to_g_ratio: 50
+  aisle: Fruits et légumes
+Papaye:
+  energy: 40
+  proteins: 0.5
+  carbs: 8.8
+  fat: 0.1
+  piece_to_g_ratio: 500
+  aisle: Fruits et légumes
+Noix de coco:
+  energy: 354
+  proteins: 3.3
+  carbs: 15.2
+  fat: 33.5
+  piece_to_g_ratio: 1000
+  aisle: Fruits et légumes
+Kaki:
+  energy: 66
+  proteins: 0.5
+  carbs: 15.3
+  fat: 0.2
+  piece_to_g_ratio: 170
+  aisle: Fruits et légumes
+Grenade:
+  energy: 81
+  proteins: 1.7
+  carbs: 16.6
+  fat: 1.2
+  piece_to_g_ratio: 250
+  aisle: Fruits et légumes
+Figue fraîche:
+  energy: 68
+  proteins: 0.8
+  carbs: 14.3
+  fat: 0.3
+  piece_to_g_ratio: 60
+  aisle: Fruits et légumes
+Coing:
+  energy: 57
+  proteins: 0.4
+  carbs: 13.0
+  fat: 0.1
+  piece_to_g_ratio: 250
+  aisle: Fruits et légumes
+Datte:
+  energy: 282
+  proteins: 2.5
+  carbs: 64.2
+  fat: 0.4
+  piece_to_g_ratio: 8
+  aisle: Fruits et légumes
+Figue sèche:
+  energy: 261
+  proteins: 3.3
+  carbs: 57.9
+  fat: 1.0
+  piece_to_g_ratio: 20
+  aisle: Fruits et légumes
+Pruneau:
+  energy: 229
+  proteins: 2.2
+  carbs: 52.7
+  fat: 0.4
+  piece_to_g_ratio: 10
+  aisle: Fruits et légumes
+Abricot sec:
+  energy: 200
+  proteins: 3.4
+  carbs: 43.6
+  fat: 0.5
+  piece_to_g_ratio: 8
+  aisle: Fruits et légumes
+Raisin sec:
+  energy: 299
+  proteins: 3.1
+  carbs: 69.4
+  fat: 0.5
+  piece_to_g_ratio: 2
   aisle: Fruits et légumes
 Pain:
   energy: 270
