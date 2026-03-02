@@ -139,9 +139,9 @@ class Ingredient:
             "name": self._name,
             "nutrition": {
                 "calories": energy,
-                "carbohydrates": proteins,
+                "carbohydrates": carbs,
                 "fat": fat,
-                "proteins": carbs,
+                "proteins": proteins,
             },
             "portion": 1,  # macros are always for one piece, or for Macros.REFERENCE_QUANTITY
             "uniqueId": self._name,

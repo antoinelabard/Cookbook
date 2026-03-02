@@ -88,7 +88,7 @@ class MealPlan:
         recipes_links = "\n".join([f"- [ ] [[{recipe.get_name()}]]" for recipe in recipes])
         if not recipes_links:
             return recipes_links
-        output.append(f"# {meal}\n\n{recipes_links}")
+        output.append(f"### {meal}\n\n{recipes_links}")
         avg_macros = self.compute_avg_macros_per_portion(meal)
         output.append(avg_macros.to_markdown_table())
 

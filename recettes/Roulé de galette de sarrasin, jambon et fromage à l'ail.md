@@ -2,8 +2,7 @@
 date-added: 2026-01-20
 source: Mae
 recipe-type: meal
-meal:
-  - lunch
+meal: lunch
 portions: 8
 tags:
   - appetizer

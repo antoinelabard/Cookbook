@@ -4,8 +4,7 @@ source: Quitoque
 season:
   - autumn
   - winter
-recipe-type:
-  - meal
+recipe-type: meal
 meal: lunch
 tags:
   - occasion
