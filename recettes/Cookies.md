@@ -5,7 +5,7 @@ recipe-type: meal
 meal: snack
 tags:
   - cake
-portions: 8
+portions: 9
 ---
 
 # Cookies
@@ -14,7 +14,7 @@ portions: 8
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    15min    |   -   |  10min  |
+|    15min    |   -   |  12min  |
 
 ## Ingrédients
 
@@ -38,6 +38,6 @@ portions: 8
 6. Incorporer délicatement la farine mélangée à la levure et au sel.
 7. Ajouter les pépites de chocolat.
 8. Placez une feuille de papier cuisson sur une plaque allant au four.
-9. Former des boules de pâte (environ 8) en prenant deux cuillères et en les espaçant bien (elles vont s'étaler).
+9. Former des boules de pâte (environ 9) en prenant deux cuillères et en les espaçant bien (elles vont s'étaler).
 10. Enfourner 12 minutes. Les cookies doivent être dorés sur les bords mais encore mous au centre.
 11. Laisser refroidir sur la plaque 5 minutes avant de les transférer.
