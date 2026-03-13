@@ -62,7 +62,7 @@ if __name__ == "__main__":
 
         if arg in ["i", "ingredients"]:
             new_ingredients_list = True
-            logger.info("Ingredients list generated.")
+
 
         if arg == "macros":
             repository.write_recipes_macros()
@@ -81,5 +81,6 @@ if __name__ == "__main__":
         repository.write_meal_plan(meal_plan)
     if new_ingredients_list:
         repository.write_ingredients()
+        logger.info("Ingredients list generated.")
     if new_export:
         repository.write_complete_cookbook()

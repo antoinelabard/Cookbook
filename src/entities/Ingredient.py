@@ -157,7 +157,7 @@ class Ingredient:
         |    name    | quantity | energy  | proteins  |   fat   |  carbs   | <--- returns this
         """
 
-        quantity = f"{round(self._quantity / portions)}{self._quantity_unit.value}"
+        quantity = f"{round(self._quantity * self._piece_to_g_ratio / portions)}g"
         energy = round(self._macros.get_energy() / portions)
         proteins = round(self._macros.get_proteins() / portions, 1)
         fat = round(self._macros.get_fat() / portions, 1)

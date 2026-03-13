@@ -241,6 +241,7 @@ class CookbookRepository:
                 kept_recipe = self._read_recipe_from_file(
                     next(filter(lambda path, name=ingredient_recipe_name: name in path.name, self._recipes_paths)))
                 if recipe_ingredient_quantity:
+                    kept_recipe.set_quantity(recipe_ingredient_quantity)
                     kept_recipe.compute_macros(recipe_ingredient_quantity)
                 ingredients.append(kept_recipe)
                 continue
@@ -288,6 +289,9 @@ class CookbookRepository:
                 instructions_range.append(i + 2)
         instructions_range.append(len(lines))
 
+        if len(metadata_range) != len(ingredients_range) != instructions_range != 2:
+            return None
+
         return metadata_range, ingredients_range, instructions_range
 
     def _read_recipe_from_file(self, path: Path) -> Optional[Recipe]:
@@ -299,7 +303,11 @@ class CookbookRepository:
         with open(path, 'r') as f:
             lines = f.readlines()
 
-        metadata_range, ingredients_range, instructions_range = self._get_sections_from_recipe(lines)
+        try:
+            metadata_range, ingredients_range, instructions_range = self._get_sections_from_recipe(lines)
+        except:
+            self._logger.warning(str(path) + ": cannot read the sections of the recipe. The file is probably not formatted correctly.")
+            return None
 
         metadata: dict[str, str | list[str]] = yaml.safe_load("".join(lines[metadata_range[0]:metadata_range[1]]))
 

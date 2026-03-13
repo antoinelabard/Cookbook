@@ -5,6 +5,7 @@ recipe-type: meal
 meal: lunch
 tags:
   - occasion
+portions: 8
 ---
 
 # Butter chicken
