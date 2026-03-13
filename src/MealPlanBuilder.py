@@ -34,16 +34,19 @@ class MealPlanBuilder:
             return
 
         MealPlanBuilder._logger.info(
-            f"Picking {meal_plan_filter.get_quantity() if meal_plan_filter.get_quantity() is not None else 0} recipes "
+            f"Picking {meal_plan_filter.get_portions() if meal_plan_filter.get_portions() is not None else 0} recipes "
             + f"among {len(filtered_recipes)}.")
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()
         picked_recipes: list[Recipe] = []
-        quantity = meal_plan_filter.get_quantity()
-        while quantity > 0:
+        portions = meal_plan_filter.get_portions()
+        min_nb_portions_available = min([rcp.get_portions() for rcp in filtered_recipes])
+        while portions >= min_nb_portions_available:
             # select the filtered recipes using a random draw
             index: int = random.randint(0, len(filtered_recipes_copy) - 1)
-            picked_recipes.append(filtered_recipes_copy.pop(index))
-            quantity -= 1
+            picked_recipe = filtered_recipes_copy.pop(index)
+            if picked_recipe.get_portions() <= portions:
+                picked_recipes.append(picked_recipe)
+                portions -= picked_recipe.get_portions()
 
             if not filtered_recipes_copy:
                 filtered_recipes_copy = filtered_recipes.copy()

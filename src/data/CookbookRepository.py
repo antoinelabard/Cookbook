@@ -354,7 +354,7 @@ class CookbookRepository:
             tags = profile_filter[Recipe.TAGS]
             if type(tags) is str: tags = [tags]
         return MealPlanFilter(
-            profile_filter[Ingredient.QUANTITY],
+            profile_filter[Recipe.PORTIONS],
             profile_filter[Recipe.RECIPE_TYPE],
             meal,
             is_in_season,

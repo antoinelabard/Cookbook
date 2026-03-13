@@ -11,20 +11,20 @@ class MealPlanFilter:
     """
 
     def __init__(self,
-                 quantity: int,
+                 portions: int,
                  recipe_type: str,
                  meal: Optional[str] = None,
                  season: bool = False,
                  tags: list[str] = None,
                  ):
-        self._quantity: Optional[int] = quantity
+        self._portions: Optional[int] = portions
         self._recipe_type: str = recipe_type
         self._meal: Optional[str] = meal if meal else None
         self._is_in_season: bool = season
         self._tags: list[str] = tags or []
 
-    def get_quantity(self) -> float:
-        return self._quantity
+    def get_portions(self) -> float:
+        return self._portions
 
     def get_meal(self) -> str:
         return self._meal

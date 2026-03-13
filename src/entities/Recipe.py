@@ -12,6 +12,7 @@ class Recipe:
     Recipe represents a cookbook recipe. It is a convenient way to access the metadata of a given recipe.
     """
 
+    PORTIONS = "portions"
     RECIPE_TYPE = "recipe-type"
     TAGS = "tags"
     SOURCE = "source"

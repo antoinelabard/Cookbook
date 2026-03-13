@@ -1,25 +1,25 @@
 week:
   -
-    quantity: 7
+    portions: 28
     recipe-type: meal
     meal: lunch
     is_in_season: true
 example:
   -
-    quantity: 6
+    portions: 24
     recipe-type: meal
     meal: lunch
     is_in_season: true
   -
-    quantity: 7
+    portions: 28
     recipe-type: meal
     meal: breakfast
   -
-    quantity: 4
+    portions: 16
     recipe-type: meal
     meal: snack
   -
-    quantity: 1
+    portions: 4
     recipe-type: meal
     meal: lunch
     tags: occasion
