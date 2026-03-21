@@ -40,7 +40,7 @@ class CookbookRepository:
     ROOT_DIR: Path = Path(__file__).parent.parent.parent
     RECIPE_DIR: Path = ROOT_DIR / "recettes"
     COMPLETE_COOKBOOK_PATH: Path = ROOT_DIR / "cookbook.md"
-    MENU_PATH: Path = ROOT_DIR / "meal plan.md"
+    MEAL_PLAN_PATH: Path = ROOT_DIR / "meal plan.md"
     INGREDIENTS_PATH: str = ROOT_DIR / "ingredients.md"
     PROFILES_PATH = ROOT_DIR / "profiles.yaml"
     BASE_INGREDIENTS_PATH = ROOT_DIR / "ingredients.yaml"
@@ -68,7 +68,7 @@ class CookbookRepository:
         :param meal_plan: the MealPlan to write down
         """
 
-        with open(self.MENU_PATH, 'w') as f:
+        with open(self.MEAL_PLAN_PATH, 'w') as f:
             f.write(meal_plan.to_str())
 
     def write_complete_cookbook(self) -> None:
@@ -89,7 +89,9 @@ class CookbookRepository:
         The ingredients are categorized by aisle following the convention described in INGREDIENTS_AISLES_PATH.
         """
 
-        ingredients_by_aisle = self._read_meal_plan().get_ingredients_list_by_aisle()
+        meal_plan = self._read_meal_plan()
+
+        ingredients_by_aisle = meal_plan.get_ingredients_list_by_aisle()
         output = []
 
         for aisle, ingredients in ingredients_by_aisle.items():
@@ -99,6 +101,9 @@ class CookbookRepository:
 
         with open(self.INGREDIENTS_PATH, 'w') as f:
             f.write("\n".join(output))
+
+        with open(self.MEAL_PLAN_PATH, 'w') as f:
+            f.write(meal_plan.to_str())  # doesn't change the meals but updates the macros markdown table
 
     def write_recipes_macros(self):
         """
@@ -383,7 +388,7 @@ class CookbookRepository:
         Read the recipes names listed in the menu file pointed by MENU_PATH.
         """
 
-        with open(self.MENU_PATH, 'r') as f:
+        with open(self.MEAL_PLAN_PATH, 'r') as f:
             lines = f.readlines()
 
         meal_plan_builder = MealPlanBuilder(self._recipes)
