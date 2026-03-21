@@ -5,6 +5,7 @@ recipe-type: meal
 meal: lunch
 tags: [occasion]
 season: [summer]
+portions: 8
 ---
 
 # Hamburger maison
