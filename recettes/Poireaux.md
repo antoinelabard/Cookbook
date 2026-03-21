@@ -1,0 +1,23 @@
+---
+date-added: 2026-03-15
+source:
+recipe-type: meal
+meal: lunch
+portions: 2
+tags:
+  - composite-vegetables
+---
+
+# Poireaux
+
+![[Poireau.webp]]
+
+| Préparation | Repos | Cuisson |
+|:-----------:|:-----:|:-------:|
+|             |   -   |         |
+
+## Ingrédients
+
+- [ ] Poireaux : 8
+
+## Préparation

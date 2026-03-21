@@ -1,0 +1,23 @@
+---
+date-added: 2026-03-12
+source:
+recipe-type: meal
+meal: lunch
+portions: 2
+tags:
+  - composite-vegetables
+---
+
+# Carottes cuites
+
+![[Carottes cuites.webp]]
+
+| Préparation | Repos | Cuisson |
+|:-----------:|:-----:|:-------:|
+|             |   -   |         |
+
+## Ingrédients
+
+- [ ] Carottes : 16
+
+## Préparation

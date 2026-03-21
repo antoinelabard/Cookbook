@@ -1,20 +1,10 @@
 ---
 date-added: '<% tp.date.now("YYYY-MM-DD") %>'
 source: 
-season:
-  - spring
-  - summer
-  - autumn
-  - winter
-recipe-type:
-  - meal
-  - ingredient
-meal:
-  - breakfast
-  - lunch
-  - snack
+recipe-type: meal
+meal: lunch
 portions: 4
-tags: [cheat-meal, occasion, appetizer, cake, composite-vegetables, composite-carbs, composite-proteins]
+tags: [composite-proteins]
 ---
 
 # <% tp.file.title %>
@@ -26,5 +16,7 @@ tags: [cheat-meal, occasion, appetizer, cake, composite-vegetables, composite-ca
 |             |   -   |         |
 
 ## Ingrédients
+
+- [ ] <% tp.file.title %> : 400g
 
 ## Préparation

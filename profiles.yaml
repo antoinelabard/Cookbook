@@ -4,6 +4,22 @@ week:
     recipe-type: meal
     meal: lunch
     is_in_season: true
+composite:
+  -
+    portions: 2
+    recipe-type: meal
+    meal: lunch
+    tags: composite-vegetables
+  -
+    portions: 1
+    recipe-type: meal
+    meal: lunch
+    tags: composite-carbs
+  -
+    portions: 1
+    recipe-type: meal
+    meal: lunch
+    tags: composite-proteins
 example:
   -
     portions: 24
