@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Petits pois : 1600g
+- [ ] Petits pois : 1200g
 
 ## Préparation

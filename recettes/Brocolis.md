@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Brocolis : 4
+- [ ] Brocolis : 1200g
 
 ## Préparation

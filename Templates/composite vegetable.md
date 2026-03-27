@@ -17,6 +17,6 @@ tags: [composite-vegetables]
 
 ## Ingrédients
 
-- [ ] <% tp.file.title %> : 800g
+- [ ] <% tp.file.title %> : 1200g
 
 ## Préparation

@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Patates douces : 4
+- [ ] Patates douces : 600g
 
 ## Préparation

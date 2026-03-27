@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] jambon : 800g
+- [ ] jambon : 600g
 
 ## Préparation

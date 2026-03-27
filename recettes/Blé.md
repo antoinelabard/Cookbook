@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Blé : 800g
+- [ ] Blé : 600g
 
 ## Préparation

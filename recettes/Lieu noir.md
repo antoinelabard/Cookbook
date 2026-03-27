@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Lieu noir : 400g
+- [ ] Lieu noir : 600g
 
 ## Préparation

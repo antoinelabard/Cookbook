@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Épinards : 800g
+- [ ] Épinards : 600g
 
 ## Préparation

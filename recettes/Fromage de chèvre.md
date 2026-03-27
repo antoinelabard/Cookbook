@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Fromage de chèvre : 800g
+- [ ] Fromage de chèvre : 600g
 
 ## Préparation

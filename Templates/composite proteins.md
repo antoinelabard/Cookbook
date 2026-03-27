@@ -17,6 +17,6 @@ tags: [composite-proteins]
 
 ## Ingrédients
 
-- [ ] <% tp.file.title %> : 400g
+- [ ] <% tp.file.title %> : 600g
 
 ## Préparation

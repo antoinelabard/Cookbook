@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Riz : 400g
+- [ ] Riz : 250g
 
 ## Préparation

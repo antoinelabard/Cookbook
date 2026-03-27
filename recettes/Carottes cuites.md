@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Carottes : 16
+- [ ] Carottes : 1200g
 
 ## Préparation

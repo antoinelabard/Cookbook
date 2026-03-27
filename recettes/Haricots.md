@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Haricots : 1600g
+- [ ] Haricots : 1200g
 
 ## Préparation

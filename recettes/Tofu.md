@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Tofu : 800g
+- [ ] Tofu : 600g
 
 ## Préparation

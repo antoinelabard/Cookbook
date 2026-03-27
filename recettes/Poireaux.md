@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Poireaux : 8
+- [ ] Poireaux : 1200g
 
 ## Préparation

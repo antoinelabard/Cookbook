@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Aubergines : 4
+- [ ] Aubergines : 1200g
 
 ## Préparation

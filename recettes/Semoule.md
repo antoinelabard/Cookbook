@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Semoule : 400g
+- [ ] Semoule : 250g
 
 ## Préparation

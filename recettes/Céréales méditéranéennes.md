@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Céréales méditéranéennes : 800g
+- [ ] Céréales méditéranéennes : 600g
 
 ## Préparation

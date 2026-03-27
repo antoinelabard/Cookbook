@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Pâtes : 400g
+- [ ] Pâtes : 250g
 
 ## Préparation

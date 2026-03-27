@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Lentilles : 800g
+- [ ] Lentilles : 600g
 
 ## Préparation

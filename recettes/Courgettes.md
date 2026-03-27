@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Courgettes : 4
+- [ ] Courgettes : 1200g
 
 ## Préparation

@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Pommes de terre : 800g
+- [ ] Pommes de terre : 600g
 
 ## Préparation
