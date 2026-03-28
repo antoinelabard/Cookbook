@@ -2,6 +2,8 @@ import datetime
 from typing import Optional
 
 from src.entities.Recipe import Recipe
+from src.utils.MonthEnum import MonthEnum
+
 
 class MealPlanFilter:
     """
@@ -14,13 +16,13 @@ class MealPlanFilter:
                  portions: int,
                  recipe_type: str,
                  meal: Optional[str] = None,
-                 season: bool = False,
+                 is_in_season: bool = False,
                  tags: list[str] = None,
                  ):
         self._portions: Optional[int] = portions
         self._recipe_type: str = recipe_type
         self._meal: Optional[str] = meal if meal else None
-        self._is_in_season: bool = season
+        self._is_in_season: bool = is_in_season
         self._tags: list[str] = tags or []
 
     def get_portions(self) -> float:
@@ -28,22 +30,6 @@ class MealPlanFilter:
 
     def get_meal(self) -> str:
         return self._meal
-
-    @staticmethod
-    def _get_current_season() -> str:
-        date = datetime.date.today()
-        spring_beginning = datetime.date(date.year, 3, 20)
-        summer_beginning = datetime.date(date.year, 6, 21)
-        autumn_beginning = datetime.date(date.year, 9, 23)
-        winter_beginning = datetime.date(date.year, 12, 21)
-
-        if spring_beginning <= date < summer_beginning:
-            return Recipe.Season.SPRING
-        if summer_beginning <= date < autumn_beginning:
-            return Recipe.Season.SUMMER
-        if autumn_beginning <= date < winter_beginning:
-            return Recipe.Season.AUTUMN
-        return Recipe.Season.WINTER
 
     def matches_filters(self, recipe: Recipe) -> bool:
         # recipe type
@@ -56,7 +42,7 @@ class MealPlanFilter:
 
         # seasons
         if self._is_in_season:
-            if recipe.get_seasons() and self._get_current_season() not in recipe.get_seasons():
+            if recipe.get_seasons() and MonthEnum.from_number(datetime.date.today().month) not in recipe.get_seasons():
                 # The season tag is present in the recipe, but the season doesn't match the current one
                 return False
 

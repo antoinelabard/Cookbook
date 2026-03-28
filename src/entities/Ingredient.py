@@ -1,6 +1,7 @@
 import copy
 
 from src.entities.Macros import Macros
+from src.utils.MonthEnum import MonthEnum
 from src.utils.QuantityUnit import QuantityUnit
 from src.utils.Utils import Utils
 
@@ -8,6 +9,7 @@ from src.utils.Utils import Utils
 class Ingredient:
     AISLE = "aisle"
     QUANTITY = "quantity"
+    SEASONS = "seasons"
     UNCLASSIFIED_AISLE = "Non classé"
     SOURCE_RECIPE_ARROW = " ---> "
 
@@ -21,6 +23,7 @@ class Ingredient:
                  macros: Macros = Macros(1, 1, 1, 1),
                  ingredient_line: str = "",
                  aisle: str = UNCLASSIFIED_AISLE,
+                 seasons: list[MonthEnum]|None = None
                  ):
         self._name: str = name
         self._quantity: float = quantity
@@ -29,6 +32,10 @@ class Ingredient:
         self._macros: Macros = macros
         self._ingredient_line: str = ingredient_line
         self._aisle: str = aisle
+        if isinstance(seasons, list):
+            self._seasons: set[MonthEnum] = set(seasons)
+        elif seasons is None:
+            self._seasons: set[MonthEnum] = set()
 
     def get_name(self) -> str:
         return self._name
@@ -56,6 +63,12 @@ class Ingredient:
 
     def get_aisle(self) -> str:
         return self._aisle
+
+    def get_seasons(self) -> set[MonthEnum]:
+        return self._seasons
+
+    def set_seasons(self, seasons: set[MonthEnum]):
+        self._seasons = seasons
 
     @classmethod
     def from_name(cls, recipe_ingredient_name: str, base_ingredients: list["Ingredient"]) -> "Ingredient":

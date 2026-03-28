@@ -43,7 +43,7 @@ tags:
 2. Faites cuire le riz selon les instructions du paquet.
 3. La sauce :
 	1. Pelez l'ail.
-	2. Dans le bol d'un mixeur, déposez l'ail, les noix de cajou, le garam massala, la purée de tomates et le fromage blanc. Salez, poivrez.
+	2. Dans le bol d'un mixeur, déposez l'ail, les noix de cajou, le garam masala, la purée de tomates et le fromage blanc. Salez, poivrez.
 	3. Mixez le tout jusqu'à obtenir une texture lisse et homogène.
 4. À table !
 	1. Une fois le poulet cuit, ajoutez la sauce et le beurre dans la sauteuse. S'il reste trop d'eau, poursuivez la cuisson quelques minutes à feu vif avant d'ajouter la sauce.

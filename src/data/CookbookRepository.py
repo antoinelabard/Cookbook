@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import logging
 from pathlib import Path
 from typing import Optional
 from typing import Union
@@ -14,6 +13,7 @@ from src.entities import MealPlan
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
 from src.entities.Recipe import Recipe
+from src.utils.MonthEnum import MonthEnum
 from src.utils.QuantityUnit import QuantityUnit
 from src.utils.Utils import Utils
 
@@ -171,14 +171,19 @@ class CookbookRepository:
                 fat=attributes[Macros.FAT],
                 carbs=attributes[Macros.CARBS],
             )
+
+            seasons = None
+            if Ingredient.SEASONS in attributes.keys():
+                seasons = [MonthEnum(ssn) for ssn in attributes[Ingredient.SEASONS]]
+
             ingredients.append(Ingredient(
                 ingredient_str,
                 macros=macros,
-                piece_to_g_ratio=attributes[
-                    Macros.PIECE_TO_G_RATIO]
-                if Macros.PIECE_TO_G_RATIO in attributes.keys()
-                else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
-                aisle=attributes[Ingredient.AISLE] if Ingredient.AISLE in attributes else None
+                piece_to_g_ratio=attributes[Macros.PIECE_TO_G_RATIO]
+                    if Macros.PIECE_TO_G_RATIO in attributes.keys()
+                    else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
+                aisle=attributes[Ingredient.AISLE] if Ingredient.AISLE in attributes else None,
+                seasons=seasons
             ))
 
         return ingredients
@@ -321,7 +326,6 @@ class CookbookRepository:
             date_added=metadata[Recipe.DATE_ADDED] if Recipe.DATE_ADDED in metadata.keys() else None,
             source=metadata[Recipe.SOURCE] if Recipe.SOURCE in metadata.keys() else None,
             meal=metadata[Recipe.Meal.MEAL] if Recipe.Meal.MEAL in metadata.keys() else None,
-            seasons=metadata[Recipe.Season.SEASON] if Recipe.Season.SEASON in metadata.keys() else None,
             tags=metadata[Recipe.TAGS] if Recipe.TAGS in metadata.keys() else None,
             portions=metadata[
                 Macros.PORTIONS] if Macros.PORTIONS in metadata.keys() else QuantityUnit.DEFAULT_NB_PORTIONS.value
@@ -353,8 +357,8 @@ class CookbookRepository:
         tags = None
         if Recipe.Meal.MEAL in profile_filter.keys():
             meal = profile_filter[Recipe.Meal.MEAL]
-        if Recipe.Season.IS_IN_SEASON in profile_filter.keys():
-            is_in_season = profile_filter[Recipe.Season.IS_IN_SEASON]
+        if Recipe.IS_IN_SEASON in profile_filter.keys():
+            is_in_season = profile_filter[Recipe.IS_IN_SEASON]
         if Recipe.TAGS in profile_filter.keys():
             tags = profile_filter[Recipe.TAGS]
             if type(tags) is str: tags = [tags]

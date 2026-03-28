@@ -3,6 +3,7 @@ from typing import Self
 
 from src.entities.Ingredient import Ingredient
 from src.entities.Macros import Macros
+from src.utils.MonthEnum import MonthEnum
 from src.utils.QuantityUnit import QuantityUnit
 from src.utils.Utils import Utils
 
@@ -17,6 +18,7 @@ class Recipe:
     TAGS = "tags"
     SOURCE = "source"
     DATE_ADDED = "date-added"
+    IS_IN_SEASON = "is_in_season"
     SUB_RECIPE_AISLE = "Sous recettes"
 
     class Meal:
@@ -26,14 +28,6 @@ class Recipe:
         SNACK = "snack"
         MISC = "misc"
 
-    class Season:
-        SEASON = "season"
-        IS_IN_SEASON = "is_in_season"
-        SPRING = "spring"
-        SUMMER = "summer"
-        AUTUMN = "autumn"
-        WINTER = "winter"
-
     def __init__(self,
                  name: str,
                  recipe_type: str,
@@ -42,7 +36,6 @@ class Recipe:
                  date_added: Optional[str] = None,
                  source: Optional[str] = None,
                  meal: Optional[str] = None,
-                 seasons: Optional[list[str]] = None,
                  portions: int = QuantityUnit.DEFAULT_NB_PORTIONS.value,
                  quantity: int = 1,
                  tags: Optional[list[str]] = None):
@@ -53,10 +46,13 @@ class Recipe:
         self._meal: Optional[str] = meal if meal else None
         self._macros = Macros()
 
-        if isinstance(seasons, list):
-            self._seasons: list[str] = seasons
-        elif seasons is None:
-            self._seasons: list[str] = []
+        # intersect the seasons from the ingredients
+        ingredients_seasons = map(lambda ingredient: ingredient.get_seasons(), ingredients)
+        ingredients_seasons = list(filter(lambda ssn: len(ssn) > 0, ingredients_seasons))
+        if not ingredients_seasons:
+            self._seasons: set[MonthEnum] = set()
+        else:
+            self._seasons = set.intersection(*ingredients_seasons)
 
         self._portions: int = portions
 
@@ -65,7 +61,7 @@ class Recipe:
         elif tags is None:
             self._tags: list[str] = []
 
-        self._ingredients: list[Ingredient | Self] = ingredients
+        self._ingredients: list[Ingredient | "Recipe"] = ingredients
         self._instructions: list[str] = instructions
         self._quantity = quantity
 
@@ -75,10 +71,10 @@ class Recipe:
     def get_recipe_type(self) -> str:
         return self._recipe_type
 
-    def get_meal(self) -> str:
+    def get_meal(self) -> str | None:
         return self._meal
 
-    def get_seasons(self) -> list[str]:
+    def get_seasons(self) -> set[MonthEnum]:
         return self._seasons
 
     def get_portions(self) -> int:
@@ -87,7 +83,7 @@ class Recipe:
     def get_tags(self) -> list[str]:
         return self._tags
 
-    def get_ingredients(self) -> list[Ingredient]:
+    def get_ingredients(self) -> list[Ingredient | Self]:
         return self._ingredients
 
     def get_macros(self) -> Macros:

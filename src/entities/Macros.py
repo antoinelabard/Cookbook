@@ -1,6 +1,3 @@
-from typing import Self
-
-
 class Macros:
     MACROS = "macros"
     ENERGY = "energy"
@@ -9,7 +6,7 @@ class Macros:
     CARBS = "carbs"
     PORTIONS = "portions"
     PIECE_TO_G_RATIO = "piece_to_g_ratio"
-    REFERENCE_QUANTITY = 100  # in g, a macros indicates the nutrients for 100g
+    REFERENCE_QUANTITY = 100  # in g, a macro indicates the nutrients for 100g
 
     def __init__(self,
                  energy: float = 0,
@@ -33,7 +30,7 @@ class Macros:
     def get_carbs(self) -> float:
         return self._carbs
 
-    def __add__(self, other: Self) -> Self:
+    def __add__(self, other: "Macros") -> "Macros":
         return Macros(
             self._energy + other.get_energy(),
             self._proteins + other.get_proteins(),
@@ -41,7 +38,7 @@ class Macros:
             self._carbs + other.get_carbs(),
         )
 
-    def __mul__(self, other: float) -> Self:
+    def __mul__(self, other: float) -> "Macros":
         return Macros(
             self._energy * other,
             self._proteins * other,
@@ -49,7 +46,7 @@ class Macros:
             self._carbs * other,
         )
 
-    def __truediv__(self, other: float) -> Self:
+    def __truediv__(self, other: float) -> "Macros":
         return Macros(
             self._energy / other,
             self._proteins / other,

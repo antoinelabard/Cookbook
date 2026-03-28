@@ -864,6 +864,7 @@ Potimarron:
   fat: 0.1
   piece_to_g_ratio: 1000
   aisle: Fruits et légumes
+  seasons: ["septembre", "octobre", "novembre", "décembre", "janvier", "février"]
 Aubergine:
   energy: 25
   proteins: 1.0
@@ -871,6 +872,7 @@ Aubergine:
   fat: 0.2
   piece_to_g_ratio: 300
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Avocat:
   energy: 160
   proteins: 1.9
@@ -892,6 +894,7 @@ Brocoli:
   fat: 0.4
   piece_to_g_ratio: 350
   aisle: Fruits et légumes
+  seasons: ["septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars", "avril"]
 Carotte:
   energy: 36
   proteins: 0.8
@@ -906,6 +909,7 @@ Céleri:
   fat: 0.1
   piece_to_g_ratio: 300
   aisle: Fruits et légumes
+  seasons: ["septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars"]
 Champignon:
   energy: 22
   proteins: 3.1
@@ -920,6 +924,7 @@ Ciboulette:
   fat: 0.7
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
+  seasons: ["avril", "mai", "juin", "juillet", "août", "septembre", "octobre"]
 Citron:
   energy: 29
   proteins: 1.1
@@ -934,6 +939,7 @@ Chou chinois:
   fat: 0.2
   piece_to_g_ratio: 900
   aisle: Fruits et légumes
+  seasons: ["octobre", "novembre", "décembre", "janvier", "février", "mars"]
 Concombre:
   energy: 13
   proteins: 0.6
@@ -941,6 +947,7 @@ Concombre:
   fat: 0.2
   piece_to_g_ratio: 300
   aisle: Fruits et légumes
+  seasons: ["mai", "juin", "juillet", "août", "septembre"]
 Courgette:
   energy: 16
   proteins: 1.2
@@ -948,6 +955,7 @@ Courgette:
   fat: 0.2
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Échalote:
   energy: 72
   proteins: 2.5
@@ -962,12 +970,14 @@ Endive:
   fat: 0.2
   piece_to_g_ratio: 150
   aisle: Fruits et légumes
+  seasons: ["octobre", "novembre", "décembre", "janvier", "février", "mars", "avril"]
 Épinard:
   energy: 27
   proteins: 2.9
   carbs: 1.8
   fat: 0.3
   aisle: Fruits et légumes
+  seasons: ["septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars", "avril", "mai"]
 Laitue:
   energy: 15
   proteins: 1.4
@@ -975,6 +985,7 @@ Laitue:
   fat: 0.2
   piece_to_g_ratio: 350
   aisle: Fruits et légumes
+  seasons: ["avril", "mai", "juin", "juillet", "août", "septembre", "octobre"]
 Laurier:
   energy: 313
   proteins: 7.6
@@ -989,6 +1000,7 @@ Melon:
   fat: 0.2
   piece_to_g_ratio: 900
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Menthe:
   energy: 44
   proteins: 3.7
@@ -996,6 +1008,7 @@ Menthe:
   fat: 0.7
   piece_to_g_ratio: 2
   aisle: Fruits et légumes
+  seasons: ["avril", "mai", "juin", "juillet", "août", "septembre", "octobre"]
 Myrtille:
   energy: 57
   proteins: 0.7
@@ -1003,6 +1016,7 @@ Myrtille:
   fat: 0.3
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Oignon:
   energy: 38
   proteins: 1.1
@@ -1024,6 +1038,7 @@ Poireau:
   fat: 0.2
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
+  seasons: ["septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars", "avril"]
 Poivron:
   energy: 29
   proteins: 1.0
@@ -1031,6 +1046,7 @@ Poivron:
   fat: 0.3
   piece_to_g_ratio: 170
   aisle: Fruits et légumes
+  seasons: ["juillet", "août", "septembre", "octobre"]
 Pommes de terre:
   energy: 77
   proteins: 1.8
@@ -1045,6 +1061,7 @@ Radis:
   fat: 0.1
   piece_to_g_ratio: 15
   aisle: Fruits et légumes
+  seasons: ["mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre"]
 Romarin:
   energy: 331
   proteins: 4.9
@@ -1059,6 +1076,7 @@ Salade:
   fat: 0.2
   piece_to_g_ratio: 180
   aisle: Fruits et légumes
+  seasons: ["avril", "mai", "juin", "juillet", "août", "septembre", "octobre"]
 Sésame:
   energy: 573
   proteins: 17.7
@@ -1073,6 +1091,7 @@ Tomate:
   fat: 0.2
   piece_to_g_ratio: 120
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre", "octobre"]
 Pomme:
   energy: 52
   proteins: 0.3
@@ -1080,6 +1099,7 @@ Pomme:
   fat: 0.2
   piece_to_g_ratio: 180
   aisle: Fruits et légumes
+  seasons: ["août", "septembre", "octobre", "novembre", "décembre", "janvier", "février", "mars"]
 Poire:
   energy: 57
   proteins: 0.4
@@ -1087,6 +1107,7 @@ Poire:
   fat: 0.1
   piece_to_g_ratio: 160
   aisle: Fruits et légumes
+  seasons: ["août", "septembre", "octobre", "novembre", "décembre", "janvier", "février"]
 Orange:
   energy: 42
   proteins: 0.9
@@ -1094,6 +1115,7 @@ Orange:
   fat: 0.2
   piece_to_g_ratio: 200
   aisle: Fruits et légumes
+  seasons: ["novembre", "décembre", "janvier", "février", "mars", "avril", "mai"]
 Pamplemousse:
   energy: 33
   proteins: 0.6
@@ -1101,6 +1123,7 @@ Pamplemousse:
   fat: 0.1
   piece_to_g_ratio: 400
   aisle: Fruits et légumes
+  seasons: ["novembre", "décembre", "janvier", "février", "mars", "avril", "mai"]
 Clémentine:
   energy: 46
   proteins: 0.8
@@ -1108,6 +1131,7 @@ Clémentine:
   fat: 0.2
   piece_to_g_ratio: 70
   aisle: Fruits et légumes
+  seasons: ["novembre", "décembre", "janvier", "février"]
 Mandarine:
   energy: 46
   proteins: 0.8
@@ -1115,6 +1139,7 @@ Mandarine:
   fat: 0.2
   piece_to_g_ratio: 70
   aisle: Fruits et légumes
+  seasons: ["novembre", "décembre", "janvier"]
 Citron vert:
   energy: 29
   proteins: 1.1
@@ -1129,6 +1154,7 @@ Pêche:
   fat: 0.1
   piece_to_g_ratio: 150
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Nectarine:
   energy: 50
   proteins: 1.1
@@ -1136,6 +1162,7 @@ Nectarine:
   fat: 0.3
   piece_to_g_ratio: 150
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Abricot:
   energy: 44
   proteins: 1.0
@@ -1143,6 +1170,7 @@ Abricot:
   fat: 0.1
   piece_to_g_ratio: 45
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août"]
 Prune:
   energy: 46
   proteins: 0.7
@@ -1150,6 +1178,7 @@ Prune:
   fat: 0.3
   piece_to_g_ratio: 55
   aisle: Fruits et légumes
+  seasons: ["juillet", "août", "septembre", "octobre"]
 Cerise:
   energy: 54
   proteins: 1.1
@@ -1157,6 +1186,7 @@ Cerise:
   fat: 0.3
   piece_to_g_ratio: 8
   aisle: Fruits et légumes
+  seasons: ["mai", "juin", "juillet"]
 Mirabelle:
   energy: 56
   proteins: 0.8
@@ -1164,6 +1194,7 @@ Mirabelle:
   fat: 0.2
   piece_to_g_ratio: 10
   aisle: Fruits et légumes
+  seasons: ["août", "septembre"]
 Fraise:
   energy: 39
   proteins: 0.6
@@ -1171,6 +1202,7 @@ Fraise:
   fat: 0.2
   piece_to_g_ratio: 20
   aisle: Fruits et légumes
+  seasons: ["avril", "mai", "juin", "juillet", "août", "septembre", "octobre"]
 Framboise:
   energy: 48
   proteins: 1.2
@@ -1178,6 +1210,7 @@ Framboise:
   fat: 0.6
   piece_to_g_ratio: 4
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre", "octobre"]
 Mûre:
   energy: 46
   proteins: 1.4
@@ -1185,6 +1218,7 @@ Mûre:
   fat: 0.5
   piece_to_g_ratio: 5
   aisle: Fruits et légumes
+  seasons: ["août", "septembre", "octobre"]
 Cassis:
   energy: 70
   proteins: 1.4
@@ -1192,6 +1226,7 @@ Cassis:
   fat: 0.4
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août"]
 Groseille:
   energy: 67
   proteins: 1.4
@@ -1199,6 +1234,7 @@ Groseille:
   fat: 0.2
   piece_to_g_ratio: 1
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août"]
 Pastèque:
   energy: 35
   proteins: 0.6
@@ -1206,6 +1242,7 @@ Pastèque:
   fat: 0.2
   piece_to_g_ratio: 3000
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Melon charentais:
   energy: 60
   proteins: 0.7
@@ -1213,6 +1250,7 @@ Melon charentais:
   fat: 0.2
   piece_to_g_ratio: 900
   aisle: Fruits et légumes
+  seasons: ["juin", "juillet", "août", "septembre"]
 Raisin blanc:
   energy: 71
   proteins: 0.6
@@ -1220,6 +1258,7 @@ Raisin blanc:
   fat: 0.4
   piece_to_g_ratio: 5
   aisle: Fruits et légumes
+  seasons: ["août", "septembre", "octobre"]
 Raisin noir:
   energy: 71
   proteins: 0.6
@@ -1227,6 +1266,7 @@ Raisin noir:
   fat: 0.4
   piece_to_g_ratio: 5
   aisle: Fruits et légumes
+  seasons: ["août", "septembre", "octobre"]
 Kiwi:
   energy: 61
   proteins: 1.1
@@ -1234,6 +1274,7 @@ Kiwi:
   fat: 0.6
   piece_to_g_ratio: 90
   aisle: Fruits et légumes
+  seasons: ["octobre", "novembre", "décembre", "janvier", "février", "mars", "avril"]
 Mangue:
   energy: 71
   proteins: 0.6
@@ -1255,6 +1296,7 @@ Litchi:
   fat: 0.4
   piece_to_g_ratio: 15
   aisle: Fruits et légumes
+  seasons: ["novembre", "décembre", "janvier", "février"]
 Fruit de la passion:
   energy: 102
   proteins: 2.4
@@ -1283,6 +1325,7 @@ Kaki:
   fat: 0.2
   piece_to_g_ratio: 170
   aisle: Fruits et légumes
+  seasons: ["octobre", "novembre", "décembre", "janvier"]
 Grenade:
   energy: 81
   proteins: 1.7
@@ -1290,6 +1333,7 @@ Grenade:
   fat: 1.2
   piece_to_g_ratio: 250
   aisle: Fruits et légumes
+  seasons: ["octobre", "novembre", "décembre", "janvier"]
 Figue fraîche:
   energy: 68
   proteins: 0.8
@@ -1297,6 +1341,7 @@ Figue fraîche:
   fat: 0.3
   piece_to_g_ratio: 60
   aisle: Fruits et légumes
+  seasons: ["août", "septembre", "octobre"]
 Coing:
   energy: 57
   proteins: 0.4
@@ -1304,6 +1349,7 @@ Coing:
   fat: 0.1
   piece_to_g_ratio: 250
   aisle: Fruits et légumes
+  seasons: ["septembre", "octobre", "novembre", "décembre"]
 Datte:
   energy: 282
   proteins: 2.5
@@ -1457,6 +1503,13 @@ Filet de poulet:
   carbs: 0.0
   fat: 2.0
   piece_to_g_ratio: 180
+  aisle: Viandes et poissons
+Poulet entier:
+  energy: 165
+  proteins: 20.6
+  carbs: 0.0
+  fat: 8.4
+  piece_to_g_ratio: 530
   aisle: Viandes et poissons
 Blancs de poulet:
   energy: 121
