@@ -12,7 +12,7 @@ portions: 12
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
-|    15min    | 30min |    -    |
+|    15min    |  1h   |    -    |
 
 ## Ingrédients
 
@@ -25,7 +25,7 @@ portions: 12
 ## Préparation
 
 1. Dans un grand bol, mélanger le fromage blanc, la noix de coco, les noix en poudre et le miel jusqu'à obtenir un mélange homogène.
-2. Former des barres à la main (environ 12) et les placer au congélateur pendant 30min.
-3. Au bout de 20min, faire fondre le chocolat au bain-marie.
+2. Former des barres à la main (environ 12) et les placer au congélateur pendant 1h.
+3. 10min avant de sortir les barres du congélateur, faire fondre le chocolat au bain-marie.
 4. Sortir les barres du congélateur et les tremper dans le chocolat fondu pour les enrober.
-5. Laisser reposer une heure au réfrigérateur.
+5. Remettre les bounties terminés au congélateur.
