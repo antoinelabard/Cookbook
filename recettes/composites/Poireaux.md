@@ -1,16 +1,16 @@
 ---
-date-added: 2026-03-12
+date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
-portions: 1
+portions: 2
 tags:
-  - composite-carbs
+  - composite-vegetables
 ---
 
-# Carottes cuites
+# Poireaux
 
-![[Carottes cuites.webp]]
+![[Poireau.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Patates douces : 600g
+- [ ] Poireaux : 1200g
 
 ## Préparation

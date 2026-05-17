@@ -1,16 +1,16 @@
 ---
 date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
-portions: 1
+portions: 2
 tags:
-  - composite-carbs
+  - composite-vegetables
 ---
 
-# Pommes de terre
+# Épinards
 
-![[Pommes de terre.webp]]
+![[Épinards.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Pommes de terre : 600g
+- [ ] Épinards : 600g
 
 ## Préparation

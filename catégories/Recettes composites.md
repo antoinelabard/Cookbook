@@ -15,3 +15,14 @@ LIST FROM "recettes" AND #composite-carbs
 ```dataview
 LIST FROM "recettes" AND #composite-proteins
 ```
+## Protéines végétales
+
+```dataview
+LIST FROM "recettes" AND #composite-proteins-veggie
+```
+
+## Accompagnements
+
+```dataview
+LIST FROM "recettes" AND #composite-supplement
+```

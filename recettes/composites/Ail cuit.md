@@ -1,23 +1,20 @@
 ---
-date-added: 2026-03-15
-source:
-recipe-type: meal
+date-added: 2026-05-17
+recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
-  - composite-proteins
+  - composite-supplement
 ---
 
-# Lieu noir
+# Oignons cuits
 
-![[Lieu noir.webp]]
+![[Oignons cuits.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
 |             |   -   |         |
 
 ## Ingrédients
-
-- [ ] Lieu noir : 600g
-
+- [ ] Gousses d'ail : 8
 ## Préparation

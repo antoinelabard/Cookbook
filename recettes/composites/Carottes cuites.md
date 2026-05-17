@@ -1,16 +1,16 @@
 ---
-date-added: 2026-03-15
+date-added: 2026-03-12
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
-portions: 1
+portions: 2
 tags:
-  - composite-proteins-veggie
+  - composite-vegetables
 ---
 
-# Fromage de chèvre
+# Carottes cuites
 
-![[Fromage de chèvre.webp]]
+![[Carottes cuites.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Fromage de chèvre : 600g
+- [ ] Carottes : 1200g
 
 ## Préparation

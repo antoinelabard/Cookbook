@@ -1,23 +1,20 @@
 ---
-date-added: 2026-03-15
-source:
-recipe-type: meal
+date-added: 2026-05-17
+recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
-  - composite-carbs
+  - composite-supplement
 ---
 
-# Riz
+# Oignons cuits
 
-![[Riz.webp]]
+![[Oignons cuits.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
 |             |   -   |         |
 
 ## Ingrédients
-
-- [ ] Riz : 250g
-
+- [ ] Oignons : 4
 ## Préparation

@@ -1,16 +1,16 @@
 ---
-date-added: 2026-03-15
+date-added: 2026-03-12
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
-portions: 2
+portions: 1
 tags:
-  - composite-vegetables
+  - composite-carbs
 ---
 
-# Épinards
+# Carottes cuites
 
-![[Épinards.webp]]
+![[Carottes cuites.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Épinards : 600g
+- [ ] Patates douces : 600g
 
 ## Préparation

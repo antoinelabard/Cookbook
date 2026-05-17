@@ -1,16 +1,16 @@
 ---
-date-added: 2026-03-12
+date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
   - composite-proteins
 ---
 
-# Poulet entier à désosser
+# saucisses fumées
 
-![[Carottes cuites.webp]]
+![[saucisses fumées.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,8 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Ailes de poulet : 2
-- [ ] Cuisses de poulet : 2
-- [ ] Blancs de poulet : 2
+- [ ] saucisses fumées : 4
 
 ## Préparation

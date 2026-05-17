@@ -1,16 +1,16 @@
 ---
 date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
   - composite-carbs
 ---
 
-# Céréales méditéranéennes
+# Raviolis
 
-![[Céréales méditéranéennes.webp]]
+![[Raviolis.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Céréales méditéranéennes : 600g
+- [ ] Raviolis : 400g
 
 ## Préparation

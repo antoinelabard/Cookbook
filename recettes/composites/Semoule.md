@@ -1,16 +1,16 @@
 ---
 date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
-portions: 2
+portions: 1
 tags:
-  - composite-vegetables
+  - composite-carbs
 ---
 
-# Haricots
+# Semoule
 
-![[Haricots.webp]]
+![[Semoule.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Haricots : 1200g
+- [ ] Semoule : 250g
 
 ## Préparation

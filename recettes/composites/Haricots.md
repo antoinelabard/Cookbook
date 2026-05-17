@@ -1,16 +1,16 @@
 ---
 date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
-portions: 1
+portions: 2
 tags:
-  - composite-proteins
+  - composite-vegetables
 ---
 
-# Poitrine fumée
+# Haricots
 
-![[Poitrine fumée.webp]]
+![[Haricots.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Poitrine fumée : 400g
+- [ ] Haricots : 1200g
 
 ## Préparation

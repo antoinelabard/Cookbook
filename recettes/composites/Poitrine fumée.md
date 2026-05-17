@@ -1,16 +1,16 @@
 ---
 date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
-portions: 2
+portions: 1
 tags:
-  - composite-vegetables
+  - composite-proteins
 ---
 
-# Petits pois
+# Poitrine fumée
 
-![[Petits pois.webp]]
+![[Poitrine fumée.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Petits pois : 1200g
+- [ ] Poitrine fumée : 400g
 
 ## Préparation

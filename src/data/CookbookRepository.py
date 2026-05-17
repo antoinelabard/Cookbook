@@ -51,7 +51,7 @@ class CookbookRepository:
 
     def __init__(self):
         self._base_ingredients = self._read_base_ingredients()
-        self._recipes_paths: list[Path] = [path for path in self.RECIPE_DIR.iterdir() if path.is_file()]
+        self._recipes_paths: list[Path] = [path for path in self.RECIPE_DIR.rglob("*.md") if path.is_file()]
         self._recipes: list[Recipe] = self._read_recipes()
         self._recipes_names: list[str] = [recipe.get_name() for recipe in self._recipes]
         self._profiles: dict[str, list[MealPlanFilter]] = self._read_profiles()

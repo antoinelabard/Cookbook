@@ -1,16 +1,16 @@
 ---
 date-added: 2026-03-15
 source:
-recipe-type: meal
+recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
   - composite-proteins
 ---
 
-# Lardons
+# jambon
 
-![[Lardons.webp]]
+![[jambon.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Lardons : 400g
+- [ ] jambon : 600g
 
 ## Préparation

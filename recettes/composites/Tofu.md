@@ -3,14 +3,14 @@ date-added: 2026-03-15
 source:
 recipe-type: meal
 meal: lunch
-portions: 2
+portions: 1
 tags:
-  - composite-vegetables
+  - composite-proteins-veggie
 ---
 
-# Poireaux
+# Tofu
 
-![[Poireau.webp]]
+![[Tofu.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Poireaux : 1200g
+- [ ] Tofu : 600g
 
 ## Préparation
