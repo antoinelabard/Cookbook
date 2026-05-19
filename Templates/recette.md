@@ -14,7 +14,7 @@ meal:
   - lunch
   - snack
 portions: 4
-tags: [cheat-meal, occasion, appetizer, cake, composite-vegetables, composite-carbs, composite-proteins, composite-proteins-veggie, composite-supplement]
+tags: [cheat-meal, occasion, appetizer, cake, composite/vegetables, composite/carbs, composite/proteins, composite/proteins-veggie, composite/supplement]
 ---
 
 # <% tp.file.title %>

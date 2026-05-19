@@ -50,3 +50,8 @@ Vous pouvez retrouver le repository de ce livre sur GitHub : **[https://github.c
 Ce livre de recette a été rédigé avec **[Obsidian](http://obsidian.md)**. Le site web est généré avec le plugin **[Webpage HTML Export](https://github.com/KosmosisDire/obsidian-webpage-export)** et est hébergé sur **[GitHub Pages](https://pages.github.com/)**.
 
 Un script de génération de menus est également disponible si vous téléchargez le livre de recettes hors ligne. Pour comprendre comment s'en servir, rendez-vous **[ici](https://github.com/antoinelabard/Cookbook/blob/main/cookbook.py)**.
+
+```dataview
+list from #composite/carbs or #composite/proteins or #composite/vegetables 
+sort file.name asc
+```

@@ -257,6 +257,9 @@ class CookbookRepository:
             kept_ingredient = self._load_ingredient_object_from_recipe_line(recipe_ingredient_str, recipe_name)
             ingredients.append(kept_ingredient)
 
+        if not ingredients:
+            self._logger.warning(f"No ingredient loaded for {recipe_name}")
+
         return ingredients
 
     @staticmethod

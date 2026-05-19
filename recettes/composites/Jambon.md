@@ -5,7 +5,7 @@ recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
-  - composite-proteins
+  - composite/proteins
 ---
 
 # jambon

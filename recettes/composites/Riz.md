@@ -5,7 +5,7 @@ recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
-  - composite-carbs
+  - composite/carbs
 ---
 
 # Riz

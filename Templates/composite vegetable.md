@@ -4,7 +4,7 @@ source:
 recipe-type: meal
 meal: lunch
 portions: 4
-tags: [composite-vegetables]
+tags: [composite/vegetables]
 ---
 
 # <% tp.file.title %>

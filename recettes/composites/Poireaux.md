@@ -5,7 +5,7 @@ recipe-type: ingredient
 meal: lunch
 portions: 2
 tags:
-  - composite-vegetables
+  - composite/vegetables
 ---
 
 # Poireaux

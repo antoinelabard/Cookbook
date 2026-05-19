@@ -4,7 +4,7 @@ recipe-type: ingredient
 meal: lunch
 portions: 1
 tags:
-  - composite-supplement
+  - composite/supplement
 ---
 
 # Oignons cuits

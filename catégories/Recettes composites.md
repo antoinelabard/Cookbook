@@ -1,28 +1,8 @@
-## Légumes
-
 ```dataview
-LIST FROM "recettes" AND #composite-vegetables
-```
-
-## Glucides
-
-```dataview
-LIST FROM "recettes" AND #composite-carbs
-```
-
-## Protéines
-
-```dataview
-LIST FROM "recettes" AND #composite-proteins
-```
-## Protéines végétales
-
-```dataview
-LIST FROM "recettes" AND #composite-proteins-veggie
-```
-
-## Accompagnements
-
-```dataview
-LIST FROM "recettes" AND #composite-supplement
+TABLE rows.file.link AS "Notes"
+FROM "recettes"
+FLATTEN file.etags AS tag
+WHERE contains(tag, "composite/")
+GROUP BY tag
+SORT tag ASC
 ```

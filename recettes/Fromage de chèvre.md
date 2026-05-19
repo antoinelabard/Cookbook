@@ -5,7 +5,7 @@ recipe-type: meal
 meal: lunch
 portions: 1
 tags:
-  - composite-proteins-veggie
+  - composite/proteins-veggie
 ---
 
 # Fromage de chèvre

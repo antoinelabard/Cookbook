@@ -10,27 +10,27 @@ composite:  # 4 meals = 2 vegetables + 1 carbs + 1 proteins/proteins-veggie + 1 
     recipe-type: ingredient
     meal: lunch
     is_in_season: true
-    tags: composite-vegetables
+    tags: composite/vegetables
   -
     portions: 4
     recipe-type: ingredient
     meal: lunch
-    tags: composite-carbs
+    tags: composite/carbs
   -
     portions: 2
     recipe-type: ingredient
     meal: lunch
-    tags: composite-proteins
+    tags: composite/proteins
   -
     portions: 2
     recipe-type: ingredient
     meal: lunch
-    tags: composite-proteins-veggie
+    tags: composite/proteins-veggie
   -
     portions: 4
     recipe-type: ingredient
     meal: lunch
-    tags: composite-supplement
+    tags: composite/supplement
 example:
   -
     portions: 24
