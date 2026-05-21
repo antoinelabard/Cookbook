@@ -2,7 +2,7 @@
 date-added: 2026-05-17
 recipe-type: ingredient
 meal: lunch
-portions: 1
+portions: 4
 tags:
   - composite/supplement
 ---

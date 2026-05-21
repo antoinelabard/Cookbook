@@ -3,7 +3,7 @@ date-added: 2026-03-12
 source:
 recipe-type: ingredient
 meal: lunch
-portions: 2
+portions: 8
 tags:
   - composite/vegetables
 ---

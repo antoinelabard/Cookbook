@@ -17,6 +17,6 @@ tags: [composite/carbs]
 
 ## Ingrédients
 
-- [ ] <% tp.file.title %> : 600g
+- [ ] <% tp.file.title %> (600g) : 150g
 
 ## Préparation
