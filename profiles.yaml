@@ -1,54 +1,44 @@
 week:
-  -
-    portions: 28
+  - portions: 28
     recipe-type: meal
     meal: lunch
     is_in_season: true
 composite:
   # 4 meals = 2 vegetables + 1 carbs + 1 proteins/proteins-veggie + 1 supplement
   #         = 8 vegetable portion + 4 carbs portion + 4 proteins/proteins-veggie portion + 4 supplement portion
-  -
-    portions: 32
+  - portions: 32
     recipe-type: ingredient
     meal: lunch
     is_in_season: true
     tags: composite/vegetables
-  -
-    portions: 16
+  - portions: 16
     recipe-type: ingredient
     meal: lunch
     tags: composite/carbs
-  -
-    portions: 16
+  - portions: 16
     recipe-type: ingredient
     meal: lunch
     tags: composite/proteins
-  -
-    portions: 16
+  - portions: 16
     recipe-type: ingredient
     meal: lunch
     tags: composite/proteins-veggie
-  -
-    portions: 16
+  - portions: 16
     recipe-type: ingredient
     meal: lunch
     tags: composite/supplement
 example:
-  -
-    portions: 24
+  - portions: 24
     recipe-type: meal
     meal: lunch
     is_in_season: true
-  -
-    portions: 28
+  - portions: 28
     recipe-type: meal
     meal: breakfast
-  -
-    portions: 16
+  - portions: 16
     recipe-type: meal
     meal: snack
-  -
-    portions: 4
+  - portions: 4
     recipe-type: meal
     meal: lunch
     tags: occasion
