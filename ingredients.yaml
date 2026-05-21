@@ -1755,3 +1755,18 @@ Ravioli (Champignons):
   fat: 8.9
   carbs: 27
   aisle: Produits frais
+Pain au céréales:
+  energy: 267
+  proteins: 11
+  fat: 3.5
+  carbs: 47
+  piece_to_g_ratio: 50
+  aisle: Boulangerie
+Filet de maquereaux:
+  energy: 215
+  proteins: 12.1
+  fat: 16.9
+  carbs: 3.1
+  piece_to_g_ratio: 150
+  aisle: Viandes et poissons
+

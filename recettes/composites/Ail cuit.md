@@ -16,5 +16,7 @@ tags:
 |             |   -   |         |
 
 ## Ingrédients
+
 - [ ] Gousses d'ail : 8
+
 ## Préparation
