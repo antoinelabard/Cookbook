@@ -19,5 +19,6 @@ tags:
 ## Ingrédients
 
 - [ ] Pommes de terre : 600g
+- [ ] Huile : 1cl
 
 ## Préparation
