@@ -1,9 +1,8 @@
 ---
 date-added: 2026-05-20
 recipe-type: meal
-meal:
-  - breakfast
-portions: 4
+meal: breakfast
+portions: 1
 ---
 
 # Tartines de maquereaux sauce tomate
@@ -18,5 +17,6 @@ portions: 4
 
 - [ ] Pain aux céréales : 2 tranches
 - [ ] Filet de maquereaux : 1
+- [ ] Beurre : 20g
 
 ## Préparation
