@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Dict
 from typing import Union
 
 import yaml
+from jsonschema import Draft7Validator
 
 from src.MealPlanBuilder import MealPlanBuilder
 from src.MealPlanFilter import MealPlanFilter
@@ -119,6 +120,7 @@ class CookbookRepository:
 
         with open(self.MACROS_PATH, 'w') as f:
             f.write("\n".join(output))
+            self._logger.info("Exported macros as markdown")
 
     def write_detailed_recipes_macros(self):
         """
@@ -133,6 +135,7 @@ class CookbookRepository:
 
         with open(self.DETAILED_MACROS_PATH, 'w') as f:
             f.write("\n".join(output))
+            self._logger.info("Exported detailed macros as markdown")
 
     def write_to_waistline_json(self):
         """
@@ -152,8 +155,118 @@ class CookbookRepository:
         for ingredient in self._base_ingredients:
             output["foodList"].append(ingredient.to_dict())
 
+        if self._validate_waistline_export(output) != 0:
+            self._logger.info("Waistline export corrupted, file not written to protect the app")
+            return
+
         with open("waistline_export.json", 'w') as f:
             f.write(json.dumps(output))
+            self._logger.info("Exported waisline macros as JSON")
+
+    def _validate_waistline_export(self, instance: Dict) -> int:
+        """
+        Ensure that the json export made for the waistline app is properly validated before writing it on disk
+        :param instance:
+        :return:
+        """
+        schema = {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "FoodListPayload",
+            "type": "object",
+            "required": ["version", "foodList"],
+            "additionalProperties": False,
+            "properties": {
+                "version": {
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "foodList": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                        "type": "object",
+                        "required": ["brand", "name", "nutrition", "portion", "uniqueId", "unit"],
+                        "additionalProperties": False,
+                        "properties": {
+                            "brand": {
+                                "type": ["string", "null"],
+                                "minLength": 1
+                            },
+                            "name": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "nutrition": {
+                                "type": "object",
+                                "required": ["calories", "carbohydrates", "fat", "proteins"],
+                                "additionalProperties": False,
+                                "properties": {
+                                    "calories": {
+                                        "type": ["number", "integer"],
+                                        "minimum": 0
+                                    },
+                                    "carbohydrates": {
+                                        "type": ["number", "integer"],
+                                        "minimum": 0
+                                    },
+                                    "fat": {
+                                        "type": ["number", "integer"],
+                                        "minimum": 0
+                                    },
+                                    "proteins": {
+                                        "type": ["number", "integer"],
+                                        "minimum": 0
+                                    }
+                                }
+                            },
+                            "portion": {
+                                "type": "integer",
+                                "minimum": 0
+                            },
+                            "uniqueId": {
+                                "type": "string",
+                                "minLength": 1
+                            },
+                            "unit": {
+                                "type": "string",
+                                "minLength": 1
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        validator = Draft7Validator(schema)
+        errors = validator.iter_errors(instance)
+
+        exit_success = 0
+        for err in errors:
+            exit_success = 1
+            # path to the faulty item in the instance (as list)
+            path = list(err.absolute_path)
+
+            # offending value (traverse instance by path; if empty path, the root)
+            try:
+                value = instance
+                for p in path:
+                    value = value[p]
+            except Exception:
+                value = None
+
+            food_dict = None
+            if "foodList" in path[0] and isinstance(path[1], int):
+                food_dict = instance["foodList"][path[1]]
+            self._logger.warning(json.dumps({
+                "message": err.message,
+                "instance_path": path,
+                "offending_value": value,
+                "validator": err.validator,
+                "validator_value": err.validator_value,
+                "food_dict": food_dict
+            }, indent=4))
+
+        return exit_success
 
     def _read_base_ingredients(self) -> list[Ingredient]:
         """
@@ -180,8 +293,8 @@ class CookbookRepository:
                 ingredient_str,
                 macros=macros,
                 piece_to_g_ratio=attributes[Macros.PIECE_TO_G_RATIO]
-                    if Macros.PIECE_TO_G_RATIO in attributes.keys()
-                    else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
+                if Macros.PIECE_TO_G_RATIO in attributes.keys()
+                else QuantityUnit.INVALID_PIECE_TO_G_RATIO.value,
                 aisle=attributes[Ingredient.AISLE] if Ingredient.AISLE in attributes else None,
                 seasons=seasons
             ))
