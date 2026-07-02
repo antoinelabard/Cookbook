@@ -12,7 +12,7 @@
 ```dataview
 TABLE without id file.link as "Dernières recettes ajoutées", dateformat(date-added, "yyyy-MM-dd") AS "Ajout"
 FROM "recettes"
-WHERE !contains(tags, "fail")
+WHERE !contains(tags, "fail") AND !contains(tags, "composite")
 SORT date-added DESC
 LIMIT 5
 ```
@@ -22,7 +22,7 @@ LIMIT 5
 ```dataview
 TABLE without id file.link as "Modifications récentes", dateformat(file.mtime, "yyyy-MM-dd") AS "Modification"
 FROM "recettes"
-WHERE !contains(tags, "fail")
+WHERE !contains(tags, "fail") AND !contains(tags, "composite")
 SORT file.mtime DESC
 LIMIT 5
 ```

@@ -5,12 +5,12 @@ recipe-type: ingredient
 meal: lunch
 portions: 4
 tags:
-  - composite/vegetables
+  - composite/proteins-veggie
 ---
 
-# Lentilles
+# Fromage de chèvre
 
-![[Lentilles.webp]]
+![[Protéines de soja texturées.webp]]
 
 | Préparation | Repos | Cuisson |
 |:-----------:|:-----:|:-------:|
@@ -18,6 +18,6 @@ tags:
 
 ## Ingrédients
 
-- [ ] Lentilles : 200g
+- [ ] Protéines de soja texturées : 200g
 
 ## Préparation
