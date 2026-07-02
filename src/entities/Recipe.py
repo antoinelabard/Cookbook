@@ -224,6 +224,6 @@ class Recipe:
                 "proteins": round(self._macros.get_proteins() / self._portions),
             },
             "portion": 1,  # macros are always for one portion of the recipe
-            "uniqueId": self._name,
+            "uniqueId": "r " + self._name,  # this prefix prevents collisions with the ingredients export
             "unit": "portion"
         }
