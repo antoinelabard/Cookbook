@@ -15,15 +15,15 @@ composite:
     recipe-type: ingredient
     meal: lunch
     tags: composite/carbs
-  - portions: 16
+  - portions: 4
     recipe-type: ingredient
     meal: lunch
     tags: composite/proteins
-  - portions: 16
+  - portions: 28
     recipe-type: ingredient
     meal: lunch
     tags: composite/proteins-veggie
-  - portions: 16
+  - portions: 8
     recipe-type: ingredient
     meal: lunch
     tags: composite/supplement

@@ -34,8 +34,8 @@ class MealPlanBuilder:
             return
 
         MealPlanBuilder._logger.info(
-            f"Picking {meal_plan_filter.get_portions() if meal_plan_filter.get_portions() is not None else 0} recipes "
-            + f"among {len(filtered_recipes)}.")
+            f"Picking {meal_plan_filter.get_portions() if meal_plan_filter.get_portions() is not None else 0} portions "
+            + f"among {len(filtered_recipes)} recipes.")
         filtered_recipes_copy: list[Recipe] = filtered_recipes.copy()
         picked_recipes: list[Recipe] = []
         portions = meal_plan_filter.get_portions()
