@@ -17,6 +17,6 @@ portions: 1
 
 - [ ] Pain aux céréales : 2 tranches
 - [ ] Filet de maquereaux : 1
-- [ ] Beurre : 20g
+- [ ] Beurre : 10g
 
 ## Préparation

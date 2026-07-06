@@ -621,6 +621,13 @@ Sauce soja:
   fat: 0.0
   piece_to_g_ratio: 1
   aisle: Produits du monde
+Protéines de soja texturées:
+  energy: 60
+  proteins: 6.4
+  carbs: 4.9
+  fat: 0.0
+  piece_to_g_ratio: 1
+  aisle: Produits du monde
 Tortilla:
   energy: 304
   proteins: 7.6
@@ -1543,7 +1550,7 @@ Pilons de poulet:
   proteins: 19.0
   carbs: 0.0
   fat: 12.0
-  piece_to_g_ratio: 250
+  piece_to_g_ratio: 100
 Saucisse:
   energy: 313
   proteins: 14.0
@@ -1755,12 +1762,12 @@ Ravioli (Champignons):
   fat: 8.9
   carbs: 27
   aisle: Produits frais
-Pain au céréales:
+Pain aux céréales:
   energy: 267
   proteins: 11
   fat: 3.5
   carbs: 47
-  piece_to_g_ratio: 50
+  piece_to_g_ratio: 30
   aisle: Boulangerie
 Filet de maquereaux:
   energy: 215
