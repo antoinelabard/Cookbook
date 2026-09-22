@@ -1776,4 +1776,25 @@ Filet de maquereaux:
   carbs: 3.1
   piece_to_g_ratio: 150
   aisle: Viandes et poissons
+Pois cassé:
+  energy: 341
+  proteins: 22.8
+  carbs: 52
+  fat: 1.4
+  piece_to_g_ratio: 
+  aisle: Produits secs
+Edamame:
+  energy: 121
+  proteins: 11.9
+  carbs: 8.9
+  fat: 5.2
+  piece_to_g_ratio: 
+  aisle: Produits secs
+Flageolet:
+  energy: 315
+  proteins: 19.1
+  carbs: 42.1
+  fat: 2.6
+  piece_to_g_ratio: 
+  aisle: Produits secs
 
